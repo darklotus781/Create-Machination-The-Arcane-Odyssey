@@ -72,6 +72,7 @@ StartupEvents.registry('item', event => {
     lootbag('magic_3', 'Mage\'s Pack', RARITY_EPIC);
     lootbag('poggers', 'Reward of Patience', RARITY_EPIC);
 
+    event.create('cm-tao:leather_pocket').texture("kubejs:item/leather_pocket").displayName('Leather Pocket');
 
     event.create('runic_tablet').displayName("Runic Tablet").tooltip("What mysteries may this behold?")
     event.create('warp_fragments').rarity(RARITY_RARE).glow(true)
