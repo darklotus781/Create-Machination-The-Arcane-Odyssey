@@ -1,7 +1,7 @@
 //priority: 0
 BlockEvents.rightClicked(event => {
     let {block, item} = event
-    if (event.hand != MAIN_HAND) {return}
+    if (event.hand != 'main_hand') {return}
     if (event.player.crouching) {return}
     if (block.entityId != "sophisticatedbackpacks:backpack") {return}
 
