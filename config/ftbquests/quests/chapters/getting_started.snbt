@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: "3F3D969172D871AB"
+	id: "31589ED7C7441550"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: ["Yeah, yeah, we've been through this before."]
+		id: "6B755A3E6E1AA414"
+		tasks: [{
+			id: "0BAE67FBB94C31B1"
+			item: "aether:skyroot_sapling"
+			type: "item"
+		}]
+		title: "Go Punch a Tree"
+		x: 6.5d
+		y: -8.0d
+	}]
+	title: "Getting Started"
+}

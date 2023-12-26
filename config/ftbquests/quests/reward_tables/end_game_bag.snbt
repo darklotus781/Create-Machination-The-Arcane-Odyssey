@@ -1,0 +1,12 @@
+{
+	icon: "kubejs:end_bag_common"
+	id: "7637662A869EBCE3"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ item: "kubejs:end_bag_common" }
+		{ item: "kubejs:end_bag_rare" }
+		{ item: "kubejs:end_bag_epic" }
+	]
+	title: "End Game Bag"
+}

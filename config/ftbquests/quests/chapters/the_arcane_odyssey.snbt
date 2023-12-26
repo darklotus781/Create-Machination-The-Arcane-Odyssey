@@ -1,0 +1,180 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_arcane_odyssey"
+	group: ""
+	id: "42EC84B3FE3E621C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Our odyssey commences where most dare not tread, in a bizarre realm brimming with undiscovered plants and creatures. Here, the first marvel that greets you is the perpetual daylight, a ceaseless glow that bathes everything in an otherworldly hue."
+				""
+				"The local myths whisper of formidable guardians, three in number, each standing as a sentinel over your path to freedom. These elusive overlords dwell within their unique strongholds: the first in a dungeon of bronze, the second in a fortress of silver, and the third in a stronghold of gold. To secure your passage from this surreal landscape, you must vanquish these formidable foes, claim the treasures they zealously guard, and unearth an Aether Portal Frame. Only then can you transcend this domain and step forth into the next chapter of your epic saga."
+			]
+			icon: "aether:aether_portal_frame"
+			id: "28BEAC1D3AD033C1"
+			tasks: [{
+				id: "7F7514431DD69A30"
+				title: "Let's get started!"
+				type: "checkmark"
+			}]
+			title: "The Odyssey Begins"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5926A2159ABC9069"
+				"28BEAC1D3AD033C1"
+			]
+			description: [
+				"As you step through the portal, the air shifts dramatically, heat and the scent of sulfur embracing you in an instant. You've entered the Nether, a hellish expanse that stretches out in a panorama of fire and shadow. The ground beneath is a patchwork of smoldering netherrack and treacherous soul sand, with rivers of lava snaking through the landscape like molten veins."
+				""
+				"Around you, the remnants of ancient bastions and fortresses loom, their dilapidated walls and towers whispering tales of battles long past. These structures stand as eerie landmarks in a world that seems bent on your undoing. Ghastly cries echo through the air, and you sense the eyes of hidden creatures watching from the dark recesses."
+				""
+				"As you venture deeper, you realize that this realm is not just about survival but also about understanding its secrets. You must navigate this perilous terrain, decipher the remnants of its lost civilizations, and uncover the clues that will lead you to the boss of these lands. This formidable entity holds the key to your escape, and defeating it will require all your wits, courage, and strength."
+				""
+				"With each step, you steel yourself against the oppressive heat and the ever-present threats that lurk in the shadows and fire. In the Nether, every moment is a fight for survival, but it's a challenge you must face to continue your journey and hope to find a way back to the world you once knew. The path ahead is fraught with danger, but it's the only way to forge your destiny and escape this infernal nightmare."
+			]
+			hide: true
+			icon: "netherportalitem:nether_portal_frame"
+			id: "39FE1A90A5F762AE"
+			tasks: [{
+				id: "425F3AB02D9E58C3"
+				title: "From Heaven to Hell"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"39FE1A90A5F762AE"
+				"50C6FD1095F2927E"
+			]
+			description: [
+				"Emerging from the portal, you step back into the Overworld, the realm that feels most like home yet is filled with its own mysteries and dangers. It's a land caught between the celestial heights of the Aether and the infernal depths of the Nether. Here, the sky stretches out in a vast canopy of blue, and the landscapes range from sprawling plains to dense forests and towering mountains."
+				""
+				"As you orient yourself, you find a nearby village, its inhabitants going about their daily lives. The villagers regard you with a mix of curiosity and wariness, their eyes reflecting stories untold. You learn from them of the land's deceptive peace. While it may seem tranquil compared to the Nether's fiery chaos, the Overworld is not without its threats. Shadows lurk in the dark, and creatures roam the wilds, each night bringing its own perils."
+				""
+				"Among the whispers and exchanged glances, you hear of a stronghold, an ancient structure shrouded in mystery and said to be hidden somewhere in this vast land. Legends speak of it housing an End Portal, a gateway to another dimension where an even greater challenge awaits: the Ender Dragon. The stronghold is not just a place but a journey, one that requires eyes of ender to find and courage to explore."
+				""
+				"Intrigued and determined, you realize that your journey is far from over. The Overworld, with its apparent calm, is a land of deep secrets and hidden dangers. As you prepare to venture forth, you know that each step brings you closer to understanding the true nature of this world and, perhaps, to uncovering the path to the ultimate confrontation that lies in the End. The tales of the stronghold and its secrets fuel your resolve, and with each new dawn, you set out to unravel the mysteries that await."
+			]
+			hide: true
+			icon: "minecraft:grass_block"
+			id: "411FC26DBB795420"
+			tasks: [{
+				id: "52F6F1B037557C3C"
+				title: "Overworld"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["411FC26DBB795420"]
+			hide: true
+			icon: "minecraft:end_portal_frame"
+			id: "1F82B34266C1F94E"
+			tasks: [{
+				id: "20DA67D3169FCD7C"
+				title: "The End?"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["50C6FD1095F2927E"]
+			description: [
+				"Traditional Portal generation is disabled."
+				"Use this repeatable quest to get as many as you need."
+			]
+			disable_toast: true
+			hide: true
+			icon: "netherportalitem:nether_portal_frame"
+			id: "4D71B04539A9EFC0"
+			optional: true
+			rewards: [{
+				id: "7EED1CEA0BC3ADD2"
+				item: "netherportalitem:nether_portal_frame"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 14L
+					icon: "minecraft:obsidian"
+					id: "67B611D8CD0C5813"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "4341AEF224EB714F"
+					item: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Nether Portal Frame"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5926A2159ABC9069"]
+			description: [
+				"Traditional Portal generation is disabled."
+				"Use this repeatable quest to get as many as you need."
+			]
+			disable_toast: true
+			hide: true
+			icon: "aether:aether_portal_frame"
+			id: "53BE7621106000C5"
+			optional: true
+			rewards: [{
+				id: "387D0EC80CE3F849"
+				item: "aether:aether_portal_frame"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 14L
+					icon: "minecraft:glowstone"
+					id: "4E28B3AAC2C401B0"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: "minecraft:water_bucket"
+					id: "05C8435F71B29C12"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			title: "Aether Portal Frame"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "The Arcane Odyssey"
+}

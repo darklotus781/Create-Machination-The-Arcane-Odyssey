@@ -1,0 +1,216 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_0_aetherial_lands"
+	group: "3F3D969172D871AB"
+	id: "401DD7DCCE023222"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["28BEAC1D3AD033C1"]
+			hide: true
+			id: "54904FE100B3C11E"
+			tasks: [{
+				id: "1B5858178EF087E5"
+				title: "Meet the locals!"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			id: "2C74F1B704E57A6E"
+			optional: true
+			tasks: [{
+				entity: "aether:aechor_plant"
+				icon: "aether:aechor_plant_spawn_egg"
+				id: "5A2767AB56708136"
+				title: "Aechor Plant"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["54904FE100B3C11E"]
+			id: "36A93756E822BF86"
+			tasks: [{
+				id: "7C022861A430DCB6"
+				title: "Boss Fights"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["36A93756E822BF86"]
+			hide: true
+			id: "63F6DA49D2098096"
+			tasks: [{
+				id: "37C38C6DDF5AB67A"
+				structure: "aether:bronze_dungeon"
+				title: "Bronze Dungeon"
+				type: "structure"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["63F6DA49D2098096"]
+			description: ["Be sure you have a good pickaxe :)"]
+			id: "5C8C7C148250B74C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1AF7B992A9B533E4"
+				table_id: 1973416385812287726L
+				type: "random"
+			}]
+			tasks: [
+				{
+					entity: "aether:slider"
+					id: "6310903330CDF9BD"
+					title: "Kill the Slider"
+					type: "kill"
+					value: 1L
+				}
+				{
+					consume_items: false
+					id: "3446A91C6A02C825"
+					item: "aether:bronze_dungeon_key"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5C8C7C148250B74C"
+				"36A93756E822BF86"
+			]
+			hide: true
+			id: "311D1A586A9B7936"
+			tasks: [{
+				id: "3B7FF955996D97BD"
+				structure: "aether:silver_dungeon"
+				title: "Silver Dungeon"
+				type: "structure"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["311D1A586A9B7936"]
+			hide: true
+			id: "3ED23D454C78124C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E51413813738DC4"
+					table_id: 7440942548698719000L
+					type: "random"
+				}
+				{
+					id: "41B72114D10523BE"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
+			tasks: [
+				{
+					entity: "aether:valkyrie_queen"
+					id: "108023E753C0C5F0"
+					type: "kill"
+					value: 1L
+				}
+				{
+					consume_items: false
+					id: "3BDAFB902E93F1FF"
+					item: "aether:silver_dungeon_key"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"36A93756E822BF86"
+				"3ED23D454C78124C"
+			]
+			hide: true
+			id: "1E02D31D892493C0"
+			tasks: [{
+				id: "2DD78E8F9569F63D"
+				structure: "aether:gold_dungeon"
+				title: "Find the Gold  Dungeon"
+				type: "structure"
+			}]
+			title: "Gold Dungeon"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1E02D31D892493C0"]
+			hide: true
+			id: "7A59D70A2C813345"
+			rewards: [
+				{
+					id: "2F864687D47B5FE8"
+					item: "aether:aether_portal_frame"
+					type: "item"
+				}
+				{
+					id: "7525C13861702BA1"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5742F1D8F0678022"
+					table_id: 7440942548698719000L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					entity: "aether:sun_spirit"
+					id: "5013720BB6BD0354"
+					type: "kill"
+					value: 1L
+				}
+				{
+					consume_items: false
+					id: "3B87DFA079143783"
+					item: "aether:gold_dungeon_key"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7A59D70A2C813345"]
+			description: [
+				"With the guardians of this realm vanquished, you possess the means to construct a portal frame, your gateway to liberation from this world. As you assemble the mystical structure, you can't help but wonder: where will this new passage lead you? What realms lie beyond, shrouded in enigma and ripe for exploration?"
+				""
+				"Your odyssey is far from over. Ahead lie landscapes yet unseen, civilizations undiscovered, and secrets veiled in the mists of the unknown. Each step is a potential adventure, each choice a new branch in the sprawling epic of your journey. Will you find worlds of unimaginable beauty, or lands fraught with peril? Will you encounter beings of wisdom and power, or creatures of darkness and danger?"
+				""
+				"As you stand before the shimmering portal, you realize that the true question isn't where your journey will lead, but what tales you'll weave and what legacies you'll leave behind in the endless tapestry of your adventure. The mysteries and marvels of countless new worlds await your indomitable spirit. The next chapter beckons, and with it, the continuation of your epic odyssey through the unknown."
+			]
+			id: "5926A2159ABC9069"
+			tasks: [{
+				consume_items: false
+				id: "0478250AE07A34D8"
+				item: "aether:aether_portal_frame"
+				type: "item"
+			}]
+			title: "Time to Go!"
+			x: 3.0d
+			y: 6.5d
+		}
+	]
+	title: "Chapter 1: Aetherial Lands"
+}

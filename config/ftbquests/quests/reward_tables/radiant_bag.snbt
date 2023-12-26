@@ -1,0 +1,12 @@
+{
+	icon: "kubejs:radiant_bag_common"
+	id: "674389D30146E318"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ item: "kubejs:radiant_bag_common" }
+		{ item: "kubejs:radiant_bag_rare" }
+		{ item: "kubejs:radiant_bag_epic" }
+	]
+	title: "Radiant Bag"
+}

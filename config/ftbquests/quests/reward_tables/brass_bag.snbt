@@ -1,0 +1,12 @@
+{
+	icon: "kubejs:brass_bag_common"
+	id: "1B62FBBF4E46D0EE"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ item: "kubejs:brass_bag_common" }
+		{ item: "kubejs:brass_bag_rare" }
+		{ item: "kubejs:brass_bag_epic" }
+	]
+	title: "Brass Bag"
+}

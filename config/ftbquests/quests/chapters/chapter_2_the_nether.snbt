@@ -1,0 +1,215 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_2_the_nether"
+	group: "3F3D969172D871AB"
+	id: "2B528CDE6E448F87"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["394B02F151B85E24"]
+			description: ["When you complete this quest, your Obsidian Flint and Steel will be take, but we'll return them later :)"]
+			hide: true
+			id: "504C21E69925C8A5"
+			tasks: [
+				{
+					icon: "minecraft:piglin_head"
+					id: "035CF10095B6280B"
+					structure: "#minecraft:bastion_remnant"
+					title: "Find a Bastion"
+					type: "structure"
+				}
+				{
+					consume_items: true
+					count: 10L
+					icon: "minecraft:obsidian"
+					id: "402E258F3BAE876A"
+					item: "minecraft:obsidian"
+					title: "Trade Gold and collect 10x Obsidian"
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "55298C2133BE5AF5"
+					item: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Trade gold for gravel and iron"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["394B02F151B85E24"]
+			description: ["Completing this quest will not consume your skulls, don't worry!"]
+			hide: true
+			id: "6C92467011B61125"
+			tasks: [
+				{
+					icon: "minecraft:nether_brick_fence"
+					id: "78FB249FB57E564E"
+					structure: "#betterfortresses:better_fortresses"
+					title: "Find a Fortress"
+					type: "structure"
+				}
+				{
+					entity: "minecraft:wither_skeleton"
+					icon: "minecraft:wither_skeleton_spawn_egg"
+					id: "5CBD9B2F9E7B9BA8"
+					title: "Kill Wither Skeletons"
+					type: "kill"
+					value: 10L
+				}
+				{
+					consume_items: false
+					count: 3L
+					icon: "minecraft:wither_skeleton_skull"
+					id: "149E4C5FC2CC3DA7"
+					item: "minecraft:wither_skeleton_skull"
+					title: "Collect 3 Wither Skeleton Skulls"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"504C21E69925C8A5"
+				"6C92467011B61125"
+			]
+			description: ["Completing this quest will not consume the soul sand, don't worry!"]
+			hide: true
+			id: "7DB2707BB8F3E7FE"
+			tasks: [
+				{
+					biome: "minecraft:soul_sand_valley"
+					icon: "minecraft:soul_campfire"
+					id: "61DDDD0E2576A780"
+					title: "Visit a Soul Sand Valley"
+					type: "biome"
+				}
+				{
+					consume_items: true
+					count: 4L
+					icon: "minecraft:soul_sand"
+					id: "0EC3CD4821029F81"
+					item: "minecraft:soul_sand"
+					title: "Collect 4 Soul Sand"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7DB2707BB8F3E7FE"]
+			description: [
+				"As you arrange the soul sand in its precise configuration and carefully set the wither skeleton skulls atop the final pieces, the air around you begins to crackle with a palpable energy. The moment the last skull is placed, a deep, ominous hum vibrates through the ground, signaling the impending arrival of the Wither Boss."
+				""
+				"The soul sand and skulls burst into a flurry of light and shadow, coalescing into the fearsome form of the Wither. This formidable entity, born from the darkest depths of the nether, emerges with a roar that shakes the very air. Its skeletal form is a sight of terror, with three haunting skulls and a body that radiates a malevolent energy."
+				""
+				"As the Wither ascends, it unleashes a destructive force, blasting the surroundings with explosive skulls. The world around you becomes a battleground, with the Wither seeking to dominate and destroy. You ready your weapons and potions, knowing that the fight ahead will demand every ounce of your skill and courage."
+				""
+				"The battle with the Wither is a dance of chaos and strategy, requiring you to dodge its deadly attacks while finding opportunities to strike. With each hit, the Wither's strength wanes, but it fights back with increased ferocity, determined to maintain its reign of terror."
+				""
+				"As you land the final blow, the Wither shatters in a spectacular explosion of light and shadow, leaving behind the precious Nether Star, a trophy of your victory and the key component needed to create a beacon or construct your portal frame to escape this hellish realm."
+				""
+				"The defeat of the Wither Boss marks a significant triumph in your journey, a testament to your growing strength and resolve. As the dust settles, you collect your prize and prepare for the next phase of your adventure, knowing that each challenge overcome is a step closer to your ultimate destiny."
+			]
+			hide: true
+			id: "0C35ACE97AA5DD9B"
+			rewards: [
+				{
+					id: "59E867498F0F36F6"
+					item: "netherportalitem:nether_portal_frame"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "539D850A05F7DC47"
+					table_id: 7440942548698719000L
+					type: "random"
+				}
+				{
+					id: "2BE7E11C60406F14"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:wither"
+					icon: "ars_nouveau:glyph_wither"
+					id: "2776F4E4A6FDE802"
+					title: "Spawn and Kill a Wither Boss"
+					type: "kill"
+					value: 1L
+				}
+				{
+					consume_items: false
+					icon: "minecraft:nether_star"
+					id: "1C8E2C90C0912E5A"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0C35ACE97AA5DD9B"]
+			description: [
+				"Having summoned and vanquished the formidable Wither Boss, a creature of unspeakable power and malice, you now stand amidst the smoldering remains of the battle. The air is thick with the scent of brimstone and victory. In your hands, you hold the key components harvested from your fallen foe, essential for constructing your gateway to freedom."
+				""
+				"With a sense of urgency and anticipation, you begin the meticulous process of assembling the portal frame. Each piece fits together with an almost magnetic pull, the energies of this realm bending to your will and intent. The frame takes shape, a structure of otherworldly materials and design, standing as a beacon of hope in the midst of the Nether's desolation."
+				""
+				"As you place the final piece, the air around the portal shimmers and vibrates, a silent testament to the power you've harnessed and the threshold you're about to cross. You take a moment to survey the hellish landscape one last time, reflecting on the trials you've overcome and the strength you've gained."
+				""
+				"With a deep breath, you step forward, ready to leave the fiery chaos of the Nether behind. As you pass through the portal, a sense of relief and anticipation washes over you. Where will this new gateway lead? What worlds await to test your mettle and spirit? The answers lie just on the other side, in the next chapter of your unending odyssey."
+			]
+			id: "50C6FD1095F2927E"
+			tasks: [{
+				consume_items: false
+				icon: "netherportalitem:nether_portal_frame"
+				id: "532D202D77A6F43B"
+				item: "netherportalitem:nether_portal_frame"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["39FE1A90A5F762AE"]
+			description: ["You escaped the Aether, only to find yourself in a place much, much worse."]
+			hide: true
+			icon: "netherportalitem:nether_portal_frame"
+			id: "394B02F151B85E24"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "netherportalitem:nether_portal_frame"
+				id: "1D6C12844C48A50F"
+				title: "Visit the Nether"
+				type: "dimension"
+			}]
+			title: "It's getting hot in here."
+			x: 4.0d
+			y: -6.5d
+		}
+	]
+	title: "Chapter 2: The Underworld"
+}

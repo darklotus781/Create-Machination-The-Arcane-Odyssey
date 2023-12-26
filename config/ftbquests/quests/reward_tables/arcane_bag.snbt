@@ -1,0 +1,12 @@
+{
+	icon: "kubejs:arcane_bag_common"
+	id: "3A040777AB7E19AD"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "kubejs:arcane_bag_common" }
+		{ item: "kubejs:arcane_bag_rare" }
+		{ item: "kubejs:arcane_bag_epic" }
+	]
+	title: "Arcane Bag"
+}

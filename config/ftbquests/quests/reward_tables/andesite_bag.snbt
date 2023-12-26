@@ -1,0 +1,12 @@
+{
+	icon: "kubejs:andesite_bag_common"
+	id: "5D8C729C9518505F"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "kubejs:andesite_bag_common" }
+		{ item: "kubejs:andesite_bag_rare" }
+		{ item: "kubejs:andesite_bag_epic" }
+	]
+	title: "Andesite Bag"
+}

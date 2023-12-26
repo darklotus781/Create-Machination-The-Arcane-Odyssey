@@ -1,0 +1,12 @@
+{
+	icon: "kubejs:food_bag_common"
+	id: "6EBCC405C877CE1F"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "kubejs:food_bag_common" }
+		{ item: "kubejs:food_bag_rare" }
+		{ item: "kubejs:food_bag_epic" }
+	]
+	title: "Food Bag"
+}
