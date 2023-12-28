@@ -4,7 +4,7 @@
 	filename: "chapter_3_somewhere_in_between"
 	group: "3F3D969172D871AB"
 	id: "6D0E79974AD2FF7F"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [{
 		dependencies: ["411FC26DBB795420"]

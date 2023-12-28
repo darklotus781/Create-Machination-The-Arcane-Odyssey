@@ -8,5 +8,5 @@
 		{ item: "kubejs:food_bag_rare" }
 		{ item: "kubejs:food_bag_epic" }
 	]
-	title: "Food Bag"
+	title: "Food Reward"
 }

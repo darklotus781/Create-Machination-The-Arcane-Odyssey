@@ -1,0 +1,1153 @@
+{
+	autofocus_id: "6B755A3E6E1AA414"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1_aetherial_lands"
+	group: "3F3D969172D871AB"
+	id: "401DD7DCCE023222"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E14CB64A65C09D9"]
+			id: "36A93756E822BF86"
+			shape: "pentagon"
+			tasks: [{
+				id: "7C022861A430DCB6"
+				title: "Defeat All Bosses"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["36A93756E822BF86"]
+			hide: true
+			id: "63F6DA49D2098096"
+			shape: "diamond"
+			tasks: [{
+				id: "37C38C6DDF5AB67A"
+				structure: "aether:bronze_dungeon"
+				title: "Bronze Dungeon"
+				type: "structure"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["63F6DA49D2098096"]
+			description: ["Be sure you have a good pickaxe :)"]
+			id: "5C8C7C148250B74C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1AF7B992A9B533E4"
+				table_id: 1973416385812287726L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					entity: "aether:slider"
+					id: "6310903330CDF9BD"
+					title: "Kill the Slider"
+					type: "kill"
+					value: 1L
+				}
+				{
+					consume_items: false
+					id: "3446A91C6A02C825"
+					item: "aether:bronze_dungeon_key"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5C8C7C148250B74C"
+				"36A93756E822BF86"
+			]
+			hide: true
+			id: "311D1A586A9B7936"
+			shape: "diamond"
+			tasks: [{
+				id: "3B7FF955996D97BD"
+				structure: "aether:silver_dungeon"
+				title: "Silver Dungeon"
+				type: "structure"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["311D1A586A9B7936"]
+			hide: true
+			id: "3ED23D454C78124C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E51413813738DC4"
+					table_id: 7440942548698719000L
+					type: "random"
+				}
+				{
+					id: "41B72114D10523BE"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					entity: "aether:valkyrie_queen"
+					id: "108023E753C0C5F0"
+					title: "Kill the Valkyrie Queen"
+					type: "kill"
+					value: 1L
+				}
+				{
+					consume_items: false
+					id: "3BDAFB902E93F1FF"
+					item: "aether:silver_dungeon_key"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"36A93756E822BF86"
+				"3ED23D454C78124C"
+			]
+			description: [
+				"The Sun Spirit is the hardest boss in the Aether Mod. He can only be found in Gold Dungeons. To fight him, you must right-click on him. Upon right-clicking, he will talk to you. After talking to him for a while, he will become angry. At this point, he will close off the exit and proceed to attack you. He will do so by rushing at you and/or firing fireballs into the room. He will sometimes fire an ice ball, which you must hit back at him. When it hits him, he will turn into ice, but a smaller version of him will rush at you (only on easy difficulty or higher). You must hit his ice form before it melts, and continue this until he dies. He cannot be harmed by any weapons but he will harm you by hitting you with fireballs. If you come in contact with him, you will catch on fire. It is highly recommended that you go into this fight with Phoenix Armor as it protects you from fire/lava damage. It is also a good idea to go into this fight with a lot of Regeneration Stones to regenerate health."
+				""
+				"He drops the Gold Key and the Sun Altar when defeated. The Gold Key is used to unlock the Locked Chests behind a secret wall in the back of the room. The chest will have several of the best items in the game, but players often miss the chest because of the unusual place it is located."
+			]
+			hide: true
+			id: "1E02D31D892493C0"
+			shape: "diamond"
+			tasks: [{
+				id: "2DD78E8F9569F63D"
+				structure: "aether:gold_dungeon"
+				title: "Find the Gold  Dungeon"
+				type: "structure"
+			}]
+			title: "Gold Dungeon"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1E02D31D892493C0"]
+			description: [
+				"Congratulations, you've made it so far, this is the end of our current development progression."
+				"Not bad for a week's work!  Join our Discord, keep tabs on current development, we'll have a new update soon!"
+			]
+			hide: true
+			id: "7A59D70A2C813345"
+			rewards: [
+				{
+					id: "7525C13861702BA1"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5742F1D8F0678022"
+					table_id: 7440942548698719000L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					entity: "aether:sun_spirit"
+					id: "5013720BB6BD0354"
+					title: "Kill the Sun Spirit"
+					type: "kill"
+					value: 1L
+				}
+				{
+					consume_items: false
+					id: "3B87DFA079143783"
+					item: "aether:gold_dungeon_key"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A59D70A2C813345"]
+			dependency_requirement: "one_completed"
+			description: [
+				"With the guardians of this realm vanquished, you possess the means to construct a portal frame, your gateway to liberation from this world. As you assemble the mystical structure, you can't help but wonder: where will this new passage lead you? What realms lie beyond, shrouded in enigma and ripe for exploration?"
+				""
+				"Your odyssey is far from over. Ahead lie landscapes yet unseen, civilizations undiscovered, and secrets veiled in the mists of the unknown. Each step is a potential adventure, each choice a new branch in the sprawling epic of your journey. Will you find worlds of unimaginable beauty, or lands fraught with peril? Will you encounter beings of wisdom and power, or creatures of darkness and danger?"
+				""
+				"As you stand before the shimmering portal, you realize that the true question isn't where your journey will lead, but what tales you'll weave and what legacies you'll leave behind in the endless tapestry of your adventure. The mysteries and marvels of countless new worlds await your indomitable spirit. The next chapter beckons, and with it, the continuation of your epic odyssey through the unknown."
+			]
+			id: "5926A2159ABC9069"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				consume_items: false
+				id: "0478250AE07A34D8"
+				item: "aether:aether_portal_frame"
+				type: "item"
+			}]
+			title: "Time to Go!"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["28BEAC1D3AD033C1"]
+			description: ["Yeah, yeah, we've been through this before."]
+			hide: true
+			id: "6B755A3E6E1AA414"
+			rewards: [
+				{
+					id: "2BEDC16717BE34CC"
+					item: "aether:book_of_lore"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "7A3C79BA05789AA6"
+					item: "aether:skyroot_log"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0A246080DEC9FFB8"
+					item: "aether:skyroot_sapling"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0BAE67FBB94C31B1"
+				item: "aether:skyroot_sapling"
+				type: "item"
+			}]
+			title: "Go Punch a Tree"
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Use your Skyroot logs to make planks and sticks, turn those into a Skyroot pickaxe and dig up some Holy Stone, it's everywhere."
+				"Make your first set of tools and start exploring!"
+			]
+			id: "7BED0F72CD935AAD"
+			rewards: [
+				{
+					id: "67F869371C98A519"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "61DE97414E205161"
+					table_id: 971780999319815631L
+					type: "random"
+				}
+				{
+					id: "4BF8AE5861192C75"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "16037DE95DBB0BB5"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "veinmining:vein_mining"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "2CA420D977E3AE90"
+					item: {
+						Count: 1b
+						id: "aether:holystone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: false
+					id: "16AAF3F701333A61"
+					item: {
+						Count: 1b
+						id: "aether:holystone_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: false
+					id: "23D5387E447EACDA"
+					item: {
+						Count: 1b
+						id: "aether:holystone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: false
+					id: "1004523081F83DBA"
+					item: {
+						Count: 1b
+						id: "aether:holystone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "Basic Tools"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7BED0F72CD935AAD"]
+			description: [
+				"Ambrosium Ore is like Coal ore in the Overworld."
+				"It's used to make Torches but also works as fuel for the Alter."
+			]
+			icon: "aether:ambrosium_ore"
+			id: "25C3F17E42C0F506"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "578FC72E7FA8F194"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					id: "755DBBEA23BDE24B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "279C99350BAA4DAE"
+				item: "aether:ambrosium_shard"
+				type: "item"
+			}]
+			title: "Mine some Ambrosium Ore"
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7BED0F72CD935AAD"]
+			description: [
+				"Gather some Zanite and make some upgraded tools."
+				"You can also make armor from Zanite, and since there's no iron here, you can also use it to make shields."
+			]
+			icon: "aether:zanite_ore"
+			id: "26FF0721A9C60B6C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5CE466A192A198E9"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					id: "253F001ADE53B1F9"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "7007D7F514C6D8FF"
+				item: "aether:zanite_gemstone"
+				type: "item"
+			}]
+			title: "Mine some Zanite Ore"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2345D81DE4E51864"]
+			description: [
+				"Gravitite Ore is a bit tougher than Zanite, use your new Zanite tools to mine some up."
+				"It looks like Gravitite has some unique properties, perhaps the Altar can conver this ore block."
+			]
+			icon: "aether:gravitite_ore"
+			id: "7954FFE6973FD39A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "374B6782F9D0448D"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					id: "0104BE2557EF306D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				icon: "aether:gravitite_ore"
+				id: "65A22554B6E53F94"
+				item: "aether:gravitite_ore"
+				type: "item"
+			}]
+			title: "Mine some Gravitite Ore"
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"25C3F17E42C0F506"
+				"26FF0721A9C60B6C"
+			]
+			description: ["Stone tools are great, but without iron it seems our best bet is to use this Zanite to make some better tools."]
+			id: "2345D81DE4E51864"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1CE529467D7854B9"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					id: "236EA71BD9D7D24F"
+					table_id: 5860814424445915091L
+					type: "random"
+				}
+				{
+					id: "36C2CFF21577E628"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "7C5D2A56F9B6D823"
+					item: {
+						Count: 1b
+						id: "aether:zanite_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: false
+					id: "57CB525D6EF861AB"
+					item: {
+						Count: 1b
+						id: "aether:zanite_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: false
+					id: "030655355795DC77"
+					item: {
+						Count: 1b
+						id: "aether:zanite_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: false
+					id: "655B0D73E24356AD"
+					item: {
+						Count: 1b
+						id: "aether:zanite_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "Getting an Upgrade"
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7954FFE6973FD39A"]
+			description: [
+				"This is the best we can craft, make some Gravatite Tools and Armor."
+				"Let's go Dungeon Hunting!"
+			]
+			id: "0E14CB64A65C09D9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "264DFBA80173F63E"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66D58FFA2C92F3AC"
+					table_id: 8697717826506614278L
+					type: "random"
+				}
+				{
+					id: "5AD1320710CC5A60"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6650E1D4E3163B60"
+					item: {
+						Count: 1b
+						id: "aether:gravitite_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: false
+					id: "08DAD60127F07675"
+					item: {
+						Count: 1b
+						id: "aether:gravitite_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: false
+					id: "728BB732EAF23DB9"
+					item: {
+						Count: 1b
+						id: "aether:gravitite_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: false
+					id: "6FBA6DB3BD66BF52"
+					item: {
+						Count: 1b
+						id: "aether:gravitite_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "Advanced Tools"
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"356522D6BCF4E0E5"
+				"36775C00F9EF05B3"
+			]
+			id: "29F9A4F0BF45BC4D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1CFF8295BC307AFF"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "76A71CA09A0140CF"
+					table_id: 5860814424445915091L
+					type: "random"
+				}
+			]
+			shape: "pentagon"
+			tasks: [{
+				id: "3166EC0BE9F5ADCE"
+				title: "Observe All Neutral Mobs"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"225BA8C97C016592"
+				"728DC3ABE492E437"
+				"36C42D5692AAD36B"
+				"65A4E0185DB61B5E"
+				"7C6CE8684164C236"
+				"5B3324C2688388F4"
+				"7E94F4B6B4DECF0B"
+				"581DF52A58B91074"
+				"1F94D2E896A9F2B8"
+			]
+			id: "3E2CBE99C79FE9DE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "048ACF0363289C30"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F58CEC36C5C17E8"
+					table_id: 8697717826506614278L
+					type: "random"
+				}
+			]
+			shape: "pentagon"
+			tasks: [{
+				id: "0E43A6DA2119BEFB"
+				title: "Observe All Hostile Mobs"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Aechor Plants spawn on Aether Grass and in multiple groups of 1-3 plants. They also spawn in different sizes, and larger Aechor Plants have more health. The difference in sizes, however, can be difficult to notice."
+				""
+				"Aechor Plants cannot move at all. Instead, they attempt to shoot you with poison darts, much like Cockatrices. While easy to avoid, a group of them can easily do quick damage, and without food, they can be deadly. They can be right-clicked with a bucket to get Poison, which can be used to craft your own Poison Darts and smelted for Remedy Buckets. When killed, they drop Aechor Petals."
+			]
+			hide_dependency_lines: true
+			id: "65A4E0185DB61B5E"
+			rewards: [{
+				id: "146C97E6657AC025"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:aechor_plant_spawn_egg"
+				id: "020DF62480875C17"
+				observe_type: 5
+				timer: 0L
+				title: "Aechor Plant"
+				to_observe: "aether:aechor_plant"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Swets spawn on Aether Grass and may spawn in multiple groups of Swets."
+				""
+				"Swets are hostile and will attempt to close in on the player and attack them. Upon being attacked, they attempt to engulf you. Being engulfed will repeatedly drain the player's hunger for as long as they are trapped inside of a Swet. Repeatedly jumping will remove the player from a Swet and jumping into a body of water will remove a Swet's gel and make them relatively harmless."
+			]
+			hide_dependency_lines: true
+			id: "225BA8C97C016592"
+			rewards: [{
+				id: "5848C32D684A4E1C"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:blue_swet_spawn_egg"
+				id: "0006BC750B5DF686"
+				observe_type: 5
+				timer: 0L
+				title: "Blue Swet"
+				to_observe: "aether:blue_swet"
+				type: "observation"
+			}]
+			title: "Blue Swet"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: ["When the player is about five blocks away, the Golden Swet will jump towards the player rapidly. If the Swet impacts the player, it will despawn and the player will be launched into the air, inflicting damage upon landing. When killed, it will drop anywhere from one to five glowstone."]
+			hide_dependency_lines: true
+			id: "728DC3ABE492E437"
+			rewards: [{
+				id: "5D85C29F360398F5"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:golden_swet_spawn_egg"
+				id: "6367B6D9C59CF7B5"
+				observe_type: 5
+				timer: 0L
+				title: "Golden Swet"
+				to_observe: "aether:golden_swet"
+				type: "observation"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Cockatrices spawn exclusively at night and may spawn in large groups but however do not die upon day arriving."
+				""
+				"Cockatrices lay chicken eggs and drop up to 3 feathers upon death. The eggs are due to the mythology based on cockatrices, which are said to hatch from a chicken egg that is incubated by a snake under the full moon. Considering that chickens have the same exact drops as the dangerous cockatrices, and an additional raw chicken, it is recommended to instead farm those."
+				""
+				"Cockatrices will walk around a bit until they see the player, at which point they will aggressively fire poison darts. Cockatrice's will glow in the dark, on wings body tail and head at night."
+				""
+				"The darts a cockatrice fires do minimal damage, but the real danger is the poison, which does a steady one damage every two seconds and causes the player to lose some control over their movement by giving them inebriation, which can send them plummeting off of a cliff. Because of this, it is recommended to use ranged weapons or consume a bucket of remedy before engaging them in combat. It is also a bad idea to battle them near a cliff or island edge unless you have taken remedy beforehand."
+			]
+			hide_dependency_lines: true
+			id: "7C6CE8684164C236"
+			rewards: [{
+				id: "58AF658742D5473D"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:cockatrice_spawn_egg"
+				id: "1C329B69F7A02D0D"
+				observe_type: 5
+				timer: 0L
+				title: "Cockatrice"
+				to_observe: "aether:cockatrice"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: ["Whirlwinds move about randomly, and can drop down or climb up. If a player gets too close to a Whirlwind, it will fling them into the air, like a zephyr would, potentially harming the player."]
+			hide_dependency_lines: true
+			icon: "aether:evil_whirlwind_spawn_egg"
+			id: "1F94D2E896A9F2B8"
+			rewards: [{
+				id: "5FE80CFA2994A3BD"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:evil_whirlwind_spawn_egg"
+				id: "3486C57516CD453A"
+				observe_type: 5
+				timer: 0L
+				title: "Evil Whirlwind"
+				to_observe: "aether:evil_whirlwind"
+				type: "observation"
+			}]
+			title: "Evil Whirlwind"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Zephyrs spawn during the day."
+				""
+				"Zephyrs will fly down towards the player once they see the player and blow air at the player. This will launch the player into the air and without sufficient armor, the fall damage incurred is usually deadly. Due to this pattern, attacking and killing zephyrs would be far easier, given you can kill them before their wind attack."
+			]
+			hide_dependency_lines: true
+			id: "7E94F4B6B4DECF0B"
+			rewards: [{
+				id: "5A7F8E4155CF7DDD"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:zephyr_spawn_egg"
+				id: "3FEA9536A8AF5F29"
+				observe_type: 5
+				timer: 0L
+				title: "Zephyr"
+				to_observe: "aether:zephyr"
+				type: "observation"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Detonation Sentries primarily spawn from Carved Trap blocks in Slider's Labyrinth dungeons or through mob spawners. They may also be spawned from Sentry Guardians."
+				""
+				"When within range of the player, they explode and destroy themselves. The explosion does little damage, but it will incur considerable fall damage."
+			]
+			hide_dependency_lines: true
+			id: "36C42D5692AAD36B"
+			rewards: [{
+				id: "7629C74556D246B0"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:sentry_spawn_egg"
+				id: "5FD1D3F5EC11E30B"
+				observe_type: 5
+				timer: 0L
+				title: "Sentry"
+				to_observe: "aether:sentry"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Mimics generate as 'doppelgangers' of Skyroot Chests."
+				""
+				"Clicking or attempting to destroy the false chests will make mimics attack the player in response. It should also be noted that Mimics have quite a lot of health, making them even more dangerous than the other monsters."
+			]
+			hide_dependency_lines: true
+			id: "5B3324C2688388F4"
+			rewards: [{
+				id: "60549DD314E1A9CF"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:mimic_spawn_egg"
+				id: "4545D404C0BBBD82"
+				observe_type: 5
+				timer: 0L
+				title: "Mimic"
+				to_observe: "aether:mimic"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: ["These little guys are spawned by the sun spirit."]
+			hide_dependency_lines: true
+			id: "581DF52A58B91074"
+			rewards: [{
+				id: "7125F344FA5ABA4D"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:fire_minion_spawn_egg"
+				id: "1280CA2085E88D9C"
+				observe_type: 5
+				timer: 0L
+				title: "Fire Minion"
+				to_observe: "aether:fire_minion"
+				type: "observation"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: ["Whirlwinds move about randomly, and can drop down or climb up. If a player gets too close to a Whirlwind, it will fling them into the air, like a zephyr would, potentially harming the player."]
+			hide_dependency_lines: true
+			id: "36775C00F9EF05B3"
+			rewards: [{
+				id: "1B781FEC766BC7A3"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:whirlwind_spawn_egg"
+				id: "5B43B29F78048759"
+				observe_type: 5
+				timer: 0L
+				title: "Whirlwind"
+				to_observe: "aether:whirlwind"
+				type: "observation"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: ["Valkyries are neutral mobs who prove themselves through battle. They will not attack unless provoked, and are found only in Silver Dungeons. They seem to be immune to the special effect of the Flaming Sword. They will teleport away if on the peaceful difficulty setting. Upon death, they will drop a Victory Medal. You will need 10 of these medals to initiate the boss battle. The boss, as a Valkyrie, is very honorable as well, and will let you start the battle whenever you are ready, but only after getting 10 Victory Medals from the other valkyries in the dungeon."]
+			hide_dependency_lines: true
+			id: "356522D6BCF4E0E5"
+			rewards: [{
+				id: "2FBC0F5C554511D6"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:valkyrie_spawn_egg"
+				id: "392E2B413242A27E"
+				observe_type: 5
+				timer: 0L
+				title: "Valkyrie"
+				to_observe: "aether:valkyrie"
+				type: "observation"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Aerbunnies spawn on Aether Grass with a light level of at least nine."
+				""
+				"Aerbunnies can jump up to two blocks in height, but typically only jump one block up. They move quite randomly, either circling about in a small radius or wandering off to some area in the distance. Aerbunnies are immune to fall damage and will simply slowly float down if they fall from a high height."
+				""
+				"When right-clicked on, an Aerbunny will appear on the player's head. It will stay there until the player presses left-shift or until it dies. With one on their head, the player will not take any fall damage."
+			]
+			hide_dependency_lines: true
+			id: "08858A1D78EE9F40"
+			rewards: [{
+				id: "6CD2B638FDDD54EF"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:aerbunny_spawn_egg"
+				id: "2652408C9C9E6C1C"
+				observe_type: 5
+				timer: 0L
+				title: "Aerbunny"
+				to_observe: "aether:aerbunny"
+				type: "observation"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Aerwhales spawn far below or above island surfaces, typically unseen by players but can be found flying around under the bottom of islands or above them high in the sky."
+				""
+				"Aerwhales generally fly around aimlessly but occasionally make bellowing whale calls. Aerwhales are not immune to fire and will make loud deep bellowing cries when taking damage."
+			]
+			hide_dependency_lines: true
+			id: "398B13079D423DA5"
+			rewards: [{
+				id: "065DAC1E50B25162"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:aerwhale_spawn_egg"
+				id: "2963D26BF1BFB12E"
+				observe_type: 5
+				timer: 0L
+				title: "Aerwhale"
+				to_observe: "aether:aerwhale"
+				type: "observation"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Flying Cows spawned on Aether Grass with a light level of at least nine. They spawned in packs of about three to five."
+				""
+				"Flying Cows behaved near identically to overworld Cows but they could glide a great distance after jumping. They could be tamed by using a Saddle on them. When tamed, they would not despawn. They dropped Leather, which was the key ingredient to make a Saddle, and a Saddle could be used to ride them."
+			]
+			hide_dependency_lines: true
+			id: "32A8D95D87C03E8C"
+			rewards: [{
+				id: "01E6FCF7A52401BD"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:flying_cow_spawn_egg"
+				id: "2053390A01A14166"
+				observe_type: 5
+				timer: 0L
+				title: "Flying Cow"
+				to_observe: "aether:flying_cow"
+				type: "observation"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Moas spawn in Moa nests. To get their own Moa, the player must steal an egg from a wild Moa Nest and hatch it using an Incubator. Hatched Moas emerge fully grown and must be saddled before they can be ridden. Moas come in a multitude of possible coat base colors, which are randomly chosen."
+				""
+				"Moas are protective and will attack the player if they steal a nest's egg. When a player is riding a Moa around, a number will appear above their hotbar. The number indicates how long the Moa can fly and flying will cause the number to count down. Said number resets after landing on a solid block and once fully depleted, a Moa mount will start to glide downwards instead. Fly time is determined by a Moa's genetics, and each 'jump' is worth 10, so a Moa with two jumps will have a max fly-value of 20."
+			]
+			hide_dependency_lines: true
+			id: "1EEFD3BE2D04555E"
+			rewards: [{
+				id: "43673CC48DD24D36"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:moa_spawn_egg"
+				id: "401FF93CDBDC045E"
+				observe_type: 5
+				timer: 0L
+				title: "Moa"
+				to_observe: "aether:moa"
+				type: "observation"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Phygs spawn on Aether Grass with a light level of at least nine. They spawn in packs of about one to three."
+				""
+				""
+				"Phygs behave near identically to overworld Pigs, but they can float down slowly after falling. This prevents them from suffering fall damage. They can be tamed by using a Saddle on them. When tamed, they will not despawn."
+			]
+			hide_dependency_lines: true
+			id: "39C3EC2B052C4A89"
+			rewards: [{
+				id: "2F0D1E65310399A0"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:phyg_spawn_egg"
+				id: "3F9A2928848B5576"
+				observe_type: 5
+				timer: 0L
+				title: "Phyg"
+				to_observe: "aether:phyg"
+				type: "observation"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Sheepuffs spawn on Aether Grass with a light level of at least nine. They can be naturally found in the following colors: White, Cyan, Blue, Pink and Lime Green. Any non-white color is naturally much rarer."
+				""
+				"Sheepuffs behave near identically to overworld Sheep. They can 'puff' high into the air like a rocket and slowly float to the ground, occasionally to their death. Just like normal sheep in Minecraft, Sheepuffs can be dyed different colors. The wool that can now be sheared will be the color of the original Sheepuff."
+				""
+				"Once sheared once, a Sheepuff will always reset to a white base and the wool regenerates over time from Sheepuff eating grass. They can be sheared twice if their wool is puffy."
+			]
+			hide_dependency_lines: true
+			id: "2967BFC2F3E35B2D"
+			rewards: [{
+				id: "2B65A5EB4E93B44E"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "aether:sheepuff_spawn_egg"
+				id: "20C9CF307D5CD93A"
+				observe_type: 5
+				timer: 0L
+				title: "Sheepuff"
+				to_observe: "aether:sheepuff"
+				type: "observation"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"32A8D95D87C03E8C"
+				"398B13079D423DA5"
+				"08858A1D78EE9F40"
+				"1EEFD3BE2D04555E"
+				"2967BFC2F3E35B2D"
+				"39C3EC2B052C4A89"
+			]
+			id: "7B789D0F054ABA0B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "20764FB1C9214DAA"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B193E049E712BE0"
+					table_id: 5860814424445915091L
+					type: "random"
+				}
+			]
+			shape: "pentagon"
+			tasks: [{
+				id: "030953A8E6CDA055"
+				title: "Observe All Passive Mobs"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+	]
+	title: "Chapter 1: Aetherial Lands"
+}
