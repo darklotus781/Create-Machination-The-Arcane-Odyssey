@@ -1,7 +1,218 @@
 {
+    icon: {
+		Count: 1b
+		id: "ftbquests:lootcrate"
+		tag: {
+			type: "rare_loot_chest"
+		}
+	}
 	id: "6DD0C979FBD74B38"
 	loot_size: 1
 	order_index: 22
-	rewards: [ ]
-	title: "Rare Reward"
+	rewards: [
+        {
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:fortune"
+						lvl: 5s
+					}]
+				}
+			}
+			weight: 3.0f
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:efficiency"
+						lvl: 5s
+					}]
+				}
+			}
+			weight: 3.0f
+		}
+		{
+            item: {
+                Count: 1b
+                id: "minecraft:enchanted_book"
+                tag: {
+                    StoredEnchantments: [{
+                        id: "veinmining:vein_mining"
+                        lvl: 3s
+                    }]
+                }
+            }
+            weight: 5.0f
+        }
+        { item: "sophisticatedbackpacks:stack_upgrade_tier_4" }
+        { item: "functionalstorage:diamond_upgrade", weight: 3.0f }
+        { item: "ars_nouveau:source_gem_block", random_bonus: 2, weight: 3.0f }
+        { item: "artifacts:night_vision_goggles", weight: 2.0f }
+        { item: "minecraft:dragon_egg", weight: 2.0f }
+        { item: "torchmaster:megatorch", weight: 5.0f }
+        { item: "functionalstorage:gold_upgrade", weight: 5.0f }
+        {
+            item: {
+                Count: 1b
+                id: "constructionwand:diamond_wand"
+                tag: {
+                    Damage: 0
+                    wand_options: { }
+                }
+            }
+            weight: 5.0f
+        }
+        { item: "ae2:flawless_budding_quartz" }
+        { item: "sophisticatedbackpacks:void_upgrade", weight: 2.0f }
+        { item: "ars_nouveau:glyph_accelerate" }
+        { item: "ars_nouveau:glyph_aoe" }
+        { item: "reliquary:lantern_of_paranoia", weight: 2.0f }
+        { item: "sophisticatedbackpacks:stack_upgrade_tier_1", weight: 5.0f }
+        { item: "sophisticatedstorage:stack_upgrade_tier_1", weight: 5.0f }
+        { item: "sophisticatedstorage:void_upgrade", weight: 10.0f }
+        {
+            item: {
+                Count: 1b
+                id: "sophisticatedstorage:iron_chest"
+                tag: {
+                    woodType: "oak"
+                }
+            }
+            weight: 10.0f
+        }
+        { item: "ars_nouveau:glyph_explosion" }
+        { count: 3, item: "minecraft:diamond", random_bonus: 3, weight: 10.0f }
+		{ count: 8, item: "minecraft:iron_ingot", random_bonus: 8, weight: 20.0f }
+		{ count: 4, item: "minecraft:gold_ingot", random_bonus: 4, weight: 15.0f }
+		{ count: 16, item: "minecraft:lapis_lazuli", random_bonus: 8, weight: 20.0f }
+		{ item: "minecraft:iron_block", weight: 15.0f }
+		{ item: "minecraft:diamond_block", weight: 10.0f }
+		{ item: "minecraft:gold_block", weight: 12.0f }
+		{ item: "minecraft:redstone_block", random_bonus: 2, weight: 20.0f }
+		{ item: "minecraft:emerald_block", weight: 10.0f }
+		{ item: "minecraft:netherite_scrap", random_bonus: 1, weight: 5.0f }
+        { item: "minecraft:netherite_ingot" }
+        { item: "farmersdelight:hamburger", random_bonus: 1, weight: 15.0f }
+        { count: 8, item: "minecraft:redstone", random_bonus: 16, weight: 15.0f }
+        { item: "minecraft:lava_bucket", weight: 5.0f }
+        { item: "functionalstorage:compacting_drawer", weight: 10.0f }
+        { item: "functionalstorage:simple_compacting_drawer", weight: 10.0f }
+        { count: 4, item: "minecraft:ender_pearl", random_bonus: 4, weight: 10.0f }
+        { item: "minecraft:ender_eye", random_bonus: 2, weight: 5.0f }
+        {
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 2s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:fire_protection"
+						lvl: 2s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:feather_falling"
+						lvl: 2s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:thorns"
+						lvl: 2s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:sharpness"
+						lvl: 2s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:looting"
+						lvl: 2s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:fortune"
+						lvl: 2s
+					}]
+				}
+			}
+		}
+		{ count: 4, item: "minecraft:quartz", random_bonus: 4, weight: 10.0f }
+		{ count: 2, item: "ae2:silicon", random_bonus: 4, weight: 15.0f }
+		{ item: "botania:mana_pool" }
+		{ count: 2, item: "botania:manasteel_ingot", random_bonus: 2, weight: 10.0f }
+		{ item: "botania:mana_diamond", random_bonus: 2, weight: 5.0f }
+		{ item: "botania:mana_pearl", random_bonus: 2, weight: 5.0f }
+		{
+            item: {
+                Count: 1b
+                id: "aquaculture:neptunium_sword"
+                tag: {
+                    Damage: 0
+                }
+            }
+        }
+        { item: "reliquary:pedestals/passive/white_passive_pedestal" }
+        { count: 4, item: "functionalstorage:oak_1", random_bonus: 4, weight: 10.0f }
+        { item: "functionalstorage:void_upgrade", random_bonus: 2, weight: 10.0f }
+		{ item: "sophisticatedbackpacks:stack_upgrade_tier_2" }
+		{ item: "sophisticatedstorage:stack_upgrade_tier_2" }
+		{ item: "minecraft:saddle", weight: 5.0f }
+		{ item: "minecraft:name_tag", weight: 5.0f }
+		{ item: "reliquary:fertile_lily_pad", random_bonus: 2, weight: 5.0f }
+		{ item: "minecraft:wither_skeleton_skull", weight: 10.0f }
+    ]
+	title: "&9Rare Reward"
+    use_title: true
 }

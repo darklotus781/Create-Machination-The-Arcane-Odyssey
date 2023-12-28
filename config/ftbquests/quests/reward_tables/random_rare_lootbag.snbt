@@ -7,7 +7,7 @@
 		{ item: "kubejs:andesite_bag_rare" }
 		{ item: "kubejs:brass_bag_rare" }
 		{ item: "kubejs:radiant_bag_rare" }
-		{ item: "kubejs:end_bag_rare" }
+		{ item: "kubejs:integrational_bag_rare" }
 		{ item: "kubejs:food_bag_rare" }
 	]
 	title: "Random Rare Lootbag"

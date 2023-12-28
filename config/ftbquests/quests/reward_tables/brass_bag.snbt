@@ -9,4 +9,5 @@
 		{ item: "kubejs:brass_bag_epic" }
 	]
 	title: "Brass Reward"
+	use_title: true
 }

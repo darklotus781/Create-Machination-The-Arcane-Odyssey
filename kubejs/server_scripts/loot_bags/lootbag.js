@@ -21,16 +21,16 @@ ItemEvents.rightClicked(event=>{
 })
 
 //Craft rare and epic bags
-ServerEvents.recipes(event => {
-    function bagBuilder(itemName, itemResult) {
-        event.shapeless(itemResult, [itemName])
-    }
-    
-    for (let i = 0; i < global.bag_name.length; i++) {
-        bagBuilder(`4x kubejs:${global.bag_name[i]}_bag_common`, `kubejs:${global.bag_name[i]}_bag_rare`)
-        bagBuilder(`4x kubejs:${global.bag_name[i]}_bag_rare`, `kubejs:${global.bag_name[i]}_bag_epic`)
-    }
-})
+// ServerEvents.recipes(event => {
+//     function bagBuilder(itemName, itemResult) {
+//         event.shapeless(itemResult, [itemName])
+//     }
+//
+//     for (let i = 0; i < global.bag_name.length; i++) {
+//         bagBuilder(`4x kubejs:${global.bag_name[i]}_bag_common`, `kubejs:${global.bag_name[i]}_bag_rare`)
+//         bagBuilder(`4x kubejs:${global.bag_name[i]}_bag_rare`, `kubejs:${global.bag_name[i]}_bag_epic`)
+//     }
+// })
 
 
 /* Optionally, define lootbags as a "pickaxe" and they can be enchanted.

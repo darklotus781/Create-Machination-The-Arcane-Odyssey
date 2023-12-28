@@ -9,4 +9,5 @@
 		{ item: "kubejs:arcane_bag_epic" }
 	]
 	title: "Arcane Reward"
+	use_title: true
 }

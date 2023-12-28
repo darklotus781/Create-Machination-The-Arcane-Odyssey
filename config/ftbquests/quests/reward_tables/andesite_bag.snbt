@@ -9,4 +9,5 @@
 		{ item: "kubejs:andesite_bag_epic" }
 	]
 	title: "Andesite Reward"
+	use_title: true
 }
