@@ -53,4 +53,6 @@ ServerEvents.recipes(event => {
     integrated_parts.forEach(part => {
         event.shapeless(part, [part])
     })
+
+    event.remove({mod:'integrateddynamics',output: "minecraft:netherrack"})
 })

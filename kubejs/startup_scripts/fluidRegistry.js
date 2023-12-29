@@ -4,6 +4,27 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0x000033)
         .displayName('Volatile Sky Solution')
 
+    event.create('molten_diamond')
+        .thickTexture(0x2edaff)
+        .bucketColor(0x2edaff)
+        .stillTexture('tconstruct:block/fluid/molten/still')
+        .flowingTexture('tconstruct:block/fluid/molten/flowing')
+        .displayName('Molten Diamond')
+
+    event.create('molten_gold')
+        .thickTexture(0xFFD700)
+        .bucketColor(0xFFD700)
+        .stillTexture('tconstruct:block/fluid/molten/still')
+        .flowingTexture('tconstruct:block/fluid/molten/flowing')
+        .displayName('Molten Gold')
+
+    event.create('molten_iron')
+        .thickTexture(0xA19D94)
+        .bucketColor(0xA19D94)
+        .stillTexture('tconstruct:block/fluid/molten/still')
+        .flowingTexture('tconstruct:block/fluid/molten/flowing')
+        .displayName('Molten Iron')
+
     event.create('superheated_anthracene')
         .thickTexture(0xFFFFF)
         .bucketColor(0xFFFFF)
@@ -44,15 +65,15 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0x03732F)
         .displayName('Liquid Green Dye')
 
-    event.create('portal_actuation_fluid')
-        .thinTexture(0x03732F)
-        .bucketColor(0x03732F)
-        .displayName('Portal Actuation Fluid')
-
-    event.create('god_actuation_fluid')
-        .thinTexture(0x0AFFFFFF)
-        .bucketColor(0x0AFFFFFF)
-        .displayName('God Actuation Fluid')
+    // event.create('portal_actuation_fluid')
+    //     .thinTexture(0x03732F)
+    //     .bucketColor(0x03732F)
+    //     .displayName('Portal Actuation Fluid')
+    //
+    // event.create('god_actuation_fluid')
+    //     .thinTexture(0x0AFFFFFF)
+    //     .bucketColor(0x0AFFFFFF)
+    //     .displayName('God Actuation Fluid')
 
     event.create('aureal_essence')
         .thinTexture(0xFFFFFF)
@@ -62,6 +83,7 @@ StartupEvents.registry('fluid', event => {
     event.create('liquid_egg')
         .thinTexture(0xF0E5C2)
         .bucketColor(0xF0E5C2)
+
     event.create('liquid_omlett')
         .thinTexture(0xDAD37F)
         .bucketColor(0xDAD37F)
@@ -84,7 +106,6 @@ StartupEvents.registry('fluid', event => {
     ]
     Source.forEach(element => {
         SourceFluids(element[0], element[1])
-
     });
 
     function juice(id, color) {
@@ -104,5 +125,4 @@ StartupEvents.registry('fluid', event => {
     event.create('liquid_resent')
         .stillTexture('kubejs:block/liquid_resent')
         .displayName('Liquidified Resent')
-
 });
