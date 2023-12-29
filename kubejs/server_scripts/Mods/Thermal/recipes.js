@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
     event.remove({id: 'thermal:slime_mushroom_spores'})
     event.remove({id: 'thermal:slime_mushroom_spores'})
     event.remove({id: 'thermal:compat/create/pulverzier_create_tuff'})
+    event.remove({id: 'thermal:compat/create/smelter_create_alloy_andesite_alloy'})
 
     event.replaceInput({id:/.*thermal\:fire_charge.*/}, "minecraft:fire_charge", "forbidden_arcanus:smelter_prism")
     event.replaceInput({output: "thermal:lumium_ingot"}, 'minecraft:glowstone_dust' , 'create:refined_radiance')

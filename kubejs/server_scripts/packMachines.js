@@ -40,14 +40,14 @@ ServerEvents.recipes(event => {
     })
 
     function machinerator(mechanism,casing) {
-        event.shaped("kubejs:" + mechanism + "_machine", [
+        event.shaped('kubejs:' + mechanism + '_machine', [
             'SSS',
             'SCS',
             'SSS'
         ], {
             C: casing,
-            S: "kubejs:" + mechanism + "_mechanism"
-        }).id("wrenchable" + mechanism)
+            S: 'kubejs:' + mechanism + '_mechanism'
+        }).id('wrenchable' + mechanism)
     }
 
     machinerator('radiant','thermal:machine_frame')

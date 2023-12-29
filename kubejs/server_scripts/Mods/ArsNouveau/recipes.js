@@ -9,5 +9,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.deploying('ars_nouveau:magebloom_fiber', ['kubejs:mage_leaf', '#forge:tools/knives'])
 
+    event.shapeless("ars_nouveau:spell_parchment", "4x ars_nouveau:magebloom_fiber")
+
     //Storage Lectern - Gated but early game
 })

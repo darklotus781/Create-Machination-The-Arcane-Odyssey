@@ -1,18 +1,4 @@
 ServerEvents.recipes(event => {
-    // function nineitemstoitem(o,i) {
-    //     event.shaped(o, [
-    //         'SSS',
-    //         'SSS',
-    //         'SSS'
-    //     ], {
-    //         S: i
-    //     })
-    // }
-    //
-    // function itemtoninetimes(o,i){
-    //     event.shapeless(Item.of(o,9),Item.of(i))
-    // }
-
     // 1x Screwdriver
     event.shaped('kubejs:screwdriver', [
         '  G',
@@ -71,4 +57,7 @@ ServerEvents.recipes(event => {
         Item.of('minecraft:redstone'),
         Fluid.of('thermal:redstone', 25)
     ])
+
+    event.shapeless('kubejs:sealed_mechanism', ['2x kubejs:enriched_rubber', '#create:kinetic_mechanisms'])
+    event.shapeless('kubejs:sealed_mechanism', ['4x thermal:cured_rubber', '#create:kinetic_mechanisms'])
 })
