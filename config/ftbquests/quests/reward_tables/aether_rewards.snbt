@@ -7,7 +7,7 @@
 		{ count: 16, item: "aether:golden_dart", random_bonus: 16, weight: 5.0f }
 		{ count: 16, item: "aether:poison_dart", random_bonus: 16, weight: 5.0f }
 		{ count: 16, item: "aether:enchanted_dart", random_bonus: 16, weight: 5.0f }
-		{ item: "aether:present", weight: 1.0f }
+		{ item: "aether:present" }
 		{ item: "aether:zanite_ore", random_bonus: 8, weight: 3.0f }
 		{ item: "aether:gravitite_ore", random_bonus: 4, weight: 2.0f }
 		{ item: "aether:ambrosium_ore", random_bonus: 16, weight: 4.0f }

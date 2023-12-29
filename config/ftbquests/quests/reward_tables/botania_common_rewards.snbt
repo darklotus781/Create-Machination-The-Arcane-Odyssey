@@ -3,8 +3,8 @@
 	loot_size: 1
 	order_index: 27
 	rewards: [
-        { count: 4, item: "botania:livingrock" }
-        { count: 4, item: "botania:livingwood_log" }
+		{ count: 4, item: "botania:livingrock" }
+		{ count: 4, item: "botania:livingwood_log" }
 		{ count: 2, item: "botania:manasteel_ingot", random_bonus: 2 }
 		{ item: "botania:mana_pearl", random_bonus: 2, weight: 0.5f }
 		{ item: "botania:mana_diamond", random_bonus: 1, weight: 0.5f }
@@ -13,7 +13,7 @@
 		{ count: 2, item: "botania:quartz_mana", random_bonus: 2 }
 		{ count: 2, item: "botania:mana_glass", random_bonus: 2 }
 		{ item: "botania:black_lotus", weight: 0.1f }
-    ]
+	]
 	title: "Botania Common Rewards"
 	use_title: true
 }

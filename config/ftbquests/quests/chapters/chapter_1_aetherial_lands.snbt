@@ -18,7 +18,7 @@
 				type: "checkmark"
 			}]
 			x: 7.0d
-			y: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["36A93756E822BF86"]
@@ -32,7 +32,7 @@
 				type: "structure"
 			}]
 			x: 6.0d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["63F6DA49D2098096"]
@@ -61,7 +61,7 @@
 				}
 			]
 			x: 6.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -78,7 +78,7 @@
 				type: "structure"
 			}]
 			x: 7.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["311D1A586A9B7936"]
@@ -114,7 +114,7 @@
 				}
 			]
 			x: 7.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -137,7 +137,7 @@
 			}]
 			title: "Gold Dungeon"
 			x: 8.0d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1E02D31D892493C0"]
@@ -177,7 +177,7 @@
 				}
 			]
 			x: 8.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7A59D70A2C813345"]
@@ -200,7 +200,7 @@
 			}]
 			title: "Time to Go!"
 			x: 8.0d
-			y: 4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["28BEAC1D3AD033C1"]
@@ -626,7 +626,7 @@
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -662,7 +662,7 @@
 				type: "checkmark"
 			}]
 			x: 3.0d
-			y: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -689,7 +689,7 @@
 				type: "observation"
 			}]
 			x: 2.0d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -717,7 +717,7 @@
 			}]
 			title: "Blue Swet"
 			x: 4.0d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -740,7 +740,7 @@
 				type: "observation"
 			}]
 			x: 3.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -771,7 +771,7 @@
 				type: "observation"
 			}]
 			x: 4.0d
-			y: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -796,7 +796,7 @@
 			}]
 			title: "Evil Whirlwind"
 			x: 2.0d
-			y: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -823,7 +823,7 @@
 				type: "observation"
 			}]
 			x: 3.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -850,7 +850,7 @@
 				type: "observation"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -877,7 +877,7 @@
 				type: "observation"
 			}]
 			x: 4.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -900,7 +900,7 @@
 				type: "observation"
 			}]
 			x: 3.0d
-			y: 4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -923,7 +923,7 @@
 				type: "observation"
 			}]
 			x: -1.5d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -946,7 +946,7 @@
 				type: "observation"
 			}]
 			x: 0.5d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -975,7 +975,7 @@
 				type: "observation"
 			}]
 			x: -5.0d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -1002,7 +1002,7 @@
 				type: "observation"
 			}]
 			x: -3.0d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -1029,7 +1029,7 @@
 				type: "observation"
 			}]
 			x: -4.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -1056,7 +1056,7 @@
 				type: "observation"
 			}]
 			x: -5.0d
-			y: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -1084,7 +1084,7 @@
 				type: "observation"
 			}]
 			x: -3.0d
-			y: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6B755A3E6E1AA414"]
@@ -1113,7 +1113,7 @@
 				type: "observation"
 			}]
 			x: -4.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1146,7 +1146,73 @@
 				type: "checkmark"
 			}]
 			x: -4.0d
-			y: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"The Altar is exclusive to the Aether and enchants / repairs and crafts different items."
+				"You can use JEI for recipes.  This is a block you need to craft if you wish to advance here."
+			]
+			hide_dependency_lines: true
+			id: "211B68FDC768B831"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1DC04A2C30F1B213"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "10DAE70100221F39"
+					table_id: 1205720880241428503L
+					type: "random"
+				}
+				{
+					id: "6EDAD0C05346585B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "235A2FC543A3C5D1"
+				item: "aether:altar"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			hide_dependency_lines: true
+			id: "3AF70DD83701A5DC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59CAB3409F104B47"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "015294DB0734991F"
+					table_id: 1205720880241428503L
+					type: "random"
+				}
+				{
+					id: "3665968F76DAB324"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "57033C31AFC0D4A0"
+				item: "aether:freezer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
 		}
 	]
 	title: "Chapter 1: Aetherial Lands"

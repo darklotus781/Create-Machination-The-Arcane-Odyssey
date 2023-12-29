@@ -14,9 +14,9 @@ ItemEvents.rightClicked(event=>{
     }
     //use vanilla loot table for every type of bags
     for (let i = 0; i < global.bag_name.length; i++) {
-        lootbag(`kubejs:${global.bag_name[i]}_bag_common`,`loot:${global.bag_name[i]}/${global.bag_name[i]}_bag_common`)
-        lootbag(`kubejs:${global.bag_name[i]}_bag_rare`,`loot:${global.bag_name[i]}/${global.bag_name[i]}_bag_rare`)
-        lootbag(`kubejs:${global.bag_name[i]}_bag_epic`,`loot:${global.bag_name[i]}/${global.bag_name[i]}_bag_epic`)
+        lootbag(`kubejs:${global.bag_name[i]}_bag_common`,`loot:loot_bags/${global.bag_name[i]}/${global.bag_name[i]}_bag_common`)
+        lootbag(`kubejs:${global.bag_name[i]}_bag_rare`,`loot:loot_bags/${global.bag_name[i]}/${global.bag_name[i]}_bag_rare`)
+        lootbag(`kubejs:${global.bag_name[i]}_bag_epic`,`loot:loot_bags/${global.bag_name[i]}/${global.bag_name[i]}_bag_epic`)
     }
 })
 

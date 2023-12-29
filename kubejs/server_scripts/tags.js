@@ -3,6 +3,11 @@ ServerEvents.tags('item', event => {
     event.add('ars_nouveau:golem/shard', ['minecraft:amethyst_shard', 'ae2:certus_quartz_crystal'])
     event.add('forge:dusts', 'alltheores:netherite_dust')
     event.add('forge:dusts/netherite', 'alltheores:netherite_dust')
+
+    event.add('forge:menril_logs', 'integrateddynamics:menril_log_filled')
+    event.add('forge:menril_logs', 'integrateddynamics:menril_log')
+    event.add('forge:saws', 'kubejs:saw')
+    event.add('forge:screwdrivers', 'kubejs:screwdriver')
 })
 
 

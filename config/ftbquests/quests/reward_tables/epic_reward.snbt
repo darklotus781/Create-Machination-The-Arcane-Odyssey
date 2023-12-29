@@ -3,23 +3,23 @@
 	loot_size: 1
 	order_index: 23
 	rewards: [
-	    { item: "functionalstorage:storage_controller", weight: 3.0f}
-	    { item: "waystones:waystone", weight: 3.0f }
-	    { item: "functionalstorage:netherite_upgrade", weight: 10.0f }
-	    {
-            item: {
-                Count: 1b
-                id: "constructionwand:infinity_wand"
-                tag: {
-                    Damage: 0
-                    wand_options: { }
-                }
-            }
-            weight: 5.0f
-        }
-        { item: "mekanism:advanced_tier_installer", weight: 5.0f }
-        { item: "botania:dice", weight: 5.0f }
-        {
+		{ item: "functionalstorage:storage_controller", weight: 3.0f }
+		{ item: "waystones:waystone", weight: 3.0f }
+		{ item: "functionalstorage:netherite_upgrade", weight: 10.0f }
+		{
+			item: {
+				Count: 1b
+				id: "constructionwand:infinity_wand"
+				tag: {
+					Damage: 0
+					wand_options: { }
+				}
+			}
+			weight: 5.0f
+		}
+		{ item: "mekanism:advanced_tier_installer", weight: 5.0f }
+		{ item: "botania:dice", weight: 5.0f }
+		{
 			item: {
 				Count: 1b
 				id: "minecraft:enchanted_book"
@@ -76,51 +76,51 @@
 		{ item: "artifacts:lucky_scarf", weight: 5.0f }
 		{ item: "ars_nouveau:dominion_wand", weight: 5.0f }
 		{
-            item: {
-                Count: 1b
-                id: "botania:twig_wand"
-                tag: {
-                    color1: 0
-                    color2: 0
-                }
-            }
-        }
-        { item: "createresourcegeodes:catalyst_activator_wand" }
-        {
-            item: {
-                Count: 1b
-                id: "create:potato_cannon"
-                tag: {
-                    Damage: 0
-                }
-            }
-            weight: 10.0f
-        }
-        {
-            item: {
-                Count: 1b
-                id: "create:extendo_grip"
-                tag: {
-                    Damage: 0
-                }
-            }
-            weight: 5.0f
-        }
-        { item: "create:wrench" }
-        { item: "create:linked_controller" }
-        {
-            item: {
-                Count: 1b
-                id: "copper_backtank"
-                tag: {
-                    Air: 420
-                }
-            }
-            weight: 5.0f
-        }
-        { item: "create:schematicannon", weight: 5.0f }
-        { item: "create:schematic_table", weight: 5.0f }
-        { item: "create:empty_schematic", weight: 10.0f }
+			item: {
+				Count: 1b
+				id: "botania:twig_wand"
+				tag: {
+					color1: 0
+					color2: 0
+				}
+			}
+		}
+		{ item: "createresourcegeodes:catalyst_activator_wand" }
+		{
+			item: {
+				Count: 1b
+				id: "create:potato_cannon"
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 10.0f
+		}
+		{
+			item: {
+				Count: 1b
+				id: "create:extendo_grip"
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 5.0f
+		}
+		{ item: "create:wrench" }
+		{ item: "create:linked_controller" }
+		{
+			item: {
+				Count: 1b
+				id: "copper_backtank"
+				tag: {
+					Air: 420
+				}
+			}
+			weight: 5.0f
+		}
+		{ item: "create:schematicannon", weight: 5.0f }
+		{ item: "create:schematic_table", weight: 5.0f }
+		{ item: "create:empty_schematic", weight: 10.0f }
 	]
 	title: "Epic Reward"
 }
