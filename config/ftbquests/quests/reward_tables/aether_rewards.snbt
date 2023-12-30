@@ -1,6 +1,6 @@
 {
 	id: "6E149A8C5E0C9EE7"
-	loot_size: 1
+	loot_size: 2
 	order_index: 6
 	rewards: [
 		{ count: 8, item: "minecraft:bone_meal", random_bonus: 16, weight: 10.0f }

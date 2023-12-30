@@ -267,10 +267,11 @@
 						tag: {
 							StoredEnchantments: [{
 								id: "veinmining:vein_mining"
-								lvl: 3s
+								lvl: 2s
 							}]
 						}
 					}
+					random_bonus: 1
 					type: "item"
 				}
 			]
@@ -1212,6 +1213,47 @@
 				type: "item"
 			}]
 			x: -2.0d
+			y: -2.0d
+		}
+		{
+			description: ["Quicksoil accelerates movement of players, mobs and items.  It's like Blue ice but better."]
+			id: "4A9476591E7D2E74"
+			tasks: [{
+				icon: "aether:quicksoil"
+				id: "195C22C14634DB97"
+				observe_type: 0
+				optional_task: true
+				timer: 0L
+				title: "Quick Soil"
+				to_observe: "aether:quicksoil"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Aerogel is crafted by placing lava in the Aether."
+				"Aerogel is resistant to explosions, more so than other blocks, and is resistant as overworld Obsidian."
+			]
+			id: "1706F339AD3849D9"
+			rewards: [{
+				count: 8
+				id: "2F7CE1A9D9594862"
+				item: "aether:aerogel"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "aether:aerogel"
+				id: "08A5DCC6EAE8CA28"
+				observe_type: 0
+				optional_task: true
+				timer: 0L
+				title: "Aerogel"
+				to_observe: "aether:aerogel"
+				type: "observation"
+			}]
+			x: 2.0d
 			y: -2.0d
 		}
 	]

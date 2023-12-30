@@ -2,6 +2,14 @@
 	id: "0D7C75AB8FEE85CF"
 	loot_size: 1
 	order_index: 10
-	rewards: [ ]
+	rewards: [
+		{ item: "kubejs:arcane_bag_common" }
+		{ item: "kubejs:andesite_bag_common" }
+		{ item: "kubejs:brass_bag_common" }
+		{ item: "kubejs:radiant_bag_common" }
+		{ item: "kubejs:integrational_bag_common" }
+		{ item: "kubejs:food_bag_common" }
+		{ item: "kubejs:farm_bag_common" }
+	]
 	title: "Random Common Lootbag"
 }
