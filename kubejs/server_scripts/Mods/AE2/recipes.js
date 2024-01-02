@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     event.remove({output: 'ae2:charger'})
     event.remove({type: 'ae2:charger'})
     event.remove({output: 'ae2:not_so_mysterious_cube'})
-    event.remove({id:"ae2:network/blocks/quantum_ring"})
+    event.remove({id:'ae2:network/blocks/quantum_ring'})
 
     event.shapeless('ae2:semi_dark_monitor','ae2:dark_monitor')
     event.shapeless('ae2:fluix_covered_cable',['#ae2:covered_cable','#ae2:can_remove_color'])
@@ -22,75 +22,75 @@ ServerEvents.recipes(event => {
     event.recipes.create.cutting('ae2:logic_processor_press', 'gold_block').processingTime(500)
 
     // AE2 Printed Silicon
-    t = "ae2:silicon"
+    t = 'ae2:silicon'
     event.recipes.create.sequenced_assembly([
         'ae2:printed_silicon',
     ], t, [
         event.recipes.create.pressing(t, [t]),
-        event.recipes.create.deploying(t, [t, "ae2:silicon_press"]).keepHeldItem(),
+        event.recipes.create.deploying(t, [t, 'ae2:silicon_press']).keepHeldItem(),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1)
 
     // AE2 Printed Engineering Circuit
-    t = "minecraft:diamond"
+    t = 'minecraft:diamond'
     event.recipes.create.sequenced_assembly([
         'ae2:printed_engineering_processor',
     ], t, [
         event.recipes.create.pressing(t, [t]),
-        event.recipes.create.deploying(t, [t, "ae2:engineering_processor_press"]).keepHeldItem(),
+        event.recipes.create.deploying(t, [t, 'ae2:engineering_processor_press']).keepHeldItem(),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1)
 
     // AE2 Printed Logic Circuit
-    t = "create:golden_sheet"
+    t = 'create:golden_sheet'
     event.recipes.create.sequenced_assembly([
         'ae2:printed_logic_processor',
     ], t, [
         event.recipes.create.pressing(t, [t]),
-        event.recipes.create.deploying(t, [t, "ae2:logic_processor_press"]).keepHeldItem(),
+        event.recipes.create.deploying(t, [t, 'ae2:logic_processor_press']).keepHeldItem(),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1)
 
     // AE2 Printed Calculation Circuit
-    t = "ae2:certus_quartz_crystal"
+    t = 'ae2:certus_quartz_crystal'
     event.recipes.create.sequenced_assembly([
         'ae2:printed_calculation_processor',
     ], t, [
         event.recipes.create.pressing(t, [t]),
-        event.recipes.create.deploying(t, [t, "ae2:calculation_processor_press"]).keepHeldItem(),
+        event.recipes.create.deploying(t, [t, 'ae2:calculation_processor_press']).keepHeldItem(),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1)
 
     // AE2 Engineering Processor
-    t = "ae2:printed_engineering_processor"
+    t = 'kubejs:incomplete_engineering_processor'
     event.recipes.create.sequenced_assembly([
         'ae2:engineering_processor',
-    ], t, [
-        event.recipes.create.deploying(t, [t, "ae2:printed_silicon"]),
-        event.recipes.create.deploying(t, [t, "minecraft:redstone"]),
-        event.recipes.create.filling(t, [t, Fluid.of("kubejs:molten_diamond", 100)]),
+    ], 'ae2:printed_engineering_processor', [
+        event.recipes.create.deploying(t, [t, 'ae2:printed_silicon']),
+        event.recipes.create.deploying(t, [t, 'minecraft:redstone']),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:molten_diamond', 100)]),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1)
 
     // AE2 Logic Processor
-    t = "ae2:printed_logic_processor"
+    t = 'kubejs:incomplete_logic_processor'
     event.recipes.create.sequenced_assembly([
         'ae2:logic_processor',
-    ], t, [
-        event.recipes.create.deploying(t, [t, "ae2:printed_silicon"]),
-        event.recipes.create.deploying(t, [t, "minecraft:redstone"]),
-        event.recipes.create.filling(t, [t, Fluid.of("kubejs:molten_gold", 90)]),
+    ], 'ae2:printed_logic_processor', [
+        event.recipes.create.deploying(t, [t, 'ae2:printed_silicon']),
+        event.recipes.create.deploying(t, [t, 'minecraft:redstone']),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:molten_gold', 90)]),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1)
 
     // AE2 Calculation Processor
-    t = "ae2:printed_calculation_processor"
+    t = 'ae2:incomplete_calculation_processor'
     event.recipes.create.sequenced_assembly([
         'ae2:calculation_processor',
-    ], t, [
-        event.recipes.create.deploying(t, [t, "ae2:printed_silicon"]),
-        event.recipes.create.deploying(t, [t, "minecraft:redstone"]),
-        event.recipes.create.filling(t, [t, Fluid.of("integrateddynamics:menril_resin", 120)]),
+    ], 'ae2:printed_calculation_processor', [
+        event.recipes.create.deploying(t, [t, 'ae2:printed_silicon']),
+        event.recipes.create.deploying(t, [t, 'minecraft:redstone']),
+        event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:menril_resin', 120)]),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1)
 })

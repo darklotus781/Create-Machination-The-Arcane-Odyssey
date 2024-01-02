@@ -102,6 +102,15 @@ StartupEvents.registry("item", event => {
     event.create('incomplete_electrolytic_capacitor', 'create:sequenced_assembly').texture("kubejs:item/capacitor_electrolytic_incomplete").displayName('Incomplete Electrolytic Capacitor')
     event.create('incomplete_inductor_core', 'create:sequenced_assembly').texture("kubejs:item/incomplete_inductor_core").displayName('Incomplete Magnetic Core')
 
+    event.create('incomplete_calculation_processor', 'create:sequenced_assembly').texture("kubejs:item/incomplete_calculation_processor").displayName('Incomplete Calculation Processor')
+    event.create('incomplete_engineering_processor', 'create:sequenced_assembly').texture("kubejs:item/incomplete_engineering_processor").displayName('Incomplete Engineering Processor')
+    event.create('incomplete_logic_processor', 'create:sequenced_assembly').texture("kubejs:item/incomplete_logic_processor").displayName('Incomplete Logic Processor')
+
+    event.create('red_compound').texture("kubejs:item/red_compound").displayName('Red Chroma Compound');
+    event.create('green_compound').texture("kubejs:item/green_compound").displayName('Green Chroma Compound');
+    event.create('blue_compound').texture("kubejs:item/blue_compound").displayName('Blue Chroma Compound');
+    event.create('dirty_dye_compound').texture("kubejs:item/dirty_compound").displayName('Dirty Chroma Compound');
+    event.create('chroma_compound').texture("kubejs:item/chroma_compound").displayName('Pure Chroma Compound');
 
     event.create('carbon_sheet').texture("kubejs:item/carbon_sheet").displayName('Carbon Sheet')
     event.create('mica_sheet').texture("kubejs:item/mica_sheet").displayName('Mica Sheet')
@@ -161,9 +170,9 @@ StartupEvents.registry("item", event => {
     event.create("time_crystal").displayName("Time Crystal Shards")
 
     //AE2
-    event.create('incomplete_calculation_circuit', 'create:sequenced_assembly').displayName('Incomplete Calculation Circuit').texture("kubejs:item/incomplete_kinetic_mechanism")
-    event.create('incomplete_logic_circuit', 'create:sequenced_assembly').displayName('Incomplete Logic Circuit').texture("create:item/incomplete_precision_mechanism")
-    event.create('incomplete_engineering_circuit', 'create:sequenced_assembly').displayName('Incomplete Engineering Circuit').texture("kubejs:item/incomplete_radiant_mechanism")
+    // event.create('incomplete_calculation_circuit', 'create:sequenced_assembly').displayName('Incomplete Calculation Circuit').texture("kubejs:item/incomplete_kinetic_mechanism")
+    // event.create('incomplete_logic_circuit', 'create:sequenced_assembly').displayName('Incomplete Logic Circuit').texture("create:item/incomplete_precision_mechanism")
+    // event.create('incomplete_engineering_circuit', 'create:sequenced_assembly').displayName('Incomplete Engineering Circuit').texture("kubejs:item/incomplete_radiant_mechanism")
 
 
     // Seeds / Clusters

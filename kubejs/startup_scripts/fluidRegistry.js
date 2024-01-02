@@ -25,7 +25,7 @@ StartupEvents.registry('fluid', event => {
         .flowingTexture('tconstruct:block/fluid/molten/flowing')
         .displayName('Molten Iron')
 
-    event.create('chromatic_fluid')
+    event.create('chromatic_solution')
         .displayName('Chromatic Solution')
         .stillTexture('kubejs:block/fluid/chromatic_fluid_still')
         .flowingTexture('kubejs:block/fluid/chromatic_fluid_flow')
@@ -75,17 +75,22 @@ StartupEvents.registry('fluid', event => {
     event.create('dye_slurry_green')
         .thinTexture(0x03732F)
         .bucketColor(0x03732F)
-        .displayName('Green Dye Slurry')
+        .displayName('Green Chromatic Slurry')
 
     event.create('dye_slurry_blue')
         .thinTexture(0x033f73)
         .bucketColor(0x033f73)
-        .displayName('Blue Dye Slurry')
+        .displayName('Blue Chromatic Slurry')
 
     event.create('dye_slurry_red')
         .thinTexture(0x730303)
         .bucketColor(0x730303)
-        .displayName('Red Dye Slurry')
+        .displayName('Red Chromatic Slurry')
+
+    event.create('dirty_chroma_slurry')
+        .thinTexture(0x4f390c)
+        .bucketColor(0x4f390c)
+        .displayName('Dirty Chroma Slurry')
 
     event.create('aureal_essence')
         .thinTexture(0xFFFFFF)
