@@ -4,7 +4,41 @@
 	default_quest_shape: ""
 	filename: "chapter_1_aetherial_lands"
 	group: "3F3D969172D871AB"
+	icon: {
+		Count: 1b
+		id: "aether:gravitite_sword"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "401DD7DCCE023222"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 20.0d
+			hover: [ ]
+			image: "machination:textures/gui/quest_bg_square.png"
+			order: 1
+			rotation: 0.0d
+			width: 20.0d
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 44.0d
+			hover: [ ]
+			image: "machination:textures/gui/aether_bg.png"
+			rotation: 0.0d
+			width: 77.0d
+			x: 1.5d
+			y: 1.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

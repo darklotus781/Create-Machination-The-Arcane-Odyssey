@@ -47,6 +47,89 @@ StartupEvents.registry("item", event => {
     mechanism("Radiant", RARITY_RARE, true)
     incomplete_mechanism("Radiant")
     event.create("makeshift_kinetic_mechanism").tooltip("The Mechanism isn't sturdy enough to support further tiers of mechanisms.")
+    mechanism('Ender');
+    incomplete_mechanism('Ender');
+    mechanism('Calculation');
+    incomplete_mechanism('Calculation');
+    mechanism('Logistics');
+    incomplete_mechanism('Logistics');
+    mechanism('Infernal');
+    incomplete_mechanism('Infernal');
+    mechanism('Integrated');
+    incomplete_mechanism('Integrated');
+    // mechanism('Sealed');
+    mechanism('Rotation')
+    incomplete_mechanism('Rotation')
+    mechanism('Pressure')
+    incomplete_mechanism('Pressure')
+    mechanism('Train')
+    incomplete_mechanism('Train')
+    mechanism('Scorch')
+    incomplete_mechanism('Scorch')
+    mechanism('Explosive')
+    incomplete_mechanism('Explosive')
+    mechanism('Power')
+    incomplete_mechanism('Power')
+    mechanism('Inductive')
+    incomplete_mechanism('Inductive')
+
+    event.create('redstone_alloy_ingot').displayName('Redstone Alloy Ingot')
+    event.create('redstone_alloy_cable').displayName('Redstone Alloy Cable')
+    event.create('fiberglass_plate').displayName('Fiberglass Plate')
+    event.create('incomplete_pcb').displayName('Incomplete PCB')
+    event.create('pcb').displayName('PCB')
+    event.create('incomplete_electronic_circuit', 'create:sequenced_assembly').displayName('Incomplete Electronic Circuit')
+    event.create('andesite_blend').texture("kubejs:item/andesite_blend").displayName('Andesitic Blend')
+    event.create('andesite_dust').texture("kubejs:item/andesite_dust").displayName('Andesite Dust')
+
+    event.create('soaked_sheet').texture("kubejs:item/soaked_sheet").displayName('Soaked Copper Sheet')
+    event.create('rough_sheet').texture("kubejs:item/rough_sheet").displayName('Rough Copper Sheet')
+
+    event.create('resistor').texture("kubejs:item/resistor").displayName('Resistor')
+    event.create('inductor').texture("kubejs:item/inductor").displayName('Induction Coil')
+    event.create('ceramic_capacitor').texture("kubejs:item/capacitor_ceramic").displayName('Ceramic Capacitor')
+    event.create('electrolytic_capacitor').texture("kubejs:item/capacitor_electrolytic").displayName('Electrolytic Capacitor')
+
+    event.create('dirt_resistor').texture("kubejs:item/resistor_dirt").displayName('Dirty Resistor')
+    event.create('dirt_inductor').texture("kubejs:item/inductor_dirt").displayName('Dirty Induction Coil')
+    event.create('dirt_ceramic_capacitor').texture("kubejs:item/capacitor_ceramic_dirt").displayName('Dirty Ceramic Capacitor')
+    event.create('dirt_electrolytic_capacitor').texture("kubejs:item/capacitor_electrolytic_dirt").displayName('Dirty Electrolytic Capacitor')
+    event.create('inductor_core').texture("kubejs:item/inductor_core").displayName('Magnetic Core')
+
+    event.create('incomplete_resistor', 'create:sequenced_assembly').texture("kubejs:item/resistor_incomplete").displayName('Incomplete Resistor')
+    event.create('incomplete_inductor', 'create:sequenced_assembly').texture("kubejs:item/inductor_incomplete").displayName('Incomplete Induction Coil')
+    event.create('incomplete_ceramic_capacitor', 'create:sequenced_assembly').texture("kubejs:item/capacitor_ceramic_incomplete").displayName('Incomplete Ceramic Capacitor')
+    event.create('incomplete_electrolytic_capacitor', 'create:sequenced_assembly').texture("kubejs:item/capacitor_electrolytic_incomplete").displayName('Incomplete Electrolytic Capacitor')
+    event.create('incomplete_inductor_core', 'create:sequenced_assembly').texture("kubejs:item/incomplete_inductor_core").displayName('Incomplete Magnetic Core')
+
+
+    event.create('carbon_sheet').texture("kubejs:item/carbon_sheet").displayName('Carbon Sheet')
+    event.create('mica_sheet').texture("kubejs:item/mica_sheet").displayName('Mica Sheet')
+    event.create('ceramic_powder').texture("kubejs:item/ceramic_powder").displayName('Ceramic Powder')
+
+    event.create('plastic').texture("kubejs:item/plastic").displayName('Plastic')
+    event.create('nickel_compound').texture("kubejs:item/nickel_compound").displayName('Nickel Compound')
+    event.create('invar_compound', 'create:sequenced_assembly').texture("kubejs:item/invar_compound").displayName('Unprocessed Invar Ingot')
+
+    event.create('stone_saw').texture("kubejs:item/stone_saw").displayName('Stone Saw').maxDamage(128)
+    event.create('iron_saw').texture("kubejs:item/iron_saw").displayName('Iron Saw').maxDamage(256)
+    event.create('diamond_saw').texture("kubejs:item/diamond_saw").displayName('Diamond Saw').maxDamage(1024)
+    event.create('screwdriver').texture("kubejs:item/screwdriver").displayName('Screwdriver').maxDamage(512)
+    event.create('lube_can').texture("kubejs:item/lube_can").displayName('Lubricant Can').maxDamage(256)
+    event.create('soldering_iron').texture("kubejs:item/soldering_iron").displayName('Soldering Iron').maxDamage(1024)
+
+    event.create('golden_tube').texture("kubejs:item/yellow_tube").displayName("Golden Tube")
+    event.create('diamond_tube').texture("kubejs:item/blue_tube").displayName("Diamond Tube")
+    event.create('empty_tube').texture("kubejs:item/empty_tube").displayName("Empty Tube")
+
+    event.create('incomplete_sturdy_device', 'create:sequenced_assembly');
+    event.create('incomplete_mechanical_device', 'create:sequenced_assembly');
+    event.create('incomplete_sealed_device', 'create:sequenced_assembly');
+    event.create('incomplete_smart_device', 'create:sequenced_assembly');
+    event.create('incomplete_locomotive_device', 'create:sequenced_assembly');
+    event.create('incomplete_logic_device', 'create:sequenced_assembly');
+    event.create('incomplete_red_stringed_device', 'create:sequenced_assembly');
+    event.create('incomplete_furnished_device', 'create:sequenced_assembly');
 
     event.create("leather_pocket").texture("kubejs:item/leather_pocket").displayName("Leather Pocket");
     event.create("runic_tablet").displayName("Runic Tablet").tooltip("What mysteries may this behold?")
@@ -97,6 +180,6 @@ StartupEvents.registry("item", event => {
     event.create("ae2:engineering_processor_press").displayName('Engineering Processor Press')
 
     tool("Resonator")
-    tool("Saw")
-    tool("Screwdriver")
+    // tool("Saw")
+    // tool("Screwdriver")
 });

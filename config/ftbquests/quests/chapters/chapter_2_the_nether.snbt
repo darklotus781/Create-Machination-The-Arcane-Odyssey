@@ -3,7 +3,35 @@
 	default_quest_shape: ""
 	filename: "chapter_2_the_nether"
 	group: "3F3D969172D871AB"
+	icon: "minecraft:wither_skeleton_skull"
 	id: "2B528CDE6E448F87"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 16.0d
+			hover: [ ]
+			image: "machination:textures/gui/quest_bg_square.png"
+			order: 1
+			rotation: 0.0d
+			width: 16.0d
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 44.0d
+			hover: [ ]
+			image: "machination:textures/gui/nether_bg.png"
+			rotation: 0.0d
+			width: 77.0d
+			x: 4.5d
+			y: -3.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [

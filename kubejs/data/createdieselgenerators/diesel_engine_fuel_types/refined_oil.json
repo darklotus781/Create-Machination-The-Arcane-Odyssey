@@ -1,0 +1,19 @@
+{
+    "fluid": "#forge:refined_oil",
+    "sound_speed": 8,
+    "normal": {
+        "speed": 16.0,
+        "strength": 512.0,
+        "burn_rate": 50
+    },
+    "modular": {
+        "speed": 16.0,
+        "strength": 256.0,
+        "burn_rate": 50
+    },
+    "huge": {
+        "speed": 8.0,
+        "strength": 512.0,
+        "burn_rate": 100
+    }
+}

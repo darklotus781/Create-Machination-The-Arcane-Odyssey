@@ -1,0 +1,10 @@
+ServerEvents.recipes(event => {
+    event.remove({id: 'farmersdelight:flint_knife'})
+    event.remove({id: 'farmersdelight:iron_knife'})
+    event.remove({id: 'farmersdelight:golden_knife'})
+    event.remove({id: 'farmersdelight:diamond_knife'})
+    event.shaped('farmersdelight:flint_knife', ['S ', ' M'], {M: 'minecraft:flint', S: '#rods/wooden'})
+    event.shaped('farmersdelight:iron_knife', ['S ', ' M'], {M: 'minecraft:iron_ingot', S: '#rods/wooden'})
+    event.shaped('farmersdelight:golden_knife', ['S ', ' M'], {M: 'minecraft:gold_ingot', S: '#rods/wooden'})
+    event.shaped('farmersdelight:diamond_knife', ['S ', ' M'], {M: 'minecraft:diamond', S: '#rods/wooden'})
+})

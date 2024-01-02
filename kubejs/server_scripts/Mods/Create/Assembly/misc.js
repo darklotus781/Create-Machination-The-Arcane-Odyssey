@@ -1,10 +1,9 @@
 ServerEvents.recipes(event => {
     let t;
-
     // SADDLE
     t = 'minecraft:leather'
     event.recipes.create.sequenced_assembly([
-        'minecraft:saddle',
+        Item.of('minecraft:saddle'),
     ], 'minecraft:leather', [
         event.recipes.create.deploying(t, [t, 'minecraft:iron_ingot']),
         event.recipes.create.deploying(t, [t, 'minecraft:iron_ingot'])
@@ -12,20 +11,20 @@ ServerEvents.recipes(event => {
 
     // 16x Cogwheel
     t = 'kubejs:incomplete_cogwheel'
-    event.recipes.createSequencedAssembly([
+    event.recipes.create.sequenced_assembly([
         Item.of('create:cogwheel', 16),
     ], 'create:shaft', [
         event.recipes.create.deploying(t, [t, '#minecraft:wooden_buttons']),
         event.recipes.create.cutting(t, t)
-    ]).transitionalItem('kubejs:incomplete_cogwheel').loops(4)
+    ]).transitionalItem(t).loops(4)
 
     // Train Track
     t = 'create:incomplete_track'
-    event.recipes.createSequencedAssembly([
-        '16x create:track',
+    event.recipes.create.sequenced_assembly([
+        Item.of('create:track', 16)
     ], '#create:sleepers', [
-        event.recipes.createDeploying(t, [t, '#create:recipenuggets']),
-        event.recipes.createDeploying(t, [t, '#create:recipenuggets']),
-        event.recipes.createPressing(t, t)
+        event.recipes.create.deploying(t, [t, '#create:recipenuggets']),
+        event.recipes.create.deploying(t, [t, '#create:recipenuggets']),
+        event.recipes.create.pressing(t, t)
     ]).transitionalItem(t).loops(1)
-})
+});

@@ -1,0 +1,19 @@
+{
+    "fluid": "#forge:crude_oil",
+    "sound_speed": 12,
+    "normal": {
+        "speed": 4.0,
+        "strength": 256.0,
+        "burn_rate": 100
+    },
+    "modular": {
+        "speed": 4.0,
+        "strength": 128.0,
+        "burn_rate": 100
+    },
+    "huge": {
+        "speed": 2.0,
+        "strength": 256.0,
+        "burn_rate": 200
+    }
+}

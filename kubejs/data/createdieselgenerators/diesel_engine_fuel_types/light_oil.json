@@ -1,0 +1,19 @@
+{
+    "fluid": "#forge:light_oil",
+    "sound_speed": 10,
+    "normal": {
+        "speed": 8.0,
+        "strength": 256.0,
+        "burn_rate": 5
+    },
+    "modular": {
+        "speed": 8.0,
+        "strength": 128.0,
+        "burn_rate": 5
+    },
+    "huge": {
+        "speed": 4.0,
+        "strength": 256.0,
+        "burn_rate": 10
+    }
+}

@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
     // Redstone Cluster
     t = 'kubejs:redstone_seed'
     event.recipes.create.sequenced_assembly([
-        Item.of('kubejs:redstone_cluster').withChance(45), Item.of(t).withChance(70)
+        Item.of('kubejs:redstone_cluster').withChance(30), Item.of(t).withChance(70)
     ], t, [
         event.recipes.create.filling(t, [t, Fluid.of("kubejs:sky_solution", 150)]),
         event.recipes.create.deploying(t, [t, 'minecraft:sand'])

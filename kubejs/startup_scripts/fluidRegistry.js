@@ -25,15 +25,32 @@ StartupEvents.registry('fluid', event => {
         .flowingTexture('tconstruct:block/fluid/molten/flowing')
         .displayName('Molten Iron')
 
+    event.create('chromatic_fluid')
+        .displayName('Chromatic Solution')
+        .stillTexture('kubejs:block/fluid/chromatic_fluid_still')
+        .flowingTexture('kubejs:block/fluid/chromatic_fluid_flow')
+        .bucketColor('#84416E');
+
+    event.create('ethylene')
+        .displayName('Polyethylene Slurry')
+        .thickTexture('#CCCCCC')
+        .thinTexture('#CCCCCC');
+
+    event.create('molten_glass')
+        .displayName('Molten Glass')
+        .stillTexture('kubejs:block/fluid/molten_glass_still')
+        .flowingTexture('kubejs:block/fluid/molten_glass_flow')
+        .bucketColor('#849b9b');
+
+    event.create('soldermask')
+        .thickTexture(0x9e9cb7)
+        .thinTexture(0x9e9cb7)
+        .displayName('Liquid Solder');
+
     event.create('superheated_anthracene')
         .thickTexture(0xFFFFF)
         .bucketColor(0xFFFFF)
         .displayName('Superheated Anthracene')
-
-    event.create('refined_oil') //for pneumaticraft fuels
-        .thinTexture(0x090909)
-        .bucketColor(0x090909)
-        .displayName('Refined Oil')
 
     event.create('dichromic_acid')
         .thinTexture(0x800020)
@@ -45,11 +62,6 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0x3A4100)
         .displayName('Chromatic Waste')
 
-    event.create('sulfuric_acid')
-        .thinTexture(0x0AFFFFFF)
-        .bucketColor(0x0AFFFFFF)
-        .displayName('Sulfuric Acid')
-
     event.create('invar_slurry')
         .thickTexture(0x333300)
         .bucketColor(0x333300)
@@ -60,34 +72,55 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0x9F2B68)
         .displayName('Anthraquinone')
 
-    event.create('green_anthraquinone')
+    event.create('dye_slurry_green')
         .thinTexture(0x03732F)
         .bucketColor(0x03732F)
-        .displayName('Liquid Green Dye')
+        .displayName('Green Dye Slurry')
 
-    // event.create('portal_actuation_fluid')
-    //     .thinTexture(0x03732F)
-    //     .bucketColor(0x03732F)
-    //     .displayName('Portal Actuation Fluid')
-    //
-    // event.create('god_actuation_fluid')
-    //     .thinTexture(0x0AFFFFFF)
-    //     .bucketColor(0x0AFFFFFF)
-    //     .displayName('God Actuation Fluid')
+    event.create('dye_slurry_blue')
+        .thinTexture(0x033f73)
+        .bucketColor(0x033f73)
+        .displayName('Blue Dye Slurry')
+
+    event.create('dye_slurry_red')
+        .thinTexture(0x730303)
+        .bucketColor(0x730303)
+        .displayName('Red Dye Slurry')
 
     event.create('aureal_essence')
         .thinTexture(0xFFFFFF)
         .bucketColor(0xFFFFFF)
         .displayName('Aureal Essence')
 
-    event.create('liquid_egg')
-        .thinTexture(0xF0E5C2)
-        .bucketColor(0xF0E5C2)
+    event.create('lpg')
+        .thinTexture(0xe8d36e)
+        .bucketColor(0xe8d36e)
+        .displayName('Liquid Propane Gas');
 
-    event.create('liquid_omlett')
-        .thinTexture(0xDAD37F)
-        .bucketColor(0xDAD37F)
+    event.create('kerosene')
+        .thinTexture(0x6aedf3)
+        .bucketColor(0x6aedf3)
+        .displayName('Kerosene');
 
+    event.create('refined_oil')
+        .thinTexture(0x131313)
+        .bucketColor(0x131313)
+        .displayName('Refined Oil');
+
+    event.create('plastic')
+        .thinTexture(0xd8d8d5)
+        .bucketColor(0xd8d8d5)
+        .displayName('Molten Plastic');
+
+    event.create('sulfuric_acid')
+        .thinTexture(0xc1b851)
+        .bucketColor(0xc1b851)
+        .displayName('Sulfuric Acid')
+
+    event.create('dirt_water')
+        .thinTexture(0xc18551)
+        .bucketColor(0xc18551)
+        .displayName('Dirty Water')
 
     function SourceFluids(Name, id, bucket) {
         event.create(id)
@@ -99,11 +132,11 @@ StartupEvents.registry('fluid', event => {
     const Source = [
         ['Sourceberry Juice', 'sourceberry_juice'],
         ['Magebloom Juice', 'magebloom_juice'],
-        ['Magebloom Sourceberry Smoothie', 'magebloom_sourceberry_smoothie'],
+        ['Magebloom Sourceberry Smoothie', 'mageberry_smoothie'],
         ['Impure Source', 'impure_source'],
         ['Source', 'source']
-
     ]
+
     Source.forEach(element => {
         SourceFluids(element[0], element[1])
     });

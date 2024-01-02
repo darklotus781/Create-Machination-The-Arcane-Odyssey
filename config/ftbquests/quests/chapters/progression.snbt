@@ -1,0 +1,559 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "progression"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "ars_nouveau:dominion_wand"
+		tag: { }
+	}
+	id: "38790066AE0C96F0"
+	images: [
+		{
+			alpha: 200
+			click: ""
+			corner: false
+			dev: false
+			height: 14.0d
+			hover: [ ]
+			image: "machination:textures/gui/quest_bg_square.png"
+			order: 1
+			rotation: 0.0d
+			width: 14.0d
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 45.714285714285715d
+			hover: [ ]
+			image: "machination:textures/gui/arcane_journey_bg.png"
+			rotation: 0.0d
+			width: 80.0d
+			x: 2.0d
+			y: -1.5d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["411FC26DBB795420"]
+			description: [
+				"When things seem overwhelming, know that you are capable of overcoming these obstacles. "
+				"In this pack its not your resources that limit you, but your will to think outside the box. "
+				""
+				"While the first chapters may feel tough resource wise, we can guarantee that after the initial start you won't find yourself in the need of many resources anymore. "
+				""
+				"Good Luck Engineer!"
+			]
+			hide_dependency_lines: true
+			id: "3BAD2CEF1245F202"
+			rewards: [
+				{
+					id: "419427A795E296D0"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "veinmining:vein_mining"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "567EAF9973FFE65F"
+					item: "ftbquests:book"
+					type: "item"
+				}
+				{
+					id: "26611519226B9A9C"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3C638DEE93C407D4"
+				title: "Let the journey begin!"
+				type: "checkmark"
+			}]
+			title: "Good Luck!"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3BAD2CEF1245F202"]
+			description: ["These are Tech Chapters! Here you will be expanding your technological capabilities through innovation!"]
+			icon: "kubejs:andesite_machine"
+			id: "6EFF8BCEBC2E2AF2"
+			tasks: [
+				{
+					id: "69A69B5061736432"
+					title: "Yis I wanna do the next chapter."
+					type: "checkmark"
+				}
+				{
+					count: 64L
+					id: "51634362D7550FBC"
+					item: "kubejs:kinetic_mechanism"
+					type: "item"
+				}
+				{
+					id: "1CD034E3AED8E198"
+					item: "kubejs:andesite_machine"
+					type: "item"
+				}
+			]
+			title: "First Tech Chapter: Alluring Allusions"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3BAD2CEF1245F202"]
+			description: [
+				"These are the Magic Chapters. Here you are tasked to find solutions to the extreme weirdness of Arcane Recipes. "
+				"If however you fight past the struggle and conquer these challenges, tools unimaginably powerful will be yours."
+			]
+			icon: "quark:violet_corundum"
+			id: "07D1ED74C8A30306"
+			tasks: [
+				{
+					id: "49D09317C4599073"
+					item: "kubejs:runic_tablet"
+					type: "item"
+				}
+				{
+					id: "7F9798CE766D6BB8"
+					title: "Yes, Lets do the next chapter"
+					type: "checkmark"
+				}
+			]
+			title: "The first Magic chapter: Crystalline Captivation"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6EFF8BCEBC2E2AF2"]
+			icon: "kubejs:sealed_machine"
+			id: "3B25D99BFA2C928C"
+			tasks: [{
+				id: "69C2E51A9F5E986B"
+				title: "Unlock the Chapter!"
+				type: "checkmark"
+			}]
+			title: "Extra Chapter: The Copper Age"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6EFF8BCEBC2E2AF2"]
+			description: ["Before going into the Brass age, one should not rush things and slowly advance their infrastructure, so they can handle the new demands of the Brass Age!"]
+			icon: "kubejs:brass_machine"
+			id: "3A10D0D5E8548C54"
+			tasks: [
+				{
+					id: "3B65AFBFCCD2CF77"
+					item: "kubejs:brass_machine"
+					type: "item"
+				}
+				{
+					id: "73BB42050BFC9FA6"
+					title: "Gimme more chapters!"
+					type: "checkmark"
+				}
+				{
+					count: 64L
+					id: "40D21620E9D2FEE6"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+			]
+			title: "Extraterrestrial Expeditions"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3A10D0D5E8548C54"]
+			dependency_requirement: "one_started"
+			icon: "kubejs:sturdy_machine"
+			id: "2E949A84C2E9B3C8"
+			subtitle: "Trains!"
+			tasks: [{
+				id: "73E5284067DB7466"
+				title: "Yes Unlock Pls!"
+				type: "checkmark"
+			}]
+			title: "Chapter 2 Extra: Sturdy Machinery"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["19232B8B77F86AF8"]
+			description: ["AE2 is now fully unlocked."]
+			id: "099F5D860FC50376"
+			tasks: [{
+				id: "06B2E74E9A4D86D9"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			title: "Processing Pandemonium"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["07D1ED74C8A30306"]
+			icon: "ars_elemental:yellow_archwood"
+			id: "10190AA2A7C13277"
+			tasks: [
+				{
+					id: "2F22340B7C506B32"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					id: "2CEA253303F6DB06"
+					title: "We can continue!"
+					type: "checkmark"
+				}
+			]
+			title: "Herbalists Heritage"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3A10D0D5E8548C54"]
+			icon: "kubejs:radiant_machine"
+			id: "19232B8B77F86AF8"
+			tasks: [
+				{
+					id: "551C5F3F6005F6FE"
+					item: "kubejs:radiant_machine"
+					type: "item"
+				}
+				{
+					id: "7148E1E85BDF49D9"
+					title: "Give me harder demons"
+					type: "checkmark"
+				}
+				{
+					count: 32L
+					id: "385DF4C6DF98BCCE"
+					item: "kubejs:radiant_mechanism"
+					type: "item"
+				}
+			]
+			title: "Chromatic Creation"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["19232B8B77F86AF8"]
+			icon: "kubejs:plastic_machine"
+			id: "5A8CA8146004CDE2"
+			tasks: [{
+				id: "5076BF5FA05B47C6"
+				title: "Unlock the Pneumatic Age!"
+				type: "checkmark"
+			}]
+			title: "The Pneumatic Age"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["10190AA2A7C13277"]
+			icon: "forbidden_arcanus:gilded_darkstone"
+			id: "10F884D73B9DB540"
+			tasks: [
+				{
+					id: "40072B1C1C293840"
+					title: "Unlock the final Magic Chapter"
+					type: "checkmark"
+				}
+				{
+					id: "06790D855864E027"
+					item: {
+						Count: 1b
+						id: "tiab:time_in_a_bottle"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Chronical Chaos"
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["10F884D73B9DB540"]
+			icon: {
+				Count: 1b
+				id: "forbidden_arcanus:eternal_stella"
+				tag: { }
+			}
+			id: "1874AF18742915E4"
+			tasks: [{
+				id: "34CC89E7B5DB7605"
+				item: {
+					Count: 1b
+					id: "forbidden_arcanus:eternal_stella"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Enigmatic Enlightenment"
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"099F5D860FC50376"
+				"1874AF18742915E4"
+			]
+			hide: false
+			id: "33B884E7D9E5A820"
+			tasks: [{
+				dimension: "cae:arcane"
+				id: "591F00D721AAA163"
+				type: "dimension"
+			}]
+			title: "Arcane Alchemistry"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"10F884D73B9DB540"
+				"19232B8B77F86AF8"
+			]
+			icon: "kubejs:time_machine"
+			id: "321593B0981F168B"
+			tasks: [{
+				id: "77DF7F1EC935C976"
+				title: "Unlock the road to AE2"
+				type: "checkmark"
+			}]
+			title: "Master your AE2 Network"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3A10D0D5E8548C54"
+				"10190AA2A7C13277"
+			]
+			icon: "kubejs:integrational_machine"
+			id: "1F401CB82AEBC9FE"
+			tasks: [{
+				id: "469E7DA40F9E39C3"
+				title: "Unlock the Integrational Chapter"
+				type: "checkmark"
+			}]
+			title: "Integrational Chapter"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["33B884E7D9E5A820"]
+			hide: true
+			id: "1C392A3E7ADA7109"
+			tasks: [{
+				id: "07D8543A567B2541"
+				item: "avaritia:zyzzium_ingot"
+				type: "item"
+			}]
+			title: "The Destination."
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5926A2159ABC9069"]
+			description: [
+				"Traditional Portal generation is disabled."
+				"Use this repeatable quest to get as many as you need."
+			]
+			disable_toast: true
+			hide: true
+			icon: "aether:aether_portal_frame"
+			id: "53BE7621106000C5"
+			optional: true
+			rewards: [{
+				id: "387D0EC80CE3F849"
+				item: "aether:aether_portal_frame"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 14L
+					icon: "minecraft:glowstone"
+					id: "4E28B3AAC2C401B0"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: "minecraft:water_bucket"
+					id: "05C8435F71B29C12"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			title: "Aether Portal Frame"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"Our odyssey commences where most dare not tread, in a bizarre realm brimming with undiscovered plants and creatures. Here, the first marvel that greets you is the perpetual daylight, a ceaseless glow that bathes everything in an otherworldly hue."
+				""
+				"The local myths whisper of formidable guardians, three in number, each standing as a sentinel over your path to freedom. These elusive overlords dwell within their unique strongholds: the first in a dungeon of bronze, the second in a fortress of silver, and the third in a stronghold of gold. To secure your passage from this surreal landscape, you must vanquish these formidable foes, claim the treasures they zealously guard, and unearth an Aether Portal Frame. Only then can you transcend this domain and step forth into the next chapter of your epic saga."
+			]
+			icon: "aether:aether_portal_frame"
+			id: "28BEAC1D3AD033C1"
+			tasks: [{
+				id: "7F7514431DD69A30"
+				title: "Let's get started!"
+				type: "checkmark"
+			}]
+			title: "The Odyssey Begins"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5926A2159ABC9069"
+				"28BEAC1D3AD033C1"
+			]
+			description: [
+				"As you step through the portal, the air shifts dramatically, heat and the scent of sulfur embracing you in an instant. You've entered the Nether, a hellish expanse that stretches out in a panorama of fire and shadow. The ground beneath is a patchwork of smoldering netherrack and treacherous soul sand, with rivers of lava snaking through the landscape like molten veins."
+				""
+				"Around you, the remnants of ancient bastions and fortresses loom, their dilapidated walls and towers whispering tales of battles long past. These structures stand as eerie landmarks in a world that seems bent on your undoing. Ghastly cries echo through the air, and you sense the eyes of hidden creatures watching from the dark recesses."
+				""
+				"As you venture deeper, you realize that this realm is not just about survival but also about understanding its secrets. You must navigate this perilous terrain, decipher the remnants of its lost civilizations, and uncover the clues that will lead you to the boss of these lands. This formidable entity holds the key to your escape, and defeating it will require all your wits, courage, and strength."
+				""
+				"With each step, you steel yourself against the oppressive heat and the ever-present threats that lurk in the shadows and fire. In the Nether, every moment is a fight for survival, but it's a challenge you must face to continue your journey and hope to find a way back to the world you once knew. The path ahead is fraught with danger, but it's the only way to forge your destiny and escape this infernal nightmare."
+			]
+			hide: true
+			icon: "netherportalitem:nether_portal_frame"
+			id: "39FE1A90A5F762AE"
+			tasks: [{
+				id: "425F3AB02D9E58C3"
+				title: "From Heaven to Hell"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["50C6FD1095F2927E"]
+			description: [
+				"Traditional Portal generation is disabled."
+				"Use this repeatable quest to get as many as you need."
+			]
+			disable_toast: true
+			hide: true
+			icon: "netherportalitem:nether_portal_frame"
+			id: "4D71B04539A9EFC0"
+			optional: true
+			rewards: [{
+				id: "7EED1CEA0BC3ADD2"
+				item: "netherportalitem:nether_portal_frame"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 14L
+					icon: "minecraft:obsidian"
+					id: "67B611D8CD0C5813"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "4341AEF224EB714F"
+					item: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Nether Portal Frame"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"39FE1A90A5F762AE"
+				"50C6FD1095F2927E"
+			]
+			description: [
+				"Emerging from the portal, you step back into the Overworld, the realm that feels most like home yet is filled with its own mysteries and dangers. It's a land caught between the celestial heights of the Aether and the infernal depths of the Nether. Here, the sky stretches out in a vast canopy of blue, and the landscapes range from sprawling plains to dense forests and towering mountains."
+				""
+				"As you orient yourself, you find a nearby village, its inhabitants going about their daily lives. The villagers regard you with a mix of curiosity and wariness, their eyes reflecting stories untold. You learn from them of the land's deceptive peace. While it may seem tranquil compared to the Nether's fiery chaos, the Overworld is not without its threats. Shadows lurk in the dark, and creatures roam the wilds, each night bringing its own perils."
+				""
+				"Among the whispers and exchanged glances, you hear of a stronghold, an ancient structure shrouded in mystery and said to be hidden somewhere in this vast land. Legends speak of it housing an End Portal, a gateway to another dimension where an even greater challenge awaits: the Ender Dragon. The stronghold is not just a place but a journey, one that requires eyes of ender to find and courage to explore."
+				""
+				"Intrigued and determined, you realize that your journey is far from over. The Overworld, with its apparent calm, is a land of deep secrets and hidden dangers. As you prepare to venture forth, you know that each step brings you closer to understanding the true nature of this world and, perhaps, to uncovering the path to the ultimate confrontation that lies in the End. The tales of the stronghold and its secrets fuel your resolve, and with each new dawn, you set out to unravel the mysteries that await."
+			]
+			hide: true
+			icon: "minecraft:grass_block"
+			id: "411FC26DBB795420"
+			tasks: [{
+				id: "52F6F1B037557C3C"
+				title: "Overworld"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["411FC26DBB795420"]
+			hide: true
+			icon: "minecraft:end_portal_frame"
+			id: "1F82B34266C1F94E"
+			tasks: [{
+				id: "20DA67D3169FCD7C"
+				title: "The End?"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1F82B34266C1F94E"]
+			hide: true
+			id: "4D5FD6A4512B2406"
+			tasks: [{
+				dimension: "allthemodium:the_other"
+				icon: "allthemodium:teleport_pad"
+				id: "5F81B69F46DCE538"
+				title: "Visit the Other"
+				type: "dimension"
+			}]
+			title: "Not The End, The Other place!"
+			x: 8.0d
+			y: -2.5d
+		}
+	]
+	title: "The Arcane Odyssey"
+}

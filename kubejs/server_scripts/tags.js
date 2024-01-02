@@ -5,10 +5,14 @@ ServerEvents.tags('item', event => {
     event.add('forge:dusts/netherite', 'alltheores:netherite_dust')
     event.add('forge:menril_logs', 'integrateddynamics:menril_log_filled')
     event.add('forge:menril_logs', 'integrateddynamics:menril_log')
-    event.add('forge:saws', 'kubejs:saw')
-    event.add('forge:screwdrivers', 'kubejs:screwdriver')
-    event.add('forge:screwdrivers', 'framedblocks:framed_screwdriver')
     event.add('forge:resonators', 'kubejs:resonator')
+
+    event.get('forge:saws').add('kubejs:stone_saw').add('kubejs:iron_saw').add('kubejs:diamond_saw')
+    event.get('forge:screwdrivers').add('kubejs:screwdriver').add('framedblocks:framed_screwdriver')
+    event.get('forge:super_glues').add('create:super_glue')
+    event.get('forge:wrenches').add('create:wrench')
+    event.get('forge:tools/wrench').add('create:wrench')
+    event.get('forge:soldering_irons').add('kubejs:soldering_iron')
 
     let vial = ['anthracene', 'incomplete_anthraquinone','anthraquinone','empty_vial']
     vial.forEach(I => {
