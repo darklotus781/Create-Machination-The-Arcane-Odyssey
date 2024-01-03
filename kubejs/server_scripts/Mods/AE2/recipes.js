@@ -84,13 +84,13 @@ ServerEvents.recipes(event => {
     ]).transitionalItem(t).loops(1)
 
     // AE2 Calculation Processor
-    t = 'ae2:incomplete_calculation_processor'
+    t = 'kubejs:incomplete_calculation_processor'
     event.recipes.create.sequenced_assembly([
         'ae2:calculation_processor',
     ], 'ae2:printed_calculation_processor', [
         event.recipes.create.deploying(t, [t, 'ae2:printed_silicon']),
         event.recipes.create.deploying(t, [t, 'minecraft:redstone']),
-        event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:menril_resin', 120)]),
+        event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:menril_resin').withAmount(120)]),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1)
 })

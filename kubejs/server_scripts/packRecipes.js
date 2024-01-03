@@ -37,7 +37,9 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting(Fluid.of('kubejs:blazing_juice').withAmount(250), Item.of('ars_nouveau:red_archwood_sapling')).superheated();
 
     // Process Vials
-    event.recipes.create.emptying([Item.of('kubejs:chrom'), Fluid.of('kubejs:chromatic_waste').withAmount(250)], Item.of('minecraft:glowstone_dust'));
+    event.recipes.create.compacting(Fluid.of('kubejs:superheated_anthracene').withAmount(144), Item.of('thermal:tar')).superheated().processingTime(400);
+
+    event.recipes.create.emptying([Item.of('kubejs:chromium'), Fluid.of('kubejs:chromatic_waste').withAmount(250)], Item.of('minecraft:glowstone_dust'));
     event.recipes.create.emptying([Item.of('kubejs:empty_vial'), Fluid.of('kubejs:liquid_anthraquinone').withAmount(56)], Item.of('kubejs:anthraquinone'));
     event.recipes.create.emptying([Item.of('kubejs:dirty_bowl'), Fluid.of('kubejs:impure_source').withAmount(50)], Item.of('kubejs:mageberry_smoothie'));
 
@@ -60,16 +62,19 @@ ServerEvents.recipes(event => {
         result: {item: 'kubejs:redstone_alloy_cable', count: 4}
     });
 
+    // Create Electron Tube
     event.recipes.create.filling([Item.of('create:electron_tube')], [
         Item.of('create:rose_quartz'),
         Fluid.of('kubejs:molten_iron').withAmount(45)
     ]).id('create:electron_tube_from_iron');
 
+    // Create Rose Quartz
     event.recipes.create.filling([Item.of('create:rose_quartz')], [
         Item.of('minecraft:redstone'),
         Fluid.of('thermal:redstone').withAmount(25)
     ]).id('create:rose_quartz_from_redstone');
 
+    // Sealed Mechanism
     event.shapeless('kubejs:sealed_mechanism', [Item.of('kubejs:enriched_rubber', 2), '#create:kinetic_mechanisms'])
     event.shapeless('kubejs:sealed_mechanism', [Item.of('thermal:cured_rubber', 4), '#create:kinetic_mechanisms'])
 
@@ -79,6 +84,8 @@ ServerEvents.recipes(event => {
     // Fiberglass Plate from Molten Glass
     event.recipes.create.compacting([Item.of('kubejs:fiberglass_plate')], [Item.of('minecraft:string', 4), Fluid.of('kubejs:molten_glass').withAmount(500)]);
 
+    event.recipes.create.mixing(Fluid.of("kubejs:sky_solution").withAmount(100), ['ae2:sky_dust', Fluid.water(100)])
+    event.recipes.create.mixing(Item.of("minecraft:gunpowder", 4), [Item.of('kubejs:powdered_flint', 4), Fluid.of("thermal:refined_fuel", 600)])
     event.recipes.create.mixing(Fluid.of('kubejs:mageberry_smoothie').withAmount(200), [Fluid.of('kubejs:magebloom_juice').withAmount(100), Fluid.of('kubejs:sourceberry_juice').withAmount(100)])
     event.recipes.create.mixing(Fluid.of('kubejs:source').withAmount(3), [Fluid.of('kubejs:impure_source').withAmount(12)]).heated()
     event.recipes.create.mixing('integrateddynamics:menril_sapling', [Item.of('integrateddynamics:menril_berries', 8), 'kubejs:rejuvinated_menril_shrub'])

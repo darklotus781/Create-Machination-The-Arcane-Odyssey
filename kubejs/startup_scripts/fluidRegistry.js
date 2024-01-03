@@ -29,7 +29,7 @@ StartupEvents.registry('fluid', event => {
         .displayName('Chromatic Solution')
         .stillTexture('kubejs:block/fluid/chromatic_fluid_still')
         .flowingTexture('kubejs:block/fluid/chromatic_fluid_flow')
-        .bucketColor('#84416E');
+        .luminosity(8);
 
     event.create('ethylene')
         .displayName('Polyethylene Slurry')

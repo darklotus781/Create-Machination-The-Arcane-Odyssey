@@ -1,24 +1,40 @@
 //priority: 0
 
 ServerEvents.recipes(event => {
-    event.remove({output: 'create:andesite_alloy'})
-    event.remove({id: 'create:crafting/materials/rose_quartz'})
-    event.remove({id: 'create:crushing/diorite'})
-    event.remove({id: 'create:compat/ae2/milling/certus_quartz'})
-    event.remove({id: 'create:crushing/diorite_recycling'})
-    event.remove({id: 'create:compacting/andesite_from_flint'})
-    event.remove({id: 'create:milling/gravel'})
-    event.remove({id: 'create:filling/redstone'})
-    event.remove({id: 'create:sequenced_assembly/track'})
-    event.remove({id: 'create:crafting/materials/electron_tube'})
-    event.remove({id: 'create:sequenced_assembly/precision_mechanism'})
+    // Scrap
     event.remove({id: /create:crushing\/update_one\/scrap_*/})
+    event.remove({id: /create:crushing\/misc\/scrap_*/})
+    event.remove({id: /create:crushing\/iron\/scrap_*/})
+    event.remove({id: /create:crushing\/wood\/scrap_*/})
+    event.remove({id: /create:crushing\/*\/scrap_*/})
+    event.remove({id: /create:crushing\/scrap_*/})
+    // Create Recycling...
+    event.remove({id: 'create:crushing/diorite_recycling'})
+    event.remove({id: 'create:crushing/tuff_recycling'})
+    // Create Crushing
+    event.remove({id: 'create:crushing/diorite'})
+    event.remove({id: 'create:crushing/tuff'})
+    // Create Milling
+    event.remove({id: 'create:milling/andesite'})
+    event.remove({id: 'create:milling/gravel'})
+    event.remove({id: 'create:compat/ae2/milling/certus_quartz'})
+    // Create Compacting
+    event.remove({id: 'create:compacting/andesite_from_flint'})
+    // Crafting
+    event.remove({id: 'create:crafting/materials/rose_quartz'})
+    event.remove({id: 'create:crafting/materials/electron_tube'})
     event.remove({id: 'create:crafting/materials/andesite_alloy'})
     event.remove({id: 'create:crafting/materials/andesite_alloy_from_zinc'})
+    // Create Mixing
     event.remove({id: 'create:mixing/andesite_alloy'})
     event.remove({id: 'create:mixing/andesite_alloy_from_zinc'})
+
+    event.remove({output: 'create:andesite_alloy'})
+    event.remove({id: 'create:filling/redstone'})
+    event.remove({id: 'create:sequenced_assembly/track'})
+    event.remove({id: 'create:sequenced_assembly/precision_mechanism'})
     event.remove({id: 'thermal:compat/create/smelter_create_alloy_andesite_alloy'})
-    event.remove({id: 'create:milling/andesite'})
+
 
     // Blaze Burner from Empty Blaze Burner + Runic Tablet
     event.shapeless('create:blaze_burner', ['create:empty_blaze_burner', 'kubejs:runic_tablet'])
@@ -92,8 +108,8 @@ ServerEvents.recipes(event => {
         'SA',
         'AS'
     ], {
-        A: 'kubejs:andesite_blend',
-        S: 'create:zinc_nugget'
+        A: Item.of('kubejs:andesite_blend'),
+        S: Item.of('create:zinc_nugget')
     })
 
     event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), ['create:zinc_nugget', 'kubejs:andesite_blend'])
@@ -126,6 +142,27 @@ ServerEvents.recipes(event => {
         'SSS',
         'SSS'
     ], {
-        S: 'thermal:cured_rubber'
+        S: Item.of('thermal:cured_rubber')
+    }).id('create:crafting/kinetics/belt_connector');
+
+    event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil'), [
+        'C'
+    ], {
+        C: Item.of('kubejs:radiant_sheet'),
+    })
+
+    event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil', 4), [
+        'CS'
+    ], {
+        C: Item.of('kubejs:radiant_sheet'),
+        S: Item.of('create:shadow_steel')
+    })
+
+    event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil', 4), [
+        'C',
+        'S'
+    ], {
+        S: Item.of('kubejs:radiant_sheet'),
+        C: Item.of('create:shadow_steel')
     })
 })

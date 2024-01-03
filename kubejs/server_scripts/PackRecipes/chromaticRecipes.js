@@ -231,12 +231,11 @@ ServerEvents.recipes(event => {
         'biomesoplenty:red_dye_from_waterlily',
         'biomesoplenty:red_dye_from_rose',
         'minecraft:black_dye_from_wither_rose'
-
     ];
 
-    recipesToRemove.forEach(recipe => {
-        event.remove({id: recipe});
-    });
+    // recipesToRemove.forEach(recipe => {
+    //     event.remove({id: recipe});
+    // });
     // dyes.forEach(dye => {
     //     event.remove({output: Item.of(dye)});
     // })
@@ -272,7 +271,7 @@ ServerEvents.recipes(event => {
     ]).superheated().id('create:mixing/chromatic_reprocessing');
 
     // Red Chromatic Compound
-    event.recipes.create.deploying('kubejs:red_compound', ['#forge:flowers/red', '#forge:tools/knives']);
+    event.recipes.create.deploying(Item.of('kubejs:red_compound'), ['#forge:flowers/red', '#forge:tools/knives']);
 
     // Red Chromatic Slurry
     event.recipes.create.mixing([Fluid.of('kubejs:dye_slurry_red').withAmount(1000), Item.of('kubejs:dirty_dye_compound', 1)], [
@@ -281,7 +280,7 @@ ServerEvents.recipes(event => {
     ]).heated().id('create:mixing/red_chromatic_slurry');
 
     // Green Chromatic Compound
-    event.recipes.create.deploying('kubejs:green_compound',['#forge:flowers/green', '#forge:tools/knives']);
+    event.recipes.create.deploying(Item.of('kubejs:green_compound'),['#forge:flowers/green', '#forge:tools/knives']);
 
     // Green Chromatic Slurry
     event.recipes.create.mixing([Fluid.of('kubejs:dye_slurry_green').withAmount(1000), Item.of('kubejs:dirty_dye_compound', 1)], [
@@ -290,7 +289,7 @@ ServerEvents.recipes(event => {
     ]).heated().id('create:mixing/green_chromatic_slurry');
 
     // Blue Chromatic Compound
-    event.recipes.create.deploying('kubejs:blue_compound',['#forge:flowers/blue', '#forge:tools/knives']);
+    event.recipes.create.deploying(Item.of('kubejs:blue_compound'),['#forge:flowers/blue', '#forge:tools/knives']);
 
     // Blue Chromatic Slurry
     event.recipes.create.mixing([Fluid.of('kubejs:dye_slurry_blue').withAmount(1000), Item.of('kubejs:dirty_dye_compound', 1)], [

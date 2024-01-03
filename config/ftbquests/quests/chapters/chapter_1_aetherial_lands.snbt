@@ -19,7 +19,7 @@
 			dev: false
 			height: 20.0d
 			hover: [ ]
-			image: "machination:textures/gui/quest_bg_square.png"
+			image: "kubejs:textures/gui/quest_bg_square.png"
 			order: 1
 			rotation: 0.0d
 			width: 20.0d
@@ -32,7 +32,7 @@
 			dev: false
 			height: 44.0d
 			hover: [ ]
-			image: "machination:textures/gui/aether_bg.png"
+			image: "kubejs:textures/gui/aether_bg.png"
 			rotation: 0.0d
 			width: 77.0d
 			x: 1.5d
@@ -1211,6 +1211,7 @@
 				}
 			]
 			tasks: [{
+				consume_items: true
 				id: "235A2FC543A3C5D1"
 				item: "aether:altar"
 				type: "item"
@@ -1242,6 +1243,7 @@
 				}
 			]
 			tasks: [{
+				consume_items: false
 				id: "57033C31AFC0D4A0"
 				item: "aether:freezer"
 				type: "item"
@@ -1262,7 +1264,7 @@
 				to_observe: "aether:quicksoil"
 				type: "observation"
 			}]
-			x: 0.0d
+			x: 2.0d
 			y: -2.0d
 		}
 		{
@@ -1287,7 +1289,18 @@
 				to_observe: "aether:aerogel"
 				type: "observation"
 			}]
-			x: 2.0d
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			id: "44444CC74264A423"
+			tasks: [{
+				consume_items: false
+				id: "2549D227C2914C69"
+				item: "aether:incubator"
+				type: "item"
+			}]
+			x: 0.0d
 			y: -2.0d
 		}
 	]

@@ -17,11 +17,11 @@
 			dev: false
 			height: 14.0d
 			hover: [ ]
-			image: "machination:textures/gui/quest_bg_square.png"
+			image: "kubejs:textures/gui/quest_bg_square.png"
 			order: 1
 			rotation: 0.0d
 			width: 14.0d
-			x: 4.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -30,11 +30,11 @@
 			dev: false
 			height: 45.714285714285715d
 			hover: [ ]
-			image: "machination:textures/gui/arcane_journey_bg.png"
+			image: "kubejs:textures/gui/arcane_journey_bg.png"
 			rotation: 0.0d
 			width: 80.0d
-			x: 2.0d
-			y: -1.5d
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	order_index: 0
@@ -84,7 +84,7 @@
 				type: "checkmark"
 			}]
 			title: "Good Luck!"
-			x: 0.0d
+			x: -2.0d
 			y: 2.5d
 		}
 		{
@@ -111,7 +111,7 @@
 				}
 			]
 			title: "First Tech Chapter: Alluring Allusions"
-			x: 1.5d
+			x: -0.5d
 			y: 1.5d
 		}
 		{
@@ -135,7 +135,7 @@
 				}
 			]
 			title: "The first Magic chapter: Crystalline Captivation"
-			x: 1.5d
+			x: -0.5d
 			y: 3.5d
 		}
 		{
@@ -148,7 +148,7 @@
 				type: "checkmark"
 			}]
 			title: "Extra Chapter: The Copper Age"
-			x: 2.0d
+			x: 0.0d
 			y: 0.5d
 		}
 		{
@@ -175,7 +175,7 @@
 				}
 			]
 			title: "Extraterrestrial Expeditions"
-			x: 3.0d
+			x: 1.0d
 			y: 1.5d
 		}
 		{
@@ -190,7 +190,7 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 2 Extra: Sturdy Machinery"
-			x: 3.5d
+			x: 1.5d
 			y: 0.5d
 		}
 		{
@@ -203,7 +203,7 @@
 				type: "item"
 			}]
 			title: "Processing Pandemonium"
-			x: 6.0d
+			x: 4.0d
 			y: 1.5d
 		}
 		{
@@ -223,7 +223,7 @@
 				}
 			]
 			title: "Herbalists Heritage"
-			x: 3.0d
+			x: 1.0d
 			y: 3.5d
 		}
 		{
@@ -249,7 +249,7 @@
 				}
 			]
 			title: "Chromatic Creation"
-			x: 4.5d
+			x: 2.5d
 			y: 1.5d
 		}
 		{
@@ -262,7 +262,7 @@
 				type: "checkmark"
 			}]
 			title: "The Pneumatic Age"
-			x: 5.0d
+			x: 3.0d
 			y: 0.5d
 		}
 		{
@@ -286,7 +286,7 @@
 				}
 			]
 			title: "Chronical Chaos"
-			x: 4.5d
+			x: 2.5d
 			y: 3.5d
 		}
 		{
@@ -307,7 +307,7 @@
 				type: "item"
 			}]
 			title: "Enigmatic Enlightenment"
-			x: 6.0d
+			x: 4.0d
 			y: 3.5d
 		}
 		{
@@ -323,7 +323,7 @@
 				type: "dimension"
 			}]
 			title: "Arcane Alchemistry"
-			x: 7.0d
+			x: 5.0d
 			y: 2.5d
 		}
 		{
@@ -339,7 +339,7 @@
 				type: "checkmark"
 			}]
 			title: "Master your AE2 Network"
-			x: 5.0d
+			x: 3.0d
 			y: 2.5d
 		}
 		{
@@ -355,7 +355,7 @@
 				type: "checkmark"
 			}]
 			title: "Integrational Chapter"
-			x: 3.5d
+			x: 1.5d
 			y: 2.5d
 		}
 		{
@@ -368,7 +368,7 @@
 				type: "item"
 			}]
 			title: "The Destination."
-			x: 8.5d
+			x: 6.5d
 			y: 2.5d
 		}
 		{
@@ -406,7 +406,7 @@
 				}
 			]
 			title: "Aether Portal Frame"
-			x: 0.0d
+			x: -2.0d
 			y: -4.0d
 		}
 		{
@@ -423,7 +423,7 @@
 				type: "checkmark"
 			}]
 			title: "The Odyssey Begins"
-			x: 0.0d
+			x: -2.0d
 			y: -2.5d
 		}
 		{
@@ -448,7 +448,7 @@
 				title: "From Heaven to Hell"
 				type: "checkmark"
 			}]
-			x: 2.0d
+			x: 0.0d
 			y: -2.5d
 		}
 		{
@@ -498,7 +498,7 @@
 				}
 			]
 			title: "Nether Portal Frame"
-			x: 2.0d
+			x: 0.0d
 			y: -4.0d
 		}
 		{
@@ -523,7 +523,7 @@
 				title: "Overworld"
 				type: "checkmark"
 			}]
-			x: 4.0d
+			x: 2.0d
 			y: -2.5d
 		}
 		{
@@ -536,7 +536,7 @@
 				title: "The End?"
 				type: "checkmark"
 			}]
-			x: 6.0d
+			x: 4.0d
 			y: -2.5d
 		}
 		{
@@ -551,7 +551,7 @@
 				type: "dimension"
 			}]
 			title: "Not The End, The Other place!"
-			x: 8.0d
+			x: 6.0d
 			y: -2.5d
 		}
 	]

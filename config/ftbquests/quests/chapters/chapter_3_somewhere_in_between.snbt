@@ -14,7 +14,7 @@
 			dev: false
 			height: 16.0d
 			hover: [ ]
-			image: "machination:textures/gui/quest_bg_square.png"
+			image: "kubejs:textures/gui/quest_bg_square.png"
 			order: 1
 			rotation: 0.0d
 			width: 16.0d
@@ -27,7 +27,7 @@
 			dev: false
 			height: 45.714285714285715d
 			hover: [ ]
-			image: "machination:textures/gui/overworld_bg.png"
+			image: "kubejs:textures/gui/overworld_bg.png"
 			rotation: 0.0d
 			width: 80.0d
 			x: 1.5d

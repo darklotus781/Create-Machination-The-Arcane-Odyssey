@@ -12,12 +12,12 @@
 			dev: false
 			height: 16.0d
 			hover: [ ]
-			image: "machination:textures/gui/quest_bg_square.png"
+			image: "kubejs:textures/gui/quest_bg_square.png"
 			order: 1
 			rotation: 0.0d
 			width: 16.0d
-			x: 4.0d
-			y: -3.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			click: ""
@@ -25,11 +25,11 @@
 			dev: false
 			height: 44.0d
 			hover: [ ]
-			image: "machination:textures/gui/nether_bg.png"
+			image: "kubejs:textures/gui/nether_bg.png"
 			rotation: 0.0d
 			width: 77.0d
-			x: 4.5d
-			y: -3.0d
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	order_index: 1
@@ -78,8 +78,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -4.5d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["394B02F151B85E24"]
@@ -112,8 +112,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: -4.5d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -141,8 +141,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: -2.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7DB2707BB8F3E7FE"]
@@ -196,8 +196,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: -0.5d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0C35ACE97AA5DD9B"]
@@ -218,8 +218,8 @@
 				item: "netherportalitem:nether_portal_frame"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.5d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["39FE1A90A5F762AE"]
@@ -235,8 +235,8 @@
 				type: "dimension"
 			}]
 			title: "It's getting hot in here."
-			x: 4.0d
-			y: -6.5d
+			x: 0.0d
+			y: -4.0d
 		}
 	]
 	title: "Chapter 2: The Underworld"

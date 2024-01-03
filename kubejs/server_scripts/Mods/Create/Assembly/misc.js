@@ -1,13 +1,15 @@
 ServerEvents.recipes(event => {
     let t;
     // SADDLE
-    t = 'minecraft:leather'
+    event.remove({output: 'minecraft:saddle'})
+    t = 'kubejs:incomplete_saddle'
     event.recipes.create.sequenced_assembly([
         Item.of('minecraft:saddle'),
     ], 'minecraft:leather', [
+        event.recipes.create.deploying(t, [t, '#forge:tools/knives']),
         event.recipes.create.deploying(t, [t, 'minecraft:iron_ingot']),
         event.recipes.create.deploying(t, [t, 'minecraft:iron_ingot'])
-    ]).transitionalItem(t).loops(1)
+    ]).transitionalItem(t).loops(2);
 
     // 16x Cogwheel
     t = 'kubejs:incomplete_cogwheel'
@@ -16,7 +18,7 @@ ServerEvents.recipes(event => {
     ], 'create:shaft', [
         event.recipes.create.deploying(t, [t, '#minecraft:wooden_buttons']),
         event.recipes.create.cutting(t, t)
-    ]).transitionalItem(t).loops(4)
+    ]).transitionalItem(t).loops(4);
 
     // Train Track
     t = 'create:incomplete_track'
@@ -26,5 +28,5 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, '#create:recipenuggets']),
         event.recipes.create.deploying(t, [t, '#create:recipenuggets']),
         event.recipes.create.pressing(t, t)
-    ]).transitionalItem(t).loops(1)
+    ]).transitionalItem(t).loops(1);
 });
