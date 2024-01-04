@@ -8,12 +8,12 @@ ItemEvents.tooltip(tooltip => {
         add_color_description(`kubejs:${global.bag_name[i]}_bag_${global.rarity[0]}`, 'Common', global.rarity_color.common)
         add_color_description(`kubejs:${global.bag_name[i]}_bag_${global.rarity[1]}`, 'Rare', global.rarity_color.rare)
         add_color_description(`kubejs:${global.bag_name[i]}_bag_${global.rarity[2]}`, 'Epic', global.rarity_color.epic);
-    }
+    };
 
     tooltip.addAdvanced('ars_nouveau:source_gem', (item, advanced, text) => {
         text.remove(1)
         text.add(1,Text.darkPurple('Made by squirting Source onto Runic Tablets.'))
-    })
+    });
 
     tooltip.addAdvanced(/sophisticatedbackpacks:.*backpack/, (item, advanced, text) => {
         if (!tooltip.isShift()) {
@@ -31,30 +31,32 @@ ItemEvents.tooltip(tooltip => {
                 // text.add(5, "§7Final PCBs:§r 0§7/§r2§7   (§r+1§7 Upgrade Slot)")
             }
         }
-    })
+    });
     tooltip.addAdvanced("sophisticatedbackpacks:backpack", (item, advanced, text) => {
         if (!tooltip.isShift()) {
             text.add(1, "§7Base: §r9§7 Slots, §r1§7 Upgrade Slot")
         }
-    })
+    });
     tooltip.addAdvanced("sophisticatedbackpacks:iron_backpack", (item, advanced, text) => {
         if (!tooltip.isShift()) {
             text.add(1, "§7Base: §r45§7 Slots, §r1§7 Upgrade Slot")
         }
-    })
+    });
     tooltip.addAdvanced("sophisticatedbackpacks:gold_backpack", (item, advanced, text) => {
         if (!tooltip.isShift()) {
             text.add(1, "§7Base: §r27§7 Slots, §r0§7 Upgrade Slot")
         }
-    })
+    });
     tooltip.addAdvanced("sophisticatedbackpacks:diamond_backpack", (item, advanced, text) => {
         if (!tooltip.isShift()) {
             text.add(1, "§7Base: §r36§7 Slots, §r4§7 Upgrade Slots")
         }
-    })
+    });
     tooltip.addAdvanced("sophisticatedbackpacks:netherite_backpack", (item, advanced, text) => {
         if (!tooltip.isShift()) {
             text.add(1, "§7Base: §r63§7 Slots, §r2§7 Upgrade Slots")
         }
-    })
+    });
+
+    tooltip.add('kubejs:leather_pocket', Text.gold('Used to add slots to backpacks.'));
 })

@@ -30,8 +30,8 @@
 			image: "kubejs:textures/gui/overworld_bg.png"
 			rotation: 0.0d
 			width: 80.0d
-			x: 1.5d
-			y: 0.0d
+			x: 1.0d
+			y: -0.5d
 		}
 	]
 	order_index: 2
@@ -80,6 +80,7 @@
 				"The culmination of your efforts is a grand construct, a device or portal of such complexity and power that it promises to unlock the gates to other dimensions. With every turned gear and every piece of automated machinery, you edge closer to this ultimate creation, a testament to your mastery over the mechanical arts and a beacon leading you to new frontiers and adventures."
 			]
 			id: "2F63FB9E8EAC18BD"
+			subtitle: "We have to start somewhere."
 			tasks: [
 				{
 					id: "4C7985B45293CFD6"
@@ -159,9 +160,12 @@
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
+			description: ["You'll need lots of copper in this pack, finding a reliable way to automate infinite amounts will be a good idea."]
 			id: "7130663AECB4C8B1"
 			subtitle: "A bit of copper."
 			tasks: [{
+				consume_items: false
+				count: 8L
 				id: "3154EF31014FD0D4"
 				item: "minecraft:raw_copper"
 				type: "item"
@@ -195,9 +199,15 @@
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
+			description: [
+				"Just like Copper, you'll need tons of Zinc, this is because to make Brass you combine the two."
+				"Find an infinite source and you'll be happy you did."
+			]
 			id: "21DF66C5B03C191D"
 			subtitle: "Some zinc."
 			tasks: [{
+				consume_items: false
+				count: 8L
 				id: "67FC02DEC768DE95"
 				item: "create:raw_zinc"
 				type: "item"
@@ -208,7 +218,7 @@
 		{
 			dependencies: ["2F63FB9E8EAC18BD"]
 			id: "10DADBB2E6B7B7B5"
-			subtitle: "A list of some mods you may have never encountered before."
+			subtitle: "A list of some mods that make this pack what it is!"
 			tasks: [{
 				id: "1CF568C2ADEFE8D9"
 				title: "Stuff to Ignore!"
@@ -284,12 +294,13 @@
 			]
 			icon: "createresourcegeodes:sky_stone_catalyst"
 			id: "4BB71BE656192C7F"
+			subtitle: "Custom Mods made just for this pack!"
 			tasks: [{
 				id: "712E9828CEC53555"
 				title: "reate Machination: The Arcane Odyssey"
 				type: "checkmark"
 			}]
-			title: "Create Machination: The Arcane Odyssey"
+			title: "Create: Resource Geodes"
 			x: 5.5d
 			y: 1.5d
 		}
@@ -364,15 +375,15 @@
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
 			description: [
-				"Tinker's Construct is a tool/equipment mod that revolves around smelteries and liquid metals.\\n"
-				"It allows you to melt a variety of items and even entities into liquids. \\n"
-				"Tinkers' Construct is primarily focused on creating highly useful tools by combining a diverse selection of materials.\\n"
-				"It also allows you to double ores by melting their raw form.\\n"
-				"This mod gains importance in Chapter 2, making it worth exploring."
+				"Applied Energistics 2 (AE2) adds components and mechanics to provide logistics and storage solutions. You can replace your massive room full of chests with a compact ME Network, but that's just the beginning of things. "
+				""
+				"Applied Energistics is meant to work with and allow automation of other mods in a modpack. You can set up your system to, with a single click, craft all of the prerequisites (and the final result) of a complex crafting chain, or keep certain quantities of items in stock, crafting more as needed, or simply transfer items around your base."
+				""
+				"All of these features are unlocked through progression in this pack including the Quantum Ring which allows for wireless and interdimensional connectivity.  Super powerful and super expensive."
 			]
 			icon: "ae2:controller"
 			id: "4D411D9BCE1D33F2"
-			subtitle: "Tool crafting and ore doubling"
+			subtitle: "Inventory Management and more!"
 			tasks: [{
 				id: "19A69F0A95E68D12"
 				title: "Tinkers Construct"
@@ -587,7 +598,7 @@
 			id: "3D141A6E5FFFA073"
 			tasks: [{
 				id: "2C0F62720CBB555B"
-				item: "kubejs:makeshift_kinetic_mechanism"
+				item: "kubejs:wooden_mechanism"
 				type: "item"
 			}]
 			x: -1.5d

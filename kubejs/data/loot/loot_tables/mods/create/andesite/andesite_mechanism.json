@@ -9,7 +9,7 @@
               {
                   "type": "minecraft:item",
                   "weight": 9,
-                  "name": "kubejs:makeshift_kinetic_mechanism",
+                  "name": "kubejs:wooden_mechanism",
                   "functions": [
                       {
                           "function": "minecraft:set_count",

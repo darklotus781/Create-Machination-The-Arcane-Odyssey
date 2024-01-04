@@ -4,7 +4,7 @@
 //     'kubejs:lootbag_create_brass': 'loot:lootbag/create/brass',
 //     'kubejs:lootbag_create_radiant': 'loot:lootbag/create/radiant',
 //     'kubejs:lootbag_plastic': 'loot:lootbag/create/plastic',
-//     'kubejs:lootbag_integrational': 'loot:lootbag/create/integrational',
+//     'kubejs:lootbag_dynamic': 'loot:lootbag/create/dynamic',
 //     'kubejs:lootbag_magic_1': 'loot:lootbag/magic/sorcerer',
 //     'kubejs:lootbag_magic_2': 'loot:lootbag/magic/wizard',
 //     'kubejs:lootbag_magic_3': 'loot:lootbag/magic/mage',

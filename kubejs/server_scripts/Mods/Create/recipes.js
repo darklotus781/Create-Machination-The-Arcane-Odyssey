@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
 
 
     // Blaze Burner from Empty Blaze Burner + Runic Tablet
-    event.shapeless('create:blaze_burner', ['create:empty_blaze_burner', 'kubejs:runic_tablet'])
+    event.shapeless(Item.of('create:blaze_burner'), [Item.of('create:empty_blaze_burner'), Item.of('kubejs:runic_tablet')]).id('kubejs:filled_blaze_burner_from_empty_burner_and_runic_table_manual_only');
 
     event.replaceInput({id: 'create:crafting/kinetics/elevator_pulley'}, 'minecraft:dried_kelp_block', 'thermal:cured_rubber_block')
     event.replaceInput({id: 'create:crafting/kinetics/train_door'}, 'create:brass_sheet', 'create:sturdy_sheet')
@@ -53,55 +53,14 @@ ServerEvents.recipes(event => {
 
     event.shapeless(Item.of('create:andesite_alloy', 9), Item.of('create:andesite_alloy_block'))
 
-    let tweak_casing = (r, i1, i2, tag) => {
-        event.remove({output: r})
-        if (tag) {
-            event.custom({
-                'type': 'create:item_application',
-                'ingredients': [
-                    {
-                        'tag': i2
-                    },
-                    {
-                        'item': i1
-                    }
-                ],
-                'results': [
-                    {
-                        'item': r
-                    }
-                ]
-            })
-        } else {
-            event.custom({
-                'type': 'create:item_application',
-                'ingredients': [
-                    {
-                        'item': i2
-                    },
-                    {
-                        'item': i1
-                    }
-                ],
-                'results': [
-                    {
-                        'item': r
-                    }
-                ]
-            })
-        }
-
-        // event.recipes.createDeploying(r, [i2, i1])
-    }
-
     // Andesite Blend
     event.shaped(Item.of('kubejs:andesite_blend', 2), [
         'SA',
         'AS'
     ], {
-        A: 'minecraft:andesite',
-        S: 'minecraft:clay_ball'
-    })
+        A: Item.of('minecraft:andesite'),
+        S: Item.of('minecraft:clay_ball')
+    }).id('kubejs:andesite_blend_from_dust_and_clay_manual_only');
 
     //Andesite Alloy
     event.shaped(Item.of('create:andesite_alloy', 2), [
@@ -110,32 +69,25 @@ ServerEvents.recipes(event => {
     ], {
         A: Item.of('kubejs:andesite_blend'),
         S: Item.of('create:zinc_nugget')
-    })
+    }).id('kubejs:andesite_alloy_from_blend_and_zinc_manual_only');
 
-    event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), ['create:zinc_nugget', 'kubejs:andesite_blend'])
-    event.recipes.create.mixing(Item.of('kubejs:andesite_blend'), ['kubejs:andesite_dust', 'minecraft:clay_ball'])
+    event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), [Item.of('create:zinc_nugget'), Item.of('kubejs:andesite_blend')]).id('kubejs:mixing/andesite_alloy_from_blend_and_zinc');
+    event.recipes.create.mixing(Item.of('kubejs:andesite_blend'), [Item.of('kubejs:andesite_dust'), Item.of('minecraft:clay_ball')]).id('kubejs:mixing/andesite_blend_from_dust_and_clay');
 
-    event.recipes.create.milling(Item.of('kubejs:andesite_dust'), 'minecraft:andesite')
-
-    tweak_casing('create:andesite_casing', 'create:andesite_alloy', 'minecraft:logs', true)
-    tweak_casing('create:copper_casing', 'create:copper_sheet', 'minecraft:logs', true)
-    tweak_casing('create:brass_casing', 'create:brass_sheet', 'minecraft:logs', true)
-    tweak_casing('kubejs:zinc_casing', 'createdeco:zinc_sheet', 'minecraft:stone')
-    tweak_casing('kubejs:invar_casing', 'thermal:invar_ingot', 'minecraft:stone')
-    tweak_casing('kubejs:fluix_casing', 'thermal:lead_plate', 'minecraft:basalt')
+    event.recipes.create.milling(Item.of('kubejs:andesite_dust'), Item.of('minecraft:andesite')).id('kubejs:milling/andesite_dust_from_andesite');
 
     event.remove({output: 'create:sail_frame'})
     event.remove({output: 'create:white_sail'})
-    event.shapeless('create:sail_frame', ['create:white_sail'])
-    event.shaped('2x create:white_sail', [
+    event.shapeless(Item.of('create:sail_frame'), [Item.of('create:white_sail')]).id('kubejs:sail_frame_from_sail_manual_only');
+    event.shaped(Item.of('create:white_sail', 2), [
         'SSS',
         'NAN',
         'SSS'
     ], {
-        A: 'minecraft:white_wool',
-        N: 'create:zinc_nugget',
-        S: 'minecraft:stick'
-    })
+        A: Item.of('minecraft:white_wool'),
+        N: Item.of('create:zinc_nugget'),
+        S: Item.of('minecraft:stick')
+    }).id('kubejs:sail_frame_from_sail');
 
     event.remove({id: 'create:crafting/kinetics/belt_connector'})
     event.shaped(Item.of('create:belt_connector', 3), [
@@ -149,14 +101,14 @@ ServerEvents.recipes(event => {
         'C'
     ], {
         C: Item.of('kubejs:radiant_sheet'),
-    })
+    }).id('kubejs:crafter/radiant_coil_from_sheet');
 
     event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil', 4), [
         'CS'
     ], {
         C: Item.of('kubejs:radiant_sheet'),
         S: Item.of('create:shadow_steel')
-    })
+    }).id('kubejs:crafter/radiant_coil_from_sheet_and_shadow_steel_horizontal');
 
     event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil', 4), [
         'C',
@@ -164,5 +116,5 @@ ServerEvents.recipes(event => {
     ], {
         S: Item.of('kubejs:radiant_sheet'),
         C: Item.of('create:shadow_steel')
-    })
-})
+    }).id('kubejs:crafter/radiant_coil_from_sheet_and_shadow_steel_vertical');
+});

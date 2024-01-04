@@ -16,7 +16,7 @@
 //             Item.of("create:stressometer").withChance(1),
 //             Item.of("3x create:portable_storage_interface").withChance(3),
 //             Item.of("create:empty_blaze_burner").withChance(3),
-//             Item.of("4x kubejs:makeshift_kinetic_mechanism").withChance(9),
+//             Item.of("4x kubejs:wooden_mechanism").withChance(9),
 //             Item.of("4x kubejs:kinetic_mechanism").withChance(7),
 //             Item.of("3x kubejs:sealed_mechanism").withChance(5),
 //             Item.of("create:propeller").withChance(3),

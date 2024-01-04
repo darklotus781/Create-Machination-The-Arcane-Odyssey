@@ -1231,7 +1231,6 @@
 					type: "random"
 				}
 				{
-					exclude_from_claim_all: true
 					id: "015294DB0734991F"
 					table_id: 1205720880241428503L
 					type: "random"
@@ -1254,6 +1253,12 @@
 		{
 			description: ["Quicksoil accelerates movement of players, mobs and items.  It's like Blue ice but better."]
 			id: "4A9476591E7D2E74"
+			rewards: [{
+				count: 10
+				id: "2D96D2F25D56C916"
+				item: "aether:quicksoil"
+				type: "item"
+			}]
 			tasks: [{
 				icon: "aether:quicksoil"
 				id: "195C22C14634DB97"
@@ -1294,6 +1299,25 @@
 		}
 		{
 			id: "44444CC74264A423"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "10CDC2531489AFBA"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "029BC62ADAE6721D"
+					table_id: 1205720880241428503L
+					type: "random"
+				}
+				{
+					id: "7800AED562A2AA8D"
+					type: "xp"
+					xp: 100
+				}
+			]
 			tasks: [{
 				consume_items: false
 				id: "2549D227C2914C69"

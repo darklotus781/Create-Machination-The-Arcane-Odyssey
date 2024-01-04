@@ -1,18 +1,25 @@
 ServerEvents.tags('item', event => {
-    event.add('forge:dusts/ender', 'ae2:ender_dust')
-    event.add('ars_nouveau:golem/shard', ['minecraft:amethyst_shard', 'ae2:certus_quartz_crystal'])
-    event.add('forge:dusts', 'alltheores:netherite_dust')
-    event.add('forge:dusts/netherite', 'alltheores:netherite_dust')
-    event.add('forge:menril_logs', 'integrateddynamics:menril_log_filled')
-    event.add('forge:menril_logs', 'integrateddynamics:menril_log')
-    event.add('forge:resonators', 'kubejs:resonator')
+    event.add('forge:dusts/ender', 'ae2:ender_dust');
+    event.add('ars_nouveau:golem/shard', ['minecraft:amethyst_shard', 'ae2:certus_quartz_crystal']);
+    event.add('forge:dusts', 'alltheores:netherite_dust');
+    event.add('forge:dusts/netherite', 'alltheores:netherite_dust');
+    event.add('forge:menril_logs', 'integrateddynamics:menril_log_filled');
+    event.add('forge:menril_logs', 'integrateddynamics:menril_log');
 
-    event.get('forge:saws').add('kubejs:stone_saw').add('kubejs:iron_saw').add('kubejs:diamond_saw')
-    event.get('forge:screwdrivers').add('kubejs:screwdriver').add('framedblocks:framed_screwdriver')
-    event.get('forge:super_glues').add('create:super_glue')
-    event.get('forge:wrenches').add('create:wrench')
-    event.get('forge:tools/wrench').add('create:wrench')
-    event.get('forge:soldering_irons').add('kubejs:soldering_iron')
+    event.add('chipped:logs', ['#chipped:acacia_log', '#chipped:birch_log', '#chipped:dark_oak_log', '#chipped:jungle_log', '#chipped:mangrove_log', '#chipped:oak_log', '#chipped:spruce_log', '#chipped:crimson_stem', '#chipped:warped_stem', '#chipped:cherry_log']);
+    event.add('chipped:stripped', ['#chipped:stripped_acacia_log', '#chipped:stripped_birch_log', '#chipped:stripped_dark_oak_log', '#chipped:stripped_jungle_log', '#chipped:stripped_mangrove_log', '#chipped:stripped_oak_log', '#chipped:stripped_spruce_log', '#chipped:stripped_crimson_stem', '#chipped:stripped_warped_stem', '#chipped:stripped_cherry_log']);
+    event.add('forge:lumber/all', ['#minecraft:logs', '#chipped:logs', '#chipped:stripped', '#integrateddynamics:menril_logs']);
+    event.add('forge:lumber/stripped', ['#forge:stripped/logs', '#forge:stripped/wood', '#chipped:stripped', 'integrateddynamics:menril_log_stripped']);
+    
+
+
+    // Tools
+    event.add('forge:tools/resonators', 'kubejs:resonator');
+    event.get('forge:tools/saws').add('kubejs:stone_saw').add('kubejs:iron_saw').add('kubejs:diamond_saw');
+    event.get('forge:tools/screwdrivers').add('kubejs:screwdriver').add('framedblocks:framed_screwdriver');
+    event.get('forge:tools/super_glues').add('create:super_glue');
+    event.get('forge:tools/wrench').add('create:wrench');
+    event.get('forge:tools/soldering_irons').add('kubejs:soldering_iron');
 
     let vial = ['anthracene', 'incomplete_anthraquinone','anthraquinone','empty_vial']
     vial.forEach(I => {
@@ -30,7 +37,7 @@ ServerEvents.tags('item', event => {
     event.add('create:upright_on_belt', 'forbidden_arcanus:arcane_crystal_obelisk')
     event.add('create:recipenuggets','minecraft:iron_nugget')
     event.add('create:recipenuggets','create:zinc_nugget')
-    event.add('create:kinetic_mechanisms','kubejs:makeshift_kinetic_mechanism')
+    event.add('create:kinetic_mechanisms','kubejs:wooden_mechanism')
     event.add('create:kinetic_mechanisms','kubejs:kinetic_mechanism')
 })
 

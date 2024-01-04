@@ -11,7 +11,7 @@
                 {
                     "type": "minecraft:item",
                     "weight": 2,
-                    "name": "kubejs:integrational_mechanism",
+                    "name": "kubejs:dynamic_mechanism",
                     "functions": [
                         {
                             "function": "minecraft:set_count",

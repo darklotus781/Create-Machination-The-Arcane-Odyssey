@@ -1,25 +1,30 @@
 ServerEvents.recipes(event => {
+    event.remove({output: 'createaddition:electric_motor'});
+    event.remove({output: 'createaddition:alternator'});
+    event.replaceInput({id: 'createaddition:crafting/modular_accumulator'}, 'createaddition:capacitor', 'kubejs:electrolytic_capacitor');
+    event.replaceInput({input: 'createaddition:capacitor'}, 'createaddition:capacitor', 'kubejs:ceramic_capacitor');
 
-    let t = 'kubejs:incomplete_inductor_core'
-    event.recipes.create.sequenced_assembly([
-        Item.of('kubejs:inductor_core'),
-    ], Item.of('kubejs:carbon_sheet'), [
-        event.recipes.create.deploying(t, [t, Item.of('createaddition:copper_rod')]),
-        event.recipes.create.deploying(t, [t, Item.of('kubejs:fiberglass_plate')]),
-        event.recipes.create.pressing(t, t),
-        event.custom({type: 'createaddition:rolling', input: Item.of(t).toJson(), result: Item.of(t).toJson()})
-    ]).transitionalItem(t).loops(1)
+    // Electric Motor
+    event.recipes.create.mechanical_crafting(Item.of('createaddition:electric_motor'), [
+        ' BIB ',
+        'BSPSB',
+        ' BSB '
+    ], {
+        S: Item.of('createaddition:copper_spool'),
+        B: Item.of('create:brass_sheet'),
+        P: Item.of('kubejs:power_machine'),
+        I: Item.of('createaddition:iron_rod')
+    }).id('kubejs:creatadditions_electric_motor');
 
-    event.custom({
-        type: 'createaddition:charging',
-        input: {
-            item: 'kubejs:soaked_sheet',
-            count: 1
-        },
-        result: {
-            item: 'kubejs:rough_sheet',
-            count: 1
-        },
-        energy: 4000
-    });
+    // Alternator
+    event.recipes.create.mechanical_crafting(Item.of('createaddition:alternator'), [
+        ' BIB ',
+        'BSPSB',
+        ' BSB '
+    ], {
+        S: Item.of('createaddition:copper_spool'),
+        B: Item.of('kubejs:carbon_sheet'),
+        P: Item.of('kubejs:power_machine'),
+        I: Item.of('createaddition:iron_rod')
+    }).id('kubejs:creatadditions_alternator');
 });

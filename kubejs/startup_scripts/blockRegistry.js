@@ -17,7 +17,6 @@ StartupEvents.registry("block", event => {
     };
 
 
-
     const machine = (name, display, layer) => {
         let id = name.toLowerCase()
         event.create(id + '_machine')
@@ -67,33 +66,30 @@ StartupEvents.registry("block", event => {
         .soundType('stone')
         .box(2, 0, 1, 14, 14, 15);
 
-    machine('Precision', 'Precision',"translucent")
-    machine('Copper', 'Pressure', "cutout")
-    machine('Zinc', 'Scorch',"cutout")
-    machine('Train', 'Track', "cutout")
-    machine('Enderium', 'Abstruse',"cutout")
+    // machine('Copper', 'Pressure', "cutout")
+    machine('Zinc', 'Scorch', "cutout")
+    // machine('Train', 'Track', "cutout") // Terrible Icon and duplicate of Sturdy
+    machine('Enderium', 'Abstruse', "cutout")
     machine('Power', 'Power', "translucent")
 
     event.create('enderium_casing').model('kubejs:block/enderium_casing').material('metal').hardness(4.0).displayName('Ender Casing')
     event.create('zinc_casing').material('metal').hardness(3.0).displayName('Zinc Casing')
     event.create('invar_casing').material('metal').hardness(3.0).displayName('Invar Casing')
     event.create('fluix_casing').material('metal').hardness(3.0).displayName('Fluix Casing')
+    event.create('supercritical_casing')
+    event.create('gold_casing')
 
     event.create('mica_block').material('metal').hardness(3.0).displayName('Mica Block')
 
     let layer = "cutout"
     event.create('andesite_machine').displayName('Andesite Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
     event.create('brass_machine').displayName('Brass Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
-    event.create('sealed_machine').displayName('Sealed Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
-    event.create('integrational_machine').displayName('Integrational Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
+    event.create('copper_machine').displayName('Copper Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
+    event.create('dynamic_machine').displayName('Dynamic Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
     event.create('sturdy_machine').displayName('Sturdy Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
     event.create('radiant_machine').displayName('Radiant Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
     event.create('plastic_machine').displayName('Plastic Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
     event.create('time_machine').displayName('Time Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
     event.create('supercritical_machine').displayName('Supercritical Machine').material('lantern').notSolid().renderType(layer).hardness(3.0)
 
-    event.create('gold_casing')
-    // event.create('zinc_casing')
-    // event.create('enderium_casing')
-    event.create('supercritical_casing')
 })
