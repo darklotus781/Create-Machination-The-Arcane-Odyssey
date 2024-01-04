@@ -58,5 +58,5 @@ ItemEvents.tooltip(tooltip => {
         }
     });
 
-    tooltip.add('kubejs:leather_pocket', Text.gold('Used to add slots to backpacks.'));
+    // tooltip.add('kubejs:leather_pocket', Text.gold('Used to add slots to backpacks.'));
 })

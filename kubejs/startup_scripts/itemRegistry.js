@@ -9,7 +9,7 @@ StartupEvents.registry('item', event => {
     let mechanism = (name, rarity, add_glow) => {
         let id = name.toLowerCase();
         event.create(id + '_mechanism')
-            .texture('kubejs:item/' + id + '_mechanism')
+            .texture('kubejs:item/mechanisms/' + id + '_mechanism')
             .displayName(name + ' Mechanism')
             .rarity(rarity ? rarity : RARITY_COMMON)
             .glow(add_glow ? add_glow : false);
@@ -19,7 +19,7 @@ StartupEvents.registry('item', event => {
         let id = name.toLowerCase();
 
         event.create('incomplete_' + id + '_mechanism', 'create:sequenced_assembly')
-            .texture('kubejs:item/incomplete_' + id + '_mechanism')
+            .texture('kubejs:item/mechanisms/incomplete_' + id + '_mechanism')
             .displayName('Incomplete ' + name + ' Mechanism')
             .rarity(rarity ? rarity : RARITY_COMMON)
             .glow(add_glow ? add_glow : false);
@@ -46,7 +46,7 @@ StartupEvents.registry('item', event => {
     incomplete_mechanism('Quantum');
     mechanism('Radiant', RARITY_RARE, true);
     incomplete_mechanism('Radiant');
-    event.create('wooden_mechanism').tooltip('The Mechanism isn\'t sturdy enough to support further tiers of mechanisms.');
+    event.create('wooden_mechanism').texture('kubejs:item/mechanisms/wooden_mechanism').tooltip('The Mechanism isn\'t sturdy enough to support further tiers of mechanisms.');
     mechanism('Ender');
     incomplete_mechanism('Ender');
     mechanism('Calculation');
@@ -77,13 +77,11 @@ StartupEvents.registry('item', event => {
     event.create('fiberglass_plate').displayName('Fiberglass Plate');
     event.create('incomplete_pcb').displayName('Incomplete PCB');
     event.create('pcb').displayName('PCB');
-    event.create('incomplete_electronic_circuit', 'create:sequenced_assembly').displayName('Incomplete Electronic Circuit');
     event.create('andesite_blend').texture('kubejs:item/andesite_blend').displayName('Andesite Blend');
     event.create('andesite_dust').texture('kubejs:item/andesite_dust').displayName('Andesite Dust');
 
     event.create('soaked_sheet').texture('kubejs:item/soaked_sheet').displayName('Soaked Copper Sheet');
     event.create('rough_sheet').texture('kubejs:item/rough_sheet').displayName('Rough Copper Sheet');
-    event.create('incomplete_saddle', 'create:sequenced_assembly').texture('kubejs:item/incomplete_saddle').displayName('Incomplete Saddle');
 
     event.create('resistor').texture('kubejs:item/resistor').displayName('Resistor');
     event.create('inductor').texture('kubejs:item/inductor').displayName('Induction Coil');
@@ -96,31 +94,12 @@ StartupEvents.registry('item', event => {
     event.create('dirt_electrolytic_capacitor').texture('kubejs:item/capacitor_electrolytic_dirt').displayName('Dirty Electrolytic Capacitor');
     event.create('inductor_core').texture('kubejs:item/inductor_core').displayName('Magnetic Core');
 
-    event.create('incomplete_resistor', 'create:sequenced_assembly').texture('kubejs:item/resistor_incomplete').displayName('Incomplete Resistor');
-    event.create('incomplete_inductor', 'create:sequenced_assembly').texture('kubejs:item/inductor_incomplete').displayName('Incomplete Induction Coil');
-    event.create('incomplete_ceramic_capacitor', 'create:sequenced_assembly').texture('kubejs:item/capacitor_ceramic_incomplete').displayName('Incomplete Ceramic Capacitor');
-    event.create('incomplete_electrolytic_capacitor', 'create:sequenced_assembly').texture('kubejs:item/capacitor_electrolytic_incomplete').displayName('Incomplete Electrolytic Capacitor');
-    event.create('incomplete_inductor_core', 'create:sequenced_assembly').texture('kubejs:item/incomplete_inductor_core').displayName('Incomplete Magnetic Core');
-
-    // AE2 Incomplete Processors
-    event.create('incomplete_calculation_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_calculation_processor').displayName('Incomplete Calculation Processor');
-    event.create('incomplete_engineering_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_engineering_processor').displayName('Incomplete Engineering Processor');
-    event.create('incomplete_logic_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_logic_processor').displayName('Incomplete Logic Processor');
-
     // Chromatic Stuff
     event.create('red_compound').texture('kubejs:item/red_compound').displayName('Red Chroma Compound');
     event.create('green_compound').texture('kubejs:item/green_compound').displayName('Green Chroma Compound');
     event.create('blue_compound').texture('kubejs:item/blue_compound').displayName('Blue Chroma Compound');
     event.create('dirty_dye_compound').texture('kubejs:item/dirty_compound').displayName('Dirty Chroma Compound');
     event.create('chroma_compound').texture('kubejs:item/chroma_compound').displayName('Pure Chroma Compound').rarity(RARITY_RARE);
-
-    event.create('carbon_sheet').texture('kubejs:item/carbon_sheet').displayName('Carbon Sheet');
-    event.create('mica_sheet').texture('kubejs:item/mica_sheet').displayName('Mica Sheet');
-    event.create('ceramic_powder').texture('kubejs:item/ceramic_powder').displayName('Ceramic Powder');
-
-    event.create('plastic').texture('kubejs:item/plastic').displayName('Plastic');
-    event.create('nickel_compound').texture('kubejs:item/nickel_compound').displayName('Nickel Compound');
-    event.create('invar_compound', 'create:sequenced_assembly').texture('kubejs:item/invar_compound').displayName('Unprocessed Invar Ingot');
 
     // Tools
     event.create('stone_saw').texture('kubejs:item/stone_saw').displayName('Stone Saw').maxDamage(128);
@@ -129,13 +108,14 @@ StartupEvents.registry('item', event => {
     event.create('screwdriver').texture('kubejs:item/screwdriver').displayName('Screwdriver').maxDamage(512);
     event.create('lube_can').texture('kubejs:item/lube_can').displayName('Lubricant Can').maxDamage(256);
     event.create('soldering_iron').texture('kubejs:item/soldering_iron').displayName('Soldering Iron').maxDamage(1024);
+    tool('Resonator');
 
     // Different Tubes
     event.create('golden_tube').texture('kubejs:item/yellow_tube').displayName('Golden Tube');
     event.create('diamond_tube').texture('kubejs:item/blue_tube').displayName('Diamond Tube');
     event.create('empty_tube').texture('kubejs:item/empty_tube').displayName('Empty Tube');
 
-    // Incomplete Devices
+    // Incomplete / Transitional Devices
     event.create('incomplete_sturdy_device', 'create:sequenced_assembly');
     event.create('incomplete_mechanical_device', 'create:sequenced_assembly');
     event.create('incomplete_sealed_device', 'create:sequenced_assembly');
@@ -144,8 +124,22 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_logic_device', 'create:sequenced_assembly');
     event.create('incomplete_red_stringed_device', 'create:sequenced_assembly');
     event.create('incomplete_furnished_device', 'create:sequenced_assembly');
+    event.create('incomplete_cogwheel', 'create:sequenced_assembly').displayName('Broken Cogwheel').parentModel('create:block/cogwheel_shaftless');
+    event.create('incomplete_resistor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_resistor').displayName('Incomplete Resistor');
+    event.create('incomplete_inductor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_inductor').displayName('Incomplete Induction Coil');
+    event.create('incomplete_ceramic_capacitor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_capacitor_ceramic').displayName('Incomplete Ceramic Capacitor');
+    event.create('incomplete_electrolytic_capacitor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_capacitor_electrolytic').displayName('Incomplete Electrolytic Capacitor');
+    event.create('incomplete_inductor_core', 'create:sequenced_assembly').texture('kubejs:item/incomplete_inductor_core').displayName('Incomplete Magnetic Core');
+    event.create('incomplete_electronic_circuit', 'create:sequenced_assembly').displayName('Incomplete Electronic Circuit');
+    event.create('incomplete_saddle', 'create:sequenced_assembly').texture('kubejs:item/incomplete_saddle').displayName('Incomplete Saddle');
+    // AE2 Incomplete Processors
+    event.create('incomplete_calculation_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_calculation_processor').displayName('Incomplete Calculation Processor');
+    event.create('incomplete_engineering_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_engineering_processor').displayName('Incomplete Engineering Processor');
+    event.create('incomplete_logic_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_logic_processor').displayName('Incomplete Logic Processor');
 
-    event.create('leather_pocket').texture('kubejs:item/leather_pocket').displayName('Leather Pocket');
+
+    // Misc Items
+    event.create('leather_pocket').texture('kubejs:item/leather_pocket').displayName('Leather Pocket').tooltip(Text.gold('Used to add slots to backpacks.'));
     event.create('runic_tablet').displayName('Runic Tablet').tooltip('What mysteries may this behold?');
     event.create('warp_fragments').rarity(RARITY_RARE).glow(true);
     event.create('nether_star_dust').texture('kubejs:item/nether_star_crushed').displayName('Nether Star Dust').rarity(RARITY_UNCOMMON).glow(true);
@@ -169,16 +163,15 @@ StartupEvents.registry('item', event => {
     });
     event.create('dirty_bowl').displayName('Bowl of Leaves');
     event.create('sourcegem_fragments').displayName('Source Crystal Fragments');
-    event.create('incomplete_cogwheel', 'create:sequenced_assembly').displayName('Broken Cogwheel').parentModel('create:block/cogwheel_shaftless');
     event.create('menril_shrub').tooltip('With the weakening of the Arcane so have the Arcane Trees been weakened. Can you restore this artifact?');
     event.create('rejuvinated_menril_shrub').tooltip('Youve restored it, well to some part. To fully restore the Menril Sapling you must continue.');
     event.create('time_crystal').displayName('Time Crystal Shards');
-
-    //AE2
-    // event.create('incomplete_calculation_circuit', 'create:sequenced_assembly').displayName('Incomplete Calculation Circuit').texture('kubejs:item/incomplete_kinetic_mechanism');
-    // event.create('incomplete_logic_circuit', 'create:sequenced_assembly').displayName('Incomplete Logic Circuit').texture('create:item/incomplete_precision_mechanism');
-    // event.create('incomplete_engineering_circuit', 'create:sequenced_assembly').displayName('Incomplete Engineering Circuit').texture('kubejs:item/incomplete_radiant_mechanism');
-
+    event.create('carbon_sheet').texture('kubejs:item/carbon_sheet').displayName('Carbon Sheet');
+    event.create('mica_sheet').texture('kubejs:item/mica_sheet').displayName('Mica Sheet');
+    event.create('ceramic_powder').texture('kubejs:item/ceramic_powder').displayName('Ceramic Powder');
+    event.create('plastic').texture('kubejs:item/plastic').displayName('Plastic');
+    event.create('nickel_compound').texture('kubejs:item/nickel_compound').displayName('Nickel Compound');
+    event.create('invar_compound', 'create:sequenced_assembly').texture('kubejs:item/invar_compound').displayName('Unprocessed Invar Ingot');
 
     // Seeds / Clusters
     event.create('certus_quartz_seed').texture('kubejs:item/certus_quartz_seed').displayName('Certus Quartz Seed');
@@ -188,12 +181,9 @@ StartupEvents.registry('item', event => {
     event.create('quartz_seed').texture('kubejs:item/quartz_seed').displayName('Quartz Seed');
     event.create('quartz_cluster').texture('kubejs:item/quartz_cluster').displayName('Quartz Cluster');
 
+    // AE2 Stuff
     event.create('ae2:logic_processor_press').displayName('Logic Processor Press');
     event.create('ae2:calculation_processor_press').displayName('Calculation Processor Press');
     event.create('ae2:silicon_press').displayName('Silicon Press');
     event.create('ae2:engineering_processor_press').displayName('Engineering Processor Press');
-
-    tool('Resonator');
-    // tool('Saw');
-    // tool('Screwdriver');
 });
