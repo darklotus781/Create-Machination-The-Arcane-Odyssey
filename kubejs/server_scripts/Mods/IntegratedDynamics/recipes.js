@@ -37,22 +37,22 @@ let integrated_parts = [
     // 'integratedtunnels:part_exporter_fluid',
     // 'integratedcrafting:part_interface_crafting',
     // 'integratedcrafting:part_crafting_writer'
-]
+];
+
 ServerEvents.recipes(event => {
-    event.remove({output: 'integrateddynamics:logic_director'})
-    event.remove({output: 'integrateddynamics:energy_battery'})
-    event.remove({output: 'integratedcrafting:part_interface_crafting'})
-    event.remove({output: 'integratedcrafting:part_crafting_writer'})
-    event.remove({output: /integrateddynamics\:part.*porter_world/})
-    event.remove({output: /integratedtunnels\:part.*porter_world/})
-    event.remove({output: "integratedtunnels:part_player_simulator"})
-    event.remove({output: "integrateddynamics:part_connector_omni_directional"})
-    event.remove({output: "integratedterminals:terminal_storage_portable"})
-    event.remove({output: 'integrateddynamics:coal_generator'})
+    event.remove({output: 'integrateddynamics:logic_director'});
+    event.remove({output: 'integrateddynamics:energy_battery'});
+    event.remove({output: 'integratedcrafting:part_interface_crafting'});
+    event.remove({output: 'integratedcrafting:part_crafting_writer'});
+    event.remove({output: /integrateddynamics\:part.*porter_world/});
+    event.remove({output: /integratedtunnels\:part.*porter_world/});
+    event.remove({output: "integratedtunnels:part_player_simulator"});
+    event.remove({output: "integrateddynamics:part_connector_omni_directional"});
+    event.remove({output: "integratedterminals:terminal_storage_portable"});
+    event.remove({output: 'integrateddynamics:coal_generator'});
+    event.remove({mod: 'integrateddynamics', output: "minecraft:netherrack"});
 
     integrated_parts.forEach(part => {
-        event.shapeless(part, [part])
-    })
-
-    event.remove({mod:'integrateddynamics',output: "minecraft:netherrack"})
-})
+        event.shapeless(Item.of(part), [Item.of(part)]);
+    });
+});

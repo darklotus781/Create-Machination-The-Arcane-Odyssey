@@ -1,8 +1,3 @@
-const colors = [
-    'white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray',
-    'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black'
-]
-
 const dyes = [
     'minecraft:white_dye',
     'minecraft:orange_dye',
@@ -240,7 +235,7 @@ ServerEvents.recipes(event => {
     //     event.remove({output: Item.of(dye)});
     // })
     //
-    // colors.forEach(color => {
+    // global.colors.forEach(color => {
     //     // Botania Recipe Fixes
     //     event.shapeless(Item.of('botania:' + color + '_petal', 2), [Item.of('botania:' + color + '_mystical_flower')]).id('botania:petal_' + color + '');
     //     event.shapeless(Item.of('botania:' + color + '_petal', 4), [Item.of('botania:' + color + '_double_flower')]).id('botania:petal_' + color + '_double');
@@ -263,7 +258,7 @@ ServerEvents.recipes(event => {
         processingTime: 300,
         results: [Item.of('kubejs:chroma_compound').toJson(), Fluid.of('kubejs:dirty_chroma_slurry').withAmount(250).toJson()]
     }).id('kubejs:fermenting/chromatic_solution_to_compound');
-    
+
     // Reprocessing
     event.recipes.create.mixing(Fluid.of('kubejs:chromatic_solution').withAmount(250), [
         Fluid.of('kubejs:dirty_chroma_slurry').withAmount(1000),
@@ -280,7 +275,7 @@ ServerEvents.recipes(event => {
     ]).heated().id('create:mixing/red_chromatic_slurry');
 
     // Green Chromatic Compound
-    event.recipes.create.deploying(Item.of('kubejs:green_compound'),['#forge:flowers/green', '#forge:tools/knives']);
+    event.recipes.create.deploying(Item.of('kubejs:green_compound'), ['#forge:flowers/green', '#forge:tools/knives']);
 
     // Green Chromatic Slurry
     event.recipes.create.mixing([Fluid.of('kubejs:dye_slurry_green').withAmount(1000), Item.of('kubejs:dirty_dye_compound', 1)], [
@@ -289,7 +284,7 @@ ServerEvents.recipes(event => {
     ]).heated().id('create:mixing/green_chromatic_slurry');
 
     // Blue Chromatic Compound
-    event.recipes.create.deploying(Item.of('kubejs:blue_compound'),['#forge:flowers/blue', '#forge:tools/knives']);
+    event.recipes.create.deploying(Item.of('kubejs:blue_compound'), ['#forge:flowers/blue', '#forge:tools/knives']);
 
     // Blue Chromatic Slurry
     event.recipes.create.mixing([Fluid.of('kubejs:dye_slurry_blue').withAmount(1000), Item.of('kubejs:dirty_dye_compound', 1)], [

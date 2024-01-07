@@ -134,8 +134,6 @@ ServerEvents.recipes(event => {
     saw('kubejs:iron_saw', 'minecraft:iron_ingot')
     saw('kubejs:diamond_saw', 'minecraft:diamond')
 
-    // Ceramic Powder
-    event.recipes.create.milling(Item.of('kubejs:ceramic_powder'), Item.of('minecraft:brick')).processingTime(50);
 
     // event.recipes.create.mixing([Fluid.of('kubejs:sulfuric_acid').withAmount(1000)], [Item.of('thermal:sulfur_dust'), Fluid.water(1000)])
 

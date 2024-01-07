@@ -2,4 +2,4 @@
 
 ServerEvents.recipes(event => {
     //
-})
+});

@@ -1,22 +1,25 @@
 //open bag when rightClicked
-ItemEvents.rightClicked(event=>{
-    function lootbag(lootbag,lootable){
-        if(event.item == lootbag){
-            let x = event.player.x
-            let y = event.player.y
-            let z = event.player.z
-            event.server.runCommandSilent(`execute in ${event.level.dimension} run loot spawn ${event.player.x} ${event.player.y} ${event.player.z} loot ${lootable}`) 
-            event.server.runCommandSilent(`playsound minecraft:entity.experience_orb.pickup player @a ${x} ${y} ${z} 1 1`)
-            
+ItemEvents.rightClicked(event => {
+    function lootbag(lootbag, lootable) {
+        if (event.item == lootbag) {
+            let x = event.player.x;
+            let y = event.player.y;
+            let z = event.player.z;
+            event.server.runCommandSilent(`execute in ${event.level.dimension} run loot spawn ${event.player.x} ${event.player.y} ${event.player.z} loot ${lootable}`);
+            event.server.runCommandSilent(`playsound minecraft:entity.experience_orb.pickup player @a ${x} ${y} ${z} 1 1`);
+
             // in creative don't use bag
-            if(!event.player.isCreative()){event.item.count--} 
+            if (!event.player.isCreative()) {
+                event.item.count--;
+            }
         }
     }
+
     //use vanilla loot table for every type of bags
     for (let i = 0; i < global.bag_name.length; i++) {
-        lootbag(`kubejs:${global.bag_name[i]}_bag_common`,`loot:loot_bags/${global.bag_name[i]}/${global.bag_name[i]}_bag_common`)
-        lootbag(`kubejs:${global.bag_name[i]}_bag_rare`,`loot:loot_bags/${global.bag_name[i]}/${global.bag_name[i]}_bag_rare`)
-        lootbag(`kubejs:${global.bag_name[i]}_bag_epic`,`loot:loot_bags/${global.bag_name[i]}/${global.bag_name[i]}_bag_epic`)
+        lootbag(`kubejs:${global.bag_name[i]}_bag_common`, `loot:loot_bags/${global.bag_name[i]}/${global.bag_name[i]}_bag_common`);
+        lootbag(`kubejs:${global.bag_name[i]}_bag_rare`, `loot:loot_bags/${global.bag_name[i]}/${global.bag_name[i]}_bag_rare`);
+        lootbag(`kubejs:${global.bag_name[i]}_bag_epic`, `loot:loot_bags/${global.bag_name[i]}/${global.bag_name[i]}_bag_epic`);
     }
 })
 

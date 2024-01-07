@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
     ]
 
     const supercritical_machine_cutting = [
-        Item.of('entangled:block',2),
+        Item.of('entangled:block', 2),
     ]
 
     multicut(andesite_machines_cutting, 'kubejs:andesite_machine', true)
@@ -100,5 +100,5 @@ ServerEvents.recipes(event => {
     multicut(plastic_machine_cutting, 'kubejs:plastic_machine', true)
     multicut(dynamic_machine_cutting, 'kubejs:dynamic_machine', true)
     multicut(time_machine_cutting, 'kubejs:time_machine', true)
-    multicut(supercritical_machine_cutting,'kubejs:supercritical_machine',true)
+    multicut(supercritical_machine_cutting, 'kubejs:supercritical_machine', true)
 })

@@ -13,3 +13,8 @@ let RARITY_COMMON = "COMMON";
 let RARITY_UNCOMMON = "UNCOMMON";
 let RARITY_RARE = "RARE";
 let RARITY_EPIC = "EPIC";
+
+global.colors = [
+    'white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray',
+    'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black'
+]

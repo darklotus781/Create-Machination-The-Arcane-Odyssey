@@ -1,1 +1,25 @@
-{}
+{
+  "kubejs.ponder.tag.tree_extracting": "The Arboreal Extractor",
+  "kubejs.ponder.tag.tree_extracting.description": "Extracting Sap from tricky trees",
+  "kubejs.ponder.tag.arcane_obelisk": "The Arcane Crystal Obelisk",
+  "kubejs.ponder.tag.arcane_obelisk.description": "Your gate to infinite Arcane Dust",
+  "kubejs.ponder.hephaestus.header": "Constructing the Hephaestus Forge",
+  "kubejs.ponder.hephaestus.text_1": "The §9Hephaestus Forge §ris a 9x9 Multiblock.",
+  "kubejs.ponder.hephaestus.text_2": "This is a tutorial on how you can build it.",
+  "kubejs.ponder.hephaestus.text_3": "Start by placing blocks of §9Arcane §9Chiseled Polished Darkstone §ron the highlighted spots",
+  "kubejs.ponder.hephaestus.text_4": "Then, surround the center block with §9Chiseled Arcane Polished §9Darkstone",
+  "kubejs.ponder.hephaestus.text_5": "To finish the first layer, surround all blocks with §9Polished Darkstone",
+  "kubejs.ponder.hephaestus.text_6": "Finally, place a §9Smithing Table §rin the middle...",
+  "kubejs.ponder.hephaestus.text_7": "...and right-click it with §4Mundabitur Dust",
+  "kubejs.ponder.hephaestus.text_8": "And your §9Hephaestus Forge §rhas been Created!",
+  "kubejs.ponder.hephaestus.text_9": "Finally, place your pedestals and Obelisks and you\u0027re ready for crafting.",
+  "kubejs.ponder.menril.header": "Extracting Menril from Menril trees",
+  "kubejs.ponder.menril.text_1": "Replace all Enriched Menril Logs with normal Menril Logs",
+  "kubejs.ponder.menril.text_2": "Finally place a Arboreal Extractor directly on the center trunk",
+  "kubejs.ponder.obelisk.header": "Farming Arcane Crystals from Arcane Crystal Obilisks",
+  "kubejs.ponder.obelisk.text_1": "First, place an Arcane Polished Darkstone Block.",
+  "kubejs.ponder.obelisk.text_2": "Then, place two Arcane Crystal Blocks above it.",
+  "kubejs.ponder.obelisk.text_3": "This is the Arcane Crystal Obelisk Multiblock ",
+  "kubejs.ponder.obelisk.text_4": "Rightclick it with a Mundabitur Dust to assemble it (This can also be done with deployers)",
+  "kubejs.ponder.obelisk.text_5": "You can now mine it for the obelisk item! "
+}

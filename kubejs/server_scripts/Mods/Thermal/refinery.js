@@ -6,20 +6,20 @@ ServerEvents.recipes(event => {
     // Custom Thermal Refinery Recipes
     event.custom({
         type: 'thermal:refinery',
-        ingredient: {fluid: 'thermal:light_oil', amount: 100},
+        ingredient: Fluid.of('thermal:light_oil').withAmount(100).toJson(),
         result: [
-            {fluid: 'thermal:refined_fuel', amount: 100},
-            {item: 'thermal:sulfur_dust', amount: 1}
+            Fluid.of('thermal:refined_fuel').withAmount(100).toJson(),
+            Item.of('thermal:sulfur_dust').toJson()
         ],
         energy: 5000
     }).id('thermal:machines/refinery/refinery_light_oil');
 
     event.custom({
         type: 'thermal:refinery',
-        ingredient: {fluid: 'thermal:heavy_oil', amount: 100},
+        ingredient: Fluid.of('thermal:heavy_oil').withAmount(100).toJson(),
         result: [
-            {fluid: 'thermal:refined_fuel', amount: 75},
-            {item: 'thermal:tar', amount: 1}
+            Fluid.of('thermal:refined_fuel').withAmount(75).toJson(),
+            Item.of('thermal:tar').toJson()
         ],
         energy: 5000
     }).id('thermal:machines/refinery/refinery_heavy_oil');
