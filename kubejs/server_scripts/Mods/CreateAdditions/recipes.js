@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         ' BSB '
     ], {
         S: Item.of('createaddition:copper_spool'),
-        B: Item.of('create:brass_sheet'),
+        B: Ingredient.of('#forge:plates/brass'),
         P: Item.of('kubejs:power_machine'),
         I: Item.of('createaddition:iron_rod')
     }).id('kubejs:creatadditions_electric_motor');

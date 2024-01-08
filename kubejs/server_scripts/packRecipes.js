@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         'PAP',
         ' P '
     ], {
-        G: Item.of('minecraft:iron_ingot'),
+        G: Ingredient.of('#forge:ingots/iron'),
         A: Item.of('create:andesite_alloy'),
         P: Item.of('thermal:cured_rubber')
     })
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         'PAP',
         ' P '
     ], {
-        G: Item.of('minecraft:iron_ingot'),
+        G: Ingredient.of('#forge:ingots/iron'),
         A: Item.of('create:andesite_alloy'),
         P: Item.of('kubejs:enriched_rubber')
     })
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
     ]);
 
     // Redstone Alloy Ingot
-    event.recipes.create.mixing([Item.of('kubejs:redstone_alloy_ingot', 2)], [Item.of('minecraft:iron_ingot'), Item.of('minecraft:redstone')]).heatRequirement('heated');
+    event.recipes.create.mixing([Item.of('kubejs:redstone_alloy_ingot', 2)], [Ingredient.of('#forge:ingots/iron'), Item.of('minecraft:redstone')]).heatRequirement('heated');
 
     // Redstone Alloy Cable
     event.custom({
@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
             Item.of('kubejs:pcb')
         ], Item.of('kubejs:fiberglass_plate'), [
-            event.recipes.create.deploying(t, [t, Item.of('create:copper_sheet')]),
+            event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/copper')]),
             event.recipes.create.pressing(t, t),
             event.recipes.create.filling(t, [t, Fluid.of('kubejs:soldermask').withAmount(1000)]),
             event.recipes.create.pressing(t, t)
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
 
     // Custom Saws
     saw('kubejs:stone_saw', '#forge:cobblestone')
-    saw('kubejs:iron_saw', 'minecraft:iron_ingot')
+    saw('kubejs:iron_saw', '#forge:ingots/iron')
     saw('kubejs:diamond_saw', 'minecraft:diamond')
 
 
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('kubejs:power_machine'), Item.of('thermal:machine_frame'));
 
     event.recipes.create.pressing(Item.of('kubejs:carbon_sheet'), Item.of('minecraft:charcoal'));
-    event.recipes.create.filling(Item.of('kubejs:soaked_sheet'), [Item.of('create:copper_sheet'), Fluid.of('kubejs:sulfuric_acid').withAmount(100)]);
+    event.recipes.create.filling(Item.of('kubejs:soaked_sheet'), [Ingredient.of('#forge:plates/copper'), Fluid.of('kubejs:sulfuric_acid').withAmount(100)]);
     event.recipes.create.filling(Item.of('kubejs:plastic'), [Item.of('kubejs:carbon_sheet'), Fluid.of('kubejs:plastic').withAmount(90)]);
 
     // Dirty Inductor
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
     ], Item.of('kubejs:rough_sheet'), [
         event.recipes.create.filling(t, [t, Fluid.water(500)]),
         event.recipes.create.filling(t, [t, Fluid.of('kubejs:sulfuric_acid').withAmount(200)]),
-        event.recipes.create.deploying(t, [t, Item.of('create:copper_sheet')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/copper')]),
         event.recipes.create.deploying(t, [t, Item.of('createaddition:copper_rod')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:plastic')]),
         event.recipes.create.pressing(t, t)
@@ -189,9 +189,9 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:dirt_ceramic_capacitor'),
     ], Item.of('kubejs:ceramic_powder'), [
         event.recipes.create.pressing(t, t),
-        event.recipes.create.deploying(t, [t, Item.of('create:copper_sheet')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/copper')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:mica_sheet')]),
-        event.recipes.create.deploying(t, [t, Item.of('create:copper_sheet')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/copper')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:ceramic_powder')]),
         event.recipes.create.deploying(t, [t, Item.of('createaddition:copper_rod')]),
         event.recipes.create.pressing(t, t)
@@ -239,14 +239,14 @@ ServerEvents.recipes(event => {
     event.recipes.create.splashing(Item.of('kubejs:rejuvinated_menril_shrub'), [Item.of('kubejs:menril_shrub')]);
 
     caseify('create:andesite_casing', Item.of('create:andesite_alloy'), Ingredient.of('#forge:lumber/all'));
-    caseify('create:copper_casing', Item.of('create:copper_sheet'), Ingredient.of('#forge:lumber/all'));
-    caseify('create:brass_casing', Item.of('create:brass_sheet'), Ingredient.of('#forge:lumber/all'));
-    caseify('kubejs:zinc_casing', Item.of('createaddition:zinc_sheet'), Ingredient.of('#forge:stone'));
-    caseify('kubejs:invar_casing', Item.of('thermal:invar_ingot'), Ingredient.of('#forge:stone'));
-    caseify('kubejs:fluix_casing', Item.of('thermal:lead_plate'), Item.of('minecraft:basalt'));
-    caseify('kubejs:gold_casing', Item.of('create:golden_sheet'), Ingredient.of('#forge:lumber/stripped'));
+    caseify('create:copper_casing', Ingredient.of('#forge:plates/copper'), Ingredient.of('#forge:lumber/all'));
+    caseify('create:brass_casing', Ingredient.of('#forge:plates/brass'), Ingredient.of('#forge:lumber/all'));
+    caseify('kubejs:zinc_casing', Ingredient.of('#forge:plates/zinc'), Ingredient.of('#forge:stone'));
+    caseify('kubejs:invar_casing', Ingredient.of('#forge:ingots/invar'), Ingredient.of('#forge:stone'));
+    caseify('kubejs:fluix_casing', Ingredient.of('#forge:plates/lead'), Item.of('minecraft:basalt'));
+    caseify('kubejs:gold_casing', Ingredient.of('#forge:plates/gold'), Ingredient.of('#forge:lumber/stripped'));
     caseify('create:refined_radiance_casing', Item.of('create:refined_radiance'), Ingredient.of('#forge:lumber/stripped'));
     caseify('create:shadow_steel_casing', Item.of('create:shadow_steel'), Ingredient.of('#forge:lumber/stripped'));
     caseify('kubejs:supercritical_casing', Item.of('create:refined_radiance_casing'), Item.of('create:shadow_steel_casing'));
-    caseify('kubejs:enderium_casing', Item.of('thermal:enderium_ingot'), Item.of('#forge:lumber/all'));
+    caseify('kubejs:enderium_casing', Ingredient.of('#forge:ingots/enderium'), Item.of('#forge:lumber/all'));
 })

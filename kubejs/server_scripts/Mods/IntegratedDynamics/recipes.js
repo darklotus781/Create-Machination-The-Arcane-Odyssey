@@ -40,6 +40,7 @@ let integrated_parts = [
 ];
 
 ServerEvents.recipes(event => {
+    event.remove ({id: 'integrateddynamics:special/facade'})
     event.remove({output: 'integrateddynamics:logic_director'});
     event.remove({output: 'integrateddynamics:energy_battery'});
     event.remove({output: 'integratedcrafting:part_interface_crafting'});

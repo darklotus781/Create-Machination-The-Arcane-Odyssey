@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     ], Item.of('ars_nouveau:source_gem'), [
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/knives')]),
         event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:liquid_chorus').withAmount(250)]),
-        event.recipes.create.deploying(t, [t, Item.of('botania:terrasteel_nugget')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:nuggets/terrasteel')]),
         event.recipes.create.filling(t, [t, Fluid.of('thermal:ender').withAmount(125)]),
         event.recipes.create.deploying(t, [t, Item.of('botania:dragonstone')]),
         event.recipes.create.pressing(t, t)

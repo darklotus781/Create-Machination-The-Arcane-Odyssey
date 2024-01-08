@@ -34,8 +34,7 @@ ServerEvents.tags('item', event => {
     event.add('create:upright_on_belt', 'forbidden_arcanus:pixie');
     event.add('create:upright_on_belt', 'tiab:time_in_a_bottle');
     event.add('create:upright_on_belt', 'forbidden_arcanus:arcane_crystal_obelisk');
-    event.add('create:recipenuggets', 'minecraft:iron_nugget');
-    event.add('create:recipenuggets', 'create:zinc_nugget');
+    event.add('create:recipe_nuggets', ['#forge:nuggets/iron', '#forge:nuggets/zinc']);
     event.add('create:kinetic_mechanisms', 'kubejs:wooden_mechanism');
     event.add('create:kinetic_mechanisms', 'kubejs:kinetic_mechanism');
 

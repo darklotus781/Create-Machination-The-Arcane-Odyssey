@@ -7,8 +7,8 @@ ServerEvents.recipes(event => {
         Item.of('minecraft:saddle'),
     ], Item.of('minecraft:leather'), [
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/knives')]),
-        event.recipes.create.deploying(t, [t, Item.of('minecraft:iron_ingot')]),
-        event.recipes.create.deploying(t, [t, Item.of('minecraft:iron_ingot')])
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:ingots/iron')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:ingots/iron')])
     ]).transitionalItem(t).loops(2);
 
     // 16x Cogwheel
@@ -25,8 +25,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('create:track', 16)
     ], Ingredient.of('#create:sleepers'), [
-        event.recipes.create.deploying(t, [t, Ingredient.of('#create:recipenuggets')]),
-        event.recipes.create.deploying(t, [t, Ingredient.of('#create:recipenuggets')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#create:recipe_nuggets')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#create:recipe_nuggets')]),
         event.recipes.create.pressing(t, t)
     ]).transitionalItem(t).loops(1);
 });

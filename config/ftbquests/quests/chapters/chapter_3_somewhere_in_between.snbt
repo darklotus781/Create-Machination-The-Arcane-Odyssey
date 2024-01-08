@@ -268,7 +268,7 @@
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
 			description: ["KubeJS is a mod that significantly simplifies the process of creating a modpack by allowing creators to add custom items and unique interactions without the need for a full mod.\\n"]
-			icon: "kubejs:integrational_mechanism"
+			icon: "kubejs:dynamic_mechanism"
 			id: "34312A4E0AFAD769"
 			subtitle: "The glue making this pack possible"
 			tasks: [{

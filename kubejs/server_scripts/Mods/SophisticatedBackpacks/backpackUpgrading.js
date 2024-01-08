@@ -54,7 +54,7 @@ BlockEvents.rightClicked(event => {
 })
 
 ServerEvents.recipes(event => {
-    event.smithing(Item.of('kubejs:leather_pocket'), Item.of('kubejs:runic_tablet'), Item.of('minecraft:bundle'), Item.of('minecraft:iron_ingot'));
+    event.smithing(Item.of('kubejs:leather_pocket'), Item.of('kubejs:runic_tablet'), Item.of('minecraft:bundle'), Ingredient.of('#forge:ingots/iron'));
     event.remove({output: 'sophisticatedbackpacks:upgrade_base'});
     event.shaped('sophisticatedbackpacks:upgrade_base', [' T ', 'TDT', ' T '], {
         T: 'kubejs:runic_tablet',
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
     event.smithing('sophisticatedbackpacks:xp_pump_upgrade', Item.of('kubejs:runic_tablet'), 'sophisticatedbackpacks:upgrade_base', 'thermal:xp_crystal');
     event.remove({output: /sophisticatedbackpacks\:.*_backpack/});
 
-    event.shapeless('sophisticatedbackpacks:gold_backpack', ['sophisticatedbackpacks:backpack', 'create:brass_sheet']).modifyResult((inventory, itemstack) => {
+    event.shapeless('sophisticatedbackpacks:gold_backpack', ['sophisticatedbackpacks:backpack', Ingredient.of('#forge:plates/brass')]).modifyResult((inventory, itemstack) => {
         let backpack = inventory.find(Item.of('sophisticatedbackpacks:backpack').weakNBT());
         if (backpack.nbt == null) return itemstack;
         let nbt = backpack.nbt;

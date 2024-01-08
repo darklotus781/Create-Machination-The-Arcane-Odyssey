@@ -8,8 +8,8 @@ ServerEvents.recipes(event => {
     ], t, [
         event.recipes.create.deploying(t, [t, Item.of('forbidden_arcanus:arcane_crystal')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:sourcegem_fragments')]),
-        event.recipes.create.deploying(t, [t, Item.of('forbidden_arcanus:deorum_nugget')]),
-        event.recipes.create.deploying(t, [t, Item.of('forbidden_arcanus:deorum_nugget')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:nuggets/deorum')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:nuggets/deorum')]),
         event.recipes.create.filling(t, [t, Fluid.of('kubejs:source', 144)]),
         event.recipes.create.pressing(t, t)
     ]).transitionalItem(t).loops(1).id('kubejs:time_in_a_bottle');

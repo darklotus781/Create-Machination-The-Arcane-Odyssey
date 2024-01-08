@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     ]).transitionalItem(t).loops(1);
 
     // AE2 Printed Logic Circuit
-    t = Item.of('create:golden_sheet');
+    t = Ingredient.of('#forge:plates/gold');
     event.recipes.create.sequenced_assembly([
         Item.of('ae2:printed_logic_processor'),
     ], t, [

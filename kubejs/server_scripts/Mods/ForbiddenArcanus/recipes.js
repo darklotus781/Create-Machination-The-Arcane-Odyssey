@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.filling(Item.of('forbidden_arcanus:aureal_bottle'), [Item.of('kubejs:empty_vial'), Fluid.of('kubejs:aureal_essence').withAmount(333)]);
     event.recipes.create.haunting(Item.of('forbidden_arcanus:dark_nether_star'), Item.of('minecraft:nether_star')).id('forbidden_arcanus:dark_nether_star');
     event.recipes.create.mixing(Item.of('forbidden_arcanus:mundabitur_dust'), [Item.of('forbidden_arcanus:arcane_crystal_dust'), Item.of('ae2:sky_dust')]);
-    event.recipes.create.mixing(Item.of('forbidden_arcanus:deorum_ingot'), [Item.of('minecraft:gold_nugget', 9), Item.of('forbidden_arcanus:mundabitur_dust')]);
+    event.recipes.create.mixing(Ingredient.of('#forge:ingots/deorum'), [Ingredient.of('#forge:nuggets/gold', 9), Item.of('forbidden_arcanus:mundabitur_dust')]);
     event.recipes.create.haunting(Item.of('forbidden_arcanus:soulless_sand'), Ingredient.of('#forge:sand')).id('kubejs:haunting_soulless_sand');
 
     event.custom({

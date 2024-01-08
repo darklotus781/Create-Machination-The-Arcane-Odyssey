@@ -72,7 +72,7 @@
 		filterSlots = 9
 		#Number of filter slots displayed in a row
 		#Range: 1 ~ 6
-		slotsInRow = 3
+		slotsInRow = 2
 
 	#Advanced Compacting Upgrade Settings
 	[server.advancedCompactingUpgrade]

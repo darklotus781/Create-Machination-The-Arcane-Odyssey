@@ -20,13 +20,12 @@ ServerEvents.recipes(event => {
     event.remove({id: 'create:sequenced_assembly/precision_mechanism'});
     event.remove({id: 'thermal:compat/create/smelter_create_alloy_andesite_alloy'});
 
-
     // Blaze Burner from Empty Blaze Burner + Runic Tablet
     event.shapeless(Item.of('create:blaze_burner'), [Item.of('create:empty_blaze_burner'), Item.of('kubejs:runic_tablet')]).id('kubejs:filled_blaze_burner_from_empty_burner_and_runic_table_manual_only');
 
     event.replaceInput({id: 'create:crafting/kinetics/elevator_pulley'}, 'minecraft:dried_kelp_block', 'thermal:cured_rubber_block');
-    event.replaceInput({id: 'create:crafting/kinetics/train_door'}, 'create:brass_sheet', 'create:sturdy_sheet');
-    event.replaceInput({id: 'create:crafting/kinetics/train_trapdoor'}, 'create:brass_sheet', 'create:sturdy_sheet');
+    event.replaceInput({id: 'create:crafting/kinetics/train_door'}, 'alltheores:brass_plate', 'create:sturdy_sheet');
+    event.replaceInput({id: 'create:crafting/kinetics/train_trapdoor'}, 'alltheores:brass_plate', 'create:sturdy_sheet');
 
     event.replaceInput({id: 'create:mechanical_crafting/wand_of_symmetry'}, 'minecraft:ender_pearl', 'create:refined_radiance');
     event.replaceInput({id: 'create:mechanical_crafting/wand_of_symmetry'}, 'create:precision_mechanism', 'kubejs:radiant_mechanism');
@@ -39,10 +38,10 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('create:andesite_alloy', 9), Item.of('create:andesite_alloy_block'));
 
     // Washing Soulsand
-    event.recipes.create.splashing([Item.of('minecraft:quartz', 2), Item.of('minecraft:gold_nugget').withChance(0.69)], Item.of('minecraft:soul_sand')).id('kubejs:washing_soul_sand');
+    event.recipes.create.splashing([Item.of('minecraft:quartz', 2), Item.of('#forge:nuggets/gold').withChance(0.69)], Item.of('minecraft:soul_sand')).id('kubejs:washing_soul_sand');
 
     // Washing Sand
-    event.recipes.create.splashing(Item.of(Item.of('clay_ball'), 1).withChance(0.25), Ingredient.of("#forge:sand"));
+    event.recipes.create.splashing(Item.of('minecraft:clay_ball', 1).withChance(0.25), Ingredient.of("#forge:sand"));
 
     // Andesite Blend - Disabled in favor of mixing
     // event.shaped(Item.of('kubejs:andesite_blend', 2), [
@@ -59,10 +58,10 @@ ServerEvents.recipes(event => {
         'AS'
     ], {
         A: Item.of('kubejs:andesite_blend'),
-        S: Item.of('create:zinc_nugget')
-    }).id('kubejs:andesite_alloy_from_blend_and_zinc_manual_only');
+        S: Ingredient.of('#create:recipe_nuggets')
+    }).id('kubejs:andesite_alloy_from_blend_and_nuggets_manual_only');
 
-    event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), [Item.of('create:zinc_nugget'), Item.of('kubejs:andesite_blend')]).id('kubejs:mixing/andesite_alloy_from_blend_and_zinc');
+    event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), [Ingredient.of('#create:recipe_nuggets'), Item.of('kubejs:andesite_blend')]).id('kubejs:mixing/andesite_alloy_from_blend_and_nuggets');
     event.recipes.create.mixing(Item.of('kubejs:andesite_blend'), [Item.of('kubejs:andesite_dust'), Item.of('minecraft:clay_ball')]).id('kubejs:mixing/andesite_blend_from_dust_and_clay');
 
 
@@ -75,7 +74,7 @@ ServerEvents.recipes(event => {
         'SSS'
     ], {
         A: Item.of('minecraft:white_wool'),
-        N: Item.of('create:zinc_nugget'),
+        N: Ingredient.of('#create:recipe_nuggets'),
         S: Item.of('minecraft:stick')
     }).id('kubejs:sail_frame_from_sail');
 

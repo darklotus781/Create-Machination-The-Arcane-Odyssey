@@ -37,8 +37,8 @@ ServerEvents.recipes(event => {
         'NLP',
         ' PL'
     ], {
-        N: Item.of('minecraft:iron_nugget'),
-        P: Item.of('create:iron_sheet'),
+        N: Ingredient.of('#forge:nuggets/iron'),
+        P: Ingredient.of('#forge:plates/iron'),
         L: Ingredient.of('#forge:ingots/lead')
     });
 
@@ -49,8 +49,8 @@ ServerEvents.recipes(event => {
         'PLP',
         'NPN'
     ], {
-        N: Item.of('minecraft:iron_nugget'),
-        P: Item.of('create:iron_sheet'),
+        N: Ingredient.of('#forge:nuggets/iron'),
+        P: Ingredient.of('#forge:plates/iron'),
         L: Ingredient.of('#forge:ingots/lead')
     });
 

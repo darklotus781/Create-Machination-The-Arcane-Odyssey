@@ -3,16 +3,65 @@
 		name: "Member"
 		power: 1
 		condition: "always_active"
+		ftbchunks.chunk_load_offline: true
+		ftbchunks.max_claimed: 500
+		ftbchunks.max_force_loaded: 50
+		ftbessentials.back.cooldown: 600
+		ftbessentials.back.warmup: 10
+		ftbessentials.back.max: 2
+		ftbessentials.home.cooldown: 600
+		ftbessentials.home.max: 2
+		ftbessentials.home.warmup: 10
+		ftbessentials.rtp.cooldown: 86400
+		ftbessentials.rtp.warmup: 10
+		ftbessentials.spawn.cooldown: 600
+		ftbessentials.spawn.warmup: 10
+		ftbessentials.tpa.cooldown: 600
+		ftbessentials.tpa.warmup: 10
+		ftbessentials.warp.cooldown: 600
+		ftbessentials.warp.warmup: 10
 	}
 	vip: {
 		name: "VIP"
 		power: 50
-		ftbranks.name_format: "&bVIP {name}"
+		ftbranks.name_format: "&6{name}"
+        ftbchunks.max_claimed: 1000
+        ftbchunks.max_force_loaded: 100
+        ftbessentials.back.cooldown: 300
+        ftbessentials.back.warmup: 5
+        ftbessentials.back.max: 5
+        ftbessentials.home.cooldown: 300
+        ftbessentials.home.max: 5
+        ftbessentials.home.warmup: 5
+        ftbessentials.rtp.cooldown: 28800
+        ftbessentials.rtp.warmup: 5
+        ftbessentials.spawn.cooldown: 300
+        ftbessentials.spawn.warmup: 5
+        ftbessentials.tpa.cooldown: 300
+        ftbessentials.tpa.warmup: 5
+        ftbessentials.warp.cooldown: 300
+        ftbessentials.warp.warmup: 5
 	}
 	admin: {
 		name: "Admin"
 		power: 1000
 		condition: "op"
 		ftbranks.name_format: "&2{name}"
+        ftbchunks.max_claimed: 5000
+        ftbchunks.max_force_loaded: 500
+        ftbessentials.back.cooldown: 0
+        ftbessentials.back.warmup: 0
+        ftbessentials.back.max: 100
+        ftbessentials.home.cooldown: 0
+        ftbessentials.home.max: 2147483647
+        ftbessentials.home.warmup: 0
+        ftbessentials.rtp.cooldown: 30
+        ftbessentials.rtp.warmup: 0
+        ftbessentials.spawn.cooldown: 0
+        ftbessentials.spawn.warmup: 0
+        ftbessentials.tpa.cooldown: 0
+		ftbessentials.tpa.warmup: 0
+        ftbessentials.warp.cooldown: 0
+		ftbessentials.warp.warmup: 0
 	}
 }

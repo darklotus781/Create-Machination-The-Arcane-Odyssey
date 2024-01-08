@@ -37,7 +37,7 @@
 	quests: [
 		{
 			dependencies: ["394B02F151B85E24"]
-			description: ["When you complete this quest, your Obsidian Flint and Steel will be take, but we'll return them later :)"]
+			description: ["When you complete this quest, your Obsidian Flint and Steel will be taken, but we'll return them later :)"]
 			hide: true
 			id: "504C21E69925C8A5"
 			tasks: [

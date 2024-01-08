@@ -8,11 +8,11 @@ ServerEvents.recipes(event => {
         S: Ingredient.of('#rods/wooden')
     });
     event.shaped(Item.of('farmersdelight:iron_knife'), ['S ', ' M'], {
-        M: Item.of('minecraft:iron_ingot'),
+        M: Ingredient.of('#forge:ingots/iron'),
         S: Ingredient.of('#rods/wooden')
     });
     event.shaped(Item.of('farmersdelight:golden_knife'), ['S ', ' M'], {
-        M: Item.of('minecraft:gold_ingot'),
+        M: Ingredient.of('#forge:ingots/gold'),
         S: Ingredient.of('#rods/wooden')
     });
     event.shaped(Item.of('farmersdelight:diamond_knife'), ['S ', ' M'], {
