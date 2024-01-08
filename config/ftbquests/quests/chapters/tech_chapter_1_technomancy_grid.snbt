@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "tech_chapter_1_technomancy_grid"
 	group: "21CB949AE3121A8A"
-	icon: "kubejs:integrational_machine"
+	icon: "kubejs:dynamic_machine"
 	id: "52BFF2709DB31CA9"
 	images: [
 		{

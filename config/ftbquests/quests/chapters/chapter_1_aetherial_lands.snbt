@@ -4,13 +4,7 @@
 	default_quest_shape: ""
 	filename: "chapter_1_aetherial_lands"
 	group: "3F3D969172D871AB"
-	icon: {
-		Count: 1b
-		id: "aether:gravitite_sword"
-		tag: {
-			Damage: 0
-		}
-	}
+	icon: "aether:aether_portal_frame"
 	id: "401DD7DCCE023222"
 	images: [
 		{

@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "chapter_2_the_nether"
 	group: "3F3D969172D871AB"
-	icon: "minecraft:wither_skeleton_skull"
+	icon: "netherportalitem:nether_portal_frame"
 	id: "2B528CDE6E448F87"
 	images: [
 		{

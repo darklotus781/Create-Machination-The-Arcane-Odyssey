@@ -5,7 +5,7 @@
 	filename: "chapter_3_somewhere_in_between"
 	group: "3F3D969172D871AB"
 	hide_quest_until_deps_visible: true
-	icon: "minecraft:grass"
+	icon: "minecraft:sculk_shrieker"
 	id: "6D0E79974AD2FF7F"
 	images: [
 		{
@@ -318,6 +318,10 @@
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
+			description: [
+				"Menril chunks are a byproduct of chopping down menril trees."
+				"You can also use a drying basin to dry menril resin into block of crystalized menril which can be broken down into chunks.  Check JEI for recipes using chunks including making Andesite Alloy more efficiently."
+			]
 			id: "227004D221260FC2"
 			subtitle: "Better Andesite Alloy rates than Diorite"
 			tasks: [{

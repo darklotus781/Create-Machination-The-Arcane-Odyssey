@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_5_the_other_place"
+	group: "3F3D969172D871AB"
+	icon: "allthemodium:other_vibranium_ore"
+	id: "1FEE7C12BCCF1E5F"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Chapter 5: The Other Place"
+}

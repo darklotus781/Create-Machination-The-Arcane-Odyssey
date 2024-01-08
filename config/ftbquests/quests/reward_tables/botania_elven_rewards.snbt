@@ -1,0 +1,17 @@
+{
+	id: "100A70F71B08F856"
+	loot_size: 1
+	order_index: 29
+	rewards: [
+		{ item: "botania:elementium_ingot", random_bonus: 2 }
+		{ item: "botania:pixie_dust", random_bonus: 1 }
+		{ item: "botania:quartz_elven", random_bonus: 1 }
+		{ item: "botania:elf_glass", random_bonus: 3 }
+		{ item: "botania:dreamwood_log", random_bonus: 3 }
+		{ item: "botania:dreamwood", random_bonus: 3 }
+		{ item: "botania:dragonstone", random_bonus: 1 }
+		{ item: "botania:black_lotus", weight: 0.2f }
+		{ item: "botania:blacker_lotus", weight: 0.1f }
+	]
+	title: "Botania Elven Rewards"
+}

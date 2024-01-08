@@ -1,4 +1,5 @@
 {
+	icon: "ftbquests:lootcrate"
 	id: "6BB3B6021DCA5870"
 	loot_size: 1
 	order_index: 26

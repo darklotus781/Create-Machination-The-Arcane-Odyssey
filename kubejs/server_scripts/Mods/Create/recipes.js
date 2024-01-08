@@ -44,14 +44,14 @@ ServerEvents.recipes(event => {
     // Washing Sand
     event.recipes.create.splashing(Item.of(Item.of('clay_ball'), 1).withChance(0.25), Ingredient.of("#forge:sand"));
 
-    // Andesite Blend
-    event.shaped(Item.of('kubejs:andesite_blend', 2), [
-        'SA',
-        'AS'
-    ], {
-        A: Item.of('minecraft:andesite'),
-        S: Item.of('minecraft:clay_ball')
-    }).id('kubejs:andesite_blend_from_dust_and_clay_manual_only');
+    // Andesite Blend - Disabled in favor of mixing
+    // event.shaped(Item.of('kubejs:andesite_blend', 2), [
+    //     'SA',
+    //     'AS'
+    // ], {
+    //     A: Item.of('minecraft:andesite'),
+    //     S: Item.of('minecraft:clay_ball')
+    // }).id('kubejs:andesite_blend_from_dust_and_clay_manual_only');
 
     //Andesite Alloy
     event.shaped(Item.of('create:andesite_alloy', 2), [
