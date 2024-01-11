@@ -1,0 +1,15 @@
+{
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "machination:mobs/spawners/zombie"
+            },
+            "weight": 100
+        }
+    ],
+    "fallback": "machination:mobs/spawners/zombie",
+    "name": "machination:mobs/spawners/zombie"
+}

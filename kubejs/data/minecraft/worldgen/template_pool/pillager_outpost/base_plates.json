@@ -1,0 +1,60 @@
+{
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "location": "minecraft:pillager_outpost/base_plate",
+                "processors": {
+                    "processors": []
+                },
+                "projection": "rigid"
+            },
+            "weight": 5
+        },
+        {
+            "weight": 1,
+            "element": {
+                "location": "machination:pillager_outpost/ruins/castle_ruin",
+                "processors": {
+                    "processors": []
+                },
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "location": "machination:pillager_outpost/ruins/tower_ruin_1",
+                "processors": {
+                    "processors": []
+                },
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "location": "machination:pillager_outpost/ruins/tower_ruin_2",
+                "processors": {
+                    "processors": []
+                },
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "location": "machination:pillager_outpost/ruins/tower_ruin_3",
+                "processors": {
+                    "processors": []
+                },
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        }
+    ],
+    "fallback": "minecraft:empty"
+}

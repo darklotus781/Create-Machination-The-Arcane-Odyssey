@@ -187,6 +187,11 @@
 					table_id: 7440942548698719000L
 					type: "random"
 				}
+				{
+					id: "1DABA8921A5F9BB9"
+					item: "aether:aether_portal_frame"
+					type: "item"
+				}
 			]
 			shape: "hexagon"
 			tasks: [
@@ -1245,7 +1250,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["6B755A3E6E1AA414"]
 			description: ["Quicksoil accelerates movement of players, mobs and items.  It's like Blue ice but better."]
+			hide_dependency_lines: true
 			id: "4A9476591E7D2E74"
 			rewards: [{
 				count: 10
@@ -1267,10 +1274,12 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["6B755A3E6E1AA414"]
 			description: [
 				"Aerogel is crafted by placing lava in the Aether."
 				"Aerogel is resistant to explosions, more so than other blocks, and is resistant as overworld Obsidian."
 			]
+			hide_dependency_lines: true
 			id: "1706F339AD3849D9"
 			rewards: [{
 				count: 8
@@ -1292,6 +1301,8 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["6B755A3E6E1AA414"]
+			hide_dependency_lines: true
 			id: "44444CC74264A423"
 			rewards: [
 				{

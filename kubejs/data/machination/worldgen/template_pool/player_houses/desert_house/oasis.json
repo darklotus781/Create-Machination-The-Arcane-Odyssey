@@ -1,0 +1,15 @@
+{
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "machination:player_houses/desert_house/feature_oasis"
+            },
+            "weight": 100
+        }
+    ],
+    "fallback": "minecraft:empty",
+    "name": "machination:player_houses/desert_house/oasis"
+}

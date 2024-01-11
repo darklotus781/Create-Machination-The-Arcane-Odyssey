@@ -1,0 +1,15 @@
+{
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "machination:mobs/special_spawners/skeleton"
+            },
+            "weight": 100
+        }
+    ],
+    "fallback": "machination:mobs/special_spawners/skeleton",
+    "name": "machination:mobs/special_spawners/skeleton"
+}

@@ -1,0 +1,33 @@
+{
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "machination:player_houses/player_house/feature_farm"
+            },
+            "weight": 100
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "machination:player_houses/player_house/feature_portal_1"
+            },
+            "weight": 100
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "machination:player_houses/player_house/feature_portal_2"
+            },
+            "weight": 100
+        }
+    ],
+    "fallback": "minecraft:empty",
+    "name": "machination:player_houses/player_house/portals_and_farms"
+}

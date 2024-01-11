@@ -1,6 +1,5 @@
 Ponder.tags(event => {
     event.createTag("kubejs:tree_extracting", "thermal:device_tree_extractor", "The Arboreal Extractor", "Extracting Sap from tricky trees", [
-        // some default items
         "thermal:device_tree_extractor",
         "integrateddynamics:bucket_menril_resin",
         "integrateddynamics:menril_sapling"
@@ -10,9 +9,40 @@ Ponder.tags(event => {
         'forbidden_arcanus:arcane_crystal_obelisk',
         'forbidden_arcanus:arcane_crystal_dust_speck'
     ]);
+
+    event.createTag('kubejs:corrupted_pixie', 'forbidden_arcanus:corrupted_pixie_utrem_jar', 'Utrem Jar Conversion', 'Pixies can be converted to Aureal Essence', [
+        'forbidden_arcanus:corrupted_pixie',
+        'forbidden_arcanus:corrupted_pixie_utrem_jar',
+        'forbidden_arcanus:pixie_utrem_jar',
+        'forbidden_arcanus:pixie'
+    ]);
 })
 
 Ponder.registry(event => {
+    event.create([
+        'forbidden_arcanus:corrupted_pixie',
+        'forbidden_arcanus:corrupted_pixie_utrem_jar',
+        'forbidden_arcanus:pixie_utrem_jar',
+        'forbidden_arcanus:pixie',
+        'forbidden_arcanus:utrem_jar'
+    ]).scene("kubejs:corrupted_pixie", "Bottling the Corrupted Pixie for futher processing!", "kubejs:pixie_jar_conversion", (scene, util) => {
+        scene.showStructure()
+        scene.idle(40);
+        scene.text(60, "This is A Utrem Jar", [2.5,2.5, 2.5])
+            .placeNearTarget()
+            .attachKeyFrame();
+        scene.idle(70);
+        scene.showControls(30, [2.5, 2.5, 2.5], "down")
+            .rightClick()
+            .withItem("forbidden_arcanus:corrupted_pixie");
+        scene.idle(50);
+        scene.world.modifyBlock([2, 2, 2], () => Block.id("forbidden_arcanus:corrupted_pixie_utrem_jar"), true);
+        scene.idleSeconds(2)
+        scene.text(90, "Right click the Utrem Jar with a Corrupted Pixie and it converts to a Corrupted Pixie Utrem Jar.", [2.5, 2.5, 2.5]).attachKeyFrame();
+        scene.idleSeconds(5)
+        scene.text(70, "Mine, drill or break the jar and it can be further processed in your factory!", [2.5, 2.5, 2.5])
+    });
+
     event.create(["integrateddynamics:bucket_menril_resin", 'thermal:device_tree_extractor'])
         .scene("menril", "Extracting Menril from Menril trees", "kubejs:menriltree", (scene, util) => {
             scene.showStructure()

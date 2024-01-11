@@ -554,6 +554,84 @@
 			x: 6.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["28BEAC1D3AD033C1"]
+			description: [
+				"Clicking this cannot be undone.  If you're not cut out for the Aether, you can skip it entirely."
+				"Best of luck!!!"
+			]
+			disable_toast: true
+			icon: "minecraft:barrier"
+			id: "38F56772D4CD3649"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p complete 401DD7DCCE023222"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					icon: "ftbquests:book"
+					id: "2BFEC131EE134346"
+					silent: true
+					team_reward: false
+					title: "Skip the Aether Quest Line"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					id: "431CD0E03BD251A3"
+					item: "aether:aether_portal_frame"
+					only_one: true
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "23E83A544E48E45D"
+				title: "I'm a Quitter"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1D6C12844C48A50F"]
+			description: [
+				"Clicking this cannot be undone.  If you're not cut out for the Nether, you can skip it entirely."
+				"You will have to come back eventually..."
+			]
+			disable_toast: true
+			icon: "minecraft:structure_void"
+			id: "34329E820B657172"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p complete 2B528CDE6E448F87"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					icon: "ftbquests:book"
+					id: "5C885AEA3A4F50B8"
+					silent: true
+					team_reward: false
+					title: "Skip the Nether Quest Line"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					id: "6A3B4DB272ED5547"
+					item: "netherportalitem:nether_portal_frame"
+					only_one: true
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "57AF8284248EDA12"
+				title: "I'm still a quitter!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
 	]
 	title: "The Arcane Odyssey"
 }

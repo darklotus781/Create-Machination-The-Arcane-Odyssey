@@ -1,3 +1,6 @@
 #Should we replace the mystery box inside AE2 Meteors with the Catalyst?
 replaceAe2Meteor = true
+#How many blocks should a Catalyst Block be moved when right-clicked with the Activator Wand?
+#Range: 1 ~ 64
+moveCatalystDistance = 3
 

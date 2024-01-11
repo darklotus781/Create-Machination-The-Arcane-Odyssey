@@ -93,7 +93,15 @@
 				}
 			}
 		}
-		{ item: "createresourcegeodes:catalyst_activator_wand" }
+		{
+			item: {
+				Count: 1b
+				id: "createresourcegeodes:catalyst_activator_wand"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
 		{
 			item: {
 				Count: 1b

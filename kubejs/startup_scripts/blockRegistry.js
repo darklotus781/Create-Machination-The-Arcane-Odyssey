@@ -24,8 +24,8 @@ StartupEvents.registry("block", event => {
             .hardness(3.0)
             .displayName(display + ' Machine')
             .notSolid()
-            .renderType(layer)
-    }
+            .renderType(layer);
+    };
 
     device('sturdy_device')
         .soundType('stone');
@@ -57,32 +57,55 @@ StartupEvents.registry("block", event => {
         .soundType('stone')
         .box(2, 0, 1, 14, 14, 15);
 
-    // machine('Copper', 'Pressure', "cutout")
-    machine('Zinc', 'Scorch', "cutout")
+    // machine('Copper', 'Pressure', "cutout");
+    machine('Zinc', 'Scorch', "cutout");
     // machine('Train', 'Track', "cutout") // Terrible Icon and duplicate of Sturdy
-    machine('Enderium', 'Abstruse', "cutout")
-    machine('Power', 'Power', "translucent")
+    machine('Enderium', 'Abstruse', "cutout");
+    machine('Power', 'Power', "translucent");
 
-    event.create('enderium_casing').model('kubejs:block/enderium_casing').hardness(4.0).displayName('Ender Casing')
-    event.create('zinc_casing').hardness(3.0).displayName('Zinc Casing')
-    event.create('invar_casing').hardness(3.0).displayName('Invar Casing')
-    event.create('fluix_casing').hardness(3.0).displayName('Fluix Casing')
-    event.create('supercritical_casing')
-    event.create('gold_casing')
+    event.create('enderium_casing').model('kubejs:block/enderium_casing').hardness(4.0).displayName('Ender Casing');
+    event.create('zinc_casing').hardness(3.0).displayName('Zinc Casing');
+    event.create('invar_casing').hardness(3.0).displayName('Invar Casing');
+    event.create('fluix_casing').hardness(3.0).displayName('Fluix Casing');
+    event.create('supercritical_casing');
+    event.create('gold_casing');
 
-    event.create('mica_block').hardness(3.0).displayName('Mica Block')
+    event.create('mica_block').hardness(3.0).displayName('Mica Block');
 
-    let layer = "cutout"
-    event.create('andesite_machine').displayName('Andesite Machine').notSolid().renderType(layer).hardness(3.0)
-    event.create('brass_machine').displayName('Brass Machine').notSolid().renderType(layer).hardness(3.0)
-    event.create('copper_machine').displayName('Copper Machine').notSolid().renderType(layer).hardness(3.0)
-    event.create('dynamic_machine').displayName('Dynamic Machine').notSolid().renderType(layer).hardness(3.0)
-    event.create('sturdy_machine').displayName('Sturdy Machine').notSolid().renderType(layer).hardness(3.0)
-    event.create('radiant_machine').displayName('Radiant Machine').notSolid().renderType(layer).hardness(3.0)
-    event.create('plastic_machine').displayName('Plastic Machine').notSolid().renderType(layer).hardness(3.0)
-    event.create('time_machine').displayName('Time Machine').notSolid().renderType(layer).hardness(3.0)
-    event.create('supercritical_machine').displayName('Supercritical Machine').notSolid().renderType(layer).hardness(3.0)
-})
+    let layer = "cutout";
+    event.create('andesite_machine').displayName('Andesite Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('brass_machine').displayName('Brass Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('copper_machine').displayName('Copper Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('dynamic_machine').displayName('Dynamic Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('sturdy_machine').displayName('Sturdy Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('radiant_machine').displayName('Radiant Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('plastic_machine').displayName('Plastic Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('time_machine').displayName('Time Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('supercritical_machine').displayName('Supercritical Machine').notSolid().renderType(layer).hardness(3.0);
+
+    // event.create('corrupted_pixie_utrem_jar').displayName('Corrupted Pixie Utrem Jar').notSolid().renderType(layer);
+    // event.create('pixie_utrem_jar').displayName('Pixie Utrem Jar').notSolid().renderType(layer);
+
+    event.create('forbidden_arcanus:corrupted_pixie_utrem_jar')
+        .item(item =>
+            item.modelJson({
+                parent: 'minecraft:item/generated',
+                textures: {
+                    layer0: 'kubejs:item/corrupted_pixie_utrem_jar',
+                },
+            })
+        ).model('kubejs:block/corrupted_pixie_utrem_jar').displayName('Corrupted Pixie Utrem Jar').notSolid().renderType('translucent');
+
+    event.create('forbidden_arcanus:pixie_utrem_jar')
+        .item(item =>
+            item.modelJson({
+                parent: 'minecraft:item/generated',
+                textures: {
+                    layer0: 'kubejs:item/pixie_utrem_jar',
+                },
+            })
+        ).model('kubejs:block/pixie_utrem_jar').displayName('Pixie Utrem Jar').notSolid().renderType('translucent');
+});
 
 BlockEvents.modification(event => {
     event.modify('waystones:waystone', block => {

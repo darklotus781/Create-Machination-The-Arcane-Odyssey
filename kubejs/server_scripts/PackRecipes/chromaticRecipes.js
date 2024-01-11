@@ -256,11 +256,11 @@ ServerEvents.recipes(event => {
         type: 'createdieselgenerators:basin_fermenting',
         ingredients: [Fluid.of('kubejs:chromatic_solution').withAmount(1000).toJson()],
         processingTime: 300,
-        results: [Item.of('kubejs:chroma_compound').toJson(), Fluid.of('kubejs:dirty_chroma_slurry').withAmount(250).toJson()]
+        results: [Item.of('kubejs:chroma_compound').toJson(), Fluid.of('kubejs:dirty_chroma_slurry').withAmount(100).toJson()]
     }).id('kubejs:fermenting/chromatic_solution_to_compound');
 
     // Reprocessing
-    event.recipes.create.mixing(Fluid.of('kubejs:chromatic_solution').withAmount(250), [
+    event.recipes.create.mixing(Fluid.of('kubejs:chromatic_solution').withAmount(200), [
         Fluid.of('kubejs:dirty_chroma_slurry').withAmount(1000),
         Item.of('kubejs:dirty_dye_compound', 4)
     ]).superheated().id('create:mixing/chromatic_reprocessing');

@@ -1,0 +1,16 @@
+{
+    "structures": [
+        {
+            "structure": "machination:oil_derrick",
+            "weight": 5
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 849147206,
+        "spacing": 64,
+        "separation": 32,
+        "frequency": 0.2,
+        "frequency_reduction_method": "legacy_type_1"
+    }
+}

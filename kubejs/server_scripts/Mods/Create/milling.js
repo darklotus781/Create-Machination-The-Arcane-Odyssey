@@ -20,4 +20,6 @@ ServerEvents.recipes(event => {
 
     // Ceramic Powder
     event.recipes.create.milling(Item.of('kubejs:ceramic_powder'), Item.of('minecraft:brick')).processingTime(50);
+
+
 });

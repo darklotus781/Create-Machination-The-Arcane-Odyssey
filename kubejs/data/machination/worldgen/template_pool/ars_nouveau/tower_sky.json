@@ -1,0 +1,15 @@
+{
+  "name": "machination:ars_nouveau/tower_sky",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "machination:ars_nouveau/tower_sky",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

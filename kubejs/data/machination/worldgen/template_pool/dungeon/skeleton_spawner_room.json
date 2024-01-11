@@ -1,0 +1,15 @@
+{
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "machination:dungeon/skeleton_spawner"
+            },
+            "weight": 100
+        }
+    ],
+    "fallback": "machination:dungeon/skeleton_spawner_room",
+    "name": "machination:dungeon/skeleton_spawner_room"
+}

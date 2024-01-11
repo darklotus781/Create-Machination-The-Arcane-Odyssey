@@ -1,0 +1,15 @@
+{
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "machination:mobs/spawners/spider"
+            },
+            "weight": 100
+        }
+    ],
+    "fallback": "machination:mobs/spawners/spider",
+    "name": "machination:mobs/spawners/spider"
+}

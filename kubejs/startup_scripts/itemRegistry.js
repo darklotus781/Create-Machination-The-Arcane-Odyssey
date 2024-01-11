@@ -80,6 +80,9 @@ StartupEvents.registry('item', event => {
     event.create('andesite_blend').texture('kubejs:item/andesite_blend').displayName('Andesite Blend');
     event.create('andesite_dust').texture('kubejs:item/andesite_dust').displayName('Andesite Dust');
 
+    // event.create('forbidden_arcanus:pixie_utrem_jar').texture('kubejs:item/pixie_utrem_jar').displayName('Pixie Utrem Jar');
+    // event.create('forbidden_arcanus:corrupted_pixie_utrem_jar').texture('kubejs:item/corrupted_pixie_utrem_jar').displayName('Corrupted Pixie Utrem Jar');
+
     event.create('soaked_sheet').texture('kubejs:item/soaked_sheet').displayName('Soaked Copper Sheet');
     event.create('rough_sheet').texture('kubejs:item/rough_sheet').displayName('Rough Copper Sheet');
 

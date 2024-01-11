@@ -1,0 +1,28 @@
+{
+    "name": "machination:support/mining_stairs",
+    "fallback": "minecraft:empty",
+    "rolls": {
+        "min": 4,
+        "max": 6
+    },
+    "elements": [
+        {
+            "weight": 4,
+            "element": {
+                "location": "machination:supportdata/mining_stairs",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "location": "machination:supportdata/mining_room",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        }
+    ]
+}
