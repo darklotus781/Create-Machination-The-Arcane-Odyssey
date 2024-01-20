@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     let makePlate = (input, output, material) => {
         event.remove({output: output});
         event.recipes.create.pressing(Item.of(output), [Ingredient.of(input)]).id('kubejs:create/pressing/' + material + '_plate');
-        event.recipes.thermal.press(Item.of(output), [Ingredient.of(input)]).id('kubejs:thermal/pressing/' + material + '_plate');
+        // event.recipes.thermal.press(Item.of(output), [Ingredient.of(input)]).id('kubejs:thermal/pressing/' + material + '_plate');
     };
 
     let makeGear = (input, output, material) => {
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             M: Ingredient.of(input),
             N: Ingredient.of('#forge:nuggets/iron'),
         }).id('kubejs:compat/crafting/' + material + '_gear_manual_only');
-        event.recipes.thermal.press(Item.of(output), [Ingredient.of(input, 4), Item.of('thermal:press_gear_die')]).id('kubejs:thermal/pressing/' + material + '_gear');
+        // event.recipes.thermal.press(Item.of(output), [Ingredient.of(input, 4), Item.of('thermal:press_gear_die')]).id('kubejs:thermal/pressing/' + material + '_gear');
     };
 
     let makeRod = (input, output, material, outNum) => {
@@ -43,13 +43,13 @@ ServerEvents.recipes(event => {
         event.remove({output: output});
         event.recipes.create.crushing(Item.of(output), Ingredient.of(input)).id('kubejs:create/crushing/' + material + '_dust');
         event.recipes.thermal.pulverizer(Item.of(output), Ingredient.of(input)).id('kubejs:thermal/pulverizing/' + material + '_dust');
-        event.custom({
-            type: 'mekanism:crushing',
-            input: {
-                ingredient: Ingredient.of(input).toJson()
-            },
-            output: Ingredient.of(output).toJson()
-        }).id('kubejs:mekanism/crushing/' + material + '_dust');
+        // event.custom({
+        //     type: 'mekanism:crushing',
+        //     input: {
+        //         ingredient: Ingredient.of(input).toJson()
+        //     },
+        //     output: Ingredient.of(output).toJson()
+        // }).id('kubejs:mekanism/crushing/' + material + '_dust');
     };
 
     metals.forEach(metal => {

@@ -1,0 +1,259 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/basics"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:andesite_bag_rare",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:brass_bag_rare",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:dynamic_bag_rare",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:radiant_bag_rare",
+                    "weight": 10
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.2
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/mechanisms_tier_2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/mechanisms_tier_3"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.1
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 5,
+                "max": 8
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "create:clutch",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:gearshift",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:encased_chain_drive",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:adjustable_chain_gearshift",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:belt_connector",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:weighted_ejector",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:encased_fan",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:millstone",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:basin",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:stockpile_switch",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:content_observer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:brass_tunnel",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:brass_funnel",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:cart_assembler",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createaddition:rolling_mill",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create_enchantment_industry:printer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create_new_age:energiser_t2",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create_new_age:advanced_motor",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:clockwork_bearing",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:rope_pulley",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_plough",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_harvester",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:deployer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_saw",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:redstone_contact",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:sail_frame",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:nixie_tube",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:sticky_mechanical_piston",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:steam_whistle",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:smart_chute",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:stressometer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:speedometer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:fluid_pipe",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_pump",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:fluid_valve",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:fluid_tank",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createoreexcavation:vein_finder",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

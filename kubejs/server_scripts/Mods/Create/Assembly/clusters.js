@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:quartz_cluster').withChance(30),
         Item.of(t).withChance(70),
     ], t, [
-        event.recipes.create.filling(t, [t, Fluid.of('kubejs:sky_solution').withAmount(50)]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:sky_slurry').withAmount(50)]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:sand')])
     ]).transitionalItem(t).loops(1).id('minecraft:quartz');
 
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:certus_quartz_cluster').withChance(30),
         Item.of(t).withChance(70),
     ], t, [
-        event.recipes.create.filling(t, [t, Fluid.of('kubejs:sky_solution').withAmount(50)]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:sky_slurry').withAmount(50)]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:sand')])
     ]).transitionalItem(t).loops(1).id('ae2:certus_quartz_crystal');
 
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:redstone_cluster').withChance(30), Item.of(t).withChance(70)
     ], t, [
-        event.recipes.create.filling(t, [t, Fluid.of('kubejs:sky_solution').withAmount(150)]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:sky_slurry').withAmount(150)]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:sand')])
     ]).transitionalItem(t).loops(1).id('minecraft:redstone');
 })

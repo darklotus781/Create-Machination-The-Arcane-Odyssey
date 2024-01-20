@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     ]).transitionalItem(t).loops(1);
 
     // AE2 Printed Engineering Circuit
-    t = Item.of('minecraft:diamond');
+    t = Ingredient.of('#forge:plates/diamond');
     event.recipes.create.sequenced_assembly([
         Item.of('ae2:printed_engineering_processor'),
     ], t, [
@@ -96,4 +96,4 @@ ServerEvents.recipes(event => {
         event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:menril_resin').withAmount(120)]),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1);
-})
+});

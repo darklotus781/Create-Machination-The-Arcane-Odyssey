@@ -32,8 +32,18 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({id: 'create:crafting/kinetics/rope_pulley'}, '#forge:wool', '#supplementaries:ropes');
 
-    event.shapeless(Item.of('create:andesite_alloy'), [Item.of('minecraft:diorite'), Item.of('minecraft:andesite')]).id('andesite_alloy_manual_only');
-    event.recipes.create.mixing(Item.of('create:andesite_alloy', 4), [Item.of('integrateddynamics:crystalized_menril_chunk'), Item.of('minecraft:andesite')]);
+    event.shaped(Item.of('create:andesite_alloy'), [
+        'AI ',
+        'ID ',
+    ], {
+        A: Item.of('minecraft:andesite'),
+        I: Ingredient.of('#forge:nuggets/iron'),
+        D: Item.of('minecraft:diorite')
+    }).id('kubejs:andesite_alloy_manual_only')
+
+    event.recipes.create.mixing([Item.of('create:andesite_alloy', 4)], [Item.of('integrateddynamics:crystalized_menril_chunk'), Item.of('kubejs:andesite_blend')]).id('kubejs:mixing/andesite_alloy_from_menril_chunks');
+    event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), [Ingredient.of('#create:recipe_nuggets'), Item.of('kubejs:andesite_blend')]).id('kubejs:mixing/andesite_alloy_from_blend_and_nuggets');
+    event.recipes.create.mixing(Item.of('kubejs:andesite_blend'), [Item.of('kubejs:andesite_dust'), Item.of('minecraft:clay_ball')]).id('kubejs:mixing/andesite_blend_from_dust_and_clay');
 
     event.shapeless(Item.of('create:andesite_alloy', 9), Item.of('create:andesite_alloy_block'));
 
@@ -53,17 +63,13 @@ ServerEvents.recipes(event => {
     // }).id('kubejs:andesite_blend_from_dust_and_clay_manual_only');
 
     //Andesite Alloy
-    event.shaped(Item.of('create:andesite_alloy', 2), [
-        'SA',
-        'AS'
-    ], {
-        A: Item.of('kubejs:andesite_blend'),
-        S: Ingredient.of('#create:recipe_nuggets')
-    }).id('kubejs:andesite_alloy_from_blend_and_nuggets_manual_only');
-
-    event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), [Ingredient.of('#create:recipe_nuggets'), Item.of('kubejs:andesite_blend')]).id('kubejs:mixing/andesite_alloy_from_blend_and_nuggets');
-    event.recipes.create.mixing(Item.of('kubejs:andesite_blend'), [Item.of('kubejs:andesite_dust'), Item.of('minecraft:clay_ball')]).id('kubejs:mixing/andesite_blend_from_dust_and_clay');
-
+    // event.shaped(Item.of('create:andesite_alloy', 2), [
+    //     'SA',
+    //     'AS'
+    // ], {
+    //     A: Item.of('kubejs:andesite_blend'),
+    //     S: Ingredient.of('#create:recipe_nuggets')
+    // }).id('kubejs:andesite_alloy_from_blend_and_nuggets_manual_only');
 
     event.remove({output: 'create:sail_frame'});
     event.remove({output: 'create:white_sail'});
@@ -106,4 +112,7 @@ ServerEvents.recipes(event => {
         S: Item.of('kubejs:radiant_sheet'),
         C: Item.of('create:shadow_steel')
     }).id('kubejs:crafter/radiant_coil_from_sheet_and_shadow_steel_vertical');
+
+    event.recipes.create.pressing([Fluid.of('thermal:latex').withAmount(10)],[Item.of('minecraft:dandelion', 3)]);
+    event.recipes.create.pressing([Fluid.of('thermal:latex').withAmount(12)],[Ingredient.of('#forge:vines', 4)]);
 });

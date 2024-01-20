@@ -1,8 +1,10 @@
 StartupEvents.registry('fluid', event => {
-    event.create('sky_solution')
+    event.create('sky_slurry')
         .thickTexture(0x000033)
         .bucketColor(0x000033)
-        .displayName('Volatile Sky Solution')
+        .stillTexture('tconstruct:block/fluid/molten/still')
+        .flowingTexture('tconstruct:block/fluid/molten/flowing')
+        .displayName('Stabilized Sky Slurry')
 
     event.create('molten_diamond')
         .thickTexture(0x2edaff)
@@ -137,7 +139,7 @@ StartupEvents.registry('fluid', event => {
     const Source = [
         ['Sourceberry Juice', 'sourceberry_juice'],
         ['Magebloom Juice', 'magebloom_juice'],
-        ['Magebloom Sourceberry Smoothie', 'mageberry_smoothie'],
+        // ['Magebloom Sourceberry Smoothie', 'mageberry_smoothie'],
         ['Impure Source', 'impure_source'],
         ['Source', 'source']
     ]

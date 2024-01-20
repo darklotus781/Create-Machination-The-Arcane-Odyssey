@@ -1,7 +1,9 @@
 {
 	chapter_groups: [
-		{ id: "3F3D969172D871AB", title: "Main Questline" }
+		{ id: "3F3D969172D871AB", title: "Exploration" }
 		{ id: "21CB949AE3121A8A", title: "Tech Chapters" }
 		{ id: "5741ADDA3A600D3C", title: "Magic Chapters" }
+		{ id: "5CCAF12F37EE8C1A", title: "Marketplace" }
+		{ id: "565532624F0A44A9", title: "Machination" }
 	]
 }

@@ -9,11 +9,13 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["411FC26DBB795420"]
 			description: [
 				"Forbidden \\&\\ Arcanus adds new ways to get better armor, enchants, and more!"
 				""
 				"This magic-themed mod has amazing animations, as well as some overpowered items like the &6Eternal Stella&r. "
 			]
+			hide: true
 			icon: {
 				Count: 1b
 				id: "forbidden_arcanus:smelter_prism"
@@ -144,7 +146,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6E3B9051503B938C"]
@@ -230,7 +232,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["29164630E1BD76B5"]
@@ -367,7 +369,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: 6.5d
 		}
 		{
@@ -463,38 +465,6 @@
 			}]
 			x: -12.0d
 			y: 5.5d
-		}
-		{
-			dependencies: ["0B68E3C046C82860"]
-			description: [
-				"These can be planted to grow &6Deorum Nuggets&r."
-				""
-				"To create one, you'll need to find Yellow Orchids."
-			]
-			hide_dependency_lines: false
-			id: "5ED1896F1986BD2B"
-			rewards: [
-				{
-					id: "5A94F2FC66A32C6F"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "43600BCD51BEA890"
-					table_id: 7760746703095486576L
-					type: "loot"
-				}
-			]
-			shape: "circle"
-			subtitle: "Growing Gold"
-			tasks: [{
-				id: "3157685F32B838D5"
-				item: "forbidden_arcanus:golden_orchid_seeds"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 6.5d
 		}
 		{
 			dependencies: ["5523A71F1688EA88"]
@@ -602,7 +572,7 @@
 			}]
 			title: "Dragon Scales"
 			x: 2.5d
-			y: 7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["20B495B4B8B95636"]
@@ -670,7 +640,7 @@
 			]
 			title: "&1Draco Arcanus Armor&r"
 			x: 3.0d
-			y: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["20B495B4B8B95636"]
@@ -706,7 +676,7 @@
 				}
 			]
 			x: 4.5d
-			y: 7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2894F11A73335179"]
@@ -766,7 +736,7 @@
 				type: "item"
 			}]
 			title: "Mundabitur Dust"
-			x: -3.5d
+			x: -4.0d
 			y: 5.0d
 		}
 		{
@@ -865,7 +835,7 @@
 			]
 			title: "&5Tyr Armor"
 			x: 4.5d
-			y: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["744A01000E086CC9"]
@@ -890,7 +860,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3799ACDA92F96FD1"]
@@ -943,7 +913,7 @@
 			}]
 			title: "Prepping For the Forge"
 			x: 0.5d
-			y: 4.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["5F5675E30ED046F7"]
@@ -1015,7 +985,7 @@
 			]
 			title: "&1The Hephaestus Forge"
 			x: 2.5d
-			y: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["13E5783AD64E3BC2"]
@@ -1104,7 +1074,7 @@
 			}]
 			title: "&4Blood"
 			x: 5.0d
-			y: 2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0C6719D81DE5A614"]
@@ -1135,7 +1105,7 @@
 			}]
 			title: "&9Aureal"
 			x: 4.0d
-			y: 2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0C6719D81DE5A614"]
@@ -1176,7 +1146,7 @@
 			]
 			title: "&dSouls"
 			x: 4.0d
-			y: 3.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0C6719D81DE5A614"]
@@ -1196,7 +1166,7 @@
 			}]
 			title: "&aBottle O' Enchanting"
 			x: 5.0d
-			y: 3.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["73349B993DE69954"]
@@ -1219,7 +1189,7 @@
 				type: "checkmark"
 			}]
 			x: 4.5d
-			y: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["73349B993DE69954"]
@@ -1250,7 +1220,7 @@
 			}]
 			title: "Darkstone Pedestals"
 			x: 2.0d
-			y: 1.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0C6719D81DE5A614"]
@@ -1287,7 +1257,7 @@
 			}]
 			title: "Performing Rituals"
 			x: 6.5d
-			y: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1339,7 +1309,7 @@
 			]
 			title: "&dEternal Stella"
 			x: 9.5d
-			y: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["537E39530360AD73"]
@@ -1370,7 +1340,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 4.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["20B495B4B8B95636"]
@@ -1438,7 +1408,7 @@
 			]
 			title: "&1Draco Tools"
 			x: 2.0d
-			y: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["20B495B4B8B95636"]
@@ -1479,7 +1449,7 @@
 			]
 			title: "&1Draco Weapons"
 			x: 2.5d
-			y: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["73349B993DE69954"]
@@ -1511,7 +1481,7 @@
 				type: "checkmark"
 			}]
 			x: 3.0d
-			y: 1.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["537E39530360AD73"]
@@ -1533,7 +1503,7 @@
 				type: "checkmark"
 			}]
 			x: 8.0d
-			y: 3.0d
+			y: 7.5d
 		}
 	]
 	title: "Chapter 2: Forbidden Arcanus"

@@ -1,5 +1,5 @@
 {
-    "fallback": "minecraft:empty",
+    "fallback": "machination:oil_derrick/structure_bottoms",
     "elements": [
         {
             "weight": 1,

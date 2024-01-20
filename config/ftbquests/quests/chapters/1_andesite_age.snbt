@@ -1,0 +1,396 @@
+{
+	autofocus_id: "67F9D140A432A965"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1_andesite_age"
+	group: "565532624F0A44A9"
+	icon: "kubejs:kinetic_mechanism"
+	id: "203225418B0EED52"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"35AD8A90A9541BE9"
+				"4D069D926FE16938"
+			]
+			description: ["Congratulations on your achievement! You have successfully produced Andesite Machines and should now have them automated. Given their significant role throughout the pack, automating these machines is strongly advised to ensure efficiency and ease of use. This step is essential for maximizing their potential and enhancing your overall experience."]
+			id: "632B4B24A7B38530"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				consume_items: false
+				count: 8L
+				icon: "kubejs:andesite_machine"
+				id: "46F399B8AAF31ED6"
+				item: "kubejs:andesite_machine"
+				title: "Andesite Machines"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0C28B609C72B93BD"
+				"693A218A8E78C38D"
+			]
+			description: ["Wooden Mechanisms, while basic, play a crucial role as a starter item in the crafting process. Their primary function is to create Sturdy Mechanisms and Andesite Machines. However, due to their limited strength and capability, Wooden Mechanisms are not suitable for more advanced applications. If your goal is to automate the production of Andesite Machines effectively, it is advisable to first focus on automating Kinetic Mechanisms. By doing so, you lay a stronger foundation for more complex and efficient automation processes, ultimately leading to a more advanced and productive system."]
+			id: "1E1695DB74F7D27F"
+			optional: true
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "7B279B5D331C28CC"
+				item: "kubejs:wooden_mechanism"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["67F9D140A432A965"]
+			description: [
+				"At this stage, you should have acquired robust armor and tools, overcome numerous bosses, and be prepared to establish your base of operations."
+				""
+				"As with typical beginnings in Minecraft, your first task is to gather wood by punching trees. You can create wooden mechanisms using logs, saws, and andesite alloy. To make andesite alloy, you have a couple of options: combine andesite with Menril chunks or crush andesite into dust and mix it with iron or zinc nuggets."
+				""
+				"Remember, there are always alternate recipes and simpler, albeit less efficient, methods for producing materials. The most efficient approaches may require additional effort to automate, but the payoff is substantial in the long run."
+				""
+				"Moving forward, it's crucial to consult JEI for all recipe details. However, to kickstart your journey, you should begin by focusing on farming."
+			]
+			id: "0C28B609C72B93BD"
+			subtitle: "Setup a Tree Farm"
+			tasks: [
+				{
+					count: 16L
+					id: "3FAF004C0FFC2F79"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Make a Tree Farm"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5B2B74DA2CDCFC69"
+					item: "minecraft:cobblestone"
+					title: "Make a Cobblestone Farm"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "75E76DEB0076DE4C"
+					item: "minecraft:gravel"
+					title: "Process Cobble to Gravel"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4DE89EB8DCED37BC"
+					item: "minecraft:sand"
+					title: "Process Gravel to Sand"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "272C064CF7B1F32F"
+					item: "minecraft:iron_nugget"
+					title: "Process Gravel to Iron/Flint"
+					type: "item"
+				}
+			]
+			title: "Let's get Farming!"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"0C28B609C72B93BD"
+				"50186B4B459E4244"
+			]
+			description: ["Kinetic Mechanisms are the cornerstone of all future developments in your crafting journey. They form the foundational element for every single mechanism and machine you will be crafting from this point forward. Given their central importance, it is imperative to ensure that the production of Kinetic Mechanisms is automated. Automating this process will not only increase efficiency but also provide a steady and reliable supply of these essential components. This step is crucial for smooth progression and the successful creation of more advanced and intricate mechanisms and machines in your future endeavors."]
+			id: "35AD8A90A9541BE9"
+			tasks: [{
+				count: 64L
+				id: "32981ECF774C2B3B"
+				item: "kubejs:kinetic_mechanism"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["67F9D140A432A965"]
+			description: ["Saws are a critical component in the creation of Tier 1 / Chapter 1 Mechanisms, playing an indispensable role in these early stages. It's important to note that saws come with a durability limit, meaning they will wear out over time with use. To address this, you have a couple of options. You can either produce a substantial quantity of saws to ensure a steady supply as they wear down, or you can invest your efforts in obtaining an eternal saw. An eternal saw, being more durable and long-lasting, eliminates the frequent need for replacements and can significantly streamline your crafting processes, making it a worthwhile pursuit for more efficient and uninterrupted production."]
+			id: "50186B4B459E4244"
+			tasks: [{
+				id: "0BAA8FB88FFEEFEF"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/saws"
+					}
+				}
+				type: "item"
+			}]
+			title: "Saw"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"67F9D140A432A965"
+				"50186B4B459E4244"
+			]
+			description: ["If you manage to accumulate enough coins, purchasing an eternal saw is a viable option. However, keep in mind that these saws are not inexpensive, and acquiring one through purchase may require a significant investment of your resources. As an alternative, you have the opportunity to craft an eternal saw yourself. This DIY approach can be a more cost-effective solution, allowing you to save your coins for other purposes. Crafting your own eternal saw not only provides a sense of accomplishment but also gives you a valuable tool that can greatly aid in your ongoing projects and endeavors."]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "kubejs:diamond_saw"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+					Modifier: "forbidden_arcanus:eternal"
+					Repair: 1b
+					Unbreakable: 1b
+				}
+			}
+			id: "2A240FE64800EF43"
+			optional: true
+			rewards: [{
+				id: "041190154067E620"
+				item: {
+					Count: 1b
+					id: "kubejs:diamond_saw"
+					tag: {
+						Damage: 0
+						Enchantments: [{ }]
+						Modifier: "forbidden_arcanus:eternal"
+						Repair: 1b
+						Unbreakable: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "32DF3B026FC832F4"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "0CF0B9B1B56597F8"
+					item: {
+						Count: 1b
+						id: "kubejs:diamond_saw"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Eternal Diamond Saw"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"67F9D140A432A965"
+				"011E7917E973EB90"
+			]
+			description: ["Andesite Alloy is undoubtedly one of the most valuable resources for mass production in this context. While there are other critical resources to consider, Andesite Alloy serves as a fundamental building block in your journey. Without it, accessing and utilizing those more important resources becomes significantly more challenging. It acts as a key component, enabling progress and facilitating the development of advanced technologies and mechanisms essential for success."]
+			id: "693A218A8E78C38D"
+			tasks: [{
+				count: 16L
+				id: "0D8674ECDB1C0193"
+				item: { Count: 16b, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			title: "Andesite Alloy"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["67F9D140A432A965"]
+			description: ["Farming Menril Trees plays a vital role in the early stages of automation, particularly in the production of Andesite Alloy and Kinetic Mechanisms. Menril Logs, classified as logs in the system, are versatile and essential for crafting various items. They can be used to create Casings and are applicable in all recipes that require logs. This makes Menril Trees an indispensable resource for advancing your technological capabilities and streamlining your production processes."]
+			id: "011E7917E973EB90"
+			rewards: [{
+				count: 8
+				id: "082A44BBDC126A93"
+				item: "integrateddynamics:crystalized_menril_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "382423B9033C073F"
+					item: "integrateddynamics:menril_sapling"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5C9D8DD352915E46"
+					item: "integrateddynamics:menril_log"
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "6F32870FB2C24578"
+					item: "integrateddynamics:crystalized_menril_chunk"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6EFF8BCEBC2E2AF2"]
+			description: [
+				"Chapter 1 introduces the innovative process of extracting menril chunks and menril resin from menril trees, a crucial step in the creation of kinetic mechanisms."
+				""
+				"This initial stage of gathering and processing these unique materials lays the foundation for the subsequent development of andesite machines. As the chapters progress, we delves into the intricate methods of combining these elements into new and unique items."
+			]
+			hide: true
+			id: "67F9D140A432A965"
+			shape: "pentagon"
+			size: 1.0d
+			tasks: [{
+				id: "06A7E3E7CB6FBE54"
+				title: "Chapter 1 Start"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5F793917B53CB963"]
+			description: ["Copper Machines are essential tools in the crafting process, specifically designed for creating &6Fluid Handling&r items such as Pumps and Smart Fluid Pipes. These machines play a pivotal role in managing and manipulating fluids with precision and efficiency. For detailed information on the specific recipes and techniques involved, including Smithing and Cutting, you can refer to JEI (Just Enough Items). JEI provides comprehensive guidance on the crafting processes, ensuring you have all the necessary information to effectively use Copper Machines in your crafting endeavors."]
+			id: "63F4C7AAEB9F4CD5"
+			shape: "gear"
+			tasks: [{
+				count: 8L
+				id: "1B09348DA843B9A7"
+				item: "kubejs:copper_machine"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["35AD8A90A9541BE9"]
+			description: [
+				"Sealed Mechanisms are primarily utilized in the crafting of Copper Machines. These Copper Machines are specifically designed for creating items that are essential in fluid handling."
+				"Copper Machines, therefore, play a crucial role in various processes and setups where fluid manipulation, transport, and storage are key components."
+			]
+			id: "5C8A77FEDDB2DDB2"
+			optional: true
+			tasks: [{
+				count: 64L
+				id: "52A020E00A56C4EA"
+				item: "kubejs:sealed_mechanism"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["35AD8A90A9541BE9"]
+			description: ["Logistics Mechanisms are specialized components specifically designed for use in recipes that deal with item storage and transportation. These mechanisms are essential for creating systems that efficiently manage the movement and organization of items within your setup. They play a key role in automating and optimizing the processes related to inventory control, item sorting, and the overall logistics of your operation."]
+			id: "4B3451A425BBAA15"
+			optional: true
+			tasks: [{
+				count: 64L
+				id: "0D07BE53DCC4E7D4"
+				item: "kubejs:logistics_mechanism"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"632B4B24A7B38530"
+				"35AD8A90A9541BE9"
+			]
+			description: ["If you intend to utilize your Andesite Machines in conjunction with a Smithing Table, it's essential to acquire Smithing Templates. These templates are a key component for successfully executing smithing processes, as they can be applied to all future Smithing Recipes. By having Smithing Templates at your disposal, you ensure that your Andesite Machines are fully equipped to handle the demands of smithing tasks. This preparation allows for a more streamlined and efficient crafting experience, enabling you to make the most of your Smithing Table and Andesite Machines in creating a wide range of items and tools."]
+			id: "2727B5EBF6810E4B"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "0B93F4C2D90E3E40"
+				item: "kubejs:machine_smithing_template"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A1A0A37CC234F64"
+				item: "kubejs:machine_smithing_template"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["693A218A8E78C38D"]
+			description: ["Andesite Casing is crafted by applying andesite alloy to a stripped log. This process can be done either through the use of a deployer or by manually applying it in-world. To manually create Andesite Casing, you first place down a stripped log and then click the andesite alloy onto it. This method of combining andesite alloy with a stripped log transforms it into Andesite Casing, which is a crucial component in various crafting recipes and applications. Whether you choose the automated approach with a deployer or the manual method, the result is a versatile and useful Andesite Casing, essential for your crafting needs."]
+			id: "4D069D926FE16938"
+			tasks: [{
+				count: 8L
+				id: "6F99346AAAA8F9A6"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"35AD8A90A9541BE9"
+				"50186B4B459E4244"
+			]
+			description: [
+				"In Chapter 2, Rotation Mechanisms are crucial for creating Sturdy Mechanisms. These mechanisms are distinguished by their unique properties, enabling the production of sturdy machines. These machines are particularly suited for all &6Train&r related items, which require robust and durable components to function effectively."
+				""
+				"Given their importance and the use of common items in their construction, it makes strategic sense to start automating the production of Rotation Mechanisms in Chapter 1. By doing so, you can establish a seamless and efficient production line early on, ensuring you have a steady supply of these essential mechanisms ready for later chapters."
+			]
+			id: "4BB7D4E0B2452A76"
+			optional: true
+			tasks: [{
+				count: 64L
+				id: "7CF1C91CD8A20884"
+				item: "kubejs:rotation_mechanism"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5C8A77FEDDB2DDB2"]
+			description: [
+				"Similar to the production of Andesite Casing, Copper Casing is also crafted using stripped logs. However, in the case of Copper Casing, the key material is a copper ingot that has been pressed into a plate. This copper plate is then applied to the stripped log, following a process akin to that used for Andesite Casing. The combination of the copper plate and the stripped log results in the creation of Copper Casing."
+				""
+				"Copper Casing, when combined with Sealed Mechanisms, is used to create Copper Machines. This highlights the versatility of Copper Casing in the crafting process. Additionally, Copper Casing has another practical application: it can be applied to pipes in-world to prevent them from connecting to other pipes. This feature is particularly useful in managing and organizing complex piping systems, ensuring that different pipes function independently as needed."
+			]
+			id: "5F793917B53CB963"
+			tasks: [{
+				count: 8L
+				id: "335C62C5256A04FD"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+	]
+	title: "1: Andesite Automations"
+}

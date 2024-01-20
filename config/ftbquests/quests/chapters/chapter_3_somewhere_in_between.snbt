@@ -12,12 +12,12 @@
 			click: ""
 			corner: false
 			dev: false
-			height: 16.0d
+			height: 20.0d
 			hover: [ ]
 			image: "kubejs:textures/gui/quest_bg_square.png"
 			order: 1
 			rotation: 0.0d
-			width: 16.0d
+			width: 20.0d
 			x: 1.5d
 			y: 0.5d
 		}
@@ -52,34 +52,9 @@
 				""
 				"The culmination of your efforts is a grand construct, a device or portal of such complexity and power that it promises to unlock the gates to other dimensions. With every turned gear and every piece of automated machinery, you edge closer to this ultimate creation, a testament to your mastery over the mechanical arts and a beacon leading you to new frontiers and adventures."
 			]
-			hide: true
-			id: "3D8D015335B33FE5"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "minecraft:grass_block"
-				id: "00ED3F7AB6873FE5"
-				title: "This seems nice!"
-				type: "dimension"
-			}]
-			x: 0.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["411FC26DBB795420"]
-			description: [
-				"As you navigate the vastness of the Overworld, with its scattered resources and daunting distances, you decide to employ a series of advanced mechanical systems and ingenious automation techniques. Your plan is to establish a network of workshops and factories, each harnessing the power of wind and water to drive a complex array of kinetic machinery."
-				""
-				"Your workshops buzz with activity, as windmills and water wheels convert natural forces into usable mechanical energy. This power is distributed through a series of shafts and gearboxes, driving machines that process ores, saw logs, and craft intricate components. You set up automated farming systems that plant, water, and harvest crops, while mechanical sorting arms and conveyor belts manage and organize your burgeoning inventory."
-				""
-				"The heart of your logistical operation is an extensive rail network, custom-designed with mechanical locomotives that navigate the landscape with precision. These trains are not merely for transport but are modular marvels capable of laying their own tracks, drilling through obstacles, and constructing bridges in their wake."
-				""
-				"Stations along the network are equipped with advanced loading docks and turntables, all orchestrated to ensure smooth operation and efficient transport of goods. Your trains move between resource deposits, forests, and other biomes, connecting the scattered parts of the Overworld and turning what was once a series of isolated ventures into a cohesive, integrated system."
-				""
-				"As your domain of machinery and automation expands, so too does your capacity to delve deeper into the mysteries of this world and prepare for the journey to others. You're not just building a network; you're constructing a mechanical symphony that harmonizes raw power with precision engineering."
-				""
-				"The culmination of your efforts is a grand construct, a device or portal of such complexity and power that it promises to unlock the gates to other dimensions. With every turned gear and every piece of automated machinery, you edge closer to this ultimate creation, a testament to your mastery over the mechanical arts and a beacon leading you to new frontiers and adventures."
-			]
 			id: "2F63FB9E8EAC18BD"
+			shape: "pentagon"
+			size: 1.5d
 			subtitle: "We have to start somewhere."
 			tasks: [
 				{
@@ -118,8 +93,8 @@
 				type: "item"
 			}]
 			title: "Early Crushing"
-			x: -2.0d
-			y: 2.0d
+			x: -5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
@@ -130,12 +105,22 @@
 				type: "item"
 			}]
 			title: "OP Smelting, Smoking and Washing"
-			x: -4.0d
-			y: 1.5d
+			x: -5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6BBE4CCFE07312A9"]
+			description: [
+				"As you may know, Create's \"Power\" is measured in Stress Units (SU)."
+				"You need to generate SU to power equipment and machines, you can run things at different RPMs from 1-256 essentially."
+				"The fast it turns, the more SU it needs.  Start simple with Waterwheels, they are super cheap."
+			]
 			id: "59386F705AAD3CFF"
+			rewards: [{
+				id: "20AD87A6C8E6698A"
+				item: "ars_creo:starbuncle_wheel"
+				type: "item"
+			}]
 			subtitle: "Power has to come from somewhere."
 			tasks: [
 				{
@@ -190,6 +175,7 @@
 			id: "769ACE88C21CA4F9"
 			subtitle: "Lots of Iron."
 			tasks: [{
+				count: 8L
 				id: "422E89159276969C"
 				item: "minecraft:raw_iron"
 				type: "item"
@@ -225,7 +211,7 @@
 				type: "checkmark"
 			}]
 			title: "What are these mods?"
-			x: 3.5d
+			x: 4.5d
 			y: 0.5d
 		}
 		{
@@ -243,7 +229,7 @@
 				title: "Ars Nouveau"
 				type: "checkmark"
 			}]
-			x: 4.5d
+			x: 5.5d
 			y: -0.5d
 		}
 		{
@@ -262,13 +248,13 @@
 				title: "Pneumaticcraft"
 				type: "checkmark"
 			}]
-			x: 4.5d
+			x: 5.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
 			description: ["KubeJS is a mod that significantly simplifies the process of creating a modpack by allowing creators to add custom items and unique interactions without the need for a full mod.\\n"]
-			icon: "kubejs:dynamic_mechanism"
+			icon: "kubejs:integrational_mechanism"
 			id: "34312A4E0AFAD769"
 			subtitle: "The glue making this pack possible"
 			tasks: [{
@@ -276,7 +262,7 @@
 				title: "KubeJS"
 				type: "checkmark"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -0.5d
 		}
 		{
@@ -301,7 +287,7 @@
 				type: "checkmark"
 			}]
 			title: "Create: Resource Geodes"
-			x: 5.5d
+			x: 6.5d
 			y: 1.5d
 		}
 		{
@@ -373,7 +359,7 @@
 				title: "Lychee"
 				type: "checkmark"
 			}]
-			x: 6.5d
+			x: 7.5d
 			y: 1.5d
 		}
 		{
@@ -394,7 +380,7 @@
 				type: "checkmark"
 			}]
 			title: "Applied Energistics 2"
-			x: 6.5d
+			x: 7.5d
 			y: -0.5d
 		}
 		{
@@ -414,7 +400,7 @@
 				title: "Integrated Dynamics"
 				type: "checkmark"
 			}]
-			x: 7.5d
+			x: 8.5d
 			y: -0.5d
 		}
 		{
@@ -439,7 +425,7 @@
 				title: "Forbidden and Arcanus"
 				type: "checkmark"
 			}]
-			x: 7.5d
+			x: 8.5d
 			y: 1.5d
 		}
 		{
@@ -451,8 +437,8 @@
 				type: "item"
 			}]
 			title: "Easy Tree Chopping"
-			x: -3.0d
-			y: 2.0d
+			x: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
@@ -462,27 +448,27 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: -5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
 			id: "7B1516AB858E84A1"
-			subtitle: "Doubles Andesite Alloy rates."
 			tasks: [{
 				id: "580C71401BD4E729"
 				item: "create:mechanical_mixer"
 				type: "item"
 			}]
 			title: "Mixing"
-			x: -4.5d
-			y: -0.5d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
 			id: "02EE7F0461B0DFBF"
 			subtitle: "Early Andesite Alloy compound"
 			tasks: [{
+				count: 8L
 				id: "43E18E94A86CB728"
 				item: "minecraft:diorite"
 				type: "item"
@@ -498,26 +484,8 @@
 				item: "create:spout"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["749112B711CAB183"]
-			id: "16C84D39BB2CA23B"
-			tasks: [{
-				id: "2644512E661BB3A2"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "quark:corundum"
-					}
-				}
-				title: "Any #quark:corundum"
-				type: "item"
-			}]
 			x: 0.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["749112B711CAB183"]
@@ -528,7 +496,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["749112B711CAB183"]
@@ -540,8 +508,8 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.5d
+			x: 1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -550,15 +518,19 @@
 				"227004D221260FC2"
 			]
 			dependency_requirement: "one_completed"
+			icon: "create:andesite_alloy"
 			id: "6BBE4CCFE07312A9"
 			rewards: [{
-				count: 24
+				count: 32
+				icon: { Count: 32b, id: "create:andesite_alloy" }
 				id: "226094148D432E4A"
-				item: "create:andesite_alloy"
+				item: { Count: 32b, id: "create:andesite_alloy" }
 				type: "item"
 			}]
 			subtitle: "Better results from Mixing!"
 			tasks: [{
+				count: 8L
+				icon: { Count: 8b, id: "create:andesite_alloy" }
 				id: "1CFC5555401D0935"
 				item: "create:andesite_alloy"
 				type: "item"
@@ -586,7 +558,7 @@
 				type: "checkmark"
 			}]
 			title: "A Lootbag"
-			x: -3.0d
+			x: -4.0d
 			y: -1.5d
 		}
 		{
@@ -618,7 +590,7 @@
 				type: "item"
 			}]
 			title: "Your first Machine"
-			x: -3.0d
+			x: -4.0d
 			y: 0.5d
 		}
 	]

@@ -1,0 +1,159 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 9,
+                "max": 12
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/botania/flowers",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:arcane_bag_epic",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:manasteel_ingot",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:mana_pearl",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:mana_diamond",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:terrasteel_nugget",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:mana_string",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:quartz_mana",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:ender_air_bottle",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:mana_powder",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:dark_matter",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:enchanted_soul",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:corrupted_pixie",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:quantum_catcher",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:blood_test_tube",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:diamond_blacksmith_gavel",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:arcane_core",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:corrupti_dust",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:eternal_stella",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:ritual_brazier",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:relay",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:amethyst_golem_charm",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:drygmy_charm",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:bookwyrm_charm",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:warp_scroll",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:dominion_wand",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

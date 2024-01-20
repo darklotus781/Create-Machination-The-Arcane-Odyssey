@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
         [Item.of('ars_nouveau:ritual_containment'), Item.of('ars_nouveau:mob_jar')],
     ]
 
-    const dynamic_machine_smithing = [
+    const integrational_machine_smithing = [
         [Item.of('thermal:rf_coil'), Item.of('thermal:dynamo_gourmand')],
         // [Item.of('integrateddynamics:part_display_panel'), Item.of('integratedterminals:part_terminal_storage')],
         // [Item.of('minecraft:crafting_table'), Item.of('integratedterminals:part_terminal_crafting_job')],
@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
         // [Item.of('integrateddynamics:variable_transformer_input'), Item.of('integratednbt:nbt_extractor')]
     ]
 
-    const dynamic_machine_smithing_2 = [
+    const integrational_machine_smithing_2 = [
         [Item.of('createaddition:modular_accumulator'), Item.of('integrateddynamics:energy_battery')]
     ]
 
@@ -171,18 +171,18 @@ ServerEvents.recipes(event => {
         [Item.of('waystones:warp_stone'), Item.of('waystones:sandy_waystone')]
     ]
 
-    const supercritical_machine_smithing = [
-        [Item.of('minecraft:nether_star'), Item.of('pneumaticcraft:aerial_interface')]
-    ]
+    // const supercritical_machine_smithing = [
+    //     [Item.of('minecraft:nether_star'), Item.of('pneumaticcraft:aerial_interface')]
+    // ]
 
-    machine_smithing(andesite_machine_smithing, 'kubejs:andesite_machine', Item.of('create:andesite_alloy'), true)
-    machine_smithing(brass_machine_smithing, 'kubejs:brass_machine', Ingredient.of('#forge:ingots/brass'), true)
-    machine_smithing(copper_machine_smithing, 'kubejs:copper_machine', Item.of('thermal:cured_rubber'), true)
-    machine_smithing(sturdy_machine_smithing, 'kubejs:sturdy_machine', Item.of('create:sturdy_sheet'), true)
-    machine_smithing(plastic_machine_smithing, 'kubejs:plastic_machine', Item.of('pneumaticcraft:plastic'), true)
-    machine_smithing(radiant_machine_smithing, 'kubejs:radiant_machine', Item.of('create:refined_radiance'), true)
-    machine_smithing(dynamic_machine_smithing, 'kubejs:dynamic_machine', Item.of('integrateddynamics:variable'), true)
-    machine_smithing(dynamic_machine_smithing_2, 'kubejs:dynamic_machine', Item.of('integrateddynamics:variable'), false)
-    machine_smithing(time_machine_smithing, 'kubejs:time_machine', Item.of('kubejs:time_crystal'), true)
-    machine_smithing(supercritical_machine_smithing,'kubejs:supercritical_machine', Item.of('create:shadow_steel'), true)
+    machine_smithing(andesite_machine_smithing, 'kubejs:andesite_machine', Item.of('kubejs:machine_smithing_template'), true)
+    machine_smithing(brass_machine_smithing, 'kubejs:brass_machine', Item.of('kubejs:machine_smithing_template'), true)
+    machine_smithing(copper_machine_smithing, 'kubejs:copper_machine', Item.of('kubejs:machine_smithing_template'), true)
+    machine_smithing(sturdy_machine_smithing, 'kubejs:sturdy_machine', Item.of('kubejs:machine_smithing_template'), true)
+    machine_smithing(plastic_machine_smithing, 'kubejs:plastic_machine', Item.of('kubejs:machine_smithing_template'), true)
+    machine_smithing(radiant_machine_smithing, 'kubejs:radiant_machine', Item.of('kubejs:machine_smithing_template'), true)
+    machine_smithing(integrational_machine_smithing, 'kubejs:integrational_machine', Item.of('kubejs:machine_smithing_template'), true)
+    machine_smithing(integrational_machine_smithing_2, 'kubejs:integrational_machine', Item.of('kubejs:machine_smithing_template'), false)
+    machine_smithing(time_machine_smithing, 'kubejs:time_machine', Item.of('kubejs:machine_smithing_template'), true)
+    // machine_smithing(supercritical_machine_smithing,'kubejs:supercritical_machine', Item.of('kubejs:machine_smithing_template'), true)
 })

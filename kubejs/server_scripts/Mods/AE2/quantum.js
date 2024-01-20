@@ -3,6 +3,8 @@ ServerEvents.recipes(event => {
     event.remove({id: 'ae2:network/blocks/quantum_ring'});
     event.remove({id: 'ae2:quantum_link'});
     event.remove({id: 'ae2:network/blocks/quantum_link'});
+    event.remove({id: 'ae2:transform/entangled_singularity'});
+    event.remove({id: 'ae2:transform/entangled_singularity_from_pearl'});
 
     // Nether Star Dust
     event.recipes.create.crushing(Item.of('kubejs:nether_star_dust').withChance(0.25), [Item.of('nether_star', 1)]);
@@ -67,5 +69,24 @@ ServerEvents.recipes(event => {
         G: Item.of('ae2:quartz_vibrant_glass'),
         H: Item.of('netherite_block'),
         W: Item.of('waystones:warp_stone')
-    })
+    });
+
+    event.shapeless(
+        Item.of('ae2:quantum_entangled_singularity', 2),
+        [
+            Item.of('ae2:singularity', 2),
+            Item.of('kubejs:quantum_mechanism')
+        ]
+    ).modifyResult((grid, result) => {
+        return getSingularityWithFrequency(result);
+    });
+
+    // Custom Quantum Singularity NBT...
+    // Item.of('ae2:quantum_entangled_singularity', 2, '{freq:170551511978700L}')
+    /** // singularitySeed = 0;
+     *  public static void assignFrequency(ItemStack stack) {
+     *     var frequency = new Date().getTime() * 100 + singularitySeed++ % 100;
+     *     stack.getOrCreateTag().putLong("freq", frequency);
+     *  }
+     */
 })

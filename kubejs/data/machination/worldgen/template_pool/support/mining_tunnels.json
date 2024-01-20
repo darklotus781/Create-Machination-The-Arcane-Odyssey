@@ -1,0 +1,37 @@
+{
+    "name": "machination:support/mining_tunnels",
+    "fallback": "minecraft:empty",
+    "rolls": {
+        "min": 6,
+        "max": 7
+    },
+    "elements": [
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/mining_tunnel_1",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/mining_tunnel_2",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/mining_tunnel_3",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        }
+    ]
+}

@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
         Item.of('pneumaticcraft:charging_station')
     ]
 
-    const dynamic_machine_cutting = [
+    const integrational_machine_cutting = [
         Item.of('integrateddynamics:variable_transformer_output', 4),
         Item.of('integrateddynamics:variable_transformer_input', 4),
         Item.of('integrateddynamics:part_static_light_panel', 4),
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
     multicut(sturdy_machine_cutting, 'kubejs:sturdy_machine', true)
     multicut(sturdy_machine_cutting_2, 'kubejs:sturdy_machine', false)
     multicut(plastic_machine_cutting, 'kubejs:plastic_machine', true)
-    multicut(dynamic_machine_cutting, 'kubejs:dynamic_machine', true)
+    multicut(integrational_machine_cutting, 'kubejs:integrational_machine', true)
     multicut(time_machine_cutting, 'kubejs:time_machine', true)
-    multicut(supercritical_machine_cutting, 'kubejs:supercritical_machine', true)
+    // multicut(supercritical_machine_cutting, 'kubejs:supercritical_machine', true)
 })

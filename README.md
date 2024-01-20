@@ -27,5 +27,14 @@ When reporting an issue put the version number before the issue title! Such as [
 | <a href="https://discord.gg/XH7zCjgUHb"><img src="https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d8189d9b.png" alt="Join us on Discord!"  width="200" height="68"></a> |
 
 
-#### Modpacks:
-[![Create Machination - The Arcane Odyssey](http://cf.way2muchnoise.eu/952872.svg "Create Machination - The Arcane Odyssey") Create Machination - The Arcane Odyssey](https://www.curseforge.com/minecraft/modpacks/create-machination-the-arcane-odyssey)
+### Modpacks:
+[![Create: Machination - The Arcane Odyssey](http://cf.way2muchnoise.eu/952872.svg "Create: Machination - The Arcane Odyssey") Create: Machination - The Arcane Odyssey](https://www.curseforge.com/minecraft/modpacks/create-machination-the-arcane-odyssey)
+
+### Mods:
+[![Create: Resource Geodes](http://cf.way2muchnoise.eu/952886.svg "Create: Resource Geodes") Create: Resource Geodes](https://www.curseforge.com/minecraft/mc-mods/create-resource-geodes)  
+[![Nether Portal Frame Item](http://cf.way2muchnoise.eu/953246.svg "Nether Portal Frame Item") Nether Portal Frame Item](https://www.curseforge.com/minecraft/mc-mods/nether-portal-frame-item)
+
+**License Attributions**  
+Without the brilliant minds of Developers, Designers and other Creators, this world would be a boring place.
+To give credit to those that inspired these works, and/or who's creations were used or partially used, please refer to the Attributions page.  
+[ATTRIBUTION.md](ATTRIBUTION.md)

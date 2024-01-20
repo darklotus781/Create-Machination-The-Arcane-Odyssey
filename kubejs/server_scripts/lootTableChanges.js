@@ -1,21 +1,15 @@
 LootJS.modifiers((event) => {
-    // Add Item(s) to the Abandoned Mineshafts Loot Tables
-    // event.addLootTableModifier(/^minecraft:chests\/abandoned_mineshaft/)
-    //     .addWeightedLoot([
-    //         Item.of('createresourcegeodes:catalyst_activator_wand').withChance(3),
-    //     ]);
-
     // Add Magebloom Seeds to Artifacts Campsite Chests
     event.addLootTableModifier(/^artifacts:chests\/campsite_chest/)
         .addWeightedLoot([1, 8], Item.of('ars_nouveau:magebloom_crop').withChance(1));
 
-    // Add Menril Shrubs to Loot Table
-    event.addBlockLootModifier("integrateddynamics:menril_leaves")
-        .removeLoot('integrateddynamics:menril_sapling')
-        .addAlternativesLoot(
-            LootEntry.of("integrateddynamics:menril_sapling").when((c) => c.randomChance(0.008)),
-            LootEntry.of("kubejs:menril_shrub").when((c) => c.randomChance(0.020)),
-        );
+    // Add Menril Shrubs to Loot Table and reduce drop chance of menril saplings
+    // event.addBlockLootModifier("integrateddynamics:menril_leaves")
+    //     .removeLoot('integrateddynamics:menril_sapling')
+    //     .addAlternativesLoot(
+    //         LootEntry.of("integrateddynamics:menril_sapling").when((c) => c.randomChance(0.008)),
+    //         LootEntry.of("kubejs:menril_shrub").when((c) => c.randomChance(0.016)),
+    //     );
 
     //Forbidden Arcanus Loot Removal
     event.addLootTableModifier('minecraft:chests/end_city_treasure').removeLoot('forbidden_arcanus:orb_of_temporary_flight');

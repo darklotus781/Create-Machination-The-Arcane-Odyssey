@@ -1,0 +1,487 @@
+{
+	autofocus_id: "1FB6946A522553C9"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2_brass_age"
+	group: "565532624F0A44A9"
+	icon: "create:precision_mechanism"
+	id: "059D74AB8EF7DCEA"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4912CC6F4CDFB42E"
+				"128037F37E28EC54"
+			]
+			id: "52996F5F4EC12FCE"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 8L
+				id: "459B55EDF10001F7"
+				item: "kubejs:brass_machine"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"4832E5BDB4FF5BB9"
+				"22A5130493F349C4"
+			]
+			description: [
+				"Brass Casings play a pivotal role in crafting, with brass being the primary material for their production. The creation of brass involves a distinct process where copper and zinc ingots are combined. This combination takes place in a basin, utilizing a mixer to amalgamate these ingots. A blaze burner powers this process, supplying the necessary heat to alloy copper and zinc into brass."
+				""
+				"After producing the brass, it's essential to press it into plates, a key step in the crafting workflow. These brass plates form the core element in the fabrication of Brass Casings. In a manner akin to Copper Casings, these plates are then affixed to stripped logs, resulting in the formation of Brass Casings."
+				""
+				"The crafted Brass Casings are subsequently employed alongside Precision Mechanisms to assemble Brass Machines. The synergy of Brass Casings and Precision Mechanisms is crucial for creating these advanced machines. Known for their high-level functionality and accuracy, Brass Machines are integral to executing more sophisticated and detailed crafting operations."
+			]
+			id: "4912CC6F4CDFB42E"
+			tasks: [{
+				count: 8L
+				id: "4DAE09453018A5FD"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2692F21C81CD9276"]
+			id: "4832E5BDB4FF5BB9"
+			tasks: [{
+				id: "5091BE6AF51B4C15"
+				item: "alltheores:brass_plate"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"5F22844AD724DBD9"
+				"6D747DD749C8E4AB"
+				"2530308B8D645EBA"
+			]
+			description: ["Brass itself is produced through a specific process that involves mixing copper and zinc ingots. This mixing occurs in a basin, where a mixer is used to combine these two types of ingots. The entire process is powered by a blaze burner, providing the necessary heat and energy to facilitate the alloying of copper and zinc into brass."]
+			id: "27531380DBEA6B7F"
+			tasks: [{
+				id: "686B151247E1CDD0"
+				item: "alltheores:brass_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["27531380DBEA6B7F"]
+			id: "2692F21C81CD9276"
+			tasks: [{
+				id: "7B8306D6FAB46CE2"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1FB6946A522553C9"]
+			description: [
+				"Copper plays a crucial role as an ingredient in various crafting processes. It can be sourced directly from the environment in the form of Copper Ore. Once extracted, Copper Ore can be processed in two primary ways: it can either be smelted down to obtain copper ingots or it can be crushed to produce its crushed variant and then smelted. Both forms of copper are integral to crafting and machine creation."
+				""
+				"In addition to Copper Ore, there is another unique resource called veridium. Veridium is a distinctive block that can be found in the world and, interestingly, can be crushed to yield copper. This provides an alternative method for acquiring copper, especially useful in different crafting scenarios."
+				""
+				"A particularly efficient way to automate copper production from veridium involves the use of Veridium Catalysts. These catalysts are typically found buried in geodes located beneath the ocean. By utilizing Veridium Catalysts, the process of converting veridium to copper can be fully automated, enhancing both the efficiency and the yield of copper production. This makes veridium a valuable resource for those looking to streamline their copper acquisition process, especially in large-scale or advanced crafting operations."
+			]
+			hide_dependency_lines: true
+			id: "6D747DD749C8E4AB"
+			tasks: [{
+				count: 32L
+				id: "28DB663DFE9AB6CD"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1FB6946A522553C9"]
+			description: [
+				"Zinc is another vital ingredient in crafting, similar to copper in its utility and processing methods. Zinc can be obtained from Zinc Ore, which is found in the world. Once Zinc Ore is mined, it can be processed in two main ways: either smelted down to produce zinc ingots or crushed to yield its crushed variant which can then be smelted. Both forms are essential for various crafting applications and are key components in numerous recipes."
+				""
+				"Alongside Zinc Ore, there exists a unique resource known as asurine. Asurine is a distinctive block that, when found, can be crushed to extract zinc. This offers an alternative method for acquiring zinc, adding versatility to your resource gathering strategies."
+				""
+				"To optimize the extraction of zinc from asurine, Asurine Catalysts can be employed. These catalysts are typically found in geodes beneath the ocean. By using Asurine Catalysts, you can fully automate the process of converting asurine into zinc. This automation significantly improves the efficiency and output of zinc production, making asurine a valuable resource for those aiming to enhance their zinc acquisition process in both small-scale and large-scale crafting endeavors."
+			]
+			hide_dependency_lines: true
+			id: "2530308B8D645EBA"
+			tasks: [{
+				count: 32L
+				id: "12F96F561D45B531"
+				item: "alltheores:raw_zinc"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1FB6946A522553C9"]
+			id: "5F22844AD724DBD9"
+			tasks: [{
+				id: "15E3CDD66D204B16"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4F67D06B90C9DA57"]
+			id: "22A5130493F349C4"
+			tasks: [{
+				count: 8L
+				id: "0FAE7DCBD909BA09"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:lumber/stripped"
+					}
+				}
+				type: "item"
+			}]
+			title: "Stripped Logs"
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["48F6440F85278CE1"]
+			description: ["Use a mechanical saw to strip logs in automation or you can use an axe manually or the Farmer's Delight Cutting Board."]
+			id: "4F67D06B90C9DA57"
+			tasks: [{
+				id: "27B643BFE48869F5"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1FB6946A522553C9"]
+			description: ["Bring some logs down from your log farm, we're gonna need them."]
+			hide_dependency_lines: true
+			id: "48F6440F85278CE1"
+			tasks: [{
+				count: 8L
+				id: "61FFF9DBEF36BE5B"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:lumber"
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3F4FC469DD974934"
+				"4485B031B3008217"
+			]
+			description: [
+				"Precision Mechanisms are manufactured through a detailed process that starts with Kinetic Mechanisms. These mechanisms are then enhanced by applying Electron Tubes and securing them together with screws. The production of Electron Tubes is a precise operation in itself, involving molten glass, iron, and destabilized redstone. This process is carried out in a complete assembly setup that is specifically focused on precision, ensuring the high quality and accuracy of the Electron Tubes."
+				""
+				"These Precision Mechanisms, once assembled, play a critical role in upcoming production stages. Their precise and intricate nature makes them essential for more advanced crafting and machine operations. Given their importance and the complexity of their production, automating the creation of Precision Mechanisms is vital. Establishing an automated process ensures a consistent and efficient supply of these mechanisms, which is key to maintaining smooth and effective production lines in more advanced crafting phases."
+			]
+			id: "128037F37E28EC54"
+			tasks: [{
+				count: 64L
+				id: "529BE02E4139CD9C"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1FB6946A522553C9"]
+			description: ["This is the first major step in the Machination Project.  Chapter 2 opens many doors, bring the Kinetic Mechanisms over from Chapter 1 to get things going."]
+			hide_dependency_lines: true
+			id: "0E9593ECF0C5D017"
+			tasks: [{
+				count: 16L
+				id: "49F6FB030FF05DCB"
+				item: "kubejs:kinetic_mechanism"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7143B829DD160D49"]
+			description: ["Spouting destabilized redstone on quartz will produce rose quartz."]
+			id: "39EA0BE602F87721"
+			tasks: [{
+				id: "2F52F0C62ACE5586"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["706E3D820C4228DE"]
+			description: ["Gather some quartz from the nether.  This can be automated later on."]
+			id: "7143B829DD160D49"
+			tasks: [{
+				id: "4903ED4897689F75"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5F22844AD724DBD9"]
+			description: [
+				"Redstone is vital to the production lines here, find a way to automated it."
+				""
+				"Melt it down to Destabilized Redstone in a mixer under heat."
+			]
+			id: "28638DFECF838BBD"
+			tasks: [{
+				id: "52BB183729022797"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["28638DFECF838BBD"]
+			id: "706E3D820C4228DE"
+			tasks: [
+				{
+					id: "46626202D2BECFB0"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "13DA2C3089550044"
+					item: "thermal:redstone_bucket"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["426DFEA3AC8048F6"]
+			description: ["Polish the rose quartz to a smooth finish using sandpaper, and then get ready to apply it to some empty tubes."]
+			id: "02FC9B63BAF2D1EC"
+			tasks: [{
+				id: "7BF1C3252FF16E64"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["39EA0BE602F87721"]
+			description: ["Craft up some sandpaper, diamond will be the most efficient, but you can automate the others."]
+			id: "426DFEA3AC8048F6"
+			tasks: [{
+				id: "78169FFD604445CD"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:sandpaper"
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4419A545C5DE5E0B"]
+			id: "2B536A3FAD4DCA3B"
+			tasks: [{
+				id: "15C9727521177FCE"
+				item: "kubejs:empty_tube"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2B536A3FAD4DCA3B"
+				"02FC9B63BAF2D1EC"
+			]
+			id: "3F4FC469DD974934"
+			tasks: [{
+				id: "4C53AA4D72A8CE48"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3A10D0D5E8548C54"]
+			description: [
+				"Getting started in Chapter 2 makes a couple of assumptions."
+				"1) You have completed Chapter 1 :P"
+				""
+				"2) You have automated Kinetic Mechanisms"
+				""
+				"3) You have automated Menril Tree farming and Resin production"
+				""
+				"4) You have a steady supply of Redstone, Quartz and a Blaze Spawner or a fortress to fill Blaze Burners"
+				""
+				"5) A steady supply of Brass from Copper and Zinc."
+			]
+			hide: true
+			id: "1FB6946A522553C9"
+			tasks: [{
+				id: "064D7D00E12075CF"
+				title: "Chapter 2: Start"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1FB6946A522553C9"]
+			description: [
+				"You should have sand automated by now."
+				"Let's route some of that sand to Chapter 2 and process it into molten glass by melting in a heated basin with a mixer."
+				""
+				"This glass will be used with Iron plates to make empty tubes."
+			]
+			hide_dependency_lines: true
+			id: "4419A545C5DE5E0B"
+			tasks: [{
+				count: 16L
+				id: "2F90C59852FA8F24"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4485B031B3008217"]
+			description: ["If you manage to accumulate enough coins, purchasing an eternal screwdriver is a viable option. However, keep in mind that these screwdrivers are not inexpensive, and acquiring one through purchase may require a significant investment of your resources. As an alternative, you have the opportunity to craft an eternal screwdriver yourself. This DIY approach can be a more cost-effective solution, allowing you to save your coins for other purposes. Crafting your own eternal screwdriver not only provides a sense of accomplishment but also gives you a valuable tool that can greatly aid in your ongoing projects and endeavors."]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "kubejs:screwdriver"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+					Modifier: "forbidden_arcanus:eternal"
+					Repair: 1b
+					Unbreakable: 1b
+				}
+			}
+			id: "2443513312849E85"
+			optional: true
+			rewards: [{
+				id: "2F1B256DD8D0911D"
+				item: {
+					Count: 1b
+					id: "kubejs:screwdriver"
+					tag: {
+						Damage: 0
+						Enchantments: [{ }]
+						Modifier: "forbidden_arcanus:eternal"
+						Repair: 1b
+						Unbreakable: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "08318B48333639D4"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "6005E058D7E4F4C9"
+					item: {
+						Count: 1b
+						id: "kubejs:screwdriver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Eternal Screwdriver"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0E9593ECF0C5D017"]
+			description: [
+				"Screwdrivers are essential to making Tier 2 / Chapter 2 Mechanisms."
+				"They have durability, so make a bunch, or work on getting an eternal one."
+				""
+				"Those tubes aren't going to screw themselves in..."
+			]
+			id: "4485B031B3008217"
+			tasks: [{
+				id: "5141FD1223ECFC23"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/screwdrivers"
+					}
+				}
+				type: "item"
+			}]
+			title: "Screwdriver"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["128037F37E28EC54"]
+			id: "73303C502C8841A6"
+			tasks: [{
+				id: "16B85B3691CB4D68"
+				item: "kubejs:sturdy_mechanism"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["128037F37E28EC54"]
+			id: "62B9B5EA4D35DCDA"
+			tasks: [{
+				id: "16C9865CF4D1603B"
+				item: "kubejs:scorch_mechanism"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+	]
+	title: "2: Brass Beginnings"
+}

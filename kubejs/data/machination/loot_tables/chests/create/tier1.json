@@ -1,0 +1,259 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/basics"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "kubejs:andesite_bag_common"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "kubejs:brass_bag_common"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "kubejs:dynamic_bag_common"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "kubejs:radiant_bag_common"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.2
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/mechanisms_tier_1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/mechanisms_tier_2"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.1
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:shaft"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:cogwheel"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:large_cogwheel"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:gearbox"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:vertical_gearbox"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:water_wheel"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:large_water_wheel"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:hand_crank"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:andesite_funnel"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:display_link"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:pulse_repeater"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:track"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:redstone_link"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:pulse_extender"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "railways:track_create_andesite_wide"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "railways:track_create_andesite_narrow"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:portable_storage_interface"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:linear_chassis"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create_new_age:energiser_t1"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:gantry_carriage"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:mechanical_bearing"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:windmill_bearing"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:mechanical_piston"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:chute"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:depot"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:clipboard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:andesite_tunnel"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:sturdy_sheet"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:radial_chassis"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:secondary_linear_chassis"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create_new_age:basic_motor"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create_new_age:electrical_connector"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create_new_age:generator_coil"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:electron_tube"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:brass_hand"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:whisk"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "create:propeller"
+                }
+            ]
+        }
+    ]
+}

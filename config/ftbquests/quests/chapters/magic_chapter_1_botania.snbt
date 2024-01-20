@@ -509,6 +509,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["52F6F1B037557C3C"]
 			description: [
 				"&aBotania&r is a tech mod disguised as a magic mod, but with TONS of cool trinkets and toys to play with!"
 				""
@@ -516,6 +517,7 @@
 				""
 				"For more information on the items in the mod, make sure to check out the &aLexica Botania&r. "
 			]
+			hide: true
 			id: "13D401048A926A74"
 			rewards: [
 				{

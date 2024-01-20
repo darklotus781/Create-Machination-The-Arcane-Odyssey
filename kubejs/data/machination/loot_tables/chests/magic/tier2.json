@@ -1,0 +1,194 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 5,
+                "max": 8
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/botania/flowers",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:arcane_bag_rare",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:twig_wand",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:lexicon",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:mana_pool",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:mana_tablet",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "botania:black_lotus",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:novice_spell_book",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:starbuncle_shards",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:whirlisprig_shards",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:corrupted_pixie_utrem_jar",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:pixie_utrem_jar",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:deorum_ingot",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:mundabitur_dust",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:dark_rune",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:ritual_containment",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:ritual_awakening",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:growing_edelwood",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:aurum_sapling",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:arcane_crystal_dust",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:corrupt_soul",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:sea_prism",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:smelter_prism",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "forbidden_arcanus:whirlwind_prism",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:ritual_forestation",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:sourcestone",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:source_gem_block",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:storage_lectern",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:spell_prism",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:volcanic_sourcelink",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:source_jar",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:imbuement_chamber",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:drygmy_shard",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

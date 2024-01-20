@@ -223,6 +223,15 @@
 				"As you stand before the shimmering portal, you realize that the true question isn't where your journey will lead, but what tales you'll weave and what legacies you'll leave behind in the endless tapestry of your adventure. The mysteries and marvels of countless new worlds await your indomitable spirit. The next chapter beckons, and with it, the continuation of your epic odyssey through the unknown."
 			]
 			id: "5926A2159ABC9069"
+			rewards: [{
+				auto: "invisible"
+				id: "50391A4645892A30"
+				ignore_reward_blocking: true
+				stage: "nether_access"
+				team_reward: true
+				title: "You may descend from the Aether."
+				type: "gamestage"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{

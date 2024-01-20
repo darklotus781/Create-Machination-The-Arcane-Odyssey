@@ -24,6 +24,8 @@ ServerEvents.recipes(event => {
     event.remove({id: 'thermal:rubber_from_dandelion'});
     event.remove({id: 'thermal:machines/press/press_vine_to_latex'});
     event.remove({id: 'thermal:machines/press/press_dandelion_to_latex'});
+    event.remove({id: 'thermal:machines/crucible/crucible_redstone_block'})
+    event.remove({id: 'thermal:machines/crucible/crucible_redstone_dust'})
 
     event.replaceInput({id: /.*thermal\:fire_charge.*/}, 'minecraft:fire_charge', 'forbidden_arcanus:smelter_prism');
     event.replaceInput({output: 'thermal:lumium_ingot'}, 'minecraft:glowstone_dust', 'create:refined_radiance');

@@ -10,9 +10,13 @@ ItemEvents.tooltip(tooltip => {
         add_color_description(`kubejs:${global.bag_name[i]}_bag_${global.rarity[2]}`, 'Epic', global.rarity_color.epic);
     }
 
+    let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "6" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
+    let bonus_assembly = (id, stage) => tooltip.add(id, [`§7Bonus Assembly: §6Chapter ${stage}`])
+    let not_consumed = (id, stage) => tooltip.add(id, [`§7Not consumed in the`, `§7Assembly Process`])
+
     tooltip.addAdvanced('ars_nouveau:source_gem', (item, advanced, text) => {
         text.remove(1);
-        text.add(1,Text.darkPurple('Made by squirting Source onto Runic Tablets.'));
+        text.add(1,Text.darkPurple('Made by tossing a Runic Tablet through an Elven Portal'));
     });
 
     tooltip.addAdvanced('ars_nouveau:magebloom_crop', (item, advanced, text) => {
@@ -64,6 +68,24 @@ ItemEvents.tooltip(tooltip => {
             text.add(1, "§7Base: §r63§7 Slots, §r2§7 Upgrade Slots");
         }
     });
+
+    main_assembly('kubejs:kinetic_mechanism', "1")
+    main_assembly('kubejs:rotation_mechanism', "1")
+    bonus_assembly('kubejs:sealed_mechanism', "1A")
+    bonus_assembly('kubejs:sturdy_mechanism', "1B")
+    bonus_assembly('kubejs:logistics_mechaism', "1C")
+    main_assembly('create:precision_mechanism', "2")
+    bonus_assembly('kubejs:power_mechanism', "2A")
+    bonus_assembly('kubejs:scorch_mechanism', "2B")
+    main_assembly('kubejs:radiant_mechanism', "3")
+    bonus_assembly('kubejs:plastic_mechanism', "3A")
+    main_assembly('kubejs:integrational_mechanism', "4")
+    main_assembly('kubejs:quantum_mechanism', "5")
+    main_assembly('kubejs:time_mechanism', "6")
+
+
+
+
 
     // tooltip.add('kubejs:leather_pocket', Text.gold('Used to add slots to backpacks.'));
 })

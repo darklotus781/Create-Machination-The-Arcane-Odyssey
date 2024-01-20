@@ -22,7 +22,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["411FC26DBB795420"]
 			description: ["Thermal Series is a modular series of mods that adds a content-rich blend of magic and technology to your Minecraft experience!"]
+			hide: true
 			icon: "thermal:upgrade_augment_3"
 			id: "1B026591BE76FA2E"
 			rewards: [
@@ -118,7 +120,8 @@
 			y: 0.0d
 		}
 		{
-			description: ["The Machine Frame is needed to craft various machines in Thermal Series."]
+			dependencies: ["1B026591BE76FA2E"]
+			description: ["The Radiant Machine (crafted from Radiant Mechanisms) is needed to craft various machines in Thermal Series."]
 			id: "451195C32C4DDC38"
 			rewards: [
 				{
@@ -136,13 +139,14 @@
 			subtitle: "The Basic Frame for Machines"
 			tasks: [{
 				id: "3EC446E752907C94"
-				item: "thermal:machine_frame"
+				item: "kubejs:radiant_machine"
 				type: "item"
 			}]
 			x: -0.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "3DA93308D19BA85F"
 			rewards: [
@@ -168,6 +172,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: ["Note: This accepts Tree Oil, Creosote Oil, and Refined Fuel."]
 			hide_dependency_lines: true
 			id: "7FE2EED58AB791E8"
@@ -194,6 +199,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "2F71FCE4E576C977"
 			rewards: [
@@ -224,6 +230,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "72C1C2CE02DCBDFF"
 			rewards: [
@@ -256,6 +263,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: [""]
 			hide_dependency_lines: true
 			id: "2EAE9EDE6EFA59F0"
@@ -287,6 +295,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "40ADAB71DB70EF32"
 			rewards: [
@@ -318,6 +327,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: [
 				"This is a base upgrade for all machines and items."
 				""
@@ -348,6 +358,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: [
 				"This is a tier 2 upgrade for Thermal Series items and machines."
 				""
@@ -378,6 +389,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: ["Note: While you can put several base upgrades into a machine, only the highest tier takes effect."]
 			hide_dependency_lines: true
 			id: "034FC4BCCCD7D154"
@@ -404,6 +416,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: ["Creates an infinite water source when placed between two water source blocks."]
 			hide_dependency_lines: true
 			id: "213FFA67A680E534"
@@ -429,6 +442,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: ["This machine charges the items placed inside."]
 			hide_dependency_lines: true
 			id: "5FDEAA78891874FD"
@@ -455,6 +469,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: [
 				"This machine can produce several types of stone."
 				""
@@ -569,6 +584,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "1B04B7EA5220D275"
 			rewards: [
@@ -594,6 +610,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: ["Spreads Potion Effects to an area."]
 			hide_dependency_lines: true
 			id: "66858700C3DDCB9E"
@@ -619,6 +636,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: ["Can be used to charge items, augment machines, or fill up items with liquid."]
 			id: "74F524F4F0231A78"
 			rewards: [
@@ -643,6 +661,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: ["Pro Tip: You can enchant these with &9Capacity&r to increase the storage!"]
 			hide_dependency_lines: true
 			id: "037E566ACC83FE07"
@@ -681,6 +700,7 @@
 			y: 1.9499999999999997d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "4389E906A2A74867"
 			rewards: [
@@ -725,6 +745,7 @@
 			y: 1.9499999999999997d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "483C1F4D099369A2"
 			rewards: [{
@@ -743,6 +764,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "0837E35C9C6881B4"
 			rewards: [
@@ -770,6 +792,7 @@
 			y: 3.1999999999999993d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "3320ADFD7DC4CA00"
 			rewards: [
@@ -796,6 +819,7 @@
 			y: 3.1999999999999993d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "79366EC1EE27ED4B"
 			rewards: [
@@ -822,6 +846,7 @@
 			y: 3.1999999999999993d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "6DF4B859ACBCD408"
 			rewards: [{
@@ -841,6 +866,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "6D35E56FC874C841"
 			rewards: [{
@@ -858,6 +884,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: [""]
 			hide_dependency_lines: true
 			id: "74DD4F8A13EAD3ED"
@@ -885,6 +912,7 @@
 			y: 3.1999999999999993d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "61E2FC5D363A5CA4"
 			rewards: [
@@ -911,6 +939,7 @@
 			y: 3.6999999999999993d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "58C6BAC128155B4E"
 			rewards: [
@@ -937,6 +966,7 @@
 			y: 3.6999999999999993d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "7D49A41E4D63A596"
 			rewards: [
@@ -969,6 +999,7 @@
 			y: 3.6999999999999993d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "234CD79746FCAA18"
 			rewards: [{
@@ -987,6 +1018,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "7C83735C2D746162"
 			rewards: [
@@ -1013,6 +1045,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "467CDD14AE21A850"
 			rewards: [
@@ -1039,6 +1072,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "00C24A7DFEAEE956"
 			rewards: [{
@@ -1058,7 +1092,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["66858700C3DDCB9E"]
+			dependencies: [
+				"66858700C3DDCB9E"
+				"1B026591BE76FA2E"
+			]
 			id: "22A1C68078EFB38B"
 			rewards: [
 				{
@@ -1083,7 +1120,10 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["66858700C3DDCB9E"]
+			dependencies: [
+				"66858700C3DDCB9E"
+				"1B026591BE76FA2E"
+			]
 			id: "1714E1048F01E1AA"
 			rewards: [
 				{
@@ -1313,6 +1353,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			description: ["It's more like a pickaxe that uses RF/FE."]
 			hide_dependency_lines: true
 			id: "5257468DC6C11851"
@@ -1343,6 +1384,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["1B026591BE76FA2E"]
 			hide_dependency_lines: true
 			id: "6BF6B00BC21CA547"
 			rewards: [

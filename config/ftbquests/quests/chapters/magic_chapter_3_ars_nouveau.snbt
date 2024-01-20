@@ -9,11 +9,13 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["411FC26DBB795420"]
 			description: [
 				"Welcome to &aArs Nouveau&f!"
 				""
 				"Ars Nouveau is a magic mod that allows you to create custom spells with the different Glyphs made within the mod!"
 			]
+			hide: true
 			id: "6E0E13806F388D7E"
 			rewards: [{
 				id: "24AA489F2E015748"

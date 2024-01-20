@@ -1,6 +1,6 @@
 {
     "name": "machination:support/desert_player_base_bottom",
-    "fallback": "minecraft:empty",
+    "fallback": "machination:support/desert_player_base_bottom",
     "elements": [
         {
             "weight": 1,

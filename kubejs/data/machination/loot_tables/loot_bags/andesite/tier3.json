@@ -1,0 +1,73 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 5,
+                "max": 6
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/create_junk"
+                }
+            ]
+        },
+        {
+            "rolls": 3,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/basics"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 9,
+                "max": 12
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 20,
+                    "name": "machination:mod_items/create/andesite_alloy"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 20,
+                    "name": "machination:mod_items/create/brass_and_ingredients"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 20,
+                    "name": "machination:mod_items/create/andesite_tier_2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 20,
+                    "name": "machination:mod_items/create/andesite_tier_1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 10,
+                    "name": "machination:mod_items/create/andesite_tier_3"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 3,
+                    "name": "machination:mod_items/create/resources"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 3,
+                    "name": "machination:mod_items/ae2/resources"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 2,
+                    "name": "machination:mod_items/create/mechanisms_tier_1"
+                }
+            ]
+        }
+    ]
+}

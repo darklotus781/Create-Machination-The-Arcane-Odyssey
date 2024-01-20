@@ -25,11 +25,14 @@ StartupEvents.registry('item', event => {
             .glow(add_glow ? add_glow : false);
     }
 
-    let tool = (name,rarity) => {
+    let tool = (name, rarity) => {
         let id = name.toLowerCase();
         event.create(id, 'sword').tier('tool').texture('kubejs:item/' + id).displayName(name).rarity(RARITY_COMMON);
     }
 
+    event.create('wooden_mechanism').texture('kubejs:item/mechanisms/wooden_mechanism').tooltip('The Mechanism isn\'t sturdy enough to support further tiers of mechanisms.');
+    mechanism('Rotation');
+    incomplete_mechanism('Rotation');
     mechanism('Kinetic');
     incomplete_mechanism('Kinetic');
     mechanism('Sealed');
@@ -38,39 +41,36 @@ StartupEvents.registry('item', event => {
     incomplete_mechanism('Sturdy');
     mechanism('Plastic', RARITY_UNCOMMON);
     incomplete_mechanism('Plastic');
-    mechanism('Dynamic', RARITY_UNCOMMON);
-    incomplete_mechanism('Dynamic');
+    mechanism('Integrational', RARITY_UNCOMMON);
+    incomplete_mechanism('Integrational');
     mechanism('Time', RARITY_RARE);
-    mechanism('Supercritical', RARITY_RARE);
     mechanism('Quantum', RARITY_EPIC, true);
     incomplete_mechanism('Quantum');
     mechanism('Radiant', RARITY_RARE, true);
     incomplete_mechanism('Radiant');
-    event.create('wooden_mechanism').texture('kubejs:item/mechanisms/wooden_mechanism').tooltip('The Mechanism isn\'t sturdy enough to support further tiers of mechanisms.');
-    mechanism('Ender');
-    incomplete_mechanism('Ender');
-    mechanism('Calculation');
-    incomplete_mechanism('Calculation');
     mechanism('Logistics');
     incomplete_mechanism('Logistics');
-    mechanism('Infernal');
-    incomplete_mechanism('Infernal');
-    mechanism('Integrated');
-    incomplete_mechanism('Integrated');
-    mechanism('Rotation');
-    incomplete_mechanism('Rotation');
-    mechanism('Pressure');
-    incomplete_mechanism('Pressure');
-    mechanism('Train');
-    incomplete_mechanism('Train');
     mechanism('Scorch');
     incomplete_mechanism('Scorch');
-    mechanism('Explosive');
-    incomplete_mechanism('Explosive');
     mechanism('Power');
     incomplete_mechanism('Power');
-    mechanism('Inductive');
-    incomplete_mechanism('Inductive');
+    // mechanism('Pressure');
+    // incomplete_mechanism('Pressure');
+    // mechanism('Supercritical', RARITY_RARE);
+    // mechanism('Ender');
+    // incomplete_mechanism('Ender');
+    // mechanism('Calculation');
+    // incomplete_mechanism('Calculation');
+    // mechanism('Infernal');
+    // incomplete_mechanism('Infernal');
+    // mechanism('Integrated');
+    // incomplete_mechanism('Integrated');
+    // mechanism('Train');
+    // incomplete_mechanism('Train');
+    // mechanism('Explosive');
+    // incomplete_mechanism('Explosive');
+    // mechanism('Inductive');
+    // incomplete_mechanism('Inductive');
 
     event.create('redstone_alloy_ingot').displayName('Redstone Alloy Ingot');
     event.create('redstone_alloy_cable').displayName('Redstone Alloy Cable');
@@ -105,28 +105,29 @@ StartupEvents.registry('item', event => {
     event.create('chroma_compound').texture('kubejs:item/chroma_compound').displayName('Pure Chroma Compound').rarity(RARITY_RARE);
 
     // Tools
-    event.create('stone_saw').texture('kubejs:item/stone_saw').displayName('Stone Saw').maxDamage(128);
-    event.create('iron_saw').texture('kubejs:item/iron_saw').displayName('Iron Saw').maxDamage(256);
-    event.create('diamond_saw').texture('kubejs:item/diamond_saw').displayName('Diamond Saw').maxDamage(1024);
-    event.create('screwdriver').texture('kubejs:item/screwdriver').displayName('Screwdriver').maxDamage(512);
-    event.create('lube_can').texture('kubejs:item/lube_can').displayName('Lubricant Can').maxDamage(256);
-    event.create('soldering_iron').texture('kubejs:item/soldering_iron').displayName('Soldering Iron').maxDamage(1024);
+    event.create('stone_saw').texture('kubejs:item/stone_saw').displayName('Stone Saw').maxDamage(64);
+    event.create('iron_saw').texture('kubejs:item/iron_saw').displayName('Iron Saw').maxDamage(128);
+    event.create('diamond_saw').texture('kubejs:item/diamond_saw').displayName('Diamond Saw').maxDamage(512);
+    event.create('screwdriver').texture('kubejs:item/screwdriver').displayName('Screwdriver').maxDamage(256);
+    // event.create('lube_can').texture('kubejs:item/lube_can').displayName('Lubricant Can').maxDamage(256);
+    event.create('soldering_iron').texture('kubejs:item/soldering_iron').displayName('Soldering Iron').maxDamage(512);
     tool('Resonator');
 
     // Different Tubes
-    event.create('golden_tube').texture('kubejs:item/yellow_tube').displayName('Golden Tube');
-    event.create('diamond_tube').texture('kubejs:item/blue_tube').displayName('Diamond Tube');
+    // event.create('golden_tube').texture('kubejs:item/yellow_tube').displayName('Golden Tube');
+    // event.create('diamond_tube').texture('kubejs:item/blue_tube').displayName('Diamond Tube');
     event.create('empty_tube').texture('kubejs:item/empty_tube').displayName('Empty Tube');
 
     // Incomplete / Transitional Devices
-    event.create('incomplete_sturdy_device', 'create:sequenced_assembly');
-    event.create('incomplete_mechanical_device', 'create:sequenced_assembly');
-    event.create('incomplete_sealed_device', 'create:sequenced_assembly');
-    event.create('incomplete_smart_device', 'create:sequenced_assembly');
-    event.create('incomplete_locomotive_device', 'create:sequenced_assembly');
-    event.create('incomplete_logic_device', 'create:sequenced_assembly');
-    event.create('incomplete_red_stringed_device', 'create:sequenced_assembly');
-    event.create('incomplete_furnished_device', 'create:sequenced_assembly');
+    // event.create('incomplete_sturdy_device', 'create:sequenced_assembly');
+    // event.create('incomplete_mechanical_device', 'create:sequenced_assembly');
+    // event.create('incomplete_sealed_device', 'create:sequenced_assembly');
+    // event.create('incomplete_smart_device', 'create:sequenced_assembly');
+    // event.create('incomplete_locomotive_device', 'create:sequenced_assembly');
+    // event.create('incomplete_logic_device', 'create:sequenced_assembly');
+    // event.create('incomplete_red_stringed_device', 'create:sequenced_assembly');
+    // event.create('incomplete_furnished_device', 'create:sequenced_assembly');
+
     event.create('incomplete_cogwheel', 'create:sequenced_assembly').displayName('Broken Cogwheel').parentModel('create:block/cogwheel_shaftless');
     event.create('incomplete_resistor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_resistor').displayName('Incomplete Resistor');
     event.create('incomplete_inductor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_inductor').displayName('Incomplete Induction Coil');
@@ -135,6 +136,10 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_inductor_core', 'create:sequenced_assembly').texture('kubejs:item/incomplete_inductor_core').displayName('Incomplete Magnetic Core');
     event.create('incomplete_electronic_circuit', 'create:sequenced_assembly').displayName('Incomplete Electronic Circuit');
     event.create('incomplete_saddle', 'create:sequenced_assembly').texture('kubejs:item/incomplete_saddle').displayName('Incomplete Saddle');
+    event.create('incomplete_rose_quartz', 'create:sequenced_assembly').texture('kubejs:item/incomplete_rose_quartz').displayName('Incomplete Rose Quartz');
+    event.create('incomplete_empty_tube', 'create:sequenced_assembly').texture('kubejs:item/incomplete_empty_tube').displayName('Incomplete Empty Tube');
+    event.create('empty_runic_tablet').texture('kubejs:item/empty_runic_tablet').displayName('Empty Runic Tablet');
+
     // AE2 Incomplete Processors
     event.create('incomplete_calculation_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_calculation_processor').displayName('Incomplete Calculation Processor');
     event.create('incomplete_engineering_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_engineering_processor').displayName('Incomplete Engineering Processor');
@@ -158,13 +163,13 @@ StartupEvents.registry('item', event => {
     event.create('chromium').displayName('Chromium').tooltip('Cr');
     event.create('powdered_flint').displayName('Powdered Flint').tooltip('Mix with Refined Fuel to create gunpowder');
     event.create('empty_vial').displayName('Empty Vial');
-    event.create('mage_leaf').displayName('Magically Blooming Leaves');
-    event.create('mageberry_smoothie').displayName('Mageberry Smoothie').food(food => {
-        food.hunger(8).saturation(0.75).effect('ars_nouveau:mana_regen',300,2,1).eaten(ctx => {
-            ctx.player.give(Item.of('minecraft:bowl',1));
-        });
-    });
-    event.create('dirty_bowl').displayName('Bowl of Leaves');
+    // event.create('mage_leaf').displayName('Magically Blooming Leaves');
+    // event.create('mageberry_smoothie').displayName('Mageberry Smoothie').food(food => {
+    //     food.hunger(8).saturation(0.75).effect('ars_nouveau:mana_regen', 300, 2, 1).eaten(consumer => {
+    //         consumer.player.give(Item.of('minecraft:bowl', 1));
+    //     });
+    // });
+    // event.create('dirty_bowl').displayName('Bowl of Leaves');
     event.create('sourcegem_fragments').displayName('Source Crystal Fragments');
     event.create('menril_shrub').tooltip('With the weakening of the Arcane so have the Arcane Trees been weakened. Can you restore this artifact?');
     event.create('rejuvinated_menril_shrub').tooltip('Youve restored it, well to some part. To fully restore the Menril Sapling you must continue.');
@@ -189,4 +194,16 @@ StartupEvents.registry('item', event => {
     event.create('ae2:calculation_processor_press').displayName('Calculation Processor Press');
     event.create('ae2:silicon_press').displayName('Silicon Press');
     event.create('ae2:engineering_processor_press').displayName('Engineering Processor Press');
+
+    // Smithing
+    event.create('machine_smithing_template').texture('kubejs:item/machine_smithing_template').displayName('Machine Smithing Template');
+});
+
+ItemEvents.modification(event => {
+    let colors = ["red", "yellow", "green", "blue", "magenta", "black"]
+    colors.forEach(element => {
+        event.modify('ae2:' + element + '_paint_ball', item => {
+            item.maxStackSize = 1
+        })
+    });
 });

@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "tech_chapter_1_technomancy_grid"
 	group: "21CB949AE3121A8A"
-	icon: "kubejs:dynamic_machine"
+	icon: "kubejs:integrational_machine"
 	id: "52BFF2709DB31CA9"
 	images: [
 		{
@@ -223,7 +223,7 @@
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:screwdrivers"
+						value: "forge:tools/screwdrivers"
 					}
 				}
 				title: "Any #forge:screwdrivers"
@@ -433,7 +433,7 @@
 			subtitle: "Mix Sky Stone Dust with Water"
 			tasks: [{
 				id: "5AB4FE27F8287432"
-				item: "kubejs:sky_solution_bucket"
+				item: "kubejs:sky_slurry_bucket"
 				type: "item"
 			}]
 			x: 1.5d
@@ -902,7 +902,7 @@
 					consume_items: true
 					count: 64L
 					id: "0A008155B6EA02F3"
-					item: "thermal:silver_coin"
+					item: "createdeco:gold_coin"
 					type: "item"
 				}
 				{

@@ -1,6 +1,10 @@
 ServerEvents.recipes(event => {
     event.remove({output: 'createaddition:electric_motor'});
     event.remove({output: 'createaddition:alternator'});
+    event.remove({output: 'createaddition:bioethanol_bucket'});
+    event.remove({output: 'createaddition:seed_oil_bucket'});
+    event.remove({input: 'createaddition:bioethanol_bucket'});
+    event.remove({input: 'createaddition:seed_oil_bucket'});
     event.replaceInput({id: 'createaddition:crafting/modular_accumulator'}, 'createaddition:capacitor', 'kubejs:electrolytic_capacitor');
     event.replaceInput({input: 'createaddition:capacitor'}, 'createaddition:capacitor', 'kubejs:ceramic_capacitor');
 

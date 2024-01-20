@@ -1,0 +1,244 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/basics"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:andesite_bag_epic",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:brass_bag_epic",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:dynamic_bag_epic",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:radiant_bag_epic",
+                    "weight": 10
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.2
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/mechanisms_tier_3"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/mechanisms_tier_4"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.1
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 9,
+                "max": 12
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "create:brown_toolbox",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:crushing_wheel",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_press",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:empty_blaze_burner",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_mixer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:portable_fluid_interface",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:spout",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:item_drain",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:hose_pulley",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:railway_casing",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:track_station",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:track_signal",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:track_observer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:controls",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:schedule",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "railways:track_coupler",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_drill",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:controller_rail",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:empty_schematic",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:attribute_filter",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:schematic_table",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:schematicannon",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create_new_age:energiser_t3",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create_new_age:reinforced_motor",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "railways:pink_conductor_cap",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:elevator_pulley",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:contraption_controls",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_arm",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:rotation_speed_controller",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:sequenced_gearshift",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_crafter",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:smart_fluid_pipe",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_roller",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:steam_engine",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

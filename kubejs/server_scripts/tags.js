@@ -8,8 +8,9 @@ ServerEvents.tags('item', event => {
 
     event.add('chipped:logs', ['#chipped:acacia_log', '#chipped:birch_log', '#chipped:dark_oak_log', '#chipped:jungle_log', '#chipped:mangrove_log', '#chipped:oak_log', '#chipped:spruce_log', '#chipped:crimson_stem', '#chipped:warped_stem', '#chipped:cherry_log']);
     event.add('chipped:stripped', ['#chipped:stripped_acacia_log', '#chipped:stripped_birch_log', '#chipped:stripped_dark_oak_log', '#chipped:stripped_jungle_log', '#chipped:stripped_mangrove_log', '#chipped:stripped_oak_log', '#chipped:stripped_spruce_log', '#chipped:stripped_crimson_stem', '#chipped:stripped_warped_stem', '#chipped:stripped_cherry_log']);
-    event.add('forge:lumber/all', ['#minecraft:logs', '#chipped:logs', '#chipped:stripped', '#integrateddynamics:menril_logs']);
+    event.add('forge:lumber', ['#minecraft:logs', '#chipped:logs', '#integrateddynamics:menril_logs']);
     event.add('forge:lumber/stripped', ['#forge:stripped/logs', '#forge:stripped/wood', '#chipped:stripped', 'integrateddynamics:menril_log_stripped']);
+    event.add('forge:lumber/all', ['#forge:lumber', 'forge:lumber/stripped']);
 
 
     // Tools
@@ -44,12 +45,24 @@ ServerEvents.tags('item', event => {
         'minecraft:vine',
         '#chipped:vine'
     ]);
+
+    global.colors.forEach(element => {
+        event.get('forge:glazed_terracotta').add(`minecraft:${element}_glazed_terracotta`)
+    });
+
+    global.trades.forEach(element => {
+        event.get('forge:trade_cards').add(`kubejs:trade_card_${element}`)
+    });
+
+    global.professions.forEach(element => {
+        event.get('forge:profession_cards').add(`kubejs:profession_card_${element}`)
+    });
 });
 
 
 ServerEvents.tags('block', event => {
     event.add('ae2:blacklisted/spatial', '#forge:relocation_not_supported');
-    event.add('forge:relocation_not_supported', ['minecraft:beehive', 'minecraft:bee_nest', /integrateddynamics:.+/, '@waystones']);
+    event.add('forge:relocation_not_supported', ['minecraft:beehive', 'minecraft:bee_nest', /integrateddynamics:.+/, '@waystones', /createresourcegeodes:.+_catalyst/]);
 
     event.add('ars_nouveau:golem/budding', [
         'minecraft:budding_amethyst',
@@ -59,7 +72,6 @@ ServerEvents.tags('block', event => {
         'ae2:flawless_budding_quartz'
     ]);
     event.add('ars_nouveau:golem/cluster', ['minecraft:amethyst_cluster', 'ae2:quartz_cluster']);
-
     event.add('forge:needs_allthemodium_tool', '#waystones:waystones');
     event.add('minecraft:mineable/pickaxe', '#waystones:waystones');
 });
