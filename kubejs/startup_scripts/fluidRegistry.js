@@ -49,15 +49,15 @@ StartupEvents.registry('fluid', event => {
         .thinTexture(0x9e9cb7)
         .displayName('Liquid Solder');
 
-    event.create('superheated_anthracene')
-        .thickTexture(0xFFFFF)
-        .bucketColor(0xFFFFF)
-        .displayName('Superheated Anthracene')
-
-    event.create('dichromic_acid')
-        .thinTexture(0x800020)
-        .bucketColor(0x800020)
-        .displayName('Dichromic Acid')
+    // event.create('superheated_anthracene')
+    //     .thickTexture(0xFFFFF)
+    //     .bucketColor(0xFFFFF)
+    //     .displayName('Superheated Anthracene')
+    //
+    // event.create('dichromic_acid')
+    //     .thinTexture(0x800020)
+    //     .bucketColor(0x800020)
+    //     .displayName('Dichromic Acid')
 
     event.create('chromatic_waste')
         .thinTexture(0x3A4100)
@@ -69,10 +69,10 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0x333300)
         .displayName('Invar Slurry')
 
-    event.create('liquid_anthraquinone')
-        .thinTexture(0x9F2B68)
-        .bucketColor(0x9F2B68)
-        .displayName('Anthraquinone')
+    // event.create('liquid_anthraquinone')
+    //     .thinTexture(0x9F2B68)
+    //     .bucketColor(0x9F2B68)
+    //     .displayName('Anthraquinone')
 
     event.create('dye_slurry_green')
         .thinTexture(0x03732F)
@@ -88,6 +88,16 @@ StartupEvents.registry('fluid', event => {
         .thinTexture(0x730303)
         .bucketColor(0x730303)
         .displayName('Red Chromatic Slurry')
+
+    event.create('dye_slurry_magenta')
+        .thinTexture(0x9F2B68)
+        .bucketColor(0x9F2B68)
+        .displayName('Magenta Chromatic Slurry')
+
+    event.create('dye_slurry_pink')
+        .thinTexture(0xFF748C)
+        .bucketColor(0xFF748C)
+        .displayName('Pink Chromatic Slurry')
 
     event.create('dirty_chroma_slurry')
         .thinTexture(0x4f390c)

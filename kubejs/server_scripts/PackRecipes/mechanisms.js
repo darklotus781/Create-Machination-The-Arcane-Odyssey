@@ -38,14 +38,14 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/saws')])
     ]).transitionalItem(t).loops(1).id('kubejs:rotation_mechanism')
 
-    // Rotation Mechanism - Tier 1 / Chapter 1
+    // Logistics Mechanism - Tier 1 / Chapter 1
     t = Item.of('kubejs:incomplete_logistics_mechanism');
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:logistics_mechanism'),
     ], Item.of('kubejs:kinetic_mechanism'), [
-        event.recipes.create.deploying(t, [t, Item.of('create:electron_tube')]),
-        event.recipes.create.deploying(t, [t, Item.of('create:electron_tube')]),
-        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/screwdrivers')])
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:nuggets/zinc')]),
+        event.recipes.create.deploying(t, [t, Item.of('create:cogwheel')]),
+        event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1).id('kubejs:logistics_mechanism');
 
     // Sealed Mechanism - Tier 2 level but not tier 2 (not used with other mechanisms...)

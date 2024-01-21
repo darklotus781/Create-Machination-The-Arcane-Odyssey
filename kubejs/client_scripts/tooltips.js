@@ -24,6 +24,14 @@ ItemEvents.tooltip(tooltip => {
         text.add(1,Text.darkPurple('Cannot be crafted, only found in campsite chests!'));
     });
 
+    tooltip.addAdvanced('ars_nouveau:magebloom', (item, advanced, text) => {
+        text.remove(1);
+        text.add(1, 'Grown from seeds found in Campsite Chests underground.');
+    });
+
+    tooltip.add('create:refined_radiance', 'Toss Chromatic Compound on a Beacon');
+    tooltip.add('create:shadow_steel', 'Toss Chromatic Compound into the Void or below Bedrock');
+
     tooltip.add('createresourcegeodes:catalyst_activator_wand', 'Used for moving Catalysts by right clicking.');
 
     tooltip.addAdvanced(/sophisticatedbackpacks:.*backpack/, (item, advanced, text) => {

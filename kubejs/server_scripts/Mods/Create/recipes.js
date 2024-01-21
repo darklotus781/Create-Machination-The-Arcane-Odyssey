@@ -53,6 +53,7 @@ ServerEvents.recipes(event => {
     // Washing Sand
     event.recipes.create.splashing(Item.of('minecraft:clay_ball', 1).withChance(0.25), Ingredient.of("#forge:sand"));
 
+
     // Andesite Blend - Disabled in favor of mixing
     // event.shaped(Item.of('kubejs:andesite_blend', 2), [
     //     'SA',

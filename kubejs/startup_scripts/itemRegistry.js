@@ -145,6 +145,10 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_engineering_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_engineering_processor').displayName('Incomplete Engineering Processor');
     event.create('incomplete_logic_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_logic_processor').displayName('Incomplete Logic Processor');
 
+    // Functional Storage Supplemental
+    event.create('fs_upgrade_base').texture('kubejs:item/fs_upgrade_base').displayName('Storage Upgrade Base');
+    event.create('fs_upgrade_input').texture('kubejs:item/fs_upgrade_input').displayName('Storage Upgrade Base Input');
+    event.create('fs_upgrade_output').texture('kubejs:item/fs_upgrade_output').displayName('Storage Upgrade Base Output');
 
     // Misc Items
     event.create('leather_pocket').texture('kubejs:item/leather_pocket').displayName('Leather Pocket').tooltip(Text.gold('Used to add slots to backpacks.'));
@@ -188,6 +192,8 @@ StartupEvents.registry('item', event => {
     event.create('redstone_cluster').texture('kubejs:item/redstone_cluster').displayName('Redstone Cluster');
     event.create('quartz_seed').texture('kubejs:item/quartz_seed').displayName('Quartz Seed');
     event.create('quartz_cluster').texture('kubejs:item/quartz_cluster').displayName('Quartz Cluster');
+    event.create('fluix_seed').texture('kubejs:item/fluix_seed').displayName('Fluix Seed');
+    event.create('fluix_cluster').texture('kubejs:item/fluix_cluster').displayName('Fluix Cluster');
 
     // AE2 Stuff
     event.create('ae2:logic_processor_press').displayName('Logic Processor Press');
