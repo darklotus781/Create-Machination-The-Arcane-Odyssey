@@ -81,33 +81,33 @@ ServerEvents.recipes(event => {
         ]
     }).id('incomplete_anthraquinone_from_anthracene');
 
-    event.custom({
-        type: 'lychee:item_inside',
-        item_in: {
-            item: 'kubejs:incomplete_anthraquinone'
-        },
-        block_in: {
-            blocks: ['kubejs:dichromic_acid'],
-            state: {
-                level: 0
-            }
-        },
-        post: [
-            {
-
-                type: 'place',
-                block: 'minecraft:air',
-                contextual: {
-                    type: 'chance',
-                    chance: 0.20
-                }
-            },
-            {
-                type: 'drop_item',
-                item: 'kubejs:anthraquinone',
-            }
-        ]
-    }).id('anthraquinone_from_incomplete_anthraquinone');
+    // event.custom({
+    //     type: 'lychee:item_inside',
+    //     item_in: {
+    //         item: 'kubejs:incomplete_anthraquinone'
+    //     },
+    //     block_in: {
+    //         blocks: ['kubejs:dichromic_acid'],
+    //         state: {
+    //             level: 0
+    //         }
+    //     },
+    //     post: [
+    //         {
+    //
+    //             type: 'place',
+    //             block: 'minecraft:air',
+    //             contextual: {
+    //                 type: 'chance',
+    //                 chance: 0.20
+    //             }
+    //         },
+    //         {
+    //             type: 'drop_item',
+    //             item: 'kubejs:anthraquinone',
+    //         }
+    //     ]
+    // }).id('anthraquinone_from_incomplete_anthraquinone');
 
     event.custom({
         type: 'lychee:item_inside',

@@ -28,6 +28,10 @@ ServerEvents.recipes(event => {
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1).id('kubejs:kinetic_mechanism');
 
+    // event.custom(cuttingRecipe(Item.of('ars_nouveau:magebloom'), Ingredient.of('#forge:tools/knives'), [
+    //     Item.of('ars_nouveau:magebloom_fiber', 2),
+    // ])).id('kubejs:cutting/magebloom_fiber');
+
     // Rotation Mechanism - Tier 1
     t = Item.of('kubejs:incomplete_rotation_mechanism');
     event.recipes.create.sequenced_assembly([

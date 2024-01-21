@@ -43,9 +43,9 @@ function trading(event) {
 
 function cuttingRecipe(ingredient, tool, result) {
     return {
-        type: 'farmersdelight:cutting',
+        type: 'sliceanddice:cutting',
         ingredients: [ingredient],
         tool: tool,
-        result: result
+        results: result
     };
 }

@@ -267,7 +267,8 @@ ServerEvents.recipes(event => {
 
     // Red Chromatic Compound
     event.recipes.create.deploying(Item.of('kubejs:red_compound'), ['#forge:flowers/red', '#forge:tools/knives']);
-    event.custom(cuttingRecipe(Ingredient.of('#forge:flowers/red'), Ingredient.of('#forge:tools/knives'), [Item.of('kubejs:red_compound')])).id('kubejs:cutting/red_compound');;
+    event.custom(cuttingRecipe(Ingredient.of('#forge:flowers/red'), Ingredient.of('#forge:tools/knives'), [Item.of('kubejs:red_compound')])).id('kubejs:cutting/red_compound');
+    ;
 
     // Red Chromatic Slurry
     event.recipes.create.mixing([Fluid.of('kubejs:dye_slurry_red').withAmount(750), Item.of('kubejs:dirty_dye_compound', 1)], [
@@ -277,7 +278,8 @@ ServerEvents.recipes(event => {
 
     // Green Chromatic Compound
     event.recipes.create.deploying(Item.of('kubejs:green_compound'), ['#forge:flowers/green', '#forge:tools/knives']);
-    event.custom(cuttingRecipe(Ingredient.of('#forge:flowers/green'), Ingredient.of('#forge:tools/knives'), [Item.of('kubejs:green_compound')])).id('kubejs:cutting/green_compound');;
+    event.custom(cuttingRecipe(Ingredient.of('#forge:flowers/green'), Ingredient.of('#forge:tools/knives'), [Item.of('kubejs:green_compound')])).id('kubejs:cutting/green_compound');
+    ;
 
     // Green Chromatic Slurry
     event.recipes.create.mixing([Fluid.of('kubejs:dye_slurry_green').withAmount(750), Item.of('kubejs:dirty_dye_compound', 1)], [
@@ -287,7 +289,8 @@ ServerEvents.recipes(event => {
 
     // Blue Chromatic Compound
     event.recipes.create.deploying(Item.of('kubejs:blue_compound'), ['#forge:flowers/blue', '#forge:tools/knives']);
-    event.custom(cuttingRecipe(Ingredient.of('#forge:flowers/blue'), Ingredient.of('#forge:tools/knives'), [Item.of('kubejs:blue_compound')])).id('kubejs:cutting/blue_compound');;
+    event.custom(cuttingRecipe(Ingredient.of('#forge:flowers/blue'), Ingredient.of('#forge:tools/knives'), [Item.of('kubejs:blue_compound')])).id('kubejs:cutting/blue_compound');
+    ;
 
     // Blue Chromatic Slurry
     event.recipes.create.mixing([Fluid.of('kubejs:dye_slurry_blue').withAmount(750), Item.of('kubejs:dirty_dye_compound', 1)], [
@@ -297,7 +300,8 @@ ServerEvents.recipes(event => {
 
     // Pink Chromatic Compound
     event.recipes.create.deploying(Item.of('kubejs:pink_compound'), ['#forge:flowers/pink', '#forge:tools/knives']).id('kubejs:deploying/pink_compound');
-    event.custom(cuttingRecipe(Ingredient.of('#forge:flowers/pink'), Ingredient.of('#forge:tools/knives'), [Item.of('kubejs:pink_compound')])).id('kubejs:cutting/pink_compound');;
+    event.custom(cuttingRecipe(Ingredient.of('#forge:flowers/pink'), Ingredient.of('#forge:tools/knives'), [Item.of('kubejs:pink_compound')])).id('kubejs:cutting/pink_compound');
+    ;
 
     // Pink Chromatic Slurry
     event.recipes.create.mixing([Fluid.of('kubejs:dye_slurry_pink').withAmount(750), Item.of('kubejs:dirty_dye_compound', 1)], [

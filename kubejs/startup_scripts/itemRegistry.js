@@ -101,6 +101,7 @@ StartupEvents.registry('item', event => {
     event.create('red_compound').texture('kubejs:item/red_compound').displayName('Red Chroma Compound');
     event.create('green_compound').texture('kubejs:item/green_compound').displayName('Green Chroma Compound');
     event.create('blue_compound').texture('kubejs:item/blue_compound').displayName('Blue Chroma Compound');
+    event.create('pink_compound').texture('kubejs:item/pink_compound').displayName('Pink Chroma Compound');
     event.create('dirty_dye_compound').texture('kubejs:item/dirty_compound').displayName('Dirty Chroma Compound');
     event.create('chroma_compound').texture('kubejs:item/chroma_compound').displayName('Pure Chroma Compound').rarity(RARITY_RARE);
 
