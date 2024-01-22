@@ -1276,6 +1276,79 @@
 			x: -9.0d
 			y: 3.5d
 		}
+		{
+			description: ["Used for completing tasks that require fluids or power."]
+			icon: "ftbquests:detector"
+			id: "1161942B706123F3"
+			rewards: [
+				{
+					id: "59EEA245CFF42BD0"
+					item: "ftbquests:detector"
+					team_reward: false
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "2E4F1D4F4B7D18E3"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "2x Silver"
+			tasks: [{
+				consume_items: true
+				count: 2L
+				icon: { Count: 10b, id: "thermal:silver_coin" }
+				id: "63A7C2799E426FA2"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Quest Detector"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			description: ["Spawn a camel at your current location."]
+			icon: "minecraft:camel_spawn_egg"
+			id: "0376A34F49207F3F"
+			rewards: [
+				{
+					auto: "disabled"
+					command: "/summon minecraft:camel ~ ~1 ~"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					icon: "minecraft:camel_spawn_egg"
+					id: "23640A060AF8725B"
+					team_reward: false
+					title: "Summon a Camel"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "307A5E212B3242BA"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "32 Silver"
+			tasks: [{
+				consume_items: true
+				count: 32L
+				icon: { Count: 32b, id: "thermal:silver_coin" }
+				id: "435055AC7EA4DB74"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Watch for the Spit"
+			x: -7.0d
+			y: 2.5d
+		}
 	]
 	title: "&a Marketplace"
 }

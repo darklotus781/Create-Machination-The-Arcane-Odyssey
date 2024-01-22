@@ -498,12 +498,19 @@
 				"Now, let's get started, click the checkmark to being your Odyssey."
 			]
 			id: "23C315FDCADE1E79"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "68E47C4B0E61A4C2"
-				table_id: 7979468168910851615L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "68E47C4B0E61A4C2"
+					table_id: 7979468168910851615L
+					type: "random"
+				}
+				{
+					id: "0FC2FD20D0E2158F"
+					item: "ftbquests:detector"
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.5d
 			tasks: [{

@@ -24,7 +24,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 11.0d
+			y: 11.25d
 		}
 		{
 			dependencies: ["6AC1CED0D341150E"]
@@ -59,7 +59,7 @@
 			}]
 			title: "Automatic Exchange"
 			x: 2.0d
-			y: 11.0d
+			y: 11.25d
 		}
 		{
 			can_repeat: true
@@ -3844,7 +3844,7 @@
 			}]
 			title: "Early Shipping"
 			x: -2.0d
-			y: 11.0d
+			y: 11.25d
 		}
 	]
 	title: "&a Automated Trading"

@@ -73,6 +73,71 @@
 			x: -1.0d
 			y: 3.5d
 		}
+		{
+			id: "04346BEE4D964F35"
+			tasks: [{
+				amount: 1000L
+				fluid: "pneumaticcraft:plastic"
+				id: "720B4CAC04B8CCBB"
+				type: "fluid"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			description: ["Start by building an air compressor, which converts fuels like coal, lava, or even plant oils into compressed air. This compressed air is stored in pressure chambers or tanks and is distributed through a network of pipes and tubes. The air pressure is used to power a wide array of pneumatic devices, such as pneumatic drills, elevators, and even intricate logic circuits. The mod emphasizes creativity and engineering skills, challenging players to design and manage their pneumatic systems efficiently to maintain optimal pressure levels and avoid explosions caused by excessive pressure."]
+			id: "4C20B8ED7855FD59"
+			rewards: [
+				{
+					id: "544E9E666C5731BC"
+					item: "pneumaticcraft:security_upgrade"
+					type: "item"
+				}
+				{
+					id: "51BDDA60575291A4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [
+				{
+					id: "2964D82784EC7745"
+					item: "pneumaticcraft:air_compressor"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4815A63974C53192"
+					item: "pneumaticcraft:pressure_tube"
+					type: "item"
+				}
+			]
+			title: "Basic Air Generation"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			id: "13EB5E7FE0FE7067"
+			rewards: [
+				{
+					id: "3ADC58BAA3C15343"
+					item: "pneumaticcraft:lubricant_bucket"
+					type: "item"
+				}
+				{
+					id: "4D8378AA04B857C6"
+					item: "pneumaticcraft:smart_chest"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "482637ACB9542D13"
+				item: "pneumaticcraft:advanced_air_compressor"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
 	]
 	title: "4: Plastic Pandemonium"
 }

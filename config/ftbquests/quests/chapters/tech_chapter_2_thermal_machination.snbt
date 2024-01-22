@@ -18,11 +18,15 @@
 		}
 	}
 	id: "777A1C817B499CDB"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["411FC26DBB795420"]
+			dependencies: [
+				"411FC26DBB795420"
+				"0377CB6CDE095021"
+				"33137116A9F3C425"
+			]
 			description: ["Thermal Series is a modular series of mods that adds a content-rich blend of magic and technology to your Minecraft experience!"]
 			hide: true
 			icon: "thermal:upgrade_augment_3"

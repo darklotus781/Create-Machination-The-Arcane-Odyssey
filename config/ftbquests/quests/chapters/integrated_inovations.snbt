@@ -29,10 +29,14 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 5: Start"
-			x: 0.5d
-			y: -5.0d
+			x: -2.5d
+			y: -6.5d
 		}
 		{
+			dependencies: [
+				"467CC16668880C62"
+				"4227EB0B6A053F63"
+			]
 			id: "4B6530C71EBBCEA5"
 			rewards: [{
 				id: "122081A0FD4F3056"
@@ -52,10 +56,11 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.5d
-			y: -3.5d
+			x: -0.5d
+			y: -0.5d
 		}
 		{
+			dependencies: ["4B6530C71EBBCEA5"]
 			id: "36586087EDF835C8"
 			rewards: [{
 				id: "45F3079728B34CCB"
@@ -77,8 +82,379 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.5d
-			y: -2.0d
+			x: 1.75d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2C79E1112D45C027"]
+			id: "467CC16668880C62"
+			tasks: [{
+				id: "15C0311ECFC518CC"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6A9068C3635344F2"]
+			id: "4227EB0B6A053F63"
+			tasks: [{
+				id: "6B63E83397C307B9"
+				item: "kubejs:sourcegem_fragments"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["60AE9E0F3742EDB9"]
+			hide_dependency_lines: true
+			id: "272B3FB88CE04D97"
+			tasks: [{
+				id: "6CA99EE6103D5D2D"
+				item: "ars_nouveau:magebloom"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["60AE9E0F3742EDB9"]
+			hide_dependency_lines: true
+			id: "676FC12356A3C8D4"
+			tasks: [{
+				id: "0D8A34FE39CCA213"
+				item: "ars_nouveau:sourceberry_bush"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["272B3FB88CE04D97"]
+			id: "0A114D38CF426940"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:magebloom_juice"
+				id: "42EDAB334B0A784F"
+				type: "fluid"
+			}]
+			x: -10.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["676FC12356A3C8D4"]
+			id: "0138EA0CB8147CFC"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:sourceberry_juice"
+				id: "5F533312E5B63A9A"
+				type: "fluid"
+			}]
+			x: -10.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"0A114D38CF426940"
+				"0138EA0CB8147CFC"
+			]
+			id: "000AE9019D6C6FE9"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:impure_source"
+				id: "60F32CFF7B052BD4"
+				type: "fluid"
+			}]
+			x: -8.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["000AE9019D6C6FE9"]
+			id: "3291B7BE4DA42EF7"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:source"
+				id: "72CBC72C980DA155"
+				type: "fluid"
+			}]
+			x: -6.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"3291B7BE4DA42EF7"
+				"33E187D6A9BEBE68"
+			]
+			id: "58CCBB11E2160BD5"
+			tasks: [{
+				id: "405E3CC7B72F3FC1"
+				item: "kubejs:empty_runic_tablet"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["58CCBB11E2160BD5"]
+			id: "6BD18B43DE5DB88F"
+			tasks: [{
+				id: "223D702E4354596A"
+				item: "forbidden_arcanus:rune"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5A34E18AA9FDD365"]
+			id: "2C79E1112D45C027"
+			tasks: [{
+				id: "233CD529242286CA"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6BD18B43DE5DB88F"]
+			id: "5A34E18AA9FDD365"
+			tasks: [{
+				id: "0AD9C6B48D4A1ACE"
+				item: "kubejs:runic_tablet"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["467CC16668880C62"]
+			id: "6A9068C3635344F2"
+			tasks: [{
+				id: "469D883DA4A6D3FD"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["38A66981E3080166"]
+			id: "33E187D6A9BEBE68"
+			tasks: [{
+				id: "425E3E1ECC347E24"
+				item: "forbidden_arcanus:polished_darkstone_slab"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7DB0606DE4C7AFE6"]
+			id: "38A66981E3080166"
+			tasks: [{
+				id: "66B1567FCBD1788F"
+				item: "forbidden_arcanus:darkstone"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"23304B9EC97B944E"
+				"14584E9D69D41C94"
+				"3111CF3B555629CA"
+			]
+			description: ["Use the igneous extruder with Lava, Aureal Essence and a base block of Chiseled Arcane Polished Darkstone."]
+			id: "7DB0606DE4C7AFE6"
+			tasks: [{
+				id: "5802CCC62511E08A"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			id: "14584E9D69D41C94"
+			tasks: [{
+				amount: 1000L
+				fluid: "minecraft:lava"
+				id: "37CFEB13647735AD"
+				type: "fluid"
+			}]
+			x: 1.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2FA15D67D84E4C2F"]
+			id: "3111CF3B555629CA"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:aureal_essence"
+				id: "18E6CE2772750775"
+				type: "fluid"
+			}]
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			id: "23304B9EC97B944E"
+			tasks: [{
+				id: "258AEBB6AB3C59A4"
+				item: "forbidden_arcanus:chiseled_arcane_polished_darkstone"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["35FCFEBA31C587D7"]
+			id: "2FA15D67D84E4C2F"
+			tasks: [{
+				id: "00FCFC999BFDA8D5"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2FA9DC98222E0B24"]
+			id: "35FCFEBA31C587D7"
+			tasks: [{
+				id: "756E51B90A52C9CD"
+				item: "forbidden_arcanus:pixie_utrem_jar"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0FFA7973884EBCF2"]
+			id: "2FA9DC98222E0B24"
+			tasks: [{
+				id: "5F2B23C6B2ED594A"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7C985B2676253204"]
+			id: "0FFA7973884EBCF2"
+			tasks: [{
+				id: "451B7EC506D2985B"
+				item: "forbidden_arcanus:corrupted_pixie_utrem_jar"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0CAE0557AA551281"]
+			id: "7C985B2676253204"
+			tasks: [{
+				id: "4D7F02CA32CF6CC1"
+				item: "forbidden_arcanus:utrem_jar"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["513A811C5629D565"]
+			id: "0CAE0557AA551281"
+			tasks: [{
+				id: "3E04DB3FE9865330"
+				item: "forbidden_arcanus:corrupted_pixie"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2923967DB9C22D12"]
+			id: "513A811C5629D565"
+			tasks: [{
+				id: "7AE176C47091CD88"
+				item: "forbidden_arcanus:arcane_crystal_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["381EF3F667A74117"]
+			id: "2923967DB9C22D12"
+			tasks: [{
+				id: "131EC8E7FCFC196D"
+				item: "forbidden_arcanus:corrupt_soul"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1053146DCB837A88"]
+			id: "381EF3F667A74117"
+			tasks: [{
+				id: "4C5CE73ABCF17EF6"
+				item: "minecraft:soul_campfire"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -5.5d
+		}
+		{
+			id: "1053146DCB837A88"
+			tasks: [{
+				id: "3D5FA912DDDAE074"
+				item: "forbidden_arcanus:soul"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -7.5d
+		}
+		{
+			id: "25A1671BBFC63162"
+			tasks: [{
+				id: "17B1B35657167E20"
+				item: {
+					Count: 1b
+					id: "forbidden_arcanus:soul_extractor"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: -7.5d
+		}
+		{
+			id: "265F0DB2F335238C"
+			tasks: [{
+				id: "7F6AD7D3FEC04FCD"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -7.5d
+		}
+		{
+			id: "480B3B53D9E59CAB"
+			tasks: [{
+				id: "2BD8CDEDEB4B26E1"
+				item: "forbidden_arcanus:soulless_sand"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -7.5d
 		}
 	]
 	title: "5: Integrated Innovations"
