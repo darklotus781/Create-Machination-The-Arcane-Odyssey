@@ -17,13 +17,26 @@ function trading(event) {
             type: 'thermal:press',
             ingredients: [
                 ingredient,
-                Ingredient.of(card_id).toJson(),
+                Item.of(card_id).toJson(),
             ],
             result: [
                 output
             ],
             energy: 1000
-        })
+        });
+        // event.custom({
+        //     type: "thermal:press",
+        //     ingredients: [
+        //         ingredient,
+        //         {
+        //             item: card_id
+        //         }
+        //     ],
+        //     result: [
+        //         output
+        //     ],
+        //     energy: 1000
+        // })
     }
 
     global.trades.forEach(element => {

@@ -127,7 +127,7 @@
 		{
 			item: {
 				Count: 1b
-				id: "copper_backtank"
+				id: "create:copper_backtank"
 				tag: {
 					Air: 420
 				}

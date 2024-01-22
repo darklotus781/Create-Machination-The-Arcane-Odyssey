@@ -324,6 +324,11 @@ ServerEvents.recipes(event => {
         heatRequirement: 'heated',
         results: [Item.of('create:chromatic_compound').toJson(), Fluid.of('kubejs:dirty_chroma_slurry').withAmount(50).toJson()]
     }).id('kubejs:fermenting/dye_slurry_magenta_to_chromatic_compound');
+
+    event.recipes.create.emptying([Item.of('ae2:matter_ball'), Fluid.of('kubejs:dye_slurry_green').withAmount(15)], Item.of('ae2:green_paint_ball'));
+    event.recipes.create.emptying([Item.of('ae2:matter_ball'), Fluid.of('kubejs:dye_slurry_blue').withAmount(15)], Item.of('ae2:blue_paint_ball'));
+    event.recipes.create.emptying([Item.of('ae2:matter_ball'), Fluid.of('kubejs:dye_slurry_pink').withAmount(15)], Item.of('ae2:pink_paint_ball'));
+    event.recipes.create.emptying([Item.of('ae2:matter_ball'), Fluid.of('kubejs:dye_slurry_red').withAmount(15)], Item.of('ae2:red_paint_ball'));
 })
 
 ServerEvents.tags('item', event => {

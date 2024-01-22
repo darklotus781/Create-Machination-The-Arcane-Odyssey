@@ -7,6 +7,78 @@
 	id: "3F42CB09E7A0D13B"
 	order_index: 6
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Getting started in Chapter 2 makes a couple of assumptions."
+				"1) You have completed Chapter 1 :P"
+				""
+				"2) You have automated Kinetic Mechanisms"
+				""
+				"3) You have automated Menril Tree farming and Resin production"
+				""
+				"4) You have a steady supply of Redstone, Quartz and a Blaze Spawner or a fortress to fill Blaze Burners"
+				""
+				"5) A steady supply of Brass from Copper and Zinc."
+			]
+			hide: true
+			id: "1D3698C194B4E1F4"
+			tasks: [{
+				id: "3A30CCA1988DEF88"
+				title: "Chapter 2: Start"
+				type: "checkmark"
+			}]
+			title: "Final Chapter: Start"
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			id: "6CF50DA237778924"
+			rewards: [{
+				id: "0E8D061B0675EEA9"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "0EA32FCB5BA520DA"
+					item: "kubejs:time_mechanism"
+					type: "item"
+				}
+				{
+					id: "52430F7E8EE5BF82"
+					title: "Automated Time Mechanisms"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			id: "6A9FBF8714EA09A6"
+			rewards: [{
+				id: "4EF0F7670DBBEF74"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7D61BAC18FB9A8CC"
+					item: "kubejs:time_machine"
+					type: "item"
+				}
+				{
+					id: "56C6CE8ACFD87FF1"
+					title: "Automated Time Machines"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: -3.5d
+		}
+	]
 	title: "7: Temporal Termination"
 }

@@ -7,6 +7,79 @@
 	id: "7AB340F7990D3911"
 	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Getting started in Chapter 2 makes a couple of assumptions."
+				"1) You have completed Chapter 1 :P"
+				""
+				"2) You have automated Kinetic Mechanisms"
+				""
+				"3) You have automated Menril Tree farming and Resin production"
+				""
+				"4) You have a steady supply of Redstone, Quartz and a Blaze Spawner or a fortress to fill Blaze Burners"
+				""
+				"5) A steady supply of Brass from Copper and Zinc."
+			]
+			hide: true
+			id: "60AE9E0F3742EDB9"
+			tasks: [{
+				id: "4BF8374645261BBE"
+				title: "Chapter 2: Start"
+				type: "checkmark"
+			}]
+			title: "Chapter 5: Start"
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			id: "4B6530C71EBBCEA5"
+			rewards: [{
+				id: "122081A0FD4F3056"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "197EBE528E28BE86"
+					item: "kubejs:integrational_mechanism"
+					type: "item"
+				}
+				{
+					id: "30D0CA1D63F5ED0E"
+					title: "Automated Integrational Mechanisms"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			id: "36586087EDF835C8"
+			rewards: [{
+				id: "45F3079728B34CCB"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "63A446215C76CC6A"
+					item: "kubejs:integrational_machine"
+					type: "item"
+				}
+				{
+					id: "790BFDCCFD57233F"
+					title: "Automated Integrational Machines"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -2.0d
+		}
+	]
 	title: "5: Integrated Innovations"
 }

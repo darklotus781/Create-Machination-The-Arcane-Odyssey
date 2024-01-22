@@ -15,10 +15,12 @@
 			rewards: [{
 				id: "55EF0FE847AE3353"
 				item: "minecraft:cyan_bed"
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "10 Silver"
 			tasks: [{
+				consume_items: true
 				count: 10L
 				icon: { Count: 10b, id: "thermal:silver_coin" }
 				id: "0783860FB502A201"
@@ -37,15 +39,15 @@
 				id: "160328DECC54AD5A"
 				item: {
 					Count: 1b
-					id: "structurescompass:structures_compass"
-					tag: {
-						Structure: "minecraft:fortress"
-					}
+					id: "explorerscompass:explorerscompass"
+					tag: { }
 				}
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "2 Gold"
 			tasks: [{
+				consume_items: true
 				count: 2L
 				icon: { Count: 2b, id: "thermal:gold_coin" }
 				id: "5345AA8760A95127"
@@ -57,135 +59,10 @@
 			y: 0.5d
 		}
 		{
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms&r."]
-			hide_dependency_lines: true
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Radiant Mechanisms&r."]
 			icon: {
 				Count: 1b
-				id: "cb_microblock:diamond_saw"
-				tag: {
-					Damage: 0
-					Enchantments: [{
-						id: "minecraft:unbreaking"
-						lvl: 3s
-					}]
-					RepairCost: 0
-					display: {
-						Name: "{\"text\":\"Enchanted Saw\"}"
-					}
-				}
-			}
-			id: "4F953BACF4D1C151"
-			rewards: [{
-				id: "56DB21D18FB1FF64"
-				item: {
-					Count: 1b
-					id: "cb_microblock:diamond_saw"
-					tag: {
-						Damage: 0
-						Enchantments: [{
-							id: "minecraft:unbreaking"
-							lvl: 10s
-						}]
-						HideFlags: 1
-						RepairCost: 0
-						Unbreakable: 1
-						display: {
-							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
-							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
-						}
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "5 Gold"
-			tasks: [
-				{
-					id: "4C77B71D0EC3B2EA"
-					item: {
-						Count: 1b
-						id: "cb_microblock:diamond_saw"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 5L
-					icon: { Count: 5b, id: "thermal:gold_coin" }
-					id: "3EE8736C08EF80F4"
-					item: "thermal:gold_coin"
-					type: "item"
-				}
-			]
-			title: "Saw everything"
-			x: -8.5d
-			y: -6.5d
-		}
-		{
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
-			icon: {
-				Count: 1b
-				id: "projectred-core:screwdriver"
-				tag: {
-					Damage: 0
-					Enchantments: [{
-						id: "minecraft:unbreaking"
-						lvl: 3s
-					}]
-				}
-			}
-			id: "72CACE8F0E4701B1"
-			rewards: [{
-				id: "743730BBE32A0875"
-				item: {
-					Count: 1b
-					id: "projectred-core:screwdriver"
-					tag: {
-						Damage: 0
-						Enchantments: [{
-							id: "minecraft:unbreaking"
-							lvl: 10s
-						}]
-						HideFlags: 1
-						Unbreakable: 1
-						display: {
-							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
-						}
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "5 Gold"
-			tasks: [
-				{
-					id: "1E25EB2883C9A960"
-					item: {
-						Count: 1b
-						id: "projectred-core:screwdriver"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 5L
-					icon: { Count: 5b, id: "thermal:gold_coin" }
-					id: "74585BB7E80CF010"
-					item: "thermal:gold_coin"
-					type: "item"
-				}
-			]
-			title: "Never Screwed"
-			x: -7.0d
-			y: -6.5d
-		}
-		{
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms&r."]
-			icon: {
-				Count: 1b
-				id: "kubejs:chromatic_resonator"
+				id: "kubejs:resonator"
 				tag: {
 					Damage: 0
 					Enchantments: [{
@@ -199,29 +76,26 @@
 				id: "0F4C7BB4C0ECB4CC"
 				item: {
 					Count: 1b
-					id: "kubejs:chromatic_resonator"
+					id: "kubejs:resonator"
 					tag: {
 						Damage: 0
-						Enchantments: [{
-							id: "minecraft:unbreaking"
-							lvl: 10s
-						}]
-						HideFlags: 1
-						Unbreakable: 1
-						display: {
-							Name: "{\"text\":\"Enchanted Resonator\",\"color\":\"gold\",\"italic\":false}"
-						}
+						Enchantments: [{ }]
+						Modifier: "forbidden_arcanus:eternal"
+						Repair: 1b
+						Unbreakable: 1b
 					}
 				}
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "7 Gold"
 			tasks: [
 				{
+					consume_items: true
 					id: "36CBD54BCB068EB1"
 					item: {
 						Count: 1b
-						id: "kubejs:chromatic_resonator"
+						id: "kubejs:resonator"
 						tag: {
 							Damage: 0
 						}
@@ -229,6 +103,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 7L
 					icon: { Count: 7b, id: "thermal:gold_coin" }
 					id: "5B31A98B9EFCCFAB"
@@ -270,6 +145,7 @@
 					icon: { Count: 64b, id: "thermal:silver_coin" }
 					id: "26512E93CE404069"
 					item: "thermal:silver_coin"
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -277,6 +153,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "6FA6A9A201CA27BE"
 					tags: ["reset"]
+					team_reward: false
 					title: "Repeatable"
 					type: "custom"
 				}
@@ -284,6 +161,7 @@
 			shape: "circle"
 			subtitle: "Gold -> Silver"
 			tasks: [{
+				consume_items: true
 				id: "772821832EE93341"
 				item: "thermal:gold_coin"
 				type: "item"
@@ -302,6 +180,7 @@
 					auto: "enabled"
 					id: "66BE3DDEC92812C4"
 					item: "thermal:gold_coin"
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -309,6 +188,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "6E78A95786CA5B28"
 					tags: ["reset"]
+					team_reward: false
 					title: "Repeatable"
 					type: "custom"
 				}
@@ -316,6 +196,7 @@
 			shape: "circle"
 			subtitle: "Silver -> Gold"
 			tasks: [{
+				consume_items: true
 				count: 64L
 				icon: { Count: 64b, id: "thermal:silver_coin" }
 				id: "2387D852CA97AD1A"
@@ -335,35 +216,41 @@
 					count: 4
 					id: "05B553B614119E4A"
 					item: "farmersdelight:steak_and_potatoes"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "607D48921297C475"
 					item: "create:builders_tea"
+					team_reward: false
 					type: "item"
 				}
 				{
-					count: 2
+					count: 4
 					id: "37DB33F821AD0AFE"
-					item: "minecraft:bread"
+					item: "pneumaticcraft:sourdough_bread"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "51A8014ACD2153F6"
 					item: "farmersdelight:mixed_salad"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
-					id: "5CD27D9058DAFAAB"
-					item: "farmersdelight:sweet_berry_cookie"
+					id: "4DA5061809718B80"
+					item: "farmersdelight:glow_berry_custard"
+					team_reward: false
 					type: "item"
 				}
 			]
 			subtitle: "10 Silver"
 			tasks: [{
+				consume_items: true
 				count: 10L
 				icon: { Count: 10b, id: "thermal:silver_coin" }
 				id: "6235F365D702DF2B"
@@ -383,23 +270,27 @@
 					count: 64
 					id: "65597F84B69546EF"
 					item: "minecraft:dirt"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 64
 					id: "5ED9F3AFC25DD60E"
 					item: "minecraft:dirt"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 64
 					id: "1A8CE751232C7235"
 					item: "minecraft:dirt"
+					team_reward: false
 					type: "item"
 				}
 			]
 			subtitle: "15 Silver"
 			tasks: [{
+				consume_items: true
 				count: 15L
 				icon: { Count: 15b, id: "thermal:silver_coin" }
 				id: "188BEC2BA245DB13"
@@ -532,10 +423,12 @@
 						}
 					}
 				}
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "50 Silver"
 			tasks: [{
+				consume_items: true
 				count: 50L
 				icon: { Count: 50b, id: "thermal:silver_coin" }
 				id: "3EA558277444F605"
@@ -552,23 +445,30 @@
 			id: "4FD46F841CCD59F8"
 			rewards: [
 				{
+					count: 2
 					id: "7B8F11CCEDEBEBD6"
 					item: "minecraft:shulker_shell"
+					team_reward: false
 					type: "item"
 				}
 				{
+					count: 2
 					id: "364AA663BD7C519F"
 					item: "minecraft:chest"
+					team_reward: false
 					type: "item"
 				}
 				{
+					count: 2
 					id: "440DF47BEF341626"
 					item: "minecraft:shulker_shell"
+					team_reward: false
 					type: "item"
 				}
 			]
 			subtitle: "55 Silver"
 			tasks: [{
+				consume_items: true
 				count: 55L
 				icon: { Count: 55b, id: "thermal:silver_coin" }
 				id: "709557A517B0143F"
@@ -605,10 +505,12 @@
 						}
 					}
 				}
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "25 Silver"
 			tasks: [{
+				consume_items: true
 				count: 25L
 				icon: { Count: 25b, id: "thermal:silver_coin" }
 				id: "32ACF7B1C0BD9D97"
@@ -625,10 +527,12 @@
 			rewards: [{
 				id: "6BCBFB22A82A5698"
 				item: "minecraft:totem_of_undying"
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "60 Silver"
 			tasks: [{
+				consume_items: true
 				count: 60L
 				icon: { Count: 60b, id: "thermal:silver_coin" }
 				id: "165B9A886A26BCC8"
@@ -647,16 +551,19 @@
 				{
 					id: "0257303302DADA1B"
 					item: "create:peculiar_bell"
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "30D4605E06FF45B6"
 					item: "minecraft:soul_campfire"
+					team_reward: false
 					type: "item"
 				}
 			]
 			subtitle: "45 Silver"
 			tasks: [{
+				consume_items: true
 				count: 45L
 				icon: { Count: 35b, id: "thermal:silver_coin" }
 				id: "4FB1B4787D648565"
@@ -702,11 +609,13 @@
 						}
 					}
 				}
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "7 Gold"
 			tasks: [
 				{
+					consume_items: true
 					id: "561DF7A17B804B1F"
 					item: {
 						Count: 1b
@@ -718,6 +627,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 7L
 					icon: { Count: 11b, id: "thermal:gold_coin" }
 					id: "04FA9389D991556D"
@@ -737,10 +647,12 @@
 				count: 4
 				id: "51ABA96DE3477D3B"
 				item: "kubejs:circuit_scrap"
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "6 Gold"
 			tasks: [{
+				consume_items: true
 				count: 6L
 				icon: { Count: 12b, id: "thermal:gold_coin" }
 				id: "3D328A6D69E64EDA"
@@ -759,7 +671,8 @@
 				{
 					auto: "enabled"
 					id: "500098FD4762A38F"
-					item: "exoticbirds:duck_spawn_egg"
+					item: "naturalist:duck_egg"
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -767,6 +680,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "79C8307ED8450347"
 					tags: ["reset"]
+					team_reward: false
 					title: "Repeatable"
 					type: "custom"
 				}
@@ -774,6 +688,7 @@
 			subtitle: "5 Silver"
 			tasks: [
 				{
+					consume_items: true
 					count: 5L
 					icon: { Count: 5b, id: "thermal:silver_coin" }
 					id: "491FF95EFE8DCB67"
@@ -781,8 +696,9 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "5F58BA2473FD6DDA"
-					item: "rubber_duck:rubber_duck_item"
+					item: "davebuildingmod:rubber_duck"
 					type: "item"
 				}
 			]
@@ -799,29 +715,40 @@
 					count: 8
 					id: "1C6218230C6D71A0"
 					item: "thermal:explosive_grenade"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "2D1A3F35DF8894FF"
 					item: "thermal:glowstone_grenade"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "093F58649A1E0DD6"
 					item: "thermal:ice_grenade"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "71BB0C93A4A7BC04"
 					item: "thermal:earth_grenade"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7CDD9686D275D3EF"
+					item: "reliquary:holy_hand_grenade"
+					team_reward: false
 					type: "item"
 				}
 			]
 			subtitle: "32 Silver"
 			tasks: [{
+				consume_items: true
 				count: 32L
 				icon: { Count: 32b, id: "thermal:silver_coin" }
 				id: "2BF8F9E5070C6122"
@@ -840,35 +767,41 @@
 					count: 8
 					id: "26A16DC998FEF595"
 					item: "farmersdelight:organic_compost"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 16
 					id: "68B1199F9AE6B8FE"
 					item: "supplementaries:planter"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "5DEDD7BBA8A712AA"
 					item: "minecraft:flower_pot"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "01196A417139EA21"
 					item: "supplementaries:flower_box"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "648B819C1B484A3F"
 					item: "minecraft:grass_block"
+					team_reward: false
 					type: "item"
 				}
 			]
 			subtitle: "24 Silver"
 			tasks: [{
+				consume_items: true
 				count: 24L
 				icon: { Count: 24b, id: "thermal:silver_coin" }
 				id: "05BB5DFA82280C0C"
@@ -887,24 +820,28 @@
 					count: 16
 					id: "6375AD9CBA9276E0"
 					item: "minecraft:white_wool"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "72F57D408AD5C84A"
 					item: "minecraft:white_dye"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "3477DB4BB2003475"
 					item: "minecraft:yellow_dye"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "14FE738419E8578F"
 					item: "minecraft:black_dye"
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -917,23 +854,27 @@
 					count: 12
 					id: "4A3F1D820F9F1D26"
 					item: "minecraft:green_dye"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "4FFD3D4728DFBB16"
 					item: "minecraft:red_dye"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "0F0A7101131FFC08"
 					item: "minecraft:brown_dye"
+					team_reward: false
 					type: "item"
 				}
 			]
 			subtitle: "24 Silver"
 			tasks: [{
+				consume_items: true
 				count: 24L
 				icon: { Count: 24b, id: "thermal:silver_coin" }
 				id: "6404722100F1DEF7"
@@ -951,36 +892,55 @@
 				{
 					count: 8
 					id: "738387AED344C59B"
-					item: "moreminecarts:powered_locking_rail"
+					item: "minecraft:detector_rail"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "4D33B3525FF09C68"
 					item: "minecraft:powered_rail"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "0A214A7B25C331F6"
 					item: "minecraft:lever"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 64
 					id: "3F0919FBED64778C"
 					item: "minecraft:rail"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 64
 					id: "6D3CCD1BF0BFD7D6"
 					item: "minecraft:rail"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 8
+					id: "31E53B4C5617DA75"
+					item: "minecraft:activator_rail"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "2B74092F887117D3"
+					item: "minecraft:minecart"
+					team_reward: false
 					type: "item"
 				}
 			]
 			subtitle: "24 Silver"
 			tasks: [{
+				consume_items: true
 				count: 24L
 				icon: { Count: 24b, id: "thermal:silver_coin" }
 				id: "06C835DB602D6F9F"
@@ -999,18 +959,21 @@
 					count: 4
 					id: "4961B49D79004571"
 					item: "minecraft:name_tag"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "054AEE030B3B81F6"
 					item: "minecraft:bone"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "29F276B6CDE4D6B5"
 					item: "minecraft:tropical_fish"
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -1022,11 +985,13 @@
 					count: 2
 					id: "762BB57B2AFDB21F"
 					item: "minecraft:lead"
+					team_reward: false
 					type: "item"
 				}
 			]
 			subtitle: "24 Silver"
 			tasks: [{
+				consume_items: true
 				count: 24L
 				icon: { Count: 24b, id: "thermal:silver_coin" }
 				id: "3AA788B63B6A73EF"
@@ -1046,41 +1011,48 @@
 					count: 32
 					id: "1BA12452E9A090EC"
 					item: "biomesoplenty:flowering_oak_leaves"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 64
 					id: "17FCE9D6C12A7822"
 					item: "minecraft:oak_leaves"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 64
 					id: "51C2FE4F4F5057CC"
 					item: "minecraft:oak_leaves"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 64
 					id: "5B801D097C1C538F"
 					item: "minecraft:spruce_leaves"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 64
 					id: "5A23AFB90F20641B"
 					item: "minecraft:spruce_leaves"
+					team_reward: false
 					type: "item"
 				}
 				{
 					count: 16
 					id: "1EC1E1486084AE66"
 					item: "minecraft:spruce_fence"
+					team_reward: false
 					type: "item"
 				}
 			]
 			subtitle: "24 Silver"
 			tasks: [{
+				consume_items: true
 				count: 24L
 				icon: { Count: 24b, id: "thermal:silver_coin" }
 				id: "06028A67C6DCCD00"
@@ -1099,6 +1071,7 @@
 					auto: "enabled"
 					id: "773C4F5E97BD82B8"
 					item: "minecraft:bee_nest"
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -1106,6 +1079,7 @@
 					count: 2
 					id: "0C8C369DEF6B0FD4"
 					item: "minecraft:bee_spawn_egg"
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -1113,6 +1087,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "6D5E00890DAB64DB"
 					tags: ["reset"]
+					team_reward: false
 					title: "Repeatable"
 					type: "custom"
 				}
@@ -1120,6 +1095,7 @@
 			subtitle: "48 Silver"
 			tasks: [
 				{
+					consume_items: true
 					count: 48L
 					icon: { Count: 48b, id: "thermal:silver_coin" }
 					id: "6837BEE1075CC785"
@@ -1127,6 +1103,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 10L
 					id: "3CCE09D1715B54C7"
 					item: {
@@ -1143,6 +1120,161 @@
 			title: "No, not the bees!"
 			x: -1.0d
 			y: -2.0d
+		}
+		{
+			description: ["If you manage to accumulate enough coins, purchasing an eternal saw is a viable option. However, keep in mind that these saws are not inexpensive, and acquiring one through purchase may require a significant investment of your resources. As an alternative, you have the opportunity to craft an eternal saw yourself. This DIY approach can be a more cost-effective solution, allowing you to save your coins for other purposes. Crafting your own eternal saw not only provides a sense of accomplishment but also gives you a valuable tool that can greatly aid in your ongoing projects and endeavors."]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "kubejs:diamond_saw"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+					Modifier: "forbidden_arcanus:eternal"
+					Repair: 1b
+					Unbreakable: 1b
+				}
+			}
+			id: "7C6402B7657DF82A"
+			optional: true
+			rewards: [{
+				id: "0FBC0315C8CEC9D4"
+				item: {
+					Count: 1b
+					id: "kubejs:diamond_saw"
+					tag: {
+						Damage: 0
+						Enchantments: [{ }]
+						Modifier: "forbidden_arcanus:eternal"
+						Repair: 1b
+						Unbreakable: 1b
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "3C635D4EF56CA567"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3DFCE3E4F678A2A9"
+					item: {
+						Count: 1b
+						id: "kubejs:diamond_saw"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Eternal Diamond Saw"
+			x: -8.5d
+			y: -6.5d
+		}
+		{
+			description: ["If you manage to accumulate enough coins, purchasing an eternal screwdriver is a viable option. However, keep in mind that these screwdrivers are not inexpensive, and acquiring one through purchase may require a significant investment of your resources. As an alternative, you have the opportunity to craft an eternal screwdriver yourself. This DIY approach can be a more cost-effective solution, allowing you to save your coins for other purposes. Crafting your own eternal screwdriver not only provides a sense of accomplishment but also gives you a valuable tool that can greatly aid in your ongoing projects and endeavors."]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "kubejs:screwdriver"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+					Modifier: "forbidden_arcanus:eternal"
+					Repair: 1b
+					Unbreakable: 1b
+				}
+			}
+			id: "48E37A0FA53B76FD"
+			optional: true
+			rewards: [{
+				id: "235FB8FCE909DFCC"
+				item: {
+					Count: 1b
+					id: "kubejs:screwdriver"
+					tag: {
+						Damage: 0
+						Enchantments: [{ }]
+						Modifier: "forbidden_arcanus:eternal"
+						Repair: 1b
+						Unbreakable: 1b
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "5272C8C538A21D32"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "662805A07AD8ABC0"
+					item: {
+						Count: 1b
+						id: "kubejs:screwdriver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Eternal Screwdriver"
+			x: -7.0d
+			y: -6.5d
+		}
+		{
+			description: ["Spawn a cow at your current location, we suggest standing inside an animal pen."]
+			icon: "minecraft:cow_spawn_egg"
+			id: "12BBE5303D584F38"
+			rewards: [
+				{
+					auto: "disabled"
+					command: "/summon minecraft:cow ~ ~1 ~"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					icon: "minecraft:cow_spawn_egg"
+					id: "6250F4F54E47A9BA"
+					team_reward: false
+					title: "Summon a Cow"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "1DA43033C30EEF1D"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "32 Silver"
+			tasks: [{
+				consume_items: true
+				count: 32L
+				icon: { Count: 32b, id: "thermal:silver_coin" }
+				id: "6B339257A42EB6C3"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Mooooo"
+			x: -9.0d
+			y: 3.5d
 		}
 	]
 	title: "&a Marketplace"

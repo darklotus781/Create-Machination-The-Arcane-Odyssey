@@ -15,16 +15,28 @@
 				"128037F37E28EC54"
 			]
 			id: "52996F5F4EC12FCE"
+			rewards: [{
+				id: "10E079482DCFDE2D"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				count: 8L
-				id: "459B55EDF10001F7"
-				item: "kubejs:brass_machine"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -0.5d
+			tasks: [
+				{
+					count: 8L
+					id: "459B55EDF10001F7"
+					item: "kubejs:brass_machine"
+					type: "item"
+				}
+				{
+					id: "29F5D0F4112BB554"
+					title: "Automated Brass Machines"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -103,8 +115,8 @@
 				item: "minecraft:raw_copper"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -8.0d
+			x: 4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
@@ -123,8 +135,8 @@
 				item: "alltheores:raw_zinc"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -6.0d
+			x: 4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
@@ -185,6 +197,7 @@
 				}
 				type: "item"
 			}]
+			title: "Logs"
 			x: 7.0d
 			y: -2.5d
 		}
@@ -199,12 +212,24 @@
 				"These Precision Mechanisms, once assembled, play a critical role in upcoming production stages. Their precise and intricate nature makes them essential for more advanced crafting and machine operations. Given their importance and the complexity of their production, automating the creation of Precision Mechanisms is vital. Establishing an automated process ensures a consistent and efficient supply of these mechanisms, which is key to maintaining smooth and effective production lines in more advanced crafting phases."
 			]
 			id: "128037F37E28EC54"
-			tasks: [{
-				count: 64L
-				id: "529BE02E4139CD9C"
-				item: "create:precision_mechanism"
-				type: "item"
+			rewards: [{
+				id: "5370E7BD9D238D14"
+				type: "xp_levels"
+				xp_levels: 25
 			}]
+			tasks: [
+				{
+					count: 8L
+					id: "529BE02E4139CD9C"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "64B38B300C2FD3F1"
+					title: "Automated Precision Mechanisms"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: -2.5d
 		}
@@ -379,64 +404,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["4485B031B3008217"]
-			description: ["If you manage to accumulate enough coins, purchasing an eternal screwdriver is a viable option. However, keep in mind that these screwdrivers are not inexpensive, and acquiring one through purchase may require a significant investment of your resources. As an alternative, you have the opportunity to craft an eternal screwdriver yourself. This DIY approach can be a more cost-effective solution, allowing you to save your coins for other purposes. Crafting your own eternal screwdriver not only provides a sense of accomplishment but also gives you a valuable tool that can greatly aid in your ongoing projects and endeavors."]
-			hide: true
-			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				id: "kubejs:screwdriver"
-				tag: {
-					Damage: 0
-					Enchantments: [{ }]
-					Modifier: "forbidden_arcanus:eternal"
-					Repair: 1b
-					Unbreakable: 1b
-				}
-			}
-			id: "2443513312849E85"
-			optional: true
-			rewards: [{
-				id: "2F1B256DD8D0911D"
-				item: {
-					Count: 1b
-					id: "kubejs:screwdriver"
-					tag: {
-						Damage: 0
-						Enchantments: [{ }]
-						Modifier: "forbidden_arcanus:eternal"
-						Repair: 1b
-						Unbreakable: 1b
-					}
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					consume_items: true
-					count: 64L
-					id: "08318B48333639D4"
-					item: "thermal:gold_coin"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "6005E058D7E4F4C9"
-					item: {
-						Count: 1b
-						id: "kubejs:screwdriver"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Eternal Screwdriver"
-			x: -2.0d
-			y: -1.0d
-		}
-		{
 			dependencies: ["0E9593ECF0C5D017"]
 			description: [
 				"Screwdrivers are essential to making Tier 2 / Chapter 2 Mechanisms."
@@ -461,26 +428,329 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["128037F37E28EC54"]
+			dependencies: [
+				"128037F37E28EC54"
+				"7054E2B6A75B9A17"
+			]
 			id: "73303C502C8841A6"
-			tasks: [{
-				id: "16B85B3691CB4D68"
-				item: "kubejs:sturdy_mechanism"
-				type: "item"
+			rewards: [{
+				id: "3973CA2FF2AF542E"
+				type: "xp_levels"
+				xp_levels: 15
 			}]
-			x: -1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "16B85B3691CB4D68"
+					item: "kubejs:sturdy_mechanism"
+					type: "item"
+				}
+				{
+					id: "3814FA0CCFAF92C5"
+					title: "Automated Sturdy Mechanisms"
+					type: "checkmark"
+				}
+			]
+			title: "Chapter 2C: Sturdy"
+			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["128037F37E28EC54"]
 			id: "62B9B5EA4D35DCDA"
+			rewards: [{
+				id: "05C31D82E9D9725E"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "16C9865CF4D1603B"
+					item: "kubejs:scorch_mechanism"
+					type: "item"
+				}
+				{
+					id: "04E7AE68F1200CF0"
+					title: "Automated Scorch Mechanisms"
+					type: "checkmark"
+				}
+			]
+			title: "Chapter 2B: Scorch"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"73303C502C8841A6"
+				"706751927D7ADD92"
+			]
+			id: "23636E8827906DE6"
+			rewards: [{
+				id: "2A0C3F02B7289A3E"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [
+				{
+					count: 8L
+					id: "467F335E8F752E17"
+					item: "kubejs:sturdy_machine"
+					type: "item"
+				}
+				{
+					id: "56FCAD52A6BAD37B"
+					title: "Automated Sturdy Machines"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"111ED029FB2E6AA3"
+				"1017607737417992"
+			]
+			id: "7054E2B6A75B9A17"
 			tasks: [{
-				id: "16C9865CF4D1603B"
-				item: "kubejs:scorch_mechanism"
+				id: "2FE00796A962C36F"
+				item: "create:sturdy_sheet"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6B4A0FEBC09F665E"]
+			description: [
+				"You can explode iron to make compressed iron."
+				"Compressed Iron can then be further processed with a mechanical press into sturdy sheets."
+				""
+				"This is considered optional, as it's harder to automate."
+			]
+			id: "111ED029FB2E6AA3"
+			optional: true
+			tasks: [{
+				count: 8L
+				id: "2376769BEA09A6DC"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F847BF8CFA67653"]
+			id: "1017607737417992"
+			tasks: [{
+				id: "55C53BADD62DF5C4"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0F114B1F5785939F"]
+			id: "4F847BF8CFA67653"
+			tasks: [{
+				id: "5F47926F62BD7E0F"
+				item: "create:powdered_obsidian"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["68E3345022E4448A"]
+			id: "6B4A0FEBC09F665E"
+			optional: true
+			tasks: [{
+				id: "36BA115DE8860168"
+				item: "minecraft:tnt"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1FB6946A522553C9"]
+			hide_dependency_lines: true
+			id: "68E3345022E4448A"
+			optional: true
+			tasks: [{
+				count: 8L
+				id: "57648BAE18B7A20A"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1FB6946A522553C9"]
+			hide_dependency_lines: true
+			id: "0F114B1F5785939F"
+			tasks: [
+				{
+					id: "73A1FD26BFD8615F"
+					item: "create:crushing_wheel"
+					type: "item"
+				}
+				{
+					id: "3B0476D0584FAA9A"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7054E2B6A75B9A17"
+				"4912CC6F4CDFB42E"
+			]
+			id: "706751927D7ADD92"
+			tasks: [{
+				count: 8L
+				id: "3F81E56B260C80A0"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: -3.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["1FB6946A522553C9"]
+			hide_dependency_lines: true
+			id: "2F5C6E2C7DBD0C3B"
+			tasks: [{
+				id: "41ABDAB9E312499D"
+				item: "alltheores:zinc_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2F5C6E2C7DBD0C3B"]
+			id: "55117F154509E551"
+			tasks: [{
+				id: "7E5B94BA13143322"
+				item: "alltheores:zinc_plate"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["55117F154509E551"]
+			id: "1C9A593AFDEB7336"
+			tasks: [{
+				count: 8L
+				id: "789B373E462F221C"
+				item: "kubejs:zinc_casing"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1C9A593AFDEB7336"
+				"62B9B5EA4D35DCDA"
+			]
+			id: "79B79902F2B2F447"
+			rewards: [{
+				id: "2BD782AC5E4143BA"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					count: 8L
+					id: "2B23941697B2ADCD"
+					item: "kubejs:zinc_machine"
+					type: "item"
+				}
+				{
+					id: "33137116A9F3C425"
+					title: "Automated Scorch Machines"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["128037F37E28EC54"]
+			id: "3E9F94D73EFFFCAD"
+			rewards: [{
+				id: "1874D8A4AFF32D4E"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "21783D1C9501E5B3"
+					item: "kubejs:power_mechanism"
+					type: "item"
+				}
+				{
+					id: "7C38C63A5378DD15"
+					title: "Automated Power Mechanisms"
+					type: "checkmark"
+				}
+			]
+			title: "Chapter 2A: Power"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"3E9F94D73EFFFCAD"
+				"34C06782F879342F"
+			]
+			id: "7805E948180C7614"
+			rewards: [{
+				id: "73AD0F01A715D9CB"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					count: 8L
+					id: "2B59D2F547075685"
+					item: "kubejs:power_machine"
+					type: "item"
+				}
+				{
+					id: "0377CB6CDE095021"
+					title: "Automated Power Machines"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["52996F5F4EC12FCE"]
+			id: "34C06782F879342F"
+			tasks: [{
+				count: 2L
+				id: "4CE4BC827B28CF2D"
+				item: "create:content_observer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
 		}
 	]
 	title: "2: Brass Beginnings"

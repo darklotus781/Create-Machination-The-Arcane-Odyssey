@@ -7,6 +7,72 @@
 	id: "63F5BD2F8A4DC433"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: [
+				"099F5D860FC50376"
+				"190C60DDF1F94DE5"
+			]
+			description: ["Chapter 4 involves creating Plastic"]
+			hide: true
+			id: "3BA66A93D82E2558"
+			tasks: [{
+				id: "50981C6E3F6A54D2"
+				title: "Chapter 2: Start"
+				type: "checkmark"
+			}]
+			title: "Chapter 4: Start"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			id: "404009AD0EB4B580"
+			rewards: [{
+				id: "171BF15E456009CC"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "24DE02CD9F20CA37"
+					item: "kubejs:plastic_mechanism"
+					type: "item"
+				}
+				{
+					id: "307030EA16C15EBA"
+					title: "Automated Plastic Mechanisms"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			id: "74F85CFABA84170A"
+			rewards: [{
+				id: "5F2F7AA9BC2E5E13"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "25A91826DC3013C4"
+					item: "kubejs:plastic_machine"
+					type: "item"
+				}
+				{
+					id: "6927A640B7DE7BF4"
+					title: "Automated Plastic Machines"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 3.5d
+		}
+	]
 	title: "4: Plastic Pandemonium"
 }

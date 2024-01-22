@@ -50,6 +50,7 @@ ServerEvents.tags('item', event => {
         event.get('forge:glazed_terracotta').add(`minecraft:${element}_glazed_terracotta`)
     });
 
+    //Trading Cards
     global.trades.forEach(element => {
         event.get('forge:trade_cards').add(`kubejs:trade_card_${element}`)
     });
@@ -57,6 +58,7 @@ ServerEvents.tags('item', event => {
     global.professions.forEach(element => {
         event.get('forge:profession_cards').add(`kubejs:profession_card_${element}`)
     });
+    event.add('thermal:crafting/dies', ['#forge:trade_cards', '#forge:profession_cards']);
 });
 
 

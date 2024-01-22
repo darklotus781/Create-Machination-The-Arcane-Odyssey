@@ -323,11 +323,13 @@ StartupEvents.registry('item', event => {
 			title: "${amount}x ${name}"
 			icon: "${id}"
 			disable_toast: true
+			can_repeat: true
 			x: ${x}d
 			y: ${y}d
 			shape: "hexagon"
 			subtitle: "${coin} ${silver ? "Silver" : "Gold"}"
 			tasks: [{
+				consume_items: true
 				type: "item"
 				item: "thermal:silver_coin"
 				icon: { id: "thermal:silver_coin", Count: ${entry_cost}b }
@@ -335,16 +337,18 @@ StartupEvents.registry('item', event => {
 			}]
 			rewards: [
 				{
-					type: "item"
-					auto: "enabled"
+					auto: "disabled"
 					item: "${card_id}"
+					team_reward: false
+					type: "item"
 				}
 				{
-					type: "custom"
-					title: "Repeatable"
+					auto: "no_toast"
 					icon: "thermal:machine_cycle_augment"
 					tags: ["reset"]
-					auto: "no_toast"
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
 				}
 			]
 		}`
@@ -437,13 +441,13 @@ StartupEvents.registry('item', event => {
 		next_group()
 		entry_cost = 10
 		simple("Daub", SP('daub', 16), 5, S, 0xBFBAAA, 0xCBC8B6)
-		simple("Clear Glass", CR('framed_glass', 16), 4, S, 0xA9C3CF, 0xE8E8E8)
+		simple("Framed Glass", CR('framed_glass', 16), 4, S, 0xA9C3CF, 0xE8E8E8)
 		// simple("Factory Block", "16x chisel:factory/dots", 2, S, 0x211C10, 0x604B43)
 		// simple("Laboratory Block", "16x chisel:laboratory/wallpanel", 4, S, 0x71706E, 0x9D9A98)
 		simple("Copper Shingles", CR('copper_shingles', 16), 3, S, 0xB5654B, 0xE4BB79)
 		simple("Algal Bricks", AP('algal_bricks', 32), 6, S, 0x292926, 0x3D4D48)
 		simple("Olivestone Bricks", AP('olivestone_bricks', 32), 8, S, 0x3A3C2E, 0x57553E)
-		simple("Architect's Limestone", AP('limestone', 32), 8, S, 0x756958, 0x7F7360)
+		simple("Wardstone", AP('wardstone', 32), 8, S, 0x756958, 0x7F7360)
 		simple("Sunmetal", AP('sunmetal_block', 32), 8, S, 0x603E38, 0xB48764)
 		simple("Plating Block", AP('plating_block', 32), 8, S, 0x222225, 0x39383C)
 		simple("Twisted Planks", AP('twisted_planks', 32), 8, S, 0x5E5259, 0x72616B)

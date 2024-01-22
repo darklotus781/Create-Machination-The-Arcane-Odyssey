@@ -86,6 +86,44 @@ ServerEvents.recipes(event => {
         result: {item: 'kubejs:redstone_alloy_cable', count: 4}
     });
 
+    // Radiant Steel to Radiant Coils
+    event.custom({
+        type: 'createaddition:rolling',
+        input: {item: 'kubejs:radiant_steel'},
+        result: {item: 'kubejs:radiant_coil', count: 4}
+    });
+
+    event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil'), [
+        'C'
+    ], {
+        C: Item.of('kubejs:radiant_sheet'),
+    }).id('kubejs:crafter/radiant_coil_from_sheet');
+
+    event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil', 2), [
+        'CS'
+    ], {
+        C: Item.of('kubejs:radiant_sheet'),
+        S: Item.of('create:shadow_steel')
+    }).id('kubejs:crafter/radiant_coil_from_sheet_and_shadow_steel_horizontal');
+
+    event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil', 2), [
+        'C',
+        'S'
+    ], {
+        S: Item.of('kubejs:radiant_sheet'),
+        C: Item.of('create:shadow_steel')
+    }).id('kubejs:crafter/radiant_coil_from_sheet_and_shadow_steel_vertical');
+
+    // Radiant Steel Alloy
+    t = Item.of('kubejs:radiant_steel');
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:radiant_steel'),
+    ], Item.of('create:shadow_steel'), [
+        event.recipes.create.deploying(t, [t, Item.of('create:refined_radiance')]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:chromatic_solution').withAmount(80)]),
+        event.recipes.create.pressing(t, [t])
+    ]).transitionalItem(t).loops(1).id('kubejs:radiant_steel');
+
     // Electron Tubes
     t = Item.of('kubejs:empty_tube');
     event.recipes.create.sequenced_assembly([

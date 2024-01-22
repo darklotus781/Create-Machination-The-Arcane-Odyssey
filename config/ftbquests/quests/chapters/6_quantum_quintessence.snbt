@@ -7,6 +7,55 @@
 	id: "467EFE69A1D98513"
 	order_index: 5
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Getting started in Chapter 2 makes a couple of assumptions."
+				"1) You have completed Chapter 1 :P"
+				""
+				"2) You have automated Kinetic Mechanisms"
+				""
+				"3) You have automated Menril Tree farming and Resin production"
+				""
+				"4) You have a steady supply of Redstone, Quartz and a Blaze Spawner or a fortress to fill Blaze Burners"
+				""
+				"5) A steady supply of Brass from Copper and Zinc."
+			]
+			hide: true
+			id: "79119FB127682E9A"
+			size: 1.0d
+			tasks: [{
+				id: "443B1C56C8756C2B"
+				title: "Chapter 2: Start"
+				type: "checkmark"
+			}]
+			title: "Chapter 6: Start"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			id: "56174EE225DA3F73"
+			rewards: [{
+				id: "6A55EA1AF943C22D"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "0EE62C13C0FB0548"
+					item: "kubejs:quantum_mechanism"
+					type: "item"
+				}
+				{
+					id: "4D9CCE5AC49F79E9"
+					title: "Automated Quantum Mechanisms"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -4.0d
+		}
+	]
 	title: "6: Quantum Quintessence"
 }

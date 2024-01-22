@@ -10,8 +10,8 @@ ItemEvents.tooltip(tooltip => {
         add_color_description(`kubejs:${global.bag_name[i]}_bag_${global.rarity[2]}`, 'Epic', global.rarity_color.epic);
     }
 
-    let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "6" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
-    let bonus_assembly = (id, stage) => tooltip.add(id, [`§7Bonus Assembly: §6Chapter ${stage}`])
+    let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "7" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
+    let bonus_assembly = (id, stage) => tooltip.add(id, [`§7Bonus Assembly: §6Chapter ${stage}`, '§8Consider automating this item'])
     let not_consumed = (id, stage) => tooltip.add(id, [`§7Not consumed in the`, `§7Assembly Process`])
 
     tooltip.addAdvanced('ars_nouveau:source_gem', (item, advanced, text) => {
@@ -78,18 +78,28 @@ ItemEvents.tooltip(tooltip => {
     });
 
     main_assembly('kubejs:kinetic_mechanism', "1")
-    main_assembly('kubejs:rotation_mechanism', "1")
+    main_assembly('kubejs:andesite_machine', "1")
     bonus_assembly('kubejs:sealed_mechanism', "1A")
-    bonus_assembly('kubejs:sturdy_mechanism', "1B")
-    bonus_assembly('kubejs:logistics_mechaism', "1C")
+    bonus_assembly('kubejs:sealed_machine', "1A")
+    bonus_assembly('kubejs:logistics_mechaism', "1B")
+    bonus_assembly('kubejs:rotation_mechanism', "1C")
     main_assembly('create:precision_mechanism', "2")
+    main_assembly('kubejs:brass_machine', "2")
     bonus_assembly('kubejs:power_mechanism', "2A")
+    bonus_assembly('kubejs:power_machine', "2A")
     bonus_assembly('kubejs:scorch_mechanism', "2B")
+    bonus_assembly('kubejs:scorch_machine', "2B")
+    bonus_assembly('kubejs:sturdy_mechanism', "2C")
+    bonus_assembly('kubejs:sturdy_machine', "2C")
     main_assembly('kubejs:radiant_mechanism', "3")
-    bonus_assembly('kubejs:plastic_mechanism', "3A")
-    main_assembly('kubejs:integrational_mechanism', "4")
-    main_assembly('kubejs:quantum_mechanism', "5")
-    main_assembly('kubejs:time_mechanism', "6")
+    main_assembly('kubejs:radiant_machine', "3")
+    main_assembly('kubejs:plastic_mechanism', "4")
+    main_assembly('kubejs:plastic_machine', "4")
+    main_assembly('kubejs:integrational_mechanism', "5")
+    main_assembly('kubejs:integrational_machine', "5")
+    main_assembly('kubejs:quantum_mechanism', "6")
+    main_assembly('kubejs:time_mechanism', "7")
+    main_assembly('kubejs:time_machine', "7")
 
 
 

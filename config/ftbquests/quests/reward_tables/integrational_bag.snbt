@@ -1,12 +1,12 @@
 {
-	icon: "kubejs:integrational_bag_common"
+	icon: "kubejs:dynamic_bag_common"
 	id: "7637662A869EBCE3"
 	loot_size: 1
 	order_index: 5
 	rewards: [
-		{ item: "kubejs:integrational_bag_common" }
-		{ item: "kubejs:integrational_bag_rare" }
-		{ item: "kubejs:integrational_bag_epic" }
+		{ item: "kubejs:dynamic_bag_common" }
+		{ item: "kubejs:dynamic_bag_rare" }
+		{ item: "kubejs:dynamic_bag_epic" }
 	]
 	title: "Integrational Reward"
 	use_title: true

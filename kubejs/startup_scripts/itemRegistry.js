@@ -104,6 +104,7 @@ StartupEvents.registry('item', event => {
     event.create('pink_compound').texture('kubejs:item/pink_compound').displayName('Pink Chroma Compound');
     event.create('dirty_dye_compound').texture('kubejs:item/dirty_compound').displayName('Dirty Chroma Compound');
     event.create('chroma_compound').texture('kubejs:item/chroma_compound').displayName('Pure Chroma Compound').rarity(RARITY_RARE);
+    event.create('radiant_steel').texture('kubejs:item/radiant_steel').displayName('Radiant Steel Alloy').glow(true).rarity(RARITY_RARE);
 
     // Tools
     event.create('stone_saw').texture('kubejs:item/stone_saw').displayName('Stone Saw').maxDamage(64);

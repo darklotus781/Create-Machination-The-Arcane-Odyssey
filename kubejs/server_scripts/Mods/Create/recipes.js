@@ -53,25 +53,6 @@ ServerEvents.recipes(event => {
     // Washing Sand
     event.recipes.create.splashing(Item.of('minecraft:clay_ball', 1).withChance(0.25), Ingredient.of("#forge:sand"));
 
-
-    // Andesite Blend - Disabled in favor of mixing
-    // event.shaped(Item.of('kubejs:andesite_blend', 2), [
-    //     'SA',
-    //     'AS'
-    // ], {
-    //     A: Item.of('minecraft:andesite'),
-    //     S: Item.of('minecraft:clay_ball')
-    // }).id('kubejs:andesite_blend_from_dust_and_clay_manual_only');
-
-    //Andesite Alloy
-    // event.shaped(Item.of('create:andesite_alloy', 2), [
-    //     'SA',
-    //     'AS'
-    // ], {
-    //     A: Item.of('kubejs:andesite_blend'),
-    //     S: Ingredient.of('#create:recipe_nuggets')
-    // }).id('kubejs:andesite_alloy_from_blend_and_nuggets_manual_only');
-
     event.remove({output: 'create:sail_frame'});
     event.remove({output: 'create:white_sail'});
     event.shapeless(Item.of('create:sail_frame'), [Item.of('create:white_sail')]).id('kubejs:sail_frame_from_sail_manual_only');
@@ -92,27 +73,6 @@ ServerEvents.recipes(event => {
     ], {
         S: Item.of('thermal:cured_rubber')
     }).id('create:crafting/kinetics/belt_connector');
-
-    event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil'), [
-        'C'
-    ], {
-        C: Item.of('kubejs:radiant_sheet'),
-    }).id('kubejs:crafter/radiant_coil_from_sheet');
-
-    event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil', 4), [
-        'CS'
-    ], {
-        C: Item.of('kubejs:radiant_sheet'),
-        S: Item.of('create:shadow_steel')
-    }).id('kubejs:crafter/radiant_coil_from_sheet_and_shadow_steel_horizontal');
-
-    event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil', 4), [
-        'C',
-        'S'
-    ], {
-        S: Item.of('kubejs:radiant_sheet'),
-        C: Item.of('create:shadow_steel')
-    }).id('kubejs:crafter/radiant_coil_from_sheet_and_shadow_steel_vertical');
 
     event.recipes.create.pressing([Fluid.of('thermal:latex').withAmount(10)],[Item.of('minecraft:dandelion', 3)]);
     event.recipes.create.pressing([Fluid.of('thermal:latex').withAmount(12)],[Ingredient.of('#forge:vines', 4)]);

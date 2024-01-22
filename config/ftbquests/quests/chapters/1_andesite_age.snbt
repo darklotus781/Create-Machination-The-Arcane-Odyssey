@@ -16,17 +16,29 @@
 			]
 			description: ["Congratulations on your achievement! You have successfully produced Andesite Machines and should now have them automated. Given their significant role throughout the pack, automating these machines is strongly advised to ensure efficiency and ease of use. This step is essential for maximizing their potential and enhancing your overall experience."]
 			id: "632B4B24A7B38530"
+			rewards: [{
+				id: "34E8AA7B84410358"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				consume_items: false
-				count: 8L
-				icon: "kubejs:andesite_machine"
-				id: "46F399B8AAF31ED6"
-				item: "kubejs:andesite_machine"
-				title: "Andesite Machines"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: false
+					count: 8L
+					icon: "kubejs:andesite_machine"
+					id: "46F399B8AAF31ED6"
+					item: "kubejs:andesite_machine"
+					title: "Andesite Machines"
+					type: "item"
+				}
+				{
+					id: "29DA2005156A7414"
+					title: "Automated Andesite Machines"
+					type: "checkmark"
+				}
+			]
 			x: 1.0d
 			y: 1.5d
 		}
@@ -45,8 +57,8 @@
 				item: "kubejs:wooden_mechanism"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.0d
+			x: -0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["67F9D140A432A965"]
@@ -60,7 +72,7 @@
 				"Moving forward, it's crucial to consult JEI for all recipe details. However, to kickstart your journey, you should begin by focusing on farming."
 			]
 			id: "0C28B609C72B93BD"
-			subtitle: "Setup a Tree Farm"
+			subtitle: "Setup some basic farms!"
 			tasks: [
 				{
 					count: 16L
@@ -115,12 +127,24 @@
 			]
 			description: ["Kinetic Mechanisms are the cornerstone of all future developments in your crafting journey. They form the foundational element for every single mechanism and machine you will be crafting from this point forward. Given their central importance, it is imperative to ensure that the production of Kinetic Mechanisms is automated. Automating this process will not only increase efficiency but also provide a steady and reliable supply of these essential components. This step is crucial for smooth progression and the successful creation of more advanced and intricate mechanisms and machines in your future endeavors."]
 			id: "35AD8A90A9541BE9"
-			tasks: [{
-				count: 64L
-				id: "32981ECF774C2B3B"
-				item: "kubejs:kinetic_mechanism"
-				type: "item"
+			rewards: [{
+				id: "30962FA258004349"
+				type: "xp_levels"
+				xp_levels: 15
 			}]
+			tasks: [
+				{
+					count: 8L
+					id: "32981ECF774C2B3B"
+					item: "kubejs:kinetic_mechanism"
+					type: "item"
+				}
+				{
+					id: "1D53B7D706A9AEDF"
+					title: "Automated Kinetic Mechanisms"
+					type: "checkmark"
+				}
+			]
 			x: 1.0d
 			y: -0.5d
 		}
@@ -140,68 +164,7 @@
 				type: "item"
 			}]
 			title: "Saw"
-			x: 3.0d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"67F9D140A432A965"
-				"50186B4B459E4244"
-			]
-			description: ["If you manage to accumulate enough coins, purchasing an eternal saw is a viable option. However, keep in mind that these saws are not inexpensive, and acquiring one through purchase may require a significant investment of your resources. As an alternative, you have the opportunity to craft an eternal saw yourself. This DIY approach can be a more cost-effective solution, allowing you to save your coins for other purposes. Crafting your own eternal saw not only provides a sense of accomplishment but also gives you a valuable tool that can greatly aid in your ongoing projects and endeavors."]
-			hide: true
-			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				id: "kubejs:diamond_saw"
-				tag: {
-					Damage: 0
-					Enchantments: [{ }]
-					Modifier: "forbidden_arcanus:eternal"
-					Repair: 1b
-					Unbreakable: 1b
-				}
-			}
-			id: "2A240FE64800EF43"
-			optional: true
-			rewards: [{
-				id: "041190154067E620"
-				item: {
-					Count: 1b
-					id: "kubejs:diamond_saw"
-					tag: {
-						Damage: 0
-						Enchantments: [{ }]
-						Modifier: "forbidden_arcanus:eternal"
-						Repair: 1b
-						Unbreakable: 1b
-					}
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					consume_items: true
-					count: 64L
-					id: "32DF3B026FC832F4"
-					item: "thermal:gold_coin"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "0CF0B9B1B56597F8"
-					item: {
-						Count: 1b
-						id: "kubejs:diamond_saw"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Eternal Diamond Saw"
-			x: 5.0d
+			x: 4.0d
 			y: -4.0d
 		}
 		{
@@ -218,7 +181,7 @@
 				type: "item"
 			}]
 			title: "Andesite Alloy"
-			x: -1.5d
+			x: -2.0d
 			y: -4.0d
 		}
 		{
@@ -251,7 +214,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: -2.0d
 			y: -6.0d
 		}
 		{
@@ -277,14 +240,26 @@
 			dependencies: ["5F793917B53CB963"]
 			description: ["Copper Machines are essential tools in the crafting process, specifically designed for creating &6Fluid Handling&r items such as Pumps and Smart Fluid Pipes. These machines play a pivotal role in managing and manipulating fluids with precision and efficiency. For detailed information on the specific recipes and techniques involved, including Smithing and Cutting, you can refer to JEI (Just Enough Items). JEI provides comprehensive guidance on the crafting processes, ensuring you have all the necessary information to effectively use Copper Machines in your crafting endeavors."]
 			id: "63F4C7AAEB9F4CD5"
-			shape: "gear"
-			tasks: [{
-				count: 8L
-				id: "1B09348DA843B9A7"
-				item: "kubejs:copper_machine"
-				type: "item"
+			rewards: [{
+				id: "553B22B04BD575D4"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
-			x: 8.5d
+			shape: "gear"
+			tasks: [
+				{
+					count: 8L
+					id: "1B09348DA843B9A7"
+					item: "kubejs:copper_machine"
+					type: "item"
+				}
+				{
+					id: "044D69E22EF9D6E1"
+					title: "Automated Copper Machines"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
 			y: 2.5d
 		}
 		{
@@ -295,34 +270,56 @@
 			]
 			id: "5C8A77FEDDB2DDB2"
 			optional: true
-			tasks: [{
-				count: 64L
-				id: "52A020E00A56C4EA"
-				item: "kubejs:sealed_mechanism"
-				type: "item"
+			rewards: [{
+				id: "6BEC711F1FD16498"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
-			x: 5.5d
+			tasks: [
+				{
+					count: 8L
+					id: "52A020E00A56C4EA"
+					item: "kubejs:sealed_mechanism"
+					type: "item"
+				}
+				{
+					id: "28E63787D3B21861"
+					title: "Automated Sealed Mechanisms"
+					type: "checkmark"
+				}
+			]
+			title: "Chapter 1A: Sealed"
+			x: 4.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["35AD8A90A9541BE9"]
 			description: ["Logistics Mechanisms are specialized components specifically designed for use in recipes that deal with item storage and transportation. These mechanisms are essential for creating systems that efficiently manage the movement and organization of items within your setup. They play a key role in automating and optimizing the processes related to inventory control, item sorting, and the overall logistics of your operation."]
 			id: "4B3451A425BBAA15"
-			optional: true
-			tasks: [{
-				count: 64L
-				id: "0D07BE53DCC4E7D4"
-				item: "kubejs:logistics_mechanism"
-				type: "item"
+			rewards: [{
+				id: "0DAB37267F45FDA4"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
-			x: 5.5d
+			tasks: [
+				{
+					count: 8L
+					id: "0D07BE53DCC4E7D4"
+					item: "kubejs:logistics_mechanism"
+					type: "item"
+				}
+				{
+					id: "5C76DF2BAF164444"
+					title: "Automated Logistics Mechanisms"
+					type: "checkmark"
+				}
+			]
+			title: "Chapter 1B: Logistics"
+			x: 4.0d
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"632B4B24A7B38530"
-				"35AD8A90A9541BE9"
-			]
+			dependencies: ["35AD8A90A9541BE9"]
 			description: ["If you intend to utilize your Andesite Machines in conjunction with a Smithing Table, it's essential to acquire Smithing Templates. These templates are a key component for successfully executing smithing processes, as they can be applied to all future Smithing Recipes. By having Smithing Templates at your disposal, you ensure that your Andesite Machines are fully equipped to handle the demands of smithing tasks. This preparation allows for a more streamlined and efficient crafting experience, enabling you to make the most of your Smithing Table and Andesite Machines in creating a wide range of items and tools."]
 			id: "2727B5EBF6810E4B"
 			optional: true
@@ -337,7 +334,7 @@
 				item: "kubejs:machine_smithing_template"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: 1.5d
 		}
 		{
@@ -350,7 +347,7 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.0d
 			y: -0.5d
 		}
 		{
@@ -364,14 +361,26 @@
 				"Given their importance and the use of common items in their construction, it makes strategic sense to start automating the production of Rotation Mechanisms in Chapter 1. By doing so, you can establish a seamless and efficient production line early on, ensuring you have a steady supply of these essential mechanisms ready for later chapters."
 			]
 			id: "4BB7D4E0B2452A76"
-			optional: true
-			tasks: [{
-				count: 64L
-				id: "7CF1C91CD8A20884"
-				item: "kubejs:rotation_mechanism"
-				type: "item"
+			rewards: [{
+				id: "705840F2CCFFE8E2"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
-			x: 5.5d
+			tasks: [
+				{
+					count: 8L
+					id: "7CF1C91CD8A20884"
+					item: "kubejs:rotation_mechanism"
+					type: "item"
+				}
+				{
+					id: "36850B4E90C2BFFD"
+					title: "Automated Rotation Mechanisms"
+					type: "checkmark"
+				}
+			]
+			title: "Chapter 1C: Rotation"
+			x: 4.0d
 			y: -0.5d
 		}
 		{
@@ -388,7 +397,7 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: 2.5d
 		}
 	]

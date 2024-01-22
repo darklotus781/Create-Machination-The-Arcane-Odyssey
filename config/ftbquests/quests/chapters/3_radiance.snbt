@@ -7,6 +7,443 @@
 	id: "1A4885ECDFA72AC9"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["19232B8B77F86AF8"]
+			description: [
+				"Chapter 3, go!"
+				"You're about to embark on a chaotic odyssey and craft some chromatic compounds."
+				"This means we're going to work with dyes and fluids."
+				"Use your previous knowledge and acquired resources and automations to breeze through this next challenge."
+			]
+			hide: true
+			id: "44F16708F4DD99A2"
+			tasks: [{
+				id: "057826E4FBE960FB"
+				title: "Chapter 3: Start"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"70522F77B42C927A"
+				"0F952731A2884135"
+			]
+			id: "59A9CA8596826FEC"
+			rewards: [{
+				id: "7517D0C9B4B2B057"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "13144EE15B8970A6"
+					item: "kubejs:radiant_machine"
+					type: "item"
+				}
+				{
+					id: "3FD6BC25A642002B"
+					title: "Automated Radiant Machines"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"378AA5835A43019D"
+				"0B29D4CC7DC8B623"
+				"64B38B300C2FD3F1"
+			]
+			id: "0F952731A2884135"
+			rewards: [{
+				id: "0AF95AF15D59BEFA"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "09B8CF0F12DB7170"
+					item: "kubejs:radiant_mechanism"
+					type: "item"
+				}
+				{
+					id: "190C60DDF1F94DE5"
+					title: "Automated Radiant Mechanisms"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44F16708F4DD99A2"]
+			hide_dependency_lines: true
+			id: "70522F77B42C927A"
+			rewards: [{
+				id: "0E0B1B9C8F43F6DA"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "247936D43ADAA1D2"
+					item: "thermal:machine_frame"
+					type: "item"
+				}
+				{
+					id: "5572147BBD7C5657"
+					title: "Automated Invar Machines"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["06444B80EC9B7EEB"]
+			id: "3B78B507C82AAE3C"
+			tasks: [{
+				id: "44491E33D8985F6F"
+				item: "create:shadow_steel"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["06444B80EC9B7EEB"]
+			id: "3BD719A05079405F"
+			tasks: [{
+				id: "39276B8B2C6E6225"
+				item: "create:refined_radiance"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["27A9939024874680"]
+			id: "212AB7A6355913DC"
+			optional: true
+			tasks: [{
+				id: "7B226F115A4EC1AF"
+				item: "kubejs:radiant_sheet"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"73DEBE6BC8865256"
+				"212AB7A6355913DC"
+			]
+			id: "378AA5835A43019D"
+			tasks: [{
+				id: "36B0FB1F875DA791"
+				item: "kubejs:radiant_coil"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["44F16708F4DD99A2"]
+			hide_dependency_lines: true
+			id: "0B29D4CC7DC8B623"
+			tasks: [{
+				id: "17CFC1758302B223"
+				item: {
+					Count: 1b
+					id: "kubejs:resonator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["728735F2EABEFC38"]
+			id: "06444B80EC9B7EEB"
+			tasks: [{
+				id: "70E9F5375714FFDA"
+				item: {
+					Count: 1b
+					id: "create:chromatic_compound"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"7B9985746E0818E4"
+				"5621C909F8FAAB2D"
+				"1AC3FE7848331769"
+			]
+			id: "728735F2EABEFC38"
+			tasks: [{
+				id: "53DFA2E96FD0F2C3"
+				item: "kubejs:dye_slurry_magenta_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"27C80F6C5BCB267A"
+				"6C1B3967BFFBF851"
+			]
+			id: "7B9985746E0818E4"
+			tasks: [{
+				id: "2062C105A649E2EB"
+				item: "kubejs:dye_slurry_red_bucket"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"033C1A9B1433490E"
+				"6C1B3967BFFBF851"
+			]
+			id: "5621C909F8FAAB2D"
+			tasks: [{
+				id: "01C1FFF3D39F0FFE"
+				item: "kubejs:dye_slurry_pink_bucket"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"494AD3187E668963"
+				"6C1B3967BFFBF851"
+			]
+			id: "1AC3FE7848331769"
+			tasks: [{
+				id: "668B3B109C3A847D"
+				item: "kubejs:dye_slurry_blue_bucket"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["711D8DAED1CCA6A7"]
+			id: "27C80F6C5BCB267A"
+			tasks: [{
+				id: "040838AF57004973"
+				item: "kubejs:red_compound"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0F17D249F9B1DB95"]
+			id: "033C1A9B1433490E"
+			tasks: [{
+				id: "69B88A791470FB0F"
+				item: "kubejs:pink_compound"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7A1493AD489AADAD"]
+			id: "494AD3187E668963"
+			tasks: [{
+				id: "47AE58B90F59B576"
+				item: "kubejs:blue_compound"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["44F16708F4DD99A2"]
+			hide_dependency_lines: true
+			id: "0F17D249F9B1DB95"
+			tasks: [{
+				id: "79EFD6AB647FD72E"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:flowers/pink"
+					}
+				}
+				type: "item"
+			}]
+			title: "Pink Flowers"
+			x: -12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["44F16708F4DD99A2"]
+			hide_dependency_lines: true
+			id: "711D8DAED1CCA6A7"
+			tasks: [{
+				id: "215A743214E7C1BB"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:flowers/red"
+					}
+				}
+				type: "item"
+			}]
+			title: "Red Flowers"
+			x: -12.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["44F16708F4DD99A2"]
+			hide_dependency_lines: true
+			id: "7A1493AD489AADAD"
+			tasks: [{
+				id: "1824C11B9A743891"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:flowers/blue"
+					}
+				}
+				type: "item"
+			}]
+			title: "Blue Flowers"
+			x: -12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3B78B507C82AAE3C"
+				"3BD719A05079405F"
+				"75FB6F5F2F121729"
+			]
+			id: "73DEBE6BC8865256"
+			tasks: [{
+				id: "5A3806859CA4CC23"
+				item: "kubejs:radiant_steel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["44F16708F4DD99A2"]
+			hide_dependency_lines: true
+			id: "2A0338F62F470F8F"
+			tasks: [{
+				id: "3BF36426CC89902B"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:flowers/green"
+					}
+				}
+				type: "item"
+			}]
+			title: "Green Flowers"
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2A0338F62F470F8F"]
+			id: "36F134E75D6B9B93"
+			tasks: [{
+				id: "0C68CC817EDD5255"
+				item: "kubejs:green_compound"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"36F134E75D6B9B93"
+				"6C1B3967BFFBF851"
+			]
+			id: "1F92B6B7204A3DDD"
+			tasks: [{
+				id: "4AA709E93CCBCE67"
+				item: "kubejs:dye_slurry_green_bucket"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7B9985746E0818E4"
+				"1AC3FE7848331769"
+				"1F92B6B7204A3DDD"
+			]
+			id: "75FB6F5F2F121729"
+			tasks: [{
+				id: "0166A980E8753524"
+				item: "kubejs:chromatic_solution_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3BD719A05079405F"]
+			id: "27A9939024874680"
+			optional: true
+			tasks: [{
+				id: "260CDAE86097FEBD"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["44F16708F4DD99A2"]
+			hide_dependency_lines: true
+			id: "6C1B3967BFFBF851"
+			optional: true
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "591E434C60C5C578"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "ae2:paint_balls"
+					}
+				}
+				type: "item"
+			}]
+			title: "Optional - Chromatic Slurry from Paintballs"
+			x: -10.5d
+			y: 0.0d
+		}
+	]
 	title: "3: Radiant Revolution"
 }
