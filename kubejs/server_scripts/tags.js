@@ -59,6 +59,20 @@ ServerEvents.tags('item', event => {
         event.get('forge:profession_cards').add(`kubejs:profession_card_${element}`)
     });
     event.add('thermal:crafting/dies', ['#forge:trade_cards', '#forge:profession_cards']);
+
+    event.get('forge:buckets/lava').add('minecraft:lava_bucket');
+    event.get('forge:buckets/biodiesel').add('pneumaticcraft:bio_diesel_bucket');
+    event.get('forge:buckets/crude_oil').add('pneumaticcraft:oil_bucket');
+    event.get('forge:buckets/diesel').add('pneumaticcraft:diesel_bucket');
+    event.get('forge:buckets/ethanol').add('pneumaticcraft:ethanol_bucket');
+    event.get('forge:buckets/gasoline').add('pneumaticcraft:gasoline_bucket');
+    event.get('forge:buckets/heavy_oil').add('thermal:heavy_oil_bucket');
+    event.get('forge:buckets/kerosene').add('pneumaticcraft:kerosene_bucket');
+    event.get('forge:buckets/light_oil').add('thermal:light_oil_bucket');
+    event.get('forge:buckets/lpg').add('pneumaticcraft:lpg_bucket');
+    event.get('forge:buckets/plantoil').add('thermal:tree_oil_bucket').add('pneumaticcraft:vegetable_oil_bucket');
+    event.get('forge:buckets/refined_fuel').add('thermal:refined_fuel_bucket');
+    event.get('forge:buckets/refined_oil').add('kubejs:refined_oil_bucket');
 });
 
 
@@ -80,13 +94,51 @@ ServerEvents.tags('block', event => {
 
 
 ServerEvents.tags('fluid', event => {
-    event.remove('minecraft:water', [
-        'createaddition:flowing_seed_oil', 'createaddition:seed_oil'
-    ]);
-
     event.add('create:bottomless/allow', 'pneumaticcraft:oil');
     event.add('create:bottomless/allow', 'minecraft:lava');
     event.add('create:bottomless/allow', 'minecraft:water');
+
+    event.removeAllTagsFrom([
+        'createdieselgenerators:plant_oil',
+        'createdieselgenerators:crude_oil',
+        'createdieselgenerators:biodiesel',
+        'createdieselgenerators:diesel',
+        'createdieselgenerators:gasoline',
+        'createdieselgenerators:ethanol'
+    ]);
+
+    // Remove Tags
+    event.removeAll('forge:biodiesel');
+    event.removeAll('forge:biofuel');
+    event.removeAll('forge:crude_oil');
+    event.removeAll('forge:diesel');
+    event.removeAll('forge:ethanol');
+    event.removeAll('forge:fuel');
+    event.removeAll('forge:gasoline');
+    event.removeAll('forge:heavy_oil');
+    event.removeAll('forge:kerosene');
+    event.removeAll('forge:light_oil');
+    event.removeAll('forge:lpg');
+    event.removeAll('forge:plantoil');
+    event.removeAll('forge:refined_fuel');
+    event.removeAll('forge:refined_oil');
+
+    // Reset Tags
+    event.get('forge:lava').add('minecraft:lava');
+    event.get('forge:biodiesel').add('pneumaticcraft:bio_diesel');
+    // event.get('forge:biofuel').add('');
+    event.get('forge:crude_oil').add('pneumaticcraft:oil');
+    event.get('forge:diesel').add('pneumaticcraft:diesel');
+    event.get('forge:ethanol').add('pneumaticcraft:ethanol');
+    // event.get('forge:fuel').add('');
+    event.get('forge:gasoline').add('pneumaticcraft:gasoline');
+    event.get('forge:heavy_oil').add('thermal:heavy_oil');
+    event.get('forge:kerosene').add('pneumaticcraft:kerosene');
+    event.get('forge:light_oil').add('thermal:light_oil');
+    event.get('forge:lpg').add('pneumaticcraft:lpg');
+    event.get('forge:plantoil').add('thermal:tree_oil').add('pneumaticcraft:vegetable_oil');
+    event.get('forge:refined_fuel').add('thermal:refined_fuel');
+    event.get('forge:refined_oil').add('kubejs:refined_oil');
 });
 
 ServerEvents.tags('entity_type', event => {

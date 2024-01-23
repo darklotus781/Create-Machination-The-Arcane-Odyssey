@@ -1,10 +1,11 @@
 ServerEvents.tags('item', event => {
     event.add('forge:mechanisms/tier/basic', ['kubejs:wooden_mechanism', 'kubejs:kinetic_mechanism']);
     event.add('forge:mechanisms/tier/1', 'kubejs:kinetic_mechanism');
-    event.add('forge:mechanisms/tier/2', 'create:precision_mechanism');
-    event.add('forge:mechanisms/tier/3', ['kubejs:integrational_mechanism', 'kubejs:radiant_mechanism', 'kubejs:sturdy_mechanism']);
-    event.add('forge:mechanisms/tier/4', 'kubejs:radiant_mechanism');
-    event.add('forge:mechanisms/tier/5', 'kubejs:plastic_mechanism');
+    event.add('forge:mechanisms/tier/2', ['create:precision_mechanism', 'kubejs:power_mechanism', 'kubejs:sturdy_mechanism', 'kubejs:scorch_mechanism']);
+    event.add('forge:mechanisms/tier/3', 'kubejs:radiant_mechanism');
+    event.add('forge:mechanisms/tier/4', ['kubejs:integrational_mechanism', 'kubejs:plastic_mechanism']);
+    event.add('forge:mechanisms/tier/5', 'kubejs:quantum_mechanism');
+    event.add('forge:mechanisms/tier/6', 'kubejs:time_mechanism');
 });
 
 ServerEvents.recipes(event => {
@@ -26,21 +27,17 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Item.of('create:andesite_alloy')]),
         event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:menril_resin').withAmount(15)]),
         event.recipes.create.pressing(t, [t])
-    ]).transitionalItem(t).loops(1).id('kubejs:kinetic_mechanism');
-
-    // event.custom(cuttingRecipe(Item.of('ars_nouveau:magebloom'), Ingredient.of('#forge:tools/knives'), [
-    //     Item.of('ars_nouveau:magebloom_fiber', 2),
-    // ])).id('kubejs:cutting/magebloom_fiber');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/kinetic_mechanism');
 
     // Rotation Mechanism - Tier 1
     t = Item.of('kubejs:incomplete_rotation_mechanism');
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:rotation_mechanism'),
     ], Ingredient.of('#minecraft:wooden_slabs'), [
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/saws')]),
         event.recipes.create.deploying(t, [t, Item.of('create:cogwheel')]),
-        event.recipes.create.deploying(t, [t, Item.of('create:large_cogwheel')]),
-        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/saws')])
-    ]).transitionalItem(t).loops(1).id('kubejs:rotation_mechanism')
+        event.recipes.create.deploying(t, [t, Item.of('create:large_cogwheel')])
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/rotation_mechanism')
 
     // Logistics Mechanism - Tier 1 / Chapter 1
     t = Item.of('kubejs:incomplete_logistics_mechanism');
@@ -48,9 +45,9 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:logistics_mechanism'),
     ], Item.of('kubejs:kinetic_mechanism'), [
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:nuggets/zinc')]),
-        event.recipes.create.deploying(t, [t, Item.of('create:cogwheel')]),
-        event.recipes.create.pressing(t, [t])
-    ]).transitionalItem(t).loops(1).id('kubejs:logistics_mechanism');
+        event.recipes.create.deploying(t, [t, Item.of('create:large_cogwheel')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/screwdrivers')])
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/logistics_mechanism');
 
     // Sealed Mechanism - Tier 2 level but not tier 2 (not used with other mechanisms...)
     event.shapeless('kubejs:sealed_mechanism', [Item.of('kubejs:enriched_rubber', 2), Ingredient.of('#forge:mechanisms/tier/basic')])
@@ -66,25 +63,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Item.of('create:electron_tube')]),
         event.recipes.create.deploying(t, [t, Item.of('create:electron_tube')]),
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/screwdrivers')])
-    ]).transitionalItem(t).loops(1).id('kubejs:precision_mechanism');
-
-    // event.recipes.create.sequenced_assembly([
-    //     Item.of('create:precision_mechanism'),
-    // ], Item.of('kubejs:kinetic_mechanism'), [
-    //     event.recipes.create.deploying(t, [t, Item.of('integrateddynamics:variable')]),
-    //     event.recipes.create.deploying(t, [t, Item.of('create:electron_tube')]),
-    //     event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/screwdrivers')])
-    // ]).transitionalItem(t).loops(1).id('kubejs:precision_mechanism_alt');
-
-    // Integrational Mechanism - Tier 3
-    t = Item.of('kubejs:incomplete_integrational_mechanism');
-    event.recipes.create.sequenced_assembly([
-        Item.of('kubejs:integrational_mechanism'),
-    ], Item.of('create:precision_mechanism'), [
-        event.recipes.create.deploying(t, [t, Item.of('ars_nouveau:source_gem')]),
-        event.recipes.create.deploying(t, [t, Item.of('kubejs:sourcegem_fragments')]),
-        event.recipes.create.pressing(t, [t])
-    ]).transitionalItem(t).loops(1).id('kubejs:integrational_mechanism');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/precision_mechanism');
 
     // Radiant Mechanism - Tier 3
     t = Item.of('kubejs:incomplete_radiant_mechanism');
@@ -94,9 +73,9 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Item.of('kubejs:radiant_coil')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:radiant_coil')]),
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/resonators')])
-    ]).transitionalItem(t).loops(1).id('kubejs:radiant_mechanism');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/radiant_mechanism');
 
-    // Sturdy Mechanism - Tier 3
+    // Sturdy Mechanism - Tier 2
     t = Item.of('kubejs:incomplete_sturdy_mechanism');
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:sturdy_mechanism'),
@@ -104,17 +83,20 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Item.of('kubejs:rotation_mechanism')]),
         event.recipes.create.deploying(t, [t, Item.of('create:sturdy_sheet')]),
         event.recipes.create.pressing(t, [t])
-    ]).transitionalItem(t).loops(1).id('kubejs:sturdy_mechanism');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/sturdy_mechanism');
 
-    // // Integrated Mechanism - Tier 3
-    // t = Item.of('kubejs:incomplete_integrated_mechanism');
-    // event.recipes.create.sequenced_assembly([
-    //     Item.of('kubejs:integrated_mechanism')
-    // ], Item.of('create:precision_mechanism'), [
-    //     event.recipes.create.deploying(t, [t, Item.of('create:electron_tube')]),
-    //     event.recipes.create.deploying(t, [t, Item.of('kubejs:redstone_alloy_cable')]),
-    //     event.recipes.create.pressing(t, t)
-    // ]).transitionalItem(t).loops(1);
+    // Power Mechanism - Tier 2
+    t = Item.of('kubejs:incomplete_power_mechanism');
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:power_mechanism'),
+    ], Item.of('create:precision_mechanism'), [
+        event.recipes.create.filling(t, [t, Fluid.of('create_enchantment_industry:ink').withAmount(30)]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:ceramic_capacitor')]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:resistor')]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:inductor')]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:soldermask').withAmount(30)]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/soldering_irons')]),
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/power_mechanism');
 
     // Scorch Mechanism - Tier 3
     t = Item.of('kubejs:incomplete_scorch_mechanism');
@@ -123,9 +105,19 @@ ServerEvents.recipes(event => {
     ], Item.of('create:precision_mechanism'), [
         event.recipes.create.deploying(t, [t, Item.of('minecraft:nether_brick')]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:magma_cream')]),
-        event.recipes.create.filling(t, [t, Fluid.lava(1000)]),
+        event.recipes.create.filling(t, [t, Fluid.lava(250)]),
         event.recipes.create.pressing(t, t)
-    ]).transitionalItem(t).loops(1).id('kubejs:scorch_mechanism');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/scorch_mechanism');
+
+    // Integrational Mechanism - Tier 4
+    t = Item.of('kubejs:incomplete_integrational_mechanism');
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:integrational_mechanism'),
+    ], Item.of('kubejs:radiant_mechanism'), [
+        event.recipes.create.deploying(t, [t, Item.of('ars_nouveau:source_gem')]),
+        event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:menril_resin').withAmount(100)]),
+        event.recipes.create.pressing(t, [t])
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/integrational_mechanism');
 
     // Plastic Mechanism - Tier 4
     t = Item.of('kubejs:incomplete_plastic_mechanism');
@@ -135,21 +127,20 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Item.of('pneumaticcraft:plastic')]),
         event.recipes.create.filling(t, [t, Fluid.of('pneumaticcraft:plastic').withAmount(250)]),
         event.recipes.create.pressing(t, [t])
-    ]).transitionalItem(t).loops(1).id('kubejs:plastic_mechanism');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/plastic_mechanism');
 
-    // // Power Mechanism - Tier XX
-    // t = Item.of('kubejs:incomplete_power_mechanism');
-    // event.recipes.create.sequenced_assembly([
-    //     Item.of('kubejs:power_mechanism'),
-    // ], Item.of('kubejs:explosive_mechanism'), [
-    //     event.recipes.create.filling(t, [t, Fluid.of('kubejs:plastic').withAmount(30)]),
-    //     event.recipes.create.filling(t, [t, Fluid.of('create_enchantment_industry:ink').withAmount(30)]),
-    //     event.recipes.create.deploying(t, [t, Item.of('kubejs:electrolytic_capacitor')]),
-    //     event.recipes.create.deploying(t, [t, Item.of('kubejs:ceramic_capacitor')]),
-    //     event.recipes.create.deploying(t, [t, Item.of('kubejs:resistor')]),
-    //     event.recipes.create.deploying(t, [t, Item.of('kubejs:inductor')]),
-    //     event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/soldering_irons')]),
-    // ]).transitionalItem(t).loops(1).id('kubejs:power_mechanism');
+    // Quantum Mechanism in Different file
+
+    // Time Mechanism - Tier 6
+    t = Item.of('kubejs:incomplete_time_mechanism');
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:time_mechanism'),
+    ], Item.of('kubejs:radiant_mechanism'), [
+        event.recipes.create.deploying(t, [t, Item.of('minecraft:clock')]),
+        event.recipes.create.deploying(t, [t, Item.of('supplementaries:hourglass')]),
+        event.recipes.create.deploying(t, [t, Item.of('tiab:time_in_a_bottle').weakNBT()]),
+        event.recipes.create.pressing(t, [t])
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/time_mechanism');
 
     // Time Mechanism
     // SuperCritical Mechanism

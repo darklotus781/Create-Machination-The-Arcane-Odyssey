@@ -13,7 +13,13 @@
 				"099F5D860FC50376"
 				"190C60DDF1F94DE5"
 			]
-			description: ["Chapter 4 involves creating Plastic"]
+			description: [
+				"Chapter 4 involves creating Plastic from Oil."
+				"It's a process but not all that complicated."
+				"There's two methods of processing Crude Oil into other fluids, check JEI and decide for yourself which path to choose."
+				""
+				"You'll need to bring in some Radiant Mechanisms and Sturdy Sheets to complete the automations here, that's not all but that's what's been previously automated."
+			]
 			hide: true
 			id: "3BA66A93D82E2558"
 			tasks: [{
@@ -22,10 +28,11 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 4: Start"
-			x: -1.0d
+			x: 4.5d
 			y: -2.0d
 		}
 		{
+			dependencies: ["31E5ACE6B6151997"]
 			id: "404009AD0EB4B580"
 			rewards: [{
 				id: "171BF15E456009CC"
@@ -45,10 +52,14 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
-			y: 1.5d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
+			dependencies: [
+				"404009AD0EB4B580"
+				"704F9AF9DFA8CEDE"
+			]
 			id: "74F85CFABA84170A"
 			rewards: [{
 				id: "5F2F7AA9BC2E5E13"
@@ -70,10 +81,15 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
-			y: 3.5d
+			x: 5.25d
+			y: 4.5d
 		}
 		{
+			dependencies: [
+				"7CDAFC5D8720A591"
+				"602A7B5EA85BF584"
+			]
+			description: ["Mix some Polyethylene Slurry and LPG to produce plastic."]
 			id: "04346BEE4D964F35"
 			tasks: [{
 				amount: 1000L
@@ -81,62 +97,298 @@
 				id: "720B4CAC04B8CCBB"
 				type: "fluid"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: 4.5d
+			y: 2.0d
 		}
 		{
-			description: ["Start by building an air compressor, which converts fuels like coal, lava, or even plant oils into compressed air. This compressed air is stored in pressure chambers or tanks and is distributed through a network of pipes and tubes. The air pressure is used to power a wide array of pneumatic devices, such as pneumatic drills, elevators, and even intricate logic circuits. The mod emphasizes creativity and engineering skills, challenging players to design and manage their pneumatic systems efficiently to maintain optimal pressure levels and avoid explosions caused by excessive pressure."]
-			id: "4C20B8ED7855FD59"
-			rewards: [
+			dependencies: ["0A29C7DF806CF4FD"]
+			id: "4D3711CC0A0FB9D3"
+			rewards: [{
+				id: "39840921F1AAC235"
+				item: "pneumaticcraft:oil_bucket"
+				type: "item"
+			}]
+			tasks: [
 				{
-					id: "544E9E666C5731BC"
-					item: "pneumaticcraft:security_upgrade"
+					id: "14C65FE226D146A7"
+					item: "pneumaticcraft:refinery"
 					type: "item"
 				}
 				{
-					id: "51BDDA60575291A4"
-					type: "xp_levels"
-					xp_levels: 5
+					id: "44BA59CDBD73AE4A"
+					item: "pneumaticcraft:refinery_output"
+					type: "item"
+				}
+			]
+			title: "Option B: Refining"
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A29C7DF806CF4FD"]
+			id: "32B4756EB9ACC4FC"
+			rewards: [{
+				id: "7A18559B3E7814D0"
+				item: "pneumaticcraft:oil_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2ED82A9C778E963E"
+					item: "createdieselgenerators:distillation_controller"
+					type: "item"
+				}
+				{
+					id: "54A02D901A4F3C6B"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					id: "1C7824D758CF9C3A"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "Option A: Distillation"
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3BA66A93D82E2558"]
+			description: [
+				"Liquid Gold!"
+				"You'll find pools of Crude Oil around the world and if you're lucky, you'll find an Oil Derrick with an infinite supply of oil beneath it."
+				"You can pump with a Hose Pulley into a Train to move the Oil to your base or process it onsite into the resources you need."
+			]
+			hide_dependency_lines: true
+			id: "0A29C7DF806CF4FD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7706A2A3B1318BE9"
+				table_id: 7440942548698719000L
+				type: "random"
+			}]
+			tasks: [{
+				amount: 1000L
+				fluid: "pneumaticcraft:oil"
+				id: "6700335F261FCFA7"
+				type: "fluid"
+			}]
+			x: 9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2842A330B55DC6CA"
+				"04346BEE4D964F35"
+			]
+			description: ["Spout some Molten Plastic on Sturdy Sheets to produce Plastic Sheets."]
+			id: "31E5ACE6B6151997"
+			tasks: [{
+				id: "7E6E0A14EC8A33E0"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3BA66A93D82E2558"]
+			hide_dependency_lines: true
+			id: "2842A330B55DC6CA"
+			tasks: [{
+				id: "3C3D195F15D12001"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6D6710FA7DBF37DA"]
+			id: "7CDAFC5D8720A591"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:ethylene"
+				id: "03718BDD8BCAE54F"
+				type: "fluid"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4D3711CC0A0FB9D3"
+				"32B4756EB9ACC4FC"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Complete either Option A or Option B"
+				"You can do both, but realistically only need to do one or the other."
+			]
+			id: "5CD208B190DF882F"
+			rewards: [
+				{
+					id: "09EE353CC51EA2A2"
+					item: "thermal:heavy_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "3BCFDF136DEB719A"
+					item: "thermal:light_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "36885BE332304BDD"
+					item: "kubejs:refined_oil_bucket"
+					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "2964D82784EC7745"
-					item: "pneumaticcraft:air_compressor"
-					type: "item"
+					amount: 1000L
+					fluid: "thermal:heavy_oil"
+					id: "2BBE9A8055105877"
+					type: "fluid"
 				}
 				{
-					count: 8L
-					id: "4815A63974C53192"
-					item: "pneumaticcraft:pressure_tube"
-					type: "item"
+					amount: 1000L
+					fluid: "thermal:light_oil"
+					id: "638FCB429FD93D3E"
+					type: "fluid"
+				}
+				{
+					amount: 1000L
+					fluid: "kubejs:refined_oil"
+					id: "2D77683FE0A28653"
+					type: "fluid"
 				}
 			]
-			title: "Basic Air Generation"
-			x: -2.5d
-			y: 1.5d
+			title: "Oil Byproducts"
+			x: 7.5d
+			y: 2.0d
 		}
 		{
-			id: "13EB5E7FE0FE7067"
+			dependencies: ["5CD208B190DF882F"]
+			description: [
+				"Gather 1 bucket of each fuel type from either your Refinery or Distillation Tower."
+				""
+				"The different fuels collected can be used to fuel generators and blaze burners."
+				"The LPG can be further processed into Plastic."
+			]
+			id: "602A7B5EA85BF584"
 			rewards: [
 				{
-					id: "3ADC58BAA3C15343"
-					item: "pneumaticcraft:lubricant_bucket"
+					id: "0B13731DF57CC1D9"
+					item: "pneumaticcraft:diesel_bucket"
 					type: "item"
 				}
 				{
-					id: "4D8378AA04B857C6"
-					item: "pneumaticcraft:smart_chest"
+					id: "113CE4DB0EDD74D2"
+					item: "pneumaticcraft:gasoline_bucket"
+					type: "item"
+				}
+				{
+					id: "21FB3235B8CABC54"
+					item: "pneumaticcraft:kerosene_bucket"
+					type: "item"
+				}
+				{
+					id: "7ECE10B88152D367"
+					item: "pneumaticcraft:lpg_bucket"
 					type: "item"
 				}
 			]
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "pneumaticcraft:diesel"
+					id: "53275934CF7FB71C"
+					type: "fluid"
+				}
+				{
+					amount: 1000L
+					fluid: "pneumaticcraft:gasoline"
+					id: "6DD8988FE127FDFD"
+					type: "fluid"
+				}
+				{
+					amount: 1000L
+					fluid: "pneumaticcraft:kerosene"
+					id: "35F86012373AF6E9"
+					type: "fluid"
+				}
+				{
+					amount: 1000L
+					fluid: "pneumaticcraft:lpg"
+					id: "38E24873F87A5F03"
+					type: "fluid"
+				}
+			]
+			title: "Fuel Collection"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3BA66A93D82E2558"]
+			description: [
+				"Andesite blend has unique properties that when mixed with Resin and Menril Resin produces a Polyethylene Slurry."
+				"Combining with LPG will produce plastic."
+			]
+			hide_dependency_lines: true
+			id: "6D6710FA7DBF37DA"
+			rewards: [
+				{
+					id: "03F4BDC122DD146A"
+					item: "thermal:resin_bucket"
+					type: "item"
+				}
+				{
+					id: "425ED11766B890F7"
+					item: "integrateddynamics:bucket_menril_resin"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "30D804A3CE49AA08"
+					item: "kubejs:andesite_blend"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "thermal:resin"
+					id: "2F807AB7A12981CB"
+					type: "fluid"
+				}
+				{
+					amount: 1000L
+					fluid: "integrateddynamics:menril_resin"
+					id: "477540AB8543A945"
+					type: "fluid"
+				}
+				{
+					count: 4L
+					id: "2835D33C0DE13374"
+					item: "kubejs:andesite_blend"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3BA66A93D82E2558"]
+			hide_dependency_lines: true
+			id: "704F9AF9DFA8CEDE"
 			tasks: [{
-				id: "482637ACB9542D13"
-				item: "pneumaticcraft:advanced_air_compressor"
+				id: "3D20F51FDD06C033"
+				item: "kubejs:zinc_casing"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.5d
+			x: 3.0d
+			y: 5.0d
 		}
 	]
 	title: "4: Plastic Pandemonium"

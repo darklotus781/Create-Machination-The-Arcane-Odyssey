@@ -109,25 +109,25 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0xFFFFFF)
         .displayName('Aureal Essence')
 
-    event.create('lpg')
-        .thinTexture(0xe8d36e)
-        .bucketColor(0xe8d36e)
-        .displayName('Liquid Propane Gas');
+    // event.create('lpg')
+    //     .thinTexture(0xe8d36e)
+    //     .bucketColor(0xe8d36e)
+    //     .displayName('Liquid Propane Gas');
 
-    event.create('kerosene')
-        .thinTexture(0x6aedf3)
-        .bucketColor(0x6aedf3)
-        .displayName('Kerosene');
+    // event.create('kerosene')
+    //     .thinTexture(0x6aedf3)
+    //     .bucketColor(0x6aedf3)
+    //     .displayName('Kerosene');
 
     event.create('refined_oil')
         .thinTexture(0x131313)
         .bucketColor(0x131313)
         .displayName('Refined Oil');
 
-    event.create('plastic')
-        .thinTexture(0xd8d8d5)
-        .bucketColor(0xd8d8d5)
-        .displayName('Molten Plastic');
+    // event.create('plastic')
+    //     .thinTexture(0xd8d8d5)
+    //     .bucketColor(0xd8d8d5)
+    //     .displayName('Molten Plastic');
 
     event.create('sulfuric_acid')
         .thinTexture(0xc1b851)

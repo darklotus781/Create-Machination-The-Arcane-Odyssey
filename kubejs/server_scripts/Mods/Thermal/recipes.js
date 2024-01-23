@@ -27,6 +27,8 @@ ServerEvents.recipes(event => {
     event.remove({id: 'thermal:machines/crucible/crucible_redstone_block'})
     event.remove({id: 'thermal:machines/crucible/crucible_redstone_dust'})
 
+    event.remove({id: 'thermal:bottler_florb'});
+
     event.replaceInput({id: /.*thermal\:fire_charge.*/}, 'minecraft:fire_charge', 'forbidden_arcanus:smelter_prism');
     event.replaceInput({output: 'thermal:lumium_ingot'}, 'minecraft:glowstone_dust', 'create:refined_radiance');
 

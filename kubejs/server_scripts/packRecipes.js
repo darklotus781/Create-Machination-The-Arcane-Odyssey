@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Item.of('kubejs:carbon_sheet')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:carbon_sheet')]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:clay_ball')]),
-        event.recipes.create.deploying(t, [t, Item.of('createaddition:copper_rod')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:rods/copper')]),
         event.recipes.create.pressing(t, t)
     ]).transitionalItem(t).loops(1).id('kubejs:resistor_assembly');
 
@@ -238,7 +238,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.filling(t, [t, Fluid.water(500)]),
         event.recipes.create.filling(t, [t, Fluid.of('kubejs:sulfuric_acid').withAmount(200)]),
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/copper')]),
-        event.recipes.create.deploying(t, [t, Item.of('createaddition:copper_rod')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:rods/copper')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:plastic')]),
         event.recipes.create.pressing(t, t)
     ]).transitionalItem(t).loops(1).id('kubejs:electrolytic_capacitor_assembly');
@@ -253,7 +253,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Item.of('kubejs:mica_sheet')]),
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/copper')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:ceramic_powder')]),
-        event.recipes.create.deploying(t, [t, Item.of('createaddition:copper_rod')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:rods/copper')]),
         event.recipes.create.pressing(t, t)
     ]).transitionalItem(t).loops(1).id('kubejs:resistor')
 
@@ -279,7 +279,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:inductor_core'),
     ], Item.of('kubejs:carbon_sheet'), [
-        event.recipes.create.deploying(t, [t, Item.of('createaddition:copper_rod')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:rods/copper')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:fiberglass_plate')]),
         event.recipes.create.pressing(t, t),
         event.custom({type: 'createaddition:rolling', input: Item.of(t).toJson(), result: Item.of(t).toJson()})

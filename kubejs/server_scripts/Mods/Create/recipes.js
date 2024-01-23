@@ -1,4 +1,9 @@
 //priority: 0
+// let MysteriousItemConversionCategory = Java.loadClass('com.simibubi.create.compat.jei.category.MysteriousItemConversionCategory')
+// let ConversionRecipe = Java.loadClass('com.simibubi.create.compat.jei.ConversionRecipe')
+//
+// MysteriousItemConversionCategory.RECIPES.add(ConversionRecipe.create(Item.of('minecraft:soulsand'), Item.of('forbidden_arcanus:soulless_sand')));
+
 ServerEvents.recipes(event => {
     // Create Compacting
     event.remove({id: 'create:compacting/andesite_from_flint'});

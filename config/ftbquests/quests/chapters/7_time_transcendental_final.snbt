@@ -79,6 +79,16 @@
 			x: -0.5d
 			y: -3.5d
 		}
+		{
+			id: "4A42A44FF9505706"
+			tasks: [{
+				id: "3737BFEF65FBA3EB"
+				item: "create:shadow_steel_casing"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
 	]
 	title: "7: Temporal Termination"
 }

@@ -1,8 +1,4 @@
 //priority:0
-ServerEvents.tags('fluid', event => {
-    event.add('forge:lava', 'minecraft:lava');
-});
-
 ServerEvents.recipes(event => {
     event.remove(/createaddition:liquid_burning*/);
 
@@ -13,7 +9,7 @@ ServerEvents.recipes(event => {
             fluidTag: 'forge:lava',
             amount: 1000 // 1 bucket
         },
-        burnTime: 1200, // 1 minute
+        burnTime: minutes(1), // 1 minute
         conditions: [
             {
                 fluidTag: "forge:lava",
@@ -29,7 +25,7 @@ ServerEvents.recipes(event => {
             fluidTag: "forge:refined_fuel",
             amount: 1000
         },
-        burnTime: 12000, // 10 minutes
+        burnTime: minutes(10), // 10 minutes
         superheated: true,
         conditions: [
             {
@@ -46,7 +42,7 @@ ServerEvents.recipes(event => {
             fluidTag: "forge:diesel",
             amount: 1000
         },
-        burnTime: 6000, // 5 minutes
+        burnTime: minutes(5), // 5 minutes
         conditions: [
             {
                 fluidTag: "forge:diesel",
@@ -62,7 +58,7 @@ ServerEvents.recipes(event => {
             fluidTag: "forge:gasoline",
             amount: 1000
         },
-        burnTime: 3600, // 3 minutes
+        burnTime: minutes(3), // 3 minutes
         superheated: true,
         conditions: [
             {
@@ -79,7 +75,7 @@ ServerEvents.recipes(event => {
             fluidTag: "forge:kerosene",
             amount: 1000
         },
-        burnTime: 12000, // 10 minutes
+        burnTime: minutes(10), // 10 minutes
         conditions: [
             {
                 fluidTag: "forge:kerosene",
@@ -95,7 +91,7 @@ ServerEvents.recipes(event => {
             fluidTag: "forge:lpg",
             amount: 1000
         },
-        burnTime: 6000,
+        burnTime: minutes(5),
         superheated: true,
         conditions: [
             {
@@ -105,3 +101,7 @@ ServerEvents.recipes(event => {
         ]
     }).id('createaddition:liquid_burning/lpg');
 });
+
+function minutes(minutes) {
+    return 20 * 60 * minutes;
+}

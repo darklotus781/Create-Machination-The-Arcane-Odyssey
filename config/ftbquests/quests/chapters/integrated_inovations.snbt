@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["64B38B300C2FD3F1"]
 			description: [
 				"Getting started in Chapter 2 makes a couple of assumptions."
 				"1) You have completed Chapter 1 :P"
@@ -60,7 +61,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["4B6530C71EBBCEA5"]
+			dependencies: [
+				"4B6530C71EBBCEA5"
+				"46123F83DC0660FA"
+			]
 			id: "36586087EDF835C8"
 			rewards: [{
 				id: "45F3079728B34CCB"
@@ -279,6 +283,8 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["60AE9E0F3742EDB9"]
+			hide_dependency_lines: true
 			id: "14584E9D69D41C94"
 			tasks: [{
 				amount: 1000L
@@ -302,6 +308,8 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["60AE9E0F3742EDB9"]
+			hide_dependency_lines: true
 			id: "23304B9EC97B944E"
 			tasks: [{
 				id: "258AEBB6AB3C59A4"
@@ -411,6 +419,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["25A1671BBFC63162"]
 			id: "1053146DCB837A88"
 			tasks: [{
 				id: "3D5FA912DDDAE074"
@@ -421,6 +430,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["265F0DB2F335238C"]
 			id: "25A1671BBFC63162"
 			tasks: [{
 				id: "17B1B35657167E20"
@@ -437,6 +447,8 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["60AE9E0F3742EDB9"]
+			hide_dependency_lines: true
 			id: "265F0DB2F335238C"
 			tasks: [{
 				id: "7F6AD7D3FEC04FCD"
@@ -447,14 +459,36 @@
 			y: -7.5d
 		}
 		{
-			id: "480B3B53D9E59CAB"
+			dependencies: ["25A1671BBFC63162"]
+			description: [
+				"Soulless sand is produced by sucking the soul out of soulsand."
+				"Soulless sand is also produced by haunting sand."
+				""
+				"Soulless sand is used to produce soulsand by spouting Aureal Essence on it."
+				"Scientists can't figure out why, but a chemical reaction occurs that somehow rejuvenates the soul essence in the soulless sand and converts it to soul  sand."
+				""
+				"Figure out a way to automate this."
+			]
+			id: "6CF49BBB20009CEE"
 			tasks: [{
-				id: "2BD8CDEDEB4B26E1"
+				id: "38124064F16EAAA9"
 				item: "forbidden_arcanus:soulless_sand"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -7.5d
+			x: 11.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["60AE9E0F3742EDB9"]
+			hide_dependency_lines: true
+			id: "46123F83DC0660FA"
+			tasks: [{
+				id: "417FAB3D4FB7F654"
+				item: "kubejs:gold_casing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
 		}
 	]
 	title: "5: Integrated Innovations"

@@ -211,13 +211,26 @@
 				"With a deep breath, you step forward, ready to leave the fiery chaos of the Nether behind. As you pass through the portal, a sense of relief and anticipation washes over you. Where will this new gateway lead? What worlds await to test your mettle and spirit? The answers lie just on the other side, in the next chapter of your unending odyssey."
 			]
 			id: "50C6FD1095F2927E"
-			rewards: [{
-				auto: "invisible"
-				id: "7CDAB9F8050D5258"
-				ignore_reward_blocking: true
-				stage: "overworld_access"
-				type: "gamestage"
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7CDAB9F8050D5258"
+					ignore_reward_blocking: true
+					stage: "overworld_access"
+					type: "gamestage"
+				}
+				{
+					id: "4FD45265F2CABB4D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06BD7547AD279188"
+					table_id: 7979468168910851615L
+					type: "random"
+				}
+			]
 			tasks: [{
 				consume_items: false
 				icon: "netherportalitem:nether_portal_frame"

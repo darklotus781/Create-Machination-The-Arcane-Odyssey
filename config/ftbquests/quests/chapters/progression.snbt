@@ -129,7 +129,7 @@
 			subtitle: "Fluid!"
 			title: "Chapter 1A: Copper"
 			x: 0.5d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -172,11 +172,16 @@
 			subtitle: "Trains!"
 			title: "Chapter 2C: Stronk"
 			x: 2.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["19232B8B77F86AF8"]
-			description: [""]
+			description: [
+				"Chapter 4 has a major focus on Pneuamaticcraft."
+				"This doesn't have to be overly complicated and we'll walk you through every step."
+				""
+				"Chapter 4 and Chapter 5 feed directly off Chapter 3 because they both use Radiant Mechanisms and unlock different features / functionality.  It makes sense to keep them separate chapters due to the intricacies of each quest line and that they don't directly feed off of or into each other."
+			]
 			icon: "kubejs:plastic_machine"
 			id: "099F5D860FC50376"
 			rewards: [
@@ -199,7 +204,7 @@
 			}]
 			title: "Chapter 4: Plastic Pandemonium"
 			x: 5.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -229,14 +234,6 @@
 			title: "Chapter 3: Radiant Revolution"
 			x: 3.5d
 			y: 3.5d
-		}
-		{
-			dependencies: ["19232B8B77F86AF8"]
-			icon: "kubejs:plastic_machine"
-			id: "5A8CA8146004CDE2"
-			title: "The Pneumatic Age"
-			x: 4.0d
-			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -528,8 +525,8 @@
 			id: "15983A1F5FED57E0"
 			subtitle: "Power!"
 			title: "Chapter 2A: Power"
-			x: 2.0d
-			y: 4.5d
+			x: 1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3A10D0D5E8548C54"]
@@ -538,8 +535,40 @@
 			id: "72C3FAE0193F665C"
 			subtitle: "More Machines"
 			title: "Chapter 2B: Scorch Machine"
-			x: 3.0d
+			x: 2.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["19232B8B77F86AF8"]
+			description: [
+				"Chapter 4 has a major focus on Integrated Dynamics and feeds into some AE2 automations."
+				"This doesn't have to be overly complicated and we'll walk you through every step."
+				""
+				"Chapter 4 and Chapter 5 feed directly off Chapter 3 because they both use Radiant Mechanisms and unlock different features / functionality.  It makes sense to keep them separate chapters due to the intricacies of each quest line and that they don't directly feed off of or into each other."
+			]
+			icon: "kubejs:integrational_machine"
+			id: "437114B9BC07B2BD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "67CA3ED2EC5C569A"
+					table_id: 8518389553027792099L
+					type: "random"
+				}
+				{
+					id: "37C613BD117D45F6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "32FDF2C65FABFE2A"
+				title: "It's time to Innovate"
+				type: "checkmark"
+			}]
+			title: "Chapter 5: Integrated Innovations"
+			x: 5.0d
+			y: 3.0d
 		}
 	]
 	title: "The Arcane Odyssey"

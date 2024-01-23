@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         [Item.of('minecraft:bucket'), Item.of('thermal:device_tree_extractor')],
         [Item.of('minecraft:compass'), Item.of('ae2:meteorite_compass')],
         [Item.of('minecraft:compass'), Item.of('explorerscompass:explorerscompass')],
-        [Item.of('createaddition:copper_rod'), Item.of('createaddition:connector', 4)],
+        [Ingredient.of('#forge:rods/copper'), Item.of('createaddition:connector', 4)],
         [Item.of('createaddition:capacitor'), Item.of('createaddition:alternator')],
         [Item.of('sophisticatedstorage:diamond_barrel').withNBT({woodType: "spruce"}), Item.of('sophisticatedstorage:controller')]
     ]

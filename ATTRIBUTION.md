@@ -18,6 +18,8 @@ Thank you!!!
 - The trade system used in this pack is from Create: Above and Beyond
 - This includes the base images
 
+#### https://github.com/FooterMan15/KJS-Datagen-Scripts [CC BY-SA 4.0]
+- Used for some things!
 
 Any other textures, code snippets, quests and other assets reused in this pack are copyright their respective owners.
 For example, Forbidden and Arcanus textures were reused to recreate items in KubeJS but only to enhance the mode and not as something standalone.

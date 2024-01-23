@@ -22,7 +22,7 @@ JEIEvents.hideItems(event => {
     event.hide(/cinnabar/);
     event.hide(/niter/);
     event.hide(/apatite/);
-    event.hide(Item.of('appliedenergistics2:facade').weakNBT());
     event.hide('thermal:bronze_plate');
     event.hide('thermal:bronze_coin');
+    event.hide('thermal:crude_oil_bucket');
 });

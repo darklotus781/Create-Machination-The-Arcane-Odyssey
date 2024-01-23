@@ -19,7 +19,7 @@
 			rotation: 0.0d
 			width: 20.0d
 			x: 1.5d
-			y: 0.5d
+			y: -1.0d
 		}
 		{
 			click: ""
@@ -195,7 +195,7 @@
 				consume_items: false
 				count: 8L
 				id: "67FC02DEC768DE95"
-				item: "create:raw_zinc"
+				item: "alltheores:raw_zinc"
 				type: "item"
 			}]
 			x: 3.0d
@@ -210,8 +210,8 @@
 				title: "Stuff to Ignore!"
 				type: "checkmark"
 			}]
-			title: "What are these mods?"
-			x: 4.5d
+			title: "Some important mods."
+			x: 4.0d
 			y: 0.5d
 		}
 		{
@@ -229,7 +229,7 @@
 				title: "Ars Nouveau"
 				type: "checkmark"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: -0.5d
 		}
 		{
@@ -248,7 +248,7 @@
 				title: "Pneumaticcraft"
 				type: "checkmark"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: 1.5d
 		}
 		{
@@ -262,7 +262,7 @@
 				title: "KubeJS"
 				type: "checkmark"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: -0.5d
 		}
 		{
@@ -287,7 +287,7 @@
 				type: "checkmark"
 			}]
 			title: "Create: Resource Geodes"
-			x: 6.5d
+			x: 6.0d
 			y: 1.5d
 		}
 		{
@@ -320,21 +320,6 @@
 		}
 		{
 			dependencies: ["2F63FB9E8EAC18BD"]
-			description: [
-				"Here are the items you'll need to get started."
-				"Once you begin, there's no turning back!"
-			]
-			id: "749112B711CAB183"
-			tasks: [{
-				id: "54FF171FC21767DA"
-				title: "I cant wait to become a cool mage!"
-				type: "checkmark"
-			}]
-			x: 1.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["2F63FB9E8EAC18BD"]
 			id: "438CB39142A72E71"
 			tasks: [{
 				id: "3309E6DC2F78649F"
@@ -359,7 +344,7 @@
 				title: "Lychee"
 				type: "checkmark"
 			}]
-			x: 7.5d
+			x: 7.0d
 			y: 1.5d
 		}
 		{
@@ -380,7 +365,7 @@
 				type: "checkmark"
 			}]
 			title: "Applied Energistics 2"
-			x: 7.5d
+			x: 7.0d
 			y: -0.5d
 		}
 		{
@@ -400,7 +385,7 @@
 				title: "Integrated Dynamics"
 				type: "checkmark"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: -0.5d
 		}
 		{
@@ -425,7 +410,7 @@
 				title: "Forbidden and Arcanus"
 				type: "checkmark"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: 1.5d
 		}
 		{
@@ -475,41 +460,6 @@
 			}]
 			x: 0.0d
 			y: -2.5d
-		}
-		{
-			dependencies: ["749112B711CAB183"]
-			id: "3F2F651C5B2E8758"
-			tasks: [{
-				id: "1F8C791C489E3939"
-				item: "create:spout"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["749112B711CAB183"]
-			id: "159959902CC20D5F"
-			tasks: [{
-				id: "44787DDD37836FA1"
-				item: "forbidden_arcanus:rune"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["749112B711CAB183"]
-			description: ["Chapter 1 will explain it to you :)"]
-			id: "17A07FB16A28912B"
-			subtitle: "How do i get Brass!?"
-			tasks: [{
-				id: "3BD2EFBAAF31BF98"
-				item: "create:deployer"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 4.5d
 		}
 		{
 			dependencies: [

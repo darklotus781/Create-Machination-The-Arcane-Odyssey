@@ -56,6 +56,16 @@
 			x: 1.0d
 			y: -4.0d
 		}
+		{
+			id: "0F13EA1FD382FDE6"
+			tasks: [{
+				id: "544D83F57E2E97D6"
+				item: "create:refined_radiance_casing"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
 	]
 	title: "6: Quantum Quintessence"
 }

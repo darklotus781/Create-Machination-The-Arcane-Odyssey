@@ -1,7 +1,3 @@
-ServerEvents.tags('fluid', event => {
-    //
-});
-
 ServerEvents.recipes(event => {
 
     event.remove({id: 'createdieselgenerators:distillation/crude_oil'});
@@ -13,10 +9,10 @@ ServerEvents.recipes(event => {
         ],
         processingTime: 20,
         results: [
-            Fluid.of('createdieselgenerators:diesel').withAmount(4).toJson(),
-            Fluid.of('kubejs:kerosene').withAmount(3).toJson(),
-            Fluid.of('createdieselgenerators:gasoline').withAmount(3).toJson(),
-            Fluid.of('kubejs:lpg').withAmount(2).toJson()
+            Fluid.of('pneumaticcraft:diesel').withAmount(4).toJson(),
+            Fluid.of('pneumaticcraft:kerosene').withAmount(3).toJson(),
+            Fluid.of('pneumaticcraft:gasoline').withAmount(3).toJson(),
+            Fluid.of('pneumaticcraft:lpg').withAmount(2).toJson()
         ],
         heatRequirement: 'superheated'
     }).id('createdieselgenerators:distillation/refined_oil');
@@ -25,7 +21,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'createdieselgenerators:distillation',
         ingredients: [
-            Fluid.of('createdieselgenerators:crude_oil').withAmount(125).toJson()
+            Fluid.of('pneumaticcraft:oil').withAmount(125).toJson()
         ],
         processingTime: 30,
         results: [
