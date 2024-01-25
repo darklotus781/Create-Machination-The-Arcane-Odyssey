@@ -1,38 +1,29 @@
 {
     "pools": [
         {
-            "rolls": {
-                "min": 3,
-                "max": 4
-            },
+            "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "weight": 4,
-                    "name": "ars_nouveau:jar_of_light"
+                    "type": "minecraft:loot_table",
+                    "name": "machination:magic_stuff/artifacts",
+                    "weight": 10
                 },
                 {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_randomly",
-                            "treasure": true
-                        }
-                    ],
-                    "name": "minecraft:book"
-                },
+                    "type": "minecraft:loot_table",
+                    "name": "machination:magic_stuff/reliquary",
+                    "weight": 15
+                }
+            ],
+            "conditions": [
                 {
-                    "type": "minecraft:item",
-                    "weight": 6,
-                    "name": "forbidden_arcanus:rune",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 3
-                        }
-                    ]
-                },
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.3
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
                 {
                     "type": "minecraft:item",
                     "weight": 1,
@@ -56,297 +47,64 @@
                     "weight": 1,
                     "quality": 1,
                     "name": "ars_nouveau:arcanist_boots"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.3
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 7,
+                "max": {
+                    "min": 9,
+                    "max": 11
+                }
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 10,
+                    "name": "machination:magic_stuff/magic_items"
                 },
                 {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "ars_nouveau:source_berry_roll",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 3
-                        }
-                    ]
+                    "type": "minecraft:loot_table",
+                    "weight": 10,
+                    "name": "machination:magic_stuff/fna_items"
                 },
                 {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "forbidden_arcanus:sanity_meter"
+                    "type": "minecraft:loot_table",
+                    "weight": 10,
+                    "name": "machination:magic_stuff/mob_items"
                 },
                 {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "kubejs:runic_tablet",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 3
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 4,
-                    "name": "ars_nouveau:wilden_wing"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 4,
-                    "name": "ars_nouveau:wilden_horn"
-                },
-                {
-                    "type": "minecraft:item",
+                    "type": "minecraft:loot_table",
                     "weight": 5,
-                    "name": "ars_nouveau:magebloom_fiber",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 6,
-                            "add": true
-                        }
-                    ]
-                },
+                    "name": "machination:magic_stuff/ars_trinkets"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
                 {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "ars_nouveau:mundane_belt"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "ars_nouveau:ring_of_potential"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "forbidden_arcanus:xpetrified_orb",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 10,
-                            "add": true
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "forbidden_arcanus:arcane_crystal_block",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 2
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "forbidden_arcanus:arcane_bone_meal",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 12
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "forbidden_arcanus:arcane_crystal",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 6
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "forbidden_arcanus:deorum_nugget",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 4
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "forbidden_arcanus:mundabitur_dust"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "kubejs:empty_vial",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 4
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "ars_nouveau:runic_chalk"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "kubejs:mageberry_smoothie",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 5
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "forbidden_arcanus:obsidian_skull"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "forbidden_arcanus:ender_pearl_fragment",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 12,
-                            "add": true
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "forbidden_arcanus:dark_rune",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 6,
-                            "add": true
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "forbidden_arcanus:mortem_helmet"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "forbidden_arcanus:mortem_boots"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "forbidden_arcanus:reinforced_deorum_pickaxe"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "forbidden_arcanus:dragon_scale",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 3
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "forbidden_arcanus:cloth",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 4,
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 5,
-                    "name": "ars_nouveau:magebloom_crop",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 3,
-                            "add": true
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "ars_nouveau:magebloom",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 13,
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "forbidden_arcanus:dark_matter"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "reliquary:bat_wing"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "reliquary:nebulous_heart"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "reliquary:infernal_claw"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "minecraft:feather",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 3,
-                            "add": true
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "reliquary:rib_bone"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "reliquary:guardian_spike"
-                },
-                {
-                    "type": "minecraft:item",
+                    "type": "minecraft:loot_table",
                     "weight": 4,
-                    "name": "reliquary:glowing_bread",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 3
-                        }
-                    ]
+                    "name": "machination:magic_stuff/armor"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 6,
+                    "name": "machination:magic_stuff/tools_wands"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.3
                 }
             ]
         }

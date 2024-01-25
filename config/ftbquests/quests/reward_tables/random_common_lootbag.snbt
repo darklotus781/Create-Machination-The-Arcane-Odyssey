@@ -7,7 +7,6 @@
 		{ item: "kubejs:andesite_bag_common" }
 		{ item: "kubejs:brass_bag_common" }
 		{ item: "kubejs:radiant_bag_common" }
-		{ item: "kubejs:integrational_bag_common" }
 		{ item: "kubejs:food_bag_common" }
 		{ item: "kubejs:farm_bag_common" }
 	]

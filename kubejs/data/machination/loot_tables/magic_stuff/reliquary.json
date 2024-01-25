@@ -1,0 +1,299 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:mercy_cross"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:angelheart_vial"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "reliquary:angelic_feather"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "reliquary:interdiction_torch",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": {
+                                    "min": 2,
+                                    "max": 8
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "reliquary:fertile_lily_pad",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            },
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.25
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:twilight_cloak"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:serpent_staff"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "reliquary:shears_of_winter"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "reliquary:lantern_of_paranoia"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:glacial_staff"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:ender_staff"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:emperor_chalice"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:phoenix_down"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:midas_touchstone"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:kraken_shell"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:infernal_tear"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:infernal_claws"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "reliquary:infernal_chalice"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:ice_magus_rod"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "reliquary:hero_medallion"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:fortune_coin"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:magicbane"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "reliquary:salamander_eye"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:mob_charm_belt"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "reliquary:void_tear"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "reliquary:witherless_rose",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:rod_of_lyssa"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:sojourner_staff"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:rending_gale"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "reliquary:pyromancer_staff"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "reliquary:mob_charm",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Damage:0,entity:\"alexsmobs:centipede_head\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "reliquary:mob_charm",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Damage:0,entity:\"cataclysm:netherite_monstrosity\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "reliquary:mob_charm",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Damage:0,entity:\"alexsmobs:void_worm_part\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "reliquary:mob_charm",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Damage:0,entity:\"alexsmobs:dropbear\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "reliquary:mob_charm",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Damage:0,entity:\"cataclysm:lionfish\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "reliquary:mob_charm",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Damage:0,entity:\"minecraft:silverfish\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "reliquary:mob_charm",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Damage:0,entity:\"cataclysm:amethyst_crab\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "reliquary:mob_charm",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Damage:0,entity:\"create_confectionery:little_gingerbread_man\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "reliquary:mob_charm",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Damage:0,entity:\"minecraft:vex\"}"
+                        }
+                    ]
+                }
+            ],
+            "functions": [
+                {
+                    "function": "minecraft:set_count",
+                    "count": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.5
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

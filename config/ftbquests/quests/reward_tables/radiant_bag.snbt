@@ -9,4 +9,5 @@
 		{ item: "kubejs:radiant_bag_epic" }
 	]
 	title: "Radiant Reward"
+    use_title: true
 }

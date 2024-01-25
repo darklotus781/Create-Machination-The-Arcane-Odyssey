@@ -17,3 +17,45 @@ ServerEvents.recipes(event => {
     event.replaceInput({id: 'createdieselgenerators:crafting/asphalt_block'}, 'createdieselgenerators:crude_oil_bucket', '#forge:buckets/crude_oil');
     event.replaceInput({id: 'createdieselgenerators:mixing/asphalt_block'}, 'createdieselgenerators:crude_oil', '#forge:crude_oil');
 });
+
+// {
+//   "type": "createdieselgenerators:basin_fermenting",
+//   "ingredients": [
+//     {
+//       "item": "create:wheat_flour"
+//     },
+//     {
+//       "fluid": "minecraft:water",
+//       "amount": 100
+//     }
+//   ],
+//   "processingTime": 200,
+//   "results": [
+//     {
+//       "item": "create:dough"
+//     },
+//     {
+//       "item": "create:wheat_flour",
+//       "chance": 0.1
+//     }
+//   ]
+// }
+
+// {
+//   "type": "createdieselgenerators:basin_fermenting",
+//   "ingredients": [
+//     {
+//       "tag": "forge:fermentable"
+//     },
+//     {
+//       "item": "minecraft:bone_meal"
+//     }
+//   ],
+//   "processingTime": 400,
+//   "results": [
+//     {
+//       "fluid": "createdieselgenerators:ethanol",
+//       "amount": 200
+//     }
+//   ]
+// }

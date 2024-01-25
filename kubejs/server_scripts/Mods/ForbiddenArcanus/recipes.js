@@ -1,7 +1,8 @@
 BlockEvents.rightClicked(event => {
-    if (event.block.id == 'minecraft:soul_sand' && event.item.id == 'forbidden_arcanus:soul_extractor') {
-        event.block.set('forbidden_arcanus:soulless_sand');
-        event.block.popItemFromFace('forbidden_arcanus:soul', 'up');
+    if (event.entity.isFake() && event.item.id == 'forbidden_arcanus:soul_extractor' && event.block.id == 'minecraft:soul_sand') {
+        event.block.popItemFromFace('forbidden_arcanus:soul', event.getFacing())
+        event.block.set('forbidden_arcanus:soulless_sand')
+        event.player.damageHeldItem("MAIN_HAND", 1)
     }
 });
 

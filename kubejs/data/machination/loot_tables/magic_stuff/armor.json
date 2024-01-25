@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "forbidden_arcanus:obsidian_skull"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "forbidden_arcanus:mortem_helmet"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "forbidden_arcanus:mortem_boots"
+                }
+            ]
+        }
+    ]
+}

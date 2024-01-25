@@ -66,11 +66,18 @@
 				"46123F83DC0660FA"
 			]
 			id: "36586087EDF835C8"
-			rewards: [{
-				id: "45F3079728B34CCB"
-				type: "xp_levels"
-				xp_levels: 25
-			}]
+			rewards: [
+				{
+					id: "45F3079728B34CCB"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					id: "6CA3EC9933AC3E44"
+					item: "integrateddynamics:on_the_dynamics_of_integration"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [

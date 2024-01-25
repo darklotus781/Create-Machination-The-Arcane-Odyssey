@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.pressing(Item.of('kubejs:carbon_sheet'), Item.of('minecraft:charcoal'));
     event.recipes.create.filling(Item.of('kubejs:soaked_sheet'), [Ingredient.of('#forge:plates/copper'), Fluid.of('kubejs:sulfuric_acid').withAmount(100)]);
-    event.recipes.create.filling(Item.of('kubejs:plastic'), [Item.of('kubejs:carbon_sheet'), Fluid.of('kubejs:plastic').withAmount(90)]);
+    // event.recipes.create.filling(Item.of('pneumaticcraft:plastic'), [Item.of('kubejs:carbon_sheet'), Fluid.of('pneumaticcraft:plastic').withAmount(90)]);
 
     // Dirty Inductor
     t = Item.of('kubejs:incomplete_inductor');

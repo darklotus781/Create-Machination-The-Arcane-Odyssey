@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "forbidden_arcanus:reinforced_deorum_pickaxe"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "ars_nouveau:dominion_wand"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "ars_nouveau:wand"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "ars_nouveau:spell_crossbow"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "forbidden_arcanus:sanity_meter"
+                }
+            ]
+        }
+    ]
+}

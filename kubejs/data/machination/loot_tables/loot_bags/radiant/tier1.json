@@ -1,14 +1,17 @@
 {
     "pools": [
         {
-            "rolls": {
-                "min": 1,
-                "max": 2
-            },
+            "rolls": 1,
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/create/create_junk"
+                    "name": "machination:base"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.3
                 }
             ]
         },
@@ -17,41 +20,77 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/create/basics"
+                    "name": "machination:essentials"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "create:brass_casing",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": {
+                                    "min": 4,
+                                    "max": 12
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:andesite_casing",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": {
+                                    "min": 4,
+                                    "max": 12
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 5,
+                    "name": "machination:mod_items/create/mechanisms_tier_1"
                 }
             ]
         },
         {
             "rolls": {
                 "min": 3,
-                "max": 4
+                "max": 9
             },
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 3,
-                    "name": "machination:mod_items/create/food_basic"
+                    "name": "machination:mod_items/create/diesel",
+                    "weight": 5
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 1,
-                    "name": "machination:mod_items/create/advanced_basics"
-                }
-            ]
-        },
-        {
-            "rolls": {
-                "min": 3,
-                "max": 4
-            },
-            "entries": [
-                {
-                    "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/create/food_basic"
+                    "name": "machination:mod_items/create/new_age",
+                    "weight": 5
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/create/andesite_encased"
+                    "name": "machination:mod_items/create/trains",
+                    "weight": 10
                 }
             ]
         },
@@ -63,27 +102,57 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 2,
-                    "name": "machination:mod_items/create/radiant/machines"
+                    "name": "machination:mod_items/create/andesite_tier_1",
+                    "weight": 3
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 4,
-                    "name": "machination:mod_items/create/mechanisms_tier_3"
+                    "name": "machination:mod_items/create/andesite_tier_2",
+                    "weight": 6
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 7,
-                    "name": "machination:mod_items/create/radiant/resources"
+                    "name": "machination:mod_items/create/andesite_tier_3",
+                    "weight": 9
                 }
             ]
         },
         {
-            "rolls": 1,
+            "rolls": {
+                "min": 3,
+                "max": 5
+            },
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/ars_creo/starbuncle"
+                    "name": "machination:mod_items/create/brass_tier_1",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/brass_tier_2",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/brass_tier_3",
+                    "weight": 9
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/food_tier_1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/resources_tier_1"
                 }
             ]
         },
@@ -91,6 +160,63 @@
             "rolls": {
                 "min": 2,
                 "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/food_tier_2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/resources_tier_2"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/mechanisms_tier_1",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/mechanisms_tier_2",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/mechanisms_tier_3",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 9
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/ars_creo/starbuncle"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.3
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 5,
+                "max": 6
             },
             "entries": [
                 {
@@ -105,43 +231,8 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 1,
-                    "name": "machination:mod_items/create/mechanisms_tier_4"
-                },
-                {
-                    "type": "minecraft:loot_table",
                     "weight": 2,
                     "name": "machination:mod_items/pneumaticcraft/assembly"
-                }
-            ]
-        },
-        {
-            "rolls": {
-                "min": 3,
-                "max": 5
-            },
-            "entries": [
-                {
-                    "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/create/brass/brass_common"
-                }
-            ]
-        },
-        {
-            "rolls": {
-                "min": 3,
-                "max": 6
-            },
-            "entries": [
-                {
-                    "type": "minecraft:loot_table",
-                    "weight": 1,
-                    "name": "machination:mod_items/create/andesite_tier_1"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "weight": 1,
-                    "name": "machination:mod_items/create/andesite_tier_3"
                 }
             ]
         }

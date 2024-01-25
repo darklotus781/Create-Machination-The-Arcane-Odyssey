@@ -1,0 +1,67 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "createdieselgenerators:basin_lid",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createdieselgenerators:canister",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createdieselgenerators:distillation_controller",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createdieselgenerators:engine_piston",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createdieselgenerators:engine_silencer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createdieselgenerators:engine_turbocharger",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createdieselgenerators:oil_barrel",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createdieselgenerators:oil_scanner",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

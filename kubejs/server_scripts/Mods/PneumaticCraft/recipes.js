@@ -58,6 +58,18 @@ ServerEvents.recipes(event => {
             }
         ]
     }).id('kubejs:pneumaticcraft/refinery/refined_oil_4');
+
+
+    event.custom({
+        type: 'createdieselgenerators:basin_fermenting',
+        ingredients: [
+            Fluid.water().withAmount(250).toJson(),
+            Ingredient.of('#forge:crops').toJson()
+        ],
+        processingTime: 200,
+        results: [Fluid.of('pneumaticcraft:vegetable_oil').withAmount(100).toJson()]
+    }).id('kubejs:fermenting/vegetable_oil_from_crops');
+
     // event.custom({
     //     type: "pneumaticcraft:refinery",
     //     input: {

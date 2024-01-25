@@ -33,6 +33,15 @@
 	]
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "0711E0747C34E922"
+		tasks: [{
+			id: "0B19CD78EEF643D9"
+			title: "Is this the end?"
+			type: "checkmark"
+		}]
+		x: 2.5d
+		y: -3.0d
+	}]
 	title: "Chapter 4: Is this The End?"
 }

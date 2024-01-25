@@ -1,13 +1,14 @@
 // priority: -100
 ServerEvents.recipes(event => {
-    event.remove({output: /waystones\:.*/})
+    // event.remove({output: /waystones\:.*/})
+    event.remove({output: /waystones\:.*waystone/});
+    event.remove({output: 'waystones:warp_plate'});
+    event.remove({output: 'waystones:portstone'});
+    event.remove({output: 'waystones:warp_stone'});
+    event.remove({output: 'waystones:warp_dust'});
+    event.remove({output: /waystone\:.*scroll/});
 
     // Kubejs Warp Seeds
-    // Can be acquired by crushing a waystone or here:
-// botania:dragonstone
-// botania:terrasteel_nugget
-// thermal:ender
-// seeds?
     let t = Item.of('kubejs:warp_fragments');
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:warp_fragments'),
@@ -18,46 +19,55 @@ ServerEvents.recipes(event => {
         event.recipes.create.filling(t, [t, Fluid.of('thermal:ender').withAmount(125)]),
         event.recipes.create.deploying(t, [t, Item.of('botania:dragonstone')]),
         event.recipes.create.pressing(t, t)
-    ]).transitionalItem(t).loops(2).id('kubejs:assembly/warp_fragments');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/warp_fragments');
 
-    // event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil', 4), [
-    //     'WRWRW',
-    //     'R   R',
-    //     'W   W',
-    //     'R   R',
-    //     'WRWRW'
-    // ], {
-    //     R: Item.of('kubejs:enriched_rubber'),
-    //     W: Item.of('kubejs:warp_fragments')
-    // }).id('kubejs:crafter/warp_stone');
+    //Waystones
+    event.shaped(Item.of('waystones:waystone'), [
+            'SRS',
+            ' W ',
+            'LCL',
+        ], {
+            S: 'ars_nouveau:stable_warp_scroll',
+            W: 'waystones:warp_stone',
+            R: 'botania:rune_envy',
+            C: 'minecraft:chiseled_stone_bricks',
+            L: 'minecraft:lodestone'
+        }
+    );
+    event.shaped(Item.of('waystones:mossy_waystone'), [
+            'SRS',
+            ' W ',
+            'LCL',
+        ],
+        {
+            S: 'ars_nouveau:stable_warp_scroll',
+            W: 'waystones:warp_stone',
+            R: 'botania:rune_envy',
+            C: 'minecraft:mossy_stone_bricks',
+            L: 'minecraft:lodestone'
+        }
+    );
+    event.shaped(Item.of('waystones:sandy_waystone'), [
+            'SRS',
+            ' W ',
+            'LCL',
+        ], {
+            S: 'ars_nouveau:stable_warp_scroll',
+            W: 'waystones:warp_stone',
+            R: 'botania:rune_envy',
+            C: 'minecraft:chiseled_sandstone',
+            L: 'minecraft:lodestone'
+        }
+    );
 
-    // waystone:warp_stone
-    // waystone:portstone
-    // waystone:waystone | mossy_waystone | sandy_waystone
-    // waystone:warp_dust
-    // waystone:warp_plate
+    event.stonecutting('waystones:waystone', [Ingredient.of('#waystones:waystones')]);
+    event.stonecutting('waystones:sandy_waystone', [Ingredient.of('#waystones:waystones')]);
+    event.stonecutting('waystones:mossy_waystone', [Ingredient.of('#waystones:waystones')]);
+    event.stonecutting('waystones:warp_plate', [Ingredient.of('#waystones:waystones')]);
+
+    event.recipes.create.crushing([Item.of('minecraft:flint').withChance(0.75), Item.of('kubejs:warp_fragments').withChance(0.30), Item.of('waystones:warp_dust').withChance(0.15), Item.of('waystones:warp_dust').withChance(0.05)], [Item.of('waystones:attuned_shard').weakNBT()]).processingTime(200);
 });
-// LootJS.modifiers(event => {
-//     event.addBlockLootModifier(/waystones\:.*waystone/)
-//         .removeLoot(/waystones\:.*waystone/)
-//         .matchMainHand(Item.of('minecraft:netherite_pickaxe').weakNBT())
-//         .addLoot(Item.of('kubejs:warp_fragments', 2));
-// });
 
-// Waystones are craftable at a later point in the pack
-// Waystones can be broken with a Waystone Removal tool
-// Warp Seeds are a sequenced assembly recipe
-
-//
-
-// Warp stone becomes a Haephestus Forge recipe, Tier 5
-// botania:ender_air_bottle
-// botania:gaia_ingot - activator item
-// botania:third_eye
-// forbidden_arcanus:stellarite_piece
-// ars_elemental:necrotic_focus //top tier, not impossible
-// forbidden_arcanus:dark_matter
-// forbidden_arcanus:golden_dragon_scale.
 
 ServerEvents.lowPriorityData(event => {
     event.addJson('forbidden_arcanus:forbidden_arcanus/enhancer/definition/third_eye', {

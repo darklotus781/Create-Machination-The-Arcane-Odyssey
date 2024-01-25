@@ -47,8 +47,8 @@ ServerEvents.recipes(event => {
     }).id('kubejs:andesite_alloy_manual_only')
 
     event.recipes.create.mixing([Item.of('create:andesite_alloy', 4)], [Item.of('integrateddynamics:crystalized_menril_chunk'), Item.of('kubejs:andesite_blend')]).id('kubejs:mixing/andesite_alloy_from_menril_chunks');
-    event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), [Ingredient.of('#create:recipe_nuggets'), Item.of('kubejs:andesite_blend')]).id('kubejs:mixing/andesite_alloy_from_blend_and_nuggets');
-    event.recipes.create.mixing(Item.of('kubejs:andesite_blend'), [Item.of('kubejs:andesite_dust'), Item.of('minecraft:clay_ball')]).id('kubejs:mixing/andesite_blend_from_dust_and_clay');
+    event.recipes.create.mixing([Item.of('create:andesite_alloy', 2)], [Ingredient.of('#create:recipe_nuggets'), Item.of('kubejs:andesite_blend')]).id('kubejs:mixing/andesite_alloy_from_blend_and_nuggets');
+    event.recipes.create.mixing([Item.of('kubejs:andesite_blend')], [Item.of('kubejs:andesite_dust'), Item.of('minecraft:clay_ball')]).id('kubejs:mixing/andesite_blend_from_dust_and_clay');
 
     event.shapeless(Item.of('create:andesite_alloy', 9), Item.of('create:andesite_alloy_block'));
 
@@ -73,9 +73,10 @@ ServerEvents.recipes(event => {
 
     event.remove({id: 'create:crafting/kinetics/belt_connector'});
     event.shaped(Item.of('create:belt_connector', 3), [
-        'SSS',
+        'KKK',
         'SSS'
     ], {
+        K: Item.of('minecraft:dried_kelp'),
         S: Item.of('thermal:cured_rubber')
     }).id('create:crafting/kinetics/belt_connector');
 

@@ -1,0 +1,64 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:chests/create/tier1",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:chests/create/tier2",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:chests/create/tier3",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:chests/magic/tier1",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:chests/magic/tier2",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:chests/magic/tier3",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:chests/combined/tier1",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:chests/combined/tier2",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:chests/combined/tier3",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:chests/treasure",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "artifacts:chests/campsite_chest",
+                    "weight": 5
+                }
+            ]
+        }
+    ]
+}

@@ -1,43 +1,26 @@
 {
     "pools": [
         {
-            "rolls": {
-                "min": 1,
-                "max": 2
-            },
+            "rolls": 1,
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "weight": 9,
-                    "name": "kubejs:wooden_mechanism",
+                    "name": "create:belt_connector",
+                    "weight": 10,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "min": 2,
-                                "max": 4
+                                "max": 8
                             }
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 7,
-                    "name": "kubejs:kinetic_mechanism",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 2,
-                                "max": 4
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 5,
-                    "name": "kubejs:sealed_mechanism",
+                    "name": "create:clutch",
+                    "weight": 10,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -50,28 +33,255 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "create:propeller"
+                    "name": "create:copper_valve_handle",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "create:whisk"
+                    "name": "create:cuckoo_clock",
+                    "weight": 10
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "thermal:drill_head"
+                    "name": "create:depot",
+                    "weight": 10
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "thermal:saw_blade"
+                    "name": "create:empty_blaze_burner",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:brass_hand"
+                    "name": "create:encased_chain_drive",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:fluid_pipe",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:fluid_tank",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 9
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:fluid_valve",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:gearbox",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:gearshift",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_bearing",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_piston",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_pump",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:millstone",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:redstone_contact",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:rope_pulley",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:speedometer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:steam_whistle",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:sticker",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:sticky_mechanical_piston",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:stressometer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:vertical_gearbox",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:weighted_ejector",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:windmill_bearing",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createaddition:rolling_mill",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "sliceanddice:slicer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:gantry_carriage",
+                    "weight": 10
                 }
             ]
         }

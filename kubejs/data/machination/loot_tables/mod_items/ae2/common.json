@@ -6,47 +6,128 @@
                 {
                     "type": "minecraft:item",
                     "weight": 4,
-                    "name": "ae2:item_cell_housing"
+                    "name": "ae2:item_cell_housing",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 4,
-                    "name": "ae2:fluid_cell_housing"
+                    "name": "ae2:fluid_cell_housing",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 4,
-                    "name": "ae2:basic_card"
+                    "name": "ae2:basic_card",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "ae2:advanced_card"
+                    "name": "ae2:advanced_card",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "ae2:speed_card"
+                    "name": "ae2:speed_card",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 6,
-                    "name": "ae2:void_card"
+                    "name": "ae2:void_card",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 3,
-                    "name": "ae2:redstone_card"
+                    "name": "ae2:redstone_card",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 4,
-                    "name": "ae2:formation_core"
+                    "name": "ae2:formation_core",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 4,
-                    "name": "ae2:annihilation_core"
+                    "name": "ae2:annihilation_core",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
                 }
             ]
         }

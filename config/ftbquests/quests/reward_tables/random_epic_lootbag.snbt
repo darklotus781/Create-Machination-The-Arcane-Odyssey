@@ -3,12 +3,12 @@
 	loot_size: 1
 	order_index: 12
 	rewards: [
-		{ item: "kubejs:food_bag_epic" }
 		{ item: "kubejs:arcane_bag_epic" }
-		{ item: "kubejs:andesite_bag_epic" }
-		{ item: "kubejs:brass_bag_epic" }
-		{ item: "kubejs:radiant_bag_epic" }
-		{ item: "kubejs:dynamic_bag_epic" }
+        { item: "kubejs:andesite_bag_epic" }
+        { item: "kubejs:brass_bag_epic" }
+        { item: "kubejs:radiant_bag_epic" }
+        { item: "kubejs:food_bag_epic" }
+        { item: "kubejs:farm_bag_epic" }
 	]
 	title: "Random Epic Lootbag"
 }

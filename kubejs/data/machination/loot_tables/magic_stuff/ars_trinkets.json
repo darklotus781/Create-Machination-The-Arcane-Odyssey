@@ -1,0 +1,145 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_elemental:advanced_prism",
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_elemental:spell_mirror",
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_elemental:caster_bag",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_elemental:curio_bag",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:dull_trinket",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:ring_of_potential",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:mundane_belt",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:magelight_torch",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:arcane_platform",
+                    "weight": 8
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:alchemists_crown",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:splash_flask_cannon",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:enchanters_mirror",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:shapers_focus",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:amulet_of_mana_boost",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:amulet_of_mana_regen",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:starbuncle_shades",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:belt_of_levitation",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:jar_of_light",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:ring_of_lesser_discount",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:ring_of_greater_discount",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:belt_of_unstable_gifts",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:warp_scroll",
+                    "weight": 8
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:runic_chalk",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:enchanters_eye",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:jump_ring",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ars_nouveau:starby_gift",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{an_present_data:{name:\"DarkLotus\",uuid:[I;-1243531549,1104364306,-1628396842,-1363810914]}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

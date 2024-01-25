@@ -1,7 +1,7 @@
-global.pouch_name = ['Arcane Bag', 'Andesite Bag', 'Brass Bag', 'Radiant Bag', 'Dynamic Bag', 'Food Bag', 'Farm Bag']     // Bag name
-global.pouch_color = ['purple', 'brown', 'yellow', 'white', 'black', 'light_blue', 'lime']                                // Bag color
+global.pouch_name = ['Arcane Bag', 'Andesite Bag', 'Brass Bag', 'Radiant Bag', 'Food Bag', 'Farm Bag']     // Bag name
+global.pouch_color = ['purple', 'brown', 'yellow', 'white', 'light_blue', 'lime']                                // Bag color
 global.rarity = ['common', 'rare', 'epic']                                                                                // All rarity for bags
-global.bag_name = ['arcane', 'andesite', 'brass', 'radiant', 'dynamic', 'food', 'farm']                                   // bag type
+global.bag_name = ['arcane', 'andesite', 'brass', 'radiant', 'food', 'farm']                                   // bag type
 
 //Color for description in bags
 global.rarity_color = {

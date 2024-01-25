@@ -3,12 +3,12 @@
 	loot_size: 1
 	order_index: 11
 	rewards: [
-		{ item: "kubejs:arcane_bag_rare" }
+        { item: "kubejs:arcane_bag_rare" }
 		{ item: "kubejs:andesite_bag_rare" }
 		{ item: "kubejs:brass_bag_rare" }
 		{ item: "kubejs:radiant_bag_rare" }
-		{ item: "kubejs:integrational_bag_rare" }
 		{ item: "kubejs:food_bag_rare" }
+		{ item: "kubejs:farm_bag_rare" }
 	]
 	title: "Random Rare Lootbag"
 }

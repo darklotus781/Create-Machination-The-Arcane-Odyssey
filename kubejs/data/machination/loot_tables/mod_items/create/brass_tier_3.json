@@ -1,0 +1,90 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "create:brass_tunnel",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:content_observer",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_arm",
+                    "weight": 8
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:mechanical_crafter",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:rotation_speed_controller",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:sequenced_gearshift",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:stockpile_switch",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createaddition:electric_motor",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:brass_funnel",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

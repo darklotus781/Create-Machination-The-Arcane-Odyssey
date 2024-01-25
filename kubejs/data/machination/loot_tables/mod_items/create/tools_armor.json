@@ -1,0 +1,79 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "create:potato_cannon",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:linked_controller",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:extendo_grip",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:wand_of_symmetry",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:schematicannon",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:schematic_table",
+                    "weight": 8
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:copper_diving_helmet",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:super_glue",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:schematic_and_quill",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:copper_diving_boots",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:brown_toolbox",
+                    "weight": 8
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:wrench",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:copper_backtank",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:goggles",
+                    "weight": 7
+                }
+            ]
+        }
+    ]
+}

@@ -5,13 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "ars_creo:starbuncle_wheel",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:random_chance",
-                            "chance": 0.02
-                        }
-                    ]
+                    "name": "ars_creo:starbuncle_wheel"
                 }
             ]
         }

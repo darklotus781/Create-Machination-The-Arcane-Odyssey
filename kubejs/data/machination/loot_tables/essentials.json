@@ -1,0 +1,136 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:bucket",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:hopper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "sophisticatedstorage:iron_barrel",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{woodType:\"spruce\"}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "sophisticatedstorage:diamond_barrel",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{woodType:\"spruce\"}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "sophisticatedstorage:basic_tier_upgrade",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "sophisticatedstorage:basic_to_diamond_tier_upgrade",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "sophisticatedstorage:packing_tape",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "sophisticatedstorage:storage_tool",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "sophisticatedstorage:stack_upgrade_tier_1",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "sophisticatedstorage:hopper_upgrade",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:redstone_block",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 16
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:heart_of_the_sea",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}
