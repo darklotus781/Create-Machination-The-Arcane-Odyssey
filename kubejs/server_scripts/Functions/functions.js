@@ -24,19 +24,6 @@ function trading(event) {
             ],
             energy: 1000
         });
-        // event.custom({
-        //     type: "thermal:press",
-        //     ingredients: [
-        //         ingredient,
-        //         {
-        //             item: card_id
-        //         }
-        //     ],
-        //     result: [
-        //         output
-        //     ],
-        //     energy: 1000
-        // })
     }
 
     global.trades.forEach(element => {

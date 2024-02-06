@@ -97,9 +97,6 @@
   "mekanism:tooltip_renderer": null,
   "mekanism:remove_builtin": null,
   "immersiveengineering:multiblock_icon": null,
-  "supplementaries:present": null,
-  "supplementaries:safe": null,
-  "supplementaries:hat_stand": null,
   "corpse:corpse": null,
   "lootr:info": null,
   "lootr:inventory": null,
@@ -189,5 +186,8 @@
   "reliquary:mortar": null,
   "reliquary:altar": null,
   "reliquary:cauldron": null,
-  "reliquary:pedestal": null
+  "reliquary:pedestal": null,
+  "supplementaries:present": null,
+  "supplementaries:safe": null,
+  "supplementaries:hat_stand": null
 }

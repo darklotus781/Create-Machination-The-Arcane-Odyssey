@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:blaze_powder'), Item.of('minecraft:magma_cream'), Item.of('minecraft:blaze_powder')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:flame_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/fire_damage_plate');
@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:soul_sand'), Item.of('minecraft:honey_bottle'), Item.of('minecraft:soul_sand')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:slowness_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/slowness_plate');
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:prismarine_shard'), Item.of('minecraft:prismarine_crystals'), Item.of('minecraft:prismarine_shard')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:fatigue_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/fatigue_plate');
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:ink_sac'), Item.of('minecraft:phantom_membrane'), Item.of('minecraft:ink_sac')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:darkness_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/darkness_plate');
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:rotten_flesh'), Item.of('minecraft:nether_wart'), Item.of('minecraft:rotten_flesh')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:hunger_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/hunger_plate');
@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:brown_mushroom'), Item.of('minecraft:fermented_spider_eye'), Item.of('minecraft:brown_mushroom')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:weakness_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/weakness_plate');
@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:poisonous_potato'), Item.of('minecraft:spider_eye'), Item.of('minecraft:pufferfish')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:poison_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/poison_plate');
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:glowstone_dust'), Item.of('minecraft:glow_ink_sac'), Item.of('minecraft:glowstone_dust')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:alert_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/alert_plate');
@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:feather'), Item.of('minecraft:popped_chorus_fruit'), Item.of('minecraft:feather')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:levitation_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/levitation_plate');
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:phantom_membrane'), Ingredient.of('#forge:ingots/gold'), Item.of('minecraft:phantom_membrane')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:misfortune_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/misfortune_plate');
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:feather'), Item.of('minecraft:phantom_membrane'), Item.of('minecraft:feather')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:slowfall_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/slowfall_plate');
@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:nether_wart'), Item.of('minecraft:totem_of_undying'), Item.of('minecraft:nether_wart')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:omen_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/ominous_plate');
@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:snowball'), Item.of('minecraft:powder_snow_bucket'), Item.of('minecraft:snowball')],
-        [Item.of('darkutils:damage_plate')],
+        Item.of('darkutils:damage_plate'),
         Item.of('darkutils:frost_plate', 2),
         1000
     ).id('kubejs:ars_enchantment/frost_plate');
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(
         [Item.of('minecraft:shroomlight'), Item.of('minecraft:iron_sword'), Item.of('minecraft:shroomlight')],
-        [Item.of('darkutils:poison_plate')],
+        Item.of('darkutils:poison_plate'),
         Item.of('darkutils:damage_plate_maim', 2),
         1000
     ).id('kubejs:ars_enchantment/damage_plate_maim');
@@ -250,7 +250,7 @@ ServerEvents.recipes(event => {
             Item.of('minecraft:crying_obsidian'),
             Item.of('minecraft:string')
         ],
-        [Item.of('ars_nouveau:dull_trinket')],
+        Item.of('ars_nouveau:dull_trinket'),
         Item.of('darkutils:charm_portal'),
         5000
     ).id('kubejs:ars_enchantment/charm_portal');
@@ -268,7 +268,7 @@ ServerEvents.recipes(event => {
             Item.of('minecraft:black_bed'),
             Item.of('createaddition:gold_wire')
         ],
-        [Item.of('ars_nouveau:dull_trinket')],
+        Item.of('ars_nouveau:dull_trinket'),
         Item.of('darkutils:charm_sleep'),
         5000
     ).id('kubejs:ars_enchantment/charm_sleep');

@@ -1,7 +1,7 @@
 {
 	id: "0AE21B1C0A035446"
 	loot_size: 1
-	order_index: 16
+	order_index: 14
 	rewards: [
 		{ item: "ars_nouveau:glyph_projectile" }
 		{ item: "ars_nouveau:glyph_self" }
@@ -14,7 +14,7 @@
 		{ item: "ars_nouveau:glyph_break" }
 		{ item: "ars_nouveau:glyph_phantom_block" }
 		{ item: "ars_nouveau:glyph_light" }
-		{ item: "ars_nouveau:glyph_conjure_terrain" }
+		{ icon: "ars_elemental:glyph_conjure_terrain", item: "ars_elemental:glyph_conjure_terrain" }
 		{ item: "ars_nouveau:glyph_craft" }
 		{ item: "ars_nouveau:glyph_cut" }
 		{ item: "ars_nouveau:glyph_delay" }

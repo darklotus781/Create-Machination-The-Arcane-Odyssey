@@ -186,9 +186,8 @@
 			id: "099F5D860FC50376"
 			rewards: [
 				{
-					exclude_from_claim_all: true
 					id: "6CAC762259344BA6"
-					table_id: 8518389553027792099L
+					table_id: 5860814424445915091L
 					type: "random"
 				}
 				{
@@ -550,9 +549,8 @@
 			id: "437114B9BC07B2BD"
 			rewards: [
 				{
-					exclude_from_claim_all: true
 					id: "67CA3ED2EC5C569A"
-					table_id: 8518389553027792099L
+					table_id: 5860814424445915091L
 					type: "random"
 				}
 				{

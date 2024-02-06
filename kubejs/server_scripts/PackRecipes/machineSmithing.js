@@ -1,12 +1,12 @@
 ServerEvents.recipes(event => {
-    let wrencharray = []
+    // let wrencharray = []
     let machine_smithing = (recipes, machine, smithing_material, remove_old) => {
         recipes.forEach(entry => {
             if (remove_old) {
                 event.remove({output: entry[1]})
             }
 
-            event.smithing(entry[1], smithing_material, machine, entry[0])
+            event.smithing(entry[1], smithing_material, entry[0], machine)
             if (remove_old) {
                 event.recipes.create.compacting([machine, Item.of(entry[0]).withChance(0.4)], [entry[1], 'kubejs:radiant_mechanism'])
             }
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
             if (entry[1].toString().startsWith('x ', 1)) {
                 entry[1] = entry[1].slice(3)
             }
-            wrencharray.push(Item.of(entry[1]))
+            // wrencharray.push(Item.of(entry[1]))
 
         })
     }

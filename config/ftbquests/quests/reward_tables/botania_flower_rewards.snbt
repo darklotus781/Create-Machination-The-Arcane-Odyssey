@@ -1,7 +1,7 @@
 {
 	id: "0B3331A1CAC6D9D5"
 	loot_size: 1
-	order_index: 13
+	order_index: 12
 	rewards: [
 		{ count: 5, item: "botania:red_mystical_flower" }
 		{ count: 5, item: "botania:orange_mystical_flower" }

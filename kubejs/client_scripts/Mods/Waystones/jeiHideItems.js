@@ -7,4 +7,5 @@ JEIEvents.hideItems(event => {
     event.hide('waystones:bound_scroll');
     event.hide('waystones:portstone');
     event.hide('waystones:warp_dust');
+    event.hide('waystones:warp_plate');
 });

@@ -2,10 +2,8 @@
 	icon: "lootr:lootr_chest"
 	id: "218E1F7762D35468"
 	loot_size: 1
-	order_index: 23
+	order_index: 19
 	rewards: [
-		{ item: "functionalstorage:storage_controller", weight: 3.0f }
-		{ item: "waystones:waystone", weight: 3.0f }
 		{ item: "functionalstorage:netherite_upgrade", weight: 10.0f }
 		{
 			item: {
@@ -18,8 +16,6 @@
 			}
 			weight: 5.0f
 		}
-		{ item: "mekanism:advanced_tier_installer", weight: 5.0f }
-		{ item: "botania:dice", weight: 5.0f }
 		{
 			item: {
 				Count: 1b

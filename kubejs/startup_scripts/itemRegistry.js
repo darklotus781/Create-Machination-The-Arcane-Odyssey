@@ -32,7 +32,8 @@ StartupEvents.registry('item', event => {
             .color(1, c2)
             .parentModel("kubejs:item/spawn_egg")
             .texture("kubejs:item/spawn_egg_0")
-            .displayName(name).tooltip("Doesn't work on Spawners!");
+            .displayName(name)
+            .tooltip("Doesn't work on Spawners!");
     }
 
     let tool = (name, rarity) => {
@@ -214,18 +215,20 @@ StartupEvents.registry('item', event => {
     event.create('ae2:engineering_processor_press').displayName('Engineering Processor Press');
 
     // Smithing
-    event.create('machine_smithing_template').texture('kubejs:item/machine_smithing_template').displayName('Machine Smithing Template');
+    event.create('machine_smithing_template', 'smithing_template')
+        .displayName('Machine Smithing Template')
+        .appliesTo("Catalyzing Items")
+        .ingredients("Machines")
+        .appliesToSlotDescription("Insert one (1) Catalyzing Item")
+        .ingredientsSlotDescription("Insert one (1) Machine")
+        .swordIcon()
+        .addIngredientsSlotIcon('item/andesite_machine')
+        .texture('kubejs:item/machine_smithing_template')
 
     // Spawn Eggs - custom spawn eggs don't affect spawners ;)
-    spawn_egg('Cow Spawn Egg', 0x443626, 0xA1A1A1);
-    spawn_egg('Pig Spawn Egg', 0xF0A5A2, 0xDB635F);
-    spawn_egg('Sheep Spawn Egg', 0xE7E7E7, 0xFFB5B5);
-    spawn_egg('Chicken Spawn Egg', 0xA1A1A1, 0xFF0000);
-    spawn_egg('Villager Spawn Egg', 0x563C33, 0xBD8B72);
-    spawn_egg('Wolf Spawn Egg', 0xD7D3D3, 0xCEAF96);
-    spawn_egg('Cat Spawn Egg', 0xEFC88E, 0x957256);
-    spawn_egg('Rabbit Spawn Egg', 0x995F40, 0x734831);
-
+    global.spawnableMobs.forEach(egg => {
+        spawn_egg(egg.name, egg.color_1, egg.color_2)
+    });
 });
 
 ItemEvents.modification(event => {

@@ -1,9 +1,9 @@
 {
 	id: "5155CBAAC7958FD3"
 	loot_size: 1
-	order_index: 11
+	order_index: 10
 	rewards: [
-        { item: "kubejs:arcane_bag_rare" }
+		{ item: "kubejs:arcane_bag_rare" }
 		{ item: "kubejs:andesite_bag_rare" }
 		{ item: "kubejs:brass_bag_rare" }
 		{ item: "kubejs:radiant_bag_rare" }

@@ -1,25 +1,17 @@
 BlockEvents.rightClicked(event => {
-    const { player, hand, item, block } = event;
-    const { x, y, z } = block.getPos();
-
-    let egg = item.id;
-    let mobMap = {
-        "kubejs:cow_spawn_egg": "minecraft:cow",
-        "kubejs:chicken_spawn_egg": "minecraft:chicken",
-        "kubejs:cat_spawn_egg": "minecraft:cat",
-        "kubejs:wolf_spawn_egg": "minecraft:wolf",
-        "kubejs:sheep_spawn_egg": "minecraft:sheep",
-        "kubejs:pig_spawn_egg": "minecraft:pig",
-        "kubejs:villager_spawn_egg": "minecraft:villager",
-        "kubejs:rabbit_spawn_egg": "minecraft:rabbit"
-    };
+    const {player, hand, item, block} = event;
+    const {x, y, z} = block.getPos();
+    let k = id => `kubejs:${id}`;
 
     if (hand != 'MAIN_HAND') return;
 
-    if (mobMap.hasOwnProperty(egg)) {
+    // Check if the item is a custom spawn egg
+    let egg = global.spawnableMobs.find(egg => k(egg.name.toLowerCase().replace("'", "").split(' ').join('_')) === item.id);
+
+    if (typeof (egg) !== 'undefined') {
         if (!player.isCreative()) {
             item.count--;
         }
-        player.server.runCommand(`/summon ${mobMap[egg]} ${x} ${y+1} ${z}`);
+        player.server.runCommand(`/summon ${egg.mc_id} ${x} ${y + 1} ${z}`);
     }
 });

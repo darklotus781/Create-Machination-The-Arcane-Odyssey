@@ -1,7 +1,7 @@
 {
 	id: "100A70F71B08F856"
 	loot_size: 1
-	order_index: 29
+	order_index: 23
 	rewards: [
 		{ item: "botania:elementium_ingot", random_bonus: 2 }
 		{ item: "botania:pixie_dust", random_bonus: 1 }

@@ -1,7 +1,7 @@
 {
 	id: "60A74F9165298513"
 	loot_size: 1
-	order_index: 28
+	order_index: 22
 	rewards: [
 		{ item: "botania:manasteel_ingot", random_bonus: 3, weight: 25.0f }
 		{ item: "botania:manasteel_block", weight: 10.0f }

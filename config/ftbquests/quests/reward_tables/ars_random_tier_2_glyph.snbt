@@ -1,7 +1,7 @@
 {
 	id: "7E1B92F2F6E2EDCB"
 	loot_size: 1
-	order_index: 17
+	order_index: 15
 	rewards: [
 		{ item: "ars_nouveau:glyph_aoe" }
 		{ item: "ars_nouveau:glyph_accelerate" }

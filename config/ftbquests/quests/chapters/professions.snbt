@@ -292,8 +292,8 @@
 		}
 		{
 			description: [
-				"&6The Bulletin Board&r provides means to earn currency for Trading."
-				"Here you can complete various errands or buy a profession permit for use in the Trading Machine."
+				"&6The Bounty Board&r provides means to earn currency for Trading."
+				"Here you can complete various tasks or buy a profession permit for use in the Trading Machine."
 			]
 			icon: "minecraft:oak_sign"
 			id: "36E02479368EAF04"
@@ -303,7 +303,7 @@
 				id: "3FE411FC2A966816"
 				type: "checkmark"
 			}]
-			title: "The Bulletin Board"
+			title: "Task Bounties"
 			x: -3.5d
 			y: -6.5d
 		}

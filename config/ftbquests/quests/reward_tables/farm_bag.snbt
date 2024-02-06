@@ -1,0 +1,11 @@
+{
+	id: "3170C845C698B797"
+	loot_size: 1
+	order_index: 25
+	rewards: [
+		{ item: "kubejs:farm_bag_common" }
+		{ item: "kubejs:farm_bag_rare" }
+		{ item: "kubejs:farm_bag_epic" }
+	]
+	title: "Farm Bag"
+}

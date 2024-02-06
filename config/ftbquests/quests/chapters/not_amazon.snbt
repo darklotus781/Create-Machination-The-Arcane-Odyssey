@@ -72,6 +72,7 @@
 				}
 			}
 			id: "43FC566E833BE834"
+			optional: true
 			rewards: [{
 				id: "0F4C7BB4C0ECB4CC"
 				item: {
@@ -111,8 +112,8 @@
 					type: "item"
 				}
 			]
-			title: "Magnetic Energetic"
-			x: -5.0d
+			title: "Eternal Resonator"
+			x: -4.0d
 			y: -6.5d
 		}
 		{
@@ -575,71 +576,6 @@
 			y: 2.0d
 		}
 		{
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Calculation Mechanisms&r."]
-			icon: {
-				Count: 1b
-				id: "kubejs:flash_drive"
-				tag: {
-					Damage: 0
-					Enchantments: [{
-						id: "minecraft:unbreaking"
-						lvl: 10s
-					}]
-					display: {
-						Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
-					}
-				}
-			}
-			id: "00D6DD6AE8E3C014"
-			rewards: [{
-				id: "3EA7518063CBEA5B"
-				item: {
-					Count: 1b
-					id: "kubejs:flash_drive"
-					tag: {
-						Damage: 0
-						Enchantments: [{
-							id: "minecraft:unbreaking"
-							lvl: 10s
-						}]
-						HideFlags: 1
-						Unbreakable: 1
-						display: {
-							Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
-						}
-					}
-				}
-				team_reward: false
-				type: "item"
-			}]
-			subtitle: "7 Gold"
-			tasks: [
-				{
-					consume_items: true
-					id: "561DF7A17B804B1F"
-					item: {
-						Count: 1b
-						id: "kubejs:flash_drive"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 7L
-					icon: { Count: 11b, id: "thermal:gold_coin" }
-					id: "04FA9389D991556D"
-					item: "thermal:gold_coin"
-					type: "item"
-				}
-			]
-			title: "Windows Update"
-			x: -3.5d
-			y: -6.5d
-		}
-		{
 			description: ["True IT experts tend to avoid going outside much. Thankfully the necessary computer parts can now be delivered directly to their inventory!"]
 			icon: "appliedenergistics2:silicon_press"
 			id: "4BAC95CCC72369AD"
@@ -1008,13 +944,6 @@
 			id: "7D93DAB3E8ACF953"
 			rewards: [
 				{
-					count: 32
-					id: "1BA12452E9A090EC"
-					item: "biomesoplenty:flowering_oak_leaves"
-					team_reward: false
-					type: "item"
-				}
-				{
 					count: 64
 					id: "17FCE9D6C12A7822"
 					item: "minecraft:oak_leaves"
@@ -1043,10 +972,15 @@
 					type: "item"
 				}
 				{
-					count: 16
-					id: "1EC1E1486084AE66"
-					item: "minecraft:spruce_fence"
-					team_reward: false
+					count: 32
+					id: "6EBB368CF49583AA"
+					item: "minecraft:flowering_azalea"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "7194DFDD2D2F1918"
+					item: "minecraft:flowering_azalea_leaves"
 					type: "item"
 				}
 			]
@@ -1154,6 +1088,7 @@
 				team_reward: false
 				type: "item"
 			}]
+			subtitle: "16 Gold"
 			tasks: [
 				{
 					consume_items: true
@@ -1176,7 +1111,7 @@
 				}
 			]
 			title: "Eternal Diamond Saw"
-			x: -8.5d
+			x: -8.0d
 			y: -6.5d
 		}
 		{
@@ -1212,6 +1147,7 @@
 				team_reward: false
 				type: "item"
 			}]
+			subtitle: "16 Gold"
 			tasks: [
 				{
 					consume_items: true
@@ -1234,24 +1170,21 @@
 				}
 			]
 			title: "Eternal Screwdriver"
-			x: -7.0d
+			x: -6.0d
 			y: -6.5d
 		}
 		{
-			description: ["Spawn a cow at your current location, we suggest standing inside an animal pen."]
+			description: ["Use these spawn eggs to spawn a pair of cows."]
 			icon: "minecraft:cow_spawn_egg"
 			id: "12BBE5303D584F38"
 			rewards: [
 				{
-					auto: "disabled"
-					command: "/summon minecraft:cow ~ ~1 ~"
-					elevate_perms: true
-					exclude_from_claim_all: true
+					count: 2
 					icon: "minecraft:cow_spawn_egg"
-					id: "6250F4F54E47A9BA"
+					id: "5ACBBDC3D68D9AD3"
+					item: "kubejs:cow_spawn_egg"
 					team_reward: false
-					title: "Summon a Cow"
-					type: "command"
+					type: "item"
 				}
 				{
 					auto: "no_toast"
@@ -1316,15 +1249,12 @@
 			id: "0376A34F49207F3F"
 			rewards: [
 				{
-					auto: "disabled"
-					command: "/summon minecraft:camel ~ ~1 ~"
-					elevate_perms: true
-					exclude_from_claim_all: true
+					count: 2
 					icon: "minecraft:camel_spawn_egg"
 					id: "23640A060AF8725B"
+					item: "kubejs:camel_spawn_egg"
 					team_reward: false
-					title: "Summon a Camel"
-					type: "command"
+					type: "item"
 				}
 				{
 					auto: "no_toast"

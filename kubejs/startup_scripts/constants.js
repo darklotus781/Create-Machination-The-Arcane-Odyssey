@@ -19,6 +19,19 @@ global.colors = [
     'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black'
 ]
 
+global.spawnableMobs = [
+    {name: "Chicken Spawn Egg", mc_id: "minecraft:chicken", color_1: 0xA1A1A1, color_2: 0xFF0000},
+    {name: "Cow Spawn Egg", mc_id: "minecraft:cow", color_1: 0x443626, color_2: 0xA1A1A1},
+    {name: "Pig Spawn Egg", mc_id: "minecraft:pig", color_1: 0xF0A5A2, color_2: 0xDB635F},
+    {name: "Rabbit Spawn Egg", mc_id: "minecraft:rabbit", color_1: 0x995F40, color_2: 0x734831},
+    {name: "Sheep Spawn Egg", mc_id: "minecraft:sheep", color_1: 0xE7E7E7, color_2: 0xFFB5B5},
+    {name: "Cat Spawn Egg", mc_id: "minecraft:cat", color_1: 0xEFC88E, color_2: 0x957256},
+    {name: "Wolf Spawn Egg", mc_id: "minecraft:wolf", color_1: 0xD7D3D3, color_2: 0xCEAF96},
+    {name: "Villager Spawn Egg", mc_id: "minecraft:wolf", color_1: 0x563C33, color_2: 0xBD8B72},
+    {name: "Camel Spawn Egg", mc_id: "minecraft:camel", color_1: 0xFCC369, color_2: 0xCB9337}
+];
+
+// Tool and Other Item Colors.
 //Minecraft
 const copper = 0xc15a36
 const iron = 0xD8D8D8

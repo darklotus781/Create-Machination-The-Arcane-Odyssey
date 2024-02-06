@@ -39,6 +39,19 @@
 		{
 			dependencies: ["0E14CB64A65C09D9"]
 			id: "36A93756E822BF86"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3A3892E2A28D6646"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					id: "7F0ABDD4FB4F57A6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			shape: "pentagon"
 			tasks: [{
 				id: "7C022861A430DCB6"
@@ -66,12 +79,25 @@
 			dependencies: ["63F6DA49D2098096"]
 			description: ["Be sure you have a good pickaxe :)"]
 			id: "5C8C7C148250B74C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1AF7B992A9B533E4"
-				table_id: 1973416385812287726L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "768269835D9B3FB5"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					id: "29F71CD1F75C6FE7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40D0DC735CBD1BBC"
+					table_id: 7979468168910851615L
+					type: "random"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -115,14 +141,20 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "5E51413813738DC4"
-					table_id: 7440942548698719000L
+					id: "48C77E1F1A58EED2"
+					table_id: 7932134771370270439L
 					type: "random"
 				}
 				{
-					id: "41B72114D10523BE"
+					id: "2C3F53F16FAF2805"
 					type: "xp_levels"
-					xp_levels: 50
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "05BA68A48C1A9153"
+					table_id: 7979468168910851615L
+					type: "random"
 				}
 			]
 			shape: "hexagon"
@@ -182,15 +214,20 @@
 					xp_levels: 30
 				}
 				{
-					exclude_from_claim_all: true
 					id: "5742F1D8F0678022"
-					table_id: 7440942548698719000L
+					table_id: 7932134771370270439L
 					type: "random"
 				}
 				{
 					id: "1DABA8921A5F9BB9"
 					item: "aether:aether_portal_frame"
 					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "124BDE5C4B9816C3"
+					table_id: 7979468168910851615L
+					type: "random"
 				}
 			]
 			shape: "hexagon"
@@ -291,30 +328,15 @@
 					type: "random"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "61DE97414E205161"
-					table_id: 971780999319815631L
-					type: "random"
-				}
-				{
 					id: "4BF8AE5861192C75"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 				{
-					id: "16037DE95DBB0BB5"
-					item: {
-						Count: 1b
-						id: "minecraft:enchanted_book"
-						tag: {
-							StoredEnchantments: [{
-								id: "veinmining:vein_mining"
-								lvl: 2s
-							}]
-						}
-					}
-					random_bonus: 1
-					type: "item"
+					exclude_from_claim_all: true
+					id: "5E3375B575053BC2"
+					table_id: 7979468168910851615L
+					type: "random"
 				}
 			]
 			tasks: [
@@ -490,14 +512,15 @@
 					type: "random"
 				}
 				{
-					id: "236EA71BD9D7D24F"
-					table_id: 5860814424445915091L
-					type: "random"
-				}
-				{
 					id: "36C2CFF21577E628"
 					type: "xp_levels"
 					xp_levels: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D98742CAB5812D5"
+					table_id: 7979468168910851615L
+					type: "random"
 				}
 			]
 			tasks: [
@@ -573,15 +596,15 @@
 					type: "random"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "66D58FFA2C92F3AC"
-					table_id: 8697717826506614278L
-					type: "random"
-				}
-				{
 					id: "5AD1320710CC5A60"
 					type: "xp_levels"
 					xp_levels: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16F6E5512D25A326"
+					table_id: 7979468168910851615L
+					type: "random"
 				}
 			]
 			tasks: [
@@ -656,10 +679,9 @@
 					type: "random"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "76A71CA09A0140CF"
-					table_id: 5860814424445915091L
-					type: "random"
+					id: "1B392ADC3031990D"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 			shape: "pentagon"
@@ -692,10 +714,9 @@
 					type: "random"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "7F58CEC36C5C17E8"
-					table_id: 8697717826506614278L
-					type: "random"
+					id: "7533DC0CCB847BE8"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 			shape: "pentagon"
@@ -1176,10 +1197,9 @@
 					type: "random"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "2B193E049E712BE0"
-					table_id: 5860814424445915091L
-					type: "random"
+					id: "0CBCB828D376E31A"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 			shape: "pentagon"
@@ -1204,12 +1224,6 @@
 					exclude_from_claim_all: true
 					id: "1DC04A2C30F1B213"
 					table_id: 7932134771370270439L
-					type: "random"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "10DAE70100221F39"
-					table_id: 1205720880241428503L
 					type: "random"
 				}
 				{
@@ -1239,11 +1253,6 @@
 					type: "random"
 				}
 				{
-					id: "015294DB0734991F"
-					table_id: 1205720880241428503L
-					type: "random"
-				}
-				{
 					id: "3665968F76DAB324"
 					type: "xp"
 					xp: 100
@@ -1270,14 +1279,11 @@
 				type: "item"
 			}]
 			tasks: [{
-				icon: "aether:quicksoil"
-				id: "195C22C14634DB97"
-				observe_type: 0
+				consume_items: true
+				id: "351B2CCCC972F6B8"
+				item: "aether:quicksoil"
 				optional_task: true
-				timer: 0L
-				title: "Quick Soil"
-				to_observe: "aether:quicksoil"
-				type: "observation"
+				type: "item"
 			}]
 			x: 2.0d
 			y: -2.0d
@@ -1291,20 +1297,17 @@
 			hide_dependency_lines: true
 			id: "1706F339AD3849D9"
 			rewards: [{
-				count: 8
+				count: 10
 				id: "2F7CE1A9D9594862"
 				item: "aether:aerogel"
 				type: "item"
 			}]
 			tasks: [{
-				icon: "aether:aerogel"
-				id: "08A5DCC6EAE8CA28"
-				observe_type: 0
+				consume_items: true
+				id: "78DFEB597E41C93F"
+				item: "aether:aerogel"
 				optional_task: true
-				timer: 0L
-				title: "Aerogel"
-				to_observe: "aether:aerogel"
-				type: "observation"
+				type: "item"
 			}]
 			x: 4.0d
 			y: -2.0d
@@ -1318,12 +1321,6 @@
 					exclude_from_claim_all: true
 					id: "10CDC2531489AFBA"
 					table_id: 7932134771370270439L
-					type: "random"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "029BC62ADAE6721D"
-					table_id: 1205720880241428503L
 					type: "random"
 				}
 				{

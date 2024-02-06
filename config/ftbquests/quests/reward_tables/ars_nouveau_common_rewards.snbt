@@ -1,7 +1,7 @@
 {
 	id: "6B6FDA949CABFCC0"
 	loot_size: 1
-	order_index: 9
+	order_index: 8
 	rewards: [
 		{ count: 2, item: "ars_nouveau:source_gem", random_bonus: 2, weight: 50.0f }
 		{ count: 2, item: "ars_nouveau:abjuration_essence", random_bonus: 2, weight: 5.0f }

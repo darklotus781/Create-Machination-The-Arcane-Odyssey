@@ -40,6 +40,19 @@
 			description: ["When you complete this quest, your Obsidian Flint and Steel will be taken, but we'll return them later :)"]
 			hide: true
 			id: "504C21E69925C8A5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1AAA8B930A185412"
+					table_id: 971780999319815631L
+					type: "random"
+				}
+				{
+					id: "313A64A55F30BE48"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [
 				{
 					icon: "minecraft:piglin_head"
@@ -86,6 +99,19 @@
 			description: ["Completing this quest will not consume your skulls, don't worry!"]
 			hide: true
 			id: "6C92467011B61125"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "08ED2B9933DD80D2"
+					table_id: 1205720880241428503L
+					type: "random"
+				}
+				{
+					id: "2F60159D67BFECEB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [
 				{
 					icon: "minecraft:nether_brick_fence"
@@ -123,6 +149,19 @@
 			description: ["Completing this quest will not consume the soul sand, don't worry!"]
 			hide: true
 			id: "7DB2707BB8F3E7FE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6CF9A318CB2D2F62"
+					table_id: 1205720880241428503L
+					type: "random"
+				}
+				{
+					id: "29A5E91834B35F5C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [
 				{
 					biome: "minecraft:soul_sand_valley"
@@ -226,8 +265,8 @@
 				}
 				{
 					exclude_from_claim_all: true
-					id: "06BD7547AD279188"
-					table_id: 7979468168910851615L
+					id: "4A95094C4DED48E6"
+					table_id: 8697717826506614278L
 					type: "random"
 				}
 			]

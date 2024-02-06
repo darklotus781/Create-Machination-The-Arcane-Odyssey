@@ -20,13 +20,14 @@ ItemEvents.tooltip(tooltip => {
     });
 
     tooltip.addAdvanced('ars_nouveau:magebloom_crop', (item, advanced, text) => {
+        text.
         text.remove(1);
-        text.add(1,Text.darkPurple('Cannot be crafted, only found in campsite chests!'));
+        text.add(1,Text.darkPurple('Cannot be crafted, only found in loot bags and chests!'));
     });
 
     tooltip.addAdvanced('ars_nouveau:magebloom', (item, advanced, text) => {
         text.remove(1);
-        text.add(1, 'Grown from seeds found in Campsite Chests underground.');
+        text.add(1, 'Grown from seeds found in loot bags and chests.');
     });
 
     tooltip.add('create:refined_radiance', 'Toss Chromatic Compound on a Beacon');

@@ -1,16 +1,102 @@
 {
 	id: "6E149A8C5E0C9EE7"
 	loot_size: 2
-	order_index: 6
+	order_index: 5
 	rewards: [
 		{ count: 8, item: "minecraft:bone_meal", random_bonus: 16, weight: 10.0f }
 		{ count: 16, item: "aether:golden_dart", random_bonus: 16, weight: 5.0f }
 		{ count: 16, item: "aether:poison_dart", random_bonus: 16, weight: 5.0f }
 		{ count: 16, item: "aether:enchanted_dart", random_bonus: 16, weight: 5.0f }
-		{ item: "aether:present" }
+		{ item: "aether:present", random_bonus: 1 }
 		{ item: "aether:zanite_ore", random_bonus: 8, weight: 3.0f }
 		{ item: "aether:gravitite_ore", random_bonus: 4, weight: 2.0f }
 		{ item: "aether:ambrosium_ore", random_bonus: 16, weight: 4.0f }
+		{ item: "aether:white_moa_egg" }
+		{ item: "aether:blue_moa_egg" }
+		{ item: "aether:ambrosium_ore" }
+		{ item: "aether:golden_gummy_swet" }
+		{ item: "aether:blue_gummy_swet" }
+		{
+			item: {
+				Count: 1b
+				id: "aether:golden_parachute"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "aether:cold_parachute"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "aether:black_moa_egg" }
+		{ item: "aether:skyroot_bucket" }
+		{ item: "aether:skyroot_stick" }
+		{ item: "aether:ambrosium_shard" }
+		{ item: "aether:zanite_gemstone" }
+		{ item: "aether:candy_cane" }
+		{ item: "aether:gingerbread_man" }
+		{ item: "aether:white_apple" }
+		{ item: "aether:zanite_ore" }
+		{ item: "aether:gravitite_ore" }
+		{ item: "aether:enchanted_gravitite" }
+		{ item: "aether:zanite_block" }
+		{ item: "aether:ambrosium_block" }
+		{ item: "aether:ambrosium_torch" }
+		{ item: "aether:present" }
+		{ item: "aether:skyroot_log" }
+		{ item: "aether:holystone" }
+		{
+			item: {
+				Count: 1b
+				id: "aether:leather_gloves"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "aether:chainmail_gloves"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "aether:iron_gloves"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "aether:golden_gloves"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "aether:diamond_gloves"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "aether:white_cape" }
 	]
 	title: "Aether Rewards"
 }

@@ -8,7 +8,9 @@ ServerEvents.recipes(event => {
     event.remove({id: /alltheores\:.*_ore_hammer/});
 
     let metals = [
-        'aluminum', 'iridium', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc', 'steel', 'invar', 'electrum', 'bronze', 'enderium', 'lumium', 'signalum', 'constantan', 'brass', 'iron', 'gold', 'copper'
+        'aluminum', 'iridium', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin',
+        'uranium', 'zinc', 'steel', 'invar', 'electrum', 'bronze', 'enderium', 'lumium',
+        'signalum', 'constantan', 'brass', 'iron', 'gold', 'copper'
     ];
 
     let makePlate = (input, output, material) => {

@@ -1,7 +1,7 @@
 {
 	id: "0D7C75AB8FEE85CF"
 	loot_size: 1
-	order_index: 10
+	order_index: 9
 	rewards: [
 		{ item: "kubejs:arcane_bag_common" }
 		{ item: "kubejs:andesite_bag_common" }

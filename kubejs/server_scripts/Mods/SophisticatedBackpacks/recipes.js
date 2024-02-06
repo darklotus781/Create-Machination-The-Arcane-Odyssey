@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
         nbt.upgradeSlots += 3;
         return itemstack.withNBT(nbt);
     });
-    event.shapeless('sophisticatedbackpacks:netherite_backpack', ['sophisticatedbackpacks:iron_backpack', 'pneumaticcraft:printed_circuit_board']).modifyResult((inventory, itemstack) => {
+    event.shapeless('sophisticatedbackpacks:netherite_backpack', ['sophisticatedbackpacks:diamond_backpack', 'pneumaticcraft:printed_circuit_board']).modifyResult((inventory, itemstack) => {
         let backpack = inventory.find(Item.of('sophisticatedbackpacks:iron_backpack').weakNBT())
         if (backpack.nbt == null) return itemstack;
         let nbt = backpack.nbt;

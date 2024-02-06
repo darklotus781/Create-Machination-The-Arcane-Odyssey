@@ -2,7 +2,7 @@
 	icon: "ftbquests:lootcrate"
 	id: "10BB94C09D0FC817"
 	loot_size: 1
-	order_index: 21
+	order_index: 17
 	rewards: [
 		{ item: "reliquary:fertile_lily_pad" }
 		{ item: "minecraft:fox_spawn_egg", weight: 5.0f }
@@ -126,9 +126,8 @@
 			}
 			weight: 5.0f
 		}
-		{ item: "minecraft:cat_spawn_egg", weight: 3.0f }
-		{ item: "minecraft:wolf_spawn_egg", weight: 5.0f }
-		{ item: "minecraft:parrot_spawn_egg", weight: 3.0f }
+		{ item: "kubejs:cat_spawn_egg", weight: 3.0f }
+		{ item: "kubejs:wolf_spawn_egg", weight: 5.0f }
 		{ count: 3, item: "minecraft:melon_seeds", random_bonus: 3, weight: 10.0f }
 		{ count: 4, item: "minecraft:lapis_lazuli", random_bonus: 4, weight: 7.0f }
 		{ count: 2, item: "minecraft:cooked_beef", random_bonus: 2, weight: 10.0f }
