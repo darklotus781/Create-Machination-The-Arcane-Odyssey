@@ -6,6 +6,21 @@ BlockEvents.rightClicked(event => {
     }
 });
 
+global.ticks = 0;
+LevelEvents.tick(event => { // Every 1.5 seconds, if a wraith is on soulless sand in the overworld, convert it to soul sand
+    if (event.level.getDimension() != 'minecraft:overworld') {return}
+    global.ticks++
+    if (global.ticks == 30) {
+        global.ticks = 0
+        event.level.getEntities().filterSelector('@e[type=quark:wraith]').forEach(entity =>{
+            if (entity.block.id == 'forbidden_arcanus:soulless_sand'){
+                entity.block.set('minecraft:soul_sand')
+                event.server.runCommandSilent(`playsound minecraft:block.soul_sand.hit block @e[type=player] ${entity.block.x} ${entity.block.y} ${entity.block.z}`)
+            }
+        })
+    }
+});
+
 ServerEvents.blockLootTables(event => {
     event.addSimpleBlock('forbidden_arcanus:pixie_utrem_jar', 'forbidden_arcanus:pixie_utrem_jar');
     event.addSimpleBlock('forbidden_arcanus:corrupted_pixie_utrem_jar', 'forbidden_arcanus:corrupted_pixie_utrem_jar');
@@ -30,7 +45,7 @@ ServerEvents.recipes(event => {
     event.smelting('forbidden_arcanus:arcane_crystal_dust', '#forbidden_arcanus:arcane_crystal_ores')
 
     event.recipes.create.haunting(Item.of('forbidden_arcanus:dark_nether_star'), Item.of('minecraft:nether_star')).id('forbidden_arcanus:dark_nether_star');
-    event.recipes.create.mixing(Item.of('forbidden_arcanus:mundabitur_dust'), [Item.of('forbidden_arcanus:arcane_crystal_dust'), Item.of('ae2:sky_dust')]);
+    event.recipes.create.mixing(Item.of('forbidden_arcanus:mundabitur_dust'), [Item.of('forbidden_arcanus:arcane_crystal_dust'), Item.of('quark:soul_bead')]);
     event.recipes.create.mixing(Ingredient.of('#forge:ingots/deorum'), [Ingredient.of('#forge:nuggets/gold', 9), Item.of('forbidden_arcanus:mundabitur_dust')]);
     event.recipes.create.haunting(Item.of('forbidden_arcanus:soulless_sand'), Ingredient.of('#forge:sand')).id('kubejs:haunting_soulless_sand');
     event.recipes.create.emptying([Fluid.of('kubejs:aureal_essence').withAmount(723), Item.of('forbidden_arcanus:utrem_jar')], Item.of('forbidden_arcanus:pixie_utrem_jar'))

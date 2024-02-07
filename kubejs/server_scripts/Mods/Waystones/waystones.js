@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     
     // event.remove({output: /waystones\:.*/})
     event.remove({output: /waystones\:.*waystone/});
-    event.remove({output: 'waystones:warp_plate'});
+    event.remove({output: 'waystones:warp_plate'}); // Warp Plates are OP and can transfer mobs and items
     event.remove({output: 'waystones:portstone'});
     event.remove({output: 'waystones:warp_stone'});
     event.remove({output: 'waystones:warp_dust'});
@@ -64,9 +64,6 @@ ServerEvents.recipes(event => {
     event.stonecutting('waystones:waystone', [Ingredient.of('#waystones:waystones')]);
     event.stonecutting('waystones:sandy_waystone', [Ingredient.of('#waystones:waystones')]);
     event.stonecutting('waystones:mossy_waystone', [Ingredient.of('#waystones:waystones')]);
-    // event.stonecutting('waystones:warp_plate', [Ingredient.of('#waystones:waystones')]);
-
-    // event.recipes.create.crushing([Item.of('minecraft:flint').withChance(0.75), Item.of('kubejs:warp_fragments').withChance(0.30), Item.of('waystones:warp_dust').withChance(0.15), Item.of('waystones:warp_dust').withChance(0.05)], [Item.of('waystones:attuned_shard').weakNBT()]).processingTime(200);
 });
 
 

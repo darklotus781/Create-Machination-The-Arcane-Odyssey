@@ -36,7 +36,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "name": "machination:chests/combined/tier1",
-                    "weight": 30
+                    "weight": 35
                 },
                 {
                     "type": "minecraft:loot_table",

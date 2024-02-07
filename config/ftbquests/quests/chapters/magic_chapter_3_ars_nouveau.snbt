@@ -64,6 +64,7 @@
 		}
 		{
 			dependencies: ["1D86B2E553503E53"]
+			description: ["Augment an Awakening Ritual with a Book and Quill to produce a Bookwyrm Charm."]
 			id: "23B86F6AAA934D5A"
 			optional: true
 			rewards: [
@@ -1557,6 +1558,7 @@
 			rewards: [
 				{
 					id: "26AA78496AAD568F"
+					table_id: 784219092356912198L
 					title: "Random Tier 1 Glyph"
 					type: "random"
 				}
@@ -1660,7 +1662,7 @@
 		{
 			dependencies: ["33682F4B44950123"]
 			description: [
-				"To create one of the main crafting items in Ars, the &9Source Gem&r, we'll need to make an &6Imbuement Chamber&r."
+				"To create some of the main crafting items in Ars, the &9Essences&r, we'll need to make an &6Imbuement Chamber&r."
 				""
 				"The Imbuement Chamber requires Source to imbue items. It produces a small amount of Source by itself, but can also use Source Jars as a power source."
 				""
@@ -1684,7 +1686,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Creating Source Gems"
+			subtitle: "Creating Essences"
 			tasks: [{
 				id: "78B5B8F9CE9EC702"
 				item: "ars_nouveau:imbuement_chamber"
@@ -1835,9 +1837,11 @@
 		{
 			dependencies: ["3D862A3D3F83CA26"]
 			description: [
-				"Using our Enchanting Apparatus structure, we'll want to craft our first seed, the &5Magebloom Seed&r."
+				"Unlike other packs, we can't craft the &5Magebloom Seed&r with the enchanting apparatus."
+				"Instead, go caving and find &5Magebloom Seeds&r in loot chests."
 				""
-				"This will be used to create us some magical clothing!"
+				"Growing Mage Bloom will allow for the creation of magebloom fiber."
+				"This will be used to create us some magical clothing and other items!"
 			]
 			id: "58EC47584C773B82"
 			rewards: [
@@ -2345,7 +2349,7 @@
 		}
 		{
 			dependencies: ["5766C8B9E850C186"]
-			description: ["To create Source Gems, we'll need to put either Lapis or Amethyst Shards into the Imbuement Chamber. Over time, these will convert to Source Gems!"]
+			description: ["To create Source Gems, you need to toss Runic Tablets through an Elven Portal!"]
 			id: "40BC67BDEE15D1DE"
 			rewards: [
 				{

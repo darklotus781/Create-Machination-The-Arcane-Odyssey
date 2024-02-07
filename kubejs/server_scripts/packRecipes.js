@@ -407,6 +407,8 @@ ServerEvents.recipes(event => {
     event.blasting(Item.of('minecraft:redstone'), Item.of('kubejs:redstone_cluster'));
     event.blasting(Item.of('ae2:fluix_crystal'), Item.of('kubejs:fluix_cluster'));
 
+    event.recipes.create.filling(Item.of('minecraft:ender_pearl'), [Item.of('quark:soul_bead'), Fluid.of('kubejs:dye_slurry_green').withAmount(100)])
+
     event.remove({type: 'thermal:press'});
     trading(event);
 });

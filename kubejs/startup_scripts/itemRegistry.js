@@ -180,13 +180,8 @@ StartupEvents.registry('item', event => {
     event.create('chromium').displayName('Chromium').tooltip('Cr');
     event.create('powdered_flint').displayName('Powdered Flint').tooltip('Mix with Refined Fuel to create gunpowder');
     event.create('empty_vial').displayName('Empty Vial');
-    // event.create('mage_leaf').displayName('Magically Blooming Leaves');
-    // event.create('mageberry_smoothie').displayName('Mageberry Smoothie').food(food => {
-    //     food.hunger(8).saturation(0.75).effect('ars_nouveau:mana_regen', 300, 2, 1).eaten(consumer => {
-    //         consumer.player.give(Item.of('minecraft:bowl', 1));
-    //     });
-    // });
-    // event.create('dirty_bowl').displayName('Bowl of Leaves');
+
+
     event.create('sourcegem_fragments').displayName('Source Crystal Fragments');
     event.create('menril_shrub').tooltip('With the weakening of the Arcane so have the Arcane Trees been weakened. Can you restore this artifact?');
     event.create('rejuvinated_menril_shrub').tooltip('Youve restored it, well to some part. To fully restore the Menril Sapling you must continue.');
