@@ -1,6 +1,6 @@
 {
     "name": "machination:support/factory_bottoms",
-    "fallback": "minecraft:empty",
+    "fallback": "machination:support/factory_bottoms",
     "elements": [
         {
             "weight": 1,

@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "machination:arcane_tower",
+            "weight": 5
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 23333257,
+        "spacing": 32,
+        "separation": 16
+    }
+}

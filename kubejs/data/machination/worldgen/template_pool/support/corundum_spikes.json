@@ -1,0 +1,87 @@
+{
+    "name": "machination:support/corundums",
+    "fallback": "machination:support/corundum_spikes",
+    "elements": [
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/corundums/black",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/corundums/blue",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/corundums/green",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/corundums/indigo",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/corundums/orange",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/corundums/red",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/corundums/violet",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/corundums/yellow",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 10,
+            "element": {
+                "location": "machination:supportdata/corundums/white",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        }
+    ]
+}
