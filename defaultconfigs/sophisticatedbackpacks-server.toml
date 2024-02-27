@@ -9,6 +9,8 @@
 	noInteractionBlocks = []
 	#List of blocks that are not allowed to connect to backpacks - e.g. "refinedstorage:external_storage"
 	noConnectionBlocks = []
+	#Maximum number of upgrades of type per backpack in format of "UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
+	maxUpgradesPerStorage = ["furnace_upgrades|1", "stack_upgrades|3", "jukebox_upgrade|1"]
 	#Turns on/off item fluid handler of backpack in its item form. There are some dupe bugs caused by default fluid handling implementation that manifest when backpack is drained / filled in its item form in another mod's tank and the only way to prevent them is disallowing drain/fill in item form altogether
 	itemFluidHandlerEnabled = true
 	#Determines whether player can right click on backpack that another player is wearing to open it. If off will turn off that capability for everyone and remove related settings from backpack.
@@ -22,48 +24,57 @@
 
 	#Leather Backpack Settings
 	[server.leatherBackpack]
-	#Number of inventory slots in the backpack
-	#Range: 1 ~ 144
-	inventorySlotCount = 9
-	#Number of upgrade slots in the backpack
-	#Range: 0 ~ 10
-	upgradeSlotCount = 1
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 9
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Copper Backpack Settings
+	[server.copperBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 27
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 0
 
 	#Iron Backpack Settings
 	[server.ironBackpack]
-	#Number of inventory slots in the backpack
-	#Range: 1 ~ 144
-	inventorySlotCount = 45
-	#Number of upgrade slots in the backpack
-	#Range: 0 ~ 10
-	upgradeSlotCount = 1
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 36
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
 
 	#Gold Backpack Settings
 	[server.goldBackpack]
-	#Number of inventory slots in the backpack
-	#Range: 1 ~ 144
-	inventorySlotCount = 27
-	#Number of upgrade slots in the backpack
-	#Range: 0 ~ 10
-	upgradeSlotCount = 0
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 54
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 2
 
 	#Diamond Backpack Settings
 	[server.diamondBackpack]
-	#Number of inventory slots in the backpack
-	#Range: 1 ~ 144
-	inventorySlotCount = 36
-	#Number of upgrade slots in the backpack
-	#Range: 0 ~ 10
-	upgradeSlotCount = 4
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 72
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 4
 
 	#Netherite Backpack Settings
 	[server.netheriteBackpack]
-	#Number of inventory slots in the backpack
-	#Range: 1 ~ 144
-	inventorySlotCount = 63
-	#Number of upgrade slots in the backpack
-	#Range: 0 ~ 10
-	upgradeSlotCount = 2
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 108
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 4
 
 	#Compacting Upgrade Settings
 	[server.compactingUpgrade]
@@ -72,7 +83,7 @@
 		filterSlots = 9
 		#Number of filter slots displayed in a row
 		#Range: 1 ~ 6
-		slotsInRow = 2
+		slotsInRow = 3
 
 	#Advanced Compacting Upgrade Settings
 	[server.advancedCompactingUpgrade]

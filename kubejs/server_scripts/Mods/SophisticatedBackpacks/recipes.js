@@ -74,36 +74,87 @@ ServerEvents.recipes(event => {
     event.smithing(Item.of('sophisticatedbackpacks:chipped/alchemy_bench_upgrade'), Item.of('kubejs:logistics_mechanism'), Item.of('sophisticatedbackpacks:upgrade_base'), Item.of('chipped:alchemy_bench'));
     event.smithing(Item.of('sophisticatedbackpacks:chipped/tinkering_table_upgrade'), Item.of('kubejs:logistics_mechanism'), Item.of('sophisticatedbackpacks:upgrade_base'), Item.of('chipped:tinkering_table'));
 
-    event.shapeless('sophisticatedbackpacks:gold_backpack', ['sophisticatedbackpacks:backpack', Ingredient.of('#forge:plates/brass')]).modifyResult((inventory, itemstack) => {
+    //Basic to Copper
+    event.shaped(Item.of('sophisticatedbackpacks:copper_backpack'), [
+        'SSS',
+        'SBS',
+        'SSS'
+    ], {
+        S: Ingredient.of('#forge:storage_blocks/copper'),
+        B: Item.of('sophisticatedbackpacks:backpack')
+    }).modifyResult((inventory, itemstack) => {
         let backpack = inventory.find(Item.of('sophisticatedbackpacks:backpack').weakNBT());
         if (backpack.nbt == null) return itemstack;
         let nbt = backpack.nbt;
         nbt.inventorySlots += 18;
         nbt.upgradeSlots -= 1;
         return itemstack.withNBT(nbt);
-    });
-    event.shapeless('sophisticatedbackpacks:iron_backpack', ['sophisticatedbackpacks:gold_backpack', 'kubejs:radiant_coil']).modifyResult((inventory, itemstack) => {
+    }).id('kubejs:basic_backpack_to_copper_upgrade');
+
+    //Copper to Iron
+    event.shaped(Item.of('sophisticatedbackpacks:iron_backpack'), [
+        'SSS',
+        'SBS',
+        'SSS'
+    ], {
+        S: Ingredient.of('#forge:storage_blocks/iron'),
+        B: Item.of('sophisticatedbackpacks:copper_backpack')
+    }).modifyResult((inventory, itemstack) => {
+        let backpack = inventory.find(Item.of('sophisticatedbackpacks:copper_backpack').weakNBT());
+        if (backpack.nbt == null) return itemstack;
+        let nbt = backpack.nbt;
+        nbt.inventorySlots += 9;
+        nbt.upgradeSlots += 1;
+        return itemstack.withNBT(nbt);
+    }).id('kubejs:copper_backpack_to_iron_upgrade');
+
+    //Iron to Gold
+    event.shaped(Item.of('sophisticatedbackpacks:gold_backpack'), [
+        'SSS',
+        'SBS',
+        'SSS'
+    ], {
+        S: Ingredient.of('#forge:storage_blocks/gold'),
+        B: Item.of('sophisticatedbackpacks:iron_backpack')
+    }).modifyResult((inventory, itemstack) => {
+        let backpack = inventory.find(Item.of('sophisticatedbackpacks:iron_backpack').weakNBT());
+        if (backpack.nbt == null) return itemstack;
+        let nbt = backpack.nbt;
+        nbt.inventorySlots += 18;
+        nbt.upgradeSlots += 1;
+        return itemstack.withNBT(nbt);
+    }).id('kubejs:iron_backpack_to_gold_upgrade');
+
+    // Gold to Diamond
+    event.shaped(Item.of('sophisticatedbackpacks:diamond_backpack'), [
+        'SSS',
+        'SBS',
+        'SSS'
+    ], {
+        S: Ingredient.of('#forge:storage_blocks/diamond'),
+        B: Item.of('sophisticatedbackpacks:gold_backpack')
+    }).modifyResult((inventory, itemstack) => {
         let backpack = inventory.find(Item.of('sophisticatedbackpacks:gold_backpack').weakNBT());
         if (backpack.nbt == null) return itemstack;
         let nbt = backpack.nbt;
         nbt.inventorySlots += 18;
-        nbt.upgradeSlots += 1;
+        nbt.upgradeSlots += 2;
         return itemstack.withNBT(nbt);
-    });
-    event.shapeless('sophisticatedbackpacks:diamond_backpack', ['sophisticatedbackpacks:iron_backpack', 'pneumaticcraft:module_expansion_card']).modifyResult((inventory, itemstack) => {
-        let backpack = inventory.find(Item.of('sophisticatedbackpacks:iron_backpack').weakNBT());
+    }).id('kubejs:gold_backpack_to_diamond_upgrade');
+
+    // Diamond to Netherite
+    event.shaped(Item.of('sophisticatedbackpacks:netherite_backpack'), [
+        'SSS',
+        'SBS',
+        'SSS'
+    ], {
+        S: Ingredient.of('#forge:storage_blocks/netherite'),
+        B: Item.of('sophisticatedbackpacks:diamond_backpack')
+    }).modifyResult((inventory, itemstack) => {
+        let backpack = inventory.find(Item.of('sophisticatedbackpacks:diamond_backpack').weakNBT());
         if (backpack.nbt == null) return itemstack;
         let nbt = backpack.nbt;
-        nbt.inventorySlots -= 9;
-        nbt.upgradeSlots += 3;
+        nbt.inventorySlots += 36;
         return itemstack.withNBT(nbt);
-    });
-    event.shapeless('sophisticatedbackpacks:netherite_backpack', ['sophisticatedbackpacks:diamond_backpack', 'pneumaticcraft:printed_circuit_board']).modifyResult((inventory, itemstack) => {
-        let backpack = inventory.find(Item.of('sophisticatedbackpacks:iron_backpack').weakNBT())
-        if (backpack.nbt == null) return itemstack;
-        let nbt = backpack.nbt;
-        nbt.inventorySlots += 18;
-        nbt.upgradeSlots += 1;
-        return itemstack.withNBT(nbt);
-    });
+    }).id('kubejs:diamond_backpack_to_netherite_upgrade');
 });

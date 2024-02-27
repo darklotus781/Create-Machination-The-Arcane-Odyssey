@@ -29,7 +29,7 @@
 
 	[items.mundabitur_dust]
 		#Should right-clicking a Creeper with Mundabitur Dust charge the Creeper [default: true]
-		charge_creeper = true
+		charge_creeper = false
 
 	[items.xpetrified_orb]
 		#Experience Points the Orb grants on use [default: 91]
@@ -50,7 +50,7 @@
 		block_damage = true
 		#Radius of Stella Arcanum explosions (if explosions enabled) [default: 3]
 		#Range: 1 ~ 10
-		explosion_radius = 3
+		explosion_radius = 5
 
 	[blocks.edelwood_ladder]
 		#The speed multiplier that gets added to the players y movement when on the ladder [default: 2.0
@@ -79,16 +79,16 @@
 		aureal_entity_death_increasement_amount = 3
 		#Chance that killing a normal Entity increases your Corruption [default: 0.35]
 		#Range: 0.0 ~ 1.0
-		entity_death_increasement_chance = 0.35
+		entity_death_increasement_chance = 0.15
 		#Chance that killing an Aureal Entity increases your Corruption [default: 0.42]
 		#Range: 0.0 ~ 1.0
-		aureal_entity_death_increasement_chance = 0.42
+		aureal_entity_death_increasement_chance = 0.37
 		#Should the players Corruption value decrease after a certain amount of time [default: true]
 		natural_decreasement = true
 		#Time before the players Corruption value is reduced by one (in ticks) [default: 6000]
 		#Range: > 0
-		natural_decreasement_time = 6000
+		natural_decreasement_time = 3000
 		#Chance that breeding animals decreases your Corruption [default: 0.45]
 		#Range: 0.0 ~ 1.0
-		breeding_decreasement_chance = 0.45
+		breeding_decreasement_chance = 0.5
 

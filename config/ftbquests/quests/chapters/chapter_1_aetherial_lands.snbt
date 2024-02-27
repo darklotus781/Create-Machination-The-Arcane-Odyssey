@@ -1,5 +1,5 @@
 {
-	autofocus_id: "6B755A3E6E1AA414"
+	autofocus_id: "3E2CBE99C79FE9DE"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "chapter_1_aetherial_lands"
@@ -38,18 +38,52 @@
 	quests: [
 		{
 			dependencies: ["0E14CB64A65C09D9"]
+			description: ["Go find the Bronze, Silver and Gold Dungeons to finish your quest."]
 			id: "36A93756E822BF86"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3A3892E2A28D6646"
-					table_id: 7932134771370270439L
-					type: "random"
-				}
 				{
 					id: "7F0ABDD4FB4F57A6"
 					type: "xp_levels"
 					xp_levels: 5
+				}
+				{
+					count: 8
+					id: "35ED194322266B0B"
+					item: "aether:healing_stone"
+					type: "item"
+				}
+				{
+					id: "3205A334DFF1E0B8"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_regeneration"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F1FBC26813BBB95"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_swiftness"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12E11D9B7EF52D37"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					type: "item"
 				}
 			]
 			shape: "pentagon"
@@ -63,6 +97,13 @@
 		}
 		{
 			dependencies: ["36A93756E822BF86"]
+			description: [
+				"{image:kubejs:textures/gui/bronze_dungeon.png width:100 height:100 align:1 fit:true}"
+				""
+				"The Bronze Dungeon is one of the three types of dungeons found in the Aether, and is considered the easiest one to conquer. The walls and floor of the dungeon cannot be broken until the dungeon is beaten, as with all other dungeons."
+				""
+				"It can be found on the sides of Aether land masses. It is also possible for a Bronze Dungeon to have an entrance from its ceiling. Sometimes, the ceiling can be exposed to land, making it easier to find."
+			]
 			hide: true
 			id: "63F6DA49D2098096"
 			shape: "diamond"
@@ -73,11 +114,21 @@
 				type: "structure"
 			}]
 			x: 6.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["63F6DA49D2098096"]
-			description: ["Be sure you have a good pickaxe :)"]
+			description: [
+				"{image:kubejs:textures/gui/bronze_dungeon_slider.png width:100 height:100 align:1 fit:true}"
+				""
+				"The boss of the dungeon will first appear as a large, strange stone block in the middle of a dark room. To activate it, you must hit it with a pickaxe, shovel, or axe. The boss, also known as The Slider, can be killed by using a pickaxe, shovel, or axe. Zanite and Gravitite tools work the best. No matter what pickaxe you use, though, The Slider will take roughly 125 hits to kill. As well hitting it while it is already red from damage is wasteful as it does no damage but still damages whatever tool you are using."
+				""
+				"In its first phase, this hulking terror appears with one, large, blue eye on each of the four sides of its body. The Slider will attempt to crush you into walls, into the floor, or even into the ceiling. Its bumps are powerful, and often times you will find yourself running from corner to corner of the room trying to get away from it. A great tactic is to simply circle the enemy while hitting it with your weapon. With good timing, you will not receive any damage at all. After many, many hits, the boss will go into its second phase."
+				""
+				"In The Slider 's second phase, the blue eyes turn red, and its movements increase in speed. It attacks in its usual way, though, so simply keep circling like you were before."
+				""
+				"The Slider does 3 hearts of damage whenever it hits you, as well as bouncing you in the air normally causing another half-heart of fall damage."
+			]
 			id: "5C8C7C148250B74C"
 			rewards: [
 				{
@@ -99,6 +150,7 @@
 				}
 			]
 			shape: "hexagon"
+			subtitle: "Slider"
 			tasks: [
 				{
 					entity: "aether:slider"
@@ -111,16 +163,20 @@
 					consume_items: false
 					id: "3446A91C6A02C825"
 					item: "aether:bronze_dungeon_key"
+					only_from_crafting: false
 					type: "item"
 				}
 			]
 			x: 6.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
-			dependencies: [
-				"5C8C7C148250B74C"
-				"36A93756E822BF86"
+			dependencies: ["36A93756E822BF86"]
+			description: [
+				""
+				"{image:kubejs:textures/gui/silver_dungeon.png width:100 height:100 align:1 fit:true}"
+				""
+				"The Silver Dungeon is the second dungeon of the three Dungeons in The Aether. Silver Dungeons look like giant temples and have pillar blocks around them. Inside are several chests with loot, with some Mimics disguising as a few of those. You will also see Valkyries which, if you fight and kill them, will drop a Victory Medal on death (Valkyries are powerful mobs and you should not attempt to kill them until you are equipped with strong armor and have several healing items). Get ten Victory Medals and you will be allowed to fight the Valkyrie Queen and kill her to get the key to the silver Dungeon chest."
 			]
 			hide: true
 			id: "311D1A586A9B7936"
@@ -136,7 +192,19 @@
 		}
 		{
 			dependencies: ["311D1A586A9B7936"]
-			hide: true
+			description: [
+				"{image:kubejs:textures/gui/silver_dungeon_valkyrie.png width:100 height:100 align:1 fit:true}"
+				""
+				"The Valkyrie Queen is the boss of the Silver Dungeon in The Aether."
+				""
+				"She is the second-hardest boss in the Aether. She rules over the Valkyries from her throne room in the heart of the Silver Dungeon. She looks like other Valkyries except she only spawns in her throne room. She can do considerable damage to you so it is advisable to have good armor and healing items."
+				""
+				"She, like all Valkyries, is a very honorable creature and will only fight you once you have defeated 10 Valkyries and collected their victory medals. Then, with the medals, you must right-click her with the stack of 10 victory medals. She will then tell you to fight her when you are ready. Once you strike her, the fight will begin. She is very strong and can do 3 hearts of damage with each attack. If you need to heal it is recommended you run away from her and heal yourself at the same time. Also, she can occasionally send out orbs that, when they are out for a long time, cause damage in the area where the orb was. Every few hits she receives, she will teleport behind you, so if you see her disappear then look behind you and be ready. She can also jump very high so keep your eyes on her at all times. Just keep on hitting her, following a strategy that works for you."
+				""
+				"Upon death, she will drop a silver key and a Gold Sword."
+				""
+				"A secret compartment will also open up just in front of the throne with a Locked Chest that can be opened with the Silver Key. The rewards can be considerably good, such as Valkyrie Armor, Valkyrie Tools, Holy Sword, Invisibility Cloak, Golden Feather, Lightning Sword, Regeneration Stone, and Valkyrie Music Disc (Ascending Dawn)."
+			]
 			id: "3ED23D454C78124C"
 			rewards: [
 				{
@@ -158,6 +226,7 @@
 				}
 			]
 			shape: "hexagon"
+			subtitle: "Valkyrie Queen"
 			tasks: [
 				{
 					entity: "aether:valkyrie_queen"
@@ -177,14 +246,11 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"36A93756E822BF86"
-				"3ED23D454C78124C"
-			]
+			dependencies: ["36A93756E822BF86"]
 			description: [
-				"The Sun Spirit is the hardest boss in the Aether Mod. He can only be found in Gold Dungeons. To fight him, you must right-click on him. Upon right-clicking, he will talk to you. After talking to him for a while, he will become angry. At this point, he will close off the exit and proceed to attack you. He will do so by rushing at you and/or firing fireballs into the room. He will sometimes fire an ice ball, which you must hit back at him. When it hits him, he will turn into ice, but a smaller version of him will rush at you (only on easy difficulty or higher). You must hit his ice form before it melts, and continue this until he dies. He cannot be harmed by any weapons but he will harm you by hitting you with fireballs. If you come in contact with him, you will catch on fire. It is highly recommended that you go into this fight with Phoenix Armor as it protects you from fire/lava damage. It is also a good idea to go into this fight with a lot of Regeneration Stones to regenerate health."
+				"{image:kubejs:textures/gui/gold_dungeon.png width:100 height:100 align:1 fit:true}"
 				""
-				"He drops the Gold Key and the Sun Altar when defeated. The Gold Key is used to unlock the Locked Chests behind a secret wall in the back of the room. The chest will have several of the best items in the game, but players often miss the chest because of the unusual place it is located."
+				"The Golden Dungeon is the hardest Dungeon in the Aether, but it produces the best rewards by completing it. Unlike other dungeons, instead of having to venture inside the dungeon until you reach the Boss Room, you will go straight into the boss battle. Gold Dungeons look like giant spheres floating in the air with smaller spheres attached to the large one. They also have an abundance of Golden Oaks on top of it and will most likely spawn Cockatrices due to the low light level. To get inside, you have to look around the circumference of the giant sphere until you see an opening. Go into that opening to find a room made out of Hellfire Stone. The Gold Dungeon's boss is The Sun God (Spirit). It is impossible to place any water in the Gold Dungeon, probably due to the fact that The Sun God is living in there and, therefore, water evaporates too quickly because of the heat."
 			]
 			hide: true
 			id: "1E02D31D892493C0"
@@ -197,15 +263,17 @@
 			}]
 			title: "Gold Dungeon"
 			x: 8.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1E02D31D892493C0"]
 			description: [
-				"Congratulations, you've made it so far, this is the end of our current development progression."
-				"Not bad for a week's work!  Join our Discord, keep tabs on current development, we'll have a new update soon!"
+				"{image:kubejs:textures/gui/gold_dungeon_sun_spirit.png width:100 height:100 align:1 fit:true}"
+				""
+				"The Sun Spirit is the hardest boss in the Aether. He can only be found in Gold Dungeons. To fight him, you must right-click on him. Upon right-clicking, he will talk to you. After talking to him for a while, he will become angry. At this point, he will close off the exit and proceed to attack you. He will do so by rushing at you and/or firing fireballs into the room. He will sometimes fire an ice ball, which you must hit back at him. When it hits him, he will turn into ice, but a smaller version of him will rush at you (only on easy difficulty or higher). You must hit his ice form before it melts, and continue this until he dies. He cannot be harmed by any weapons but he will harm you by hitting you with fireballs. If you come in contact with him, you will catch on fire. It is highly recommended that you go into this fight with Phoenix Armor as it protects you from fire/lava damage. It is also a good idea to go into this fight with a lot of Regeneration Stones to regenerate health."
+				""
+				"He drops the Gold Key and the Sun Altar when defeated. The Gold Key is used to unlock the Locked Chests behind a secret wall in the back of the room. The chest will have several of the best items in the game, but players often miss the chest because of the unusual place it is located."
 			]
-			hide: true
 			id: "7A59D70A2C813345"
 			rewards: [
 				{
@@ -219,11 +287,6 @@
 					type: "random"
 				}
 				{
-					id: "1DABA8921A5F9BB9"
-					item: "aether:aether_portal_frame"
-					type: "item"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "124BDE5C4B9816C3"
 					table_id: 7979468168910851615L
@@ -231,6 +294,7 @@
 				}
 			]
 			shape: "hexagon"
+			subtitle: "Sun Spirit"
 			tasks: [
 				{
 					entity: "aether:sun_spirit"
@@ -247,10 +311,14 @@
 				}
 			]
 			x: 8.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["7A59D70A2C813345"]
+			dependencies: [
+				"7A59D70A2C813345"
+				"3ED23D454C78124C"
+				"5C8C7C148250B74C"
+			]
 			dependency_requirement: "one_completed"
 			description: [
 				"With the guardians of this realm vanquished, you possess the means to construct a portal frame, your gateway to liberation from this world. As you assemble the mystical structure, you can't help but wonder: where will this new passage lead you? What realms lie beyond, shrouded in enigma and ripe for exploration?"
@@ -260,26 +328,32 @@
 				"As you stand before the shimmering portal, you realize that the true question isn't where your journey will lead, but what tales you'll weave and what legacies you'll leave behind in the endless tapestry of your adventure. The mysteries and marvels of countless new worlds await your indomitable spirit. The next chapter beckons, and with it, the continuation of your epic odyssey through the unknown."
 			]
 			id: "5926A2159ABC9069"
-			rewards: [{
-				auto: "invisible"
-				id: "50391A4645892A30"
-				ignore_reward_blocking: true
-				stage: "nether_access"
-				team_reward: true
-				title: "You may descend from the Aether."
-				type: "gamestage"
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "50391A4645892A30"
+					ignore_reward_blocking: true
+					stage: "nether_access"
+					team_reward: true
+					title: "You may descend from the Aether."
+					type: "gamestage"
+				}
+				{
+					id: "7E1B40C4D5092F65"
+					item: "aether:aether_portal_frame"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				consume_items: false
-				id: "0478250AE07A34D8"
-				item: "aether:aether_portal_frame"
-				type: "item"
+				id: "4A00070C0AFA5E85"
+				title: "Moving On"
+				type: "checkmark"
 			}]
 			title: "Time to Go!"
-			x: 8.0d
-			y: 7.0d
+			x: 7.0d
+			y: 6.75d
 		}
 		{
 			dependencies: ["28BEAC1D3AD033C1"]
@@ -339,60 +413,47 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					consume_items: false
-					id: "2CA420D977E3AE90"
-					item: {
-						Count: 1b
-						id: "aether:holystone_sword"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				consume_items: false
+				id: "764FF7EE81817030"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "aether:holystone_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:holystone_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:holystone_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:holystone_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
 					}
-					type: "item"
-					weak_nbt_match: true
 				}
-				{
-					consume_items: false
-					id: "16AAF3F701333A61"
-					item: {
-						Count: 1b
-						id: "aether:holystone_shovel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-					weak_nbt_match: true
-				}
-				{
-					consume_items: false
-					id: "23D5387E447EACDA"
-					item: {
-						Count: 1b
-						id: "aether:holystone_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-					weak_nbt_match: true
-				}
-				{
-					consume_items: false
-					id: "1004523081F83DBA"
-					item: {
-						Count: 1b
-						id: "aether:holystone_axe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-					weak_nbt_match: true
-				}
-			]
+				type: "item"
+			}]
 			title: "Basic Tools"
 			x: -1.5d
 			y: -4.5d
@@ -421,7 +482,7 @@
 			shape: "diamond"
 			tasks: [{
 				consume_items: false
-				count: 8L
+				count: 4L
 				id: "279C99350BAA4DAE"
 				item: "aether:ambrosium_shard"
 				type: "item"
@@ -454,7 +515,7 @@
 			shape: "diamond"
 			tasks: [{
 				consume_items: false
-				count: 8L
+				count: 4L
 				id: "7007D7F514C6D8FF"
 				item: "aether:zanite_gemstone"
 				type: "item"
@@ -487,7 +548,6 @@
 			shape: "diamond"
 			tasks: [{
 				consume_items: false
-				count: 8L
 				icon: "aether:gravitite_ore"
 				id: "65A22554B6E53F94"
 				item: "aether:gravitite_ore"
@@ -523,60 +583,47 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					consume_items: false
-					id: "7C5D2A56F9B6D823"
-					item: {
-						Count: 1b
-						id: "aether:zanite_pickaxe"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				consume_items: false
+				id: "6CF13F3E3F25B5BF"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "aether:zanite_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
 					}
-					type: "item"
-					weak_nbt_match: true
 				}
-				{
-					consume_items: false
-					id: "57CB525D6EF861AB"
-					item: {
-						Count: 1b
-						id: "aether:zanite_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-					weak_nbt_match: true
-				}
-				{
-					consume_items: false
-					id: "030655355795DC77"
-					item: {
-						Count: 1b
-						id: "aether:zanite_axe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-					weak_nbt_match: true
-				}
-				{
-					consume_items: false
-					id: "655B0D73E24356AD"
-					item: {
-						Count: 1b
-						id: "aether:zanite_shovel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-					weak_nbt_match: true
-				}
-			]
+				type: "item"
+			}]
 			title: "Getting an Upgrade"
 			x: 3.0d
 			y: -4.5d
@@ -607,60 +654,47 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					consume_items: false
-					id: "6650E1D4E3163B60"
-					item: {
-						Count: 1b
-						id: "aether:gravitite_sword"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				consume_items: false
+				id: "292A631DADB27D48"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "aether:gravitite_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
 					}
-					type: "item"
-					weak_nbt_match: true
 				}
-				{
-					consume_items: false
-					id: "08DAD60127F07675"
-					item: {
-						Count: 1b
-						id: "aether:gravitite_shovel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-					weak_nbt_match: true
-				}
-				{
-					consume_items: false
-					id: "728BB732EAF23DB9"
-					item: {
-						Count: 1b
-						id: "aether:gravitite_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-					weak_nbt_match: true
-				}
-				{
-					consume_items: false
-					id: "6FBA6DB3BD66BF52"
-					item: {
-						Count: 1b
-						id: "aether:gravitite_axe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-					weak_nbt_match: true
-				}
-			]
+				type: "item"
+			}]
 			title: "Advanced Tools"
 			x: 7.0d
 			y: -4.5d
@@ -671,6 +705,7 @@
 				"36775C00F9EF05B3"
 			]
 			id: "29F9A4F0BF45BC4D"
+			optional: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -706,6 +741,7 @@
 				"1F94D2E896A9F2B8"
 			]
 			id: "3E2CBE99C79FE9DE"
+			optional: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -1189,6 +1225,7 @@
 				"39C3EC2B052C4A89"
 			]
 			id: "7B789D0F054ABA0B"
+			optional: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -1219,6 +1256,7 @@
 			]
 			hide_dependency_lines: true
 			id: "211B68FDC768B831"
+			optional: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -1233,7 +1271,6 @@
 				}
 			]
 			tasks: [{
-				consume_items: true
 				id: "235A2FC543A3C5D1"
 				item: "aether:altar"
 				type: "item"
@@ -1245,6 +1282,7 @@
 			dependencies: ["6B755A3E6E1AA414"]
 			hide_dependency_lines: true
 			id: "3AF70DD83701A5DC"
+			optional: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -1259,7 +1297,6 @@
 				}
 			]
 			tasks: [{
-				consume_items: false
 				id: "57033C31AFC0D4A0"
 				item: "aether:freezer"
 				type: "item"
@@ -1272,6 +1309,7 @@
 			description: ["Quicksoil accelerates movement of players, mobs and items.  It's like Blue ice but better."]
 			hide_dependency_lines: true
 			id: "4A9476591E7D2E74"
+			optional: true
 			rewards: [{
 				count: 10
 				id: "2D96D2F25D56C916"
@@ -1296,6 +1334,7 @@
 			]
 			hide_dependency_lines: true
 			id: "1706F339AD3849D9"
+			optional: true
 			rewards: [{
 				count: 10
 				id: "2F7CE1A9D9594862"
@@ -1306,7 +1345,6 @@
 				consume_items: true
 				id: "78DFEB597E41C93F"
 				item: "aether:aerogel"
-				optional_task: true
 				type: "item"
 			}]
 			x: 4.0d
@@ -1316,6 +1354,7 @@
 			dependencies: ["6B755A3E6E1AA414"]
 			hide_dependency_lines: true
 			id: "44444CC74264A423"
+			optional: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -1330,13 +1369,149 @@
 				}
 			]
 			tasks: [{
-				consume_items: false
 				id: "2549D227C2914C69"
 				item: "aether:incubator"
 				type: "item"
 			}]
 			x: 0.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: [
+				"Use a skyroot bucket on an Aechor Plant to get poison."
+				"Enchanting the bucket of poison will produce the remedy!"
+			]
+			hide_dependency_lines: true
+			id: "05C8F4EE3D962B09"
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "256D49C608C542CC"
+					table_id: 7932134771370270439L
+					type: "random"
+				}
+				{
+					id: "138856F4EA11FF0A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "074FA9EE610DA917"
+					table_id: 3562567507260258199L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "251E6CF9253519A2"
+				item: "aether:skyroot_remedy_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7B789D0F054ABA0B"
+				"36A93756E822BF86"
+			]
+			description: [
+				"This is an odd quest, but the reward is worth it."
+				"Collect one of each Moa egg, a drop from a blue and gold swet and other items."
+				"Turn them in and receive an Explorer's Compass and 3 orbs of temporary flight."
+				""
+				"These items are intended to be used to locate dungeons, once you've located the dungeons you can bridge to them.  Be careful in your travels, these items are a one-time offering!"
+				""
+				"The orbs will not work after leaving this realm, so saving them is pointless."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:compass"
+			id: "790DA36432FFEC6A"
+			rewards: [
+				{
+					count: 3
+					id: "7996C9F7CD174525"
+					item: "forbidden_arcanus:orb_of_temporary_flight"
+					type: "item"
+				}
+				{
+					id: "03F27F4D0E20E32C"
+					item: {
+						Count: 1b
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6E6DC513E966017C"
+					item: "aether:blue_moa_egg"
+					type: "item"
+				}
+				{
+					id: "75671A9F1CD3EE70"
+					item: "aether:white_moa_egg"
+					type: "item"
+				}
+				{
+					id: "5265AA90F9595FD7"
+					item: "aether:black_moa_egg"
+					type: "item"
+				}
+				{
+					id: "0288AE2ED76B90A3"
+					item: "aether:swet_ball"
+					type: "item"
+				}
+				{
+					id: "4AD714541B2C8C26"
+					item: "aether:golden_amber"
+					type: "item"
+				}
+				{
+					id: "5E225372DB6E344A"
+					item: "aether:zanite_gemstone"
+					type: "item"
+				}
+				{
+					id: "7ED6135806F8305B"
+					item: "aether:ambrosium_shard"
+					type: "item"
+				}
+				{
+					id: "0FFE51BE42F34B61"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "01080A65CBFD87DB"
+					item: "aether:cold_aercloud"
+					type: "item"
+				}
+				{
+					id: "521583B424F81A5C"
+					item: "aether:blue_aercloud"
+					type: "item"
+				}
+				{
+					id: "57E545C4BB92CB45"
+					item: "aether:golden_aercloud"
+					type: "item"
+				}
+				{
+					id: "016E8C812B7CCA87"
+					item: "aether:aechor_petal"
+					type: "item"
+				}
+			]
+			title: "Time to Explore"
+			x: 5.5d
+			y: -1.0d
 		}
 	]
 	title: "Chapter 1: Aetherial Lands"

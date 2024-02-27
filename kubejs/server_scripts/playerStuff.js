@@ -1,10 +1,25 @@
 //priority: 0
 
+EntityEvents.death("player", (event) => {
+    const { player } = event;
+
+    player.block.popItem(Item.playerHead(player.username));
+});
+
+// PlayerEvents.chat(event => {
+//     if (event.message.toLowerCase().includes('hi!')) {
+//         event.getServer().scheduleInTicks(6, ctx => {
+//             event.player.tell(Text.blue('Welcome!'))
+//         })
+//     }
+// })
+
+// console.info('Hello, World! (Loaded server scripts)')
+
 PlayerEvents.loggedIn(event => {
     let player = event.getEntity();
 
-    if (player.getLevel().getDimension() != 'minecraft:overworld')
-    {
+    if (player.getLevel().getDimension() != 'minecraft:overworld') {
         console.log('Skipping Login Events, player is not in the overworld!');
         return;
     }
@@ -44,62 +59,52 @@ PlayerEvents.loggedIn(event => {
             player.persistentData.machinationData.hasAlexBook = true;
         }
     })
-})
+});
 
 global.dimChangeEvent = event => {
+    if (!event.getEntity().player) return;
+
     try {
         let player = event.getEntity();
-        let targetDimension = event.getDimension().toString();
+        let targetDimension = event.dimension.location();
         let server = player.getServer();
 
-        if (targetDimension == 'ResourceKey[minecraft:dimension / minecraft:the_nether]') {
+        if (targetDimension == 'minecraft:the_nether') {
             if (!player.stages.has('nether_access')) {
                 player.statusMessage = Text.of("The portal doesn't seem to work...");
-                server.schedule(2*1000, ()=> player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
-                return event.setCanceled(true);
-            } else {
-                event.setCanceled(false);
+                server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
+                event.setCanceled(true);
             }
         }
-        if (targetDimension == 'ResourceKey[minecraft:dimension / minecraft:overworld]') {
+        if (targetDimension == 'minecraft:overworld') {
             if (!player.stages.has('overworld_access')) {
                 player.statusMessage = Text.of("The portal doesn't seem to work...");
-                server.schedule(2*1000, ()=> player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
-                return event.setCanceled(true);
-            } else {
-                event.setCanceled(false);
+                server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
+                event.setCanceled(true);
             }
         }
-        if (targetDimension == 'ResourceKey[minecraft:dimension / minecraft:the_end]') {
+        if (targetDimension == 'minecraft:the_end') {
             if (!player.stages.has('end_access')) {
                 player.statusMessage = Text.of("The portal doesn't seem to work...");
                 server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
-                return event.setCanceled(true);
-            } else {
-                event.setCanceled(false);
+                event.setCanceled(true);
             }
         }
-        if (targetDimension == 'ResourceKey[minecraft:dimension / allthemodium:mining]') {
+        if (targetDimension == 'allthemodium:mining') {
             if (!player.stages.has('mining_access')) {
                 player.statusMessage = Text.of("The teleporter doesn't seem to work...");
                 server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this device, please refer to the questbook!"));
-                return event.setCanceled(true);
-            } else {
-                event.setCanceled(false);
+                event.setCanceled(true);
             }
         }
-        if (targetDimension == 'ResourceKey[minecraft:dimension / allthemodium:the_other]') {
+        if (targetDimension == 'allthemodium:the_other') {
             if (!player.stages.has('other_access')) {
                 player.statusMessage = Text.of("The teleporter doesn't seem to work...");
                 server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this device, please refer to the questbook!"));
-                return event.setCanceled(true);
-            } else {
-                event.setCanceled(false);
+                event.setCanceled(true);
             }
         }
     } catch (e) {
         console.log(e)
     }
 }
-
-

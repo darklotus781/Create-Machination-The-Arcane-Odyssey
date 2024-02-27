@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.remove({output: 'railways:track_monorail'});
+    event.remove({ output: 'railways:track_monorail' });
 
     // Monorail
     let t = Item.of('railways:track_incomplete_monorail');
@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
 
 
     // traintracks
-    event.forEachRecipe({output: /^railways\:track_.*/}, (recipe) => {
+    event.forEachRecipe({ output: /^railways\:track_.*/ }, (recipe) => {
         let resultId = recipe.originalRecipeResult.id;
 
         // noinspection EqualityComparisonWithCoercionJS
@@ -39,8 +39,7 @@ ServerEvents.recipes(event => {
 
             let slabs = woodId + '_slab';
 
-            if (wood == 'create_andesite')
-            {
+            if (wood == 'create_andesite') {
                 slabs = '#create:sleepers';
             }
 
@@ -53,7 +52,7 @@ ServerEvents.recipes(event => {
             }
 
             // Remove original recipe
-            event.remove({output: resultId});
+            event.remove({ output: resultId });
 
             // console.log('Nuggets: ' + nuggets + '\n' +
             //     'Transitional: railways:track_incomplete_' + wood + '\n' +
@@ -66,7 +65,7 @@ ServerEvents.recipes(event => {
             if (resultId.includes('_narrow')) {
 
                 // Wide rail in, cut, deployer nugget, press = 2 out
-                let wideRail = resultId.replace('_narrow','_wide');
+                let wideRail = resultId.replace('_narrow', '_wide');
                 t = Item.of('railways:track_incomplete_' + wood + '_narrow');
                 event.recipes.create.sequenced_assembly([
                     Item.of(resultId, 2)
@@ -79,7 +78,7 @@ ServerEvents.recipes(event => {
             } else if (resultId.includes('_wide')) {
 
                 // Normal rail in, cut, deploy slab, press = 1 out
-                let normalRail = (wood == 'create_andesite') ? 'create:track' : resultId.replace('_wide','');
+                let normalRail = (wood == 'create_andesite') ? 'create:track' : resultId.replace('_wide', '');
                 t = Item.of('railways:track_incomplete_' + wood + '_wide');
                 event.recipes.create.sequenced_assembly([
                     Item.of(resultId)

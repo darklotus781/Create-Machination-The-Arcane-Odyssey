@@ -32,6 +32,7 @@ ServerEvents.recipes(event => {
             }
         ]
     }).id('kubejs:pneumaticcraft/refinery/oil_3');
+
     event.custom({
         type: "pneumaticcraft:refinery",
         input: {
@@ -286,8 +287,6 @@ ServerEvents.recipes(event => {
     //     pressure: 2.0,
     //     time: 300
     // })
-
-
 });
 
 

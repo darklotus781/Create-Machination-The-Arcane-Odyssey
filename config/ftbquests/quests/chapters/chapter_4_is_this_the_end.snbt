@@ -33,15 +33,29 @@
 	]
 	order_index: 3
 	quest_links: [ ]
-	quests: [{
-		id: "0711E0747C34E922"
-		tasks: [{
-			id: "0B19CD78EEF643D9"
-			title: "Is this the end?"
-			type: "checkmark"
-		}]
-		x: 2.5d
-		y: -3.0d
-	}]
+	quests: [
+		{
+			dependencies: ["03C7E04B5BBB84A2"]
+			id: "0711E0747C34E922"
+			tasks: [{
+				id: "0B19CD78EEF643D9"
+				title: "Is this the end?"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0711E0747C34E922"]
+			id: "35CC1C270294E40D"
+			tasks: [{
+				id: "60EB17D257FB80EE"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+	]
 	title: "Chapter 4: Is this The End?"
 }

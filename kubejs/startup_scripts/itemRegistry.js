@@ -151,6 +151,7 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_saddle', 'create:sequenced_assembly').texture('kubejs:item/incomplete_saddle').displayName('Incomplete Saddle');
     event.create('incomplete_rose_quartz', 'create:sequenced_assembly').texture('kubejs:item/incomplete_rose_quartz').displayName('Incomplete Rose Quartz');
     event.create('incomplete_empty_tube', 'create:sequenced_assembly').texture('kubejs:item/incomplete_empty_tube').displayName('Incomplete Empty Tube');
+    event.create('incomplete_netherite_dust', 'create:sequenced_assembly');
     event.create('empty_runic_tablet').texture('kubejs:item/empty_runic_tablet').displayName('Empty Runic Tablet');
 
     // AE2 Incomplete Processors
@@ -180,6 +181,7 @@ StartupEvents.registry('item', event => {
     event.create('chromium').displayName('Chromium').tooltip('Cr');
     event.create('powdered_flint').displayName('Powdered Flint').tooltip('Mix with Refined Fuel to create gunpowder');
     event.create('empty_vial').displayName('Empty Vial');
+    event.create('netherite_dust')
 
 
     event.create('sourcegem_fragments').displayName('Source Crystal Fragments');
@@ -202,6 +204,8 @@ StartupEvents.registry('item', event => {
     event.create('quartz_cluster').texture('kubejs:item/quartz_cluster').displayName('Quartz Cluster');
     event.create('fluix_seed').texture('kubejs:item/fluix_seed').displayName('Fluix Seed');
     event.create('fluix_cluster').texture('kubejs:item/fluix_cluster').displayName('Fluix Cluster');
+    event.create('lapis_seed').texture('kubejs:item/lapis_seed').displayName('Lapis Seed');
+    event.create('lapis_cluster').texture('kubejs:item/lapis_cluster').displayName('Lapis Cluster');
 
     // AE2 Stuff
     event.create('ae2:logic_processor_press').displayName('Logic Processor Press');

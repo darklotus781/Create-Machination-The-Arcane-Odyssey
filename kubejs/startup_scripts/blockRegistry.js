@@ -16,7 +16,6 @@ StartupEvents.registry("block", event => {
     //         .transparent(true);
     // };
 
-
     const machine = (name, display, layer) => {
         let id = name.toLowerCase()
         event.create(id + '_machine')
@@ -107,18 +106,18 @@ StartupEvents.registry("block", event => {
         ).model('kubejs:block/pixie_utrem_jar').displayName('Pixie Utrem Jar').notSolid().renderType('translucent');
 });
 
-BlockEvents.modification(event => {
-    // event.modify('waystones:waystone', block => {
-    //     block.requiresTool = true;
-    //     block.destroySpeed = 1;
-    //     block.lightEmission = 10;
-    // });
-    // event.modify('waystones:mossy_waystone', block => {
-    //     block.requiresTool = true;
-    //     block.destroySpeed = 1000
-    // });
-    // event.modify('waystones:sandy_waystone', block => {
-    //     block.requiresTool = true;
-    //     block.destroySpeed = 9999;
-    // });
-});
+// BlockEvents.modification(event => {
+// event.modify('waystones:waystone', block => {
+//     block.requiresTool = true;
+//     block.destroySpeed = 1;
+//     block.lightEmission = 10;
+// });
+// event.modify('waystones:mossy_waystone', block => {
+//     block.requiresTool = true;
+//     block.destroySpeed = 1000
+// });
+// event.modify('waystones:sandy_waystone', block => {
+//     block.requiresTool = true;
+//     block.destroySpeed = 9999;
+// });
+// });

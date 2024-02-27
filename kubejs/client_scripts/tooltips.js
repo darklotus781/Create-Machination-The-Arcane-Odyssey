@@ -10,19 +10,27 @@ ItemEvents.tooltip(tooltip => {
         add_color_description(`kubejs:${global.bag_name[i]}_bag_${global.rarity[2]}`, 'Epic', global.rarity_color.epic);
     }
 
+    let locked_item = (id, quest) => tooltip.addAdvanced(id, (item, advanced, text) => {
+        text.add(1, Text.aqua('Special Item:'))
+        text.add(2, Text.gray("This item cannot be crafted until it's unlocked in a quest!"));
+        text.add(3, Text.of(""));
+        text.add(4, Text.of(`§6Unlocked in§r §2${quest}`));
+    });
+
     let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "7" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
     let bonus_assembly = (id, stage) => tooltip.add(id, [`§7Bonus Assembly: §6Chapter ${stage}`, '§8Consider automating this item'])
     let not_consumed = (id, stage) => tooltip.add(id, [`§7Not consumed in the`, `§7Assembly Process`])
 
+    locked_item('minecraft:ender_eye', 'Chapter 3: Overworld Conquered');
+
     tooltip.addAdvanced('ars_nouveau:source_gem', (item, advanced, text) => {
         text.remove(1);
-        text.add(1,Text.darkPurple('Made by tossing a Runic Tablet through an Elven Portal'));
+        text.add(1, Text.darkPurple('Made by tossing a Runic Tablet through an Elven Portal'));
     });
 
     tooltip.addAdvanced('ars_nouveau:magebloom_crop', (item, advanced, text) => {
-        text.
         text.remove(1);
-        text.add(1,Text.darkPurple('Cannot be crafted, only found in loot bags and chests!'));
+        text.add(1, Text.darkPurple('Cannot be crafted, only found in loot bags and chests!'));
     });
 
     tooltip.addAdvanced('ars_nouveau:magebloom', (item, advanced, text) => {
@@ -57,24 +65,29 @@ ItemEvents.tooltip(tooltip => {
             text.add(1, "§7Base: §r9§7 Slots, §r1§7 Upgrade Slot");
         }
     });
-    tooltip.addAdvanced("sophisticatedbackpacks:iron_backpack", (item, advanced, text) => {
-        if (!tooltip.isShift()) {
-            text.add(1, "§7Base: §r45§7 Slots, §r1§7 Upgrade Slot");
-        }
-    });
-    tooltip.addAdvanced("sophisticatedbackpacks:gold_backpack", (item, advanced, text) => {
+    tooltip.addAdvanced("sophisticatedbackpacks:copper_backpack", (item, advanced, text) => {
         if (!tooltip.isShift()) {
             text.add(1, "§7Base: §r27§7 Slots, §r0§7 Upgrade Slot");
         }
     });
+    tooltip.addAdvanced("sophisticatedbackpacks:iron_backpack", (item, advanced, text) => {
+        if (!tooltip.isShift()) {
+            text.add(1, "§7Base: §r36§7 Slots, §r1§7 Upgrade Slot");
+        }
+    });
+    tooltip.addAdvanced("sophisticatedbackpacks:gold_backpack", (item, advanced, text) => {
+        if (!tooltip.isShift()) {
+            text.add(1, "§7Base: §r54§7 Slots, §r2§7 Upgrade Slot");
+        }
+    });
     tooltip.addAdvanced("sophisticatedbackpacks:diamond_backpack", (item, advanced, text) => {
         if (!tooltip.isShift()) {
-            text.add(1, "§7Base: §r36§7 Slots, §r4§7 Upgrade Slots");
+            text.add(1, "§7Base: §r72§7 Slots, §r4§7 Upgrade Slots");
         }
     });
     tooltip.addAdvanced("sophisticatedbackpacks:netherite_backpack", (item, advanced, text) => {
         if (!tooltip.isShift()) {
-            text.add(1, "§7Base: §r63§7 Slots, §r2§7 Upgrade Slots");
+            text.add(1, "§7Base: §r108§7 Slots, §r4§7 Upgrade Slots");
         }
     });
 
@@ -103,8 +116,5 @@ ItemEvents.tooltip(tooltip => {
     main_assembly('kubejs:time_machine', "7")
 
 
-
-
-
-    // tooltip.add('kubejs:leather_pocket', Text.gold('Used to add slots to backpacks.'));
+    tooltip.add('kubejs:leather_pocket', Text.gold('Useful for adding more slots to your backpack'));
 })

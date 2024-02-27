@@ -562,6 +562,37 @@
 			x: 5.5d
 			y: 0.5d
 		}
+		{
+			dependencies: ["0331107259F7B68C"]
+			description: [
+				"In a realm that dances on the edge of reality, where magic weaves through the very fabric of existence, a challenge unlike any other beckons to those brave enough to face it. Your quest begins with the summoning of the Gaia Guardian, a mythical entity whose power is matched only by its ancient wisdom. This otherworldly boss resides in a secret garden, a place where the boundaries of our world blur into the mystical. The Guardian protects the essence of life itself, but to proceed on your path, you must overcome this formidable foe."
+				""
+				"Armed with only your courage and the tools of the arcane, you must engage in a battle of wits and strength against the Gaia Guardian. The air crackles with magical energy as you dodge, weave, and counter the Guardian's relentless assaults. Victory demands not just physical prowess, but a deep connection to the magical forces at play."
+				""
+				"Upon defeating the Gaia Guardian, you will be entrusted with the spirits of the realm, ethereal essences that hold the key to unlocking the ancient stronghold hidden deep within the world's heart. Navigate through forgotten lands, deciphering clues and overcoming trials, until you find the stronghold's hidden entrance. Within its depths lies the legendary End Portal, a gateway to the ultimate confrontation."
+				""
+				"The final leg of your quest takes you through the End Portal and into the domain of the dragon. This fearsome beast, a creature of legend and terror, awaits in a land of floating islands and endless voids. The battle will be fierce, as the dragon commands the very elements of the End. Armed with the spirits collected and the knowledge gained from your journey, you must find a way to outmaneuver and ultimately defeat the dragon, freeing the realm from its tyrannical grip."
+				""
+				"Triumph will not only bring peace to the realms but also mark you as a true hero of legend. The journey is perilous, the foes formidable, but the rewards are beyond imagination. Are you ready to take on the challenge of defeating the Gaia Guardian, unlocking the mysteries of the stronghold, and facing down the dragon in a battle for the ages? The fate of the realms rests in your hands."
+			]
+			id: "03C7E04B5BBB84A2"
+			rewards: [{
+				auto: "invisible"
+				id: "6C52181823E996E2"
+				ignore_reward_blocking: true
+				stage: "end_access"
+				team_reward: false
+				type: "gamestage"
+			}]
+			subtitle: "Vanquish the Gaia Guardian"
+			tasks: [{
+				id: "438328202C6F7CCD"
+				title: "Overworld Conquered!"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
 	]
 	title: "Chapter 3: Somewhere in between"
 }

@@ -24,27 +24,27 @@ const fluid_properties = {
 }
 
 global.fluid_mats = [
-    "copper",
-    "iron",
+    // "copper",
+    // "iron",
     "gold",
     "diamond",
-    "tin",
-    "silver",
-    "lead",
-    "nickel",
-    "steel",
-    "aluminum",
-    "electrum",
-    "constantan",
-    "osmium",
-    "bronze",
-    "zinc",
-    "brass",
-    "enderium",
-    "lumium",
-    "invar",
-    "signalum",
-    "uranium"
+    // "tin",
+    // "silver",
+    // "lead",
+    // "nickel",
+    // "steel",
+    // "aluminum",
+    // "electrum",
+    // "constantan",
+    // "osmium",
+    // "bronze",
+    // "zinc",
+    // "brass",
+    // "enderium",
+    // "lumium",
+    // "invar",
+    // "signalum",
+    // "uranium"
 ]
 
 StartupEvents.registry("fluid", event =>{

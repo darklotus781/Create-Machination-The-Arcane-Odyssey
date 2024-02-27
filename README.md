@@ -38,3 +38,8 @@ When reporting an issue put the version number before the issue title! Such as [
 Without the brilliant minds of Developers, Designers and other Creators, this world would be a boring place.
 To give credit to those that inspired these works, and/or who's creations were used or partially used, please refer to the Attributions page.  
 [ATTRIBUTION.md](ATTRIBUTION.md)
+
+
+**AI ART**  
+This pack utilizes AI Generated Artwork because I am not a designer and it works great for placeholders.  
+If you are a creative type and would like to contribute artwork to replace any and all AI art in the pack, please feel free to submit a PR or email me at darklotus@gmail.com

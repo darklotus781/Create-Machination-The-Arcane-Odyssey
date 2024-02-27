@@ -97,6 +97,7 @@
 				"Welcome to Machination, the first step is Andesite and laying the groundwork for basic automations."
 				"First step is to automate Andesite Casing, Kinetic Mechanisms and Andesite Machines, get to work!"
 			]
+			hide: true
 			icon: "kubejs:andesite_machine"
 			id: "6EFF8BCEBC2E2AF2"
 			rewards: [
@@ -124,6 +125,7 @@
 		}
 		{
 			dependencies: ["6EFF8BCEBC2E2AF2"]
+			hide: true
 			icon: "kubejs:copper_machine"
 			id: "3B25D99BFA2C928C"
 			subtitle: "Fluid!"
@@ -140,6 +142,8 @@
 				"You've succeeded at Andesite Machines, you're ready for the next step."
 				"Work toward automating Brass Casings and Precision Mechanisms and you can complete this chapter."
 			]
+			hide: true
+			hide_details_until_startable: false
 			icon: "kubejs:brass_machine"
 			id: "3A10D0D5E8548C54"
 			rewards: [
@@ -167,6 +171,7 @@
 		{
 			dependencies: ["3A10D0D5E8548C54"]
 			dependency_requirement: "one_started"
+			hide: true
 			icon: "kubejs:sturdy_machine"
 			id: "2E949A84C2E9B3C8"
 			subtitle: "Trains!"
@@ -182,6 +187,7 @@
 				""
 				"Chapter 4 and Chapter 5 feed directly off Chapter 3 because they both use Radiant Mechanisms and unlock different features / functionality.  It makes sense to keep them separate chapters due to the intricacies of each quest line and that they don't directly feed off of or into each other."
 			]
+			hide: true
 			icon: "kubejs:plastic_machine"
 			id: "099F5D860FC50376"
 			rewards: [
@@ -210,6 +216,8 @@
 				"3A10D0D5E8548C54"
 				"29F5D0F4112BB554"
 			]
+			hide: true
+			hide_details_until_startable: false
 			icon: "kubejs:radiant_machine"
 			id: "19232B8B77F86AF8"
 			rewards: [
@@ -520,6 +528,7 @@
 		{
 			dependencies: ["3A10D0D5E8548C54"]
 			dependency_requirement: "one_started"
+			hide: true
 			icon: "kubejs:power_machine"
 			id: "15983A1F5FED57E0"
 			subtitle: "Power!"
@@ -530,6 +539,7 @@
 		{
 			dependencies: ["3A10D0D5E8548C54"]
 			dependency_requirement: "one_started"
+			hide: true
 			icon: "kubejs:zinc_machine"
 			id: "72C3FAE0193F665C"
 			subtitle: "More Machines"
@@ -545,6 +555,7 @@
 				""
 				"Chapter 4 and Chapter 5 feed directly off Chapter 3 because they both use Radiant Mechanisms and unlock different features / functionality.  It makes sense to keep them separate chapters due to the intricacies of each quest line and that they don't directly feed off of or into each other."
 			]
+			hide: true
 			icon: "kubejs:integrational_machine"
 			id: "437114B9BC07B2BD"
 			rewards: [

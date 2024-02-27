@@ -41,12 +41,12 @@
 	# The activation range for the spawners in the dungeons.
 	#
 	#Range: 1 ~ 64
-	spawner_activation_range = 12
+	spawner_activation_range = 24
 	#----------------------------------------------------------------------------------------------------+
 	# The number of different entities per spawner. Increasing the number increases the diversity of the monster equipment.
 	#
 	#Range: 1 ~ 128
-	spawner_entities = 6
+	spawner_entities = 12
 	#----------------------------------------------------------------------------------------------------+
 	# Whether custom mob spawners with equipment, etc.. should be used.
 	#

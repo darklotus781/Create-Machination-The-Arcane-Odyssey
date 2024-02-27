@@ -6,7 +6,7 @@ moveCatalystDistance = 3
 #Radius in blocks for generating Asurine around the Catalyst
 #Warning!!!  Setting this diameter too large could have negative side effects, especially on a server!
 #Range: 1 ~ 17
-asurineCatalystRadius = 6
+asurineCatalystRadius = 11
 #Radius in blocks for generating Crimsite around the Catalyst.
 #Warning!!!  Setting this diameter too large could have negative side effects, especially on a server!
 #Range: 3 ~ 27
@@ -14,17 +14,17 @@ crimsiteCatalystRadius = 11
 #Radius in blocks for generating Ochrum around the Catalyst.
 #Warning!!!  Setting this diameter too large could have negative side effects, especially on a server!
 #Range: 1 ~ 17
-ochrumCatalystRadius = 6
+ochrumCatalystRadius = 11
 #Radius in blocks for generating Veridium around the Catalyst.
 #Warning!!!  Setting this diameter too large could have negative side effects, especially on a server!
 #Range: 1 ~ 17
-veridiumCatalystRadius = 6
+veridiumCatalystRadius = 1
 #Radius in blocks for generating Sky Stone around the Catalyst.
 #Warning!!!  Setting this diameter too large could have negative side effects, especially on a server!
 #Range: 1 ~ 17
-skystoneCatalystRadius = 6
+skystoneCatalystRadius = 11
 #What percentage of the generated cube of blocks should actually be filled?
 #Warning!!!  Setting this percentage too high could have negative side effects, especially on a server!
 #Range: 0.01 ~ 1.0
-catalystFillPercentage = 0.12
+catalystFillPercentage = 0.16
 

@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     // Casing Recipe
     let caseify = (result, inputBlock, inputItem) => {
         let resultItem = Item.of(result).item.toString();
-        event.remove({output: result});
+        event.remove({ output: result });
         event.recipes.create.item_application(Item.of(result), [inputItem, inputBlock]).id('kubejs:item_application/recipe/' + resultItem);
         // event.recipes.create.deploying(Item.of(result), [inputItem, inputBlock]).id('kubejs:deploying/'+result_item+'_from_'+blockItem+'_and_'+itemItem);
     }
@@ -82,15 +82,15 @@ ServerEvents.recipes(event => {
     // Redstone Alloy Cable
     event.custom({
         type: 'createaddition:rolling',
-        input: {item: 'kubejs:redstone_alloy_ingot'},
-        result: {item: 'kubejs:redstone_alloy_cable', count: 4}
+        input: { item: 'kubejs:redstone_alloy_ingot' },
+        result: { item: 'kubejs:redstone_alloy_cable', count: 4 }
     });
 
     // Radiant Steel to Radiant Coils
     event.custom({
         type: 'createaddition:rolling',
-        input: {item: 'kubejs:radiant_steel'},
-        result: {item: 'kubejs:radiant_coil', count: 4}
+        input: { item: 'kubejs:radiant_steel' },
+        result: { item: 'kubejs:radiant_coil', count: 4 }
     });
 
     event.recipes.create.mechanical_crafting(Item.of('kubejs:radiant_coil'), [
@@ -149,8 +149,8 @@ ServerEvents.recipes(event => {
         event.recipes.create.pressing(t, t)
     ]).transitionalItem(t).loops(1).id('kubejs:assembly/rose_quartz');
 
-    event.recipes.create.mixing([Item.of('create:rose_quartz')],[Fluid.of('thermal:redstone').withAmount(200),Item.of('kubejs:certus_quartz_cluster')]).processingTime(160).id('kubejs:mixing/rose_quartz_from_quartz_cluster');
-    event.recipes.create.mixing([Item.of('create:rose_quartz')],[Fluid.of('thermal:redstone').withAmount(200),Item.of('kubejs:quartz_cluster')]).processingTime(160).id('kubejs:mixing/rose_quartz_from_certus_quartz_cluster');
+    event.recipes.create.mixing([Item.of('create:rose_quartz')], [Fluid.of('thermal:redstone').withAmount(200), Item.of('kubejs:certus_quartz_cluster')]).processingTime(160).id('kubejs:mixing/rose_quartz_from_quartz_cluster');
+    event.recipes.create.mixing([Item.of('create:rose_quartz')], [Fluid.of('thermal:redstone').withAmount(200), Item.of('kubejs:quartz_cluster')]).processingTime(160).id('kubejs:mixing/rose_quartz_from_certus_quartz_cluster');
 
     event.recipes.create.mixing([Fluid.of('thermal:redstone').withAmount(100)], Item.of('minecraft:redstone')).heatRequirement('heated').id('kubejs:melting/destabilized_redstone');
 
@@ -177,13 +177,13 @@ ServerEvents.recipes(event => {
     // PCB
     let t = Item.of('kubejs:incomplete_pcb');
     event.recipes.create.sequenced_assembly([
-            Item.of('kubejs:pcb')
-        ], Item.of('kubejs:fiberglass_plate'), [
-            event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/copper')]),
-            event.recipes.create.pressing(t, t),
-            event.recipes.create.filling(t, [t, Fluid.of('kubejs:soldermask').withAmount(1000)]),
-            event.recipes.create.pressing(t, t)
-        ]
+        Item.of('kubejs:pcb')
+    ], Item.of('kubejs:fiberglass_plate'), [
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/copper')]),
+        event.recipes.create.pressing(t, t),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:soldermask').withAmount(1000)]),
+        event.recipes.create.pressing(t, t)
+    ]
     ).transitionalItem(t).loops(1);
 
     // Incomplete Electronic Circuit
@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
     // event.recipes.create.mixing([Fluid.of('kubejs:sulfuric_acid').withAmount(1000)], [Item.of('thermal:sulfur_dust'), Fluid.water(1000)])
 
     // Thermal Machine Frame
-    event.remove({output: 'thermal:machine_frame'})
+    event.remove({ output: 'thermal:machine_frame' })
     event.shapeless(Item.of('kubejs:power_machine'), Item.of('thermal:machine_frame'));
 
     event.recipes.create.pressing(Item.of('kubejs:carbon_sheet'), Item.of('minecraft:charcoal'));
@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:rods/copper')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:fiberglass_plate')]),
         event.recipes.create.pressing(t, t),
-        event.custom({type: 'createaddition:rolling', input: Item.of(t).toJson(), result: Item.of(t).toJson()})
+        event.custom({ type: 'createaddition:rolling', input: Item.of(t).toJson(), result: Item.of(t).toJson() })
     ]).transitionalItem(t).loops(1).id('kubejs:inductor_core');
 
     // Rough Sheet
@@ -351,7 +351,7 @@ ServerEvents.recipes(event => {
         'SHS',
         'H H',
         'HHH'
-        ], {
+    ], {
         S: Item.of('minecraft:string'),
         H: Item.of('minecraft:rabbit_hide')
     }).id('kubejs:recipe/minecraft_bundle');
@@ -383,7 +383,7 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:redstone_cluster').withChance(30),
         Item.of(t).withChance(70)
     ], t, [
-        event.recipes.create.filling(t, [t, Fluid.of('kubejs:sky_slurry').withAmount(150)]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:sky_slurry').withAmount(50)]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:sand')])
     ]).transitionalItem(t).loops(1).id('kubejs:assembly/redstone_cluster_processing');
 
@@ -393,22 +393,53 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:fluix_cluster').withChance(25),
         Item.of(t).withChance(75)
     ], t, [
-        event.recipes.create.filling(t, [t, Fluid.of('kubejs:sky_slurry').withAmount(150)]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:sky_slurry').withAmount(50)]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:sand')])
     ]).transitionalItem(t).loops(1).id('kubejs:assembly/fluix_cluster_processing');
+
+    // Lapis Cluster
+    t = Item.of('kubejs:lapis_seed');
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:lapis_cluster').withChance(25),
+        Item.of(t).withChance(75)
+    ], t, [
+        event.recipes.create.filling(t, [t, Fluid.of('create_enchantment_industry:experience').withAmount(15)]),
+        event.recipes.create.deploying(t, [t, Item.of('minecraft:sand')])
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/lapis_cluster_processing');
+
+    // Netherite Scrap
+    t = Item.of('kubejs:unprocessed_netherite_dust');
+    event.recipes.create.sequenced_assembly([
+        Item.of('minecraft:netherite_scrap').withChance(90),
+        Item.of('kubejs:netherite_dust').withChance(8),
+        Item.of('create:powdered_obsidian').withChance(1),
+        Item.of('create:cinder_flour').withChance(1)
+    ], Item.of('kubejs:netherite_dust'), [
+        event.recipes.create.deploying(t, [t, Item.of('ars_nouveau:greater_experience_gem')]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:fiberglass_plate')]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:carbon_sheet')]),
+        event.recipes.create.filling(t, [t, Fluid.lava(500)]),
+        event.recipes.create.pressing(t, [t])
+    ]).transitionalItem(t).loops(5).id('kubejs:assembly/netherite_scrap');
+
+    // Netherite Dust
+    event.recipes.create.mixing(Item.of('kubejs:netherite_dust'), [Item.of('create:powdered_obsidian'), Item.of('create:cinder_flour'), Item.of('kubejs:powdered_flint'), Fluid.of('thermal:refined_fuel').withAmount('100')]).superheated().id('kubejs:netherite_dust');
 
     event.recipes.create.milling(Item.of('kubejs:quartz_seed', 3), Item.of('minecraft:quartz'));
     event.recipes.create.milling(Item.of('kubejs:redstone_seed', 3), Item.of('minecraft:redstone'));
     event.recipes.create.milling(Item.of('kubejs:certus_quartz_seed', 3), Item.of('ae2:charged_certus_quartz_crystal'));
     event.recipes.create.milling(Item.of('kubejs:fluix_seed', 3), Item.of('ae2:fluix_crystal'));
+    event.recipes.create.milling(Item.of('kubejs:lapis_seed', 3), Item.of('minecraft:lapis_lazuli'));
 
     event.blasting(Item.of('minecraft:quartz'), Item.of('kubejs:quartz_cluster'));
     event.blasting(Item.of('ae2:certus_quartz_crystal'), Item.of('kubejs:certus_quartz_cluster'));
     event.blasting(Item.of('minecraft:redstone'), Item.of('kubejs:redstone_cluster'));
     event.blasting(Item.of('ae2:fluix_crystal'), Item.of('kubejs:fluix_cluster'));
+    event.blasting(Item.of('minecraft:lapis_lazuli'), Item.of('kubejs:lapis_cluster'));
 
     event.recipes.create.filling(Item.of('minecraft:ender_pearl'), [Item.of('quark:soul_bead'), Fluid.of('kubejs:dye_slurry_green').withAmount(100)])
 
-    event.remove({type: 'thermal:press'});
+    event.remove({ type: 'thermal:press' });
     trading(event);
 });
+
