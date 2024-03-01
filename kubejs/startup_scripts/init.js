@@ -13,3 +13,7 @@ ForgeEvents.onEvent("net.minecraftforge.event.level.BlockEvent$PortalSpawnEvent"
     player.statusMessage = Text.of("The portal doesn't seem to want to light...");
     server.schedule(2*1000, ()=> player.statusMessage = Text.of("You need the \"Nether Portal Frame\" Item to spawn a Nether Portal!"));
 });
+
+ForgeEvents.onEvent("top.theillusivec4.curios.api.event.CurioChangeEvent", (event) => {
+    global.curioChangeEvent(event)
+});

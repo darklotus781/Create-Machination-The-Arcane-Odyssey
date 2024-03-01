@@ -6,16 +6,6 @@ EntityEvents.death("player", (event) => {
     player.block.popItem(Item.playerHead(player.username));
 });
 
-// PlayerEvents.chat(event => {
-//     if (event.message.toLowerCase().includes('hi!')) {
-//         event.getServer().scheduleInTicks(6, ctx => {
-//             event.player.tell(Text.blue('Welcome!'))
-//         })
-//     }
-// })
-
-// console.info('Hello, World! (Loaded server scripts)')
-
 PlayerEvents.loggedIn(event => {
     let player = event.getEntity();
 
@@ -40,25 +30,56 @@ PlayerEvents.loggedIn(event => {
             console.info("Generated machinationData for " + player.username + " for the first time.");
         }
 
-        if (player.getLevel().getDimension() == 'aether:the_aether' && false == player.persistentData.machinationData.hasGoldenChute) {
+        if (playerlevel.dimension == 'aether:the_aether' && false == player.persistentData.machinationData.hasGoldenChute) {
             console.log('Giving Golden Parachute to ' + player.username);
             player.give(Item.of('aether:golden_parachute'));
             player.statusMessage = Text.of("Take this parachute, it could save your life!");
             player.persistentData.machinationData.hasGoldenChute = true;
         }
 
-        if (player.getLevel().getDimension() == 'minecraft:overworld' && false == player.persistentData.machinationData.hasCat) {
+        if (player.level.dimension == 'minecraft:overworld' && false == player.persistentData.machinationData.hasCat) {
             console.log('Summoning Knuckle for ' + player.username);
-            player.getLevel().runCommandSilent('/summon cat ~ ~1 ~ {variant:red,CustomName:"\\"Knuckle\\"",Owner:' + player.username + '}');
+            player.level.runCommandSilent('/summon cat ~ ~1 ~ {variant:red,CustomName:"\\"Knuckle\\"",Owner:' + player.username + '}');
             player.persistentData.machinationData.hasCat = true;
         }
 
-        if (player.getLevel().getDimension() == 'minecraft:the_nether' && false == player.persistentData.machinationData.hasAlexBook) {
+        if (player.level.dimension == 'minecraft:the_nether' && false == player.persistentData.machinationData.hasAlexBook) {
             console.log('Giving Alex\'s Mobs Book to ' + player.username);
             player.give(Item.of('alexsmobs:animal_dictionary'));
             player.persistentData.machinationData.hasAlexBook = true;
         }
     })
+});
+
+PlayerEvents.tick(event => {
+    const { player, player: { age, nbt } } = event;
+
+    // Fires event once a second
+    if (age % 20 !== 0) return;
+    if (player.creative || player.spectator) return; // Don't process if player is in creative or spectator
+    
+    let curios = nbt.ForgeCaps['curios:inventory'];
+    let curiosCheck = curios.toString().includes('artifacts:bunny_hoppers');
+
+    if (player.abilities.mayfly) {
+        if (player.level.dimension != 'aether:the_aether') {
+            if (curiosCheck) {
+                player.tell(Text.yellow('Your bunny hoppers begin to squeak, flight is not allowed in this realm!'));
+                player.server.runCommandSilent(`fly ${player.username}`);
+            }
+        } else { // Player is in the Aether and Can Fly
+            if (! curiosCheck) { // If the bunny hoppers are not equiped, remove flight.
+                player.server.runCommandSilent(`fly ${player.username}`);
+            }
+        }
+    }
+
+    if (!player.abilities.mayfly && player.level.dimension == 'aether:the_aether') {
+        if (curiosCheck) {
+            player.tell(Text.green('Your bunny hoppers begin to squeak, flight is allowed in this realm!'));
+            player.server.runCommandSilent(`fly ${player.username}`);
+        }
+    }
 });
 
 global.dimChangeEvent = event => {
@@ -67,7 +88,7 @@ global.dimChangeEvent = event => {
     try {
         let player = event.getEntity();
         let targetDimension = event.dimension.location();
-        let server = player.getServer();
+        let server = player.server;
 
         if (targetDimension == 'minecraft:the_nether') {
             if (!player.stages.has('nether_access')) {
@@ -106,5 +127,53 @@ global.dimChangeEvent = event => {
         }
     } catch (e) {
         console.log(e)
+    }
+}
+
+ServerEvents.commandRegistry(e => {
+    const { commands: Commands, arguments: Arguments } = e
+
+    e.register(Commands.literal('fly')
+        .requires(s => s.hasPermission(2))
+        .executes(c => fly(c.source.player))
+        .then(Commands.argument('target', Arguments.PLAYER.create(e))
+            .executes(c => fly(Arguments.PLAYER.getResult(c, 'target')))
+        )
+    )
+
+    let fly = (player) => {
+        // console.log(player)
+        if (player.abilities.mayfly) {
+            player.abilities.mayfly = false
+            player.abilities.flying = false
+            player.displayClientMessage(Component.gold('Flying: ').append(Component.red('disabled')), true)
+        } else {
+            player.abilities.mayfly = true
+            if (!player.onGround) player.abilities.flying = true
+            player.displayClientMessage(Component.gold('Flying: ').append(Component.green('enabled')), true)
+        }
+
+        player.onUpdateAbilities()
+        return 1
+    }
+})
+
+
+/** @arg {Internal.CurioChangeEvent} e */
+global.curioChangeEvent = e => {
+    let player = e.entity
+    let server = player.server
+    let curioEquiped = e.to
+    let curioRemoved = e.from
+
+    if (curioRemoved == "artifacts:bunny_hoppers") {
+        if (player.abilities.mayfly) {
+            server.runCommandSilent(`fly ${player.username}`)
+        }
+    }
+    if (curioEquiped == "artifacts:bunny_hoppers") {
+        if (!player.abilities.mayfly) {
+            server.runCommandSilent(`fly ${player.username}`)
+        }
     }
 }

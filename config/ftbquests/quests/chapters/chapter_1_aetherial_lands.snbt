@@ -1427,6 +1427,7 @@
 				""
 				"The orbs will not work after leaving this realm, so saving them is pointless."
 			]
+			hide: true
 			hide_dependency_lines: true
 			icon: "minecraft:compass"
 			id: "790DA36432FFEC6A"

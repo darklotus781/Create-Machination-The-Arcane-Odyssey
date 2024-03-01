@@ -8,12 +8,14 @@ BlockEvents.rightClicked(event => {
 
 global.ticks = 0;
 LevelEvents.tick(event => { // Every 1.5 seconds, if a wraith is on soulless sand in the overworld, convert it to soul sand
-    if (event.level.getDimension() != 'minecraft:overworld') {return}
+    if (event.level.getDimension() != 'minecraft:overworld') {
+        return
+    }
     global.ticks++
     if (global.ticks == 30) {
         global.ticks = 0
-        event.level.getEntities().filterSelector('@e[type=quark:wraith]').forEach(entity =>{
-            if (entity.block.id == 'forbidden_arcanus:soulless_sand'){
+        event.level.getEntities().filterSelector('@e[type=quark:wraith]').forEach(entity => {
+            if (entity.block.id == 'forbidden_arcanus:soulless_sand') {
                 entity.block.set('minecraft:soul_sand')
                 event.server.runCommandSilent(`playsound minecraft:block.soul_sand.hit block @e[type=player] ${entity.block.x} ${entity.block.y} ${entity.block.z}`)
             }

@@ -90,6 +90,10 @@ ItemEvents.tooltip(tooltip => {
             text.add(1, "§7Base: §r108§7 Slots, §r4§7 Upgrade Slots");
         }
     });
+    tooltip.addAdvanced("artifacts:bunny_hoppers", (item, advanced, text) => {
+        text.add(3,'§6Enables Flight in The Aether');
+    });
+
 
     main_assembly('kubejs:kinetic_mechanism', "1")
     main_assembly('kubejs:andesite_machine', "1")
