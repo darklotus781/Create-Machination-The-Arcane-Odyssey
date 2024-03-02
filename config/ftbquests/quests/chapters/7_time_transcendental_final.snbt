@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5B817E19476DEBA1"]
 			description: [
 				"Getting started in Chapter 2 makes a couple of assumptions."
 				"1) You have completed Chapter 1 :P"
@@ -33,6 +34,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["1D3698C194B4E1F4"]
 			id: "6CF50DA237778924"
 			rewards: [{
 				id: "0E8D061B0675EEA9"
@@ -56,6 +58,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["1D3698C194B4E1F4"]
 			id: "6A9FBF8714EA09A6"
 			rewards: [{
 				id: "4EF0F7670DBBEF74"
@@ -80,14 +83,15 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["1D3698C194B4E1F4"]
 			id: "4A42A44FF9505706"
 			tasks: [{
 				id: "3737BFEF65FBA3EB"
 				item: "create:shadow_steel_casing"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.5d
+			x: 1.5d
+			y: -5.5d
 		}
 	]
 	title: "7: Temporal Termination"

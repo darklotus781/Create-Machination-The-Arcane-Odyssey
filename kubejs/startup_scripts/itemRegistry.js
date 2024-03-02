@@ -25,15 +25,15 @@ StartupEvents.registry('item', event => {
             .glow(add_glow ? add_glow : false);
     }
 
-    let spawn_egg = (name, c1, c2) => {
+    //https://minecraft.wiki/w/Spawn_Egg_colors
+    let spawn_egg = (name, base_color, overlay_color) => {
         let id = name.toLowerCase().replace("'", "").split(' ').join('_')
         event.create(id)
-            .color(0, c1)
-            .color(1, c2)
+            .color(0, base_color)
+            .color(1, overlay_color)
             .parentModel("kubejs:item/spawn_egg")
             .texture("kubejs:item/spawn_egg_0")
-            .displayName(name)
-            .tooltip("Doesn't work on Spawners!");
+            .displayName(name);
     }
 
     let tool = (name, rarity) => {
@@ -216,25 +216,47 @@ StartupEvents.registry('item', event => {
     // Smithing
     event.create('machine_smithing_template', 'smithing_template')
         .displayName('Machine Smithing Template')
-        .appliesTo("Catalyzing Items")
+        .appliesTo("Ingredient Items")
         .ingredients("Machines")
-        .appliesToSlotDescription("Insert one (1) Catalyzing Item")
+        .appliesToSlotDescription("Insert one (1) Ingredient Item")
         .ingredientsSlotDescription("Insert one (1) Machine")
         .swordIcon()
         .addIngredientsSlotIcon('item/andesite_machine')
         .texture('kubejs:item/machine_smithing_template')
 
-    // Spawn Eggs - custom spawn eggs don't affect spawners ;)
+    // Spawn Eggs - custom spawn eggs don't work on spawners ;)
     global.spawnableMobs.forEach(egg => {
-        spawn_egg(egg.name, egg.color_1, egg.color_2)
+        spawn_egg(egg.name, egg.base_color, egg.overlay_color)
     });
+
+    event.create('magical_rock_candy').displayName('§a§lMagical Rock Candy').food(food => {
+        food
+            .hunger(1)
+            .saturation(0.5)
+            .effect('ars_nouveau:flight', 20 * 60 * 1.5, 1, 1)
+            .alwaysEdible()
+            .fastToEat()
+
+    }).maxStackSize(8).rarity(RARITY_EPIC).glow(true);
 });
 
 ItemEvents.modification(event => {
     let colors = ["red", "yellow", "green", "blue", "magenta", "black"]
     colors.forEach(element => {
         event.modify('ae2:' + element + '_paint_ball', item => {
+            const ItemBuilder = Java.loadClass("dev.latvian.mods.kubejs.item.custom.BasicItemJS$Builder")
+            const builder = new ItemBuilder(item.id).glow(true);
+            item.setItemBuilder(builder);
             item.maxStackSize = 1
         })
     });
 });
+
+// ADD GLOW TO EXISTING ITEMS
+// ItemEvents.modification(event => {
+//     event.modify('supplementaries:bomb_spiky', item => {
+//         const ItemBuilder = Java.loadClass("dev.latvian.mods.kubejs.item.custom.BasicItemJS$Builder")
+//         const builder = new ItemBuilder("supplementaries:bomb_spiky").glow(true);
+//         item.setItemBuilder(builder);
+//     })
+// })

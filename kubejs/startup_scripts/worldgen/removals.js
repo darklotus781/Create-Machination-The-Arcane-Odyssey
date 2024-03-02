@@ -11,4 +11,4 @@ WorldgenEvents.remove(event => {
     });
 
     event.removeFeatureById("vegetal_decoration", ["forbidden_arcanus:yellow_orchid"]);
-})
+});

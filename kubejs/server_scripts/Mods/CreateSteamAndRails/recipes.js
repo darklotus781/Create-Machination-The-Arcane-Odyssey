@@ -17,7 +17,10 @@ ServerEvents.recipes(event => {
         let resultId = recipe.originalRecipeResult.id;
 
         // noinspection EqualityComparisonWithCoercionJS
-        if (resultId != 'railways:track_coupler' && resultId != 'railways:track_switch_andesite' && resultId != 'railways:track_switch_brass' && resultId != 'railways:track_monorail') {
+        if (resultId != 'railways:track_coupler' &&
+            resultId != 'railways:track_switch_andesite' &&
+            resultId != 'railways:track_switch_brass' &&
+            resultId != 'railways:track_monorail') {
 
             let nuggets = '#create:recipe_nuggets';
             let count = 16;
@@ -53,14 +56,6 @@ ServerEvents.recipes(event => {
 
             // Remove original recipe
             event.remove({ output: resultId });
-
-            // console.log('Nuggets: ' + nuggets + '\n' +
-            //     'Transitional: railways:track_incomplete_' + wood + '\n' +
-            //     'Slabs: ' + slabs + '\n' +
-            //     'Wood: ' + wood + '\n' +
-            //     'Output: ' + resultId + '\n',
-            //     'Normal: ' + resultId.replace('_wide','')
-            // );
 
             if (resultId.includes('_narrow')) {
 

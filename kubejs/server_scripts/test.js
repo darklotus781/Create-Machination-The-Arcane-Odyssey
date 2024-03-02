@@ -77,3 +77,39 @@ https://discord.com/channels/303440391124942858/1210635631458525194
 //     }
 // }
 */
+
+// // Register default servertimer
+// ServerEvents.loaded(event => {
+//     const { server, server: { persistentData } } = event;
+//     let sData = persistentData;
+//     sData.servertimer = 0;
+// })
+
+// // Tick Event every 1 minute (configurable)
+// ServerEvents.tick(event => {
+//     const { server, server: { persistentData } } = event;
+//     let sData = persistentData;
+//     //sets the tick timer
+//     sData.servertimer = (++sData.servertimer) % (20 * 60 * 1); // 1 minutes
+//     if (sData.servertimer != 0) return;
+//     //code that runs here will run every 1 minute
+//     console.log('1 minute');
+// });
+
+// ServerEvents.tick((event) => {
+//     let pData = event.server.persistentData
+//     if (pData.cycle == 0) {
+//         pData.c_bregen = pData.bregen
+//     }
+//     for (let i = Math.ceil(len(pData.c_bregen) / 200 * cycle);
+//         i < len(pData.c_bregen) / 200 * (cycle + 1); i++
+//     ) {
+//         // process element by using pData.c_bregen[i] and removing the time and pos object in pData.bregen and NOT in pData.c_bregen
+//         console.log('Working...');
+//     }
+
+//     pData.cycle += 1
+//     if (pData.cycle >= 200) {
+//         pData.cycle = 0 // initialize the pData.cycle as 0 in postinit event or something like that if it doesn't exist already
+//     }
+// })

@@ -88,7 +88,7 @@
 				type: "checkmark"
 			}]
 			title: "Good Luck!"
-			x: -1.0d
+			x: -2.0d
 			y: 4.5d
 		}
 		{
@@ -120,7 +120,7 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 1: Andesite Automations"
-			x: 0.5d
+			x: -0.5d
 			y: 3.5d
 		}
 		{
@@ -130,7 +130,7 @@
 			id: "3B25D99BFA2C928C"
 			subtitle: "Fluid!"
 			title: "Chapter 1A: Copper"
-			x: 0.5d
+			x: -0.5d
 			y: 2.0d
 		}
 		{
@@ -165,7 +165,7 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 2: Brass Beginnings"
-			x: 2.0d
+			x: 1.0d
 			y: 3.5d
 		}
 		{
@@ -176,7 +176,7 @@
 			id: "2E949A84C2E9B3C8"
 			subtitle: "Trains!"
 			title: "Chapter 2C: Stronk"
-			x: 2.0d
+			x: 1.0d
 			y: 2.0d
 		}
 		{
@@ -208,7 +208,7 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 4: Plastic Pandemonium"
-			x: 5.0d
+			x: 4.0d
 			y: 4.0d
 		}
 		{
@@ -239,7 +239,7 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 3: Radiant Revolution"
-			x: 3.5d
+			x: 2.5d
 			y: 3.5d
 		}
 		{
@@ -432,6 +432,14 @@
 					team_reward: false
 					type: "item"
 				}
+				{
+					auto: "invisible"
+					id: "7AAB07A37436BF92"
+					ignore_reward_blocking: true
+					stage: "nether_access"
+					team_reward: true
+					type: "gamestage"
+				}
 			]
 			tasks: [{
 				id: "23E83A544E48E45D"
@@ -533,7 +541,7 @@
 			id: "15983A1F5FED57E0"
 			subtitle: "Power!"
 			title: "Chapter 2A: Power"
-			x: 1.5d
+			x: 0.5d
 			y: 5.0d
 		}
 		{
@@ -544,7 +552,7 @@
 			id: "72C3FAE0193F665C"
 			subtitle: "More Machines"
 			title: "Chapter 2B: Scorch Machine"
-			x: 2.5d
+			x: 1.5d
 			y: 5.0d
 		}
 		{
@@ -576,8 +584,65 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 5: Integrated Innovations"
-			x: 5.0d
+			x: 4.0d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"437114B9BC07B2BD"
+				"099F5D860FC50376"
+			]
+			description: ["Chapter 6"]
+			hide: true
+			icon: "ae2:singularity"
+			id: "0225A0BF60D285CD"
+			rewards: [
+				{
+					id: "5F885758E22A519A"
+					table_id: 5860814424445915091L
+					type: "random"
+				}
+				{
+					id: "3C7ED7F94F0EF08B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "3611EA21DA7FABC3"
+				title: "Quantum isn't a state of mind!"
+				type: "checkmark"
+			}]
+			title: "Chapter 6: Quantum Quintessence"
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0225A0BF60D285CD"]
+			description: ["Chapter 6"]
+			hide: true
+			icon: "kubejs:time_machine"
+			id: "5B817E19476DEBA1"
+			rewards: [
+				{
+					id: "5D2CBB31195AD058"
+					table_id: 5860814424445915091L
+					type: "random"
+				}
+				{
+					id: "794D4517E32C0A3F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "3EF1B64AD9101D4E"
+				title: "Quantum isn't a state of mind!"
+				type: "checkmark"
+			}]
+			title: "Chapter 7: Temporal Termination"
+			x: 7.0d
+			y: 3.5d
 		}
 	]
 	title: "The Arcane Odyssey"

@@ -96,4 +96,16 @@ ServerEvents.recipes(event => {
         },
         "result": "minecraft:cobblestone"
     });
+
+    
+    event.custom({
+        "type": "aether:freezing",
+        "category": "freezable_blocks",
+        "cookingtime": 20 * 60 * 1,
+        "experience": 0.1,
+        "ingredient": {
+          "item": "aether:skyroot_remedy_bucket"
+        },
+        "result": "kubejs:magical_rock_candy"
+      });
 });

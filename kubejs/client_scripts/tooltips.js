@@ -43,6 +43,20 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add('createresourcegeodes:catalyst_activator_wand', 'Used for moving Catalysts by right clicking.');
 
+    tooltip.addAdvanced(/kubejs:.*spawn_egg/, (item, advanced, text) => {
+        if (tooltip.isShift()) {
+            text.add("§6Doesn't work on Spawners!");
+        }
+    });
+
+    tooltip.addAdvanced('kubejs:magical_rock_candy', (item, advanced, text) => {
+         text.add("§1Flight (1:30)");
+         text.add("§4Warning:§r §cOnly eat in The Aether!");
+         if (tooltip.isShift()) {
+            text.add("§cEating outside The Aether will cause negative effects and remove flight!");
+         }
+    });
+
     tooltip.addAdvanced(/sophisticatedbackpacks:.*backpack/, (item, advanced, text) => {
         if (!tooltip.isShift()) {
             if (item.nbt) {

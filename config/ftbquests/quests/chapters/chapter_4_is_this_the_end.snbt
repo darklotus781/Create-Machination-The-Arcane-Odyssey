@@ -47,14 +47,68 @@
 		}
 		{
 			dependencies: ["0711E0747C34E922"]
-			id: "35CC1C270294E40D"
+			id: "1EAB5892B997FB04"
 			tasks: [{
-				id: "60EB17D257FB80EE"
-				item: "minecraft:oak_log"
-				type: "item"
+				entity: "minecraft:ender_dragon"
+				icon: "minecraft:dragon_head"
+				id: "1798F26D095194A7"
+				title: "Kill the Dragon"
+				type: "kill"
+				value: 1L
 			}]
 			x: 2.5d
-			y: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["76A4479320CB91F4"]
+			id: "28174B014BF3C2FA"
+			tasks: [{
+				entity: "minecraft:shulker"
+				icon: "minecraft:shulker_box"
+				id: "5FDE54951188F812"
+				type: "kill"
+				value: 10L
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0711E0747C34E922"]
+			id: "76A4479320CB91F4"
+			tasks: [{
+				icon: "minecraft:purpur_pillar"
+				id: "4AD6ECD474B78165"
+				structure: "#minecraft:end_city"
+				title: "Find a City"
+				type: "structure"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1EAB5892B997FB04"]
+			id: "219740BB11ABC9FC"
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "601C2DF24B6F5E5B"
+				type: "kill"
+				value: 10L
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1EAB5892B997FB04"]
+			id: "13957952F58CC31E"
+			tasks: [{
+				icon: "cataclysm:void_core"
+				id: "428009B6F0E7C595"
+				structure: "cataclysm:ruined_citadel"
+				title: "Find a Citadel"
+				type: "structure"
+			}]
+			x: 0.5d
+			y: 0.5d
 		}
 	]
 	title: "Chapter 4: Is this The End?"

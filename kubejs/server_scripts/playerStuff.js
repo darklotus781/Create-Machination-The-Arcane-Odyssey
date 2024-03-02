@@ -51,36 +51,60 @@ PlayerEvents.loggedIn(event => {
     })
 });
 
-PlayerEvents.tick(event => {
-    const { player, player: { age, nbt } } = event;
+ItemEvents.foodEaten(event => {
+    let { player, item: { id } } = event;
 
-    // Fires event once a second
-    if (age % 20 !== 0) return;
-    if (player.creative || player.spectator) return; // Don't process if player is in creative or spectator
-    
-    let curios = nbt.ForgeCaps['curios:inventory'];
-    let curiosCheck = curios.toString().includes('artifacts:bunny_hoppers');
-
-    if (player.abilities.mayfly) {
+    if (id == 'kubejs:magical_rock_candy') {
         if (player.level.dimension != 'aether:the_aether') {
-            if (curiosCheck) {
-                player.tell(Text.yellow('Your bunny hoppers begin to squeak, flight is not allowed in this realm!'));
-                player.server.runCommandSilent(`fly ${player.username}`);
+            player.addItemCooldown(id, 20 * 60 * 5); // 5 Minutes
+            player.tell(Text.red('It turned into a rock and you choked.'));
+            if ((player.abilities.mayfly || player.abilities.flying) && (! player.creative || !player.spectator)) {
+                player.tell(Text.gold("Ohh no, you can't fly anymore!"));
+                player.potionEffects.add('minecraft:slow_falling', 20 * 60 * 0.5);
             }
-        } else { // Player is in the Aether and Can Fly
-            if (! curiosCheck) { // If the bunny hoppers are not equiped, remove flight.
-                player.server.runCommandSilent(`fly ${player.username}`);
-            }
-        }
-    }
-
-    if (!player.abilities.mayfly && player.level.dimension == 'aether:the_aether') {
-        if (curiosCheck) {
-            player.tell(Text.green('Your bunny hoppers begin to squeak, flight is allowed in this realm!'));
-            player.server.runCommandSilent(`fly ${player.username}`);
+            
+            event.server.schedule(2*1000, () => {
+                player.removeEffect('ars_nouveau:flight');
+                player.potionEffects.add('minecraft:slowness', 20 * 60 * 0.5, 4);
+                player.potionEffects.add('minecraft:hunger', 20 * 60 * 1, 2);
+            });
+        } else {
+            player.statusMessage = Text.green('You feel light on your feet!');
+            player.addItemCooldown(id, 20 * 60 * 1.25); // 1.25 Minutes
         }
     }
 });
+
+// PlayerEvents.tick(event => {
+//     const { player, player: { age, nbt } } = event;
+
+//     // Fires event once a second
+//     if (age % 20 !== 0) return;
+//     if (player.creative || player.spectator) return; // Don't process if player is in creative or spectator
+
+//     let curios = nbt.ForgeCaps['curios:inventory'];
+//     let curiosCheck = curios.toString().includes('artifacts:bunny_hoppers');
+
+//     if (player.abilities.mayfly) {
+//         if (player.level.dimension != 'aether:the_aether') {
+//             if (curiosCheck) {
+//                 player.tell(Text.yellow('Your bunny hoppers begin to squeak, flight is not allowed in this realm!'));
+//                 player.server.runCommandSilent(`fly ${player.username}`);
+//             }
+//         } else { // Player is in the Aether and Can Fly
+//             if (! curiosCheck) { // If the bunny hoppers are not equiped, remove flight.
+//                 player.server.runCommandSilent(`fly ${player.username}`);
+//             }
+//         }
+//     }
+
+//     if (!player.abilities.mayfly && player.level.dimension == 'aether:the_aether') {
+//         if (curiosCheck) {
+//             player.tell(Text.green('Your bunny hoppers begin to squeak, flight is allowed in this realm!'));
+//             player.server.runCommandSilent(`fly ${player.username}`);
+//         }
+//     }
+// });
 
 global.dimChangeEvent = event => {
     if (!event.getEntity().player) return;
@@ -130,50 +154,50 @@ global.dimChangeEvent = event => {
     }
 }
 
-ServerEvents.commandRegistry(e => {
-    const { commands: Commands, arguments: Arguments } = e
+// ServerEvents.commandRegistry(e => {
+//     const { commands: Commands, arguments: Arguments } = e
 
-    e.register(Commands.literal('fly')
-        .requires(s => s.hasPermission(2))
-        .executes(c => fly(c.source.player))
-        .then(Commands.argument('target', Arguments.PLAYER.create(e))
-            .executes(c => fly(Arguments.PLAYER.getResult(c, 'target')))
-        )
-    )
+//     e.register(Commands.literal('fly')
+//         .requires(s => s.hasPermission(2))
+//         .executes(c => fly(c.source.player))
+//         .then(Commands.argument('target', Arguments.PLAYER.create(e))
+//             .executes(c => fly(Arguments.PLAYER.getResult(c, 'target')))
+//         )
+//     )
 
-    let fly = (player) => {
-        // console.log(player)
-        if (player.abilities.mayfly) {
-            player.abilities.mayfly = false
-            player.abilities.flying = false
-            player.displayClientMessage(Component.gold('Flying: ').append(Component.red('disabled')), true)
-        } else {
-            player.abilities.mayfly = true
-            if (!player.onGround) player.abilities.flying = true
-            player.displayClientMessage(Component.gold('Flying: ').append(Component.green('enabled')), true)
-        }
+//     let fly = (player) => {
+//         // console.log(player)
+//         if (player.abilities.mayfly) {
+//             player.abilities.mayfly = false
+//             player.abilities.flying = false
+//             player.displayClientMessage(Component.gold('Flying: ').append(Component.red('disabled')), true)
+//         } else {
+//             player.abilities.mayfly = true
+//             if (!player.onGround) player.abilities.flying = true
+//             player.displayClientMessage(Component.gold('Flying: ').append(Component.green('enabled')), true)
+//         }
 
-        player.onUpdateAbilities()
-        return 1
-    }
-})
+//         player.onUpdateAbilities()
+//         return 1
+//     }
+// })
 
 
-/** @arg {Internal.CurioChangeEvent} e */
-global.curioChangeEvent = e => {
-    let player = e.entity
-    let server = player.server
-    let curioEquiped = e.to
-    let curioRemoved = e.from
+// /** @arg {Internal.CurioChangeEvent} e */
+// global.curioChangeEvent = e => {
+//     let player = e.entity
+//     let server = player.server
+//     let curioEquiped = e.to
+//     let curioRemoved = e.from
 
-    if (curioRemoved == "artifacts:bunny_hoppers") {
-        if (player.abilities.mayfly) {
-            server.runCommandSilent(`fly ${player.username}`)
-        }
-    }
-    if (curioEquiped == "artifacts:bunny_hoppers") {
-        if (!player.abilities.mayfly) {
-            server.runCommandSilent(`fly ${player.username}`)
-        }
-    }
-}
+//     if (curioRemoved == "artifacts:bunny_hoppers") {
+//         if (player.abilities.mayfly) {
+//             server.runCommandSilent(`fly ${player.username}`)
+//         }
+//     }
+//     if (curioEquiped == "artifacts:bunny_hoppers") {
+//         if (!player.abilities.mayfly) {
+//             server.runCommandSilent(`fly ${player.username}`)
+//         }
+//     }
+// }
