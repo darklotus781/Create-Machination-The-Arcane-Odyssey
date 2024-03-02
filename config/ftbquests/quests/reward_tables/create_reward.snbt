@@ -1,0 +1,13 @@
+{
+	icon: "kubejs:create_bag_common"
+	id: "5562A90263DDB765"
+	loot_size: 1
+	order_index: 26
+	rewards: [
+		{ item: "kubejs:create_bag_common" }
+		{ item: "kubejs:create_bag_rare" }
+		{ item: "kubejs:create_bag_epic" }
+	]
+	title: "Create Reward"
+	use_title: true
+}

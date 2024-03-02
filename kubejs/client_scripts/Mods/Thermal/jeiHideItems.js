@@ -19,9 +19,6 @@ JEIEvents.hideItems(event => {
     event.hide('thermal:bronze_nugget');
     event.hide('thermal:bronze_dust');
     event.hide('thermal:bronze_gear');
-    event.hide(/cinnabar/);
-    event.hide(/niter/);
-    event.hide(/apatite/);
     event.hide('thermal:bronze_plate');
     event.hide('thermal:bronze_coin');
     event.hide('thermal:crude_oil_bucket');

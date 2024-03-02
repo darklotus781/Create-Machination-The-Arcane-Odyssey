@@ -598,6 +598,8 @@
 					xp_levels: 100
 				}
 			]
+			shape: "gear"
+			size: 1.5d
 			subtitle: "Vanquish the Warden"
 			tasks: [
 				{
@@ -614,7 +616,198 @@
 				}
 			]
 			x: 1.5d
-			y: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2F63FB9E8EAC18BD"]
+			description: [
+				"Power generation in this pack is limited to mid-game items unless you stick with rotational force.  Introducing Create: New Age."
+				""
+				"Create: New Age is an expansion for the Create mod, enhancing the gameplay experience by seamlessly integrating electricity into the existing mechanics. This addon introduces various features, including the utilization of large spinning copper coils with magnets for electricity generation, offering a dynamic and visually engaging power source."
+				""
+				"Multiple types of motors are incorporated, each capable of converting electricity into rotation, diversifying the range of applications. The addition of an Energiser enables players to craft new items by harnessing both rotation and electricity."
+				""
+				"The inclusion of multi-block nuclear reactors introduces a substantial heat generation mechanism, synergizing with Create's boilers to produce steam for efficient power generation. Wires facilitate the seamless transfer of energy, forming an interconnected network. Solar panels contribute to power generation by harnessing heat, and a dedicated heat system allows players to transfer thermal energy from solar panels and nuclear reactors to other areas. "
+			]
+			id: "7C9ACC15474B80C1"
+			rewards: [
+				{
+					count: 16
+					id: "212262BCBA62E4A7"
+					item: "create_new_age:thorium"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "23328F577AEA376F"
+					table_id: 6152665868672022373L
+					type: "random"
+				}
+				{
+					id: "1EF454AA4F821102"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "4E464A92D44BAA60"
+				item: "create_new_age:thorium"
+				type: "item"
+			}]
+			title: "It's the new age"
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7C9ACC15474B80C1"]
+			description: [
+				"Radioactive Thorium is used to make fuel for a nuclear reactor."
+				"Thorium can be automated with a mixer, check JEI for the recipe."
+				"Once you have unlimited thorium, process some of it through a crushing wheel for chance to get radioactive thorium."
+			]
+			icon: "createdeco:decal_radioactive"
+			id: "4642019FCB6AA7E0"
+			rewards: [
+				{
+					count: 16
+					id: "13436FA7361C5A5E"
+					item: "create_new_age:radioactive_thorium"
+					type: "item"
+				}
+				{
+					id: "1AFF8C068C0137CE"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "3E29C2E48489B72B"
+				item: "create_new_age:radioactive_thorium"
+				type: "item"
+			}]
+			title: "Radioactive?"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4642019FCB6AA7E0"]
+			id: "28D0BB14D1461F42"
+			rewards: [{
+				count: 16
+				id: "26650588C1A9FEEF"
+				item: "create_new_age:nuclear_fuel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "126705C700878224"
+					item: "create_new_age:reactor_casing"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0779219CCFD3A56D"
+					item: "create_new_age:reactor_rod"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5790CAA20977ED7B"
+					item: "create_new_age:reactor_glass"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7118965983C2D0AE"
+					item: "create_new_age:reactor_fuel_acceptor"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "12A5C80E0C4173CB"
+					item: "create_new_age:reactor_heat_vent"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "287222B80A18FA33"
+					item: "create_new_age:nuclear_fuel"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7C9ACC15474B80C1"]
+			id: "52217865063D8E10"
+			rewards: [
+				{
+					count: 16
+					id: "0EB26677FC2FC034"
+					item: "create_new_age:electrical_connector"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0D21D3A6A556F822"
+					item: "create_new_age:copper_wire"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "2B2C386D07E6540D"
+				item: "create_new_age:basic_motor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7C9ACC15474B80C1"]
+			id: "3861A052AF625114"
+			rewards: [
+				{
+					count: 16
+					id: "2C636D27B92A3028"
+					item: "create_new_age:magnetite_block"
+					type: "item"
+				}
+				{
+					id: "3239D3F936A69070"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "75E7F5EFFDC196A9"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "76D5296B562259FC"
+					item: "create_new_age:magnetite_block"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "788C1F3FCC33B31F"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 4.0d
 		}
 	]
 	title: "Chapter 3: Somewhere in between"

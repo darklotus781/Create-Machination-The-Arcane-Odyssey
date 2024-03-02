@@ -17,11 +17,21 @@ ItemEvents.rightClicked(event => {
 
     //use vanilla loot table for every type of bags
     for (let i = 0; i < global.bag_name.length; i++) {
-        lootbag(`kubejs:${global.bag_name[i]}_bag_common`, `machination:loot_bags/${global.bag_name[i]}/tier1`);
-        lootbag(`kubejs:${global.bag_name[i]}_bag_rare`, `machination:loot_bags/${global.bag_name[i]}/tier2`);
-        lootbag(`kubejs:${global.bag_name[i]}_bag_epic`, `machination:loot_bags/${global.bag_name[i]}/tier3`);
+        if (bag_name[i] === 'create') {
+            lootbag(`kubejs:create_bag_common`, `machination:chests/create/tier1`);
+            lootbag(`kubejs:create_bag_rare`, `machination:chests/create/tier2`);
+            lootbag(`kubejs:create_bag_epic`, `machination:chests/create/tier3`);
+        } else if (bag_name[i] === 'magic') {
+            lootbag(`kubejs:magic_bag_common`, `machination:chests/magic/tier1`);
+            lootbag(`kubejs:magic_bag_rare`, `machination:chests/magic/tier2`);
+            lootbag(`kubejs:magic_bag_epic`, `machination:chests/magic/tier3`);
+        } else {
+            lootbag(`kubejs:${global.bag_name[i]}_bag_common`, `machination:loot_bags/${global.bag_name[i]}/tier1`);
+            lootbag(`kubejs:${global.bag_name[i]}_bag_rare`, `machination:loot_bags/${global.bag_name[i]}/tier2`);
+            lootbag(`kubejs:${global.bag_name[i]}_bag_epic`, `machination:loot_bags/${global.bag_name[i]}/tier3`);
+        }
     }
-})
+});
 
 //Craft rare and epic bags
 // ServerEvents.recipes(event => {

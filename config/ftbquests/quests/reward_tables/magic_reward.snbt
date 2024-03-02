@@ -1,0 +1,13 @@
+{
+	icon: "kubejs:magic_bag_common"
+	id: "11ED4A27897BDBCD"
+	loot_size: 1
+	order_index: 27
+	rewards: [
+		{ item: "kubejs:magic_bag_common" }
+		{ item: "kubejs:magic_bag_rare" }
+		{ item: "kubejs:magic_bag_epic" }
+	]
+	title: "Magic Reward"
+	use_title: true
+}
