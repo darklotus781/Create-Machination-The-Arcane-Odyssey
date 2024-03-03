@@ -378,6 +378,18 @@
 					item: "aether:skyroot_sapling"
 					type: "item"
 				}
+				{
+					count: 8
+					id: "2BAD9D72754B7D5A"
+					item: "aether:berry_bush_stem"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2439697C688F2873"
+					item: "aether:blue_berry"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "0BAE67FBB94C31B1"
@@ -1381,8 +1393,11 @@
 			description: [
 				"Use a skyroot bucket on an Aechor Plant to get poison."
 				"Enchanting the bucket of poison will produce the remedy!"
+				""
+				"Finally, you can freeze this remedy bucket to produce something that will help you on your journey in this realm!"
 			]
 			hide_dependency_lines: true
+			icon: "kubejs:magical_rock_candy"
 			id: "05C8F4EE3D962B09"
 			optional: true
 			rewards: [
@@ -1410,109 +1425,8 @@
 				item: "aether:skyroot_remedy_bucket"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"7B789D0F054ABA0B"
-				"36A93756E822BF86"
-			]
-			description: [
-				"This is an odd quest, but the reward is worth it."
-				"Collect one of each Moa egg, a drop from a blue and gold swet and other items."
-				"Turn them in and receive an Explorer's Compass and 3 orbs of temporary flight."
-				""
-				"These items are intended to be used to locate dungeons, once you've located the dungeons you can bridge to them.  Be careful in your travels, these items are a one-time offering!"
-				""
-				"The orbs will not work after leaving this realm, so saving them is pointless."
-			]
-			hide: true
-			hide_dependency_lines: true
-			icon: "minecraft:compass"
-			id: "790DA36432FFEC6A"
-			rewards: [
-				{
-					count: 3
-					id: "7996C9F7CD174525"
-					item: "forbidden_arcanus:orb_of_temporary_flight"
-					type: "item"
-				}
-				{
-					id: "03F27F4D0E20E32C"
-					item: {
-						Count: 1b
-						id: "explorerscompass:explorerscompass"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "6E6DC513E966017C"
-					item: "aether:blue_moa_egg"
-					type: "item"
-				}
-				{
-					id: "75671A9F1CD3EE70"
-					item: "aether:white_moa_egg"
-					type: "item"
-				}
-				{
-					id: "5265AA90F9595FD7"
-					item: "aether:black_moa_egg"
-					type: "item"
-				}
-				{
-					id: "0288AE2ED76B90A3"
-					item: "aether:swet_ball"
-					type: "item"
-				}
-				{
-					id: "4AD714541B2C8C26"
-					item: "aether:golden_amber"
-					type: "item"
-				}
-				{
-					id: "5E225372DB6E344A"
-					item: "aether:zanite_gemstone"
-					type: "item"
-				}
-				{
-					id: "7ED6135806F8305B"
-					item: "aether:ambrosium_shard"
-					type: "item"
-				}
-				{
-					id: "0FFE51BE42F34B61"
-					item: "minecraft:glowstone"
-					type: "item"
-				}
-				{
-					id: "01080A65CBFD87DB"
-					item: "aether:cold_aercloud"
-					type: "item"
-				}
-				{
-					id: "521583B424F81A5C"
-					item: "aether:blue_aercloud"
-					type: "item"
-				}
-				{
-					id: "57E545C4BB92CB45"
-					item: "aether:golden_aercloud"
-					type: "item"
-				}
-				{
-					id: "016E8C812B7CCA87"
-					item: "aether:aechor_petal"
-					type: "item"
-				}
-			]
-			title: "Time to Explore"
-			x: 5.5d
-			y: -1.0d
+			x: 6.0d
+			y: -2.0d
 		}
 	]
 	title: "Chapter 1: Aetherial Lands"

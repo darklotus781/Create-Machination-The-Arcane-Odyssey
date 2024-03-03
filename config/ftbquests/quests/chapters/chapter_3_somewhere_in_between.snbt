@@ -226,7 +226,7 @@
 			subtitle: "A spell based magic mod"
 			tasks: [{
 				id: "201D4D788B943D77"
-				title: "Ars Nouveau"
+				title: "Ars Nouveau Unlock"
 				type: "checkmark"
 			}]
 			x: 5.0d
@@ -407,7 +407,7 @@
 			subtitle: "Cool items utilized in progression"
 			tasks: [{
 				id: "13C0B18FD0FF6712"
-				title: "Forbidden and Arcanus"
+				title: "Forbidden and Arcanus Unlock"
 				type: "checkmark"
 			}]
 			x: 8.0d
@@ -555,7 +555,7 @@
 			subtitle: "A magic / tech mod based around natural magic."
 			tasks: [{
 				id: "4AFB878C1D5ECFBB"
-				title: "Ars Nouveau"
+				title: "Botania Unlock"
 				type: "checkmark"
 			}]
 			title: "Botania"
@@ -808,6 +808,49 @@
 			]
 			x: 0.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["7C9ACC15474B80C1"]
+			id: "727FF47F02A02266"
+			rewards: [
+				{
+					count: 16
+					id: "7024B107DB5AF74B"
+					item: "create_new_age:overcharged_iron"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1966FE420B4F0515"
+					item: "create_new_age:overcharged_gold"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1ABD5202EEF233B2"
+					item: "create_new_age:overcharged_diamond"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "49FF4F3A57090A6D"
+					item: "create_new_age:energiser_t1"
+					type: "item"
+				}
+				{
+					id: "062474866650DCD6"
+					item: "create_new_age:overcharged_iron"
+					type: "item"
+				}
+				{
+					id: "128E89DCA7889EDC"
+					item: "create_new_age:overcharged_gold"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 5.0d
 		}
 	]
 	title: "Chapter 3: Somewhere in between"

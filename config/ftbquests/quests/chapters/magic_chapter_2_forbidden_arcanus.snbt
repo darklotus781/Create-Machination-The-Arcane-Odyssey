@@ -9,7 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["411FC26DBB795420"]
+			dependencies: [
+				"411FC26DBB795420"
+				"13C0B18FD0FF6712"
+			]
 			description: [
 				"Forbidden \\&\\ Arcanus adds new ways to get better armor, enchants, and more!"
 				""

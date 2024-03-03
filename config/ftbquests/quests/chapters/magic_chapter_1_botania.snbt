@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "magic_chapter_1_botania"
 	group: "5741ADDA3A600D3C"
+	hide_quest_until_deps_visible: true
 	icon: "botania:creative_pool"
 	id: "242E79081A5E2427"
 	order_index: 0
@@ -509,7 +510,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["52F6F1B037557C3C"]
+			dependencies: [
+				"52F6F1B037557C3C"
+				"4AFB878C1D5ECFBB"
+			]
 			description: [
 				"&aBotania&r is a tech mod disguised as a magic mod, but with TONS of cool trinkets and toys to play with!"
 				""

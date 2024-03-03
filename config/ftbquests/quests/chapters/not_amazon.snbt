@@ -1,15 +1,18 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "not_amazon"
 	group: "5CCAF12F37EE8C1A"
+	hide_quest_until_deps_visible: true
 	icon: "minecraft:chest"
 	id: "0590481E147A1267"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["Your last resort in case the sundown beat you to it."]
+			hide_dependency_lines: true
 			icon: "minecraft:cyan_bed"
 			id: "5D17CB247942013A"
 			rewards: [{
@@ -32,7 +35,9 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["Aimlessly traversing the nether is just the worst. This wonderful gadget will point you in the correct direction at all times."]
+			hide_dependency_lines: true
 			icon: "create:blaze_burner"
 			id: "252B9DD5BFB8184A"
 			rewards: [{
@@ -59,7 +64,9 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Radiant Mechanisms&r."]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "kubejs:resonator"
@@ -117,6 +124,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["411FC26DBB795420"]
 			description: [
 				"&6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets."
 				""
@@ -137,6 +145,7 @@
 		{
 			dependencies: ["0F870BEA235D662D"]
 			description: ["Here you can exchange a Gold Coin back to a Stack of Silver."]
+			hide_dependency_lines: true
 			icon: { Count: 16b, id: "thermal:silver_coin" }
 			id: "5326F6482C45D22A"
 			rewards: [
@@ -174,6 +183,7 @@
 		{
 			dependencies: ["0F870BEA235D662D"]
 			description: ["Some trades require you to hand in Gold Coins. These are worth a stack of Silver each."]
+			hide_dependency_lines: true
 			icon: { Count: 2b, id: "thermal:gold_coin" }
 			id: "1A566C74B1F7F050"
 			rewards: [
@@ -209,7 +219,9 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["Sometimes you have to treat yourself and the co-workers to a nice meal."]
+			hide_dependency_lines: true
 			icon: "farmersdelight:steak_and_potatoes"
 			id: "09DC2E2BE2BE32F4"
 			rewards: [
@@ -263,7 +275,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["Early on it might help to import some dirt for base building."]
+			hide_dependency_lines: true
 			icon: "minecraft:dirt"
 			id: "4B01606CE7AF3121"
 			rewards: [
@@ -303,7 +317,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["This mysterious fellow is offering a puzzle box with seemingly endless layers of depth. As an expert you know that this can only be finite. But what will await you at the bottom?"]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "minecraft:barrel"
@@ -437,11 +453,13 @@
 				type: "item"
 			}]
 			title: "Test of Patience"
-			x: -9.0d
+			x: -11.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["It's like a backpack but classy."]
+			hide_dependency_lines: true
 			icon: "minecraft:shulker_box"
 			id: "4FD46F841CCD59F8"
 			rewards: [
@@ -477,52 +495,12 @@
 				type: "item"
 			}]
 			title: "Enderpack"
-			x: -4.5d
-			y: -0.5d
+			x: -1.0d
+			y: 1.0d
 		}
 		{
-			description: ["\"I found this in an abandoned Workshop down the road; would you like to buy it?\""]
-			icon: {
-				Count: 1b
-				id: "tconstruct:creative_slot"
-				tag: {
-					slot: "upgrades"
-				}
-			}
-			id: "0CCF34BF1C5829AE"
-			rewards: [{
-				id: "37DBD1EF724A42D9"
-				item: {
-					Count: 1b
-					id: "minecraft:chest"
-					tag: {
-						BlockEntityTag: {
-							LootTable: "custom:chests/tinker"
-							id: "minecraft:chest"
-						}
-						display: {
-							Lore: ["{\"text\":\"Contains Loot\",\"color\":\"gray\",\"italic\":\"false\"}"]
-							Name: "{\"text\":\"Tinkerbox\",\"italic\":false}"
-						}
-					}
-				}
-				team_reward: false
-				type: "item"
-			}]
-			subtitle: "25 Silver"
-			tasks: [{
-				consume_items: true
-				count: 25L
-				icon: { Count: 25b, id: "thermal:silver_coin" }
-				id: "32ACF7B1C0BD9D97"
-				item: "thermal:silver_coin"
-				type: "item"
-			}]
-			title: "The Tinkerbox"
-			x: -2.5d
-			y: 1.5d
-		}
-		{
+			dependencies: ["0F870BEA235D662D"]
+			hide_dependency_lines: true
 			icon: "minecraft:totem_of_undying"
 			id: "6D9F2FBEB7CC5195"
 			rewards: [{
@@ -545,7 +523,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!"]
+			hide_dependency_lines: true
 			icon: "create:haunted_bell"
 			id: "4B52A04818075900"
 			rewards: [
@@ -571,36 +551,14 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "Where mob ?"
-			x: -4.0d
+			title: "Who needs a flashlight?"
+			x: -2.5d
 			y: 2.0d
 		}
 		{
-			description: ["True IT experts tend to avoid going outside much. Thankfully the necessary computer parts can now be delivered directly to their inventory!"]
-			icon: "appliedenergistics2:silicon_press"
-			id: "4BAC95CCC72369AD"
-			rewards: [{
-				count: 4
-				id: "51ABA96DE3477D3B"
-				item: "kubejs:circuit_scrap"
-				team_reward: false
-				type: "item"
-			}]
-			subtitle: "6 Gold"
-			tasks: [{
-				consume_items: true
-				count: 6L
-				icon: { Count: 12b, id: "thermal:gold_coin" }
-				id: "3D328A6D69E64EDA"
-				item: "thermal:gold_coin"
-				type: "item"
-			}]
-			title: "Press Express"
-			x: -1.0d
-			y: 2.0d
-		}
-		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["Quack"]
+			hide_dependency_lines: true
 			icon: "minecraft:egg"
 			id: "6C00F2935F27C2AD"
 			rewards: [
@@ -643,7 +601,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["A little testing selection of Thermal Weaponry."]
+			hide_dependency_lines: true
 			icon: "thermal:explosive_grenade"
 			id: "1CC29991D5F248CA"
 			rewards: [
@@ -692,10 +652,12 @@
 				type: "item"
 			}]
 			title: "Playing with Fire"
-			x: -12.5d
-			y: -1.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
+			hide_dependency_lines: true
 			icon: "biomemakeover:green_glowshroom"
 			id: "42384DE39AA48976"
 			rewards: [
@@ -745,10 +707,12 @@
 				type: "item"
 			}]
 			title: "Gardener's Starter Pack"
-			x: -2.5d
-			y: -1.5d
+			x: -4.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
+			hide_dependency_lines: true
 			icon: "minecraft:painting"
 			id: "61B040CD0832EFC0"
 			rewards: [
@@ -822,6 +786,8 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
+			hide_dependency_lines: true
 			icon: "minecraft:minecart"
 			id: "117587D824D23D69"
 			rewards: [
@@ -888,6 +854,8 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
+			hide_dependency_lines: true
 			icon: "minecraft:tropical_fish"
 			id: "2D75D1864FB1EF75"
 			rewards: [
@@ -939,7 +907,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["Not too stoked with your facade? Not a problem! Foliage solves everything."]
+			hide_dependency_lines: true
 			icon: "minecraft:oak_leaves"
 			id: "7D93DAB3E8ACF953"
 			rewards: [
@@ -998,6 +968,8 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
+			hide_dependency_lines: true
 			icon: "minecraft:bee_nest"
 			id: "003E0D1CE60B166A"
 			rewards: [
@@ -1056,6 +1028,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["If you manage to accumulate enough coins, purchasing an eternal saw is a viable option. However, keep in mind that these saws are not inexpensive, and acquiring one through purchase may require a significant investment of your resources. As an alternative, you have the opportunity to craft an eternal saw yourself. This DIY approach can be a more cost-effective solution, allowing you to save your coins for other purposes. Crafting your own eternal saw not only provides a sense of accomplishment but also gives you a valuable tool that can greatly aid in your ongoing projects and endeavors."]
 			hide: true
 			hide_dependency_lines: true
@@ -1115,6 +1088,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["If you manage to accumulate enough coins, purchasing an eternal screwdriver is a viable option. However, keep in mind that these screwdrivers are not inexpensive, and acquiring one through purchase may require a significant investment of your resources. As an alternative, you have the opportunity to craft an eternal screwdriver yourself. This DIY approach can be a more cost-effective solution, allowing you to save your coins for other purposes. Crafting your own eternal screwdriver not only provides a sense of accomplishment but also gives you a valuable tool that can greatly aid in your ongoing projects and endeavors."]
 			hide: true
 			hide_dependency_lines: true
@@ -1174,7 +1148,9 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["Use these spawn eggs to spawn a pair of cows."]
+			hide_dependency_lines: true
 			icon: "minecraft:cow_spawn_egg"
 			id: "12BBE5303D584F38"
 			rewards: [
@@ -1210,7 +1186,9 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["Used for completing tasks that require fluids or power."]
+			hide_dependency_lines: true
 			icon: "ftbquests:detector"
 			id: "1161942B706123F3"
 			rewards: [
@@ -1244,7 +1222,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["0F870BEA235D662D"]
 			description: ["Spawn a camel at your current location."]
+			hide_dependency_lines: true
 			icon: "minecraft:camel_spawn_egg"
 			id: "0376A34F49207F3F"
 			rewards: [

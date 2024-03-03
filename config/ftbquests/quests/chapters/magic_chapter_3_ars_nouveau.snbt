@@ -9,7 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["411FC26DBB795420"]
+			dependencies: [
+				"411FC26DBB795420"
+				"0F7ADBD455574DA8"
+			]
 			description: [
 				"Welcome to &aArs Nouveau&f!"
 				""

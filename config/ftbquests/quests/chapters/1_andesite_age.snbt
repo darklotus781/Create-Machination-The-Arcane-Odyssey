@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "1_andesite_age"
 	group: "565532624F0A44A9"
+	hide_quest_until_deps_visible: true
 	icon: "kubejs:kinetic_mechanism"
 	id: "203225418B0EED52"
 	order_index: 0

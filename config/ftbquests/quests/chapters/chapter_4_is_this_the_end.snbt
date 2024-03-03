@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "chapter_4_is_this_the_end"
 	group: "3F3D969172D871AB"
+	hide_quest_until_deps_visible: true
 	icon: "minecraft:end_portal_frame"
 	id: "08BE5DF86338E7E1"
 	images: [

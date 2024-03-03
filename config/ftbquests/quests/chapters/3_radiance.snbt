@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "3_radiance"
 	group: "565532624F0A44A9"
+	hide_quest_until_deps_visible: true
 	icon: "kubejs:radiant_mechanism"
 	id: "1A4885ECDFA72AC9"
 	order_index: 2

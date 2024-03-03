@@ -321,6 +321,8 @@ StartupEvents.registry('item', event => {
 		let template = `
 		{
 			title: "${amount}x ${name}"
+			dependencies: ["6AC1CED0D341150E"]
+			hide_dependency_lines: true
 			icon: "${id}"
 			disable_toast: true
 			can_repeat: true
@@ -398,7 +400,6 @@ StartupEvents.registry('item', event => {
 		simple("Gold Ingot", MC('gold_ingot', 8), 48, S, 0xD99413, 0xFAF25E)
 
 		simple("Andesite Alloy", CR('andesite_alloy', 16), 8, S, 0x505050, 0x878787)
-		// simple("Silica Steel", "8x moreminecarts:silica_steel", 16, S, 0x3E4644, 0xB8DAC8)
 		simple("Brass Ingot", AO('brass_ingot', 8), 48, S, 0x6F3C2D, 0xFCF085)
 		simple("Invar Ingot", AO('invar_ingot', 4), 64, S, 0x406D6C, 0xC3CAC1)
 
@@ -442,8 +443,6 @@ StartupEvents.registry('item', event => {
 		entry_cost = 10
 		simple("Daub", SP('daub', 16), 5, S, 0xBFBAAA, 0xCBC8B6)
 		simple("Framed Glass", CR('framed_glass', 16), 4, S, 0xA9C3CF, 0xE8E8E8)
-		// simple("Factory Block", "16x chisel:factory/dots", 2, S, 0x211C10, 0x604B43)
-		// simple("Laboratory Block", "16x chisel:laboratory/wallpanel", 4, S, 0x71706E, 0x9D9A98)
 		simple("Copper Shingles", CR('copper_shingles', 16), 3, S, 0xB5654B, 0xE4BB79)
 		simple("Algal Bricks", AP('algal_bricks', 32), 6, S, 0x292926, 0x3D4D48)
 		simple("Olivestone Bricks", AP('olivestone_bricks', 32), 8, S, 0x3A3C2E, 0x57553E)
@@ -453,9 +452,6 @@ StartupEvents.registry('item', event => {
 		simple("Twisted Planks", AP('twisted_planks', 32), 8, S, 0x5E5259, 0x72616B)
 		simple("Osseous Bricks", AP('osseous_bricks', 32), 8, S, 0x9D976F, 0xD3D0BF)
 		simple("Lantern", MC('lantern', 1), 1, S, 0x484F64, 0xF6C765)
-		// simple("Copper Lantern", SP('copper_lantern', 1), 1, S, 0xB36535, 0xF3B154)
-		// simple("Brass Lantern", SP('brass_lantern', 1), 1, S, 0xA47C37, 0xFAEACF)
-		// simple("Crimson Lantern", SP('crimson_lantern', 1), 1, S, 0x9C0E2C, 0xE7EB56)
 
 		next_group()
 		entry_cost = 10

@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "2_brass_age"
 	group: "565532624F0A44A9"
+	hide_quest_until_deps_visible: true
 	icon: "create:precision_mechanism"
 	id: "059D74AB8EF7DCEA"
 	order_index: 1

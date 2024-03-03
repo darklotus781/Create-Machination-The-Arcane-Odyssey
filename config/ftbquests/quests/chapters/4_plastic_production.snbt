@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "4_plastic_production"
 	group: "565532624F0A44A9"
+	hide_quest_until_deps_visible: true
 	icon: "kubejs:plastic_mechanism"
 	id: "63F5BD2F8A4DC433"
 	order_index: 3

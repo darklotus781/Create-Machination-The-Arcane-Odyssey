@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "chapter_5_the_other_place"
 	group: "3F3D969172D871AB"
+	hide_quest_until_deps_visible: true
 	icon: "allthemodium:other_vibranium_ore"
 	id: "1FEE7C12BCCF1E5F"
 	order_index: 4

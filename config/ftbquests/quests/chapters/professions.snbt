@@ -1,8 +1,9 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "professions"
 	group: "5CCAF12F37EE8C1A"
+	hide_quest_until_deps_visible: true
 	icon: "minecraft:item_frame"
 	id: "1634333847CCE52A"
 	order_index: 1
@@ -291,6 +292,7 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["411FC26DBB795420"]
 			description: [
 				"&6The Bounty Board&r provides means to earn currency for Trading."
 				"Here you can complete various tasks or buy a profession permit for use in the Trading Machine."
@@ -308,6 +310,8 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			icon: "minecraft:oak_sapling"
 			id: "41BB50843EF5EF10"
 			rewards: [{
@@ -406,7 +410,9 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
 			description: ["Write an application explaining why exactly your organisation is worth investing in."]
+			hide_dependency_lines: true
 			icon: "minecraft:book"
 			id: "736FC31210F334F2"
 			rewards: [{
@@ -532,6 +538,8 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			icon: "thermal:sulfur"
 			id: "128F1A9528CA4130"
 			rewards: [{
@@ -639,7 +647,9 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["36E02479368EAF04"]
 			description: ["A friendly Record Collector is interested in any discs you find on your travels."]
+			hide_dependency_lines: true
 			icon: "minecraft:music_disc_13"
 			id: "436DA1A1AB8C0734"
 			rewards: [
@@ -681,6 +691,8 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			icon: "minecraft:granite"
 			id: "2A9AAED667A95C6E"
 			rewards: [{
@@ -802,7 +814,9 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
 			description: ["If you've been terraforming, feel free to send some excess dirt to this Project."]
+			hide_dependency_lines: true
 			id: "1C5EA1173F4E592B"
 			rewards: [{
 				count: 15
@@ -825,6 +839,8 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			icon: "minecraft:carrot"
 			id: "4D07666ECE75D9B5"
 			rewards: [{
@@ -946,6 +962,8 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			icon: "minecraft:bone"
 			id: "7932D19BE114264A"
 			rewards: [{
@@ -999,6 +1017,8 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			id: "7C270AB26CD9AAB8"
 			rewards: [{
 				count: 30
@@ -1021,6 +1041,8 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			id: "29B58A9EDA478E7D"
 			rewards: [{
 				count: 50
@@ -1043,6 +1065,8 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			id: "1AA2C3EECE1832EE"
 			rewards: [{
 				count: 50
@@ -1065,6 +1089,8 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			id: "3F00084D9474C381"
 			rewards: [{
 				count: 2
@@ -1086,6 +1112,8 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			id: "562696C1D01B2685"
 			rewards: [{
 				count: 15
@@ -1109,6 +1137,8 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			icon: "create:crushed_raw_gold"
 			id: "39D56A2B01DBD865"
 			rewards: [{
@@ -1170,7 +1200,9 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["36E02479368EAF04"]
 			description: ["Defeat those intruders, and you'll have the support from nearby villages."]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "minecraft:crossbow"
@@ -1327,6 +1359,8 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["36E02479368EAF04"]
+			hide_dependency_lines: true
 			id: "2F2BA8C2AC2E0B93"
 			rewards: [{
 				count: 60

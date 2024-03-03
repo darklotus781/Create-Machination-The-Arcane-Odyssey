@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "6_quantum_quintessence"
 	group: "565532624F0A44A9"
+	hide_quest_until_deps_visible: true
 	icon: "kubejs:quantum_mechanism"
 	id: "467EFE69A1D98513"
 	order_index: 5
