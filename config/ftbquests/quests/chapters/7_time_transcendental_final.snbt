@@ -4,7 +4,7 @@
 	filename: "7_time_transcendental_final"
 	group: "565532624F0A44A9"
 	hide_quest_until_deps_visible: true
-	icon: "kubejs:time_mechanism"
+	icon: "kubejs:temporal_mechanism"
 	id: "3F42CB09E7A0D13B"
 	order_index: 6
 	quest_links: [ ]
@@ -46,7 +46,7 @@
 				{
 					count: 8L
 					id: "0EA32FCB5BA520DA"
-					item: "kubejs:time_mechanism"
+					item: "kubejs:temporal_mechanism"
 					type: "item"
 				}
 				{
@@ -71,7 +71,7 @@
 			tasks: [
 				{
 					id: "7D61BAC18FB9A8CC"
-					item: "kubejs:time_machine"
+					item: "kubejs:temporal_machine"
 					type: "item"
 				}
 				{

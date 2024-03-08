@@ -52,9 +52,9 @@ StartupEvents.registry('item', event => {
     incomplete_mechanism('Sturdy');
     mechanism('Plastic', RARITY_UNCOMMON);
     incomplete_mechanism('Plastic');
-    mechanism('Integrational', RARITY_UNCOMMON);
-    incomplete_mechanism('Integrational');
-    mechanism('Time', RARITY_RARE);
+    mechanism('Menril', RARITY_UNCOMMON);
+    incomplete_mechanism('Menril');
+    mechanism('Temporal', RARITY_RARE);
     mechanism('Quantum', RARITY_EPIC, true);
     incomplete_mechanism('Quantum');
     mechanism('Radiant', RARITY_RARE, true);
@@ -216,12 +216,10 @@ StartupEvents.registry('item', event => {
     // Smithing
     event.create('machine_smithing_template', 'smithing_template')
         .displayName('Machine Smithing Template')
-        .appliesTo("Ingredient Items")
-        .ingredients("Machines")
-        .appliesToSlotDescription("Insert one (1) Ingredient Item")
-        .ingredientsSlotDescription("Insert one (1) Machine")
-        .swordIcon()
-        .addIngredientsSlotIcon('item/andesite_machine')
+        .appliesTo('Machines')
+        .ingredients('Catalyzing Items')
+        .appliesToSlotDescription('Insert one (1) Item')
+        .ingredientsSlotDescription('Insert one (1) Machine')
         .texture('kubejs:item/machine_smithing_template')
 
     // Spawn Eggs - custom spawn eggs don't work on spawners ;)

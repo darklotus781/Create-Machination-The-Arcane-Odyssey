@@ -55,6 +55,7 @@ ServerEvents.recipes(event => {
         Item.of('create:hose_pulley', 1),
         Item.of('create:portable_fluid_interface', 2),
         Item.of('create:steam_engine', 3),
+        Item.of('sliceanddice:sprinkler', 2)
     ]
 
     const sturdy_machine_cutting = [
@@ -72,7 +73,7 @@ ServerEvents.recipes(event => {
         Item.of('pneumaticcraft:charging_station')
     ]
 
-    const integrational_machine_cutting = [
+    const menril_machine_cutting = [
         Item.of('integrateddynamics:variable_transformer_output', 4),
         Item.of('integrateddynamics:variable_transformer_input', 4),
         Item.of('integrateddynamics:part_static_light_panel', 4),
@@ -81,7 +82,7 @@ ServerEvents.recipes(event => {
         Item.of('integrateddynamics:cable', 4)
     ]
 
-    const time_machine_cutting = [
+    const temporal_machine_cutting = [
         Item.of('ae2:formation_core', 4),
         Item.of('ae2:annihilation_core', 4),
         Item.of('ae2:controller')
@@ -98,7 +99,7 @@ ServerEvents.recipes(event => {
     multicut(sturdy_machine_cutting, 'kubejs:sturdy_machine', true)
     multicut(sturdy_machine_cutting_2, 'kubejs:sturdy_machine', false)
     multicut(plastic_machine_cutting, 'kubejs:plastic_machine', true)
-    multicut(integrational_machine_cutting, 'kubejs:integrational_machine', true)
-    multicut(time_machine_cutting, 'kubejs:time_machine', true)
+    multicut(menril_machine_cutting, 'kubejs:menril_machine', true)
+    multicut(temporal_machine_cutting, 'kubejs:temporal_machine', true)
     // multicut(supercritical_machine_cutting, 'kubejs:supercritical_machine', true)
 })

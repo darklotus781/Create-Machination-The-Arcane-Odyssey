@@ -30,7 +30,7 @@ PlayerEvents.loggedIn(event => {
             console.info("Generated machinationData for " + player.username + " for the first time.");
         }
 
-        if (playerlevel.dimension == 'aether:the_aether' && false == player.persistentData.machinationData.hasGoldenChute) {
+        if (player.level.dimension == 'aether:the_aether' && false == player.persistentData.machinationData.hasGoldenChute) {
             console.log('Giving Golden Parachute to ' + player.username);
             player.give(Item.of('aether:golden_parachute'));
             player.statusMessage = Text.of("Take this parachute, it could save your life!");
@@ -43,7 +43,7 @@ PlayerEvents.loggedIn(event => {
             player.persistentData.machinationData.hasCat = true;
         }
 
-        if (player.level.dimension == 'minecraft:the_nether' && false == player.persistentData.machinationData.hasAlexBook) {
+        if (player.stages.has('nether_access') && false == player.persistentData.machinationData.hasAlexBook) {
             console.log('Giving Alex\'s Mobs Book to ' + player.username);
             player.give(Item.of('alexsmobs:animal_dictionary'));
             player.persistentData.machinationData.hasAlexBook = true;
@@ -58,6 +58,8 @@ ItemEvents.foodEaten(event => {
         if (player.level.dimension != 'aether:the_aether') {
             player.addItemCooldown(id, 20 * 60 * 5); // 5 Minutes
             player.tell(Text.red('It turned into a rock and you choked.'));
+            player.attack('generic', 2);
+
             if ((player.abilities.mayfly || player.abilities.flying) && (! player.creative || !player.spectator)) {
                 player.tell(Text.gold("Ohh no, you can't fly anymore!"));
                 player.potionEffects.add('minecraft:slow_falling', 20 * 60 * 0.5);

@@ -343,6 +343,11 @@
 					item: "aether:aether_portal_frame"
 					type: "item"
 				}
+				{
+					command: "/say Hi, @p!"
+					id: "2C68B2DC664220D2"
+					type: "command"
+				}
 			]
 			shape: "gear"
 			size: 1.5d
@@ -1425,8 +1430,66 @@
 				item: "aether:skyroot_remedy_bucket"
 				type: "item"
 			}]
+			title: "Early Flight"
 			x: 6.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["6B755A3E6E1AA414"]
+			description: ["Please acknowledge the tips below."]
+			hide_dependency_lines: true
+			id: "79E8BA032A0923C8"
+			shape: "heart"
+			subtitle: "Tips to progess through the Aether"
+			tasks: [{
+				id: "43CE81E573D6EFFD"
+				title: "I promise!"
+				type: "checkmark"
+			}]
+			title: "Tips and Tricks"
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["79E8BA032A0923C8"]
+			description: [
+				"Find an AerBunny and wear it like a hat, you can glide through the air."
+				"If you find some blue aero clouds, you can bounce pretty high off them."
+				""
+				"Eventually if you find an Aechor Plant, you can conver the poison to flight!"
+			]
+			id: "0B5809325A8AE555"
+			rewards: [{
+				id: "50BAB1664C9163C1"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "554004B002608861"
+				title: "I acknowledge!"
+				type: "checkmark"
+			}]
+			title: "Early Flight"
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["79E8BA032A0923C8"]
+			description: ["A good food source is berries, enchant them in an alter for the best results."]
+			id: "19DF340E90A0A120"
+			rewards: [{
+				id: "235F5AB7D4F8C9A4"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "0003BA8B010D1580"
+				title: "I acknowledge!"
+				type: "checkmark"
+			}]
+			title: "Decent Food"
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 	title: "Chapter 1: Aetherial Lands"

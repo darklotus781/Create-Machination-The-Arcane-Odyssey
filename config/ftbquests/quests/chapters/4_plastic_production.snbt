@@ -62,11 +62,19 @@
 				"704F9AF9DFA8CEDE"
 			]
 			id: "74F85CFABA84170A"
-			rewards: [{
-				id: "5F2F7AA9BC2E5E13"
-				type: "xp_levels"
-				xp_levels: 25
-			}]
+			rewards: [
+				{
+					id: "5F2F7AA9BC2E5E13"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "37803DD947986A5E"
+					table_id: 7440942548698719000L
+					type: "random"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [

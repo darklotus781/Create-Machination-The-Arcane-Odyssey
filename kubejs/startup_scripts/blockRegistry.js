@@ -23,6 +23,9 @@ StartupEvents.registry("block", event => {
             .hardness(3.0)
             .displayName(display + ' Machine')
             .notSolid()
+            .hardness(2)
+            .resistance(6)
+            .tagBlock('create:wrench_pickup')
             .renderType(layer);
     };
 
@@ -75,11 +78,11 @@ StartupEvents.registry("block", event => {
     event.create('andesite_machine').displayName('Andesite Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('brass_machine').displayName('Brass Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('copper_machine').displayName('Copper Machine').notSolid().renderType(layer).hardness(3.0);
-    event.create('integrational_machine').displayName('Integrational Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('menril_machine').displayName('Integrational Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('sturdy_machine').displayName('Sturdy Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('radiant_machine').displayName('Radiant Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('plastic_machine').displayName('Plastic Machine').notSolid().renderType(layer).hardness(3.0);
-    event.create('time_machine').displayName('Time Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('temporal_machine').displayName('Time Machine').notSolid().renderType(layer).hardness(3.0);
     // event.create('supercritical_machine').displayName('Supercritical Machine').notSolid().renderType(layer).hardness(3.0);
 
     // event.create('corrupted_pixie_utrem_jar').displayName('Corrupted Pixie Utrem Jar').notSolid().renderType(layer);

@@ -377,6 +377,19 @@
 			]
 			hide: true
 			id: "1FB6946A522553C9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1EA3ED0C76C8A0B3"
+					table_id: 1973416385812287726L
+					type: "random"
+				}
+				{
+					id: "4F9FAC17649942BF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "064D7D00E12075CF"
 				title: "Chapter 2: Start"

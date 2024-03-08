@@ -17,17 +17,25 @@
 			]
 			description: ["Congratulations on your achievement! You have successfully produced Andesite Machines and should now have them automated. Given their significant role throughout the pack, automating these machines is strongly advised to ensure efficiency and ease of use. This step is essential for maximizing their potential and enhancing your overall experience."]
 			id: "632B4B24A7B38530"
-			rewards: [{
-				id: "34E8AA7B84410358"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
+			rewards: [
+				{
+					id: "34E8AA7B84410358"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4D08E1CB86F0EC5B"
+					table_id: 8697717826506614278L
+					type: "random"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [
 				{
 					consume_items: false
-					count: 8L
+					count: 64L
 					icon: "kubejs:andesite_machine"
 					id: "46F399B8AAF31ED6"
 					item: "kubejs:andesite_machine"
@@ -51,6 +59,11 @@
 			description: ["Wooden Mechanisms, while basic, play a crucial role as a starter item in the crafting process. Their primary function is to create Sturdy Mechanisms and Andesite Machines. However, due to their limited strength and capability, Wooden Mechanisms are not suitable for more advanced applications. If your goal is to automate the production of Andesite Machines effectively, it is advisable to first focus on automating Kinetic Mechanisms. By doing so, you lay a stronger foundation for more complex and efficient automation processes, ultimately leading to a more advanced and productive system."]
 			id: "1E1695DB74F7D27F"
 			optional: true
+			rewards: [{
+				id: "19348EB93201B3DA"
+				item: "kubejs:andesite_bag_common"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: false
 				count: 8L
@@ -73,6 +86,24 @@
 				"Moving forward, it's crucial to consult JEI for all recipe details. However, to kickstart your journey, you should begin by focusing on farming."
 			]
 			id: "0C28B609C72B93BD"
+			rewards: [
+				{
+					id: "6FB05C553135ABD5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "2F765EF4BF37B05F"
+					table_id: 807043329190975957L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6159A8883F9C4A55"
+					table_id: 1205720880241428503L
+					type: "choice"
+				}
+			]
 			subtitle: "Setup some basic farms!"
 			tasks: [
 				{
@@ -128,14 +159,21 @@
 			]
 			description: ["Kinetic Mechanisms are the cornerstone of all future developments in your crafting journey. They form the foundational element for every single mechanism and machine you will be crafting from this point forward. Given their central importance, it is imperative to ensure that the production of Kinetic Mechanisms is automated. Automating this process will not only increase efficiency but also provide a steady and reliable supply of these essential components. This step is crucial for smooth progression and the successful creation of more advanced and intricate mechanisms and machines in your future endeavors."]
 			id: "35AD8A90A9541BE9"
-			rewards: [{
-				id: "30962FA258004349"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
+			rewards: [
+				{
+					id: "30962FA258004349"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "714EC00408F77824"
+					item: "kubejs:andesite_bag_rare"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
-					count: 8L
+					count: 64L
 					id: "32981ECF774C2B3B"
 					item: "kubejs:kinetic_mechanism"
 					type: "item"
@@ -153,6 +191,11 @@
 			dependencies: ["67F9D140A432A965"]
 			description: ["Saws are a critical component in the creation of Tier 1 / Chapter 1 Mechanisms, playing an indispensable role in these early stages. It's important to note that saws come with a durability limit, meaning they will wear out over time with use. To address this, you have a couple of options. You can either produce a substantial quantity of saws to ensure a steady supply as they wear down, or you can invest your efforts in obtaining an eternal saw. An eternal saw, being more durable and long-lasting, eliminates the frequent need for replacements and can significantly streamline your crafting processes, making it a worthwhile pursuit for more efficient and uninterrupted production."]
 			id: "50186B4B459E4244"
+			rewards: [{
+				id: "6F6F8956DD3A661A"
+				table_id: 7760746703095486576L
+				type: "random"
+			}]
 			tasks: [{
 				id: "0BAA8FB88FFEEFEF"
 				item: {
@@ -175,6 +218,11 @@
 			]
 			description: ["Andesite Alloy is undoubtedly one of the most valuable resources for mass production in this context. While there are other critical resources to consider, Andesite Alloy serves as a fundamental building block in your journey. Without it, accessing and utilizing those more important resources becomes significantly more challenging. It acts as a key component, enabling progress and facilitating the development of advanced technologies and mechanisms essential for success."]
 			id: "693A218A8E78C38D"
+			rewards: [{
+				id: "376DE34DCC049915"
+				item: "kubejs:create_bag_common"
+				type: "item"
+			}]
 			tasks: [{
 				count: 16L
 				id: "0D8674ECDB1C0193"
@@ -189,12 +237,25 @@
 			dependencies: ["67F9D140A432A965"]
 			description: ["Farming Menril Trees plays a vital role in the early stages of automation, particularly in the production of Andesite Alloy and Kinetic Mechanisms. Menril Logs, classified as logs in the system, are versatile and essential for crafting various items. They can be used to create Casings and are applicable in all recipes that require logs. This makes Menril Trees an indispensable resource for advancing your technological capabilities and streamlining your production processes."]
 			id: "011E7917E973EB90"
-			rewards: [{
-				count: 8
-				id: "082A44BBDC126A93"
-				item: "integrateddynamics:crystalized_menril_block"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "082A44BBDC126A93"
+					item: "integrateddynamics:crystalized_menril_block"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "5C2C67EB07C39B59"
+					item: "integrateddynamics:menril_sapling"
+					type: "item"
+				}
+				{
+					id: "3FBF96DFA8A54201"
+					item: "integrateddynamics:squeezer"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					count: 16L
@@ -227,6 +288,19 @@
 			]
 			hide: true
 			id: "67F9D140A432A965"
+			rewards: [
+				{
+					id: "14EF18F4CE1F2666"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "77B19318571BBE00"
+					table_id: 1205720880241428503L
+					type: "choice"
+				}
+			]
 			shape: "pentagon"
 			size: 1.0d
 			tasks: [{
@@ -241,11 +315,19 @@
 			dependencies: ["5F793917B53CB963"]
 			description: ["Copper Machines are essential tools in the crafting process, specifically designed for creating &6Fluid Handling&r items such as Pumps and Smart Fluid Pipes. These machines play a pivotal role in managing and manipulating fluids with precision and efficiency. For detailed information on the specific recipes and techniques involved, including Smithing and Cutting, you can refer to JEI (Just Enough Items). JEI provides comprehensive guidance on the crafting processes, ensuring you have all the necessary information to effectively use Copper Machines in your crafting endeavors."]
 			id: "63F4C7AAEB9F4CD5"
-			rewards: [{
-				id: "553B22B04BD575D4"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
+			rewards: [
+				{
+					id: "553B22B04BD575D4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6362E9F348891518"
+					table_id: 8697717826506614278L
+					type: "random"
+				}
+			]
 			shape: "gear"
 			tasks: [
 				{
@@ -264,18 +346,28 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["35AD8A90A9541BE9"]
+			dependencies: [
+				"35AD8A90A9541BE9"
+				"3B25D99BFA2C928C"
+			]
 			description: [
 				"Sealed Mechanisms are primarily utilized in the crafting of Copper Machines. These Copper Machines are specifically designed for creating items that are essential in fluid handling."
 				"Copper Machines, therefore, play a crucial role in various processes and setups where fluid manipulation, transport, and storage are key components."
 			]
 			id: "5C8A77FEDDB2DDB2"
 			optional: true
-			rewards: [{
-				id: "6BEC711F1FD16498"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
+			rewards: [
+				{
+					id: "6BEC711F1FD16498"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "7D00480E9A75B477"
+					item: "kubejs:create_bag_rare"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					count: 8L
@@ -297,11 +389,18 @@
 			dependencies: ["35AD8A90A9541BE9"]
 			description: ["Logistics Mechanisms are specialized components specifically designed for use in recipes that deal with item storage and transportation. These mechanisms are essential for creating systems that efficiently manage the movement and organization of items within your setup. They play a key role in automating and optimizing the processes related to inventory control, item sorting, and the overall logistics of your operation."]
 			id: "4B3451A425BBAA15"
-			rewards: [{
-				id: "0DAB37267F45FDA4"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
+			rewards: [
+				{
+					id: "0DAB37267F45FDA4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "3E08B58A3445CE27"
+					item: "kubejs:create_bag_rare"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					count: 8L
@@ -342,6 +441,12 @@
 			dependencies: ["693A218A8E78C38D"]
 			description: ["Andesite Casing is crafted by applying andesite alloy to a stripped log. This process can be done either through the use of a deployer or by manually applying it in-world. To manually create Andesite Casing, you first place down a stripped log and then click the andesite alloy onto it. This method of combining andesite alloy with a stripped log transforms it into Andesite Casing, which is a crucial component in various crafting recipes and applications. Whether you choose the automated approach with a deployer or the manual method, the result is a versatile and useful Andesite Casing, essential for your crafting needs."]
 			id: "4D069D926FE16938"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "006E409CF657D657"
+				table_id: 971780999319815631L
+				type: "random"
+			}]
 			tasks: [{
 				count: 8L
 				id: "6F99346AAAA8F9A6"
@@ -362,11 +467,18 @@
 				"Given their importance and the use of common items in their construction, it makes strategic sense to start automating the production of Rotation Mechanisms in Chapter 1. By doing so, you can establish a seamless and efficient production line early on, ensuring you have a steady supply of these essential mechanisms ready for later chapters."
 			]
 			id: "4BB7D4E0B2452A76"
-			rewards: [{
-				id: "705840F2CCFFE8E2"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
+			rewards: [
+				{
+					id: "705840F2CCFFE8E2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "11C624CF0C20BA0B"
+					item: "kubejs:andesite_bag_common"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					count: 8L
@@ -392,6 +504,18 @@
 				"Copper Casing, when combined with Sealed Mechanisms, is used to create Copper Machines. This highlights the versatility of Copper Casing in the crafting process. Additionally, Copper Casing has another practical application: it can be applied to pipes in-world to prevent them from connecting to other pipes. This feature is particularly useful in managing and organizing complex piping systems, ensuring that different pipes function independently as needed."
 			]
 			id: "5F793917B53CB963"
+			rewards: [
+				{
+					id: "636C7C4F56C46F2B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "76547B39039311B5"
+					item: "kubejs:brass_bag_rare"
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 8L
 				id: "335C62C5256A04FD"

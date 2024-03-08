@@ -113,32 +113,13 @@
 					xp_levels: 5
 				}
 			]
-			tasks: [
-				{
-					icon: "minecraft:nether_brick_fence"
-					id: "78FB249FB57E564E"
-					structure: "#betterfortresses:better_fortresses"
-					title: "Find a Fortress"
-					type: "structure"
-				}
-				{
-					entity: "minecraft:wither_skeleton"
-					icon: "minecraft:wither_skeleton_spawn_egg"
-					id: "5CBD9B2F9E7B9BA8"
-					title: "Kill Wither Skeletons"
-					type: "kill"
-					value: 10L
-				}
-				{
-					consume_items: false
-					count: 3L
-					icon: "minecraft:wither_skeleton_skull"
-					id: "149E4C5FC2CC3DA7"
-					item: "minecraft:wither_skeleton_skull"
-					title: "Collect 3 Wither Skeleton Skulls"
-					type: "item"
-				}
-			]
+			tasks: [{
+				icon: "minecraft:nether_brick_fence"
+				id: "78FB249FB57E564E"
+				structure: "#betterfortresses:better_fortresses"
+				title: "Find a Fortress"
+				type: "structure"
+			}]
 			x: 2.0d
 			y: -2.0d
 		}
@@ -297,6 +278,340 @@
 			title: "It's getting hot in here."
 			x: 0.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["6C92467011B61125"]
+			id: "17ED0F689713443A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "393DC47F9A825E99"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+				{
+					id: "6034FABC2CDF9DB7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: "kubejs:blaze_spawn_egg"
+				id: "2844FE91EA493EF3"
+				title: "Kill some Blazes!"
+				type: "kill"
+				value: 10L
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6C92467011B61125"]
+			id: "41964F50DB86FC31"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7998305C7E2261D8"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+				{
+					id: "61207B6CA9DA6BE5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				icon: "kubejs:wither_skeleton_spawn_egg"
+				id: "235A54282075E628"
+				title: "Kill some Wither Skeletons"
+				type: "kill"
+				value: 10L
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6C92467011B61125"]
+			description: ["Legend has it, if you form a totem of soul sand with wither skulls on top, you can summon the Wither Boss!"]
+			id: "496BCCD1984302D7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2F825CFF6630A609"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+				{
+					id: "217A1FD010CA52D8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "180B0F4D3E8AC8A1"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["504C21E69925C8A5"]
+			id: "3505CC13406A597C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "347284114A6D928C"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+				{
+					id: "3C6B838EE704C9BA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				entity: "minecraft:piglin"
+				icon: "kubejs:piglin_spawn_egg"
+				id: "5710020FFA56D41C"
+				title: "Kill some Piglins!"
+				type: "kill"
+				value: 10L
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["504C21E69925C8A5"]
+			id: "6376720DD020FF61"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "309E8C8AE4D45D41"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+				{
+					id: "6B3CD3187CD22E3A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				entity: "minecraft:piglin_brute"
+				icon: "kubejs:piglin_brute_spawn_egg"
+				id: "1AFF991AA0BCE5B5"
+				title: "Kill a Piglin Brute!"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["394B02F151B85E24"]
+			id: "2835CDA6A877259B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4015706BBF3EB013"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+				{
+					id: "2E26302621056411"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				entity: "minecraft:magma_cube"
+				icon: "kubejs:magma_cube_spawn_egg"
+				id: "12C16A5980660DE2"
+				title: "Kill some Cubes!"
+				type: "kill"
+				value: 10L
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["394B02F151B85E24"]
+			id: "67C52F82640E6E74"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "25AB261B6C038BF3"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+				{
+					id: "69F87E699E081DDB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				entity: "minecraft:ghast"
+				icon: "kubejs:ghast_spawn_egg"
+				id: "686E9703CBA2CAEE"
+				title: "Kill a Ghast"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["394B02F151B85E24"]
+			id: "137E077502F7A202"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4E6F9CD53F1DA75F"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+				{
+					id: "6B097F35693FA66E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				entity: "quark:foxhound"
+				icon: "quark:foxhound_spawn_egg"
+				id: "2763F6ACEA1AA944"
+				title: "Kill some Foxhounds"
+				type: "kill"
+				value: 10L
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["504C21E69925C8A5"]
+			description: ["The netherite smithing template is only obtainable from Bastion chests, so while you're exploring one, check all the chests!"]
+			id: "1E73299542E86E70"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "25F87B6E23CB74B1"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+				{
+					id: "0432F9D7CC7BB7DA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "0B21B5644BD88043"
+				item: "minecraft:netherite_upgrade_smithing_template"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["394B02F151B85E24"]
+			description: ["Please acknowledge the tips below."]
+			hide_dependency_lines: true
+			id: "346F26A40A3677DA"
+			shape: "heart"
+			subtitle: "Tips to progess through the Nether."
+			tasks: [{
+				id: "16C1960FED0503FF"
+				title: "I promise!"
+				type: "checkmark"
+			}]
+			title: "Tips and Tricks"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["346F26A40A3677DA"]
+			description: ["Early flight is not possible in the Nether"]
+			id: "1C38F75EC01D04EB"
+			rewards: [{
+				id: "5B017D9EEB502442"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "7DDEC7BB6FB1E90A"
+				title: "I acknowledge!"
+				type: "checkmark"
+			}]
+			title: "Early Flight"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["346F26A40A3677DA"]
+			description: [
+				"A lot depends on luck, finding a Bastion and a Fortress, getting wither skull drops..."
+				"In the biz, we call that RNG, hopefully the RNG gods will be in your favor."
+			]
+			id: "580CDCA0024AA836"
+			rewards: [{
+				id: "4810157CFF43213F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "627F6D1D3A9BB78A"
+				title: "I acknowledge!"
+				type: "checkmark"
+			}]
+			title: "Do you feel lucky?"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["346F26A40A3677DA"]
+			description: [
+				"Setup a small base and grind away.  Keep exploring, lots of good loot in chests."
+				"Make sure you have a way back to your Aether Portal in case you need to repair tools or grind away for resources."
+			]
+			id: "0E9CA8DE0706619F"
+			rewards: [{
+				id: "21CD3294909CE30F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "13A452469EE81A64"
+				title: "I acknowledge!"
+				type: "checkmark"
+			}]
+			title: "Exploration is Key"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["346F26A40A3677DA"]
+			description: ["Ghasts don't give up when they lose line of sight and may fire a barrage to try and free you from your hiding place.  Zombified Piglins don't like it when you break quartz!  Skeletons run away to get distance to shoot you and Blazes are a bit smarter too!"]
+			id: "24ED51CB441C82BE"
+			rewards: [{
+				id: "1C33C4AA6BCBA904"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "66562EC1D52BFE2C"
+				title: "I acknowledge!"
+				type: "checkmark"
+			}]
+			title: "Mobs are hard!"
+			x: 2.5d
+			y: 2.5d
 		}
 	]
 	title: "Chapter 2: The Underworld"

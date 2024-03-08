@@ -4,7 +4,7 @@
 	filename: "integrated_inovations"
 	group: "565532624F0A44A9"
 	hide_quest_until_deps_visible: true
-	icon: "kubejs:integrational_mechanism"
+	icon: "kubejs:menril_mechanism"
 	id: "7AB340F7990D3911"
 	order_index: 4
 	quest_links: [ ]
@@ -49,7 +49,7 @@
 				{
 					count: 8L
 					id: "197EBE528E28BE86"
-					item: "kubejs:integrational_mechanism"
+					item: "kubejs:menril_mechanism"
 					type: "item"
 				}
 				{
@@ -85,7 +85,7 @@
 				{
 					count: 8L
 					id: "63A446215C76CC6A"
-					item: "kubejs:integrational_machine"
+					item: "kubejs:menril_machine"
 					type: "item"
 				}
 				{

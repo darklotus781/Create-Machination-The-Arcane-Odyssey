@@ -11,9 +11,9 @@ ServerEvents.recipes(event => {
     }
 
     machinerator('radiant', 'kubejs:radiant_mechanism', 'thermal:machine_frame');
-    machinerator('integrational', 'kubejs:integrational_mechanism', 'kubejs:gold_casing');
+    machinerator('menril', 'kubejs:menril_mechanism', 'kubejs:gold_casing');
     machinerator('plastic', 'kubejs:plastic_mechanism', 'kubejs:zinc_casing');
-    machinerator('time', 'kubejs:time_mechanism', 'kubejs:enderium_casing');
+    machinerator('temporal', 'kubejs:temporal_mechanism', 'kubejs:enderium_casing');
     // machinerator('supercritical', 'kubejs:supercritical_mechanism', 'kubejs:supercritical_casing');
     machinerator('sturdy', 'kubejs:sturdy_mechanism', 'create:railway_casing');
     machinerator('brass', 'create:precision_mechanism', 'create:brass_casing');

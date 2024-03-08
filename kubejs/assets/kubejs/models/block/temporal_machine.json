@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "kubejs:block/time_machine",
-		"particle": "kubejs:block/time_machine"
+		"0": "kubejs:block/temporal_machine",
+		"particle": "kubejs:block/temporal_machine"
 	},
 	"elements": [
 		{

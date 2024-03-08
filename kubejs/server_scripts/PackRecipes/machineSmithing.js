@@ -41,8 +41,12 @@ ServerEvents.recipes(event => {
         [Item.of('minecraft:compass'), Item.of('ae2:meteorite_compass')],
         [Item.of('minecraft:compass'), Item.of('explorerscompass:explorerscompass')],
         [Ingredient.of('#forge:rods/copper'), Item.of('createaddition:connector', 4)],
-        [Item.of('createaddition:capacitor'), Item.of('createaddition:alternator')],
-        [Item.of('sophisticatedstorage:diamond_barrel').withNBT({woodType: "spruce"}), Item.of('sophisticatedstorage:controller')]
+        [Ingredient.of('#forge:rods/gold'), Item.of('createaddition:connector', 2)],
+        [Item.of('sophisticatedstorage:diamond_barrel').weakNBT(), Item.of('sophisticatedstorage:controller')],
+        [Item.of('minecraft:lightning_rod'), Item.of('create_new_age:energiser_t1')],
+        [Ingredient.of('#forge:tools/knives'), Item.of('sliceanddice:slicer')],
+        [Item.of('create_new_age:magnetite_block', 2), Item.of('create_new_age:basic_motor')],
+        [Ingredient.of('#minecraft:buttons'), Item.of('create:contraption_controls')]
     ]
 
     const brass_machine_smithing = [
@@ -52,8 +56,8 @@ ServerEvents.recipes(event => {
         ['#ae2:all_fluix', Item.of('createaddition:tesla_coil')],
         [Item.of('createaddition:capacitor'), Item.of('createaddition:modular_accumulator')],
         [Item.of('createaddition:connector'), Item.of('createaddition:portable_energy_interface')],
-        [Item.of('create:rotation_speed_controller'), Item.of('createaddition:electric_motor')],
-        ['#functionalstorage:drawer', Item.of('functionalstorage:storage_controller')]
+        ['#functionalstorage:drawer', Item.of('functionalstorage:storage_controller')],
+        [Item.of('create_new_age:overcharged_iron'), Item.of('create_new_age:advanced_motor')]
     ]
 
     const copper_machine_smithing = [
@@ -143,7 +147,7 @@ ServerEvents.recipes(event => {
         [Item.of('ars_nouveau:ritual_containment'), Item.of('ars_nouveau:mob_jar')],
     ]
 
-    const integrational_machine_smithing = [
+    const menril_machine_smithing = [
         [Item.of('thermal:rf_coil'), Item.of('thermal:dynamo_gourmand')],
         // [Item.of('integrateddynamics:part_display_panel'), Item.of('integratedterminals:part_terminal_storage')],
         // [Item.of('minecraft:crafting_table'), Item.of('integratedterminals:part_terminal_crafting_job')],
@@ -157,11 +161,11 @@ ServerEvents.recipes(event => {
         // [Item.of('integrateddynamics:variable_transformer_input'), Item.of('integratednbt:nbt_extractor')]
     ]
 
-    const integrational_machine_smithing_2 = [
+    const menril_machine_smithing_2 = [
         [Item.of('createaddition:modular_accumulator'), Item.of('integrateddynamics:energy_battery')]
     ]
 
-    const time_machine_smithing = [
+    const temporal_machine_smithing = [
         [Item.of('thermal:rf_coil'), Item.of('thermal:dynamo_disenchantment')],
         [Item.of('minecraft:glowstone_dust'), Item.of('ae2:semi_dark_monitor')],
         [Item.of('ae2:fluix_pearl'), Item.of('ae2:condenser')],
@@ -169,6 +173,11 @@ ServerEvents.recipes(event => {
         [Item.of('waystones:warp_stone'), Item.of('waystones:waystone')],
         [Item.of('waystones:warp_stone'), Item.of('waystones:mossy_waystone')],
         [Item.of('waystones:warp_stone'), Item.of('waystones:sandy_waystone')]
+    ]
+
+    const power_machine_smithing = [
+        [Item.of('createaddition:capacitor'), Item.of('createaddition:alternator')],
+        [Item.of('create:rotation_speed_controller'), Item.of('createaddition:electric_motor')],
     ]
 
     // const supercritical_machine_smithing = [
@@ -181,8 +190,9 @@ ServerEvents.recipes(event => {
     machine_smithing(sturdy_machine_smithing, 'kubejs:sturdy_machine', Item.of('kubejs:machine_smithing_template'), true)
     machine_smithing(plastic_machine_smithing, 'kubejs:plastic_machine', Item.of('kubejs:machine_smithing_template'), true)
     machine_smithing(radiant_machine_smithing, 'kubejs:radiant_machine', Item.of('kubejs:machine_smithing_template'), true)
-    machine_smithing(integrational_machine_smithing, 'kubejs:integrational_machine', Item.of('kubejs:machine_smithing_template'), true)
-    machine_smithing(integrational_machine_smithing_2, 'kubejs:integrational_machine', Item.of('kubejs:machine_smithing_template'), false)
-    machine_smithing(time_machine_smithing, 'kubejs:time_machine', Item.of('kubejs:machine_smithing_template'), true)
+    machine_smithing(menril_machine_smithing, 'kubejs:menril_machine', Item.of('kubejs:machine_smithing_template'), true)
+    machine_smithing(menril_machine_smithing_2, 'kubejs:menril_machine', Item.of('kubejs:machine_smithing_template'), false)
+    machine_smithing(temporal_machine_smithing, 'kubejs:temporal_machine', Item.of('kubejs:machine_smithing_template'), true)
+    machine_smithing(power_machine_smithing, 'kubejs:power_machine', Item.of('kubejs:machine_smithing_template'), true)
     // machine_smithing(supercritical_machine_smithing,'kubejs:supercritical_machine', Item.of('kubejs:machine_smithing_template'), true)
 })

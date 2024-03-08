@@ -8,6 +8,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
+                    "weight": 15,
                     "name": "minecraft:raw_copper",
                     "functions": [
                         {
@@ -24,6 +25,7 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 15,
                     "name": "alltheores:raw_zinc",
                     "functions": [
                         {
@@ -40,6 +42,7 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 10,
                     "name": "alltheores:brass_ingot",
                     "functions": [
                         {
@@ -56,6 +59,7 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 5,
                     "name": "create:chromatic_compound",
                     "functions": [
                         {

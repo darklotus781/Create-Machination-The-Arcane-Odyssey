@@ -1,27 +1,26 @@
-BlockEvents.rightClicked(event => {
-    if (event.entity.isFake() && event.item.id == 'forbidden_arcanus:soul_extractor' && event.block.id == 'minecraft:soul_sand') {
+BlockEvents.rightClicked('minecraft:soul_sand', event => {
+    if (event.item.id == 'forbidden_arcanus:soul_extractor') {
         event.block.popItemFromFace('forbidden_arcanus:soul', event.getFacing())
         event.block.set('forbidden_arcanus:soulless_sand')
         event.player.damageHeldItem("MAIN_HAND", 1)
     }
 });
 
-global.ticks = 0;
-LevelEvents.tick(event => { // Every 1.5 seconds, if a wraith is on soulless sand in the overworld, convert it to soul sand
-    if (event.level.getDimension() != 'minecraft:overworld') {
-        return
-    }
-    global.ticks++
-    if (global.ticks == 30) {
-        global.ticks = 0
-        event.level.getEntities().filterSelector('@e[type=quark:wraith]').forEach(entity => {
-            if (entity.block.id == 'forbidden_arcanus:soulless_sand') {
-                entity.block.set('minecraft:soul_sand')
-                event.server.runCommandSilent(`playsound minecraft:block.soul_sand.hit block @e[type=player] ${entity.block.x} ${entity.block.y} ${entity.block.z}`)
-            }
-        })
-    }
-});
+// global.ticks = 0;
+// LevelEvents.tick(event => { // Every 1.5 seconds, if a wraith is on soulless sand in the overworld, convert it to soul sand
+//     if (event.level != event.server.getOverworld().getLevel()) return;
+//     // if (event.tick % 20 !== 0) return;
+//     global.ticks++
+//     if (global.ticks == 30) {
+//         global.ticks = 0
+//         event.level.getEntities().filterSelector('@e[type=quark:wraith]').forEach(entity => {
+//             if (entity.block.id == 'forbidden_arcanus:soulless_sand') {
+//                 entity.block.set('minecraft:soul_sand')
+//                 event.server.runCommandSilent(`playsound minecraft:block.soul_sand.hit block @e[type=player] ${entity.block.x} ${entity.block.y} ${entity.block.z}`)
+//             }
+//         })
+//     }
+// });
 
 ServerEvents.blockLootTables(event => {
     event.addSimpleBlock('forbidden_arcanus:pixie_utrem_jar', 'forbidden_arcanus:pixie_utrem_jar');
@@ -59,6 +58,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.filling(Item.of('forbidden_arcanus:aureal_bottle'), [Item.of('kubejs:empty_vial'), Fluid.of('kubejs:aureal_essence').withAmount(333)]);
     event.recipes.create.mixing(Item.of('forbidden_arcanus:arcane_gold_ingot'), [Ingredient.of('#forge:nuggets/gold', 9), Item.of('forbidden_arcanus:mundabitur_dust')]);
     event.recipes.create.splashing(Item.of('forbidden_arcanus:pixie_utrem_jar'), Item.of('forbidden_arcanus:corrupted_pixie_utrem_jar'));
+    event.recipes.create.filling(Item.of('minecraft:soul_sand'), [Item.of('forbidden_arcanus:soulless_sand'), Fluid.of('kubejs:aureal_essence').withAmount(50)]);
 
     // Input, reagent, output, source
     event.recipes.ars_nouveau.enchanting_apparatus(

@@ -127,11 +127,11 @@ ItemEvents.tooltip(tooltip => {
     main_assembly('kubejs:radiant_machine', "3")
     main_assembly('kubejs:plastic_mechanism', "4")
     main_assembly('kubejs:plastic_machine', "4")
-    main_assembly('kubejs:integrational_mechanism', "5")
-    main_assembly('kubejs:integrational_machine', "5")
+    main_assembly('kubejs:menril_mechanism', "5")
+    main_assembly('kubejs:menril_machine', "5")
     main_assembly('kubejs:quantum_mechanism', "6")
-    main_assembly('kubejs:time_mechanism', "7")
-    main_assembly('kubejs:time_machine', "7")
+    main_assembly('kubejs:temporal_mechanism', "7")
+    main_assembly('kubejs:temporal_machine', "7")
 
 
     tooltip.add('kubejs:leather_pocket', Text.gold('Useful for adding more slots to your backpack'));

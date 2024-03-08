@@ -9,7 +9,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "kubejs:andesite_blend",
-                    "weight": 10,
+                    "weight": 20,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -43,7 +43,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "create:andesite_alloy",
-                    "weight": 10,
+                    "weight": 15,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -60,7 +60,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:stripped_oak_log",
-                    "weight": 10,
+                    "weight": 15,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -153,6 +153,40 @@
                                 "min": 8,
                                 "max": {
                                     "min": 16,
+                                    "max": 64
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:andesite",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 16,
+                                "max": {
+                                    "min": 32,
+                                    "max": 64
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diorite",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 16,
+                                "max": {
+                                    "min": 32,
                                     "max": 64
                                 }
                             }

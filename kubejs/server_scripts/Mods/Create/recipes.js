@@ -16,7 +16,6 @@ ServerEvents.recipes(event => {
     event.remove({id: 'create:mixing/andesite_alloy'});
     event.remove({id: 'create:mixing/andesite_alloy_from_zinc'});
     // Create Washing
-    event.remove({id: 'create:splashing/soul_sand'});
     event.remove({id: "create:splashing/sand"});
 
     event.remove({output: 'create:andesite_alloy'});

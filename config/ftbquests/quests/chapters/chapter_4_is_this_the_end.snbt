@@ -49,6 +49,25 @@
 		{
 			dependencies: ["0711E0747C34E922"]
 			id: "1EAB5892B997FB04"
+			rewards: [
+				{
+					id: "35B010945938312E"
+					item: "forbidden_arcanus:arcane_dragon_egg"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "298339EA1C82440B"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "392AFC18E1F3ECCF"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+			]
 			tasks: [{
 				entity: "minecraft:ender_dragon"
 				icon: "minecraft:dragon_head"
@@ -63,6 +82,31 @@
 		{
 			dependencies: ["76A4479320CB91F4"]
 			id: "28174B014BF3C2FA"
+			rewards: [
+				{
+					id: "747168F3277B02DC"
+					item: {
+						Count: 1b
+						id: "sophisticatedstorage:netherite_shulker_box"
+						tag: {
+							accentColor: 8439583
+							mainColor: 16701501
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "284FA0FBDAB74BBD"
+					table_id: 924536075550321646L
+					type: "random"
+				}
+				{
+					id: "6C6716EB2E6325FD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				entity: "minecraft:shulker"
 				icon: "minecraft:shulker_box"
@@ -76,6 +120,24 @@
 		{
 			dependencies: ["0711E0747C34E922"]
 			id: "76A4479320CB91F4"
+			rewards: [
+				{
+					count: 64
+					id: "4793FC93A687AB76"
+					item: "minecraft:purpur_block"
+					type: "item"
+				}
+				{
+					id: "6478F1C759D26C57"
+					item: "forbidden_arcanus:orb_of_temporary_flight"
+					type: "item"
+				}
+				{
+					id: "006BBB876EAA5009"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
 			tasks: [{
 				icon: "minecraft:purpur_pillar"
 				id: "4AD6ECD474B78165"
@@ -87,8 +149,26 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["1EAB5892B997FB04"]
+			dependencies: ["0711E0747C34E922"]
 			id: "219740BB11ABC9FC"
+			rewards: [
+				{
+					id: "3649404776B50916"
+					item: "kubejs:trade_card_ender_pearl"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5072F56BC8BF3787"
+					table_id: 6152665868672022373L
+					type: "random"
+				}
+				{
+					id: "244538D494C7D49A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				entity: "minecraft:enderman"
 				id: "601C2DF24B6F5E5B"
@@ -101,6 +181,41 @@
 		{
 			dependencies: ["1EAB5892B997FB04"]
 			id: "13957952F58CC31E"
+			rewards: [
+				{
+					id: "22A376B18FBF9723"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_strength"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66482EB06C850D82"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_regeneration"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FADE3A845CD7D03"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_healing"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				icon: "cataclysm:void_core"
 				id: "428009B6F0E7C595"

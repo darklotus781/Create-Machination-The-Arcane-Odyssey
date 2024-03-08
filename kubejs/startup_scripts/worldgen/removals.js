@@ -7,6 +7,11 @@ WorldgenEvents.remove(event => {
         props.blocks = [
             "create:zinc_ore",
             "create:deepslate_zinc_ore",
+            "alltheores:osmium_ore",
+            "alltheores:deepslate_osmium_ore",
+            "alltheores:other_osmium_ore",
+            "alltheores:nether_osmium_ore",
+            "alltheores:end_osmium_ore"
         ];
     });
 

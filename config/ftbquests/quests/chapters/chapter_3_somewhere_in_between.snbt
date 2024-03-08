@@ -56,37 +56,36 @@
 			shape: "pentagon"
 			size: 1.5d
 			subtitle: "We have to start somewhere."
-			tasks: [
-				{
-					id: "4C7985B45293CFD6"
-					item: "minecraft:crafting_table"
-					type: "item"
-				}
-				{
-					id: "5409722C0F39296E"
-					title: "You know how to punch trees, right?"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "5409722C0F39296E"
+				title: "You know how to punch trees, right?"
+				type: "checkmark"
+			}]
 			x: 1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["2F63FB9E8EAC18BD"]
-			description: ["Ok, let's get some basic resources together."]
+			description: ["Get your basic resources and start on your factory!"]
 			id: "4DCF01FE026F9FE5"
 			tasks: [{
 				id: "22BBF3F52AA5FE8A"
 				title: "Preparations for Chapter 1"
 				type: "checkmark"
 			}]
-			title: "I'm ready to start, where's my wrench?"
+			title: "Get started on resource gathering!"
 			x: 1.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
 			id: "6EC5AFB16BA0E63B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5EEA7A22DEC032E0"
+				table_id: 6152665868672022373L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "1F7C1E2996B4EE70"
 				item: "create:millstone"
@@ -99,6 +98,12 @@
 		{
 			dependencies: ["69C0AE6714182D7F"]
 			id: "6C385B4921836314"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75212509DAF9B51D"
+				table_id: 6152665868672022373L
+				type: "random"
+			}]
 			tasks: [{
 				id: "2E24A52D1049497C"
 				item: "create:encased_fan"
@@ -116,11 +121,20 @@
 				"The fast it turns, the more SU it needs.  Start simple with Waterwheels, they are super cheap."
 			]
 			id: "59386F705AAD3CFF"
-			rewards: [{
-				id: "20AD87A6C8E6698A"
-				item: "ars_creo:starbuncle_wheel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "20AD87A6C8E6698A"
+					item: "ars_creo:starbuncle_wheel"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2E07CA4FCBE0E61E"
+					item: "minecraft:gold_block"
+					type: "item"
+				}
+			]
 			subtitle: "Power has to come from somewhere."
 			tasks: [
 				{
@@ -147,6 +161,12 @@
 			dependencies: ["4DCF01FE026F9FE5"]
 			description: ["You'll need lots of copper in this pack, finding a reliable way to automate infinite amounts will be a good idea."]
 			id: "7130663AECB4C8B1"
+			rewards: [{
+				count: 4
+				id: "19846596FE795AE4"
+				item: "minecraft:raw_copper_block"
+				type: "item"
+			}]
 			subtitle: "A bit of copper."
 			tasks: [{
 				consume_items: false
@@ -161,8 +181,15 @@
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
 			id: "4D32217601DA01D6"
+			rewards: [{
+				count: 32
+				id: "1D1024FA823F5F7E"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
 			subtitle: "A necessity for making Andesite Alloy"
 			tasks: [{
+				count: 8L
 				id: "19D45730C479D6EC"
 				item: "minecraft:andesite"
 				type: "item"
@@ -173,6 +200,12 @@
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
 			id: "769ACE88C21CA4F9"
+			rewards: [{
+				count: 4
+				id: "1A35F06A74F6E63E"
+				item: "minecraft:raw_iron_block"
+				type: "item"
+			}]
 			subtitle: "Lots of Iron."
 			tasks: [{
 				count: 8L
@@ -190,6 +223,12 @@
 				"Find an infinite source and you'll be happy you did."
 			]
 			id: "21DF66C5B03C191D"
+			rewards: [{
+				count: 4
+				id: "0BE0235A7D15E835"
+				item: "alltheores:raw_zinc_block"
+				type: "item"
+			}]
 			subtitle: "Some zinc."
 			tasks: [{
 				consume_items: false
@@ -204,13 +243,13 @@
 		{
 			dependencies: ["2F63FB9E8EAC18BD"]
 			id: "10DADBB2E6B7B7B5"
-			subtitle: "A list of some mods that make this pack what it is!"
+			subtitle: "These are some of the mods we used to create this pack!"
 			tasks: [{
 				id: "1CF568C2ADEFE8D9"
 				title: "Stuff to Ignore!"
 				type: "checkmark"
 			}]
-			title: "Some important mods."
+			title: "Machination Core"
 			x: 4.0d
 			y: 0.5d
 		}
@@ -254,7 +293,7 @@
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
 			description: ["KubeJS is a mod that significantly simplifies the process of creating a modpack by allowing creators to add custom items and unique interactions without the need for a full mod.\\n"]
-			icon: "kubejs:integrational_mechanism"
+			icon: "kubejs:menril_mechanism"
 			id: "34312A4E0AFAD769"
 			subtitle: "The glue making this pack possible"
 			tasks: [{
@@ -293,6 +332,11 @@
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
 			id: "20B2A8D54DD091A1"
+			rewards: [{
+				id: "2463E1F2DE0E94F5"
+				item: "integrateddynamics:bucket_menril_resin"
+				type: "item"
+			}]
 			subtitle: "Chapter 1 requires you to farm Menril Trees."
 			tasks: [{
 				id: "34055C39C54686D8"
@@ -309,6 +353,11 @@
 				"You can also use a drying basin to dry menril resin into block of crystalized menril which can be broken down into chunks.  Check JEI for recipes using chunks including making Andesite Alloy more efficiently."
 			]
 			id: "227004D221260FC2"
+			rewards: [{
+				id: "3D934ACC35F35C01"
+				item: "integrateddynamics:crystalized_menril_block"
+				type: "item"
+			}]
 			subtitle: "Better Andesite Alloy rates than Diorite"
 			tasks: [{
 				id: "6EE07361D3AC8E90"
@@ -320,6 +369,10 @@
 		}
 		{
 			dependencies: ["2F63FB9E8EAC18BD"]
+			description: [
+				"From here on out, the name of the game is automation."
+				"Lay a good foundation for future factory expansion."
+			]
 			id: "438CB39142A72E71"
 			tasks: [{
 				id: "3309E6DC2F78649F"
@@ -416,6 +469,12 @@
 		{
 			dependencies: ["69C0AE6714182D7F"]
 			id: "2E9BC6F50E8EAA67"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55B17EBDCD4A2033"
+				table_id: 6152665868672022373L
+				type: "random"
+			}]
 			tasks: [{
 				id: "39DF16CAF546859B"
 				item: "create:mechanical_saw"
@@ -428,6 +487,12 @@
 		{
 			dependencies: ["69C0AE6714182D7F"]
 			id: "3109A6F2EA23F755"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B51F4BF7ED1C5A6"
+				table_id: 6152665868672022373L
+				type: "random"
+			}]
 			tasks: [{
 				id: "07AD9B6C6DE070BC"
 				item: "create:mechanical_press"
@@ -439,6 +504,12 @@
 		{
 			dependencies: ["69C0AE6714182D7F"]
 			id: "7B1516AB858E84A1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4EC685588EF53943"
+				table_id: 6152665868672022373L
+				type: "random"
+			}]
 			tasks: [{
 				id: "580C71401BD4E729"
 				item: "create:mechanical_mixer"
@@ -451,6 +522,12 @@
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
 			id: "02EE7F0461B0DFBF"
+			rewards: [{
+				count: 32
+				id: "6CE0F27EC074CD1A"
+				item: "minecraft:diorite"
+				type: "item"
+			}]
 			subtitle: "Early Andesite Alloy compound"
 			tasks: [{
 				count: 8L
@@ -470,13 +547,21 @@
 			dependency_requirement: "one_completed"
 			icon: "create:andesite_alloy"
 			id: "6BBE4CCFE07312A9"
-			rewards: [{
-				count: 32
-				icon: { Count: 32b, id: "create:andesite_alloy" }
-				id: "226094148D432E4A"
-				item: { Count: 32b, id: "create:andesite_alloy" }
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					icon: { Count: 32b, id: "create:andesite_alloy" }
+					id: "226094148D432E4A"
+					item: { Count: 32b, id: "create:andesite_alloy" }
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5A53688A03C5DC72"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+			]
 			subtitle: "Better results from Mixing!"
 			tasks: [{
 				count: 8L
@@ -522,6 +607,12 @@
 				"You won't be able to upgrade them to brass!"
 			]
 			id: "3D141A6E5FFFA073"
+			rewards: [{
+				count: 8
+				id: "452C146BDC00F8B2"
+				item: "kubejs:wooden_mechanism"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C0F62720CBB555B"
 				item: "kubejs:wooden_mechanism"
@@ -533,6 +624,12 @@
 		{
 			dependencies: ["3D141A6E5FFFA073"]
 			id: "69C0AE6714182D7F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6FA98A82CB6C80CD"
+				table_id: 6740888759108653151L
+				type: "random"
+			}]
 			subtitle: "Many more to come"
 			tasks: [{
 				id: "78342DA7ED9D039D"
@@ -851,6 +948,104 @@
 			]
 			x: -0.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["2F63FB9E8EAC18BD"]
+			description: ["Please acknowledge the tips below."]
+			id: "040A2C9AD4AF7034"
+			shape: "heart"
+			subtitle: "Tips to progess through the Overworld."
+			tasks: [{
+				id: "4E041026D3194B17"
+				title: "I promise!"
+				type: "checkmark"
+			}]
+			title: "Tips and Tricks"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["040A2C9AD4AF7034"]
+			description: ["Early flight is not possible, you can find artifacts around the world to help in every other way, but until you advance to the next quest, flight is disabled."]
+			id: "79B2C3220D386ED2"
+			rewards: [{
+				id: "6096D75C9C8D171F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "4040786173F79D7C"
+				title: "I acknowledge!"
+				type: "checkmark"
+			}]
+			title: "Early Flight"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["040A2C9AD4AF7034"]
+			description: [
+				"Don't try to rush to the End.  While you may find a Stronghold in your travels, Eyes of Ender are gated behind a game stage thats unlocked when you're ready to go to the end."
+				"Follow the quests, you'll get there eventually!"
+			]
+			id: "7D3F83C156BA7A9F"
+			rewards: [{
+				id: "49244F763E00AD90"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "78E7226BBFF44EEA"
+				title: "I acknowledge!"
+				type: "checkmark"
+			}]
+			title: "End Rush"
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["040A2C9AD4AF7034"]
+			description: [
+				"Botania plays a big role in progression, It is highly recommended that you get started on Botania ASAP."
+				"Collect all the flowers, make a Petal Apothecary and a Pure Daisy to get going!"
+				""
+				"Mastering Botania is required to advance, just a friendly tip!"
+			]
+			id: "7FAC77827F3DDBB3"
+			rewards: [{
+				id: "5F1C34306ABDE774"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "018CE87590ABAE56"
+				title: "I Acknowledge!"
+				type: "checkmark"
+			}]
+			title: "Botania"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["040A2C9AD4AF7034"]
+			description: [
+				"Mobs are smarter, can climb walls and creepers can sometimes see you through walls."
+				"Be careful and light up the area around your base."
+			]
+			id: "63F96EBAE3CCEF57"
+			rewards: [{
+				id: "1CCD90A84A2E66DF"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "30FA61D16B33FAEA"
+				title: "I Acknowledge!"
+				type: "checkmark"
+			}]
+			title: "SMRT!"
+			x: 4.0d
+			y: 4.5d
 		}
 	]
 	title: "Chapter 3: Somewhere in between"

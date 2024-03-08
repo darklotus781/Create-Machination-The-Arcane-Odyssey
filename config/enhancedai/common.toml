@@ -382,7 +382,7 @@
 	"Enable Item Disruption" = true
 	#Mobs can bite if are attacked with non-weapons. Only mobs in the enhancedai:can_bite entity type tag can bite.
 	"Enable Biting Mobs" = true
-	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:can_run_from_explosion to whitelist them
+	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:no_run_from_explosion to blacklist them
 	"Enable Avoid Explosions" = true
 	#Mobs can flee or attack Wardens. Use the entity type tag enhancedai:ignore_warden_interaction to blacklist mobs.
 	"Enable Warden Interacting" = true
@@ -451,7 +451,7 @@
 			#Range: 0.0 ~ 128.0
 			Minimum = 12.0
 			#Range: 0.0 ~ 128.0
-			Maximum = 24.0
+			Maximum = 0.0
 
 		[Mobs.Targeting."Hurt by target"]
 			#Mobs will no longer switch target if it's the same or if the current one it's closer.
@@ -565,7 +565,7 @@
 			#Range: 0.0 ~ 1.0
 			Hard = 0.3
 
-	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:can_run_from_explosion to whitelist them
+	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:no_run_from_explosion to blacklist them
 	[Mobs."Avoid Explosions"]
 		#Speed multiplier when the mob runs from explosions and it's within 7 blocks from him.
 		#Range: 0.0 ~ 10.0
@@ -623,7 +623,7 @@
 			#Range: 1.0 ~ 16.0
 			Minimum = 1.0
 			#Range: 1.0 ~ 16.0
-			Maximum = 3.0
+			Maximum = 4.0
 
 [Endermen]
 	#Endermen teleport the player near him when can't reach him for a while.
@@ -659,10 +659,10 @@
 		"Walking Fuse Speed Modifier" = -0.5
 		#Percentage chance for a Creeper to ignore walls while targeting a player. This means that a creeper will be able to explode if it's in the correct range from a player even if there's a wall between.
 		#Range: 0.0 ~ 1.0
-		"Ignore Walls Chance" = 0.65
+		"Ignore Walls Chance" = 0.0
 		#Breaching creepers will try to open an hole in the wall to let mobs in.
 		#Range: 0.0 ~ 1.0
-		"Breach Chance" = 0.075
+		"Breach Chance" = 0.0
 		#Disables the creeper feature that makes them start swelling when falling.
 		"Disable falling swelling" = true
 		#If true creepers will ignite if damaged by an explosion.

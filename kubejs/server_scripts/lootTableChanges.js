@@ -34,4 +34,31 @@ LootJS.modifiers((event) => {
             LootEntry.of('artifacts:universal_attractor').when((c) => c.randomChance(0.25)),
             LootEntry.of('artifacts:bunny_hoppers').when((c) => c.randomChance(0.25))
         );
+
+    // event.addEntityLootModifier('minecraft:wither_skeleton').get
 });
+
+// // Get a list of LootTables for a mob on death.
+// // https://discord.com/channels/303440391124942858/1164124690055438408/1164138859840417864
+// EntityEvents.death(event => {
+
+//     const $LootDataType = Java.loadClass('net.minecraft.world.level.storage.loot.LootDataType')
+
+//     let lootData = Utils.server.getLootData()
+//     // this will be a list of all the resourcelocations.
+//     let allTables = lootData.getKeys($LootDataType.TABLE)
+//     console.printObject(allTables)
+//     // filter it for only stuff that contains chest
+//     let filteredList = allTables.stream().filter(id => id.path.contains('wither_skeleton')).map(id => id.toString()).toList()
+
+//     JsonIO.write('kubejs/exported/lootTables.json', {big_list: filteredList})
+
+//     // create the empty file with the following json:
+//     // {
+//     //     "big_list": []
+//     // }
+    
+//     // if you want to get the actual loot table object (which isnt that useful)
+//     // const $LootDataId = Java.loadClass('net.minecraft.world.level.storage.loot.LootDataId')
+//     // lootData.getElement(new $LootDataId($LootDataType.TABLE, "somemod:some_loot_table"))
+// })

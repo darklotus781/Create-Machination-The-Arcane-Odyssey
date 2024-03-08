@@ -21,8 +21,8 @@ ServerEvents.recipes(event => {
     // Logic Processor Press
     event.recipes.create.cutting(Item.of('ae2:logic_processor_press'), Item.of('gold_block')).processingTime(500);
 
-    event.replaceInput({id: 'ae2:network/cells/item_storage_components_cell_1k_part'}, Item.of('ae2:logic_processor'), Item.of('kubejs:time_mechanism'));
-    event.replaceInput({id: 'ae2:network/cells/item_storage_components_cell_4k_part'}, Item.of('ae2:calculation_processor'), Item.of('kubejs:time_mechanism'));
+    event.replaceInput({id: 'ae2:network/cells/item_storage_components_cell_1k_part'}, Item.of('ae2:logic_processor'), Item.of('kubejs:temporal_mechanism'));
+    event.replaceInput({id: 'ae2:network/cells/item_storage_components_cell_4k_part'}, Item.of('ae2:calculation_processor'), Item.of('kubejs:temporal_mechanism'));
 
     // AE2 Printed Silicon
     t = Item.of('ae2:silicon');

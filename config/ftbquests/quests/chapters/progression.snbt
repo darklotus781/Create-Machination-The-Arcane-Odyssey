@@ -129,6 +129,11 @@
 			icon: "kubejs:copper_machine"
 			id: "3B25D99BFA2C928C"
 			subtitle: "Fluid!"
+			tasks: [{
+				id: "166E4CF9E3DFE1E8"
+				title: "Unlock Copper Machines"
+				type: "checkmark"
+			}]
 			title: "Chapter 1A: Copper"
 			x: -0.5d
 			y: 2.0d
@@ -564,7 +569,7 @@
 				"Chapter 4 and Chapter 5 feed directly off Chapter 3 because they both use Radiant Mechanisms and unlock different features / functionality.  It makes sense to keep them separate chapters due to the intricacies of each quest line and that they don't directly feed off of or into each other."
 			]
 			hide: true
-			icon: "kubejs:integrational_machine"
+			icon: "kubejs:menril_machine"
 			id: "437114B9BC07B2BD"
 			rewards: [
 				{
@@ -621,7 +626,7 @@
 			dependencies: ["0225A0BF60D285CD"]
 			description: ["Chapter 6"]
 			hide: true
-			icon: "kubejs:time_machine"
+			icon: "kubejs:temporal_machine"
 			id: "5B817E19476DEBA1"
 			rewards: [
 				{

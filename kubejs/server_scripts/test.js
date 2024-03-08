@@ -113,3 +113,10 @@ https://discord.com/channels/303440391124942858/1210635631458525194
 //         pData.cycle = 0 // initialize the pData.cycle as 0 in postinit event or something like that if it doesn't exist already
 //     }
 // })
+
+// BlockEvents.rightClicked('minecraft:dirt', event => {
+//     if (event.item.id == 'minecraft:diamond') {
+//         event.block.popItemFromFace('minecraft:coal', event.getFacing())
+//         event.block.set('minecraft:grass_block')
+//     }
+// });

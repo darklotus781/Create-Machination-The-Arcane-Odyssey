@@ -5,42 +5,42 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "kubejs:integrational_mechanism",
-                    "weight": 10,
+                    "weight": 15,
+                    "name": "kubejs:menril_mechanism",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 1,
-                                "max": 8
+                                "min": 2,
+                                "max": 16
                             }
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 10,
                     "name": "kubejs:power_mechanism",
-                    "weight": 10,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 1,
-                                "max": 8
+                                "min": 2,
+                                "max": 16
                             }
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "kubejs:radiant_mechanism",
                     "weight": 10,
+                    "name": "kubejs:radiant_mechanism",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 1,
-                                "max": 8
+                                "min": 2,
+                                "max": 16
                             }
                         }
                     ]

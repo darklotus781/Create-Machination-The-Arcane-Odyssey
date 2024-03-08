@@ -3,9 +3,9 @@ ServerEvents.tags('item', event => {
     event.add('forge:mechanisms/tier/1', 'kubejs:kinetic_mechanism');
     event.add('forge:mechanisms/tier/2', ['create:precision_mechanism', 'kubejs:power_mechanism', 'kubejs:sturdy_mechanism', 'kubejs:scorch_mechanism']);
     event.add('forge:mechanisms/tier/3', 'kubejs:radiant_mechanism');
-    event.add('forge:mechanisms/tier/4', ['kubejs:integrational_mechanism', 'kubejs:plastic_mechanism']);
+    event.add('forge:mechanisms/tier/4', ['kubejs:menril_mechanism', 'kubejs:plastic_mechanism']);
     event.add('forge:mechanisms/tier/5', 'kubejs:quantum_mechanism');
-    event.add('forge:mechanisms/tier/6', 'kubejs:time_mechanism');
+    event.add('forge:mechanisms/tier/6', 'kubejs:temporal_mechanism');
 });
 
 ServerEvents.recipes(event => {
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('create:precision_mechanism'),
     ], Item.of('kubejs:kinetic_mechanism'), [
-        event.recipes.create.deploying(t, [t, Item.of('create:electron_tube')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/brass')]),
         event.recipes.create.deploying(t, [t, Item.of('create:electron_tube')]),
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/screwdrivers')])
     ]).transitionalItem(t).loops(1).id('kubejs:assembly/precision_mechanism');
@@ -110,14 +110,14 @@ ServerEvents.recipes(event => {
     ]).transitionalItem(t).loops(1).id('kubejs:assembly/scorch_mechanism');
 
     // Integrational Mechanism - Tier 4
-    t = Item.of('kubejs:incomplete_integrational_mechanism');
+    t = Item.of('kubejs:incomplete_menril_mechanism');
     event.recipes.create.sequenced_assembly([
-        Item.of('kubejs:integrational_mechanism'),
+        Item.of('kubejs:menril_mechanism'),
     ], Item.of('kubejs:radiant_mechanism'), [
         event.recipes.create.deploying(t, [t, Item.of('ars_nouveau:source_gem')]),
         event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:menril_resin').withAmount(100)]),
         event.recipes.create.pressing(t, [t])
-    ]).transitionalItem(t).loops(1).id('kubejs:assembly/integrational_mechanism');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/menril_mechanism');
 
     // Plastic Mechanism - Tier 4
     t = Item.of('kubejs:incomplete_plastic_mechanism');
@@ -132,15 +132,15 @@ ServerEvents.recipes(event => {
     // Quantum Mechanism in Different file
 
     // Time Mechanism - Tier 6
-    t = Item.of('kubejs:incomplete_time_mechanism');
+    t = Item.of('kubejs:incomplete_temporal_mechanism');
     event.recipes.create.sequenced_assembly([
-        Item.of('kubejs:time_mechanism'),
+        Item.of('kubejs:temporal_mechanism'),
     ], Item.of('kubejs:radiant_mechanism'), [
         event.recipes.create.deploying(t, [t, Item.of('minecraft:clock')]),
         event.recipes.create.deploying(t, [t, Item.of('supplementaries:hourglass')]),
         event.recipes.create.deploying(t, [t, Item.of('tiab:time_in_a_bottle').weakNBT()]),
         event.recipes.create.pressing(t, [t])
-    ]).transitionalItem(t).loops(1).id('kubejs:assembly/time_mechanism');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/temporal_mechanism');
 
     // Time Mechanism
     // SuperCritical Mechanism

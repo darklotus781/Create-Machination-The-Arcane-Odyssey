@@ -25,7 +25,7 @@ CurseForge: https://www.curseforge.com/minecraft/mc-mods/expanded-ecosphere
 	   because the default presets do not work (correctly).
 	   This option will probably not work with Compatible mode, or other biome mods.
 	*/
-	"forceLargeBiomes": true,
+	"forceLargeBiomes": false,
 	// Removes underground ores (andesite, diorite, granite, gravel and dirt)
 	"removeOreBlobs": true
 }
