@@ -569,7 +569,7 @@
 				"Chapter 4 and Chapter 5 feed directly off Chapter 3 because they both use Radiant Mechanisms and unlock different features / functionality.  It makes sense to keep them separate chapters due to the intricacies of each quest line and that they don't directly feed off of or into each other."
 			]
 			hide: true
-			icon: "kubejs:menril_machine"
+			icon: "kubejs:cyber_machine"
 			id: "437114B9BC07B2BD"
 			rewards: [
 				{

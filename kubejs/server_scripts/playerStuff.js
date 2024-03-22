@@ -1,7 +1,7 @@
 //priority: 0
 
 EntityEvents.death("player", (event) => {
-    const { player } = event;
+    const {player} = event;
 
     player.block.popItem(Item.playerHead(player.username));
 });
@@ -51,30 +51,29 @@ PlayerEvents.loggedIn(event => {
     })
 });
 
-ItemEvents.foodEaten(event => {
-    let { player, item: { id } } = event;
+ItemEvents.foodEaten('kubejs:magical_rock_candy', event => {
+    let {player, item: {id}} = event;
 
-    if (id == 'kubejs:magical_rock_candy') {
-        if (player.level.dimension != 'aether:the_aether') {
-            player.addItemCooldown(id, 20 * 60 * 5); // 5 Minutes
-            player.tell(Text.red('It turned into a rock and you choked.'));
-            player.attack('generic', 2);
+    if (player.level.dimension != 'aether:the_aether') {
+        player.addItemCooldown(id, 20 * 60 * 5); // 5 Minutes
+        player.tell(Text.red('It turned into a rock and you choked.'));
+        player.attack('generic', 2);
 
-            if ((player.abilities.mayfly || player.abilities.flying) && (! player.creative || !player.spectator)) {
-                player.tell(Text.gold("Ohh no, you can't fly anymore!"));
-                player.potionEffects.add('minecraft:slow_falling', 20 * 60 * 0.5);
-            }
-            
-            event.server.schedule(2*1000, () => {
-                player.removeEffect('ars_nouveau:flight');
-                player.potionEffects.add('minecraft:slowness', 20 * 60 * 0.5, 4);
-                player.potionEffects.add('minecraft:hunger', 20 * 60 * 1, 2);
-            });
-        } else {
-            player.statusMessage = Text.green('You feel light on your feet!');
-            player.addItemCooldown(id, 20 * 60 * 1.25); // 1.25 Minutes
+        if ((player.abilities.mayfly || player.abilities.flying) && (!player.creative || !player.spectator)) {
+            player.tell(Text.gold("Ohh no, you can't fly anymore!"));
+            player.potionEffects.add('minecraft:slow_falling', 20 * 60 * 0.5);
         }
+
+        event.server.schedule(2 * 1000, () => {
+            player.removeEffect('ars_nouveau:flight');
+            player.potionEffects.add('minecraft:slowness', 20 * 60 * 0.5, 4);
+            player.potionEffects.add('minecraft:hunger', 20 * 60 * 1, 2);
+        });
+    } else {
+        player.statusMessage = Text.green('You feel light on your feet!');
+        player.addItemCooldown(id, 20 * 60 * 1.25); // 1.25 Minutes
     }
+
 });
 
 // PlayerEvents.tick(event => {

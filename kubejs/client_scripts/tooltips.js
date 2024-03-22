@@ -38,8 +38,8 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, 'Grown from seeds found in loot bags and chests.');
     });
 
-    tooltip.add('create:refined_radiance', 'Toss Chromatic Compound on a Beacon');
-    tooltip.add('create:shadow_steel', 'Toss Chromatic Compound into the Void or below Bedrock');
+    tooltip.add('create:refined_radiance', '');
+    tooltip.add('create:shadow_steel', '');
 
     tooltip.add('createresourcegeodes:catalyst_activator_wand', 'Used for moving Catalysts by right clicking.');
 
@@ -108,31 +108,46 @@ ItemEvents.tooltip(tooltip => {
         text.add(3,'§6Enables Flight in The Aether');
     });
 
+    let frameText = Text.aqua('This is an intermediate product, chisel it smooth to make a working casing!');
+    tooltip.add('kubejs:andesite_frame', frameText);
+    tooltip.add('kubejs:brass_frame', frameText);
+    tooltip.add('kubejs:copper_frame', frameText);
+    tooltip.add('kubejs:railway_frame', frameText);
+    tooltip.add('kubejs:refined_radiance_frame', frameText);
+    tooltip.add('kubejs:shadow_steel_frame', frameText);
 
-    main_assembly('kubejs:kinetic_mechanism', "1")
-    main_assembly('kubejs:andesite_machine', "1")
-    bonus_assembly('kubejs:sealed_mechanism', "1A")
-    bonus_assembly('kubejs:sealed_machine', "1A")
-    bonus_assembly('kubejs:logistics_mechaism', "1B")
-    bonus_assembly('kubejs:rotation_mechanism', "1C")
+    let chiselText = Text.green('Used for smoothing out a Casing Frame');
+    tooltip.add('kubejs:andesite_chisel', chiselText);
+    tooltip.add('kubejs:brass_chisel', chiselText);
+    tooltip.add('kubejs:copper_chisel', chiselText);
+    tooltip.add('kubejs:refined_chisel', chiselText);
+    tooltip.add('kubejs:diamond_chisel', chiselText);
+
+
+    main_assembly('kubejs:andesite_mechanism', "1")
+    // main_assembly('kubejs:andesite_machine', "1")
+    bonus_assembly('kubejs:sealed_mechanism', "1")
+    // bonus_assembly('kubejs:sealed_machine', "1A")
+    bonus_assembly('kubejs:logistics_mechanism', "1")
+    // bonus_assembly('kubejs:rotation_mechanism', "1C")
     main_assembly('create:precision_mechanism', "2")
-    main_assembly('kubejs:brass_machine', "2")
-    bonus_assembly('kubejs:power_mechanism', "2A")
-    bonus_assembly('kubejs:power_machine', "2A")
-    bonus_assembly('kubejs:scorch_mechanism', "2B")
-    bonus_assembly('kubejs:scorch_machine', "2B")
-    bonus_assembly('kubejs:sturdy_mechanism', "2C")
-    bonus_assembly('kubejs:sturdy_machine', "2C")
-    main_assembly('kubejs:radiant_mechanism', "3")
-    main_assembly('kubejs:radiant_machine', "3")
-    main_assembly('kubejs:plastic_mechanism', "4")
-    main_assembly('kubejs:plastic_machine', "4")
-    main_assembly('kubejs:menril_mechanism', "5")
-    main_assembly('kubejs:menril_machine', "5")
-    main_assembly('kubejs:quantum_mechanism', "6")
-    main_assembly('kubejs:temporal_mechanism', "7")
-    main_assembly('kubejs:temporal_machine', "7")
+    // main_assembly('kubejs:brass_machine', "2")
+    // bonus_assembly('kubejs:power_mechanism', "2A")
+    // bonus_assembly('kubejs:power_machine', "2A")
+    // bonus_assembly('kubejs:scorch_mechanism', "2B")
+    // bonus_assembly('kubejs:scorch_machine', "2B")
+    // bonus_assembly('kubejs:sturdy_mechanism', "2C")
+    // bonus_assembly('kubejs:sturdy_machine', "2C")
+    // main_assembly('kubejs:radiant_mechanism', "3")
+    // main_assembly('kubejs:radiant_machine', "3")
+    // main_assembly('kubejs:plastic_mechanism', "4")
+    // main_assembly('kubejs:plastic_machine', "4")
+    // main_assembly('kubejs:cyber_mechanism', "5")
+    // main_assembly('kubejs:cyber_machine', "5")
+    // main_assembly('kubejs:quantum_mechanism', "6")
+    // main_assembly('kubejs:temporal_mechanism', "7")
+    // main_assembly('kubejs:temporal_machine', "7")
 
 
     tooltip.add('kubejs:leather_pocket', Text.gold('Useful for adding more slots to your backpack'));
-})
+});

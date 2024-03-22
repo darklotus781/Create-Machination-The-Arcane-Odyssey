@@ -40,20 +40,24 @@ let integrated_parts = [
 ];
 
 ServerEvents.recipes(event => {
-    event.remove ({id: 'integrateddynamics:special/facade'})
-    event.remove({output: 'integrateddynamics:logic_director'});
-    event.remove({output: 'integrateddynamics:energy_battery'});
-    event.remove({output: 'integratedcrafting:part_interface_crafting'});
-    event.remove({output: 'integratedcrafting:part_crafting_writer'});
-    event.remove({output: /integrateddynamics\:part.*porter_world/});
-    event.remove({output: /integratedtunnels\:part.*porter_world/});
-    event.remove({output: "integratedtunnels:part_player_simulator"});
-    event.remove({output: "integrateddynamics:part_connector_omni_directional"});
-    event.remove({output: "integratedterminals:terminal_storage_portable"});
-    event.remove({output: 'integrateddynamics:coal_generator'});
-    event.remove({mod: 'integrateddynamics', output: "minecraft:netherrack"});
+    event.remove({ id: 'integrateddynamics:special/facade' })
+    event.remove({ output: 'integrateddynamics:logic_director' });
+    event.remove({ output: 'integrateddynamics:energy_battery' });
+    event.remove({ output: 'integratedcrafting:part_interface_crafting' });
+    event.remove({ output: 'integratedcrafting:part_crafting_writer' });
+    event.remove({ output: /integrateddynamics\:part.*porter_world/ });
+    event.remove({ output: /integratedtunnels\:part.*porter_world/ });
+    event.remove({ output: "integratedtunnels:part_player_simulator" });
+    event.remove({ output: "integrateddynamics:part_connector_omni_directional" });
+    event.remove({ output: "integratedterminals:terminal_storage_portable" });
+    event.remove({ output: 'integrateddynamics:coal_generator' });
+    event.remove({ mod: 'integrateddynamics', output: "minecraft:netherrack" });
 
     integrated_parts.forEach(part => {
         event.shapeless(Item.of(part), [Item.of(part)]);
     });
+
+    event.shaped(Item.of('minecraft:chest'), ['XXX', 'X X', 'XXX'], { X: Item.of('integrateddynamics:menril_planks') }).id('kubejs:chest_from_menril_planks');
+    event.recipes.create.cutting([Item.of('integrateddynamics:menril_slab', 2)], Item.of('integrateddynamics:menril_planks')).id('kubejs:menril_slabs_from_planks');
+    event.recipes.create.cutting([Item.of('integrateddynamics:crystalized_menril_chunk', 9)], Item.of('integrateddynamics:crystalized_menril_block')).id('kubejs:menril_crystals_from_blocks');
 });

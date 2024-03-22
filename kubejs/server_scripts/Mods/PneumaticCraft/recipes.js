@@ -8,6 +8,8 @@ ServerEvents.recipes(event => {
     event.remove({id: 'pneumaticcraft:thermo_plant/plastic_from_lpg'});
     event.remove({id: 'pneumaticcraft:thermo_plant/vegetable_oil_from_crops'});
     event.remove({id: 'pneumaticcraft:thermo_plant/vegetable_oil_from_seeds'});
+    event.remove({id: 'pneumaticcraft:heat_frame_cooling/plastic'});
+
     event.shapeless(Item.of('pneumaticcraft:compressed_iron_block'), Item.of('pneumaticcraft:ingot_iron_compressed', 9));
 
     event.custom({

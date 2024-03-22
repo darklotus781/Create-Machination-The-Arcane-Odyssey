@@ -83,7 +83,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5EEA7A22DEC032E0"
-				table_id: 6152665868672022373L
+				table_id: 6740888759108653151L
 				type: "loot"
 			}]
 			tasks: [{
@@ -99,9 +99,8 @@
 			dependencies: ["69C0AE6714182D7F"]
 			id: "6C385B4921836314"
 			rewards: [{
-				exclude_from_claim_all: true
 				id: "75212509DAF9B51D"
-				table_id: 6152665868672022373L
+				table_id: 6740888759108653151L
 				type: "random"
 			}]
 			tasks: [{
@@ -293,7 +292,7 @@
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
 			description: ["KubeJS is a mod that significantly simplifies the process of creating a modpack by allowing creators to add custom items and unique interactions without the need for a full mod.\\n"]
-			icon: "kubejs:menril_mechanism"
+			icon: "kubejs:cyber_mechanism"
 			id: "34312A4E0AFAD769"
 			subtitle: "The glue making this pack possible"
 			tasks: [{
@@ -372,6 +371,8 @@
 			description: [
 				"From here on out, the name of the game is automation."
 				"Lay a good foundation for future factory expansion."
+				""
+				"Work on the material quests first to unlock your first factory task."
 			]
 			id: "438CB39142A72E71"
 			tasks: [{
@@ -470,9 +471,8 @@
 			dependencies: ["69C0AE6714182D7F"]
 			id: "2E9BC6F50E8EAA67"
 			rewards: [{
-				exclude_from_claim_all: true
 				id: "55B17EBDCD4A2033"
-				table_id: 6152665868672022373L
+				table_id: 6740888759108653151L
 				type: "random"
 			}]
 			tasks: [{
@@ -488,9 +488,8 @@
 			dependencies: ["69C0AE6714182D7F"]
 			id: "3109A6F2EA23F755"
 			rewards: [{
-				exclude_from_claim_all: true
 				id: "1B51F4BF7ED1C5A6"
-				table_id: 6152665868672022373L
+				table_id: 6740888759108653151L
 				type: "random"
 			}]
 			tasks: [{
@@ -505,9 +504,8 @@
 			dependencies: ["69C0AE6714182D7F"]
 			id: "7B1516AB858E84A1"
 			rewards: [{
-				exclude_from_claim_all: true
 				id: "4EC685588EF53943"
-				table_id: 6152665868672022373L
+				table_id: 6740888759108653151L
 				type: "random"
 			}]
 			tasks: [{
@@ -610,7 +608,7 @@
 			rewards: [{
 				count: 8
 				id: "452C146BDC00F8B2"
-				item: "kubejs:wooden_mechanism"
+				item: { Count: 8b, id: "kubejs:wooden_mechanism" }
 				type: "item"
 			}]
 			tasks: [{
@@ -646,9 +644,12 @@
 				"&lBotania&r is a tech mod themed around natural magic. Gameplay is centered around creating magical flowers and devices using Mana, the power of the earth."
 				""
 				"Some late game recipes are gated behind Botania, our advice is to gather flowers, a flower pouch and get an early start with Botania for later use."
+				""
+				"Your progression depends on completing the main quest tree in the Botania Quests."
 			]
 			icon: "botania:apothecary_default"
 			id: "4ED290A718944E6F"
+			shape: "pentagon"
 			subtitle: "A magic / tech mod based around natural magic."
 			tasks: [{
 				id: "4AFB878C1D5ECFBB"
@@ -656,8 +657,8 @@
 				type: "checkmark"
 			}]
 			title: "Botania"
-			x: 5.5d
-			y: 0.5d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [

@@ -12,6 +12,19 @@ ServerEvents.tags('item', event => {
         .add('integrateddynamics:menril_log_filled')
         .add('integrateddynamics:menril_log');
 
+    event.get('minecraft:logs_that_burn')
+        .add('integrateddynamics:menril_log_stripped');
+
+    event.get('sophisticatedstorage:chests')
+        .add('sophisticatedstorage:chest');
+
+    event.get('sophisticatedstorage:barrels')
+        .add('sophisticatedstorage:barrel');
+
+    event.get('machination:oak_planks')
+        .add('minecraft:oak_planks')
+        .add('integrateddynamics:menril_planks');
+
     event.get('chipped:logs')
         .add('#chipped:acacia_log')
         .add('#chipped:birch_log')

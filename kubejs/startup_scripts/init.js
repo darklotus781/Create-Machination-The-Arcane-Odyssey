@@ -1,4 +1,5 @@
-Platform.mods.kubejs.name = 'Machination'
+Platform.mods.kubejs.name = 'Machination';
+Platform.mods.lychee.name = 'Machination Tweaks';
 
 ForgeEvents.onEvent("net.minecraftforge.event.entity.EntityTravelToDimensionEvent", (event) => {
     global.dimChangeEvent(event);

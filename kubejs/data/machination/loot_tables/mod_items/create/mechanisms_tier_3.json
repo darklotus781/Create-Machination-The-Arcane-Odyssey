@@ -6,7 +6,7 @@
                 {
                     "type": "minecraft:item",
                     "weight": 15,
-                    "name": "kubejs:menril_mechanism",
+                    "name": "kubejs:cyber_mechanism",
                     "functions": [
                         {
                             "function": "minecraft:set_count",

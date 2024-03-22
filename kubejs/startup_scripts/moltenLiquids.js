@@ -24,8 +24,8 @@ const fluid_properties = {
 }
 
 global.fluid_mats = [
-    // "copper",
-    // "iron",
+    "copper",
+    "iron",
     "gold",
     "diamond",
     // "tin",

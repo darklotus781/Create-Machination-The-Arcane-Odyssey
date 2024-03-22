@@ -4,7 +4,7 @@
 	filename: "integrated_inovations"
 	group: "565532624F0A44A9"
 	hide_quest_until_deps_visible: true
-	icon: "kubejs:menril_mechanism"
+	icon: "kubejs:cyber_mechanism"
 	id: "7AB340F7990D3911"
 	order_index: 4
 	quest_links: [ ]
@@ -49,12 +49,12 @@
 				{
 					count: 8L
 					id: "197EBE528E28BE86"
-					item: "kubejs:menril_mechanism"
+					item: "kubejs:cyber_mechanism"
 					type: "item"
 				}
 				{
 					id: "30D0CA1D63F5ED0E"
-					title: "Automated Integrational Mechanisms"
+					title: "Automated Cyber Mechanisms"
 					type: "checkmark"
 				}
 			]
@@ -85,12 +85,12 @@
 				{
 					count: 8L
 					id: "63A446215C76CC6A"
-					item: "kubejs:menril_machine"
+					item: "kubejs:cyber_machine"
 					type: "item"
 				}
 				{
 					id: "790BFDCCFD57233F"
-					title: "Automated Integrational Machines"
+					title: "Automated Cyber Machines"
 					type: "checkmark"
 				}
 			]

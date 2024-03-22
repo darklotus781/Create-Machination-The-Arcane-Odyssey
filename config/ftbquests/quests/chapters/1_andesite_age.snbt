@@ -24,9 +24,8 @@
 					xp_levels: 15
 				}
 				{
-					exclude_from_claim_all: true
 					id: "4D08E1CB86F0EC5B"
-					table_id: 8697717826506614278L
+					table_id: 1973416385812287726L
 					type: "random"
 				}
 			]
@@ -189,7 +188,13 @@
 		}
 		{
 			dependencies: ["67F9D140A432A965"]
-			description: ["Saws are a critical component in the creation of Tier 1 / Chapter 1 Mechanisms, playing an indispensable role in these early stages. It's important to note that saws come with a durability limit, meaning they will wear out over time with use. To address this, you have a couple of options. You can either produce a substantial quantity of saws to ensure a steady supply as they wear down, or you can invest your efforts in obtaining an eternal saw. An eternal saw, being more durable and long-lasting, eliminates the frequent need for replacements and can significantly streamline your crafting processes, making it a worthwhile pursuit for more efficient and uninterrupted production."]
+			description: [
+				"Saws are a critical component in the creation of Tier 1 / Chapter 1 Mechanisms, playing an indispensable role in these early stages. "
+				"It's important to note that saws come with a durability limit, meaning they will wear out over time with use. "
+				"To address this, you have a couple of options. "
+				""
+				"You can either produce a substantial quantity of saws to ensure a steady supply as they wear down, or you can invest your efforts in obtaining an eternal saw. An eternal saw, being more durable and long-lasting, eliminates the frequent need for replacements and can significantly streamline your crafting processes, making it a worthwhile pursuit for more efficient and uninterrupted production."
+			]
 			id: "50186B4B459E4244"
 			rewards: [{
 				id: "6F6F8956DD3A661A"
@@ -216,7 +221,13 @@
 				"67F9D140A432A965"
 				"011E7917E973EB90"
 			]
-			description: ["Andesite Alloy is undoubtedly one of the most valuable resources for mass production in this context. While there are other critical resources to consider, Andesite Alloy serves as a fundamental building block in your journey. Without it, accessing and utilizing those more important resources becomes significantly more challenging. It acts as a key component, enabling progress and facilitating the development of advanced technologies and mechanisms essential for success."]
+			description: [
+				"Andesite Alloy is undoubtedly one of the most valuable resources for mass production."
+				""
+				"While there are other critical resources to consider, Andesite Alloy serves as a fundamental ingredient in your quest for automation. Without it, accessing and utilizing those more important resources becomes significantly more challenging. It acts as a key component, enabling progress and facilitating the development of advanced technologies and mechanisms essential for success."
+				""
+				"There are a few ways to craft Andesite Alloy, some recipes are more complicated but are worth it."
+			]
 			id: "693A218A8E78C38D"
 			rewards: [{
 				id: "376DE34DCC049915"
@@ -322,10 +333,9 @@
 					xp_levels: 5
 				}
 				{
-					exclude_from_claim_all: true
-					id: "6362E9F348891518"
-					table_id: 8697717826506614278L
-					type: "random"
+					id: "560EED1AC48957E0"
+					item: "kubejs:andesite_bag_epic"
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -364,7 +374,7 @@
 				}
 				{
 					id: "7D00480E9A75B477"
-					item: "kubejs:create_bag_rare"
+					item: "kubejs:andesite_bag_common"
 					type: "item"
 				}
 			]
@@ -397,7 +407,7 @@
 				}
 				{
 					id: "3E08B58A3445CE27"
-					item: "kubejs:create_bag_rare"
+					item: "kubejs:andesite_bag_rare"
 					type: "item"
 				}
 			]
@@ -512,7 +522,7 @@
 				}
 				{
 					id: "76547B39039311B5"
-					item: "kubejs:brass_bag_rare"
+					item: "kubejs:andesite_bag_rare"
 					type: "item"
 				}
 			]

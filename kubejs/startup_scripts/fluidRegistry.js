@@ -6,27 +6,6 @@ StartupEvents.registry('fluid', event => {
         .flowingTexture('tconstruct:block/fluid/molten/flowing')
         .displayName('Stabilized Sky Slurry')
 
-    // event.create('molten_diamond')
-    //     .thickTexture(0x2edaff)
-    //     .bucketColor(0x2edaff)
-    //     .stillTexture('tconstruct:block/fluid/molten/still')
-    //     .flowingTexture('tconstruct:block/fluid/molten/flowing')
-    //     .displayName('Molten Diamond')
-
-    // event.create('molten_gold')
-    //     .thickTexture(0xFFD700)
-    //     .bucketColor(0xFFD700)
-    //     .stillTexture('tconstruct:block/fluid/molten/still')
-    //     .flowingTexture('tconstruct:block/fluid/molten/flowing')
-    //     .displayName('Molten Gold')
-
-    // event.create('molten_iron')
-    //     .thickTexture(0xA19D94)
-    //     .bucketColor(0xA19D94)
-    //     .stillTexture('tconstruct:block/fluid/molten/still')
-    //     .flowingTexture('tconstruct:block/fluid/molten/flowing')
-    //     .displayName('Molten Iron')
-
     event.create('chromatic_solution')
         .displayName('Chromatic Solution')
         .stillTexture('kubejs:block/fluid/chromatic_fluid_still')
@@ -172,7 +151,7 @@ StartupEvents.registry('fluid', event => {
     juice("blazing", 0x800020)
     juice("flashing", 0xFFBF00)
 
-    event.create('liquid_resent')
-        .stillTexture('kubejs:block/liquid_resent')
-        .displayName('Liquidified Resent')
+    event.create('liquid_souls')
+        .stillTexture('kubejs:block/fluid/liquid_souls')
+        .displayName('Liquefied Souls')
 });

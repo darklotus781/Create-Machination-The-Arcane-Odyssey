@@ -1,4 +1,7 @@
 {
+  "framedblocks": {
+    "framed_item_frame": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -62,9 +65,6 @@
     "camo": true,
     "semiblock": true
   },
-  "immersiveengineering": {
-    "multiblock_icon": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -94,16 +94,6 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
-  "mekanism": {
-    "infuse_type": true,
-    "gas": true,
-    "remove_builtin": true,
-    "pigment": true,
-    "fluid": true,
-    "slurry": true,
-    "energy": true,
-    "tooltip_renderer": true
-  },
   "easy_villagers": {
     "villager": true,
     "converter": true,
@@ -118,6 +108,9 @@
     "mortar": true,
     "cauldron": true
   },
+  "supplementaries": {
+    "hat_stand": true
+  },
   "create": {
     "filter": true,
     "backtank_capacity": true,
@@ -128,9 +121,6 @@
     "crafting_blueprint": true,
     "goggles.detailed": false,
     "placard": true
-  },
-  "supplementaries": {
-    "hat_stand": true
   },
   "waystones": {
     "waystone": true

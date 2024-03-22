@@ -100,7 +100,13 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "36CBD54BCB068EB1"
+					count: 2L
+					id: "5B31A98B9EFCCFAB"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					id: "7A6ACECDCDD6744E"
 					item: {
 						Count: 1b
 						id: "kubejs:resonator"
@@ -108,14 +114,6 @@
 							Damage: 0
 						}
 					}
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 7L
-					icon: { Count: 7b, id: "thermal:gold_coin" }
-					id: "5B31A98B9EFCCFAB"
-					item: "thermal:gold_coin"
 					type: "item"
 				}
 			]
@@ -1065,7 +1063,7 @@
 			tasks: [
 				{
 					consume_items: true
-					count: 16L
+					count: 2L
 					id: "3C635D4EF56CA567"
 					item: "thermal:gold_coin"
 					type: "item"
@@ -1125,7 +1123,7 @@
 			tasks: [
 				{
 					consume_items: true
-					count: 16L
+					count: 2L
 					id: "5272C8C538A21D32"
 					item: "thermal:gold_coin"
 					type: "item"

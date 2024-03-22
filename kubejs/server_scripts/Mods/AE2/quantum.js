@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:menril_resin').withAmount(250)]),
         // event.recipes.create.filling(t, [t, Fluid.of('kubejs:aureal_essence', 250)]),
         // event.recipes.create.filling(t, [t, Fluid.of(TC('liquid_soul'), 250)]),
-        // event.recipes.create.filling(t, [t, Fluid.of('kubejs:liquid_resent', 250)]),
+        // event.recipes.create.filling(t, [t, Fluid.of('kubejs:liquid_souls', 250)]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:soul_sand')]),
         event.recipes.create.deploying(t, [t, Item.of('pneumaticcraft:glycerol')]), // Adhesive, LOL
         event.recipes.create.pressing(t, t)

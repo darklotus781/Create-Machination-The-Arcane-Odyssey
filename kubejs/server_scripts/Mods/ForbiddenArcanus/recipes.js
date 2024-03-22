@@ -28,20 +28,20 @@ ServerEvents.blockLootTables(event => {
 });
 
 ServerEvents.recipes(event => {
-    event.remove({id: 'create:haunting/soul_sand'});
-    event.remove({id: 'create:splashing/soul_sand'});
+    event.remove({ id: 'create:haunting/soul_sand' });
+    event.remove({ id: 'create:splashing/soul_sand' });
 
-    event.remove({id: 'forbidden_arcanus:aureal_bottle'})
-    event.remove({id: 'forbidden_arcanus:golden_orchid_seeds'});
-    event.remove({id: 'forbidden_arcanus:dark_matter'});
-    event.remove({id: 'forbidden_arcanus:corrupti_dust'});
-    event.remove({id: 'forbidden_arcanus:dark_nether_star'});
-    event.remove({id: 'forbidden_arcanus:corrupted_pixie'});
-    event.remove({id: 'forbidden_arcanus:blasting/arcane_crystal_dust_from_blasting'});
-    event.remove({id: 'forbidden_arcanus:smelting/arcane_crystal_dust_from_smelting'});
-    event.remove({id: 'forbidden_arcanus:aureal_bottle'});
-    event.remove({id: 'forbidden_arcanus:deorum_ingot'});
-    event.remove({id: 'forbidden_arcanus:mundabitur_dust'});
+    event.remove({ id: 'forbidden_arcanus:aureal_bottle' })
+    event.remove({ id: 'forbidden_arcanus:golden_orchid_seeds' });
+    event.remove({ id: 'forbidden_arcanus:dark_matter' });
+    event.remove({ id: 'forbidden_arcanus:corrupti_dust' });
+    event.remove({ id: 'forbidden_arcanus:dark_nether_star' });
+    event.remove({ id: 'forbidden_arcanus:corrupted_pixie' });
+    event.remove({ id: 'forbidden_arcanus:blasting/arcane_crystal_dust_from_blasting' });
+    event.remove({ id: 'forbidden_arcanus:smelting/arcane_crystal_dust_from_smelting' });
+    event.remove({ id: 'forbidden_arcanus:aureal_bottle' });
+    event.remove({ id: 'forbidden_arcanus:deorum_ingot' });
+    event.remove({ id: 'forbidden_arcanus:mundabitur_dust' });
 
     event.smelting('forbidden_arcanus:arcane_crystal_dust', '#forbidden_arcanus:arcane_crystal_ores')
 
@@ -58,6 +58,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.filling(Item.of('forbidden_arcanus:aureal_bottle'), [Item.of('kubejs:empty_vial'), Fluid.of('kubejs:aureal_essence').withAmount(333)]);
     event.recipes.create.mixing(Item.of('forbidden_arcanus:arcane_gold_ingot'), [Ingredient.of('#forge:nuggets/gold', 9), Item.of('forbidden_arcanus:mundabitur_dust')]);
     event.recipes.create.splashing(Item.of('forbidden_arcanus:pixie_utrem_jar'), Item.of('forbidden_arcanus:corrupted_pixie_utrem_jar'));
+    event.recipes.create.deploying(Item.of('forbidden_arcanus:corrupted_pixie_utrem_jar'), [Item.of('forbidden_arcanus:utrem_jar'), Item.of('forbidden_arcanus:corrupted_pixie')]);
     event.recipes.create.filling(Item.of('minecraft:soul_sand'), [Item.of('forbidden_arcanus:soulless_sand'), Fluid.of('kubejs:aureal_essence').withAmount(50)]);
 
     // Input, reagent, output, source

@@ -13,14 +13,15 @@ ServerEvents.recipes(event => {
     event.remove({id: 'create:crushing/diorite'});
     event.remove({id: 'create:crushing/tuff'});
 
-    let waystones = ['waystones:waystone',
+    let waystones = [
+        'waystones:waystone',
         'waystones:mossy_waystone',
         'waystones:sandy_waystone'
     ];
+    
     waystones.forEach(i => {
         event.recipes.create.crushing([Item.of('kubejs:warp_fragments', 5), Item.of('kubejs:warp_fragments')], Item.of(i));
     })
 
     event.recipes.create.crushing(Item.of('kubejs:sourcegem_fragments').withChance(0.4), Item.of('ars_nouveau:source_gem'));
-    event.recipes.create.crushing(Item.of('forbidden_arcanus:arcane_crystal_dust_speck', 50), Item.of('forbidden_arcanus:arcane_crystal_obelisk'));
 });

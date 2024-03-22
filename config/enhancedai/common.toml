@@ -382,7 +382,7 @@
 	"Enable Item Disruption" = true
 	#Mobs can bite if are attacked with non-weapons. Only mobs in the enhancedai:can_bite entity type tag can bite.
 	"Enable Biting Mobs" = true
-	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:no_run_from_explosion to blacklist them
+	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:can_run_from_explosion to whitelist them
 	"Enable Avoid Explosions" = true
 	#Mobs can flee or attack Wardens. Use the entity type tag enhancedai:ignore_warden_interaction to blacklist mobs.
 	"Enable Warden Interacting" = true
@@ -397,7 +397,7 @@
 		[Mobs."Melee Attacking"."Attack Speed"]
 			#If true melee monsters (zombies, etc) attack rate is defined by their attack speed -40%, minimum once every 0.5 seconds with no weapon. This effectively buffs any mob that has no weapon.
 			Enabled = true
-			#The maximum attack speed a mob can attack with (in attacks per second, 2 is an attach every 0.5 seconds, 1.25 is an attack every 0.8s, 1 is an attack every 1s). In vanilla mobs have 1 attack speed.
+			#The maximum attack speed a mob can attack with (in attacks per second, 2 is an attack every 0.5 seconds, 1.25 is an attack every 0.8s, 1 is an attack every 1s). In vanilla mobs have 1 attack speed.
 			#Range: 0.0 ~ 4.0
 			Maximum = 1.25
 
@@ -565,7 +565,7 @@
 			#Range: 0.0 ~ 1.0
 			Hard = 0.3
 
-	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:no_run_from_explosion to blacklist them
+	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:can_run_from_explosion to whitelist them
 	[Mobs."Avoid Explosions"]
 		#Speed multiplier when the mob runs from explosions and it's within 7 blocks from him.
 		#Range: 0.0 ~ 10.0
@@ -651,7 +651,7 @@
 
 	#Various changes to Creepers exploding. Ignoring Walls, Walking Fuse and smarter exploding based off explosion size. Only creepers in the enhancedai:change_creeper_swell entity type tag are affected by this feature.
 	[Creepers."Creeper Swell"]
-		#Percentage chance for a Creeper to keep walking while exploding.
+		#Percentage chance for a Creeper to keep walking while exploding. This is overwritten if the creeper has the beta property.
 		#Range: 0.0 ~ 1.0
 		"Walking Fuse Chance" = 0.1
 		#Speed modifier when a walking fuse creeper is swelling.
@@ -667,6 +667,9 @@
 		"Disable falling swelling" = true
 		#If true creepers will ignite if damaged by an explosion.
 		"TNT Like" = false
+		#Beta creepers when exploding will walk around the target, like the creepers in pre-1.2.
+		#Range: 0.0 ~ 1.0
+		"Beta Creeper Chance" = 0.35
 
 		[Creepers."Creeper Swell".Launch]
 			#Launching creepers will try ignite and throw themselves at the player.
@@ -698,11 +701,11 @@
 			"Explosion power" = 4.0
 			#Angry Creeper will not stop swelling when triggered
 			"Forced Explosion" = true
-			#If Survival Reimagined is installed and Explosion Overhaul is enabled, creeper cena will deal more knockback and break more blocks
-			"Survival Reimagined Integration" = true
 			#The special sound effect that the Angry Creeper plays
 			#Allowed Values: NONE, CENA, WTF_BOOM
 			Sounds = "WTF_BOOM"
+			#If IguanaTweaks Reborn is installed and Explosion Overhaul is enabled, Angry creeper will deal more knockback and break more blocks
+			"IguanaTweaks Reborn Integration" = true
 
 [Blazes]
 	#Make blazes fire faster/more fireballs. Only mobs in enhancedai:change_blaze_attack entity type tag are affected by this feature.
@@ -864,4 +867,15 @@
 		#XZ range on which a hurt silverfish checks for infested stone to break. Vanilla is 10.
 		#Range: 1 ~ 32
 		"Horizontal Wake up Range" = 10
+
+[Warden]
+	"Enable Warden Attacking" = true
+
+	[Warden."Warden Attacking"]
+		#Multiplies max distance from target where warden can use the sonic boom. Vanilla is 15 horizontal and 20 vertical.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Sonic Boom range multiplier" = 3.0
+		#Multiplies the distance at which the darkness effect is applied.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Darkness range multiplier" = 2.0
 

@@ -78,11 +78,21 @@ StartupEvents.registry("block", event => {
     event.create('andesite_machine').displayName('Andesite Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('brass_machine').displayName('Brass Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('copper_machine').displayName('Copper Machine').notSolid().renderType(layer).hardness(3.0);
-    event.create('menril_machine').displayName('Integrational Machine').notSolid().renderType(layer).hardness(3.0);
+    event.create('cyber_machine').displayName('Cyber Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('sturdy_machine').displayName('Sturdy Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('radiant_machine').displayName('Radiant Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('plastic_machine').displayName('Plastic Machine').notSolid().renderType(layer).hardness(3.0);
     event.create('temporal_machine').displayName('Time Machine').notSolid().renderType(layer).hardness(3.0);
+
+    // Custom Frame Blocks used to make Casings
+    event.create('andesite_frame').tagBlock('create:wrench_pickup');
+    event.create('brass_frame').tagBlock('create:wrench_pickup');
+    event.create('copper_frame').tagBlock('create:wrench_pickup');
+    event.create('railway_frame').tagBlock('create:wrench_pickup');
+    event.create('refined_radiance_frame').tagBlock('create:wrench_pickup');
+    event.create('shadow_steel_frame').tagBlock('create:wrench_pickup');
+
+
     // event.create('supercritical_machine').displayName('Supercritical Machine').notSolid().renderType(layer).hardness(3.0);
 
     // event.create('corrupted_pixie_utrem_jar').displayName('Corrupted Pixie Utrem Jar').notSolid().renderType(layer);

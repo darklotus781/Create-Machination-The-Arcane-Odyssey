@@ -27,3 +27,4 @@ config/worldedit/
 .mixin.out/class/net/minecraft/world/level/block/PointedDripstoneBlock.class
 config/forgeendertech/cached.dat
 config/forgeendertech/Biomes/
+fancymenu_data/last_world.fmdata

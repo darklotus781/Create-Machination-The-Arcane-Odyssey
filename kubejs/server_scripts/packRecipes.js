@@ -1,4 +1,7 @@
 ServerEvents.recipes(event => {
+    event.remove({ output: 'create:andesite_casing' })
+    event.remove({ output: 'create:brass_casing' })
+    event.remove({ output: 'create:copper_casing' })
     // Saw Recipe Function
     let saw = (id, material) => {
         event.shaped(id, [
@@ -18,6 +21,9 @@ ServerEvents.recipes(event => {
         event.recipes.create.item_application(Item.of(result), [inputItem, inputBlock]).id('kubejs:item_application/recipe/' + resultItem);
         // event.recipes.create.deploying(Item.of(result), [inputItem, inputBlock]).id('kubejs:deploying/'+result_item+'_from_'+blockItem+'_and_'+itemItem);
     }
+
+    // Chests from Logs
+    event.shaped(Item.of('minecraft:chest', 8), ['XXX', 'X X', 'XXX'], { X: Ingredient.of('#forge:lumber/all') }).id('kubejs:chests_from_logs');
 
     // 1x Screwdriver
     event.shaped(Item.of('kubejs:screwdriver'), [
@@ -48,8 +54,8 @@ ServerEvents.recipes(event => {
     });
 
     // Runic Tablet
-    event.recipes.create.filling(Item.of('kubejs:empty_runic_tablet'), [Item.of('forbidden_arcanus:polished_darkstone_slab'), Fluid.of('kubejs:source').withAmount(100)]).id('kubejs:filling/empty_runic_tablet');
-    event.recipes.create.deploying(Item.of('kubejs:runic_tablet'), [Item.of('kubejs:empty_runic_tablet'), Item.of('forbidden_arcanus:rune')]).id('kubejs:filling/runic_tablet');
+    event.recipes.create.filling(Item.of('kubejs:blank_runic_tablet'), [Item.of('forbidden_arcanus:polished_darkstone_slab'), Fluid.of('kubejs:source').withAmount(100)]).id('kubejs:filling/blank_runic_tablet');
+    event.recipes.create.deploying(Item.of('kubejs:runic_tablet'), [Item.of('kubejs:blank_runic_tablet'), Item.of('forbidden_arcanus:rune')]).id('kubejs:filling/runic_tablet');
     event.custom({
         type: 'botania:elven_trade',
         ingredients: [Item.of('kubejs:runic_tablet').toJson()],
@@ -57,27 +63,30 @@ ServerEvents.recipes(event => {
     }).id('kubejs:elven_trade/source_gem_from_tablet');
 
     // Produce Ars Sapling Liquids
-    event.recipes.create.compacting(Fluid.of('kubejs:cascading_juice').withAmount(250), Item.of('ars_nouveau:blue_archwood_sapling')).heatRequirement('superheated');
-    event.recipes.create.compacting(Fluid.of('kubejs:flourishing_juice').withAmount(250), Item.of('ars_nouveau:green_archwood_sapling')).heatRequirement('superheated');
-    event.recipes.create.compacting(Fluid.of('kubejs:vexing_juice').withAmount(250), Item.of('ars_nouveau:purple_archwood_sapling')).heatRequirement('superheated');
-    event.recipes.create.compacting(Fluid.of('kubejs:blazing_juice').withAmount(250), Item.of('ars_nouveau:red_archwood_sapling')).heatRequirement('superheated');
+    // event.recipes.create.compacting(Fluid.of('kubejs:cascading_juice').withAmount(250), Item.of('ars_nouveau:blue_archwood_sapling')).superheated();
+    // event.recipes.create.compacting(Fluid.of('kubejs:flourishing_juice').withAmount(250), Item.of('ars_nouveau:green_archwood_sapling')).superheated();
+    // event.recipes.create.compacting(Fluid.of('kubejs:vexing_juice').withAmount(250), Item.of('ars_nouveau:purple_archwood_sapling')).superheated();
+    // event.recipes.create.compacting(Fluid.of('kubejs:blazing_juice').withAmount(250), Item.of('ars_nouveau:red_archwood_sapling')).superheated();
 
     // Process Vials
-    // event.recipes.create.compacting(Fluid.of('kubejs:superheated_anthracene').withAmount(144), Item.of('thermal:tar')).heatRequirement('superheated').processingTime(400);
+    // event.recipes.create.compacting(Fluid.of('kubejs:superheated_anthracene').withAmount(144), Item.of('thermal:tar')).superheated().processingTime(400);
 
     event.recipes.create.emptying([Item.of('kubejs:chromium'), Fluid.of('kubejs:chromatic_waste').withAmount(250)], Item.of('minecraft:glowstone_dust'));
     // event.recipes.create.emptying([Item.of('kubejs:empty_vial'), Fluid.of('kubejs:liquid_anthraquinone').withAmount(56)], Item.of('kubejs:anthraquinone'));
 
     // event.recipes.create.filling(Item.of('kubejs:anthracene'), [Item.of('kubejs:empty_vial'), Fluid.of('kubejs:superheated_anthracene').withAmount(144)]);
-    event.recipes.create.filling(Item.of('pneumaticcraft:plastic'), [Item.of('create:sturdy_sheet'), Fluid.of('pneumaticcraft:plastic').withAmount(500)]);
+    event.recipes.create.filling(Item.of('pneumaticcraft:plastic'), [Item.of('create:sturdy_sheet'), Fluid.of('pneumaticcraft:plastic').withAmount(150)]);
 
     event.recipes.create.filling([Item.of('kubejs:enriched_rubber')], [
         Item.of('thermal:cured_rubber'),
         Fluid.of('integrateddynamics:menril_resin').withAmount(100)
     ]);
 
+    // Chest from Trapped Chest
+    event.shapeless(Item.of('minecraft:chest'), [Item.of('minecraft:trapped_chest')]);
+
     // Redstone Alloy Ingot
-    event.recipes.create.mixing([Item.of('kubejs:redstone_alloy_ingot', 2)], [Ingredient.of('#forge:ingots/iron'), Item.of('minecraft:redstone')]).heatRequirement('heated');
+    event.recipes.create.mixing([Item.of('kubejs:redstone_alloy_ingot', 2)], [Ingredient.of('#forge:ingots/iron'), Item.of('minecraft:redstone')]).heated();
 
     // Redstone Alloy Cable
     event.custom({
@@ -152,11 +161,11 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing([Item.of('create:rose_quartz')], [Fluid.of('thermal:redstone').withAmount(200), Item.of('kubejs:certus_quartz_cluster')]).processingTime(160).id('kubejs:mixing/rose_quartz_from_quartz_cluster');
     event.recipes.create.mixing([Item.of('create:rose_quartz')], [Fluid.of('thermal:redstone').withAmount(200), Item.of('kubejs:quartz_cluster')]).processingTime(160).id('kubejs:mixing/rose_quartz_from_certus_quartz_cluster');
 
-    event.recipes.create.mixing([Fluid.of('thermal:redstone').withAmount(100)], Item.of('minecraft:redstone')).heatRequirement('heated').id('kubejs:melting/destabilized_redstone');
+    event.recipes.create.mixing([Fluid.of('thermal:redstone').withAmount(125)], Item.of('minecraft:redstone')).heated().id('kubejs:melting/destabilized_redstone');
 
     // Molten Glass
-    event.recipes.create.mixing([Fluid.of('kubejs:molten_glass').withAmount(100)], Item.of('minecraft:glass')).heatRequirement('heated').id('kubejs:melting/glass_from_glass');
-    event.recipes.create.mixing([Fluid.of('kubejs:molten_glass').withAmount(100)], Item.of('minecraft:sand')).heatRequirement('heated').id('kubejs:melting/glass_from_sand');
+    event.recipes.create.mixing([Fluid.of('kubejs:molten_glass').withAmount(125)], Item.of('minecraft:glass')).heated().id('kubejs:melting/glass_from_glass');
+    event.recipes.create.mixing([Fluid.of('kubejs:molten_glass').withAmount(125)], Item.of('minecraft:sand')).heated().id('kubejs:melting/glass_from_sand');
 
     // Fiberglass Plate from Molten Glass
     event.recipes.create.compacting([Item.of('kubejs:fiberglass_plate')], [Item.of('minecraft:string', 4), Fluid.of('kubejs:molten_glass').withAmount(500)]);
@@ -167,7 +176,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(Item.of('minecraft:gunpowder', 4), [Item.of('kubejs:powdered_flint', 4), Fluid.of('thermal:refined_fuel').withAmount(600)])
         .id('kubejs:gunpowder_from_powdered_flint_and_refined_fuel');
     event.recipes.create.mixing(Fluid.of('kubejs:impure_source').withAmount(200), [Fluid.of('kubejs:magebloom_juice').withAmount(100), Fluid.of('kubejs:sourceberry_juice').withAmount(100)]);
-    event.recipes.create.mixing(Fluid.of('kubejs:source').withAmount(3), [Fluid.of('kubejs:impure_source').withAmount(12)]).heatRequirement('heated');
+    event.recipes.create.mixing(Fluid.of('kubejs:source').withAmount(3), [Fluid.of('kubejs:impure_source').withAmount(12)]).heated();
     event.recipes.create.mixing('integrateddynamics:menril_sapling', [Item.of('integrateddynamics:menril_berries', 8), 'kubejs:rejuvinated_menril_shrub']);
     event.recipes.create.pressing(Item.of('kubejs:radiant_sheet'), [Item.of('create:refined_radiance')]);
     event.recipes.create.pressing(Item.of('create:sturdy_sheet'), Item.of('pneumaticcraft:ingot_iron_compressed'));
@@ -298,19 +307,54 @@ ServerEvents.recipes(event => {
     // Washing Menril Shrub to Rejuvinated Menril Shrub
     event.recipes.create.splashing(Item.of('kubejs:rejuvinated_menril_shrub'), [Item.of('kubejs:menril_shrub')]);
 
-    caseify('create:andesite_casing', Item.of('create:andesite_alloy'), Ingredient.of('#forge:lumber/all'));
-    caseify('create:copper_casing', Ingredient.of('#forge:plates/copper'), Ingredient.of('#forge:lumber/all'));
-    caseify('create:brass_casing', Ingredient.of('#forge:plates/brass'), Ingredient.of('#forge:lumber/all'));
-    caseify('kubejs:zinc_casing', Ingredient.of('#forge:plates/zinc'), Ingredient.of('#forge:stone'));
-    caseify('kubejs:invar_casing', Ingredient.of('#forge:ingots/invar'), Ingredient.of('#forge:stone'));
-    caseify('kubejs:fluix_casing', Ingredient.of('#forge:plates/lead'), Item.of('minecraft:basalt'));
-    caseify('kubejs:gold_casing', Ingredient.of('#forge:plates/gold'), Ingredient.of('#forge:lumber/stripped'));
-    caseify('create:refined_radiance_casing', Item.of('create:refined_radiance'), Ingredient.of('#forge:lumber/stripped'));
-    caseify('create:shadow_steel_casing', Item.of('create:shadow_steel'), Ingredient.of('#forge:lumber/stripped'));
-    caseify('kubejs:supercritical_casing', Item.of('create:refined_radiance_casing'), Item.of('create:shadow_steel_casing'));
-    caseify('kubejs:enderium_casing', Ingredient.of('#forge:ingots/enderium'), Item.of('#forge:lumber/all'));
 
-    event.shaped(Item.of('kubejs:machine_smithing_template'), [
+    // Copper Casing
+    // t = Item.of('create:andesite_casing');
+    // event.recipes.create.sequenced_assembly([
+    //     Item.of('create:copper_casing'),
+    // ], t, [
+    //     event.recipes.create.deploying(t, [t, Item.of('minecraft:dried_kelp')]),
+    //     event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/copper')])
+    // ]).transitionalItem(t).loops(1).id('kubejs:assembly/copper_casing');
+    //
+    // // Brass Casing
+    // t = Item.of('create:andesite_casing');
+    // event.recipes.create.sequenced_assembly([
+    //     Item.of('create:brass_casing'),
+    // ], t, [
+    //     event.recipes.create.deploying(t, [t, Item.of('minecraft:dried_kelp')]),
+    //     event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/brass')])
+    // ]).transitionalItem(t).loops(1).id('kubejs:assembly/brass_casing');
+
+    caseify('kubejs:andesite_frame', Item.of('create:andesite_alloy'), Ingredient.of('#forge:lumber/stripped'));
+    caseify('kubejs:copper_frame', Ingredient.of('#forge:plates/copper'), Ingredient.of('#forge:lumber/stripped'));
+    caseify('kubejs:brass_frame', Ingredient.of('#forge:plates/brass'), Ingredient.of('#forge:lumber/stripped'));
+    caseify('kubejs:refined_radiance_frame', Item.of('create:refined_radiance'), Ingredient.of('#forge:lumber/stripped'));
+    caseify('kubejs:shadow_steel_frame', Item.of('create:shadow_steel'), Ingredient.of('#forge:lumber/stripped'));
+    caseify('kubejs:railway_frame', Item.of('create:sturdy_sheet'), Ingredient.of('#forge:lumber/stripped'));
+
+    caseify('create:andesite_casing', Item.of('kubejs:andesite_chisel'), Item.of('kubejs:andesite_frame'));
+    caseify('create:copper_casing', Item.of('kubejs:copper_chisel'), Item.of('kubejs:copper_frame'));
+    caseify('create:brass_casing', Item.of('kubejs:brass_chisel'), Item.of('kubejs:brass_frame'));
+    caseify('create:refined_radiance_casing', Item.of('kubejs:refined_chisel'), Item.of('kubejs:refined_radiance_frame'));
+    caseify('create:shadow_steel_casing', Item.of('kubejs:refined_chisel'), Item.of('kubejs:shadow_steel_frame'));
+    caseify('create:railway_casing', Item.of('kubejs:diamond_chisel'), Item.of('kubejs:railway_frame'));
+
+
+    // caseify('create:andesite_casing', Item.of('create:andesite_alloy'), Ingredient.of('#forge:lumber/stripped'));
+    // caseify('create:copper_casing', Ingredient.of('#forge:plates/copper'), Item.of('create:andesite_casing'));
+    // caseify('create:brass_casing', Ingredient.of('#forge:plates/brass'), Item.of('create:andesite_casing'));
+    caseify('kubejs:zinc_casing', Ingredient.of('#forge:plates/zinc'), Item.of('create:andesite_casing'));
+    caseify('kubejs:invar_casing', Ingredient.of('#forge:plates/invar'), Item.of('create:andesite_casing'));
+    caseify('kubejs:fluix_casing', Ingredient.of('#forge:plates/lead'), Item.of('create:andesite_casing'));
+    caseify('kubejs:gold_casing', Ingredient.of('#forge:plates/gold'), Item.of('create:andesite_casing'));
+    // caseify('create:refined_radiance_casing', Item.of('create:refined_radiance'), Item.of('create:andesite_casing'));
+    // caseify('create:shadow_steel_casing', Item.of('create:shadow_steel'), Item.of('create:andesite_casing'));
+    caseify('kubejs:supercritical_casing', Item.of('create:refined_radiance_casing'), Item.of('create:shadow_steel_casing'));
+    caseify('kubejs:enderium_casing', Ingredient.of('#forge:plates/enderium'), Item.of('create:andesite_casing'));
+    caseify('compressedcreativity:compressed_iron_casing', Ingredient.of('#forge:ingots/compressed_iron'), Item.of('create:andesite_casing'));
+
+    event.shaped(Item.of('kubejs:mechanism_smithing_template'), [
         'DMD',
         'DAD',
         'DDD'
@@ -318,33 +362,38 @@ ServerEvents.recipes(event => {
         M: Ingredient.of('#forge:mechanisms/tier/basic'),
         A: Item.of('minecraft:andesite'),
         D: Item.of('minecraft:diamond'),
-    }).id('kubejs:recipe/machine_smithing_template_manual_only');
+    }).id('kubejs:recipe/mechanism_smithing_template_manual_only');
 
-    event.shaped(Item.of('kubejs:machine_smithing_template', 2), [
+    event.shaped(Item.of('kubejs:mechanism_smithing_template', 4), [
         'MTM',
         'MAM',
         'MMM'
     ], {
         M: Ingredient.of('#forge:mechanisms/tier/basic'),
         A: Item.of('minecraft:andesite'),
-        T: Item.of('kubejs:machine_smithing_template'),
-    }).id('kubejs:recipe/machine_smithing_template_alt_manual_only');
+        T: Item.of('kubejs:mechanism_smithing_template'),
+    }).id('kubejs:recipe/mechanism_smithing_template_alt_manual_only');
 
-    event.shaped(Item.of('kubejs:machine_smithing_template', 4), [
+    event.shaped(Item.of('kubejs:mechanism_smithing_template', 8), [
         'PTP',
         'PAP',
         'PPP'
     ], {
         P: Item.of('create:precision_mechanism'),
         A: Item.of('minecraft:andesite'),
-        T: Item.of('kubejs:machine_smithing_template'),
-    }).id('kubejs:recipe/machine_smithing_template_alt_2_manual_only');
+        T: Item.of('kubejs:mechanism_smithing_template'),
+    }).id('kubejs:recipe/mechanism_smithing_template_alt_2_manual_only');
+
+    event.shapeless(Item.of('kubejs:mechanism_smithing_template'), [Item.of('kubejs:machine_smithing_template')]).id('kubejs:compact_template_conversion');
 
     // Polyethylene Slurry
-    event.recipes.create.mixing(Fluid.of('kubejs:ethylene').withAmount(150), [Item.of('kubejs:andesite_blend', 4), Fluid.of('thermal:resin').withAmount(150), Fluid.of('integrateddynamics:menril_resin').withAmount(150)]).heatRequirement('superheated').id('kubejs:mixing/ethylene_slurry');
+    event.recipes.create.mixing(Fluid.of('kubejs:ethylene').withAmount(150), [Item.of('kubejs:andesite_blend', 4), Fluid.of('thermal:resin').withAmount(150), Fluid.of('integrateddynamics:menril_resin').withAmount(150)]).superheated().id('kubejs:mixing/ethylene_slurry');
 
     // Polyethylene Slurry + LPG to Molten Plastic
-    event.recipes.create.mixing(Fluid.of('pneumaticcraft:plastic').withAmount(500), [Fluid.of('kubejs:ethylene').withAmount(250), Fluid.of('pneumaticcraft:lpg').withAmount(250)]).heatRequirement('superheated').id('kubejs:mixing/molten_plastic');
+    event.recipes.create.mixing(Fluid.of('pneumaticcraft:plastic').withAmount(500), [Fluid.of('kubejs:ethylene').withAmount(250), Fluid.of('pneumaticcraft:lpg').withAmount(250)]).superheated().id('kubejs:mixing/molten_plastic');
+
+    // Plastic Bar
+    event.shaped(Item.of('kubejs:plastic'), ['X', 'X', 'X'], { X: Item.of('pneumaticcraft:plastic') }).id('kubejs:plastic_bar');
 
     // Bundle
     event.shaped(Item.of('minecraft:bundle'), [
@@ -437,7 +486,101 @@ ServerEvents.recipes(event => {
     event.blasting(Item.of('ae2:fluix_crystal'), Item.of('kubejs:fluix_cluster'));
     event.blasting(Item.of('minecraft:lapis_lazuli'), Item.of('kubejs:lapis_cluster'));
 
-    event.recipes.create.filling(Item.of('minecraft:ender_pearl'), [Item.of('quark:soul_bead'), Fluid.of('kubejs:dye_slurry_green').withAmount(100)])
+    // Ender Pearl from green dye and soul bead
+    event.recipes.create.filling(Item.of('minecraft:ender_pearl'), [Item.of('quark:soul_bead'), Fluid.of('kubejs:dye_slurry_green').withAmount(100)]);
+
+    // Andesite Chisel
+    event.recipes.botania.mana_infusion(Item.of('kubejs:andesite_chisel'), Ingredient.of('#forge:tools/screwdrivers'), 6000, "create:andesite_alloy_block").id('kubejs:andesite_chisel')
+
+    // Copper Chisel
+    event.recipes.botania.runic_altar(Item.of('kubejs:copper_chisel'), [
+        Item.of('kubejs:andesite_chisel'),
+        Ingredient.of('#forge:plates/copper'),
+        Ingredient.of('#forge:plates/copper'),
+        Item.of('minecraft:slime_ball')
+    ], 14000).id('kubejs:copper_chisel');
+
+    // Brass Chisel
+    event.recipes.botania.runic_altar(Item.of('kubejs:brass_chisel'), [
+        Item.of('kubejs:andesite_chisel'),
+        Ingredient.of('#forge:plates/brass'),
+        Ingredient.of('#forge:plates/brass'),
+        Item.of('minecraft:slime_ball')
+    ], 14000).id('kubejs:brass_chisel');
+
+    // Diamond Chisel
+    event.recipes.botania.runic_altar(Item.of('kubejs:diamond_chisel'), [
+        Item.of('kubejs:andesite_chisel'),
+        Item.of('minecraft:diamond'),
+        Item.of('minecraft:diamond'),
+        Item.of('minecraft:slime_ball')
+    ], 14000).id('kubejs:diamond_chisel');
+
+    // Refined Chisel
+    event.recipes.botania.runic_altar(Item.of('kubejs:refined_chisel'), [
+        Item.of('kubejs:andesite_chisel'),
+        Item.of('create:refined_radiance'),
+        Item.of('create:refined_radiance'),
+        Item.of('minecraft:slime_ball')
+    ], 14000).id('kubejs:refined_chisel');
+
+    // Refined Radiance
+    event.recipes.botania.elven_trade(['create:refined_radiance'], ['create:chromatic_compound']);
+
+    // Shadow Steel
+    event.recipes.botania.elven_trade(['create:shadow_steel'], ['create:refined_radiance']);
+
+    // ALTERNATE ANDESITE CRAFTING RECIPES (more expensive or difficult)!
+    event.recipes.botania.elven_trade(['create:mechanical_press'], ['create:shaft', 'minecraft:iron_block', 'create:gearbox']).id('kubejs:mechanical_press_alt_1');
+    event.recipes.botania.elven_trade(['create:deployer'], ['create:shaft', 'create:brass_hand', 'create:gearbox']).id('kubejs:deployer_alt_1');
+    event.recipes.botania.elven_trade(['create:mechanical_saw'], ['create:shaft', 'thermal:saw_blade', 'create:gearbox']).id('kubejs:mechanical_saw_alt_1');
+
+    event.custom({
+        type: 'lychee:item_exploding',
+        item_in: [Item.of('create:shaft').toJson(), Item.of('pneumaticcraft:compressed_iron_block').toJson(), Item.of('create:andesite_alloy_block').toJson(), Item.of('create:gearbox').toJson()],
+        post: [
+            {
+                type: 'drop_item',
+                item: 'create:mechanical_press',
+                contextual: {
+                    type: 'chance',
+                    chance: 0.33
+                }
+            }
+        ]
+    }).id('kubejs:mechanical_press_alt_2');
+
+    event.custom({
+        type: 'lychee:item_exploding',
+        item_in: [Item.of('create:shaft').toJson(), Item.of('create:brass_hand').toJson(), Item.of('create:andesite_alloy_block').toJson(), Item.of('create:gearbox').toJson()],
+        post: [
+            {
+                type: 'drop_item',
+                item: 'create:deployer',
+                contextual: {
+                    type: 'chance',
+                    chance: 0.33
+                }
+            }
+        ]
+    }).id('kubejs:deployer_alt_2');
+
+    event.custom({
+        type: "lychee:dripstone_dripping",
+        source_block: "kubejs:aureal_essence",
+        target_block: "forbidden_arcanus:soulless_sand",
+        post: [
+            {
+                type: "place",
+                block: "minecraft:soul_sand",
+                contextual: {
+                    type: "chance",
+                    chance: 0.33
+                }
+            },
+        ]
+    }).id('kubejs:soulless_sand_to_soul_sand_alt_1');
+
 
     event.remove({ type: 'thermal:press' });
     trading(event);

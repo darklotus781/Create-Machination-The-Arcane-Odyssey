@@ -41,7 +41,17 @@ StartupEvents.registry('item', event => {
         event.create(id, 'sword').tier('tool').texture('kubejs:item/' + id).displayName(name).rarity(RARITY_COMMON);
     }
 
-    event.create('wooden_mechanism').texture('kubejs:item/mechanisms/wooden_mechanism').tooltip('The Mechanism isn\'t sturdy enough to support further tiers of mechanisms.');
+    event.create('wooden_mechanism')
+        .texture('kubejs:item/mechanisms/wooden_mechanism')
+        .tooltip('The Mechanism isn\'t sturdy enough to support further tiers of mechanisms.');
+
+    mechanism('Andesite');
+    incomplete_mechanism('Andesite');
+    mechanism('Brass');
+    incomplete_mechanism('Brass');
+    mechanism('Copper');
+    incomplete_mechanism('Copper');
+
     mechanism('Rotation');
     incomplete_mechanism('Rotation');
     mechanism('Kinetic');
@@ -52,8 +62,8 @@ StartupEvents.registry('item', event => {
     incomplete_mechanism('Sturdy');
     mechanism('Plastic', RARITY_UNCOMMON);
     incomplete_mechanism('Plastic');
-    mechanism('Menril', RARITY_UNCOMMON);
-    incomplete_mechanism('Menril');
+    mechanism('Cyber', RARITY_UNCOMMON);
+    incomplete_mechanism('Cyber');
     mechanism('Temporal', RARITY_RARE);
     mechanism('Quantum', RARITY_EPIC, true);
     incomplete_mechanism('Quantum');
@@ -121,10 +131,15 @@ StartupEvents.registry('item', event => {
     event.create('stone_saw').texture('kubejs:item/stone_saw').displayName('Stone Saw').maxDamage(64);
     event.create('iron_saw').texture('kubejs:item/iron_saw').displayName('Iron Saw').maxDamage(128);
     event.create('diamond_saw').texture('kubejs:item/diamond_saw').displayName('Diamond Saw').maxDamage(512);
-    event.create('screwdriver').texture('kubejs:item/screwdriver').displayName('Screwdriver').maxDamage(256);
+    event.create('screwdriver').texture('kubejs:item/screwdriver').displayName('Screwdriver').maxDamage(128);
+    event.create('andesite_chisel').texture('kubejs:item/andesite_chisel').displayName('Andesite Chisel').maxDamage(128);
+    event.create('brass_chisel').texture('kubejs:item/brass_chisel').displayName('Brass Chisel').maxDamage(128);
+    event.create('copper_chisel').texture('kubejs:item/copper_chisel').displayName('Copper Chisel').maxDamage(128);
+    event.create('refined_chisel').texture('kubejs:item/refined_chisel').displayName('Refined Chisel').maxDamage(128);
+    event.create('diamond_chisel').texture('kubejs:item/diamond_chisel').displayName('Diamond Chisel').maxDamage(128);
     // event.create('lube_can').texture('kubejs:item/lube_can').displayName('Lubricant Can').maxDamage(256);
-    event.create('soldering_iron').texture('kubejs:item/soldering_iron').displayName('Soldering Iron').maxDamage(512);
-    tool('Resonator');
+    event.create('soldering_iron').texture('kubejs:item/soldering_iron').displayName('Soldering Iron').maxDamage(256);
+    event.create('resonator').texture('kubejs:item/resonator').displayName('Magnetic Resonator').maxDamage(256);
 
     // Different Tubes
     // event.create('golden_tube').texture('kubejs:item/yellow_tube').displayName('Golden Tube');
@@ -152,7 +167,7 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_rose_quartz', 'create:sequenced_assembly').texture('kubejs:item/incomplete_rose_quartz').displayName('Incomplete Rose Quartz');
     event.create('incomplete_empty_tube', 'create:sequenced_assembly').texture('kubejs:item/incomplete_empty_tube').displayName('Incomplete Empty Tube');
     event.create('incomplete_netherite_dust', 'create:sequenced_assembly');
-    event.create('empty_runic_tablet').texture('kubejs:item/empty_runic_tablet').displayName('Empty Runic Tablet');
+    event.create('blank_runic_tablet').texture('kubejs:item/blank_runic_tablet').displayName('Blank Runic Tablet');
 
     // AE2 Incomplete Processors
     event.create('incomplete_calculation_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_calculation_processor').displayName('Incomplete Calculation Processor');
@@ -191,7 +206,7 @@ StartupEvents.registry('item', event => {
     event.create('carbon_sheet').texture('kubejs:item/carbon_sheet').displayName('Carbon Sheet');
     event.create('mica_sheet').texture('kubejs:item/mica_sheet').displayName('Mica Sheet');
     event.create('ceramic_powder').texture('kubejs:item/ceramic_powder').displayName('Ceramic Powder');
-    event.create('plastic').texture('kubejs:item/plastic').displayName('Plastic');
+    event.create('plastic').texture('kubejs:item/plastic').displayName('Plastic Bar');
     event.create('nickel_compound').texture('kubejs:item/nickel_compound').displayName('Nickel Compound');
     event.create('invar_compound', 'create:sequenced_assembly').texture('kubejs:item/invar_compound').displayName('Unprocessed Invar Ingot');
 
@@ -214,8 +229,16 @@ StartupEvents.registry('item', event => {
     event.create('ae2:engineering_processor_press').displayName('Engineering Processor Press');
 
     // Smithing
+    event.create('mechanism_smithing_template', 'smithing_template')
+        .displayName('Machination Smithing Template')
+        .appliesTo('Mechanisms')
+        .ingredients('Catalyzing Items')
+        .appliesToSlotDescription('Insert one (1) Item')
+        .ingredientsSlotDescription('Insert one (1) Mechanism')
+        .texture('kubejs:item/mechanism_smithing_template')
+
     event.create('machine_smithing_template', 'smithing_template')
-        .displayName('Machine Smithing Template')
+        .displayName('UNUSED!!!  CONVERT NOW')
         .appliesTo('Machines')
         .ingredients('Catalyzing Items')
         .appliesToSlotDescription('Insert one (1) Item')

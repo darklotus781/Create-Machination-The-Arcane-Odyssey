@@ -2,6 +2,7 @@
 
 ServerEvents.recipes(event => {
     event.remove({output: 'sophisticatedbackpacks:upgrade_base'});
+    event.remove({output: 'sophisticatedbackpacks:stack_upgrade_starter_tier'});
     event.remove({output: /sophisticatedbackpacks\:stack_upgrade_tier/});
     event.remove({id: 'sophisticatedbackpacks:tank_upgrade'});
     event.remove({id: 'sophisticatedbackpacks:battery_upgrade'});
@@ -56,7 +57,8 @@ ServerEvents.recipes(event => {
         L: 'minecraft:leather'
     });
 
-    event.smithing('sophisticatedbackpacks:stack_upgrade_tier_1', Item.of('kubejs:runic_tablet'), Item.of('sophisticatedbackpacks:upgrade_base'), Item.of('minecraft:anvil'));
+    event.smithing('sophisticatedbackpacks:stack_upgrade_starter_tier', Item.of('kubejs:mechanism_smithing_template'), Item.of('sophisticatedbackpacks:upgrade_base'), Item.of('minecraft:copper_block'));
+    event.smithing('sophisticatedbackpacks:stack_upgrade_tier_1', Item.of('kubejs:runic_tablet'), Item.of('sophisticatedbackpacks:stack_upgrade_starter_tier'), Item.of('minecraft:anvil'));
     event.smithing('sophisticatedbackpacks:stack_upgrade_tier_2', Item.of('kubejs:runic_tablet'), Item.of('sophisticatedbackpacks:stack_upgrade_tier_1'), Item.of('ars_nouveau:source_gem'));
     event.smithing('sophisticatedbackpacks:stack_upgrade_tier_3', Item.of('kubejs:runic_tablet'), Item.of('sophisticatedbackpacks:stack_upgrade_tier_2'), Item.of('forbidden_arcanus:corrupti_dust'));
     event.smithing('sophisticatedbackpacks:stack_upgrade_tier_4', Item.of('kubejs:runic_tablet'), Item.of('sophisticatedbackpacks:stack_upgrade_tier_3'), Item.of('forbidden_arcanus:dark_matter'));

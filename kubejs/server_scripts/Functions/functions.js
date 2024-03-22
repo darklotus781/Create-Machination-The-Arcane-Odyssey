@@ -43,9 +43,27 @@ function trading(event) {
 
 function cuttingRecipe(ingredient, tool, result) {
     return {
-        type: 'sliceanddice:cutting',
+        type: 'farmersdelight:cutting',
         ingredients: [ingredient],
         tool: tool,
-        results: result
+        result: result
     };
 }
+
+// {
+//     "type": "farmersdelight:cutting",
+//     "ingredients": [
+//     {
+//         "item": "minecraft:allium"
+//     }
+// ],
+//     "result": [
+//     {
+//         "count": 2,
+//         "item": "minecraft:magenta_dye"
+//     }
+// ],
+//     "tool": {
+//     "tag": "forge:tools/knives"
+// }
+// }

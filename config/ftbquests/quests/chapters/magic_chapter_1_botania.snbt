@@ -625,7 +625,15 @@
 		}
 		{
 			dependencies: ["7B3FAF5CA4DD217C"]
-			description: ["The &cEndoflame&r will absorb any combustible items or blocks dropped nearby, one at a time. It will then burn them to generate &bMana&r."]
+			description: [
+				"The &5Endoflame&r will absorb any combustible items or blocks dropped on the nearby vicinity, one at a time, and burn through them to generate a trickle of &aMana&r."
+				""
+				"The amount of time it takes to burn through an item is roughly half of the time a Furnace would."
+				""
+				"There're a few small caveats though: the &5Endoflame&r will not burn anything that leave byproducts in Furnaces (e.g. Lava Buckets, which leave Buckets behind)."
+				""
+				"Furthermore, the flower can only burn around two Block of Coals' worth of fuel at once. If any single fuel item with a longer burn time is used, its full efficiency will be lost."
+			]
 			id: "177658CA70DB0C89"
 			rewards: [
 				{
@@ -677,6 +685,14 @@
 		}
 		{
 			dependencies: ["7B3FAF5CA4DD217C"]
+			description: [
+				"The &5Dandelifeon&r is not recommended for the faint of heart."
+				""
+				"While it's likely the most efficient available generating flower in the botanist's toolbox, it's also one of the least straightforward to use."
+				""
+				"Check the docs for this one ..."
+				"https://botaniamod.net/lexicon.html#generating_flowers/dandelifeon"
+			]
 			hide: true
 			hide_dependency_lines: true
 			id: "11671E9021F8FDDE"
@@ -742,7 +758,7 @@
 				""
 				"Below is an example of a basic setup."
 				""
-				"{image:machination:textures/ftbquests/botania/hydrosample.png width:150 height:125 align:1}"
+				"{image:kubejs:textures/ftbquests/botania/hydrosample.png width:150 height:125 align:1}"
 			]
 			hide: false
 			hide_dependency_lines: false
@@ -751,11 +767,6 @@
 				{
 					id: "7290957F0169C06E"
 					item: "botania:hydroangeas"
-					type: "item"
-				}
-				{
-					id: "50C0DA8F19F519F4"
-					item: "cookingforblockheads:sink"
 					type: "item"
 				}
 				{

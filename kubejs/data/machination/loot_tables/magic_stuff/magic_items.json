@@ -63,7 +63,7 @@
                 {
                     "type": "minecraft:item",
                     "weight": 7,
-                    "name": "kubejs:empty_runic_tablet",
+                    "name": "kubejs:blank_runic_tablet",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
