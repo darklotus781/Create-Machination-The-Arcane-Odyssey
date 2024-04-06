@@ -1,7 +1,52 @@
 ItemEvents.toolTierRegistry(event => {
-    event.add('tool', tier => {
-        tier.uses = 250
-        tier.repairIngredient = '#forge:ingots/iron'
+    event.add('stone_tool', tier => {
+        tier.speed = 0;
+        tier.attackDamageBonus = 0;
+        tier.level = 0;
+        tier.uses = 64;
+        tier.repairIngredient = '#forge:stone';
+    });
+    event.add('iron_tool', tier => {
+        tier.speed = 0;
+        tier.attackDamageBonus = 0;
+        tier.level = 0;
+        tier.uses = 128;
+        tier.repairIngredient = '#forge:plates/iron';
+    });
+    event.add('diamond_tool', tier => {
+        tier.speed = 0;
+        tier.attackDamageBonus = 0;
+        tier.level = 0;
+        tier.uses = 256;
+        tier.repairIngredient = '#forge:gems/diamond';
+    });
+    event.add('andesite_tool', tier => {
+        tier.speed = 0;
+        tier.attackDamageBonus = 0;
+        tier.level = 0;
+        tier.uses = 128;
+        tier.repairIngredient = '#forge:ingots/andesite_alloy';
+    });
+    event.add('brass_tool', tier => {
+        tier.speed = 0;
+        tier.attackDamageBonus = 0;
+        tier.level = 0;
+        tier.uses = 256;
+        tier.repairIngredient = '#forge:plates/brass';
+    });
+    event.add('copper_tool', tier => {
+        tier.speed = 0;
+        tier.attackDamageBonus = 0;
+        tier.level = 0;
+        tier.uses = 256;
+        tier.repairIngredient = '#forge:plates/copper';
+    });
+    event.add('refined_tool', tier => {
+        tier.speed = 0;
+        tier.attackDamageBonus = 0;
+        tier.level = 0;
+        tier.uses = 256;
+        tier.repairIngredient = '#forge:ingots/refined_radiance';
     });
 });
 
@@ -45,22 +90,20 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/mechanisms/wooden_mechanism')
         .tooltip('The Mechanism isn\'t sturdy enough to support further tiers of mechanisms.');
 
-    mechanism('Andesite');
-    incomplete_mechanism('Andesite');
-    mechanism('Brass');
-    incomplete_mechanism('Brass');
-    mechanism('Copper');
-    incomplete_mechanism('Copper');
 
-    mechanism('Rotation');
-    incomplete_mechanism('Rotation');
-    mechanism('Kinetic');
-    incomplete_mechanism('Kinetic');
-    mechanism('Sealed');
-    incomplete_mechanism('Sealed');
-    mechanism('Sturdy');
+    mechanism('Logistics'); // Tier 1 Supplemental
+    incomplete_mechanism('Logistics');
+    mechanism('Andesite'); // Tier 1 Base
+    incomplete_mechanism('Andesite');
+    mechanism('Brass'); // Tier 2 Base
+    incomplete_mechanism('Brass');
+    mechanism('Copper'); // Tier 2 Base
+    incomplete_mechanism('Copper');
+    // mechanism('Rotation'); // Tier 2 Supplemental
+    // incomplete_mechanism('Rotation');
+    mechanism('Sturdy'); // Tier 2 Supplemental
     incomplete_mechanism('Sturdy');
-    mechanism('Plastic', RARITY_UNCOMMON);
+    mechanism('Plastic', RARITY_UNCOMMON); // Tier 3 Base
     incomplete_mechanism('Plastic');
     mechanism('Cyber', RARITY_UNCOMMON);
     incomplete_mechanism('Cyber');
@@ -69,29 +112,10 @@ StartupEvents.registry('item', event => {
     incomplete_mechanism('Quantum');
     mechanism('Radiant', RARITY_RARE, true);
     incomplete_mechanism('Radiant');
-    mechanism('Logistics');
-    incomplete_mechanism('Logistics');
-    mechanism('Scorch');
-    incomplete_mechanism('Scorch');
     mechanism('Power');
     incomplete_mechanism('Power');
-    // mechanism('Pressure');
-    // incomplete_mechanism('Pressure');
-    // mechanism('Supercritical', RARITY_RARE);
-    // mechanism('Ender');
-    // incomplete_mechanism('Ender');
-    // mechanism('Calculation');
-    // incomplete_mechanism('Calculation');
-    // mechanism('Infernal');
-    // incomplete_mechanism('Infernal');
-    // mechanism('Integrated');
-    // incomplete_mechanism('Integrated');
-    // mechanism('Train');
-    // incomplete_mechanism('Train');
-    // mechanism('Explosive');
-    // incomplete_mechanism('Explosive');
-    // mechanism('Inductive');
-    // incomplete_mechanism('Inductive');
+    mechanism('Scorch');
+    incomplete_mechanism('Scorch');
 
     event.create('redstone_alloy_ingot').displayName('Redstone Alloy Ingot');
     event.create('redstone_alloy_cable').displayName('Redstone Alloy Cable');
@@ -100,9 +124,6 @@ StartupEvents.registry('item', event => {
     event.create('pcb').displayName('PCB');
     event.create('andesite_blend').texture('kubejs:item/andesite_blend').displayName('Andesite Blend');
     event.create('andesite_dust').texture('kubejs:item/andesite_dust').displayName('Andesite Dust');
-
-    // event.create('forbidden_arcanus:pixie_utrem_jar').texture('kubejs:item/pixie_utrem_jar').displayName('Pixie Utrem Jar');
-    // event.create('forbidden_arcanus:corrupted_pixie_utrem_jar').texture('kubejs:item/corrupted_pixie_utrem_jar').displayName('Corrupted Pixie Utrem Jar');
 
     event.create('soaked_sheet').texture('kubejs:item/soaked_sheet').displayName('Soaked Copper Sheet');
     event.create('rough_sheet').texture('kubejs:item/rough_sheet').displayName('Rough Copper Sheet');
@@ -128,33 +149,22 @@ StartupEvents.registry('item', event => {
     event.create('radiant_steel').texture('kubejs:item/radiant_steel').displayName('Radiant Steel Alloy').glow(true).rarity(RARITY_RARE);
 
     // Tools
-    event.create('stone_saw').texture('kubejs:item/stone_saw').displayName('Stone Saw').maxDamage(64);
-    event.create('iron_saw').texture('kubejs:item/iron_saw').displayName('Iron Saw').maxDamage(128);
-    event.create('diamond_saw').texture('kubejs:item/diamond_saw').displayName('Diamond Saw').maxDamage(512);
-    event.create('screwdriver').texture('kubejs:item/screwdriver').displayName('Screwdriver').maxDamage(128);
-    event.create('andesite_chisel').texture('kubejs:item/andesite_chisel').displayName('Andesite Chisel').maxDamage(128);
-    event.create('brass_chisel').texture('kubejs:item/brass_chisel').displayName('Brass Chisel').maxDamage(128);
-    event.create('copper_chisel').texture('kubejs:item/copper_chisel').displayName('Copper Chisel').maxDamage(128);
-    event.create('refined_chisel').texture('kubejs:item/refined_chisel').displayName('Refined Chisel').maxDamage(128);
-    event.create('diamond_chisel').texture('kubejs:item/diamond_chisel').displayName('Diamond Chisel').maxDamage(128);
-    // event.create('lube_can').texture('kubejs:item/lube_can').displayName('Lubricant Can').maxDamage(256);
-    event.create('soldering_iron').texture('kubejs:item/soldering_iron').displayName('Soldering Iron').maxDamage(256);
-    event.create('resonator').texture('kubejs:item/resonator').displayName('Magnetic Resonator').maxDamage(256);
+    event.create('stone_saw', 'sword').tier('stone_tool').texture('kubejs:item/stone_saw').displayName('Stone Saw').attackDamageBaseline(0);
+    event.create('iron_saw', 'sword').tier('iron_tool').texture('kubejs:item/iron_saw').displayName('Iron Saw').attackDamageBaseline(0);
+    event.create('diamond_saw', 'sword').tier('diamond_tool').texture('kubejs:item/diamond_saw').displayName('Diamond Saw').attackDamageBaseline(0);
+    event.create('screwdriver', 'sword').tier('iron_tool').texture('kubejs:item/screwdriver').displayName('Screwdriver').attackDamageBaseline(0);
+    event.create('andesite_chisel', 'sword').tier('andesite_tool').texture('kubejs:item/andesite_chisel').displayName('Andesite Chisel').attackDamageBaseline(0);
+    event.create('brass_chisel', 'sword').tier('brass_tool').texture('kubejs:item/brass_chisel').displayName('Brass Chisel').attackDamageBaseline(0);
+    event.create('copper_chisel', 'sword').tier('copper_tool').texture('kubejs:item/copper_chisel').displayName('Copper Chisel').attackDamageBaseline(0);
+    event.create('refined_chisel', 'sword').tier('refined_tool').texture('kubejs:item/refined_chisel').displayName('Refined Chisel').attackDamageBaseline(0);
+    event.create('diamond_chisel', 'sword').tier('diamond_tool').texture('kubejs:item/diamond_chisel').displayName('Diamond Chisel').attackDamageBaseline(0);
+    event.create('soldering_iron', 'sword').tier('iron_tool').texture('kubejs:item/soldering_iron').displayName('Soldering Iron').attackDamageBaseline(0);
+    event.create('resonator', 'sword').tier('iron_tool').texture('kubejs:item/resonator').displayName('Magnetic Resonator').attackDamageBaseline(0);
 
     // Different Tubes
-    // event.create('golden_tube').texture('kubejs:item/yellow_tube').displayName('Golden Tube');
-    // event.create('diamond_tube').texture('kubejs:item/blue_tube').displayName('Diamond Tube');
-    event.create('empty_tube').texture('kubejs:item/empty_tube').displayName('Empty Tube');
+    event.create('empty_tube');
 
     // Incomplete / Transitional Devices
-    // event.create('incomplete_sturdy_device', 'create:sequenced_assembly');
-    // event.create('incomplete_mechanical_device', 'create:sequenced_assembly');
-    // event.create('incomplete_sealed_device', 'create:sequenced_assembly');
-    // event.create('incomplete_smart_device', 'create:sequenced_assembly');
-    // event.create('incomplete_locomotive_device', 'create:sequenced_assembly');
-    // event.create('incomplete_logic_device', 'create:sequenced_assembly');
-    // event.create('incomplete_red_stringed_device', 'create:sequenced_assembly');
-    // event.create('incomplete_furnished_device', 'create:sequenced_assembly');
 
     event.create('incomplete_cogwheel', 'create:sequenced_assembly').displayName('Broken Cogwheel').parentModel('create:block/cogwheel_shaftless');
     event.create('incomplete_resistor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_resistor').displayName('Incomplete Resistor');
@@ -200,8 +210,8 @@ StartupEvents.registry('item', event => {
 
 
     event.create('sourcegem_fragments').displayName('Source Crystal Fragments');
-    event.create('menril_shrub').tooltip('With the weakening of the Arcane so have the Arcane Trees been weakened. Can you restore this artifact?');
-    event.create('rejuvinated_menril_shrub').tooltip('Youve restored it, well to some part. To fully restore the Menril Sapling you must continue.');
+    // event.create('menril_shrub').tooltip('With the weakening of the Arcane so have the Arcane Trees been weakened. Can you restore this artifact?');
+    // event.create('rejuvinated_menril_shrub').tooltip('Youve restored it, well to some part. To fully restore the Menril Sapling you must continue.');
     event.create('time_crystal').displayName('Time Crystal Shards');
     event.create('carbon_sheet').texture('kubejs:item/carbon_sheet').displayName('Carbon Sheet');
     event.create('mica_sheet').texture('kubejs:item/mica_sheet').displayName('Mica Sheet');
@@ -237,13 +247,7 @@ StartupEvents.registry('item', event => {
         .ingredientsSlotDescription('Insert one (1) Mechanism')
         .texture('kubejs:item/mechanism_smithing_template')
 
-    event.create('machine_smithing_template', 'smithing_template')
-        .displayName('UNUSED!!!  CONVERT NOW')
-        .appliesTo('Machines')
-        .ingredients('Catalyzing Items')
-        .appliesToSlotDescription('Insert one (1) Item')
-        .ingredientsSlotDescription('Insert one (1) Machine')
-        .texture('kubejs:item/machine_smithing_template')
+    event.create('machine_smithing_template')
 
     // Spawn Eggs - custom spawn eggs don't work on spawners ;)
     global.spawnableMobs.forEach(egg => {

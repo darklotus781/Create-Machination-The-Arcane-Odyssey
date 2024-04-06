@@ -1,0 +1,13 @@
+{
+	icon: "kubejs:create_bag_rare"
+	id: "041641F212338C6F"
+	loot_size: 1
+	order_index: 29
+	rewards: [
+		{ item: "kubejs:create_bag_rare" }
+		{ item: "kubejs:andesite_bag_rare" }
+		{ item: "kubejs:brass_bag_rare" }
+		{ item: "kubejs:radiant_bag_common" }
+	]
+	title: "Create Tier 2"
+}

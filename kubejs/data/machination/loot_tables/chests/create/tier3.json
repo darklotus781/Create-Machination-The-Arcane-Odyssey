@@ -137,7 +137,7 @@
             "conditions": [
                 {
                     "condition": "minecraft:random_chance",
-                    "chance": 0.6
+                    "chance": 0.2
                 }
             ]
         },
@@ -146,17 +146,17 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/create/mechanisms_tier_2"
+                    "name": "machination:mod_items/create/mechanisms_tier_1"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/create/mechanisms_tier_3"
+                    "name": "machination:mod_items/create/mechanisms_tier_2"
                 }
             ],
             "conditions": [
                 {
                     "condition": "minecraft:random_chance",
-                    "chance": 0.6
+                    "chance": 0.2
                 }
             ]
         },

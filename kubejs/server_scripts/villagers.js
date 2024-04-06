@@ -22,7 +22,7 @@ MoreJSEvents.wandererTrades(event => {
     // Diamond and Cobble for Andesite Alloy
     event.addTrade(1, [TradeItem.of('minecraft:diamond', 1, 8), Item.of('minecraft:cobblestone', 64)], Item.of('create:andesite_alloy', 32)).maxUses(16);
     // Diamond and Andesite Alloy for Andesite Machines
-    event.addTrade(1, [TradeItem.of('minecraft:diamond', 1, 8), TradeItem.of('create:andesite_alloy', 1, 16)], Item.of('kubejs:andesite_machine', 2)).maxUses(8);
+    event.addTrade(1, [TradeItem.of('minecraft:diamond', 1, 8), TradeItem.of('create:andesite_alloy', 1, 16)], Item.of('kubejs:andesite_mechanism', 2)).maxUses(8);
     // Diamond and Brass Ingots for Precision Mechanisms
-    event.addTrade(1, [TradeItem.of('minecraft:diamond', 1, 8), TradeItem.of('create:brass_ingot', 1, 16)], Item.of('create:precision_mechanism', 8)).maxUses(8);
+    event.addTrade(1, [TradeItem.of('minecraft:diamond', 1, 8), TradeItem.of('create:brass_ingot', 1, 16)], Item.of('kubejs:brass_mechanism', 8)).maxUses(8);
 });

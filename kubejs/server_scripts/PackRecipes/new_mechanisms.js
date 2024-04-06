@@ -14,12 +14,14 @@ ServerEvents.recipes(event => {
         });
     }
 
-    let mechCutting = (outputs, input) => {
-        outputs.forEach(output => {
-            // console.log(`${output}, ${input}`);
-            event.remove({ output: output });
-
-            event.stonecutting(output, input);
+    let mechCutting = (recipes, input) => {
+        recipes.forEach(output => {
+            let outputItem = output[0];
+            let keep = output[1];
+            if (!keep) {
+                event.remove({output: outputItem});
+            }
+            event.stonecutting(outputItem, input);
         });
     }
 
@@ -78,8 +80,12 @@ ServerEvents.recipes(event => {
         [Item.of('thermal:fluid_cell_frame'), Item.of('thermal:fluid_cell')],
         [Item.of('minecraft:redstone'), Item.of('thermal:upgrade_augment_1')],
         [Item.of('create:cogwheel'), Item.of('create:mechanical_pump')],
-        ['#sophisticatedstorage:barrels', Item.of('create:fluid_tank', 4), true]
+        ['#forge:barrels', Item.of('create:fluid_tank', 4), true]
     ];
+
+    // const logisticsMechSmithing = [
+       
+    // ];
 
     const sturdyMechSmithing = [
         [Item.of('create:contraption_controls'), Item.of('create:controls')],
@@ -96,11 +102,10 @@ ServerEvents.recipes(event => {
         [Item.of('pneumaticcraft:small_tank'), Item.of('pneumaticcraft:liquid_compressor')],
         [Item.of('create:blaze_burner'), Item.of('pneumaticcraft:thermal_compressor')],
         [Item.of('minecraft:diamond'), Item.of('pneumaticcraft:refinery_output')],
-        [Item.of('create:precision_mechanism'), Item.of('pneumaticcraft:refinery')],
+        [Item.of('kubejs:brass_mechanism'), Item.of('pneumaticcraft:refinery')],
         [Item.of('pneumaticcraft:drill_pipe'), Item.of('pneumaticcraft:gas_lift')],
         [Item.of('create:basin'), Item.of('pneumaticcraft:thermopneumatic_processing_plant')],
         [Item.of('create:blaze_burner'), Item.of('compressedcreativity:heater')],
-        [Item.of('minecraft:obsidian'), Item.of('functionalstorage:void_upgrade', 2)]
     ];
 
     const plasticMechSmithing = [
@@ -114,7 +119,7 @@ ServerEvents.recipes(event => {
         [Item.of('compressedcreativity:engine_rotor'), Item.of('compressedcreativity:compressed_air_engine')],
         [Item.of('create:brass_casing'), Item.of('compressedcreativity:rotational_compressor')],
         [Item.of('create:gantry_carriage'), Item.of('pneumaticcraft:elevator_base')],
-        [Item.of('create:precision_mechanism'), Item.of('pneumaticcraft:programmer')],
+        [Item.of('kubejs:brass_mechanism'), Item.of('pneumaticcraft:programmer')],
         [Item.of('kubejs:runic_tablet'), Item.of('pneumaticcraft:electrostatic_compressor')],
         [Item.of('pneumaticcraft:cannon_barrel'), Item.of('pneumaticcraft:air_cannon')],
         [Item.of('pneumaticcraft:liquid_compressor'), Item.of('pneumaticcraft:advanced_liquid_compressor')],
@@ -145,7 +150,7 @@ ServerEvents.recipes(event => {
         [Item.of('minecraft:quartz'), Item.of('thermal:machine_crystallizer')],
         [Item.of('create:mechanical_press'), Item.of('thermal:machine_press')],
         [Item.of('minecraft:crafting_table'), Item.of('thermal:machine_crafter')],
-        [Item.of('create:precision_mechanism'), Item.of('pneumaticcraft:assembly_controller')],
+        [Item.of('kubejs:brass_mechanism'), Item.of('pneumaticcraft:assembly_controller')],
         [Item.of('pneumaticcraft:pneumatic_cylinder'), Item.of('pneumaticcraft:assembly_laser')],
         [Item.of('create:mechanical_drill'), Item.of('pneumaticcraft:assembly_drill')],
         [Item.of('create:mechanical_arm'), Item.of('pneumaticcraft:assembly_io_unit_export')],
@@ -185,79 +190,75 @@ ServerEvents.recipes(event => {
     ];
 
     const andesiteMechCutting = [
-        Item.of('create:portable_storage_interface'),
-        Item.of('create:mechanical_harvester'),
-        Item.of('create:mechanical_plough'),
-        Item.of('create:andesite_funnel'),
-        Item.of('create:andesite_tunnel'),
-        Item.of('create:weighted_ejector'),
-        Item.of('createaddition:rolling_mill')
+        [Item.of('create:portable_storage_interface')],
+        [Item.of('create:mechanical_harvester')],
+        [Item.of('create:mechanical_plough')],
+        [Item.of('create:andesite_funnel')],
+        [Item.of('create:andesite_tunnel')],
+        [Item.of('create:weighted_ejector')],
+        [Item.of('createaddition:rolling_mill')]
     ];
 
     const brassMechCutting = [
-        Item.of('create:rotation_speed_controller'),
-        Item.of('create:mechanical_arm'),
-        Item.of('create:stockpile_switch'),
-        Item.of('create:content_observer'),
-        Item.of('create:brass_funnel'),
-        Item.of('create:brass_tunnel'),
-        Item.of('create:display_link'),
-        Item.of('create:redstone_link', 2),
-        Item.of('create:powered_toggle_latch', 2),
-        Item.of('create:powered_latch', 2),
-        Item.of('create:pulse_extender', 2),
-        Item.of('create:pulse_repeater', 2),
-        Item.of('minecraft:repeater', 2),
-        Item.of('minecraft:comparator', 2),
-        Item.of('minecraft:daylight_detector', 2)
+        [Item.of('create:rotation_speed_controller')],
+        [Item.of('create:mechanical_arm')],
+        [Item.of('create:stockpile_switch')],
+        [Item.of('create:content_observer')],
+        [Item.of('create:brass_funnel')],
+        [Item.of('create:brass_tunnel')],
+        [Item.of('create:display_link')],
+        [Item.of('create:redstone_link', 2)],
+        [Item.of('create:powered_toggle_latch', 2)],
+        [Item.of('create:powered_latch', 2)],
+        [Item.of('create:pulse_extender', 2)],
+        [Item.of('create:pulse_repeater', 2)],
+        [Item.of('minecraft:repeater', 2), true],
+        [Item.of('minecraft:comparator', 2), true],
+        [Item.of('minecraft:daylight_detector', 2), true]
     ];
 
     const copperMechCutting = [
-        Item.of('create:smart_fluid_pipe', 2),
-        Item.of('create:hose_pulley', 1),
-        Item.of('create:portable_fluid_interface', 2),
-        Item.of('create:steam_engine', 3),
-        Item.of('sliceanddice:sprinkler', 2),
-        Item.of('create:fluid_pipe', 4),
-        Item.of('create:copper_valve_handle', 2)
+        [Item.of('create:smart_fluid_pipe', 2)],
+        [Item.of('create:hose_pulley', 1)],
+        [Item.of('create:portable_fluid_interface', 2)],
+        [Item.of('create:steam_engine', 3)],
+        [Item.of('sliceanddice:sprinkler', 2)],
+        [Item.of('create:fluid_pipe', 4)],
+        [Item.of('create:copper_valve_handle', 2)]
     ];
 
     const sturdyMechCutting = [
-        Item.of('pneumaticcraft:turbine_blade'),
-        Item.of('pneumaticcraft:heat_pipe', 2),
-        Item.of('railways:track_coupler'),
-        Item.of('create:display_board', 2),
+        [Item.of('pneumaticcraft:turbine_blade')],
+        [Item.of('pneumaticcraft:heat_pipe', 2)],
+        [Item.of('railways:track_coupler')],
+        [Item.of('create:display_board', 2)],
     ];
 
     const sturdyMechCutting_2 = [
-        Item.of('pneumaticcraft:pressure_tube', 2),
-        Item.of('pneumaticcraft:manual_compressor')
+        [Item.of('pneumaticcraft:pressure_tube', 2)],
+        [Item.of('pneumaticcraft:manual_compressor')]
     ];
 
     const plasticMechCutting = [
-        Item.of('pneumaticcraft:charging_station')
+        [Item.of('pneumaticcraft:charging_station')]
     ];
 
     const cyberMechCutting = [
-        Item.of('integrateddynamics:variable_transformer_output', 2),
-        Item.of('integrateddynamics:variable_transformer_input', 2),
-        Item.of('integrateddynamics:part_static_light_panel', 2),
-        Item.of('integrateddynamics:logic_programmer'),
-        Item.of('integrateddynamics:portable_logic_programmer'),
-        Item.of('integrateddynamics:cable', 4)
+        [Item.of('integrateddynamics:variable_transformer_output', 2)],
+        [Item.of('integrateddynamics:variable_transformer_input', 2)],
+        [Item.of('integrateddynamics:part_static_light_panel', 2)],
+        [Item.of('integrateddynamics:logic_programmer')],
+        [Item.of('integrateddynamics:portable_logic_programmer')],
+        [Item.of('integrateddynamics:cable', 4)]
     ];
 
     const temporalMechCutting = [
-        Item.of('ae2:formation_core', 2),
-        Item.of('ae2:annihilation_core', 2)
-    ];
-
-    const supercriticalMechCutting = [
-        Item.of('entangled:block', 2),
+        [Item.of('ae2:formation_core', 2)],
+        [Item.of('ae2:annihilation_core', 2)]
     ];
 
     mechCutting(andesiteMechCutting, Item.of('kubejs:andesite_mechanism'));
-    mechCutting(brassMechCutting, Item.of('create:precision_mechanism'));
+    mechCutting(brassMechCutting, Item.of('kubejs:brass_mechanism'));
     mechCutting(copperMechCutting, Item.of('kubejs:copper_mechanism'));
     mechCutting(sturdyMechCutting, Item.of('kubejs:sturdy_mechanism'));
     mechCutting(plasticMechCutting, Item.of('kubejs:plastic_mechanism'));
@@ -265,8 +266,9 @@ ServerEvents.recipes(event => {
     mechCutting(temporalMechCutting, Item.of('kubejs:temporal_mechanism'));
 
     mechSmithing(andesiteMechSmithing, Item.of('kubejs:andesite_mechanism'), Item.of('kubejs:mechanism_smithing_template'));
-    mechSmithing(brassMechSmithing, Item.of('create:precision_mechanism'), Item.of('kubejs:mechanism_smithing_template'));
+    mechSmithing(brassMechSmithing, Item.of('kubejs:brass_mechanism'), Item.of('kubejs:mechanism_smithing_template'));
     mechSmithing(copperMechSmithing, Item.of('kubejs:copper_mechanism'), Item.of('kubejs:mechanism_smithing_template'));
+    // mechSmithing(logisticsMechSmithing, Item.of('kubejs:logistics_mechanism'), Item.of('kubejs:mechanism_smithing_template'));
     mechSmithing(sturdyMechSmithing, Item.of('kubejs:sturdy_mechanism'), Item.of('kubejs:mechanism_smithing_template'));
     mechSmithing(plasticMechSmithing, Item.of('kubejs:plastic_mechanism'), Item.of('kubejs:mechanism_smithing_template'));
     mechSmithing(radiantMechSmithing, Item.of('kubejs:radiant_mechanism'), Item.of('kubejs:mechanism_smithing_template'));
@@ -291,79 +293,92 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Item.of('create:cogwheel')]),
         event.recipes.create.deploying(t, [t, Item.of('create:andesite_alloy')]),
         event.recipes.create.pressing(t, [t])
-    ]).transitionalItem(t).loops(4).id('kubejs:assembly/andesite_mechanisms');
-
-    // Sealed Copper Mechanism - Tier 1
-    t = Item.of('kubejs:incomplete_rotation_mechanism');
-    event.recipes.create.sequenced_assembly([
-        Item.of('kubejs:rotation_mechanism'),
-    ], Item.of('kubejs:andesite_mechanism'), [
-        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/saws')]),
-        event.recipes.create.deploying(t, [t, Item.of('create:cogwheel')]),
-        event.recipes.create.deploying(t, [t, Item.of('create:large_cogwheel')])
-    ]).transitionalItem(t).loops(1).id('kubejs:assembly/rotation_mechanism');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/andesite_mechanisms');
 
     // Logistics Mechanism - Tier 1 / Chapter 1
     t = Item.of('kubejs:incomplete_logistics_mechanism');
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:logistics_mechanism'),
     ], Item.of('kubejs:andesite_mechanism'), [
+        event.recipes.create.deploying(t, [t, Item.of('minecraft:barrel')]),
+        event.recipes.create.pressing(t, [t]),
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:nuggets/zinc')]),
-        event.recipes.create.deploying(t, [t, Item.of('create:large_cogwheel')]),
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/screwdrivers')]),
-        event.recipes.create.pressing(t, [t])
-    ]).transitionalItem(t).loops(4).id('kubejs:assembly/logistics_mechanism');
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/logistics_mechanism');
+
+    // Copper Mechanism - Tier 1A / Tier 2
+    t = Item.of('kubejs:incomplete_copper_mechanism');
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:copper_mechanism'),
+    ], Item.of('kubejs:andesite_mechanism'), [
+        event.recipes.create.deploying(t, [t, Item.of('minecraft:slime_ball')]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:molten_copper').withAmount(50)]),
+        event.recipes.create.deploying(t, [t, Item.of('thermal:cured_rubber')]),
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/copper_mechanisms');
+
+    // Copper Mechanism - Tier 1A / Tier 2
+    t = Item.of('kubejs:incomplete_copper_mechanism');
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:copper_mechanism', 2),
+    ], Item.of('kubejs:andesite_mechanism'), [
+        event.recipes.create.deploying(t, [t, Item.of('minecraft:slime_ball')]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:molten_copper').withAmount(50)]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:enriched_rubber')]),
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/copper_mechanisms_alt');
 
     // Sealed Mechanism - Tier 2 level but not tier 2 (not used with other mechanisms...)
-    event.recipes.create.mixing(Item.of('kubejs:sealed_mechanism'), [
+    event.recipes.create.mixing(Item.of('kubejs:copper_mechanism'), [
         Fluid.of('kubejs:molten_copper').withAmount('125'),
         Item.of('kubejs:andesite_mechanism'),
         Item.of('minecraft:slime_ball'),
         Item.of('thermal:cured_rubber', 2)
-    ]).heated().id('kubejs:sealed_mechanism_from_cured_rubber');
+    ]).heated().id('kubejs:copper_mechanism_from_cured_rubber');
 
-    event.recipes.create.mixing(Item.of('kubejs:sealed_mechanism', 2), [
+    event.recipes.create.mixing(Item.of('kubejs:copper_mechanism', 2), [
         Fluid.of('kubejs:molten_copper').withAmount('125'),
         Item.of('kubejs:andesite_mechanism'),
         Item.of('minecraft:slime_ball'),
         Item.of('kubejs:enriched_rubber', 2)
-    ]).heated().id('kubejs:sealed_mechanism_from_enriched_rubber');
+    ]).heated().id('kubejs:copper_mechanism_from_enriched_rubber');
 
     // Precision Mechanism - Tier 2
-    t = Item.of('create:incomplete_precision_mechanism');
+    t = Item.of('kubejs:incomplete_brass_mechanism');
     event.recipes.create.sequenced_assembly([
-        Item.of('create:precision_mechanism'),
-    ], Item.of('kubejs:kinetic_mechanism'), [
+        Item.of('kubejs:brass_mechanism'),
+    ], Item.of('kubejs:andesite_mechanism'), [
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/brass')]),
         event.recipes.create.deploying(t, [t, Item.of('create:electron_tube')]),
-        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/screwdrivers')])
-    ]).transitionalItem(t).loops(1).id('kubejs:assembly/precision_mechanism');
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/screwdrivers')]),
+        event.recipes.create.pressing(t, [t])
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/brass_mechanism');
 
     // Radiant Mechanism - Tier 3
     t = Item.of('kubejs:incomplete_radiant_mechanism');
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:radiant_mechanism'),
-    ], Item.of('create:precision_mechanism'), [
+    ], Item.of('kubejs:brass_mechanism'), [
         event.recipes.create.deploying(t, [t, Item.of('kubejs:radiant_coil')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:radiant_coil')]),
-        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/resonators')])
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/resonators')]),
+        event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1).id('kubejs:assembly/radiant_mechanism');
 
     // Sturdy Mechanism - Tier 2
     t = Item.of('kubejs:incomplete_sturdy_mechanism');
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:sturdy_mechanism'),
-    ], Item.of('create:precision_mechanism'), [
-        event.recipes.create.deploying(t, [t, Item.of('kubejs:rotation_mechanism')]),
+    ], Item.of('kubejs:andesite_mechanism'), [
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:carbon_sheet')]),
         event.recipes.create.deploying(t, [t, Item.of('create:sturdy_sheet')]),
-        event.recipes.create.pressing(t, [t])
+        event.recipes.create.deploying(t, [t, Item.of('create:large_cogwheel')]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:tools/screwdrivers')]),
     ]).transitionalItem(t).loops(1).id('kubejs:assembly/sturdy_mechanism');
 
     // Power Mechanism - Tier 2
     t = Item.of('kubejs:incomplete_power_mechanism');
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:power_mechanism'),
-    ], Item.of('create:precision_mechanism'), [
+    ], Item.of('kubejs:brass_mechanism'), [
         event.recipes.create.filling(t, [t, Fluid.of('create_enchantment_industry:ink').withAmount(30)]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:ceramic_capacitor')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:resistor')]),
@@ -376,7 +391,7 @@ ServerEvents.recipes(event => {
     t = Item.of('kubejs:incomplete_scorch_mechanism');
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:scorch_mechanism'),
-    ], Item.of('create:precision_mechanism'), [
+    ], Item.of('kubejs:brass_mechanism'), [
         event.recipes.create.deploying(t, [t, Item.of('minecraft:nether_brick')]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:magma_cream')]),
         event.recipes.create.filling(t, [t, Fluid.lava(250)]),
@@ -420,7 +435,7 @@ ServerEvents.recipes(event => {
 ServerEvents.tags('item', event => {
     event.add('forge:mechanisms/tier/basic', ['kubejs:wooden_mechanism', 'kubejs:andesite_mechanism']);
     event.add('forge:mechanisms/tier/1', 'kubejs:andesite_mechanism');
-    event.add('forge:mechanisms/tier/2', ['create:precision_mechanism', 'kubejs:power_mechanism', 'kubejs:sturdy_mechanism', 'kubejs:scorch_mechanism']);
+    event.add('forge:mechanisms/tier/2', ['kubejs:brass_mechanism', 'kubejs:power_mechanism', 'kubejs:sturdy_mechanism', 'kubejs:scorch_mechanism']);
     event.add('forge:mechanisms/tier/3', 'kubejs:radiant_mechanism');
     event.add('forge:mechanisms/tier/4', ['kubejs:cyber_mechanism', 'kubejs:plastic_mechanism']);
     event.add('forge:mechanisms/tier/5', 'kubejs:quantum_mechanism');

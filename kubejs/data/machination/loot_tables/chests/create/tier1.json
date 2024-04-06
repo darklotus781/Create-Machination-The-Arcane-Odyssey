@@ -114,11 +114,13 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/create/mechanisms_tier_1"
+                    "name": "machination:mod_items/create/mechanisms_tier_1",
+                    "weight": 20
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/create/mechanisms_tier_2"
+                    "name": "machination:mod_items/create/mechanisms_tier_2",
+                    "weight": 5
                 }
             ],
             "conditions": [

@@ -15,6 +15,13 @@ let SP = (id, x) => MOD("supplementaries", id, x)
 let F = (id, x) => MOD("forge", id, x)
 let AC = (id, x) => MOD("aquaculture", id, x)
 let AO = (id, x) => MOD("alltheores", id, x)
+let A = (id, x) => MOD("aether", id, x)
+let AD = (id, x) => MOD("aetherdelight", id, x)
+let ID = (id, x) => MOD("integrateddynamics", id, x)
+let AN = (id, x) => MOD("ars_nouveau", id, x)
+let AE = (id, x) => MOD("ars_elemental", id, x)
+let Q = (id, x) => MOD("quark", id, x)
+let FA = (id, x) => MOD("forbidden_arcanus", id, x)
 //
 global.trades = []
 global.professions = []
@@ -71,9 +78,15 @@ StartupEvents.registry('item', event => {
 		{ in: MC('brown_mushroom', 8), out: S(1) },
 		{ in: MC('red_mushroom', 8), out: S(1) },
 		{ in: MC('kelp', 64), out: S(1) },
-		{ in: MC('pumpkin', 9), out: S(1) },
+		{ in: MC('pumpkin', 8), out: S(1) },
 		{ in: MC('#wool', 16), out: S(1) },
-		{ in: MC('melon', 3), out: S(1) }
+		{ in: MC('melon', 8), out: S(1) },
+		{ in: MC('nether_wart', 32), out: S(1) },
+		{ in: Q('sugar_cane_block', 8), out: S(1) },
+		{ in: Q('cactus_block', 8), out: S(1) },
+		{ in: AN('magebloom', 32), out: S(1) },
+		{ in: AN('sourceberry_sack'), out: S(1) },
+		{ in: AD('blue_berry_crate'), out: S(1) },
 	])
 
 	profession("Carpentry", 0xD0AF84, 0x966C3B, [
@@ -87,31 +100,54 @@ StartupEvents.registry('item', event => {
 		{ in: MC('warped_stem', 64), out: S(4) },
 		{ in: MC('acacia_log', 64), out: S(2) },
 		{ in: MC('birch_log', 64), out: S(2) },
+		{ in: A('skyroot_log', 64), out: S(1) },
+		{ in: A('golden_oak_log', 64), out: S(2) },
+		{ in: AN('blue_archwood_log', 64), out: S(4) },
+		{ in: AN('red_archwood_log', 64), out: S(4) },
+		{ in: AN('purple_archwood_log', 64), out: S(4) },
+		{ in: AN('green_archwood_log', 64), out: S(4) },
+		{ in: AE('yellow_archwood_log', 64), out: S(4) },
+		{ in: ID('menril_log', 64), out: S(2) },
+		{ in: CR('andesite_casing', 64), out: S(1) },
+		{ in: CR('copper_casing', 64), out: S(1) },
+		{ in: CR('brass_casing', 64), out: S(1) },
+		{ in: CR('railway_casing', 64), out: S(1) },
+		{ in: CR('refined_radiance_casing', 32), out: S(1) },
+		{ in: CR('shadow_steel_casing', 32), out: S(1) },
+		{ in: A('quicksoil_glass', 16), out: G(1) },
 	])
 
 	profession("Mining", 0x1C1124, 0x88FFF7, [
-		{ in: CR('crushed_raw_iron', 16), out: S(8) },
-		{ in: CR('crushed_raw_copper', 16), out: S(8) },
-		{ in: CR('crushed_raw_zinc', 16), out: S(8) },
-		{ in: CR('crushed_raw_gold', 16), out: S(10) },
+		{ in: CR('crushed_raw_iron', 16), out: S(4) },
+		{ in: CR('crushed_raw_copper', 16), out: S(4) },
+		{ in: CR('crushed_raw_zinc', 16), out: S(4) },
+		{ in: CR('crushed_raw_gold', 16), out: S(4) },
 		{ in: CR('crushed_raw_nickel', 16), out: S(12) },
 		{ in: CR('crushed_raw_lead', 16), out: S(12) },
 		{ in: MC('andesite', 64), out: S(1) },
 		{ in: MC('granite', 64), out: S(1) },
 		{ in: MC('diorite', 64), out: S(1) },
 		{ in: MC('sandstone', 64), out: S(1) },
+		{ in: MC('blackstone', 64), out: S(1) },
+		{ in: MC('smooth_basalt', 64), out: S(1) },
+		{ in: MC('calcite', 64), out: S(1) },
+		{ in: MC('tuff', 64), out: S(1) },
+		{ in: MC('deepslate', 64), out: S(1) },
+		{ in: FA('darkstone', 64), out: S(1) },
 		{ in: CR('limestone', 64), out: S(1) },
 		{ in: CR('scoria', 64), out: S(1) },
 		{ in: CR('scorchia', 64), out: S(2) },
 		{ in: TE('cinnabar', 8), out: S(6) },
 		{ in: TE('sulfur', 16), out: S(6) },
-		// { in: TE('niter', 16), out: S(6) },
 		{ in: MC('lapis_lazuli', 16), out: S(6) },
-		// { in: TE('apatite', 16), out: S(4) },
 		{ in: AO('sapphire', 1), out: S(10) },
 		{ in: AO('ruby', 1), out: S(10) },
 		{ in: MC('diamond', 1), out: S(14) },
 		{ in: MC('coal', 16), out: S(2) },
+		{ in: MC('amethyst_block', 16), out: S(1) },
+		{ in: A('ambrosium_block'), out: S(1) },
+		{ in: A('zanite_block'), out: S(8) },
+		{ in: A('enchanted_gravitite'), out: S(32) },
 	])
 
 	profession("Masonry", 0x5E6F64, 0xBA7967, [
@@ -131,7 +167,13 @@ StartupEvents.registry('item', event => {
 		{ in: CR('ornate_iron_window', 64), out: S(10) },
 		{ in: MC('mossy_cobblestone', 64), out: S(6) },
 		{ in: F('#glazed_terracotta', 64), out: S(6) },
-		{ in: SP('daub_brace', 64), out: S(8) }
+		{ in: SP('daub_brace', 64), out: S(8) },
+		{ in: MC('nether_bricks', 64), out: S(8) },
+		{ in: MC('red_nether_bricks', 32), out: S(8) },
+		{ in: A('carved_stone', 32), out: S(8) },
+		{ in: A('angelic_stone', 32), out: S(16) },
+		{ in: A('hellfire_stone', 32), out: S(32) },
+		{ in: A('aerogel', 8), out: S(32) },
 	])
 
 	profession("Hunting", 0x393E46, 0xCF0000, [
@@ -154,7 +196,10 @@ StartupEvents.registry('item', event => {
 		{ in: MC('dragon_breath'), out: S(1) },
 		{ in: MC('ghast_tear'), out: S(10) },
 		{ in: MC('dragon_egg'), out: G(2) },
-		{ in: RQ('guardian_spike'), out: S(6) }
+		{ in: RQ('guardian_spike'), out: S(6) },
+		{ in: A('victory_medal'), out: S(8) },
+		{ in: A('swet_ball', 4), out: S(8) },
+		{ in: A('aechor_petal', 4), out: S(8) },
 	])
 
 	profession("Cooking", 0xD8B384, 0xF7DAD9, [
@@ -264,7 +309,16 @@ StartupEvents.registry('item', event => {
 		{ in: MC('golden_apple'), out: S(10) },
 		{ in: MC('arrow', 32), out: S(3) },
 		{ in: MC('iron_sword'), out: S(1) },
-		{ in: MC('golden_sword'), out: S(2) }
+		{ in: MC('golden_sword'), out: S(2) },
+		{ in: A('candy_cane_sword'), out: S(32) },
+		{ in: A('holy_sword'), out: S(32) },
+		{ in: A('valkyrie_lance'), out: G(1) },
+		{ in: A('valkyrie_shovel'), out: G(1) },
+		{ in: A('valkyrie_axe'), out: G(1) },
+		{ in: A('valkyrie_pickaxe'), out: G(1) },
+		{ in: A('valkyrie_hoe'), out: G(1) },
+		{ in: A('flaming_sword'), out: G(1) },
+		{ in: A('pig_slayer'), out: S(32) },
 	])
 
 	trade("Exchange Currencies", 0xEBA83A, 0xF4F4F4, [

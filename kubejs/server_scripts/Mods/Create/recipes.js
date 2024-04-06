@@ -81,4 +81,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.pressing([Fluid.of('thermal:latex').withAmount(10)],[Item.of('minecraft:dandelion', 3)]);
     event.recipes.create.pressing([Fluid.of('thermal:latex').withAmount(12)],[Ingredient.of('#forge:vines', 4)]);
+
+    // Obsidian from Powdered Obsidian
+    event.smelting(Item.of('minecraft:obsidian'), Item.of('create:powdered_obsidian'));
 });

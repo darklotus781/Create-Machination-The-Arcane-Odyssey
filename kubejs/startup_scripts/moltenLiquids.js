@@ -30,7 +30,7 @@ global.fluid_mats = [
     "diamond",
     // "tin",
     // "silver",
-    // "lead",
+    "lead",
     // "nickel",
     // "steel",
     // "aluminum",

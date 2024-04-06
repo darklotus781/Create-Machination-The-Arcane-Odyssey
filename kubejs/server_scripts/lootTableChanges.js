@@ -34,8 +34,6 @@ LootJS.modifiers((event) => {
             LootEntry.of('artifacts:universal_attractor').when((c) => c.randomChance(0.25)),
             LootEntry.of('artifacts:bunny_hoppers').when((c) => c.randomChance(0.25))
         );
-
-
     // event.addEntityLootModifier('minecraft:wither_skeleton').get
 });
 

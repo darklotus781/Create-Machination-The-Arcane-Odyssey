@@ -5,59 +5,30 @@
 	filename: "1_andesite_age"
 	group: "565532624F0A44A9"
 	hide_quest_until_deps_visible: true
-	icon: "kubejs:kinetic_mechanism"
+	icon: "kubejs:andesite_mechanism"
 	id: "203225418B0EED52"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 0.5d
+		hover: ["You need to get into Botania first!"]
+		image: "botania:block/pure_daisy"
+		rotation: 0.0d
+		width: 0.5d
+		x: -0.75d
+		y: 1.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
-				"35AD8A90A9541BE9"
-				"4D069D926FE16938"
-			]
-			description: ["Congratulations on your achievement! You have successfully produced Andesite Machines and should now have them automated. Given their significant role throughout the pack, automating these machines is strongly advised to ensure efficiency and ease of use. This step is essential for maximizing their potential and enhancing your overall experience."]
-			id: "632B4B24A7B38530"
-			rewards: [
-				{
-					id: "34E8AA7B84410358"
-					type: "xp_levels"
-					xp_levels: 15
-				}
-				{
-					id: "4D08E1CB86F0EC5B"
-					table_id: 1973416385812287726L
-					type: "random"
-				}
-			]
-			shape: "gear"
-			size: 1.5d
-			tasks: [
-				{
-					consume_items: false
-					count: 64L
-					icon: "kubejs:andesite_machine"
-					id: "46F399B8AAF31ED6"
-					item: "kubejs:andesite_machine"
-					title: "Andesite Machines"
-					type: "item"
-				}
-				{
-					id: "29DA2005156A7414"
-					title: "Automated Andesite Machines"
-					type: "checkmark"
-				}
-			]
-			x: 1.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"0C28B609C72B93BD"
-				"693A218A8E78C38D"
+				"50186B4B459E4244"
+				"3E7E28CA78FF4AD5"
 			]
 			description: ["Wooden Mechanisms, while basic, play a crucial role as a starter item in the crafting process. Their primary function is to create Sturdy Mechanisms and Andesite Machines. However, due to their limited strength and capability, Wooden Mechanisms are not suitable for more advanced applications. If your goal is to automate the production of Andesite Machines effectively, it is advisable to first focus on automating Kinetic Mechanisms. By doing so, you lay a stronger foundation for more complex and efficient automation processes, ultimately leading to a more advanced and productive system."]
 			id: "1E1695DB74F7D27F"
-			optional: true
 			rewards: [{
 				id: "19348EB93201B3DA"
 				item: "kubejs:andesite_bag_common"
@@ -70,8 +41,8 @@
 				item: "kubejs:wooden_mechanism"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["67F9D140A432A965"]
@@ -148,15 +119,19 @@
 				}
 			]
 			title: "Let's get Farming!"
-			x: 1.0d
-			y: -4.0d
+			x: 0.75d
+			y: -6.0d
 		}
 		{
 			dependencies: [
-				"0C28B609C72B93BD"
 				"50186B4B459E4244"
+				"3E7E28CA78FF4AD5"
+				"4D069D926FE16938"
+				"66EAF25E6137A6F7"
+				"33ADDF32835F76A3"
+				"73819880DCD741A9"
 			]
-			description: ["Kinetic Mechanisms are the cornerstone of all future developments in your crafting journey. They form the foundational element for every single mechanism and machine you will be crafting from this point forward. Given their central importance, it is imperative to ensure that the production of Kinetic Mechanisms is automated. Automating this process will not only increase efficiency but also provide a steady and reliable supply of these essential components. This step is crucial for smooth progression and the successful creation of more advanced and intricate mechanisms and machines in your future endeavors."]
+			description: ["Andesite Mechanisms are the cornerstone of all future developments in your crafting journey. They form the foundational element for every single mechanism and machine you will be crafting from this point forward. Given their central importance, it is imperative to ensure that the production of Andesite Mechanisms is automated. Automating this process will not only increase efficiency but also provide a steady and reliable supply of these essential components. This step is crucial for smooth progression and the successful creation of more advanced and intricate mechanisms and machines in your future endeavors."]
 			id: "35AD8A90A9541BE9"
 			rewards: [
 				{
@@ -170,24 +145,17 @@
 					type: "item"
 				}
 			]
-			tasks: [
-				{
-					count: 64L
-					id: "32981ECF774C2B3B"
-					item: "kubejs:kinetic_mechanism"
-					type: "item"
-				}
-				{
-					id: "1D53B7D706A9AEDF"
-					title: "Automated Kinetic Mechanisms"
-					type: "checkmark"
-				}
-			]
-			x: 1.0d
-			y: -0.5d
+			tasks: [{
+				count: 8L
+				id: "32981ECF774C2B3B"
+				item: "kubejs:andesite_mechanism"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["67F9D140A432A965"]
+			dependencies: ["0C28B609C72B93BD"]
 			description: [
 				"Saws are a critical component in the creation of Tier 1 / Chapter 1 Mechanisms, playing an indispensable role in these early stages. "
 				"It's important to note that saws come with a durability limit, meaning they will wear out over time with use. "
@@ -213,89 +181,15 @@
 				type: "item"
 			}]
 			title: "Saw"
-			x: 4.0d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"67F9D140A432A965"
-				"011E7917E973EB90"
-			]
-			description: [
-				"Andesite Alloy is undoubtedly one of the most valuable resources for mass production."
-				""
-				"While there are other critical resources to consider, Andesite Alloy serves as a fundamental ingredient in your quest for automation. Without it, accessing and utilizing those more important resources becomes significantly more challenging. It acts as a key component, enabling progress and facilitating the development of advanced technologies and mechanisms essential for success."
-				""
-				"There are a few ways to craft Andesite Alloy, some recipes are more complicated but are worth it."
-			]
-			id: "693A218A8E78C38D"
-			rewards: [{
-				id: "376DE34DCC049915"
-				item: "kubejs:create_bag_common"
-				type: "item"
-			}]
-			tasks: [{
-				count: 16L
-				id: "0D8674ECDB1C0193"
-				item: { Count: 16b, id: "create:andesite_alloy" }
-				type: "item"
-			}]
-			title: "Andesite Alloy"
-			x: -2.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["67F9D140A432A965"]
-			description: ["Farming Menril Trees plays a vital role in the early stages of automation, particularly in the production of Andesite Alloy and Kinetic Mechanisms. Menril Logs, classified as logs in the system, are versatile and essential for crafting various items. They can be used to create Casings and are applicable in all recipes that require logs. This makes Menril Trees an indispensable resource for advancing your technological capabilities and streamlining your production processes."]
-			id: "011E7917E973EB90"
-			rewards: [
-				{
-					count: 8
-					id: "082A44BBDC126A93"
-					item: "integrateddynamics:crystalized_menril_block"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "5C2C67EB07C39B59"
-					item: "integrateddynamics:menril_sapling"
-					type: "item"
-				}
-				{
-					id: "3FBF96DFA8A54201"
-					item: "integrateddynamics:squeezer"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					count: 16L
-					id: "382423B9033C073F"
-					item: "integrateddynamics:menril_sapling"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "5C9D8DD352915E46"
-					item: "integrateddynamics:menril_log"
-					type: "item"
-				}
-				{
-					count: 27L
-					id: "6F32870FB2C24578"
-					item: "integrateddynamics:crystalized_menril_chunk"
-					type: "item"
-				}
-			]
-			x: -2.0d
-			y: -6.0d
+			x: 0.75d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6EFF8BCEBC2E2AF2"]
 			description: [
-				"Chapter 1 introduces the innovative process of extracting menril chunks and menril resin from menril trees, a crucial step in the creation of kinetic mechanisms."
+				"Chapter 1 introduces the innovative process of creating andesite mechanisms."
 				""
-				"This initial stage of gathering and processing these unique materials lays the foundation for the subsequent development of andesite machines. As the chapters progress, we delves into the intricate methods of combining these elements into new and unique items."
+				"This initial stage of gathering and processing these unique materials lays the foundation for the subsequent development of andesite mechanisms."
 			]
 			hide: true
 			id: "67F9D140A432A965"
@@ -319,81 +213,8 @@
 				title: "Chapter 1 Start"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["5F793917B53CB963"]
-			description: ["Copper Machines are essential tools in the crafting process, specifically designed for creating &6Fluid Handling&r items such as Pumps and Smart Fluid Pipes. These machines play a pivotal role in managing and manipulating fluids with precision and efficiency. For detailed information on the specific recipes and techniques involved, including Smithing and Cutting, you can refer to JEI (Just Enough Items). JEI provides comprehensive guidance on the crafting processes, ensuring you have all the necessary information to effectively use Copper Machines in your crafting endeavors."]
-			id: "63F4C7AAEB9F4CD5"
-			rewards: [
-				{
-					id: "553B22B04BD575D4"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-				{
-					id: "560EED1AC48957E0"
-					item: "kubejs:andesite_bag_epic"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			tasks: [
-				{
-					count: 8L
-					id: "1B09348DA843B9A7"
-					item: "kubejs:copper_machine"
-					type: "item"
-				}
-				{
-					id: "044D69E22EF9D6E1"
-					title: "Automated Copper Machines"
-					type: "checkmark"
-				}
-			]
-			x: 8.0d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"35AD8A90A9541BE9"
-				"3B25D99BFA2C928C"
-			]
-			description: [
-				"Sealed Mechanisms are primarily utilized in the crafting of Copper Machines. These Copper Machines are specifically designed for creating items that are essential in fluid handling."
-				"Copper Machines, therefore, play a crucial role in various processes and setups where fluid manipulation, transport, and storage are key components."
-			]
-			id: "5C8A77FEDDB2DDB2"
-			optional: true
-			rewards: [
-				{
-					id: "6BEC711F1FD16498"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-				{
-					id: "7D00480E9A75B477"
-					item: "kubejs:andesite_bag_common"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					count: 8L
-					id: "52A020E00A56C4EA"
-					item: "kubejs:sealed_mechanism"
-					type: "item"
-				}
-				{
-					id: "28E63787D3B21861"
-					title: "Automated Sealed Mechanisms"
-					type: "checkmark"
-				}
-			]
-			title: "Chapter 1A: Sealed"
-			x: 4.0d
-			y: 2.5d
+			x: 0.75d
+			y: -7.5d
 		}
 		{
 			dependencies: ["35AD8A90A9541BE9"]
@@ -411,129 +232,397 @@
 					type: "item"
 				}
 			]
-			tasks: [
-				{
-					count: 8L
-					id: "0D07BE53DCC4E7D4"
-					item: "kubejs:logistics_mechanism"
-					type: "item"
-				}
-				{
-					id: "5C76DF2BAF164444"
-					title: "Automated Logistics Mechanisms"
-					type: "checkmark"
-				}
-			]
-			title: "Chapter 1B: Logistics"
-			x: 4.0d
-			y: 1.0d
+			tasks: [{
+				count: 8L
+				id: "0D07BE53DCC4E7D4"
+				item: "kubejs:logistics_mechanism"
+				type: "item"
+			}]
+			title: "Chapter 1A: Logistics"
+			x: 3.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["35AD8A90A9541BE9"]
-			description: ["If you intend to utilize your Andesite Machines in conjunction with a Smithing Table, it's essential to acquire Smithing Templates. These templates are a key component for successfully executing smithing processes, as they can be applied to all future Smithing Recipes. By having Smithing Templates at your disposal, you ensure that your Andesite Machines are fully equipped to handle the demands of smithing tasks. This preparation allows for a more streamlined and efficient crafting experience, enabling you to make the most of your Smithing Table and Andesite Machines in creating a wide range of items and tools."]
+			dependencies: ["67F9D140A432A965"]
+			description: ["If you intend to utilize your Andesite Mechanisms in conjunction with a Smithing Table, it's essential to acquire Smithing Templates. These templates are a key component for successfully executing smithing processes, as they can be applied to all future Smithing Recipes. By having Smithing Templates at your disposal, you ensure that your Andesite Mechanisms are fully equipped to handle the demands of smithing tasks. This preparation allows for a more streamlined and efficient crafting experience, enabling you to make the most of your Smithing Table and Andesite Mechanisms in creating a wide range of items and tools."]
 			id: "2727B5EBF6810E4B"
 			optional: true
 			rewards: [{
 				count: 4
 				id: "0B93F4C2D90E3E40"
-				item: "kubejs:machine_smithing_template"
+				item: "kubejs:mechanism_smithing_template"
 				type: "item"
 			}]
 			tasks: [{
 				id: "4A1A0A37CC234F64"
-				item: "kubejs:machine_smithing_template"
+				item: "kubejs:mechanism_smithing_template"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.5d
+			x: 2.0d
+			y: -9.0d
 		}
 		{
-			dependencies: ["693A218A8E78C38D"]
-			description: ["Andesite Casing is crafted by applying andesite alloy to a stripped log. This process can be done either through the use of a deployer or by manually applying it in-world. To manually create Andesite Casing, you first place down a stripped log and then click the andesite alloy onto it. This method of combining andesite alloy with a stripped log transforms it into Andesite Casing, which is a crucial component in various crafting recipes and applications. Whether you choose the automated approach with a deployer or the manual method, the result is a versatile and useful Andesite Casing, essential for your crafting needs."]
+			dependencies: [
+				"11E0A4E072933401"
+				"36BB3B03EA1B5464"
+			]
+			description: ["Andesite Casing is crafted by chiseling Andesite Frames with an Andesite Chisel.  This can be done with a Deployer or in world with your hands!  Figure out how to automate this, it's crucial for the future!"]
 			id: "4D069D926FE16938"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "006E409CF657D657"
-				table_id: 971780999319815631L
-				type: "random"
-			}]
 			tasks: [{
 				count: 8L
 				id: "6F99346AAAA8F9A6"
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -0.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
-				"35AD8A90A9541BE9"
-				"50186B4B459E4244"
+				"4E156499A263F53F"
+				"07FC2A60FE246C9D"
+				"42239D4C5A65B679"
 			]
 			description: [
-				"In Chapter 2, Rotation Mechanisms are crucial for creating Sturdy Mechanisms. These mechanisms are distinguished by their unique properties, enabling the production of sturdy machines. These machines are particularly suited for all &6Train&r related items, which require robust and durable components to function effectively."
+				"Andesite Alloy is undoubtedly one of the most valuable resources for mass production."
 				""
-				"Given their importance and the use of common items in their construction, it makes strategic sense to start automating the production of Rotation Mechanisms in Chapter 1. By doing so, you can establish a seamless and efficient production line early on, ensuring you have a steady supply of these essential mechanisms ready for later chapters."
-			]
-			id: "4BB7D4E0B2452A76"
-			rewards: [
-				{
-					id: "705840F2CCFFE8E2"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-				{
-					id: "11C624CF0C20BA0B"
-					item: "kubejs:andesite_bag_common"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					count: 8L
-					id: "7CF1C91CD8A20884"
-					item: "kubejs:rotation_mechanism"
-					type: "item"
-				}
-				{
-					id: "36850B4E90C2BFFD"
-					title: "Automated Rotation Mechanisms"
-					type: "checkmark"
-				}
-			]
-			title: "Chapter 1C: Rotation"
-			x: 4.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["5C8A77FEDDB2DDB2"]
-			description: [
-				"Similar to the production of Andesite Casing, Copper Casing is also crafted using stripped logs. However, in the case of Copper Casing, the key material is a copper ingot that has been pressed into a plate. This copper plate is then applied to the stripped log, following a process akin to that used for Andesite Casing. The combination of the copper plate and the stripped log results in the creation of Copper Casing."
+				"While there are other critical resources to consider, Andesite Alloy serves as a fundamental ingredient in your quest for automation. Without it, accessing and utilizing those more important resources becomes significantly more challenging. It acts as a key component, enabling progress and facilitating the development of advanced technologies and mechanisms essential for success."
 				""
-				"Copper Casing, when combined with Sealed Mechanisms, is used to create Copper Machines. This highlights the versatility of Copper Casing in the crafting process. Additionally, Copper Casing has another practical application: it can be applied to pipes in-world to prevent them from connecting to other pipes. This feature is particularly useful in managing and organizing complex piping systems, ensuring that different pipes function independently as needed."
+				"There are a few ways to craft Andesite Alloy, some recipes are more complicated but are worth it."
 			]
-			id: "5F793917B53CB963"
-			rewards: [
-				{
-					id: "636C7C4F56C46F2B"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-				{
-					id: "76547B39039311B5"
-					item: "kubejs:andesite_bag_rare"
-					type: "item"
-				}
-			]
-			tasks: [{
-				count: 8L
-				id: "335C62C5256A04FD"
-				item: "create:copper_casing"
+			id: "3E7E28CA78FF4AD5"
+			rewards: [{
+				count: 16
+				id: "7C9785AA48FDF76D"
+				item: "create:andesite_alloy_block"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.5d
+			tasks: [{
+				count: 64L
+				id: "25118A20DA5C23F9"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Andesite Alloy Automation"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0C28B609C72B93BD"]
+			description: [
+				"This is the most crude method of producing Andesite Alloy."
+				"It's ideal for early game but should be replaced as soon as you're able to automate via more efficient means."
+			]
+			hide_dependency_lines: true
+			id: "4E156499A263F53F"
+			rewards: [{
+				id: "5AB80B66B7450B90"
+				item: "create:andesite_alloy_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "06CCF2F3C65F4EE6"
+					item: "minecraft:diorite"
+					type: "item"
+				}
+				{
+					id: "29EFC51A2C7F8C94"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "62F14EE78CAFEAE9"
+					item: { Count: 2b, id: "minecraft:iron_nugget" }
+					type: "item"
+				}
+			]
+			title: "Andesite Alloy x1"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2FE7CC1170DF9E5B"
+				"34208DA5AC69E654"
+			]
+			description: ["Mixing Andesite Blend and Crystalized Menril Chunks is just one way to produce Andesite Alloy more efficiently."]
+			id: "07FC2A60FE246C9D"
+			rewards: [{
+				id: "435CC3A1684DDA46"
+				item: "create:andesite_alloy_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "74413F9410C58260"
+					item: "kubejs:andesite_blend"
+					type: "item"
+				}
+				{
+					id: "442F5D81D91C3AA0"
+					item: "integrateddynamics:crystalized_menril_chunk"
+					type: "item"
+				}
+			]
+			title: "Andesite Alloy x4"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C28B609C72B93BD"]
+			description: [
+				"Andesite can be ground down via a Millstone or a set of Crushing Wheels into Andesite Dust."
+				"Clay balls can be automated via cobble generators."
+				""
+				"Start with a simple Cobblestone Generator, it doesn't need to be massive, just needs to work!"
+				"Early game you'll use a Millstone, the values below are based on using a Millstone."
+				""
+				"Cobblestone:"
+				"├─ &9CRUSH&r"
+				"│  ├─ Gravel"
+				"│  │  ├─ &9CRUSH&r"
+				"│  │  │  ├─ Sand &6(33% chance)&r"
+				"│  │  │  │  ├─ &9SMELT&r"
+				"│  │  │  │  │  ├─ Glass"
+				"│  │  │  │  ├─ &9WASH&r"
+				"│  │  │  │  │  ├─ Clay Balls"
+				"│  │  ├─ &9SMELT&r"
+				"│  │  │  ├─ Andesite"
+				"│  │  │  │  ├─ &9CRUSH&r"
+				"│  │  │  │  │  ├─ Andesite Dust"
+				"│  │  ├─ &9WASH&r"
+				"│  │  │  ├─ Flint &6(25% chance)&r"
+				"│  │  │  ├─ Iron Nuggets &6(12% chance)&r"
+				" "
+				""
+				"Finally,"
+				"Mix Andesite Dust and Clay Balls into Andesite Blend."
+				" "
+			]
+			hide_dependency_lines: true
+			id: "34208DA5AC69E654"
+			min_width: 300
+			rewards: [{
+				id: "35D2EBB2BB2258CC"
+				item: "create:andesite_alloy_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "14653EAD2BC2F3A8"
+					item: "kubejs:andesite_dust"
+					type: "item"
+				}
+				{
+					id: "2D35C6FB94268261"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+			]
+			title: "Andesite Blend"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0C28B609C72B93BD"]
+			description: [
+				"This isn't CAE, we're not forcing you to farm and process Menril Trees."
+				"Menril does seem to contain special properties and if you mix menril chunks with andesite blend, it produces Andesite Alloy.  It's pretty efficient and worth the time investment to setup automation."
+			]
+			hide_dependency_lines: true
+			id: "2FE7CC1170DF9E5B"
+			rewards: [{
+				id: "36222E0DD6D561B0"
+				item: "create:andesite_alloy_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7CA2B768A6A6975A"
+					item: "integrateddynamics:menril_sapling"
+					type: "item"
+				}
+				{
+					id: "4412C7D27AAD45CF"
+					item: "integrateddynamics:crystalized_menril_block"
+					type: "item"
+				}
+			]
+			title: "Menril Farming?"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["34208DA5AC69E654"]
+			description: [
+				"An alternate process for producing Andesite Alloy is mixing Andesite Blend with Zinc nuggets."
+				"It's a little simpler than the alternative but produces a smaller yield."
+			]
+			id: "42239D4C5A65B679"
+			rewards: [{
+				id: "3C9B381C5AB26AD3"
+				item: "create:andesite_alloy_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "45260B77AEF25AA8"
+					item: "kubejs:andesite_blend"
+					type: "item"
+				}
+				{
+					id: "0D2D16DE71E8416D"
+					item: "alltheores:zinc_nugget"
+					type: "item"
+				}
+			]
+			title: "Andesite Alloy x2"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3E7E28CA78FF4AD5"]
+			description: [
+				"Andesite Frames are crafted by applying andesite alloy to a stripped log. This process can be done either through the use of a deployer or by manually applying it in-world."
+				""
+				"Andesite Frames are used to produce Andesite Casing after chiseling them smooth."
+			]
+			id: "11E0A4E072933401"
+			rewards: [{
+				count: 8
+				id: "759B1D7ED12E7365"
+				item: "kubejs:andesite_frame"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BC53EE7A66900E5"
+				item: "kubejs:andesite_frame"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"67F9D140A432A965"
+				"7A359C1F5E041C4F"
+			]
+			hide: false
+			hide_dependency_lines: true
+			id: "36BB3B03EA1B5464"
+			tasks: [{
+				id: "22B7CF91DC260E09"
+				item: {
+					Count: 1b
+					id: "kubejs:andesite_chisel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67F9D140A432A965"]
+			description: ["Automation is key, build up your factory.  Once you've fully automated these items, click them to continue to the next chapter!"]
+			id: "43E781FBEA5B1063"
+			shape: "gear"
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "0A8A52B363ECC9A4"
+					item: "kubejs:andesite_mechanism"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "05D27BE7C14658F0"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+			]
+			title: "Automations"
+			x: 0.75d
+			y: -9.0d
+		}
+		{
+			dependencies: ["67F9D140A432A965"]
+			description: [
+				"There are a couple of unique ways to create some early game items required to craft other early game items."
+				"For example, you need Andesite Mechanisms to create a Mechanical Press but you need a Mechanical Press to create Andesite Mechanisms.  JEI shows these alternate recipes for Create: Deployers, Mechanical Press, Mechanical Saw or Mechanical Mixer."
+				""
+				"&6Option 1&r:"
+				"Throw some parts in a hole, drop some TNT and cross your fingers or say a prayer, there's a 25% chance your items will result in a part depending on luck and the items exploded."
+				""
+				"&6Option 2&r:"
+				"Throw some parts in an Elven Portal, your items will result in a part being tossed back depending on the items thrown in."
+			]
+			hide_dependency_lines: true
+			id: "2E763D3C5775D792"
+			tasks: [{
+				id: "592A46032C5CC06B"
+				title: "Alternate Material Production"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2E763D3C5775D792"]
+			hide_dependent_lines: true
+			id: "73819880DCD741A9"
+			shape: "diamond"
+			tasks: [{
+				id: "53BB90B5E533AF86"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2E763D3C5775D792"]
+			id: "33ADDF32835F76A3"
+			shape: "diamond"
+			tasks: [{
+				id: "426F390FBB07FAFC"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2E763D3C5775D792"]
+			hide_dependent_lines: true
+			id: "66EAF25E6137A6F7"
+			shape: "diamond"
+			tasks: [{
+				id: "59916EC3BAE0B158"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2E763D3C5775D792"]
+			hide_dependent_lines: true
+			id: "7E9A1C282CE7807D"
+			shape: "diamond"
+			tasks: [{
+				id: "430879BA98A1F1F0"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
 		}
 	]
 	title: "1: Andesite Automations"

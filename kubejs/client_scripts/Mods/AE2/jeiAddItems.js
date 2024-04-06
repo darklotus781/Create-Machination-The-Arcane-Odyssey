@@ -1,9 +1,9 @@
 //priority: 100
 JEIEvents.addItems(event => {
-    event.add(Item.of('ae2:silicon_press'))
-    event.add(Item.of('ae2:calculation_processor_press'))
-    event.add(Item.of('ae2:engineering_processor_press'))
-    event.add(Item.of('ae2:logic_processor_press'))
+    event.add('ae2:silicon_press');
+    event.add('ae2:calculation_processor_press');
+    event.add('ae2:engineering_processor_press');
+    event.add('ae2:logic_processor_press');
 });
 
 JEIEvents.information(event => {

@@ -25,6 +25,7 @@ ServerEvents.tags('item', event => {
         .add('minecraft:oak_planks')
         .add('integrateddynamics:menril_planks');
 
+
     event.get('chipped:logs')
         .add('#chipped:acacia_log')
         .add('#chipped:birch_log')
@@ -66,14 +67,22 @@ ServerEvents.tags('item', event => {
         .add('#forge:lumber')
         .add('forge:lumber/stripped');
 
+    event.get('forge:ingots/andesite_alloy').add('create:andesite_alloy');
+    event.get('forge:ingots/refined_radiance').add('create:refined_radiance');
 
     // Tools
     event.add('forge:tools/resonators', 'kubejs:resonator');
     event.get('forge:tools/saws').add('kubejs:stone_saw').add('kubejs:iron_saw').add('kubejs:diamond_saw');
-    event.get('forge:tools/screwdrivers').add('kubejs:screwdriver').add('framedblocks:framed_screwdriver');
+    event.get('forge:tools/screwdrivers').add('kubejs:screwdriver');
     event.get('forge:tools/super_glues').add('create:super_glue');
     event.get('forge:tools/wrench').add('create:wrench');
     event.get('forge:tools/soldering_irons').add('kubejs:soldering_iron');
+    event.get('forge:tools/casing_chisels')
+        .add('kubejs:andesite_chisel')
+        .add('kubejs:brass_chisel')
+        .add('kubejs:copper_chisel')
+        .add('kubejs:refined_chisel')
+        .add('kubejs:diamond_chisel');
 
     let vial = ['anthracene', 'incomplete_anthraquinone', 'anthraquinone', 'empty_vial']
     vial.forEach(I => {
@@ -89,15 +98,17 @@ ServerEvents.tags('item', event => {
         .add('forbidden_arcanus:corrupted_pixie')
         .add('forbidden_arcanus:pixie')
         .add('tiab:time_in_a_bottle')
-        .add('forbidden_arcanus:arcane_crystal_obelisk');
+        .add('forbidden_arcanus:arcane_crystal_obelisk')
+        .add('kubejs:empty_tube')
+        .add('create:electron_tube');
 
     event.get('create:recipe_nuggets')
         .add('#forge:nuggets/iron')
         .add('#forge:nuggets/zinc');
 
-    event.get('create:kinetic_mechanisms')
+    event.get('create:andesite_mechanism')
         .add('kubejs:wooden_mechanism')
-        .add('kubejs:kinetic_mechanism');
+        .add('kubejs:andesite_mechanism');
 
     event.get('forge:vines')
         .add('minecraft:weeping_vines')
@@ -140,6 +151,64 @@ ServerEvents.tags('item', event => {
     event.get('forge:buckets/refined_oil').add('kubejs:refined_oil_bucket');
 
     event.get('supplementaries:cookies').add('createsweetsandtreets:sugar_cookie').add('createsweetsandtreets:chocolate_cookie');
+
+    event.get('forbidden_arcanus:modifier/eternal_incompatible')
+        .add('waystones:warp_stone')
+        .add('ars_nouveau:potion_flask')
+        .add('ars_nouveau:potion_flask_amplify')
+        .add('ars_nouveau:potion_flask_extend_time')
+        .add('ars_nouveau:runic_chalk')
+        .add(/constructionwand\:(stone|iron|diamond)_wand/)
+        .add('create:red_sand_paper')
+        .add('create:sand_paper')
+        .add('create:super_glue')
+        .add('createaddition:diamond_grit_sandpaper')
+        .add(/forbidden_arcanus\:.*_blacksmith_gavel/)
+        .add('sophisticatedstorage:packing_tape')
+        .add('#machination:building_gadgets')
+        .add('#machination:exchangers')
+        .add(/alexsmobs\:.*/)
+        .add(/create_confectionery\:.*/)
+        .add(/reliquary\:.*/)
+        .add(/supplementaries\:.*/)
+        .add(/pneumaticcraft\:gun_ammo_.*/)
+        .add('pneumaticcraft:gun_ammo')
+        .add('pneumaticcraft:micromissiles')
+        .add('pickletweaks:mesh')
+        .add('pickletweaks:grass_fiber_mesh')
+        .add('pickletweaks:reinforced_mesh')
+        .add(/pickletweaks\:(wooden|flint|iron|golden)_.*/)
+        .add(/farmersdelight\:(flint|iron|golden)_.*/)
+        .add(/aquaculture\:(wooden|stone|iron|gold)_.*/)
+        .add('aquaculture:minnow')
+        .add('aquaculture:leech')
+        .add('aquaculture:worm')
+        .add(/alltheores\:.*_hammer/)
+        .add(/aether\:skyroot_.*/)
+        .add(/aether\:.*_parachute/)
+        .add(/minecraft\:(wooden|stone|iron|golden|leather|chainmail)_.*/)
+        .add(/onlyhammers\:(wooden|stone|iron|gold|lapis|redstone)_.*/)
+        .add(/dustrial_decor\:cardboard_.*/)
+        .add(/create_sa\:.*_exoskeleton_chestplate/)
+        .add(/create_sa\:slime.*/)
+        .add(/create_sa\:.*experience.*/)
+        .add(/create_sa\:.*blazing.*/)
+        .add(/create_sa\:.*rose_quartz.*/)
+        .add(/create_sa\:.*brass_(helmet|chestplate|leggings|boots|pickaxe|axe|shovel|hoe|sword).*/)
+        .add(/create_sa\:.*copper_(helmet|chestplate|leggings|boots|pickaxe|axe|shovel|hoe|sword).*/)
+        .add(/create_sa\:.*zinc_(helmet|chestplate|leggings|boots|pickaxe|axe|shovel|hoe|sword).*/)
+        .add('create_sa:andesite_jetpack_chestplate')
+        .add('create_sa:copper_jetpack_chestplate')
+        .add(/biomemakeover\:.*_(hat|boots|leggings|helm|chestplate)/)
+        .add(/kubejs\:(stone|iron_diamond)_saw/)
+        .add('kubejs:screwdriver')
+        .add(/kubejs\:(andesite|brass|copper|refined|diamond)_chisel/)
+        .add('kubejs:soldering_iron')
+        .add('kubejs:resonator')
+
+
+    event.get('machination:exchangers').add(/exchangers\:.*_exchanger/);
+    event.get('machination:building_gadgets').add(/buildinggadgets2\:.*_gadget/);
 });
 
 

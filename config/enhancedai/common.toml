@@ -255,7 +255,7 @@
 			#Range: 1.0 ~ 64.0
 			Maximum = 32.0
 
-		#The ticks cooldown after shooting. This is halved in Hard difficulty
+		#The ticks cooldown after shooting. This is reduced by 33% in Hard difficulty
 		[Skeletons."Skeleton Shoot"."Shooting Cooldown"]
 			#Range: 0.0 ~ 1.7976931348623157E308
 			Minimum = 50.0
@@ -670,6 +670,8 @@
 		#Beta creepers when exploding will walk around the target, like the creepers in pre-1.2.
 		#Range: 0.0 ~ 1.0
 		"Beta Creeper Chance" = 0.35
+		#If IguanaTweaks Reborn is installed and Explosion Overhaul is enabled, Angry creeper will deal more knockback and break more blocks and breaching creepers will break more blocks
+		"IguanaTweaks Reborn Integration" = true
 
 		[Creepers."Creeper Swell".Launch]
 			#Launching creepers will try ignite and throw themselves at the player.
@@ -704,8 +706,6 @@
 			#The special sound effect that the Angry Creeper plays
 			#Allowed Values: NONE, CENA, WTF_BOOM
 			Sounds = "WTF_BOOM"
-			#If IguanaTweaks Reborn is installed and Explosion Overhaul is enabled, Angry creeper will deal more knockback and break more blocks
-			"IguanaTweaks Reborn Integration" = true
 
 [Blazes]
 	#Make blazes fire faster/more fireballs. Only mobs in enhancedai:change_blaze_attack entity type tag are affected by this feature.

@@ -12,6 +12,9 @@ ServerEvents.recipes(event => {
     // Create Crushing
     event.remove({id: 'create:crushing/diorite'});
     event.remove({id: 'create:crushing/tuff'});
+    event.remove({id: /create\:crushing\/raw_(aluminum|osmium|platinum|uranium)_block/});
+    event.remove({id: /create\:crushing\/(aluminum|osmium|platinum|uranium)_ore/});
+    event.remove({id: /create\:crushing\/raw_(aluminum|osmium|platinum|uranium)_ore/});
 
     let waystones = [
         'waystones:waystone',

@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
     ], {
         S: Item.of('createaddition:copper_spool'),
         B: Ingredient.of('#forge:plates/brass'),
-        P: Item.of('kubejs:power_machine'),
+        P: Item.of('kubejs:power_mechanism'),
         I: Ingredient.of('#forge:rods/iron')
     }).id('kubejs:creatadditions_electric_motor');
 
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
     ], {
         S: Item.of('createaddition:copper_spool'),
         B: Item.of('kubejs:carbon_sheet'),
-        P: Item.of('kubejs:power_machine'),
+        P: Item.of('kubejs:power_mechanism'),
         I: Ingredient.of('#forge:rods/iron')
     }).id('kubejs:creatadditions_alternator');
 });

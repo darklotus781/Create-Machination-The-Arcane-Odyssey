@@ -69,6 +69,7 @@
 							}]
 						}
 					}
+					random_bonus: 2
 					type: "item"
 				}
 				{
@@ -95,16 +96,15 @@
 			dependencies: ["3BAD2CEF1245F202"]
 			description: [
 				"Welcome to Machination, the first step is Andesite and laying the groundwork for basic automations."
-				"First step is to automate Andesite Casing, Kinetic Mechanisms and Andesite Machines, get to work!"
+				"First step is to automate Andesite Casing and Andesite Mechanisms, now get to work!"
 			]
 			hide: true
-			icon: "kubejs:andesite_machine"
+			icon: "kubejs:andesite_mechanism"
 			id: "6EFF8BCEBC2E2AF2"
 			rewards: [
 				{
-					exclude_from_claim_all: true
 					id: "716DBEB3C83A4040"
-					table_id: 6740888759108653151L
+					table_id: 8965856735169877955L
 					type: "random"
 				}
 				{
@@ -126,12 +126,18 @@
 		{
 			dependencies: ["6EFF8BCEBC2E2AF2"]
 			hide: true
-			icon: "kubejs:copper_machine"
+			icon: "kubejs:copper_mechanism"
 			id: "3B25D99BFA2C928C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1AC8AA656B056EA4"
+				table_id: 8965856735169877955L
+				type: "random"
+			}]
 			subtitle: "Fluid!"
 			tasks: [{
 				id: "166E4CF9E3DFE1E8"
-				title: "Unlock Copper Machines"
+				title: "Unlock Copper Mechanisms"
 				type: "checkmark"
 			}]
 			title: "Chapter 1A: Copper"
@@ -139,22 +145,19 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"6EFF8BCEBC2E2AF2"
-				"29DA2005156A7414"
-			]
+			dependencies: ["6EFF8BCEBC2E2AF2"]
 			description: [
-				"You've succeeded at Andesite Machines, you're ready for the next step."
-				"Work toward automating Brass Casings and Precision Mechanisms and you can complete this chapter."
+				"You've succeeded at Andesite Mechanisms, you're ready for the next step."
+				"Work toward automating Brass Casings and Brass Mechanisms and you can complete this chapter."
 			]
 			hide: true
 			hide_details_until_startable: false
-			icon: "kubejs:brass_machine"
+			icon: "kubejs:brass_mechanism"
 			id: "3A10D0D5E8548C54"
 			rewards: [
 				{
 					id: "51B9DAB7582DF0A7"
-					table_id: 1973416385812287726L
+					table_id: 294495333582605423L
 					type: "random"
 				}
 				{
@@ -177,9 +180,27 @@
 			dependencies: ["3A10D0D5E8548C54"]
 			dependency_requirement: "one_started"
 			hide: true
-			icon: "kubejs:sturdy_machine"
+			icon: "kubejs:sturdy_mechanism"
 			id: "2E949A84C2E9B3C8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "75B9828A9959370C"
+					table_id: 294495333582605423L
+					type: "random"
+				}
+				{
+					id: "3DFAD8E02B21727C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			subtitle: "Trains!"
+			tasks: [{
+				id: "4E46280F25E40C2E"
+				title: "Unlock Sturdy Mechanisms"
+				type: "checkmark"
+			}]
 			title: "Chapter 2C: Stronk"
 			x: 1.0d
 			y: 2.0d
@@ -198,7 +219,7 @@
 			rewards: [
 				{
 					id: "6CAC762259344BA6"
-					table_id: 5860814424445915091L
+					table_id: 2265012637020335752L
 					type: "random"
 				}
 				{
@@ -544,6 +565,12 @@
 			hide: true
 			icon: "kubejs:power_machine"
 			id: "15983A1F5FED57E0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F4DE8D2F36FF7BE"
+				table_id: 294495333582605423L
+				type: "random"
+			}]
 			subtitle: "Power!"
 			title: "Chapter 2A: Power"
 			x: 0.5d
@@ -555,6 +582,12 @@
 			hide: true
 			icon: "kubejs:zinc_machine"
 			id: "72C3FAE0193F665C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "073CA7F1953A97E4"
+				table_id: 294495333582605423L
+				type: "random"
+			}]
 			subtitle: "More Machines"
 			title: "Chapter 2B: Scorch Machine"
 			x: 1.5d
@@ -574,7 +607,7 @@
 			rewards: [
 				{
 					id: "67CA3ED2EC5C569A"
-					table_id: 5860814424445915091L
+					table_id: 2265012637020335752L
 					type: "random"
 				}
 				{

@@ -1,0 +1,13 @@
+{
+	icon: "kubejs:create_bag_epic"
+	id: "1F6EF0FE295E2E88"
+	loot_size: 1
+	order_index: 30
+	rewards: [
+		{ item: "kubejs:create_bag_epic" }
+		{ item: "kubejs:andesite_bag_epic" }
+		{ item: "kubejs:brass_bag_epic" }
+		{ item: "kubejs:radiant_bag_rare" }
+	]
+	title: "Create Tier 3"
+}

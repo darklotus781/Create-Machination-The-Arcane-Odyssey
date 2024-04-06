@@ -22,4 +22,5 @@ JEIEvents.hideItems(event => {
     event.hide('thermal:bronze_plate');
     event.hide('thermal:bronze_coin');
     event.hide('thermal:crude_oil_bucket');
+    event.hide('thermal:machine_frame');
 });

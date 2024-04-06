@@ -1,6 +1,7 @@
 //priority: 0
 
 ServerEvents.recipes(event => {
+    event.remove({ output: 'thermal:machine_frame' })
     event.remove({id: 'thermal:tools/satchel'});
     event.remove({id: 'thermal:machines/pulverizer/pulverizer_blaze_rod'});
     event.remove({output: 'thermal:cinnabar'});
@@ -29,7 +30,7 @@ ServerEvents.recipes(event => {
 
     event.remove({id: 'thermal:bottler_florb'});
 
-    event.replaceInput({id: /.*thermal\:fire_charge.*/}, 'minecraft:fire_charge', 'forbidden_arcanus:smelter_prism');
+    event.replaceInput({id: /thermal\:fire_charge.*/}, 'minecraft:fire_charge', 'forbidden_arcanus:smelter_prism');
     event.replaceInput({output: 'thermal:lumium_ingot'}, 'minecraft:glowstone_dust', 'create:refined_radiance');
 
     event.recipes.create.haunting([Item.of('thermal:ender_tnt').withChance(0.65)], [Item.of('minecraft:tnt')]);

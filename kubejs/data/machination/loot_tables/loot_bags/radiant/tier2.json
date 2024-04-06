@@ -63,11 +63,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "weight": 5,
-                    "name": "machination:mod_items/create/mechanisms_tier_1"
                 }
             ]
         },
@@ -157,25 +152,23 @@
             ]
         },
         {
-            "rolls": {
-                "min": 3,
-                "max": 5
-            },
+            "rolls": 1,
             "entries": [
                 {
                     "type": "minecraft:loot_table",
                     "name": "machination:mod_items/create/mechanisms_tier_1",
-                    "weight": 3
+                    "weight": 10
                 },
                 {
                     "type": "minecraft:loot_table",
                     "name": "machination:mod_items/create/mechanisms_tier_2",
-                    "weight": 9
-                },
+                    "weight": 5
+                }
+            ],
+            "conditions": [
                 {
-                    "type": "minecraft:loot_table",
-                    "name": "machination:mod_items/create/mechanisms_tier_3",
-                    "weight": 6
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.2
                 }
             ]
         },
@@ -217,6 +210,21 @@
                     "type": "minecraft:loot_table",
                     "weight": 2,
                     "name": "machination:mod_items/pneumaticcraft/assembly"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/sophisticated/tier1",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.35
+                        }
+                    ]
                 }
             ]
         }

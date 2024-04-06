@@ -5,42 +5,28 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "weight": 10,
-                    "name": "kubejs:kinetic_mechanism",
+                    "weight": 5,
+                    "name": "kubejs:andesite_mechanism",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 2,
-                                "max": 24
+                                "min": 1,
+                                "max": 8
                             }
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 15,
+                    "weight": 10,
                     "name": "kubejs:logistics_mechanism",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 2,
-                                "max": 24
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 15,
-                    "name": "kubejs:rotation_mechanism",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 2,
-                                "max": 24
+                                "min": 1,
+                                "max": 8
                             }
                         }
                     ]
@@ -53,8 +39,8 @@
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 2,
-                                "max": 24
+                                "min": 1,
+                                "max": 8
                             }
                         }
                     ]

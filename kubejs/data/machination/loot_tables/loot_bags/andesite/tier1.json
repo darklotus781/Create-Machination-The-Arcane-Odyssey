@@ -76,11 +76,21 @@
                     "type": "minecraft:loot_table",
                     "weight": 3,
                     "name": "machination:mod_items/ae2/resources"
-                },
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 2,
                     "name": "machination:mod_items/create/mechanisms_tier_1"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.2
                 }
             ]
         },
@@ -97,6 +107,21 @@
                 {
                     "type": "minecraft:loot_table",
                     "name": "machination:mod_items/create/resources_tier_1"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/sophisticated/tier1",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.15
+                        }
+                    ]
                 }
             ]
         }

@@ -5,28 +5,14 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "weight": 15,
-                    "name": "create:precision_mechanism",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 2,
-                                "max": 16
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 10,
-                    "name": "kubejs:scorch_mechanism",
+                    "name": "kubejs:brass_mechanism",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 2,
-                                "max": 16
+                                "min": 1,
+                                "max": 8
                             }
                         }
                     ]
@@ -34,13 +20,13 @@
                 {
                     "type": "minecraft:item",
                     "weight": 15,
-                    "name": "kubejs:sealed_mechanism",
+                    "name": "kubejs:copper_mechanism",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 2,
-                                "max": 24
+                                "min": 1,
+                                "max": 8
                             }
                         }
                     ]
@@ -53,8 +39,8 @@
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 2,
-                                "max": 24
+                                "min": 1,
+                                "max": 8
                             }
                         }
                     ]

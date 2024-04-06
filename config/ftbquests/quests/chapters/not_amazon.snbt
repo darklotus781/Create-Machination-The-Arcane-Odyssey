@@ -36,7 +36,7 @@
 		}
 		{
 			dependencies: ["0F870BEA235D662D"]
-			description: ["Aimlessly traversing the nether is just the worst. This wonderful gadget will point you in the correct direction at all times."]
+			description: ["Aimlessly searching for structures is so vanilla. This new gadget will point you in the correct direction at all times."]
 			hide_dependency_lines: true
 			icon: "create:blaze_burner"
 			id: "252B9DD5BFB8184A"
@@ -50,20 +50,21 @@
 				team_reward: false
 				type: "item"
 			}]
-			subtitle: "2 Gold"
+			subtitle: "1 Gold"
 			tasks: [{
 				consume_items: true
 				count: 2L
-				icon: { Count: 2b, id: "thermal:gold_coin" }
+				icon: "thermal:gold_coin"
 				id: "5345AA8760A95127"
 				item: "thermal:gold_coin"
 				type: "item"
 			}]
-			title: "Fortress Locator"
+			title: "Structure Locator"
 			x: -7.5d
 			y: 0.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0F870BEA235D662D"]
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Radiant Mechanisms&r."]
 			hide_dependency_lines: true
@@ -80,27 +81,37 @@
 			}
 			id: "43FC566E833BE834"
 			optional: true
-			rewards: [{
-				id: "0F4C7BB4C0ECB4CC"
-				item: {
-					Count: 1b
-					id: "kubejs:resonator"
-					tag: {
-						Damage: 0
-						Enchantments: [{ }]
-						Modifier: "forbidden_arcanus:eternal"
-						Repair: 1b
-						Unbreakable: 1b
+			rewards: [
+				{
+					id: "0F4C7BB4C0ECB4CC"
+					item: {
+						Count: 1b
+						id: "kubejs:resonator"
+						tag: {
+							Damage: 0
+							Enchantments: [{ }]
+							Modifier: "forbidden_arcanus:eternal"
+							Repair: 1b
+							Unbreakable: 1b
+						}
 					}
+					team_reward: false
+					type: "item"
 				}
-				team_reward: false
-				type: "item"
-			}]
-			subtitle: "7 Gold"
+				{
+					icon: "thermal:machine_cycle_augment"
+					id: "108514A3DDD972A1"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "8 Gold"
 			tasks: [
 				{
 					consume_items: true
-					count: 2L
+					count: 8L
 					id: "5B31A98B9EFCCFAB"
 					item: "thermal:gold_coin"
 					type: "item"
@@ -141,6 +152,7 @@
 			y: -4.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0F870BEA235D662D"]
 			description: ["Here you can exchange a Gold Coin back to a Stack of Silver."]
 			hide_dependency_lines: true
@@ -179,6 +191,7 @@
 			y: -4.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0F870BEA235D662D"]
 			description: ["Some trades require you to hand in Gold Coins. These are worth a stack of Silver each."]
 			hide_dependency_lines: true
@@ -1026,6 +1039,7 @@
 			y: -2.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0F870BEA235D662D"]
 			description: ["If you manage to accumulate enough coins, purchasing an eternal saw is a viable option. However, keep in mind that these saws are not inexpensive, and acquiring one through purchase may require a significant investment of your resources. As an alternative, you have the opportunity to craft an eternal saw yourself. This DIY approach can be a more cost-effective solution, allowing you to save your coins for other purposes. Crafting your own eternal saw not only provides a sense of accomplishment but also gives you a valuable tool that can greatly aid in your ongoing projects and endeavors."]
 			hide: true
@@ -1043,27 +1057,37 @@
 			}
 			id: "7C6402B7657DF82A"
 			optional: true
-			rewards: [{
-				id: "0FBC0315C8CEC9D4"
-				item: {
-					Count: 1b
-					id: "kubejs:diamond_saw"
-					tag: {
-						Damage: 0
-						Enchantments: [{ }]
-						Modifier: "forbidden_arcanus:eternal"
-						Repair: 1b
-						Unbreakable: 1b
+			rewards: [
+				{
+					id: "0FBC0315C8CEC9D4"
+					item: {
+						Count: 1b
+						id: "kubejs:diamond_saw"
+						tag: {
+							Damage: 0
+							Enchantments: [{ }]
+							Modifier: "forbidden_arcanus:eternal"
+							Repair: 1b
+							Unbreakable: 1b
+						}
 					}
+					team_reward: false
+					type: "item"
 				}
-				team_reward: false
-				type: "item"
-			}]
-			subtitle: "16 Gold"
+				{
+					icon: "thermal:machine_cycle_augment"
+					id: "2E1538917BEE895F"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "8 Gold"
 			tasks: [
 				{
 					consume_items: true
-					count: 2L
+					count: 8L
 					id: "3C635D4EF56CA567"
 					item: "thermal:gold_coin"
 					type: "item"
@@ -1086,6 +1110,7 @@
 			y: -6.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0F870BEA235D662D"]
 			description: ["If you manage to accumulate enough coins, purchasing an eternal screwdriver is a viable option. However, keep in mind that these screwdrivers are not inexpensive, and acquiring one through purchase may require a significant investment of your resources. As an alternative, you have the opportunity to craft an eternal screwdriver yourself. This DIY approach can be a more cost-effective solution, allowing you to save your coins for other purposes. Crafting your own eternal screwdriver not only provides a sense of accomplishment but also gives you a valuable tool that can greatly aid in your ongoing projects and endeavors."]
 			hide: true
@@ -1103,27 +1128,37 @@
 			}
 			id: "48E37A0FA53B76FD"
 			optional: true
-			rewards: [{
-				id: "235FB8FCE909DFCC"
-				item: {
-					Count: 1b
-					id: "kubejs:screwdriver"
-					tag: {
-						Damage: 0
-						Enchantments: [{ }]
-						Modifier: "forbidden_arcanus:eternal"
-						Repair: 1b
-						Unbreakable: 1b
+			rewards: [
+				{
+					id: "235FB8FCE909DFCC"
+					item: {
+						Count: 1b
+						id: "kubejs:screwdriver"
+						tag: {
+							Damage: 0
+							Enchantments: [{ }]
+							Modifier: "forbidden_arcanus:eternal"
+							Repair: 1b
+							Unbreakable: 1b
+						}
 					}
+					team_reward: false
+					type: "item"
 				}
-				team_reward: false
-				type: "item"
-			}]
-			subtitle: "16 Gold"
+				{
+					icon: "thermal:machine_cycle_augment"
+					id: "2BF18452A5E24E83"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "8 Gold"
 			tasks: [
 				{
 					consume_items: true
-					count: 2L
+					count: 8L
 					id: "5272C8C538A21D32"
 					item: "thermal:gold_coin"
 					type: "item"
@@ -1256,6 +1291,361 @@
 			title: "Watch for the Spit"
 			x: -7.0d
 			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0F870BEA235D662D"]
+			description: ["Like other eternal items, you can purchase one of these to prevent the tedious task of creating them."]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "kubejs:andesite_chisel"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+					Modifier: "forbidden_arcanus:eternal"
+					Repair: 1b
+					Unbreakable: 1b
+				}
+			}
+			id: "527713C229B73633"
+			optional: true
+			rewards: [
+				{
+					id: "191EE15626EBE4B4"
+					item: {
+						Count: 1b
+						id: "kubejs:andesite_chisel"
+						tag: {
+							Damage: 0
+							Enchantments: [{ }]
+							Modifier: "forbidden_arcanus:eternal"
+							Repair: 1b
+							Unbreakable: 1b
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					icon: "thermal:machine_cycle_augment"
+					id: "4E26E93DF95327F8"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "8 Gold"
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "2EDF6DA7B2E4FCF4"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "74B192FBE4E42B46"
+					item: {
+						Count: 1b
+						id: "kubejs:andesite_chisel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Eternal Andesite Chisel"
+			x: -8.0d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0F870BEA235D662D"]
+			description: ["Like other eternal items, you can purchase one of these to prevent the tedious task of creating them."]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "kubejs:copper_chisel"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+					Modifier: "forbidden_arcanus:eternal"
+					Repair: 1b
+					Unbreakable: 1b
+				}
+			}
+			id: "4009C9CDFC6BAB4F"
+			optional: true
+			rewards: [
+				{
+					id: "48B1F53BEA6B6DE2"
+					item: {
+						Count: 1b
+						id: "kubejs:copper_chisel"
+						tag: {
+							Damage: 0
+							Enchantments: [{ }]
+							Modifier: "forbidden_arcanus:eternal"
+							Repair: 1b
+							Unbreakable: 1b
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					icon: "thermal:machine_cycle_augment"
+					id: "3B7DB55BD085AEF9"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "8 Gold"
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "6EE9F7876A8FF19C"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "33950F1622744730"
+					item: {
+						Count: 1b
+						id: "kubejs:copper_chisel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Eternal Copper Chisel"
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0F870BEA235D662D"]
+			description: ["Like other eternal items, you can purchase one of these to prevent the tedious task of creating them."]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "kubejs:brass_chisel"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+					Modifier: "forbidden_arcanus:eternal"
+					Repair: 1b
+					Unbreakable: 1b
+				}
+			}
+			id: "687194AFEF670865"
+			optional: true
+			rewards: [
+				{
+					id: "3D6E083735EE1920"
+					item: {
+						Count: 1b
+						id: "kubejs:brass_chisel"
+						tag: {
+							Damage: 0
+							Enchantments: [{ }]
+							Modifier: "forbidden_arcanus:eternal"
+							Repair: 1b
+							Unbreakable: 1b
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					icon: "thermal:machine_cycle_augment"
+					id: "02458B3FF5B6994E"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "8 Gold"
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "145FB6265A18E473"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "029BD0C569B86887"
+					item: {
+						Count: 1b
+						id: "kubejs:brass_chisel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Eternal Brass Chisel"
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0F870BEA235D662D"]
+			description: ["Like other eternal items, you can purchase one of these to prevent the tedious task of creating them."]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "kubejs:refined_chisel"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+					Modifier: "forbidden_arcanus:eternal"
+					Repair: 1b
+					Unbreakable: 1b
+				}
+			}
+			id: "3B2456221CC3D5BB"
+			optional: true
+			rewards: [
+				{
+					id: "5605D829AAA7109B"
+					item: {
+						Count: 1b
+						id: "kubejs:refined_chisel"
+						tag: {
+							Damage: 0
+							Enchantments: [{ }]
+							Modifier: "forbidden_arcanus:eternal"
+							Repair: 1b
+							Unbreakable: 1b
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					icon: "thermal:machine_cycle_augment"
+					id: "5D0777DC0A890DF0"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "8 Gold"
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "4E9495311C462C73"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "0E199FD9F536DE31"
+					item: {
+						Count: 1b
+						id: "kubejs:refined_chisel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Eternal Radiant Chisel"
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0F870BEA235D662D"]
+			description: ["Like other eternal items, you can purchase one of these to prevent the tedious task of creating them."]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "kubejs:diamond_chisel"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+					Modifier: "forbidden_arcanus:eternal"
+					Repair: 1b
+					Unbreakable: 1b
+				}
+			}
+			id: "64BE3E67EC26A1CD"
+			optional: true
+			rewards: [
+				{
+					id: "64C9F4DAF52D4892"
+					item: {
+						Count: 1b
+						id: "kubejs:diamond_chisel"
+						tag: {
+							Damage: 0
+							Enchantments: [{ }]
+							Modifier: "forbidden_arcanus:eternal"
+							Repair: 1b
+							Unbreakable: 1b
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					icon: "thermal:machine_cycle_augment"
+					id: "4E485790BABF3B80"
+					tags: ["reset"]
+					team_reward: false
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "8 Gold"
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "0892FB91728320ED"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3CF1BFDA707D6D22"
+					item: {
+						Count: 1b
+						id: "kubejs:diamond_chisel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Eternal Diamond Chisel"
+			x: -4.0d
+			y: -5.5d
 		}
 	]
 	title: "&a Marketplace"

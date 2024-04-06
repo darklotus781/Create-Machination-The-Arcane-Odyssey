@@ -1,13 +1,13 @@
 {
-	autofocus_id: "1FB6946A522553C9"
+	autofocus_id: "3F4FC469DD974934"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "2_brass_age"
 	group: "565532624F0A44A9"
 	hide_quest_until_deps_visible: true
-	icon: "create:precision_mechanism"
+	icon: "kubejs:brass_mechanism"
 	id: "059D74AB8EF7DCEA"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -222,7 +222,7 @@
 				{
 					count: 8L
 					id: "529BE02E4139CD9C"
-					item: "create:precision_mechanism"
+					item: "kubejs:brass_mechanism"
 					type: "item"
 				}
 				{
@@ -242,7 +242,7 @@
 			tasks: [{
 				count: 16L
 				id: "49F6FB030FF05DCB"
-				item: "kubejs:kinetic_mechanism"
+				item: "kubejs:andesite_mechanism"
 				type: "item"
 			}]
 			x: -3.5d
@@ -275,7 +275,7 @@
 		{
 			dependencies: ["5F22844AD724DBD9"]
 			description: [
-				"Redstone is vital to the production lines here, find a way to automated it."
+				"Redstone is vital to the production lines here, find a way to automate it."
 				""
 				"Melt it down to Destabilized Redstone in a mixer under heat."
 			]

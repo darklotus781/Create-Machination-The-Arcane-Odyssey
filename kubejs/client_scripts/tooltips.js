@@ -124,29 +124,26 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:diamond_chisel', chiselText);
 
 
+    tooltip.add('kubejs:copper_mechanism', Text.gold('Copper tightly sealed with rubber!'));
+    tooltip.add('kubejs:plastic_mechanism', Text.gold('It\'s very sturdy and coated in plastic!'));
+    tooltip.add('kubejs:cyber_mechanism', Text.gold('It sounds like a 56k modem!?'));
+    tooltip.add('kubejs:quantum_mechanism', Text.gold('Vibrates gently with a slight hum...'));
+    tooltip.add('kubejs:temporal_mechanism', Text.gold('Tick... Tick... Tick...'));
+
+
     main_assembly('kubejs:andesite_mechanism', "1")
-    // main_assembly('kubejs:andesite_machine', "1")
-    bonus_assembly('kubejs:sealed_mechanism', "1")
-    // bonus_assembly('kubejs:sealed_machine', "1A")
-    bonus_assembly('kubejs:logistics_mechanism', "1")
+    // bonus_assembly('kubejs:copper_mechanism', "1")
+    // bonus_assembly('kubejs:logistics_mechanism', "1")
     // bonus_assembly('kubejs:rotation_mechanism', "1C")
-    main_assembly('create:precision_mechanism', "2")
-    // main_assembly('kubejs:brass_machine', "2")
+    main_assembly('kubejs:brass_mechanism', "2")
     // bonus_assembly('kubejs:power_mechanism', "2A")
-    // bonus_assembly('kubejs:power_machine', "2A")
     // bonus_assembly('kubejs:scorch_mechanism', "2B")
-    // bonus_assembly('kubejs:scorch_machine', "2B")
     // bonus_assembly('kubejs:sturdy_mechanism', "2C")
-    // bonus_assembly('kubejs:sturdy_machine', "2C")
     // main_assembly('kubejs:radiant_mechanism', "3")
-    // main_assembly('kubejs:radiant_machine', "3")
     // main_assembly('kubejs:plastic_mechanism', "4")
-    // main_assembly('kubejs:plastic_machine', "4")
     // main_assembly('kubejs:cyber_mechanism', "5")
-    // main_assembly('kubejs:cyber_machine', "5")
     // main_assembly('kubejs:quantum_mechanism', "6")
     // main_assembly('kubejs:temporal_mechanism', "7")
-    // main_assembly('kubejs:temporal_machine', "7")
 
 
     tooltip.add('kubejs:leather_pocket', Text.gold('Useful for adding more slots to your backpack'));

@@ -28,7 +28,8 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({ id: /functionalstorage\:oak_.*/ }, Item.of('minecraft:oak_planks'), Ingredient.of('#machination:oak_planks'));
 
-    event.smithing(Item.of('kubejs:fs_upgrade_base'), Item.of('kubejs:logistics_mechanism'), Ingredient.of('#functionalstorage:drawer'), Ingredient.of('#forge:plates/iron'))
+    event.smithing(Item.of('kubejs:fs_upgrade_base', 2), Item.of('kubejs:logistics_mechanism'), Ingredient.of('#functionalstorage:drawer'), Ingredient.of('#forge:plates/iron'));
+    event.smithing(Item.of('functionalstorage:void_upgrade', 2), Item.of('kubejs:logistics_mechanism'), Item.of('kubejs:fs_upgrade_base'), Item.of('minecraft:obsidian'));
 
     event.shaped(Item.of('functionalstorage:framed_1'), ['NNN','NDN','NNN'],{N: Ingredient.of('#forge:nuggets/iron'), D: Ingredient.of('#functionalstorage:drawer_1')}).id('kubejs:functional_framed_1_from_drawer_1');
     event.shaped(Item.of('functionalstorage:framed_2'), ['NNN','NDN','NNN'],{N: Ingredient.of('#forge:nuggets/iron'), D: Ingredient.of('#functionalstorage:drawer_2')}).id('kubejs:functional_framed_2_from_drawer_2');

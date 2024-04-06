@@ -126,11 +126,27 @@
                             }
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/create/mechanisms_tier_1",
+                    "weight": 10
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 5,
-                    "name": "machination:mod_items/create/mechanisms_tier_1"
+                    "name": "machination:mod_items/create/mechanisms_tier_2",
+                    "weight": 5
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.2
                 }
             ]
         },
@@ -180,6 +196,21 @@
                         {
                             "condition": "minecraft:random_chance",
                             "chance": 0.4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "machination:mod_items/sophisticated/tier1",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.35
                         }
                     ]
                 }

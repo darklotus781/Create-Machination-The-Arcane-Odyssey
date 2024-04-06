@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         B: Item.of('create_sa:steam_engine'),
         A: Ingredient.of('#forge:plates/netherite'),
         F: Item.of('create:encased_fan'),
-        M: Item.of('kubejs:sturdy_machine'),
+        M: Item.of('kubejs:sturdy_mechanism'),
         N: Item.of('create_sa:fan_component'),
         T: Item.of('create:netherite_backtank').weakNBT(),
         E: Item.of('minecraft:elytra').weakNBT(),
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:plates/brass')]),
         event.recipes.create.deploying(t, [t, Item.of('create:cogwheel')]),
         event.recipes.create.deploying(t, [t, Item.of('create:propeller')]),
-        event.recipes.create.deploying(t, [t, Item.of('create:precision_mechanism')]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:brass_mechanism')]),
         event.recipes.create.pressing(t, t)
     ]).transitionalItem(t).loops(3).id('kubejs:jetpack_steam_engine');
 
@@ -97,10 +97,10 @@ ServerEvents.recipes(event => {
         Item.of('create:propeller').withChance(8),
         Item.of('create:andesite_alloy').withChance(4),
     ], Item.of('create:andesite_alloy'), [
-        event.recipes.create.deploying(t, [t, Item.of('kubejs:andesite_machine')]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:andesite_mechanism')]),
         event.recipes.create.deploying(t, [t, Item.of('create:cogwheel')]),
         event.recipes.create.deploying(t, [t, Item.of('create:propeller')]),
-        event.recipes.create.deploying(t, [t, Item.of('kubejs:kinetic_mechanism')]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:andesite_mechanism')]),
         event.recipes.create.pressing(t, t)
     ]).transitionalItem(t).loops(3).id('kubejs:jetpack_fan_component');
 
@@ -123,12 +123,12 @@ ServerEvents.recipes(event => {
         'SMLWAR',
         ' EBBF '
     ], {
-        A: Item.of('kubejs:andesite_machine'),
+        A: Item.of('kubejs:andesite_mechanism'),
         B: Item.of('create_sa:steam_engine'),
         F: Item.of('create_sa:fan_component'),
         E: Item.of('create:encased_fan'),
         S: Item.of('create_sa:brass_drill_head'),
-        M: Item.of('kubejs:brass_machine'),
+        M: Item.of('kubejs:brass_mechanism'),
         W: Item.of('create_sa:large_fueling_tank'),
         L: Item.of('create_sa:large_filling_tank'),
         R: Item.of('thermal:flux_drill').weakNBT()
@@ -139,12 +139,12 @@ ServerEvents.recipes(event => {
         'SMLWAR',
         ' EBBF '
     ], {
-        A: Item.of('kubejs:andesite_machine'),
+        A: Item.of('kubejs:andesite_mechanism'),
         B: Item.of('create_sa:steam_engine'),
         F: Item.of('create_sa:fan_component'),
         E: Item.of('create:encased_fan'),
         S: Item.of('create:whisk'),
-        M: Item.of('kubejs:brass_machine'),
+        M: Item.of('kubejs:brass_mechanism'),
         W: Item.of('create_sa:large_fueling_tank'),
         L: Item.of('create_sa:large_filling_tank'),
         R: Item.of('create:deployer')

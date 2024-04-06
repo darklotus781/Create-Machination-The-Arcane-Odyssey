@@ -1,0 +1,12 @@
+{
+	icon: "kubejs:create_bag_common"
+	id: "7C6D1F328ED817C3"
+	loot_size: 1
+	order_index: 28
+	rewards: [
+		{ item: "kubejs:create_bag_common" }
+		{ item: "kubejs:andesite_bag_common" }
+		{ item: "kubejs:brass_bag_common" }
+	]
+	title: "Create Tier 1"
+}

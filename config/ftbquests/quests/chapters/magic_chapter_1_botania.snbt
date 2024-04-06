@@ -2385,7 +2385,7 @@
 				""
 				"Once you have the platform ready for crafting, toss one Manasteel Ingot, Mana Diamond, and a Mana Pearl on the plate to start crafting Terrasteel."
 				""
-				"{image:machination:textures/ftbquests/botania/t_a_plate_base.png width:200 height:150 align:1}"
+				"{image:kubejs:textures/ftbquests/botania/t_a_plate_base.png width:200 height:150 align:1}"
 			]
 			icon: "botania:terrasteel_ingot"
 			id: "23A2865FBE7831AB"
@@ -2583,7 +2583,7 @@
 				""
 				"You can also use the &aLexica Botania&r to help you build it."
 				""
-				"{image:machination:textures/ftbquests/botania/elven_portal.png width:200 height:175 align:1}"
+				"{image:kubejs:textures/ftbquests/botania/elven_portal_lit.png width:200 height:175 align:1}"
 			]
 			id: "1EF7664F5D8C5FF1"
 			min_width: 500
@@ -2639,7 +2639,7 @@
 				""
 				"If you need help with building the structure, you can always use the &aLexica Botania&r to help you build it. Look for the &9Ritual of Gaia&r."
 				""
-				"{image:machination:textures/ftbquests/botania/gaia_ritual.png width:300 height:100 align:1}"
+				"{image:kubejs:textures/ftbquests/botania/gaia_ritual.png width:300 height:100 align:1}"
 			]
 			id: "04CE14D92603FC7A"
 			min_width: 300

@@ -129,13 +129,13 @@ global.dimChangeEvent = event => {
                 event.setCanceled(true);
             }
         }
-        if (targetDimension == 'minecraft:the_end') {
-            if (!player.stages.has('end_access')) {
-                player.statusMessage = Text.of("The portal doesn't seem to work...");
-                server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
-                event.setCanceled(true);
-            }
+    if (targetDimension == 'minecraft:the_end') {
+        if (!player.stages.has('end_access')) {
+            player.statusMessage = Text.of("The portal doesn't seem to work...");
+            server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
+            event.setCanceled(true);
         }
+    }
         if (targetDimension == 'allthemodium:mining') {
             if (!player.stages.has('mining_access')) {
                 player.statusMessage = Text.of("The teleporter doesn't seem to work...");

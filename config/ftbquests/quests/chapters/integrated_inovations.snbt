@@ -6,7 +6,7 @@
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:cyber_mechanism"
 	id: "7AB340F7990D3911"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -202,7 +202,7 @@
 			id: "58CCBB11E2160BD5"
 			tasks: [{
 				id: "405E3CC7B72F3FC1"
-				item: "kubejs:empty_runic_tablet"
+				item: "kubejs:blank_runic_tablet"
 				type: "item"
 			}]
 			x: -6.5d

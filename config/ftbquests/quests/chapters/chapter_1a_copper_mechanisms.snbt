@@ -1,0 +1,293 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1a_copper_mechanisms"
+	group: "565532624F0A44A9"
+	icon: "kubejs:copper_mechanism"
+	id: "085E3913727BAFF4"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 0.5d
+		hover: ["You need to get into Botania first!"]
+		image: "botania:block/pure_daisy"
+		rotation: 0.0d
+		width: 0.5d
+		x: -5.25d
+		y: 2.5d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3B9E82460E3B6F0B"]
+			description: [
+				"Copper Mechanisms are primarily utilized in the crafting of items that are essential in fluid handling."
+				"Copper Mechanisms, therefore, play a crucial role in various processes and setups where fluid manipulation, transport, and storage are key components."
+			]
+			id: "1BDD4D24BFC45F01"
+			rewards: [
+				{
+					id: "4F21F7A3250B8BD1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "63C3E813AC172A5D"
+					item: "kubejs:andesite_bag_common"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "35AE5EE4E2B550F2"
+				item: "kubejs:copper_mechanism"
+				type: "item"
+			}]
+			title: "Chapter 1A: Copper"
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5CF05D92E82C2185"]
+			description: [
+				"Similar to the production of Andesite Casing, Copper Casing is also crafted using by chiseling a frame smooth. "
+				""
+				"Copper Casing has practical application: it can be applied to pipes in-world to prevent them from connecting to other pipes. This feature is particularly useful in managing and organizing complex piping systems, ensuring that different pipes function independently as needed."
+			]
+			id: "565F22375D77FBFE"
+			tasks: [{
+				count: 8L
+				id: "6E409C27A8F7F608"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3B25D99BFA2C928C"]
+			description: [
+				"Chapter 1A introduces fluid handling via sealed copper mechanisms."
+				"We need to cut some corners to manually process things until we can automate it."
+				""
+				"Follow these steps to get fully automated Sealed Copper Mechanisms."
+			]
+			hide: true
+			id: "6CB65317C276CB6B"
+			rewards: [
+				{
+					id: "75F0A7936BB820A7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A44B11AE4FEADF1"
+					table_id: 1205720880241428503L
+					type: "choice"
+				}
+			]
+			shape: "pentagon"
+			size: 1.0d
+			tasks: [{
+				id: "0AB5AB36497C8788"
+				title: "Chapter 1A Start"
+				type: "checkmark"
+			}]
+			title: "Chapter 1A Start"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6CB65317C276CB6B"
+				"3F4B0C44D2C22AE7"
+			]
+			description: [
+				"Copper Frames are crafted by applying a copper plate to a stripped log. This process can be done either through the use of a deployer or by manually applying it in-world."
+				""
+				"Copper Frames are used to produce Copper Casing after chiseling them smooth."
+				"You will need a stronger chisel, the Andesite Chisel used before just isn't up to the task."
+			]
+			id: "5CF05D92E82C2185"
+			rewards: [{
+				count: 8
+				id: "48DB7E8D9299BEE3"
+				item: "kubejs:copper_frame"
+				type: "item"
+			}]
+			tasks: [{
+				id: "433855D78F73AE61"
+				item: "kubejs:copper_frame"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["69760E4E45A3446C"]
+			id: "5452CEA68AC9BE5F"
+			tasks: [{
+				id: "322F5F16D314FA8D"
+				item: "kubejs:molten_copper_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6CB65317C276CB6B"]
+			hide_dependency_lines: true
+			id: "401BAD72760BCC7E"
+			tasks: [{
+				id: "7A730CCDE6E96D64"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6CB65317C276CB6B"]
+			hide_dependency_lines: true
+			id: "2E3000DF44772478"
+			tasks: [
+				{
+					id: "0CD792E934A94D1C"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+				{
+					id: "1C77F5C297833905"
+					item: "kubejs:enriched_rubber"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6CB65317C276CB6B"]
+			hide_dependency_lines: true
+			id: "06CD8435C91CC9B0"
+			tasks: [{
+				id: "323214227649D3E6"
+				item: "kubejs:andesite_mechanism"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6CB65317C276CB6B"]
+			id: "0E1AADB373A00130"
+			tasks: [{
+				id: "3C0D7922CA5141C8"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E1AADB373A00130"]
+			id: "4AA6D17D86B67A3F"
+			tasks: [{
+				id: "4DE29AC2636C2BF8"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AA6D17D86B67A3F"]
+			id: "69760E4E45A3446C"
+			tasks: [{
+				id: "65A6909E6A77C9A7"
+				item: "create:basin"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5452CEA68AC9BE5F"
+				"401BAD72760BCC7E"
+				"06CD8435C91CC9B0"
+				"2E3000DF44772478"
+			]
+			id: "3B9E82460E3B6F0B"
+			tasks: [{
+				id: "5C68379289D1945B"
+				item: "create:basin"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E1AADB373A00130"]
+			id: "3F4B0C44D2C22AE7"
+			tasks: [{
+				id: "557910D6F1793D58"
+				item: "alltheores:copper_plate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6CB65317C276CB6B"]
+			description: ["Automation is key, build up your factory.  Once you've fully automated these items, click them to continue to the next chapter!"]
+			hide_dependency_lines: true
+			id: "3B819E8E7F93FD1C"
+			shape: "gear"
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "776DB173DEA9088E"
+					item: "kubejs:copper_mechanism"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "13FCF3B5888435F5"
+					item: "create:copper_casing"
+					type: "item"
+				}
+			]
+			title: "Automations"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"67F9D140A432A965"
+				"7A359C1F5E041C4F"
+			]
+			hide: false
+			hide_dependency_lines: true
+			id: "7CF14AA7B08446D3"
+			tasks: [{
+				id: "6EF6220039D6D0D4"
+				item: {
+					Count: 1b
+					id: "kubejs:copper_chisel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+	]
+	title: "1A: Copper Mechanisms"
+}
