@@ -11,36 +11,36 @@ let trees = [
         sap: 'thermal:resin',
         rate: 60
     },
-    {
-        trunk: 'ars_nouveau:red_archwood_log',
-        leaf: 'ars_nouveau:red_archwood_leaves',
-        sap: 'kubejs:blazing_juice',
-        rate: 25
-    },
-    {
-        trunk: 'ars_nouveau:green_archwood_log',
-        leaf: 'ars_nouveau:green_archwood_leaves',
-        sap: 'kubejs:flourishing_juice',
-        rate: 25
-    },
-    {
-        trunk: 'ars_nouveau:purple_archwood_log',
-        leaf: 'ars_nouveau:purple_archwood_leaves',
-        sap: 'kubejs:vexing_juice',
-        rate: 25
-    },
-    {
-        trunk: 'ars_nouveau:blue_archwood_log',
-        leaf: 'ars_nouveau:blue_archwood_leaves',
-        sap: 'kubejs:cascading_juice',
-        rate: 25
-    },
-    {
-        trunk: 'ars_elemental:yellow_archwood_log',
-        leaf: 'ars_elemental:yellow_archwood_leaves',
-        sap: 'kubejs:flashing_juice',
-        rate: 25
-    },
+    // {
+    //     trunk: 'ars_nouveau:red_archwood_log',
+    //     leaf: 'ars_nouveau:red_archwood_leaves',
+    //     sap: 'kubejs:blazing_juice',
+    //     rate: 25
+    // },
+    // {
+    //     trunk: 'ars_nouveau:green_archwood_log',
+    //     leaf: 'ars_nouveau:green_archwood_leaves',
+    //     sap: 'kubejs:flourishing_juice',
+    //     rate: 25
+    // },
+    // {
+    //     trunk: 'ars_nouveau:purple_archwood_log',
+    //     leaf: 'ars_nouveau:purple_archwood_leaves',
+    //     sap: 'kubejs:vexing_juice',
+    //     rate: 25
+    // },
+    // {
+    //     trunk: 'ars_nouveau:blue_archwood_log',
+    //     leaf: 'ars_nouveau:blue_archwood_leaves',
+    //     sap: 'kubejs:cascading_juice',
+    //     rate: 25
+    // },
+    // {
+    //     trunk: 'ars_elemental:yellow_archwood_log',
+    //     leaf: 'ars_elemental:yellow_archwood_leaves',
+    //     sap: 'kubejs:flashing_juice',
+    //     rate: 25
+    // },
     {
         trunk: 'minecraft:jungle_log',
         leaf: 'minecraft:jungle_leaves',

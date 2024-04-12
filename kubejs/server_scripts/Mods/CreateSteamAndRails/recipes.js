@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    // event.remove({ output: /railways\:track_quark_.*/});
     event.remove({ output: 'railways:track_monorail' });
 
     // Monorail
@@ -15,6 +16,10 @@ ServerEvents.recipes(event => {
     // traintracks
     event.forEachRecipe({ output: /^railways\:track_.*/ }, (recipe) => {
         let resultId = recipe.originalRecipeResult.id;
+        // if (resultId.includes('quark')) return;
+        // if (resultId == ('railways:track_quark_ancient' || 'railways:track_quark_ancient_narrow' || 'railways:track_quark_ancient_wide')) return;
+        // if (resultId == ('railways:track_quark_azalea' || 'railways:track_quark_azalea_narrow' || 'railways:track_quark_azalea_wide')) return;
+        // if (resultId == ('railways:track_quark_blossom' || 'railways:track_quark_blossom_narrow' || 'railways:track_quark_blossom_wide')) return;
 
         // noinspection EqualityComparisonWithCoercionJS
         if (resultId != 'railways:track_coupler' &&

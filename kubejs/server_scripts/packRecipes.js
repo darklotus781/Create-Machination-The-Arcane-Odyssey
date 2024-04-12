@@ -615,3 +615,18 @@ ServerEvents.recipes(e => {
             e.recipes.createPressing(t, t)
         ]).transitionalItem(t).loops(1).id('kubejs:sequential/printed_calculation_processor_from_certus_quartz_crystal');
 });
+
+// BlockEvents.rightClicked('minecraft:end_portal_frame', event => {
+//     if (event.item === 'minecraft:ender_eye') {
+//         if (event.player.stages.has('end_access')) return;
+//         event.player.tell(Text.gold("The item vibrates in your hand but doesn't seem to do anything."));
+//         event.setCancelled(true);
+//         return;
+//     } else if (event.item !== 'kubejs:quantum_mechanism') {
+//         return;
+//     }
+//     if (event.block.properties.get('eye') === true) return;
+//     event.player.swing(event.hand, true);
+//     event.block.set('minecraft:end_portal_frame', {eye:'true',facing:event.block.properties.get('facing')});
+//     event.level.playSound(null, event.player.x, event.player.y, event.player.z, 'block.end_portal_frame.fill', 'neutral', 1, 1.0);
+// });

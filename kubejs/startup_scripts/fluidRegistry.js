@@ -2,8 +2,8 @@ StartupEvents.registry('fluid', event => {
     event.create('sky_slurry')
         .thickTexture(0x000033)
         .bucketColor(0x000033)
-        .stillTexture('tconstruct:block/fluid/molten/still')
-        .flowingTexture('tconstruct:block/fluid/molten/flowing')
+        .stillTexture('kubejs:block/fluid/still')
+        .flowingTexture('kubejs:block/fluid/flowing')
         .displayName('Stabilized Sky Slurry')
 
     event.create('chromatic_solution')
@@ -41,12 +41,12 @@ StartupEvents.registry('fluid', event => {
     event.create('chromatic_waste')
         .thinTexture(0x3A4100)
         .bucketColor(0x3A4100)
-        .displayName('Chromatic Waste')
+        .displayName('Chromatic Waste');
 
     event.create('invar_slurry')
         .thickTexture(invar)
         .bucketColor(invar)
-        .displayName('Invar Slurry')
+        .displayName('Invar Slurry');
 
     // event.create('liquid_anthraquinone')
     //     .thinTexture(0x9F2B68)
@@ -56,37 +56,37 @@ StartupEvents.registry('fluid', event => {
     event.create('dye_slurry_green')
         .thinTexture(0x03732F)
         .bucketColor(0x03732F)
-        .displayName('Green Chromatic Slurry')
+        .displayName('Green Chromatic Slurry');
 
     event.create('dye_slurry_blue')
         .thinTexture(0x033f73)
         .bucketColor(0x033f73)
-        .displayName('Blue Chromatic Slurry')
+        .displayName('Blue Chromatic Slurry');
 
     event.create('dye_slurry_red')
         .thinTexture(0x730303)
         .bucketColor(0x730303)
-        .displayName('Red Chromatic Slurry')
+        .displayName('Red Chromatic Slurry');
 
     event.create('dye_slurry_magenta')
         .thinTexture(0x9F2B68)
         .bucketColor(0x9F2B68)
-        .displayName('Magenta Chromatic Slurry')
+        .displayName('Magenta Chromatic Slurry');
 
     event.create('dye_slurry_pink')
         .thinTexture(0xFF748C)
         .bucketColor(0xFF748C)
-        .displayName('Pink Chromatic Slurry')
+        .displayName('Pink Chromatic Slurry');
 
     event.create('dirty_chroma_slurry')
         .thinTexture(0x4f390c)
         .bucketColor(0x4f390c)
-        .displayName('Dirty Chroma Slurry')
+        .displayName('Dirty Chroma Slurry');
 
     event.create('aureal_essence')
         .thinTexture(0xFFFFFF)
         .bucketColor(0xFFFFFF)
-        .displayName('Aureal Essence')
+        .displayName('Aureal Essence');
 
     // event.create('lpg')
     //     .thinTexture(0xe8d36e)
@@ -103,6 +103,12 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0x131313)
         .displayName('Refined Oil');
 
+    event.create('quantum_fluid')
+        .thinTexture(0x365cff)
+        .stillTexture('kubejs:block/fluid/molten_glass_still')
+        .flowingTexture('kubejs:block/fluid/molten_glass_flowing')
+        .luminosity(8);
+
     // event.create('plastic')
     //     .thinTexture(0xd8d8d5)
     //     .bucketColor(0xd8d8d5)
@@ -111,12 +117,12 @@ StartupEvents.registry('fluid', event => {
     event.create('sulfuric_acid')
         .thinTexture(0xc1b851)
         .bucketColor(0xc1b851)
-        .displayName('Sulfuric Acid')
+        .displayName('Sulfuric Acid');
 
     event.create('dirt_water')
         .thinTexture(0xc18551)
         .bucketColor(0xc18551)
-        .displayName('Dirty Water')
+        .displayName('Dirty Water');
 
     function SourceFluids(Name, id, bucket) {
         event.create(id)
@@ -128,7 +134,6 @@ StartupEvents.registry('fluid', event => {
     const Source = [
         ['Sourceberry Juice', 'sourceberry_juice'],
         ['Magebloom Juice', 'magebloom_juice'],
-        // ['Magebloom Sourceberry Smoothie', 'mageberry_smoothie'],
         ['Impure Source', 'impure_source'],
         ['Source', 'source']
     ]
@@ -137,21 +142,21 @@ StartupEvents.registry('fluid', event => {
         SourceFluids(element[0], element[1])
     });
 
-    function juice(id, color) {
-        event.create(id + "_juice")
-            .thinTexture(color)
-            .stillTexture('tconstruct:block/fluid/molten/still')
-            .flowingTexture('tconstruct:block/fluid/molten/flowing')
-            .luminosity(8)
-    }
-
-    juice("vexing", 0x9F2B68)
-    juice("cascading", 0x000099)
-    juice("flourishing", 0x009933)
-    juice("blazing", 0x800020)
-    juice("flashing", 0xFFBF00)
+    // function juice(id, color) {
+    //     event.create(id + "_juice")
+    //         .thinTexture(color)
+    //         .stillTexture('kubejs:block/fluid/still')
+    //         .flowingTexture('kubejs:block/fluid/flowing')
+    //         .luminosity(8)
+    // }
+    //
+    // juice("vexing", 0x9F2B68)
+    // juice("cascading", 0x000099)
+    // juice("flourishing", 0x009933)
+    // juice("blazing", 0x800020)
+    // juice("flashing", 0xFFBF00)
 
     event.create('liquid_souls')
         .stillTexture('kubejs:block/fluid/liquid_souls')
-        .displayName('Liquefied Souls')
+        .displayName('Liquefied Souls');
 });

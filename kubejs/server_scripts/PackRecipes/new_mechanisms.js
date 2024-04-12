@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
     let mechSmithing = (recipes, mechanism, template) => {
+        if (recipes.length === 0) return;
         recipes.forEach(entry => {
             let inputItem = entry[0];
             let outputItem = entry[1];
@@ -15,6 +16,7 @@ ServerEvents.recipes(event => {
     }
 
     let mechCutting = (recipes, input) => {
+        if (recipes.length === 0) return;
         recipes.forEach(output => {
             let outputItem = output[0];
             let keep = output[1];
@@ -83,9 +85,9 @@ ServerEvents.recipes(event => {
         ['#forge:barrels', Item.of('create:fluid_tank', 4), true]
     ];
 
-    // const logisticsMechSmithing = [
+    const logisticsMechSmithing = [
        
-    // ];
+    ];
 
     const sturdyMechSmithing = [
         [Item.of('create:contraption_controls'), Item.of('create:controls')],
@@ -170,18 +172,18 @@ ServerEvents.recipes(event => {
         [Item.of('integrateddynamics:variable'), Item.of('integrateddynamics:materializer')],
         [Item.of('integrateddynamics:variablestore'), Item.of('integrateddynamics:proxy')],
         [Item.of('minecraft:chest'), Item.of('integrateddynamics:variablestore')],
-        [Item.of('createaddition:modular_accumulator'), Item.of('integrateddynamics:energy_battery')]
-    ];
-
-    const temporalMechSmithing = [
+        [Item.of('createaddition:modular_accumulator'), Item.of('integrateddynamics:energy_battery')],
         [Item.of('thermal:rf_coil'), Item.of('thermal:dynamo_disenchantment')],
         [Item.of('minecraft:glowstone_dust'), Item.of('ae2:semi_dark_monitor')],
         [Item.of('ae2:fluix_pearl'), Item.of('ae2:condenser')],
         [Item.of('ae2:controller'), Item.of('ae2:terminal')],
+        [Item.of('functionalstorage:storage_controller'), Item.of('ae2:controller')]
+    ];
+
+    const temporalMechSmithing = [
         [Item.of('waystones:warp_stone'), Item.of('waystones:waystone')],
         [Item.of('waystones:warp_stone'), Item.of('waystones:mossy_waystone')],
-        [Item.of('waystones:warp_stone'), Item.of('waystones:sandy_waystone')],
-        [Item.of('functionalstorage:storage_controller'), Item.of('ae2:controller')]
+        [Item.of('waystones:warp_stone'), Item.of('waystones:sandy_waystone')]
     ];
 
     const powerMechSmithing = [
@@ -227,11 +229,18 @@ ServerEvents.recipes(event => {
         [Item.of('create:copper_valve_handle', 2)]
     ];
 
+    const logisticsMechCutting = [
+
+    ];
+
     const sturdyMechCutting = [
         [Item.of('pneumaticcraft:turbine_blade')],
         [Item.of('pneumaticcraft:heat_pipe', 2)],
         [Item.of('railways:track_coupler')],
         [Item.of('create:display_board', 2)],
+        [Item.of('create:track', 8), true],
+        [Item.of('railways:track_create_andesite_wide', 8), true],
+        [Item.of('railways:track_create_andesite_narrow', 8), true],
     ];
 
     const sturdyMechCutting_2 = [
@@ -249,12 +258,13 @@ ServerEvents.recipes(event => {
         [Item.of('integrateddynamics:part_static_light_panel', 2)],
         [Item.of('integrateddynamics:logic_programmer')],
         [Item.of('integrateddynamics:portable_logic_programmer')],
-        [Item.of('integrateddynamics:cable', 4)]
+        [Item.of('integrateddynamics:cable', 4)],
+        [Item.of('ae2:formation_core', 2)],
+        [Item.of('ae2:annihilation_core', 2)]
     ];
 
     const temporalMechCutting = [
-        [Item.of('ae2:formation_core', 2)],
-        [Item.of('ae2:annihilation_core', 2)]
+
     ];
 
     mechCutting(andesiteMechCutting, Item.of('kubejs:andesite_mechanism'));

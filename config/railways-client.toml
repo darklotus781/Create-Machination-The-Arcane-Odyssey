@@ -3,9 +3,6 @@
 #Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
 [client]
 	#.
-	#Disable the optifine warning screen [DANGER]: Using optifine With Steam 'n' Rails may cause issues and you will not get any support for optifine related issues.
-	disableOptifineNag = false
-	#.
 	#Show extended debug info in coupler goggle overlay
 	showExtendedCouplerDebug = false
 	#.
@@ -22,6 +19,9 @@
 	#Whether to actually apply the dev cape (ignored for non-devs)
 	#This setting may require a relog to take effect
 	useDevCape = true
+	#.
+	#Disable the optifine warning screen [DANGER]: Using optifine With Steam 'n' Rails may cause issues and you will not get any support for optifine related issues.
+	disableOptifineNag = false
 
 	#.
 	#Smoke Settings

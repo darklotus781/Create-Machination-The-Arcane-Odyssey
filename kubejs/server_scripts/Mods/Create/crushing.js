@@ -16,15 +16,5 @@ ServerEvents.recipes(event => {
     event.remove({id: /create\:crushing\/(aluminum|osmium|platinum|uranium)_ore/});
     event.remove({id: /create\:crushing\/raw_(aluminum|osmium|platinum|uranium)_ore/});
 
-    let waystones = [
-        'waystones:waystone',
-        'waystones:mossy_waystone',
-        'waystones:sandy_waystone'
-    ];
-    
-    waystones.forEach(i => {
-        event.recipes.create.crushing([Item.of('kubejs:warp_fragments', 5), Item.of('kubejs:warp_fragments')], Item.of(i));
-    })
 
-    event.recipes.create.crushing(Item.of('kubejs:sourcegem_fragments').withChance(0.4), Item.of('ars_nouveau:source_gem'));
 });
