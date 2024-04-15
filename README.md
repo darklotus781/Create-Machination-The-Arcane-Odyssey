@@ -1,5 +1,5 @@
 # Create Machination - The Arcane Odyssey
-"Create Machination" is a Minecraft modpack that seamlessly evolves from the roots of Arcane Engineering into a vast and immersive experience. The modpack combines elements of exploration, magic, intricate quests, advanced production lines, and a sophisticated railway system for transportation.
+"Create Machination" is a Minecraft modpack for Forge 1.20.1. The modpack combines elements of exploration, magic, intricate quests, advanced production lines, and a sophisticated railway system for transportation.
 
 **Arcane Engineering Foundation:** Begin your journey with the fundamentals of Arcane Engineering, mastering the art of combining magic and machinery. Harness mystical energies to automate basic tasks, laying the groundwork for more advanced applications.
 
