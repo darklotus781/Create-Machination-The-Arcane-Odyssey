@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "magic_chapter_3_ars_nouveau"
 	group: "5741ADDA3A600D3C"
+	hide_quest_details_until_startable: true
 	icon: "ars_nouveau:creative_spell_book"
 	id: "6AEDA2F9BEB57759"
 	order_index: 2

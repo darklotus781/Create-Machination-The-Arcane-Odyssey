@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "magic_chapter_2_forbidden_arcanus"
 	group: "5741ADDA3A600D3C"
+	hide_quest_details_until_startable: true
 	icon: "forbidden_arcanus:enchanted_soul"
 	id: "253484F4EA596080"
 	order_index: 1
@@ -18,7 +19,6 @@
 				""
 				"This magic-themed mod has amazing animations, as well as some overpowered items like the &6Eternal Stella&r. "
 			]
-			hide: true
 			icon: {
 				Count: 1b
 				id: "forbidden_arcanus:smelter_prism"
@@ -326,7 +326,6 @@
 				""
 				"This is a top tier crafting item in this pack."
 			]
-			hide: true
 			hide_dependency_lines: true
 			id: "709118898CF960BE"
 			optional: true
@@ -408,7 +407,6 @@
 		}
 		{
 			dependencies: ["5523A71F1688EA88"]
-			hide: true
 			hide_dependency_lines: true
 			id: "6780984A7CE63392"
 			optional: true
@@ -429,7 +427,6 @@
 		}
 		{
 			dependencies: ["5523A71F1688EA88"]
-			hide: true
 			hide_dependency_lines: true
 			id: "371DF7589239CB78"
 			optional: true
@@ -450,7 +447,6 @@
 		}
 		{
 			dependencies: ["5523A71F1688EA88"]
-			hide: true
 			hide_dependency_lines: true
 			id: "6C832BFE4D07D897"
 			optional: true
@@ -476,7 +472,6 @@
 				""
 				"It's also really cool looking."
 			]
-			hide: true
 			id: "5EFC63CF97D97AB5"
 			rewards: [
 				{

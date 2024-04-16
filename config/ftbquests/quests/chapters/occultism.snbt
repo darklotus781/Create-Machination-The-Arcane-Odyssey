@@ -1,0 +1,1405 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "occultism"
+	group: "5741ADDA3A600D3C"
+	hide_quest_details_until_startable: true
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "occultism:item/ritual_dummy"
+		}
+	}
+	id: "5F24775C7D3A1FAA"
+	images: [
+		{
+			click: ""
+			color: 15616811
+			corner: false
+			dev: false
+			height: 5.0d
+			hover: [ ]
+			image: "occultism:textures/item/pentacle.png"
+			order: -1
+			rotation: 0.0d
+			width: 5.0d
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			click: ""
+			color: 16711680
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "occultism:textures/gui/book/robe.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			click: ""
+			color: 16711680
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "occultism:textures/gui/book/robe.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.95d
+			y: 2.0d
+		}
+		{
+			click: ""
+			color: 16711680
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "occultism:textures/gui/book/robe.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.0d
+			y: -0.5d
+		}
+		{
+			click: ""
+			color: 16711680
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "occultism:textures/gui/book/robe.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			click: ""
+			color: 16711680
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "occultism:textures/gui/book/robe.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			click: ""
+			color: 255
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "ftbquests:tasks/input_only"
+			rotation: 45.0d
+			width: 2.0d
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			click: ""
+			color: 255
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "occultism:textures/gui/book/summoning.png"
+			order: -1
+			rotation: -30.0d
+			width: 2.0d
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			click: ""
+			color: 16711680
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "occultism:textures/gui/book/summoning.png"
+			order: -1
+			rotation: 90.0d
+			width: 2.0d
+			x: 15.5d
+			y: 5.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: ["Shub Niggurath Familiar"]
+			image: "occultism:textures/gui/book/familiar_shub_niggurath.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.5d
+			y: 5.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: ["Drikwing Familiar"]
+			image: "occultism:textures/gui/book/otherworld_bird.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.5d
+			y: 5.0d
+		}
+		{
+			alpha: 150
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "occultism:block/stable_wormhole_frame"
+			rotation: 0.0d
+			width: 2.0d
+			x: 12.5d
+			y: 9.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "occultism:item/divination_rod/divination_rod_animation"
+			rotation: -45.0d
+			width: 2.0d
+			x: 12.5d
+			y: 14.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "occultism:block/chalk_glyph/0"
+			rotation: 0.0d
+			width: 0.5d
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			click: ""
+			color: 6111187
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "occultism:block/chalk_glyph/11"
+			rotation: 0.0d
+			width: 0.5d
+			x: 14.5d
+			y: 1.0d
+		}
+		{
+			click: ""
+			color: 16711680
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "occultism:block/chalk_glyph/12"
+			rotation: 0.0d
+			width: 0.5d
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			click: ""
+			color: 16766720
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "occultism:block/chalk_glyph/4"
+			rotation: 0.0d
+			width: 0.5d
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: ["Beholder Familiar"]
+			image: "occultism:textures/gui/book/familiar_beholder.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 16.5d
+			y: 12.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: ["Headless Ratman Familiar"]
+			image: "occultism:textures/gui/book/familiar_headless_ratman.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 8.5d
+			y: 12.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "occultism:textures/gui/book/infusion.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			alpha: 100
+			click: ""
+			corner: false
+			dev: false
+			height: 1.25d
+			hover: [ ]
+			image: "occultism:block/iesnium_block"
+			rotation: 45.0d
+			width: 1.25d
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			alpha: 150
+			click: ""
+			corner: false
+			dev: false
+			height: 1.5d
+			hover: [ ]
+			image: "occultism:block/iesnium_block"
+			order: -1
+			rotation: 45.0d
+			width: 1.5d
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			click: ""
+			color: 16766720
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "occultism:block/chalk_glyph/8"
+			rotation: 0.0d
+			width: 0.5d
+			x: 12.5d
+			y: 2.5d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["16C22D28ADF3FEE5"]
+			description: [
+				"Welcome to &dOccultism&r!"
+				""
+				"This mod aimes to help you in many different ways by enlisting the help of &bSpirits&r! &oMost&r of which are friendly."
+				""
+				"To get started, you'll need to get some &aDemon's Dream Seeds&r."
+				"Unfortunately this means you need to kill the Warden, good luck!"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "occultism:item/soul_gem"
+				}
+			}
+			id: "77B5A7D2A7494A39"
+			rewards: [{
+				id: "6ABAF3AB3F10B62C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "451026306ABA7D0A"
+				item: "occultism:datura_seeds"
+				type: "item"
+			}]
+			title: "&dDreaming of&r &cDemons&r"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"The &aDictionary Of Spirits&r serves as the Guide Book for &dOccultism&r. You'll absolutely need to make this if you want to continue with the mod!"
+				""
+				"The Dictionary has a quest-style guide inside of it if you'd rather read it instead of doing these quests!"
+				""
+				"You'll also need the book to craft several things in the pack, so you kind of have to make it. :)"
+			]
+			id: "63A8DDFC739B0839"
+			rewards: [{
+				id: "098EBA99023063DA"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "195D4F8A4072A17C"
+				item: {
+					Count: 1b
+					id: "occultism:dictionary_of_spirits"
+					tag: {
+						"modonomicon:book_id": "occultism:dictionary_of_spirits"
+					}
+				}
+				type: "item"
+			}]
+			title: "Little Book o' &cDemons&r"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&cDemon's Dream Fruit&r is perfectly healthy for you. There might be some side effects you should know about."
+				""
+				"When you consume one, you have a chance to get the effect of the &3Third Eye&r, allowing you to see into the &9The Otherworld&r. Certain items in the world might not be what they seem, and you'll need this \"vision\" to find certain items for progression."
+				""
+				"Or you can set it on fire and skip finding most of them. That's up to you."
+			]
+			id: "18F5F0C75B5036C7"
+			rewards: [{
+				id: "531D2D1059413FFF"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "Get Ready for a Trip"
+			tasks: [{
+				id: "5F2369C68EB9D794"
+				item: "occultism:datura"
+				type: "item"
+			}]
+			title: "&cDemon Fruit&r"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"What if I told you that the Demon's Fruit is flammable?"
+				""
+				"Throwing our &cDemon's Dream Fruit&r down and setting it on fire will create &dSpiritfire&r. This is how we'll convert some overworld items into &9Otherworld&r materials."
+				""
+				"It's also pretty."
+			]
+			id: "4C8DF36565175E79"
+			progression_mode: "linear"
+			rewards: [
+				{
+					count: 2
+					id: "06350B3453C0CE0F"
+					item: "occultism:datura"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "7A6261521A2DCF0E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "occultism:block/spirit_fire_1"
+					}
+				}
+				id: "63857C45E2D6EA0C"
+				observe_type: 0
+				timer: 0L
+				title: "Observe &dSpiritfire&r"
+				to_observe: "occultism:spirit_fire"
+				type: "observation"
+			}]
+			title: "The Flames of &9The Otherworld&r"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: [
+				"Using &dSpiritfire&r, we can convert several Overworld mats into their Otherworld variants. You can also find several Otherworld mats by going under the effects of the &bThird Eye&r and adventuring into the world. You might be surprised what you find. To make it easier, there are crafting recipes for the basic materials by throwing them into &dSpiritfire&r."
+				""
+				"&bAndesite&r converts to &3Otherstone&r, which can be used to light a permanent &dSpiritfire&r."
+				""
+				"&aOak Saplings&r convert to &9Oak Saplings&r but they are not the same. When grown, these will look exactly like a regular Oak tree. However, under the effects of the &bThird Eye&r, you will be able to harvest the Otherworld variant."
+				""
+				"&eDiamonds&r will turn into &dSpirit Attuned Gems&r which are used in several recipes we'll need later down the road."
+			]
+			hide: false
+			id: "0C8215BCCF37EC8B"
+			min_width: 300
+			rewards: [
+				{
+					id: "5767621C602B4A41"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "18F234FE8266EB1C"
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "16BF14BCAF56F7A1"
+					item: "occultism:otherstone"
+					type: "item"
+				}
+				{
+					id: "7973AD965755674C"
+					item: {
+						Count: 1b
+						id: "occultism:otherworld_sapling_natural"
+						tag: {
+							isInventoryItem: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C4E8D602211047B"
+					item: "occultism:spirit_attuned_gem"
+					type: "item"
+				}
+			]
+			title: "&dSpiritfire&r Conversions"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Demons like Candles. I think."
+				""
+				"For almost every Ritual to summon our friends, you'll need some Candles. You can create the &aButcher Knife&r and kill some pigs, cows, sheep, horses, or even the Trader Llamas to get some &aTallow&r to make them. Matter of fact, you should definitely find the Trader Llamas. I hear they make good candles. &mI totally didn't just make that up&r."
+				""
+				"Otherwise, Vanilla Candles can also work!"
+				""
+				"&9Spirit Attuned Crystals&r are also used in several Rituals, so might as well make some now!"
+			]
+			hide_dependency_lines: true
+			id: "35A46309C0FE316B"
+			shape: "diamond"
+			tasks: [
+				{
+					count: 4L
+					id: "7100152E6DD6D455"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "occultism:candle_white"
+								}
+								{
+									Count: 1b
+									id: "minecraft:candle"
+								}
+							]
+						}
+					}
+					title: "Candles"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "59274D94399A9437"
+					item: "occultism:spirit_attuned_crystal"
+					type: "item"
+				}
+			]
+			title: "Preparing for a Ritual: &aCandles&r"
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Before we start enlisting the help of our Demon friends, we will need to create the most important item needed for Rituals: &aChalk&r."
+				""
+				"There are several colors of chalk needed, with higher level Rituals requiring several to activate. To start with, &bWhite Chalk&r is the easiest to get."
+				""
+				"Start by tossing Otherstone in a furnace, and tossing Otherworld Logs into &dSpiritfire&r. With the items you create, you'll be able to make the Impure White Chalk."
+				""
+				"To purify any piece of Chalk, simply throw it into &dSpiritfire&r to cleanse it. Using the Purified Chalk on the ground will draw &mdemonic&r pretty symbols on the ground. These are a pain to remove, unless of course, you make yourself the &aChalk Brush&r. Do it, it's worth it."
+			]
+			hide_dependency_lines: true
+			id: "306C75DD1CD5962A"
+			min_width: 350
+			shape: "diamond"
+			tasks: [
+				{
+					id: "2D35D582B7E4CFCE"
+					item: "occultism:chalk_white_impure"
+					type: "item"
+				}
+				{
+					id: "094F8393F00D7905"
+					item: {
+						Count: 1b
+						id: "occultism:chalk_white"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "5414A64DBB621766"
+					item: "occultism:brush"
+					type: "item"
+				}
+			]
+			title: "Preparing for a Ritual: &eChalk&r"
+			x: 11.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"What is a Demonic Ritual without a &cSacrifice&r! :D"
+				""
+				"Most of the time, Demons just like items so don't be too afraid yet. However, if you have a favorite Cow, you might need to be worried. Sorry Betsy."
+				""
+				"&aSacrifical Bowls&r are used to place items needed for Rituals. These can be placed anywhere within the Ritual, as long as it isn't convering up any of the required Chalk."
+				""
+				"The &6Golden Sacrificial Bowl&r is used in the middle of the Ritual to activate it, and also usually needs a Book of Binding for the Ritual in it."
+			]
+			hide_dependency_lines: true
+			id: "784C12B49E3F564F"
+			shape: "diamond"
+			tasks: [
+				{
+					count: 4L
+					id: "0B944EFD314CFF86"
+					item: "occultism:sacrificial_bowl"
+					type: "item"
+				}
+				{
+					id: "54F698B137FCE7D2"
+					item: "occultism:golden_sacrificial_bowl"
+					type: "item"
+				}
+			]
+			title: "Preparing for a Ritual: &dCrystals&r"
+			x: 13.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"For us to specify which &c&mDemon&r &9Friend&r we want to summon, we'll need to make a specific &bBook of Binding&r."
+				""
+				"To make this, you'll need to purify some Black Dye in &dSpiritfire&r to get Purified Ink. With this, we're going to make our first Book of Binding which will summon a &aFoliot&r Demon."
+			]
+			hide_dependency_lines: true
+			id: "48CF368B718D0EF0"
+			rewards: [{
+				id: "78E1513D9AB33DFE"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "5C030267D3DFEA0D"
+					item: "occultism:purified_ink"
+					type: "item"
+				}
+				{
+					id: "6F24DCDC9B8495C6"
+					item: "occultism:book_of_binding_foliot"
+					type: "item"
+				}
+			]
+			title: "&bBooks of&r &dBinding&r"
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"For our first Ritual, we want to summon a &aFoliot Crusher&r Demon. This Demon will crush items for us, which is something we'll need to make some of the higher level Chalks!"
+				""
+				"To start with, combine your Unbound Book with your &aDictionary of Spirits&r in a crafting table. This will bind a Demon to the book, which is what we'll need for the Ritual."
+				""
+				"Speaking of your Dictionary of Spirits, it's time to open it up! On the left, click on the &dPentacles&r tab and click on &bAviar's Circle&r. You might have to advance through it by reading a little bit. There is also a way to click \"Mark All As Read\" so it unlocks everything in the book."
+				""
+				"This is what we're going to use to summon our new Friend. On the right side, you can click the eye in the bottom-left corner of the image to build an outline of the Ritual for you in the world. This is super helpful!"
+				""
+				"Once you've completed the multi-block Ritual, place down 4 Sacrificial Bowls and use the required items on them. Once you place your Bound Book in the Golden Sacrificial Bowl, the Ritual will start!"
+				""
+				"This is what the Ritual will look like. The rods are just there for lighting."
+				""
+				"{image:atm:textures/questpics/occultism/aviarcircle.png width:200 height:200 align:1}"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "occultism:block/chalk_glyph/7"
+				}
+			}
+			id: "53A91BCC28F097D3"
+			min_width: 300
+			rewards: [{
+				id: "4384D670A768349C"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [
+				{
+					id: "136EFFF7EE2414A7"
+					item: {
+						Count: 1b
+						id: "occultism:book_of_binding_bound_foliot"
+						tag: {
+							spiritName: "Krtimaeus"
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "1CF440443F0BD6CC"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					id: "68C33DDB7E6C8D4A"
+					item: "minecraft:raw_gold"
+					type: "item"
+				}
+				{
+					id: "483C703DDADAEFE7"
+					item: "minecraft:raw_copper"
+					type: "item"
+				}
+				{
+					id: "7013BADECB931039"
+					item: "alltheores:raw_silver"
+					type: "item"
+				}
+			]
+			title: "&bOur First&r &dRitual&r"
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			description: ["Now that we have a Foliot Crusher, we can &muse&r politely ask it to crush down some &eEnd Stone&r and &9Obsidian&r for us. We'll use these to make some new Chalk!"]
+			id: "2E63C32D3847292C"
+			rewards: [{
+				id: "065E63D5C1F9C667"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "79AB3FB8C90805E4"
+					item: "occultism:chalk_gold_impure"
+					type: "item"
+				}
+				{
+					id: "73E532A973BC4353"
+					item: "occultism:chalk_purple_impure"
+					type: "item"
+				}
+			]
+			title: "&aChalking It Up&r"
+			x: 12.5d
+			y: 6.5d
+		}
+		{
+			description: [
+				"See, they aren't all bad!"
+				""
+				"If you've completed the Ritual properly, you'll now have your very own &cFoliot Crusher Demon&r. These Demons are great at crushing down items for you!"
+				""
+				"To give it an item to crush, just throw it nearby and it will pick up the item and crush it. You can also sneak-right click the Demon to open up the inventory."
+				""
+				"This is a starter Demon, so it won't last very long. This one can also double your ore output for you!"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "occultism:item/advancement/devil_icon"
+				}
+			}
+			id: "6BFC0E61BA72FD4A"
+			progression_mode: "linear"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C1B3DFD080EC526"
+				type: "loot"
+			}]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "occultism:item/advancement/devil_icon"
+					}
+				}
+				id: "1C166377B3E26621"
+				observe_type: 5
+				timer: 0L
+				title: "Observe a Foliot Demon"
+				to_observe: "occultism:foliot"
+				type: "observation"
+			}]
+			title: "&aTalking with our New Friend!&r"
+			x: 12.5d
+			y: 4.0d
+		}
+		{
+			description: [
+				"While there are other methods to move Demons around, you can create an &dEmpty Soul Gem&r to capture a Demon and place it somewhere else. This is also needed for the ATM Star."
+				""
+				"To make this, we'll need to do a more advanced Ritual called &aStrigeor's Higher Binding&r. For this, you'll need &a8 Sacrificial Bowls&r as well as the items required for this quest."
+				""
+				"Remember, you can always use the multi-block preview by finding the Pentacle in the &bDictionary of Spirits&r to help you build the structure."
+			]
+			id: "10470F90B09DE5CA"
+			rewards: [{
+				id: "0A487ED302E174A1"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					count: 4L
+					id: "736F38CBA7B6BD73"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					id: "3A0510C166310A09"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "3D9BDF3EF77CA083"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "40C1ED9600CC01BE"
+					item: "alltheores:silver_ingot"
+					type: "item"
+				}
+				{
+					id: "73D73D093E561D7A"
+					item: {
+						Count: 1b
+						id: "occultism:book_of_binding_bound_djinni"
+						tag: {
+							spiritName: "Karnvires"
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&bCapturing&r &dDemons&r"
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			description: [
+				"No, not that kind."
+				""
+				"&cAfrit Demons&r are Demons of &cFire&r. They are more advanced Demons, which some are friends and some are....not."
+				""
+				"If we want to collect all of the Chalks, we'll need to summon a not-so friendly Ifrit. And kill it."
+				""
+				"This specific Ritual will need a live sacrifice. Once you've placed all of the items needed and the Book of Binding into the Golden Sacrificial Bowl, the Ritual will not start until you sacrifice the living creature nearby it. In this instance, we'll be sacrificing a cow. Sorry again, Betsy. "
+			]
+			icon: "occultism:afrit_essence"
+			id: "5401932B11AE7EA4"
+			min_width: 300
+			rewards: [
+				{
+					id: "67A0C6162AA73FC4"
+					type: "xp"
+					xp: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4B1699DBE6ECE444"
+					type: "loot"
+				}
+			]
+			subtitle: "R.I.P. Betsy"
+			tasks: [
+				{
+					id: "15414A146B60A486"
+					item: "occultism:afrit_essence"
+					type: "item"
+				}
+				{
+					id: "3B2D6162E8EF8B5D"
+					item: "occultism:chalk_red_impure"
+					type: "item"
+				}
+			]
+			title: "&cHot Demons&r"
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			description: ["This item is used to capture Demons for transport or storage. It's also needed for the &6ATM Star&r."]
+			id: "3C8DBF896C0080F8"
+			rewards: [
+				{
+					id: "31ABB94446A5440A"
+					type: "xp"
+					xp: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "541C5294C563B06E"
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "1B23F513E7C42E49"
+				item: {
+					Count: 1b
+					id: "occultism:soul_gem"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&dEmpty Soul Gem&r"
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			description: [
+				"There are more Otherworld items you will need to gather, and eating &cDemon's Dream Fruit&r every time you need the &7Third Eye&r effect gets annoying."
+				""
+				"This is what the &dOtherworld Goggles&r are for! When equipped (even in your Curios slot), it gives the Third Eye effect!"
+			]
+			id: "23255D29E4664AA2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0CF0CA053158C6C8"
+					type: "loot"
+				}
+				{
+					id: "6225BF1E99291C1E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6B0443F5BE6931E7"
+				item: {
+					Count: 1b
+					id: "occultism:otherworld_goggles"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Quit Eating That Fruit!"
+			x: 11.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Most of the items we've needed from the &3Otherworld&r so far just needed some Spiritfire. However, we will need to use the help of the &3Third Eye&r to find the Ore of the &3Otherworld&r."
+				""
+				"We'll also need a special pickaxe to be able to mine it. For this, we'll need to Infuse a Demon into a &dSpirit Attuned Pickaxe Head&r to create a pickaxe that can break this new kind of ore."
+			]
+			id: "559411CB99A135DB"
+			rewards: [
+				{
+					id: "004327D806E38939"
+					type: "xp"
+					xp: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "487DA33AC237E604"
+					type: "loot"
+				}
+			]
+			shape: "square"
+			size: 1.25d
+			tasks: [{
+				id: "2F0D97D507736252"
+				item: {
+					Count: 1b
+					id: "occultism:infused_pickaxe"
+					tag: {
+						Damage: 0
+						spiritName: "Raymirivyne"
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "New Tools for New Ores"
+			x: 9.5d
+			y: 9.5d
+		}
+		{
+			description: [
+				"The next step in your journey will be to find &eIesnium Ore&r in the Nether."
+				""
+				"Without the effects of the &3Third Eye&r, this will look just like Netherrack. Make sure to have your &dOtherworld Goggles&r equipped!"
+				""
+				"To locate the ore, try using a &aDivination Rod&r. You'll need to attune it to Netherrack first, then hold down right click to use it. After a few seconds, you will see a particle shoot out in the direction of the nearest Iesnium Ore. You can only mine the ore using the &dInfused Pickaxe&r!"
+				""
+				"Since you can't break this ore down into double the dusts using the standard methods, try using your Foliot Crusher to double your ingots per raw ore!"
+				""
+				"Note: If you don't see the particle, make sure your particle settings are turned on!"
+				""
+			]
+			icon: "occultism:iesnium_ore"
+			id: "2C2B2ACBBE38708A"
+			min_width: 450
+			rewards: [{
+				id: "2AEABF7C19262A7A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "49AEC84314F89182"
+				item: "occultism:iesnium_ore"
+				type: "item"
+			}]
+			title: "&cIesnium: Ore of the Otherworld&r"
+			x: 11.0d
+			y: 11.0d
+		}
+		{
+			description: [
+				"Once you've gathered a few &aRaw Iesnium Ores&r, you'll probably want to use the first few ingots to make an &dIesnium Pickaxe&r. This not only mines Iesnium like the Infused Pickaxe, but lasts a lot longer too."
+				""
+				"Do yourself a favor and make one of these!"
+			]
+			id: "39ABF31316F79E15"
+			rewards: [
+				{
+					id: "5F849DEBD91B6F13"
+					type: "xp"
+					xp: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "28FF068E3B3AA647"
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "7D376869598C6E3D"
+				item: {
+					Count: 1b
+					id: "occultism:iesnium_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&aThe Otherworld Pickaxe&r"
+			x: 12.5d
+			y: 12.5d
+		}
+		{
+			description: [
+				"That first Foliot Demon was cool, but what if I told you that you could summon a demon that gives you 6 dusts per raw ore it crushes?"
+				""
+				"The &5Marid Crusher&r does exactly that. To summon them, you'll need to use the &cFatma's Incentivized Attraction&r pentacle. This is an advanced ritual, requiring Red, White, and Gold Chalk as well as a lot of space."
+			]
+			icon: "occultism:iesnium_block"
+			id: "78B5D726803B6533"
+			progression_mode: "linear"
+			rewards: [
+				{
+					id: "53A4A0E3F628DE2C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0968A458ABAC68CE"
+					type: "loot"
+				}
+			]
+			shape: "square"
+			size: 1.25d
+			subtitle: "The Fastest Crushing On This Side of the Mississippi"
+			tasks: [
+				{
+					id: "093145CBEA748295"
+					item: "occultism:iesnium_block"
+					type: "item"
+				}
+				{
+					id: "62AF84B5BD71C676"
+					item: {
+						Count: 1b
+						id: "occultism:book_of_binding_bound_marid"
+						tag: {
+							spiritName: "Holmurkyr"
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "occultism:item/advancement/devil_icon"
+						}
+					}
+					id: "26D740B1AD739E3A"
+					observe_type: 5
+					timer: 0L
+					title: "Observe a &dMarid&r Demon"
+					to_observe: "occultism:marid"
+					type: "observation"
+				}
+			]
+			title: "The &5Marid Crusher&r"
+			x: 15.5d
+			y: 9.5d
+		}
+		{
+			description: [
+				"With our ability to harvest &cIesnium&r, we can call upon the Demons to do our bidding in the mines... I mean.... help us gather ores. Definitely not exploiting Demons or anything."
+				""
+				"For this, we'll need to create a &dDimensional Mineshaft&r to access the Demon Mining World. You'll also need a Mining Demon confined to a lamp, which you'll place inside of the Mineshaft for it to work. While any tier will complete this quest, higher tiers work faster and have a higher chance at mining Iesnium for you."
+				""
+				"The Mineshafts do not auto-export on their own. You will need to extract the items out using either Hoppers, Transporting Demons, or some other method like Item Pipes. It will void any items over its storage limit."
+			]
+			id: "05DD19B6F8C6CDEB"
+			min_width: 350
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "01A050F9555EF647"
+					item: "occultism:dimensional_mineshaft"
+					type: "item"
+				}
+				{
+					id: "6665804601A9A180"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "occultism:miner_foliot_unspecialized"
+									tag: {
+										Damage: 0
+										maxMiningTime: 400
+										rollsPerOperation: 1
+										spiritName: "Alddeller"
+									}
+								}
+								{
+									Count: 1b
+									id: "occultism:miner_djinni_ores"
+									tag: {
+										Damage: 0
+										maxMiningTime: 300
+										rollsPerOperation: 1
+										spiritName: "Raktimkyn"
+									}
+								}
+								{
+									Count: 1b
+									id: "occultism:miner_afrit_deeps"
+									tag: {
+										Damage: 0
+										maxMiningTime: 200
+										rollsPerOperation: 1
+										spiritName: "Zorkrinnkyn"
+									}
+								}
+								{
+									Count: 1b
+									id: "occultism:miner_marid_master"
+									tag: {
+										Damage: 0
+										maxMiningTime: 100
+										rollsPerOperation: 1
+										spiritName: "Eqis"
+									}
+								}
+							]
+						}
+					}
+					title: "Mining Demons"
+					type: "item"
+				}
+			]
+			title: "&cDemon Mining&r"
+			x: 12.5d
+			y: 9.5d
+		}
+		{
+			description: [
+				"You're bound to have too many items playing this modpack. It's just it works, and if you haven't figured out your storage situation yet, &dDimensional Storage&r might just be right for you!"
+				""
+				"To get started with this magical storage solution, you'll need to craft the &dDimensional Storage Actuator&r and place it down into the world. This acts just like a Shulker Box, meaning if you break it, it won't lose any of the items stored inside. "
+				""
+				"By default, this has 128 storage slots with each slot holding up to 16 stacks of an item, except for items with &5NBT&r data. These will not stack and will take up an entire slot, so make sure to leave those items out!"
+				""
+				"If you aren't sure what items have NBT data on them, you can always check out the quest \"NBT and You\" in the Storage questline for more info on NBT!"
+			]
+			id: "2C4804933C3A2F37"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6CFE280FC7418D11"
+					type: "loot"
+				}
+				{
+					id: "3002908D08EA686F"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0CC783C354E93579"
+					item: "occultism:storage_controller_base"
+					type: "item"
+				}
+				{
+					id: "1A1543A5AA80A376"
+					item: {
+						Count: 1b
+						id: "occultism:dimensional_matrix"
+						tag: {
+							spiritName: "Geirmaracthorn"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0C4F19E458A365B1"
+					item: "occultism:storage_controller"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&c&mDemonic&r &dMagical Storage&r!"
+			x: 15.5d
+			y: 5.5d
+		}
+		{
+			description: [
+				"To upgrade the amount of stacks your magical storage can hold, you'll need to make &dStorage Stabilizers&r."
+				""
+				"Once made, these must point directly at the Dimensional Matrix part of your Storage Actuator, not the base. These can be up to 5 blocks away, but must have a clear line of sight to the Matrix."
+				""
+				"Whenever you want to upgrade to a higher tier Stabilizer, breaking it won't destroy the items inside. However, you will not be able to add any more items to your storage until it is either replaced or upgraded."
+			]
+			id: "7D74452819BE86EC"
+			min_width: 300
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B3898F8BE9BD6CD"
+					type: "loot"
+				}
+				{
+					id: "22B1B4788E0871C9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2B0C693FBD1E386F"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "occultism:storage_stabilizer_tier1"
+							}
+							{
+								Count: 1b
+								id: "occultism:storage_stabilizer_tier2"
+							}
+							{
+								Count: 1b
+								id: "occultism:storage_stabilizer_tier3"
+							}
+							{
+								Count: 1b
+								id: "occultism:storage_stabilizer_tier4"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "&aUpgrading Our Magical Storage&r"
+			x: 18.0d
+			y: 5.5d
+		}
+		{
+			description: [
+				"While you can get most of the &dOtherworld&r materials using Spiritfire, you can also use &9Divination Rods&r to locate these materials."
+				""
+				"First, you'll need to attune the Rod to the material you are looking for. For example, if you are on the hunt for &8Otherstone&r, you can use the Rod on &aAndesite&r to help locate the Otherstone in the world."
+				""
+				"Once attuned to a material, you can hold right click with the Rod in hand, and a particle will shoot off in the direction of the nearest material it is attuned to."
+				""
+				"You will still need to be under the effects of the &3Third Eye&r to be able to harvest the Otherworld block."
+			]
+			id: "4BB81DE248A4021A"
+			tasks: [{
+				id: "0F33E0AFEA5B9D39"
+				item: {
+					Count: 1b
+					id: "occultism:divination_rod"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Hunting For &dOtherworld&r Materials"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Want to access your storage remotely? This can be done with either the &eStable Wormhole&r or the &aStorage Accessor&r."
+				""
+				"To use the &eStable Wormhole&r, shift-click a &dStorage Actuator&r to link it. You can then place the Wormhole to act as another storage location."
+				""
+				"The &aStorage Accessor&r is linked in the same way, but acts as a wireless remote that can even work across dimensions!"
+			]
+			id: "3F2DC193716B1493"
+			rewards: [
+				{
+					id: "65B711464141D8AF"
+					type: "xp"
+					xp: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6B1127B01512F29C"
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					id: "751FAA2673ADBE5D"
+					item: {
+						Count: 1b
+						id: "occultism:stable_wormhole"
+						tag: { }
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "15F74B6753ED8206"
+					item: {
+						Count: 1b
+						id: "occultism:storage_remote"
+						tag: { }
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&aRemote Access&r"
+			x: 16.5d
+			y: 7.0d
+		}
+		{
+			description: [
+				"Occultism provides more than just Demons to crush your ores!"
+				""
+				"There are Demons that can move stuff for you, chop down wood, and more!!"
+				""
+				"There are also ways to summon cool friends known as &dFamiliars&r that give special buffs and even fight for you! Make sure to check out the &dFamiliar Rituals&r in your guide book!"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "occultism:textures/gui/book/familiar_blacksmith.png"
+				}
+			}
+			id: "2CA21901E55D28CA"
+			rewards: [{
+				id: "4900F2C7E12B6CFD"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "223835A22D08D608"
+				title: "Familiars"
+				type: "checkmark"
+			}]
+			title: "&dFamiliars&r"
+			x: 8.5d
+			y: 7.0d
+		}
+	]
+	title: "Chapter 4: Occultism"
+}

@@ -4,7 +4,6 @@ ServerEvents.recipes(event => {
     event.remove({id: 'create:milling/gravel'});
     event.remove({id: 'create:compat/ae2/milling/certus_quartz'});
 
-    event.recipes.create.milling(Item.of('kubejs:rune_dust', 4), Item.of('forbidden_arcanus:rune'));
     event.recipes.create.milling(Item.of('kubejs:powdered_flint'), Item.of('minecraft:flint'));
     event.recipes.create.milling(Item.of('minecraft:gravel'), Item.of('minecraft:mossy_cobblestone'));
     event.recipes.create.cutting(Item.of('ae2:certus_quartz_dust'), Item.of('ae2:certus_quartz_crystal'));

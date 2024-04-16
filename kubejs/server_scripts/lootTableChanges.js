@@ -35,6 +35,19 @@ LootJS.modifiers((event) => {
             LootEntry.of('artifacts:bunny_hoppers').when((c) => c.randomChance(0.25))
         );
     // event.addEntityLootModifier('minecraft:wither_skeleton').get
+
+    // Remove Demon Seeds from Grass Drops, we craft them instead!
+    event.addBlockLootModifier('minecraft:grass').removeLoot('occultism:datura_seeds');
+    event.addBlockLootModifier('minecraft:tall_grass').removeLoot('occultism:datura_seeds');
+
+    event.addEntityLootModifier('minecraft:warden').pool((p) => {
+        p.addLoot('occultism:datura_seeds');
+        p.limitCount(2, 8);
+    });
+});
+
+LootJS.modifiers((event) => {
+    event.addLootTableModifier('minecraft:chests/end_city_treasure').removeLoot('forbidden_arcanus:orb_of_temporary_flight');
 });
 
 // // Get a list of LootTables for a mob on death.

@@ -300,4 +300,6 @@ ServerEvents.tags('entity_type', event => {
     event.add('mob_grinding_utils:no_spawn', '#kubejs:mob_blacklist');
     event.add('pneumaticcraft:vacuum_trap_blacklisted', '#kubejs:mob_blacklist');
     event.add('ars_nouveau:drygmy_blacklist', '#kubejs:mob_blacklist');
+
+    event.add('forge:enderman', 'minecraft:enderman');
 });

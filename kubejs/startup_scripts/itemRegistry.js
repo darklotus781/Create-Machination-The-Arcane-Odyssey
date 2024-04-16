@@ -245,9 +245,14 @@ StartupEvents.registry('item', event => {
         .ingredients('Catalyzing Items')
         .appliesToSlotDescription('Insert one (1) Item')
         .ingredientsSlotDescription('Insert one (1) Mechanism')
-        .texture('kubejs:item/mechanism_smithing_template')
+        .texture('kubejs:item/mechanism_smithing_template');
 
-    event.create('machine_smithing_template')
+    event.create('machine_smithing_template');
+
+    event.create('ritual_dummy/ender_eye')
+        .displayName('Ritual: Craft Eye of Ender')
+        .tooltip("Used to locate a stronghold and activate the end portal.  Ritual Crafting is a way to bypass the crafting grid recipe.")
+        .texture('occultism:item/ritual_dummy');
 
     // Spawn Eggs - custom spawn eggs don't work on spawners ;)
     global.spawnableMobs.forEach(egg => {

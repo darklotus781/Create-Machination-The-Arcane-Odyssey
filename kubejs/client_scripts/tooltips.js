@@ -10,18 +10,21 @@ ItemEvents.tooltip(tooltip => {
         add_color_description(`kubejs:${global.bag_name[i]}_bag_${global.rarity[2]}`, 'Epic', global.rarity_color.epic);
     }
 
-    let locked_item = (id, quest) => tooltip.addAdvanced(id, (item, advanced, text) => {
-        text.add(1, Text.aqua('Special Item:'))
-        text.add(2, Text.gray("This item cannot be crafted until it's unlocked in a quest!"));
-        text.add(3, Text.of(""));
-        text.add(4, Text.of(`§6Unlocked in§r §2${quest}`));
+    let locked_item = (id, quest, extra) => tooltip.addAdvanced(id, (item, advanced, text) => {
+        text.add(Text.aqua('Special Item:'))
+        text.add(Text.gray("This item cannot be manually crafted until it's unlocked in a quest!"));
+        if (extra) {
+            text.add(extra);
+        }
+        text.add(Text.of(""));
+        text.add(Text.of(`§6Unlocked in§r §2${quest}`));
     });
 
     let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "7" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
     let bonus_assembly = (id, stage) => tooltip.add(id, [`§7Bonus Assembly: §6Chapter ${stage}`, '§8Consider automating this item'])
     let not_consumed = (id, stage) => tooltip.add(id, [`§7Not consumed in the`, `§7Assembly Process`])
 
-    locked_item('minecraft:ender_eye', 'Chapter 3: Overworld Conquered');
+    locked_item('minecraft:ender_eye', 'Chapter 3: Overworld Conquered', Text.gray('Can be acquired via a Ritual'));
 
     tooltip.addAdvanced('ars_nouveau:source_gem', (item, advanced, text) => {
         text.remove(1);
@@ -55,6 +58,10 @@ ItemEvents.tooltip(tooltip => {
          if (tooltip.isShift()) {
             text.add("§cEating outside The Aether will cause negative effects and remove flight!");
          }
+    });
+
+    tooltip.addAdvanced('occultism:datura_seeds', (item, advanced, text) => {
+        text.add(Text.darkPurple('Only dropped by the Warden!'));
     });
 
     tooltip.addAdvanced(/sophisticatedbackpacks:.*backpack/, (item, advanced, text) => {
@@ -103,9 +110,6 @@ ItemEvents.tooltip(tooltip => {
         if (!tooltip.isShift()) {
             text.add(1, "§7Base: §r108§7 Slots, §r4§7 Upgrade Slots");
         }
-    });
-    tooltip.addAdvanced("artifacts:bunny_hoppers", (item, advanced, text) => {
-        text.add(3,'§6Enables Flight in The Aether');
     });
 
     let frameText = Text.aqua('This is an intermediate product, chisel it smooth to make a working casing!');

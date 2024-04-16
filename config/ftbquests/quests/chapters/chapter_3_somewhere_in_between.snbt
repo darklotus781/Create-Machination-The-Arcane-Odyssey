@@ -987,7 +987,10 @@
 			dependencies: ["040A2C9AD4AF7034"]
 			description: [
 				"Don't try to rush to the End.  While you may find a Stronghold in your travels, Eyes of Ender are gated behind a game stage thats unlocked when you're ready to go to the end."
-				"Follow the quests, you'll get there eventually!"
+				""
+				"Using Occultism, you can perform a ritual to create Eyes of Ender, however they cannot be used to locate a stronghold until you've unlocked that ability."
+				""
+				"Please follow the quests, you'll get there eventually!"
 			]
 			id: "7D3F83C156BA7A9F"
 			rewards: [{
@@ -1047,6 +1050,25 @@
 			title: "SMRT!"
 			x: 4.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["10DADBB2E6B7B7B5"]
+			description: [
+				"Occultism is a mod that features Demons/Spirits and Familiars.  You can even have a Wife / Husband to help out around the house."
+				""
+				"You can enlist demons to crush ores, mine ores and more.  "
+			]
+			icon: "occultism:ritual_dummy/custom_ritual"
+			id: "16C22D28ADF3FEE5"
+			subtitle: "A magic mod that uses Spirits / Demons"
+			tasks: [{
+				id: "632CE2059C910ED3"
+				title: "Ars Nouveau Unlock"
+				type: "checkmark"
+			}]
+			title: "Occultism Unlock"
+			x: 6.0d
+			y: 0.5d
 		}
 	]
 	title: "Chapter 3: Somewhere in between"

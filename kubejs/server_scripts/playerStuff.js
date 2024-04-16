@@ -1,39 +1,80 @@
 //priority: 0
 
 EntityEvents.death("player", (event) => {
-    const {player} = event;
+    let { player } = event;
 
     player.block.popItem(Item.playerHead(player.username));
 });
 
 PlayerEvents.loggedIn(event => {
-    let player = event.getEntity();
+    let { player } = event;
+    let server = player.server;
 
-    if (player.getLevel().getDimension() != 'minecraft:overworld') {
-        console.log('Skipping Login Events, player is not in the overworld!');
-        return;
+    if (server.persistentData.machinationData == null || server.persistentData.machinationData == {}) {
+        console.info("Detected Null or Undefined Machination Data for Server!");
+
+        server.persistentData.put("machinationData", NBT.toTagCompound({}));
+        server.persistentData.machinationData.putInt("playerCount", 0);
     }
 
-    player.getServer().scheduleInTicks(300, () => {
+    if (player.persistentData.machinationData == null || player.persistentData.machinationData == {}) {
 
-        if (player.persistentData.machinationData == null || player.persistentData.machinationData == {}) {
+        console.info("Detected Null or Undefined Machination Data for " + player.username);
 
-            console.info("Detected Null or Undefined Machination Data for " + player.username);
+        player.persistentData.put("machinationData", NBT.toTagCompound({}));
+        /** @type {Internal.CompoundTag} */
+        let machinationData = player.persistentData.machinationData // now it recognizes
+        machinationData.putBoolean("hasCat", false);
+        machinationData.putBoolean("hasAlexBook", false);
+        machinationData.putBoolean("hasGoldenChute", false);
+        machinationData.putBoolean("firstJoin", true);
 
-            player.persistentData.put("machinationData", NBT.toTagCompound({}));
-            /** @type {Internal.CompoundTag} */
-            let machinationData = player.persistentData.machinationData // now it recognizes
-            machinationData.putBoolean("hasCat", false);
-            machinationData.putBoolean("hasAlexBook", false);
-            machinationData.putBoolean("hasGoldenChute", false);
+        console.info("Generated machinationData for " + player.username + " for the first time.");
+    }
 
-            console.info("Generated machinationData for " + player.username + " for the first time.");
+    if (player.persistentData.machinationData.firstJoin) {
+        server.schedule(30 * 1000, () => {
+            player.tell('<§2DarkLotus§r> Welcome to Machination ' + player.username + ', we hope you have fun.');
+            player.persistentData.machinationData.firstJoin = false;
+            server.persistentData.machinationData.playerCount++;
+        });
+        if (server.persistentData.machinationData.playerCount > 1) {
+            server.schedule(35 * 1000, () => {
+                server.schedule(5 * 1000, () => player.tell("<§2DarkLotus§r> Because you've joined our server, we'll RTP you elsewhere to ensure proper player spread."));
+                server.schedule(10 * 1000, () => player.tell("<§2DarkLotus§r> Hold on to your hat!"));
+            });
+            server.schedule(40 * 1000, () => {
+                server.schedule(15 * 1000, () => {
+                    server.runCommandSilent('/title ' + player.username + ' times 20 100 20');
+                    server.runCommandSilent('/title ' + player.username + ' subtitle {"text":"Teleporting"}');
+                    server.runCommandSilent('/title ' + player.username + ' title {"text":"3","color":"gold"}');
+                });
+                server.schedule(17 * 1000, () => {
+                    server.runCommandSilent('/title ' + player.username + ' times 20 100 20');
+                    server.runCommandSilent('/title ' + player.username + ' subtitle {"text":"Teleporting"}');
+                    server.runCommandSilent('/title ' + player.username + ' title {"text":"2","color":"gold"}');
+                });
+                server.schedule(19 * 1000, () => {
+                    server.runCommandSilent('/title ' + player.username + ' times 20 100 20');
+                    server.runCommandSilent('/title ' + player.username + ' subtitle {"text":"Teleporting"}');
+                    server.runCommandSilent('/title ' + player.username + ' title {"text":"1","color":"gold"}');
+                });
+                server.schedule(21 * 1000, () => server.runCommandSilent('/execute as ' + player.username + ' run rtp'));
+            });
         }
+        server.schedule(60 * 1000, () => player.tell('<§2DarkLotus§r> Good Luck ' + player.username + ', we\'re rooting for you!'));
+    }
 
+    // if (player.getLevel().getDimension() != 'minecraft:overworld') {
+    //     console.log('Skipping Login Events, player is not in the overworld!');
+    //     return;
+    // }
+
+    server.schedule(45 * 1000, () => {
         if (player.level.dimension == 'aether:the_aether' && false == player.persistentData.machinationData.hasGoldenChute) {
             console.log('Giving Golden Parachute to ' + player.username);
             player.give(Item.of('aether:golden_parachute'));
-            player.statusMessage = Text.of("Take this parachute, it could save your life!");
+            player.tell("<§2DarkLotus§r> Take this parachute, it could save your life!");
             player.persistentData.machinationData.hasGoldenChute = true;
         }
 
@@ -52,7 +93,7 @@ PlayerEvents.loggedIn(event => {
 });
 
 ItemEvents.foodEaten('kubejs:magical_rock_candy', event => {
-    let {player, item: {id}} = event;
+    let { player, item: { id } } = event;
 
     if (player.level.dimension != 'aether:the_aether') {
         player.addItemCooldown(id, 20 * 60 * 5); // 5 Minutes
@@ -75,6 +116,7 @@ ItemEvents.foodEaten('kubejs:magical_rock_candy', event => {
     }
 
 });
+
 
 // PlayerEvents.tick(event => {
 //     const { player, player: { age, nbt } } = event;
@@ -129,13 +171,13 @@ global.dimChangeEvent = event => {
                 event.setCanceled(true);
             }
         }
-    if (targetDimension == 'minecraft:the_end') {
-        if (!player.stages.has('end_access')) {
-            player.statusMessage = Text.of("The portal doesn't seem to work...");
-            server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
-            event.setCanceled(true);
+        if (targetDimension == 'minecraft:the_end') {
+            if (!player.stages.has('end_access')) {
+                player.statusMessage = Text.of("The portal doesn't seem to work...");
+                server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
+                event.setCanceled(true);
+            }
         }
-    }
         if (targetDimension == 'allthemodium:mining') {
             if (!player.stages.has('mining_access')) {
                 player.statusMessage = Text.of("The teleporter doesn't seem to work...");
