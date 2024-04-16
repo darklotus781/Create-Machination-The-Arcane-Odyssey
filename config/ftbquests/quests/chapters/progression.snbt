@@ -214,7 +214,7 @@
 				"Chapter 4 and Chapter 5 feed directly off Chapter 3 because they both use Radiant Mechanisms and unlock different features / functionality.  It makes sense to keep them separate chapters due to the intricacies of each quest line and that they don't directly feed off of or into each other."
 			]
 			hide: true
-			icon: "kubejs:plastic_machine"
+			icon: "kubejs:plastic_mechanism"
 			id: "099F5D860FC50376"
 			rewards: [
 				{
@@ -244,7 +244,7 @@
 			]
 			hide: true
 			hide_details_until_startable: false
-			icon: "kubejs:radiant_machine"
+			icon: "kubejs:radiant_mechanism"
 			id: "19232B8B77F86AF8"
 			rewards: [
 				{
@@ -563,7 +563,7 @@
 			dependencies: ["3A10D0D5E8548C54"]
 			dependency_requirement: "one_started"
 			hide: true
-			icon: "kubejs:power_machine"
+			icon: "kubejs:power_mechanism"
 			id: "15983A1F5FED57E0"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -580,7 +580,7 @@
 			dependencies: ["3A10D0D5E8548C54"]
 			dependency_requirement: "one_started"
 			hide: true
-			icon: "kubejs:zinc_machine"
+			icon: "kubejs:scorch_mechanism"
 			id: "72C3FAE0193F665C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -602,7 +602,7 @@
 				"Chapter 4 and Chapter 5 feed directly off Chapter 3 because they both use Radiant Mechanisms and unlock different features / functionality.  It makes sense to keep them separate chapters due to the intricacies of each quest line and that they don't directly feed off of or into each other."
 			]
 			hide: true
-			icon: "kubejs:cyber_machine"
+			icon: "kubejs:cyber_mechanism"
 			id: "437114B9BC07B2BD"
 			rewards: [
 				{
@@ -659,7 +659,7 @@
 			dependencies: ["0225A0BF60D285CD"]
 			description: ["Chapter 6"]
 			hide: true
-			icon: "kubejs:temporal_machine"
+			icon: "kubejs:temporal_mechanism"
 			id: "5B817E19476DEBA1"
 			rewards: [
 				{

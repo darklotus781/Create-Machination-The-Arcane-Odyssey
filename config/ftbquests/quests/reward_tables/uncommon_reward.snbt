@@ -38,7 +38,6 @@
 		{ item: "minecraft:lava_bucket", weight: 5.0f }
 		{ item: "functionalstorage:compacting_drawer", weight: 10.0f }
 		{ count: 4, item: "minecraft:ender_pearl", random_bonus: 4, weight: 10.0f }
-		{ item: "minecraft:ender_eye", random_bonus: 2, weight: 5.0f }
 		{
 			item: {
 				Count: 1b
@@ -50,6 +49,7 @@
 					}]
 				}
 			}
+			title: "Protection II"
 		}
 		{
 			item: {
@@ -62,6 +62,7 @@
 					}]
 				}
 			}
+			title: "Fire Protection II"
 		}
 		{
 			item: {
@@ -74,6 +75,7 @@
 					}]
 				}
 			}
+			title: "Feather Falling II"
 		}
 		{
 			item: {
@@ -86,6 +88,7 @@
 					}]
 				}
 			}
+			title: "Thorns II"
 		}
 		{
 			item: {
@@ -98,6 +101,7 @@
 					}]
 				}
 			}
+			title: "Sharpness II"
 		}
 		{
 			item: {
@@ -110,6 +114,7 @@
 					}]
 				}
 			}
+			title: "Looting II"
 		}
 		{
 			item: {
@@ -122,6 +127,21 @@
 					}]
 				}
 			}
+			title: "Fortune II"
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "veinmining:vein_mining"
+						lvl: 1s
+					}]
+				}
+			}
+			title: "Vein Mining I"
+			weight: 5.0f
 		}
 		{ count: 4, item: "minecraft:quartz", random_bonus: 4, weight: 10.0f }
 		{ count: 2, item: "ae2:silicon", random_bonus: 4, weight: 15.0f }

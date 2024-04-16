@@ -10,45 +10,6 @@
 	loot_size: 1
 	order_index: 18
 	rewards: [
-		{
-			item: {
-				Count: 1b
-				id: "minecraft:enchanted_book"
-				tag: {
-					StoredEnchantments: [{
-						id: "minecraft:fortune"
-						lvl: 5s
-					}]
-				}
-			}
-			weight: 3.0f
-		}
-		{
-			item: {
-				Count: 1b
-				id: "minecraft:enchanted_book"
-				tag: {
-					StoredEnchantments: [{
-						id: "minecraft:efficiency"
-						lvl: 5s
-					}]
-				}
-			}
-			weight: 3.0f
-		}
-		{
-			item: {
-				Count: 1b
-				id: "minecraft:enchanted_book"
-				tag: {
-					StoredEnchantments: [{
-						id: "veinmining:vein_mining"
-						lvl: 3s
-					}]
-				}
-			}
-			weight: 5.0f
-		}
 		{ item: "sophisticatedbackpacks:stack_upgrade_tier_4" }
 		{ item: "functionalstorage:diamond_upgrade", weight: 3.0f }
 		{ item: "ars_nouveau:source_gem_block", random_bonus: 2, weight: 3.0f }
@@ -110,11 +71,54 @@
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
-						id: "minecraft:protection"
+						id: "minecraft:fortune"
 						lvl: 2s
 					}]
 				}
 			}
+			title: "Fortune II"
+			weight: 10.0f
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:efficiency"
+						lvl: 3s
+					}]
+				}
+			}
+			title: "Efficiency 3"
+			weight: 3.0f
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "veinmining:vein_mining"
+						lvl: 2s
+					}]
+				}
+			}
+			title: "Vein Mining II"
+			weight: 5.0f
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 3s
+					}]
+				}
+			}
+			title: "Protection III"
 		}
 		{
 			item: {
@@ -123,10 +127,11 @@
 				tag: {
 					StoredEnchantments: [{
 						id: "minecraft:fire_protection"
-						lvl: 2s
+						lvl: 3s
 					}]
 				}
 			}
+			title: "Fire Protection III"
 		}
 		{
 			item: {
@@ -139,6 +144,7 @@
 					}]
 				}
 			}
+			title: "Feather Falling II"
 		}
 		{
 			item: {
@@ -151,6 +157,7 @@
 					}]
 				}
 			}
+			title: "Thorns II"
 		}
 		{
 			item: {
@@ -159,10 +166,11 @@
 				tag: {
 					StoredEnchantments: [{
 						id: "minecraft:sharpness"
-						lvl: 2s
+						lvl: 3s
 					}]
 				}
 			}
+			title: "Sharpness III"
 		}
 		{
 			item: {
@@ -175,6 +183,7 @@
 					}]
 				}
 			}
+			title: "Looting II"
 		}
 		{
 			item: {
@@ -187,6 +196,7 @@
 					}]
 				}
 			}
+			title: "Fortune II"
 		}
 		{ count: 4, item: "minecraft:quartz", random_bonus: 4, weight: 10.0f }
 		{ count: 2, item: "ae2:silicon", random_bonus: 4, weight: 15.0f }
@@ -212,6 +222,7 @@
 		{ item: "minecraft:name_tag", weight: 5.0f }
 		{ item: "reliquary:fertile_lily_pad", random_bonus: 2, weight: 5.0f }
 		{ item: "minecraft:wither_skeleton_skull", weight: 10.0f }
+		{ item: "occultism:afrit_essence", random_bonus: 1, weight: 5.0f }
 	]
 	title: "&9Rare Reward"
 	use_title: true

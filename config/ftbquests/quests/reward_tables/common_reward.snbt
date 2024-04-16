@@ -5,7 +5,7 @@
 	order_index: 17
 	rewards: [
 		{ item: "reliquary:fertile_lily_pad" }
-		{ item: "minecraft:fox_spawn_egg", weight: 5.0f }
+		{ item: "kubejs:fox_spawn_egg", weight: 5.0f }
 		{ item: "functionalstorage:copper_upgrade", weight: 5.0f }
 		{ item: "functionalstorage:oak_1", random_bonus: 2, weight: 7.0f }
 		{ item: "functionalstorage:void_upgrade", weight: 3.0f }
@@ -27,6 +27,7 @@
 					}]
 				}
 			}
+			title: "Protection I"
 		}
 		{
 			item: {
@@ -39,6 +40,7 @@
 					}]
 				}
 			}
+			title: "Feather Falling I"
 		}
 		{
 			item: {
@@ -51,6 +53,7 @@
 					}]
 				}
 			}
+			title: "Aqua Affinity"
 		}
 		{
 			item: {
@@ -63,6 +66,7 @@
 					}]
 				}
 			}
+			title: "Sharpness I"
 		}
 		{
 			item: {
@@ -75,6 +79,7 @@
 					}]
 				}
 			}
+			title: "Looting I"
 		}
 		{
 			item: {
@@ -87,6 +92,7 @@
 					}]
 				}
 			}
+			title: "Efficiency I"
 		}
 		{
 			item: {
@@ -99,6 +105,7 @@
 					}]
 				}
 			}
+			title: "Unbreaking I"
 		}
 		{
 			item: {
@@ -111,6 +118,7 @@
 					}]
 				}
 			}
+			title: "Fortune I"
 		}
 		{ count: 6, item: "minecraft:slime_ball", random_bonus: 6, weight: 7.0f }
 		{ item: "minecraft:name_tag", weight: 3.0f }

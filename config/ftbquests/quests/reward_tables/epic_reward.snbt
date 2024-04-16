@@ -27,6 +27,7 @@
 					}]
 				}
 			}
+			title: "Fortune III"
 			weight: 10.0f
 		}
 		{
@@ -36,11 +37,26 @@
 				tag: {
 					StoredEnchantments: [{
 						id: "minecraft:efficiency"
+						lvl: 5s
+					}]
+				}
+			}
+			title: "Efficiency V"
+			weight: 3.0f
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "veinmining:vein_mining"
 						lvl: 3s
 					}]
 				}
 			}
-			weight: 10.0f
+			title: "Vein Mining III"
+			weight: 5.0f
 		}
 		{
 			item: {
@@ -53,6 +69,7 @@
 					}]
 				}
 			}
+			title: "Protection III"
 			weight: 10.0f
 		}
 		{
@@ -66,6 +83,7 @@
 					}]
 				}
 			}
+			title: "Sharpness III"
 			weight: 10.0f
 		}
 		{ item: "artifacts:eternal_steak", weight: 5.0f }
@@ -97,6 +115,7 @@
 					Damage: 0
 				}
 			}
+			weight: 10.0f
 		}
 		{
 			item: {
