@@ -13,11 +13,7 @@
 	images: [
 		{
 			alpha: 200
-			click: ""
-			corner: false
-			dev: false
 			height: 14.0d
-			hover: [ ]
 			image: "kubejs:textures/gui/quest_bg_square.png"
 			order: 1
 			rotation: 0.0d
@@ -26,11 +22,7 @@
 			y: 0.0d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 45.714285714285715d
-			hover: [ ]
 			image: "kubejs:textures/gui/arcane_journey_bg.png"
 			rotation: 0.0d
 			width: 80.0d
@@ -83,6 +75,7 @@
 					type: "item"
 				}
 			]
+			shape: "pentagon"
 			tasks: [{
 				id: "3C638DEE93C407D4"
 				title: "Let the journey begin!"
@@ -124,7 +117,10 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["6EFF8BCEBC2E2AF2"]
+			dependencies: [
+				"6EFF8BCEBC2E2AF2"
+				"43E781FBEA5B1063"
+			]
 			hide: true
 			icon: "kubejs:copper_mechanism"
 			id: "3B25D99BFA2C928C"
@@ -142,10 +138,13 @@
 			}]
 			title: "Chapter 1A: Copper"
 			x: -0.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["6EFF8BCEBC2E2AF2"]
+			dependencies: [
+				"43E781FBEA5B1063"
+				"6EFF8BCEBC2E2AF2"
+			]
 			description: [
 				"You've succeeded at Andesite Mechanisms, you're ready for the next step."
 				"Work toward automating Brass Casings and Brass Mechanisms and you can complete this chapter."
@@ -203,7 +202,7 @@
 			}]
 			title: "Chapter 2C: Stronk"
 			x: 1.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["19232B8B77F86AF8"]
@@ -234,14 +233,11 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 4: Plastic Pandemonium"
-			x: 4.0d
-			y: 4.0d
+			x: 3.5d
+			y: 4.5d
 		}
 		{
-			dependencies: [
-				"3A10D0D5E8548C54"
-				"29F5D0F4112BB554"
-			]
+			dependencies: ["3A10D0D5E8548C54"]
 			hide: true
 			hide_details_until_startable: false
 			icon: "kubejs:radiant_mechanism"
@@ -397,7 +393,10 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["411FC26DBB795420"]
+			dependencies: [
+				"03C7E04B5BBB84A2"
+				"411FC26DBB795420"
+			]
 			hide: true
 			icon: "minecraft:end_portal_frame"
 			id: "1F82B34266C1F94E"
@@ -549,7 +548,7 @@
 					type: "item"
 				}
 			]
-			shape: "octagon"
+			shape: "pentagon"
 			size: 1.5d
 			tasks: [{
 				id: "7EB3AB6F6CE7837A"
@@ -574,7 +573,7 @@
 			subtitle: "Power!"
 			title: "Chapter 2A: Power"
 			x: 0.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3A10D0D5E8548C54"]
@@ -591,7 +590,7 @@
 			subtitle: "More Machines"
 			title: "Chapter 2B: Scorch Machine"
 			x: 1.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["19232B8B77F86AF8"]
@@ -622,8 +621,8 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 5: Integrated Innovations"
-			x: 4.0d
-			y: 3.0d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -652,7 +651,7 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 6: Quantum Quintessence"
-			x: 5.5d
+			x: 4.5d
 			y: 3.5d
 		}
 		{
@@ -679,8 +678,40 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 7: Temporal Termination"
-			x: 7.0d
+			x: 6.0d
 			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["411FC26DBB795420"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "patchouli:machination_guide"
+				}
+			}
+			id: "56529B1CF5FA02FE"
+			optional: true
+			rewards: [{
+				id: "4429BAC9D87E3C70"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:machination_guide"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "505AA3632CF07D65"
+				title: "Give me a new Guide Book"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -4.5d
 		}
 	]
 	title: "The Arcane Odyssey"

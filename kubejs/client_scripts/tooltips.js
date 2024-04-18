@@ -61,7 +61,7 @@ ItemEvents.tooltip(tooltip => {
     });
 
     tooltip.addAdvanced('occultism:datura_seeds', (item, advanced, text) => {
-        text.add(Text.darkPurple('Only dropped by the Warden!'));
+        text.add(Text.darkAqua('Only dropped by the Elder Guardian!'));
     });
 
     tooltip.addAdvanced(/sophisticatedbackpacks:.*backpack/, (item, advanced, text) => {

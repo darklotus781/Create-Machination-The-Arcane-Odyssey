@@ -6,7 +6,15 @@
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:radiant_mechanism"
 	id: "1A4885ECDFA72AC9"
-	order_index: 3
+	images: [{
+		height: 20.0d
+		image: "kubejs:textures/gui/quest_bg_square.png"
+		rotation: 0.0d
+		width: 20.0d
+		x: -6.0d
+		y: -2.0d
+	}]
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -60,7 +68,6 @@
 			dependencies: [
 				"378AA5835A43019D"
 				"0B29D4CC7DC8B623"
-				"64B38B300C2FD3F1"
 			]
 			id: "0F952731A2884135"
 			rewards: [{

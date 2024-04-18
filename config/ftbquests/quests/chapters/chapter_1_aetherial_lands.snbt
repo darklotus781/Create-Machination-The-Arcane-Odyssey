@@ -8,11 +8,7 @@
 	id: "401DD7DCCE023222"
 	images: [
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 20.0d
-			hover: [ ]
 			image: "kubejs:textures/gui/quest_bg_square.png"
 			order: 1
 			rotation: 0.0d
@@ -21,11 +17,7 @@
 			y: 1.0d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 44.0d
-			hover: [ ]
 			image: "kubejs:textures/gui/aether_bg.png"
 			rotation: 0.0d
 			width: 77.0d
@@ -396,6 +388,7 @@
 					type: "item"
 				}
 			]
+			shape: "pentagon"
 			tasks: [{
 				id: "0BAE67FBB94C31B1"
 				item: "aether:skyroot_sapling"

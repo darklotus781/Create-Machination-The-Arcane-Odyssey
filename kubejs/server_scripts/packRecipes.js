@@ -600,20 +600,12 @@ ServerEvents.recipes(event => {
         ]
     }).id('kubejs:soulless_sand_to_soul_sand_alt_1');
 
+    // Mega Torch
+    event.remove({id: 'torchmaster:megatorch'});
+    event.shaped(Item.of('torchmaster:megatorch'), ['ttt','dmd','gmg'], {t: Item.of('minecraft:torch'), d: Ingredient.of('#forge:gems/diamond'), m: Item.of('kubejs:wooden_mechanism'), g: Ingredient.of('#forge:storage_blocks/gold')}).id('kubejs:megatorch')
 
     event.remove({type: 'thermal:press'});
     trading(event);
-});
-
-ServerEvents.recipes(e => {
-    let t = Item.of('kubejs:incomplete_calculation_processor');
-    e.recipes.create.sequenced_assembly(
-        [Item.of('ae2:printed_calculation_processor')],
-        Item.of('ae2:certus_quartz_crystal'), [
-            e.recipes.createFilling(t, [t, Fluid.lava(100)]),
-            e.recipes.createDeploying(t, [t, Item.of('ae2:calculation_processor_press')]).keepHeldItem(),
-            e.recipes.createPressing(t, t)
-        ]).transitionalItem(t).loops(1).id('kubejs:sequential/printed_calculation_processor_from_certus_quartz_crystal');
 });
 
 // BlockEvents.rightClicked('minecraft:end_portal_frame', event => {

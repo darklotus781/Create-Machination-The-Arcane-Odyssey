@@ -6,7 +6,15 @@
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:quantum_mechanism"
 	id: "467EFE69A1D98513"
-	order_index: 6
+	images: [{
+		height: 20.0d
+		image: "kubejs:textures/gui/quest_bg_square.png"
+		rotation: 0.0d
+		width: 20.0d
+		x: 0.5d
+		y: -3.0d
+	}]
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{

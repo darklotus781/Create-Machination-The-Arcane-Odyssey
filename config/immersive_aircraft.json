@@ -29,7 +29,8 @@
   "validDimensions": {
     "minecraft:the_nether": true,
     "minecraft:the_end": true,
-    "minecraft:overworld": true
+    "minecraft:overworld": true,
+    "aether:the_aether": true
   },
   "gunpowderAmmunition": {
     "minecraft:gunpowder": 100

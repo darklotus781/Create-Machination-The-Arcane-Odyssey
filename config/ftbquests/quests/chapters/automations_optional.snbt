@@ -1,0 +1,819 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "automations_optional"
+	group: "565532624F0A44A9"
+	id: "3E534D3889040267"
+	images: [
+		{
+			height: 1.0d
+			image: "mcwroofs:block/water_still"
+			rotation: 0.0d
+			width: 0.03125d
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			image: "mcwroofs:block/water_still"
+			rotation: 0.0d
+			width: 0.03125d
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			hover: ["Washing"]
+			image: "mcwroofs:block/water_still"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/fire_0"
+			rotation: 0.0d
+			width: 0.03125d
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "occultism:block/spirit_fire_0"
+			rotation: 0.0d
+			width: 0.03125d
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			hover: ["Smelting"]
+			image: "minecraft:block/fire_1"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.35d
+			y: 5.15d
+		}
+		{
+			height: 1.0d
+			hover: ["Crushing"]
+			image: "davebuildingmod:block/crushing_wheel"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.5d
+			y: 6.75d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/soul_fire_0"
+			rotation: 0.0d
+			width: 0.03125d
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			height: 1.0d
+			hover: ["Haunting"]
+			image: "minecraft:block/soul_fire_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			hover: ["Crushing"]
+			image: "davebuildingmod:block/crushing_wheel"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			hover: ["Crushing"]
+			image: "davebuildingmod:block/crushing_wheel"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			hover: ["Washing"]
+			image: "mcwroofs:block/water_still"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			hover: ["Smelting"]
+			image: "minecraft:block/fire_1"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.35d
+			y: 5.15d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Throughout the world you can find Meteor Craters and under the ocean you can find Resource Geodes."
+				"In mineshaft chests you can find a Catalyst Activation Want.  What do these have in common?"
+				""
+				"A Catalyst Activation Wand is used to move the Catalysts you will find in Meteors and Geodes.  These Catalyst blocks can be moved in any cardinal direction depending on which face of the block you activate with the wand.  The Catalyst will move 3 blocks at a time as long as the destination space is not occupied by another block.  The wand has durability, so be sure to keep an eye on that."
+				""
+				"There are other ways of automating resources, some use Alchemical Conversion via Super Heated mixing while others use mixing and compressing of items."
+			]
+			hide_dependent_lines: true
+			id: "225AF92C2547678F"
+			tasks: [{
+				id: "1122F5DB926B3981"
+				title: "asasdasd"
+				type: "checkmark"
+			}]
+			title: "Automations"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Located in the heart of an AE2 Meteor, you'll find a Sky Stone Catalyst."
+				"If you activate this block with redstone dust, it will spawn Sky Stone all around it in a sphere with a radius of 5 blocks."
+				""
+				"Automating the Sky Stone Catalyst is one way to fuel automated Redstone, Lapis, Quartz and Certus Quartz."
+				"As with most things, there's more than one method to automate those resources, this is one of those methods."
+			]
+			id: "12424AF18964D748"
+			rewards: [{
+				count: 16
+				id: "79A22C6F7536D748"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					icon: "createresourcegeodes:sky_stone_catalyst"
+					id: "11295441371D4DFC"
+					structure: "ae2:meteorite"
+					title: "Sky Stone Catalyst"
+					type: "structure"
+				}
+				{
+					id: "7AC2BB45C6373BAC"
+					item: "ae2:sky_stone_block"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Found under the ocean, the Asurine Geode contains Asurine and Zinc."
+				"If you grind the Asurine blocks with a set of Crushing wheels, you'll end up with crushed zinc and zinc nuggets."
+				""
+				"If you activate the Catalyst with redstone dust, it will produce more Asurine blocks within a 5 block radius in a spherical shape."
+				"As with other Catalyst blocks, activation with the Wand will move it 3 blocks in the opposing direction."
+			]
+			id: "08C432CCCEE38E87"
+			rewards: [{
+				count: 16
+				id: "7998FFDB76E91180"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					icon: "createresourcegeodes:asurine_catalyst"
+					id: "08E65FE24DE7FE39"
+					structure: "createresourcegeodes:asurine_geode"
+					title: "Asurine Catalyst"
+					type: "structure"
+				}
+				{
+					id: "5AD2793F0C146364"
+					item: "create:asurine"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Found under the ocean, the Crimsite Geode contains Asurine and Iron."
+				"If you grind the Crimsite blocks with a set of Crushing wheels, you'll end up with crushed iron and iron nuggets."
+				""
+				"If you activate the Catalyst with redstone dust, it will produce more Crimsite blocks within a 5 block radius in a spherical shape."
+				"As with other Catalyst blocks, activation with the Wand will move it 3 blocks in the opposing direction."
+			]
+			id: "75742009CB53E5F5"
+			rewards: [{
+				count: 16
+				id: "62C3F75B3C878D23"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					icon: "createresourcegeodes:crimsite_catalyst"
+					id: "579F373C82E2022A"
+					structure: "createresourcegeodes:crimsite_geode"
+					title: "Crimsite Catalyst"
+					type: "structure"
+				}
+				{
+					id: "09D853D7E3B53A0A"
+					item: "create:crimsite"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Found under the ocean, the Ochrum Geode contains Ochrum and Gold."
+				"If you grind the Ochrum blocks with a set of Crushing wheels, you'll end up with crushed gold and gold nuggets."
+				""
+				"If you activate the Catalyst with redstone dust, it will produce more Ochrum blocks within a 5 block radius in a spherical shape."
+				"As with other Catalyst blocks, activation with the Wand will move it 3 blocks in the opposing direction."
+			]
+			id: "4D6F01AE284E51EF"
+			rewards: [{
+				count: 16
+				id: "3FDA252FDF2A95C1"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					icon: "createresourcegeodes:ochrum_catalyst"
+					id: "3B4A93DE8A153105"
+					structure: "createresourcegeodes:ochrum_geode"
+					title: "Ochrum Catalyst"
+					type: "structure"
+				}
+				{
+					id: "1ACFC08A104FC47E"
+					item: "create:ochrum"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Found under the ocean, the Veridium Geode contains Veridium and Copper."
+				"If you grind the Veridium blocks with a set of Crushing wheels, you'll end up with crushed copper and copper nuggets."
+				""
+				"If you activate the Catalyst with redstone dust, it will produce more Veridium blocks within a 5 block radius in a spherical shape."
+				"As with other Catalyst blocks, activation with the Wand will move it 3 blocks in the opposing direction."
+			]
+			id: "566CD8F0C9AFADCF"
+			rewards: [{
+				count: 16
+				id: "1DFB97A83EAAADFC"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					icon: "createresourcegeodes:veridium_catalyst"
+					id: "634E307FE7FC327E"
+					structure: "createresourcegeodes:veridium_geode"
+					title: "Veridium Catalyst"
+					type: "structure"
+				}
+				{
+					id: "18C35A2AE8AD12DB"
+					item: "create:veridium"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Using the Arcane powers of Alchemy, we can produce one item from another."
+				""
+				"Molten Lead can be obtained by mixing some Molten Lead with 2x Iron Ingots and Liquid Source."
+				"Molten Lead cannot be converted back to ingots but it is used in some recipes."
+			]
+			id: "399D11209170DEB9"
+			rewards: [{
+				id: "067E4E0319C1CA6C"
+				item: "kubejs:source_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "793DC169B6975310"
+				item: "kubejs:molten_lead_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Using the Arcane powers of Alchemy, we can produce one item from another."
+				""
+				"Molten Diamond can be obtained by mixing some Molten Diamond with an Emerald and Liquid Source."
+				"Molten Diamond cannot be converted back to gems but it is used in some advanced recipes."
+			]
+			id: "6D268764DF9406C9"
+			rewards: [{
+				id: "38F8AA708227FC51"
+				item: "kubejs:source_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5FCAAFE07DC4E454"
+				item: "kubejs:molten_diamond_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Using the Arcane powers of Alchemy, we can produce one item from another."
+				""
+				"Molten Copper can be obtained by mixing some Molten Copper with 2x Iron Ingots and Liquid Source."
+				"Molten Copper cannot be converted back to ingots but it is used in some recipes."
+			]
+			id: "6FBA208E3ED5A77D"
+			rewards: [{
+				id: "20A3EF0F138A0CAE"
+				item: "kubejs:source_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E6898516F77A4B4"
+				item: "kubejs:molten_copper_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Using the Arcane powers of Alchemy, we can produce one item from another."
+				""
+				"Molten Diamond can be obtained by mixing some Molten Diamond with an Emerald and Liquid Source."
+				"Molten Diamond cannot be converted back to gems but it is used in some advanced recipes."
+			]
+			id: "721FCB8B7785D374"
+			rewards: [{
+				id: "4C40986CCC513048"
+				item: "kubejs:source_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B791143584A9E50"
+				item: "kubejs:molten_gold_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Crush Redstone Dust -> 3x Redstone Seeds"
+				""
+				"- Spout Stabilized Sky Slurry on Seed"
+				"- Deploy sand on Seed"
+				"Turns into a Redstone Cluster"
+				""
+				"Smelt the cluster into Redstone Dust, repeat the process."
+			]
+			id: "34772BF762811C72"
+			rewards: [{
+				id: "7F93041D9426A590"
+				item: "kubejs:sky_slurry_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0A18CEB638473FF1"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "19349E2706E6BC59"
+					item: "kubejs:redstone_seed"
+					type: "item"
+				}
+				{
+					id: "73127F54A895DCC8"
+					item: "kubejs:redstone_cluster"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Crush Nether Quartz -> 3x Nether Quartz Seeds"
+				""
+				"- Spout Stabilized Sky Slurry on Seed"
+				"- Deploy sand on Seed"
+				"Turns into a Nether Quartz Cluster"
+				""
+				"Smelt the Cluster into Nether Quartz, repeat the process."
+			]
+			id: "1542799ED14EB311"
+			rewards: [{
+				id: "5C25E52114A64077"
+				item: "kubejs:sky_slurry_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "143729B7E00302F6"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "4F188E79234A8707"
+					item: "kubejs:quartz_seed"
+					type: "item"
+				}
+				{
+					id: "48892D9F72D08153"
+					item: "kubejs:quartz_cluster"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Crush Certus Quartz Crystal -> 3x Certus Quartz Seeds"
+				""
+				"- Spout Stabilized Sky Slurry on Seed"
+				"- Deploy sand on Seed"
+				"Turns into a Certus Quartz Cluster"
+				""
+				"Smelt the Cluster into Certus Quartz Crystal, repeat the process."
+			]
+			id: "5450959BC406ED44"
+			rewards: [{
+				id: "35AEBC26DF530A9E"
+				item: "kubejs:sky_slurry_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "23EBACF286DC9814"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "6BE731D9B9291956"
+					item: "kubejs:certus_quartz_seed"
+					type: "item"
+				}
+				{
+					id: "2835983F5B2E4A23"
+					item: "kubejs:certus_quartz_cluster"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Crush Lapis Lazuli -> 3x Lapis Seeds"
+				""
+				"- Spout Liquid Experience on Seed"
+				"- Deploy sand on Seed"
+				"Turns into a Lapis Cluster"
+				""
+				"Smelt the Cluster into Lapis Lazuli, repeat the process."
+			]
+			id: "6E9721B8E61CCF86"
+			rewards: [{
+				id: "6C2BB5E06C6C1991"
+				item: "create:experience_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0CC3DC53CAE6F00D"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "24154BD19577E2D7"
+					item: "kubejs:lapis_seed"
+					type: "item"
+				}
+				{
+					id: "773A938D185A99FE"
+					item: "kubejs:lapis_cluster"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Crush Fluix Crystal -> 3x Fluix Seeds"
+				""
+				"- Spout Stabilized Sky Slurry on Seed"
+				"- Deploy sand on Seed"
+				"Turns into a Fluix Cluster"
+				""
+				"Smelt the Cluster into Fluix Crystal, repeat the process."
+			]
+			id: "2571F44400ED7E12"
+			rewards: [{
+				id: "5970E3B68AF2DC22"
+				item: "kubejs:sky_slurry_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4A951EFCCDDAD17F"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+				{
+					id: "6610ACFD2E7EE4BE"
+					item: "kubejs:fluix_seed"
+					type: "item"
+				}
+				{
+					id: "2213D15A9C0B338E"
+					item: "kubejs:fluix_cluster"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Produce Cobblestone with some sort of farm."
+				"We provide a couple of schematics to get you started."
+				"The right-to-left questline is crushing, below is smelting and above is washing as indicated by icons."
+			]
+			id: "4D21F00754E043CC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "716DC95C3F11CAFF"
+				table_id: 6707215151316632623L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 64L
+				id: "4627C676C509D42E"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4D21F00754E043CC"]
+			id: "066E20B7AFCD0A24"
+			rewards: [{
+				id: "4F9D4F9722DB8032"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				count: 64L
+				id: "22B2CB43625DB412"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["066E20B7AFCD0A24"]
+			id: "19C15B8868A3ED86"
+			rewards: [{
+				id: "2D55370377464BA1"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				count: 64L
+				id: "7F2B689368429454"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["19C15B8868A3ED86"]
+			id: "0AAE159389CBF5B2"
+			rewards: [
+				{
+					id: "241813247CCBB589"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 32
+					id: "447635262B07D29B"
+					item: "kubejs:andesite_blend"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "4487CBC0B5A820C0"
+				item: "kubejs:andesite_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["066E20B7AFCD0A24"]
+			id: "4DF3B7AEB9146D4D"
+			rewards: [
+				{
+					id: "05213FB3993CD2A7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 32
+					id: "56DBC10FF9F3C507"
+					item: "minecraft:red_sandstone"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "1E33DC5C01BAB107"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["066E20B7AFCD0A24"]
+			id: "0469AA77E4473D95"
+			rewards: [{
+				id: "2C7940E13A100338"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "734F2AF40FB1A501"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5EEE60B8DD7632FE"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4DF3B7AEB9146D4D"]
+			id: "435F6903CBDDED36"
+			rewards: [
+				{
+					id: "4424A9DD419FCE71"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 64
+					id: "73F9630F12EBD9CC"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "3B52240EFDFF76FE"
+				item: "forbidden_arcanus:soulless_sand"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4DF3B7AEB9146D4D"]
+			id: "61B8B7E421A74D9D"
+			rewards: [
+				{
+					id: "3EF1C1C9ACB50220"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 32
+					id: "0EBAA225E4A91C36"
+					item: "minecraft:terracotta"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "1A0F87D01F7F5325"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4DF3B7AEB9146D4D"]
+			id: "06284BE4D11F1317"
+			rewards: [
+				{
+					id: "4250E6477B20E410"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 64
+					id: "4D9E36DE86BCBDE8"
+					item: "create:framed_glass"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "62A259D8514D6E91"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["225AF92C2547678F"]
+			description: [
+				"Crushing Runes will produce 4x Rune Dust."
+				"Compacting 2x Rune Dust with a piece of flint over heat will produce a Rune."
+			]
+			id: "3CB110028804E4C2"
+			rewards: [
+				{
+					count: 16
+					id: "5E97CF456EDC102E"
+					item: "kubejs:rune_dust"
+					type: "item"
+				}
+				{
+					id: "02133A44A7A7EC41"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "3E3E91D90EB4F6DC"
+				item: "forbidden_arcanus:rune"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+	]
+	title: "Automations (optional)"
+}

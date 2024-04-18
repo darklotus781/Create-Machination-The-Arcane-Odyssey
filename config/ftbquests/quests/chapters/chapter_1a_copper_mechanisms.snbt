@@ -5,19 +5,27 @@
 	group: "565532624F0A44A9"
 	icon: "kubejs:copper_mechanism"
 	id: "085E3913727BAFF4"
-	images: [{
-		click: ""
-		corner: false
-		dev: false
-		height: 0.5d
-		hover: ["You need to get into Botania first!"]
-		image: "botania:block/pure_daisy"
-		rotation: 0.0d
-		width: 0.5d
-		x: -5.25d
-		y: 2.5d
-	}]
-	order_index: 1
+	images: [
+		{
+			height: 0.5d
+			hover: ["You need to get into Botania first!"]
+			image: "botania:block/pure_daisy"
+			order: 1
+			rotation: 0.0d
+			width: 0.5d
+			x: -4.25d
+			y: -0.5d
+		}
+		{
+			height: 20.0d
+			image: "kubejs:textures/gui/quest_bg_square.png"
+			rotation: 0.0d
+			width: 20.0d
+			x: 2.0d
+			y: 1.0d
+		}
+	]
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -46,7 +54,7 @@
 				type: "item"
 			}]
 			title: "Chapter 1A: Copper"
-			x: 5.5d
+			x: 4.0d
 			y: 2.5d
 		}
 		{
@@ -57,6 +65,12 @@
 				"Copper Casing has practical application: it can be applied to pipes in-world to prevent them from connecting to other pipes. This feature is particularly useful in managing and organizing complex piping systems, ensuring that different pipes function independently as needed."
 			]
 			id: "565F22375D77FBFE"
+			rewards: [{
+				count: 64
+				id: "0D4DF01F4C5102B2"
+				item: "create:copper_casing"
+				type: "item"
+			}]
 			tasks: [{
 				count: 8L
 				id: "6E409C27A8F7F608"
@@ -74,7 +88,6 @@
 				""
 				"Follow these steps to get fully automated Sealed Copper Mechanisms."
 			]
-			hide: true
 			id: "6CB65317C276CB6B"
 			rewards: [
 				{
@@ -98,12 +111,13 @@
 			}]
 			title: "Chapter 1A Start"
 			x: -0.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
 				"6CB65317C276CB6B"
 				"3F4B0C44D2C22AE7"
+				"7CF14AA7B08446D3"
 			]
 			description: [
 				"Copper Frames are crafted by applying a copper plate to a stripped log. This process can be done either through the use of a deployer or by manually applying it in-world."
@@ -128,7 +142,50 @@
 		}
 		{
 			dependencies: ["69760E4E45A3446C"]
+			description: [
+				"You can melt 8x copper ingots over normal heat in a mixer, this will produce 1 bucket or 1000mb of Molten Copper."
+				""
+				"Molten Copper CANNOT be converted back to ingots, the melting process changes the purity of the copper and it's only useful for mixing."
+			]
 			id: "5452CEA68AC9BE5F"
+			rewards: [{
+				icon: "create:fluid_tank"
+				id: "1B383DEDAA9E873E"
+				item: {
+					Count: 1b
+					id: "create:fluid_tank"
+					tag: {
+						BlockEntityTag: {
+							Boiler: {
+								ActiveHeat: 0
+								Engines: 0
+								PassiveHeat: 0b
+								Supply: 0.0f
+								Update: 0b
+								Whistles: 0
+							}
+							ForgeCaps: { }
+							Owner: [I;
+								-1243531549
+								1104364306
+								-1628396842
+								-1363810914
+							]
+							TankContent: {
+								Amount: 5000
+								FluidName: "kubejs:molten_copper"
+							}
+							Window: 1b
+							id: "create:fluid_tank"
+						}
+						display: {
+							Lore: ["\"(+NBT)\""]
+						}
+					}
+				}
+				title: "Molten Copper"
+				type: "item"
+			}]
 			tasks: [{
 				id: "322F5F16D314FA8D"
 				item: "kubejs:molten_copper_bucket"
@@ -139,6 +196,12 @@
 		}
 		{
 			dependencies: ["6CB65317C276CB6B"]
+			description: [
+				"Slime Balls can be automated from a small wheat and sea pickle farm."
+				"Wheat to make dough, sea pickles for lime green dye."
+				""
+				"There are other ways, this is just one!"
+			]
 			hide_dependency_lines: true
 			id: "401BAD72760BCC7E"
 			tasks: [{
@@ -146,11 +209,17 @@
 				item: "minecraft:slime_ball"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -0.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6CB65317C276CB6B"]
+			description: [
+				"Automating rubber is pretty straight forward."
+				"Use an Arboreal Extractor on a tree that produces resin, compact the resin into uncured rubber and then smelt it.  If you squirt some menril resin on the rubber, it becomes more effective."
+				""
+				"Remember talking about the power of menril before?  This is one of those places it increases efficiency."
+			]
 			hide_dependency_lines: true
 			id: "2E3000DF44772478"
 			tasks: [
@@ -165,11 +234,12 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
-			y: -0.5d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6CB65317C276CB6B"]
+			description: ["You should have these automated, feed some from your prior automation line."]
 			hide_dependency_lines: true
 			id: "06CD8435C91CC9B0"
 			tasks: [{
@@ -177,12 +247,19 @@
 				item: "kubejs:andesite_mechanism"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.0d
+			x: 6.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6CB65317C276CB6B"]
+			description: ["If you need an infinite supply of Copper, there's the Veridium Geode and Catalyst or... Ars Nouveau Drygmy + Drowned = Copper :)"]
 			id: "0E1AADB373A00130"
+			rewards: [{
+				count: 16
+				id: "451239B2B41652D6"
+				item: "minecraft:copper_ore"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3C0D7922CA5141C8"
 				item: "minecraft:copper_ingot"
@@ -193,7 +270,17 @@
 		}
 		{
 			dependencies: ["0E1AADB373A00130"]
+			description: [
+				"This should be Create: 101, but find a blaze spawner and use an empty blaze burner on it."
+				"Or, you can capture blazes with them too."
+				"You could use a Runic Tablet with an empty blaze burner, what a waste :D"
+			]
 			id: "4AA6D17D86B67A3F"
+			rewards: [{
+				id: "09F92A303D0C7B37"
+				item: "kubejs:blaze_spawn_egg"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4DE29AC2636C2BF8"
 				item: "create:blaze_burner"
@@ -204,7 +291,16 @@
 		}
 		{
 			dependencies: ["4AA6D17D86B67A3F"]
+			description: [
+				"Setup a Mixer over a basin on a Blaze Burner."
+				"Time to melt some copper!"
+			]
 			id: "69760E4E45A3446C"
+			rewards: [{
+				id: "6C0FD396F8BCE2B6"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "65A6909E6A77C9A7"
 				item: "create:basin"
@@ -220,7 +316,20 @@
 				"06CD8435C91CC9B0"
 				"2E3000DF44772478"
 			]
+			description: [
+				"There are two methods of producing Copper Mechanisms."
+				""
+				"1 - Mix your ingredients, it costs a bit more Molten Copper but is a single step and may be worth it before automating.,"
+				""
+				"2 - Using Sequenced Assembly, you use less Molten Copper and is idea for full automation."
+			]
 			id: "3B9E82460E3B6F0B"
+			rewards: [{
+				count: 16
+				id: "1E63E537714E4AED"
+				item: "kubejs:enriched_rubber"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5C68379289D1945B"
 				item: "create:basin"
@@ -231,7 +340,14 @@
 		}
 		{
 			dependencies: ["0E1AADB373A00130"]
+			description: ["With the help of a mechanical press, automating copper plates should be simple enough."]
 			id: "3F4B0C44D2C22AE7"
+			rewards: [{
+				count: 8
+				id: "2527E983F1DE9F94"
+				item: "alltheores:copper_plate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "557910D6F1793D58"
 				item: "alltheores:copper_plate"
@@ -241,11 +357,27 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["6CB65317C276CB6B"]
+			dependencies: [
+				"565F22375D77FBFE"
+				"1BDD4D24BFC45F01"
+			]
 			description: ["Automation is key, build up your factory.  Once you've fully automated these items, click them to continue to the next chapter!"]
-			hide_dependency_lines: true
 			id: "3B819E8E7F93FD1C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "56B0633C157A43B0"
+					table_id: 8665642549628564693L
+					type: "random"
+				}
+				{
+					id: "29267C819FF0F567"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					consume_items: true
@@ -263,17 +395,22 @@
 				}
 			]
 			title: "Automations"
-			x: 1.0d
-			y: -1.0d
+			x: -0.5d
+			y: 2.5d
 		}
 		{
-			dependencies: [
-				"67F9D140A432A965"
-				"7A359C1F5E041C4F"
+			dependencies: ["6CB65317C276CB6B"]
+			description: [
+				"Overly complicated?  Check!"
+				"Save up some gold and buy an unbreakable chisel, totally worth it!"
 			]
-			hide: false
-			hide_dependency_lines: true
 			id: "7CF14AA7B08446D3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2ED2935B42A080C7"
+				table_id: 8965856735169877955L
+				type: "random"
+			}]
 			tasks: [{
 				id: "6EF6220039D6D0D4"
 				item: {
@@ -285,8 +422,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.5d
+			x: -3.5d
+			y: -0.5d
 		}
 	]
 	title: "1A: Copper Mechanisms"

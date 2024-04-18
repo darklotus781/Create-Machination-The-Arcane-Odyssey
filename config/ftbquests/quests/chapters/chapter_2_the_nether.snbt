@@ -8,11 +8,7 @@
 	id: "2B528CDE6E448F87"
 	images: [
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 16.0d
-			hover: [ ]
 			image: "kubejs:textures/gui/quest_bg_square.png"
 			order: 1
 			rotation: 0.0d
@@ -21,11 +17,7 @@
 			y: 0.0d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 44.0d
-			hover: [ ]
 			image: "kubejs:textures/gui/nether_bg.png"
 			rotation: 0.0d
 			width: 77.0d
@@ -252,6 +244,8 @@
 					type: "random"
 				}
 			]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				consume_items: false
 				icon: "netherportalitem:nether_portal_frame"
@@ -268,6 +262,7 @@
 			hide: true
 			icon: "netherportalitem:nether_portal_frame"
 			id: "394B02F151B85E24"
+			shape: "pentagon"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				icon: "netherportalitem:nether_portal_frame"

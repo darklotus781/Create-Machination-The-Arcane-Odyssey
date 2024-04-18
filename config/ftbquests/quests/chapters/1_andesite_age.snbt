@@ -7,19 +7,27 @@
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:andesite_mechanism"
 	id: "203225418B0EED52"
-	images: [{
-		click: ""
-		corner: false
-		dev: false
-		height: 0.5d
-		hover: ["You need to get into Botania first!"]
-		image: "botania:block/pure_daisy"
-		rotation: 0.0d
-		width: 0.5d
-		x: -0.75d
-		y: 1.5d
-	}]
-	order_index: 0
+	images: [
+		{
+			height: 0.5d
+			hover: ["You need to get into Botania first!"]
+			image: "botania:block/pure_daisy"
+			order: 1
+			rotation: 0.0d
+			width: 0.5d
+			x: -0.75d
+			y: 1.5d
+		}
+		{
+			height: 20.0d
+			image: "kubejs:textures/gui/quest_bg_square.png"
+			rotation: 0.0d
+			width: 20.0d
+			x: 0.5d
+			y: -3.0d
+		}
+	]
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -27,7 +35,7 @@
 				"50186B4B459E4244"
 				"3E7E28CA78FF4AD5"
 			]
-			description: ["Wooden Mechanisms, while basic, play a crucial role as a starter item in the crafting process. Their primary function is to create Sturdy Mechanisms and Andesite Machines. However, due to their limited strength and capability, Wooden Mechanisms are not suitable for more advanced applications. If your goal is to automate the production of Andesite Machines effectively, it is advisable to first focus on automating Kinetic Mechanisms. By doing so, you lay a stronger foundation for more complex and efficient automation processes, ultimately leading to a more advanced and productive system."]
+			description: ["Wooden Mechanisms, while basic, play a crucial role as a starter item in the crafting process. Their primary function is to create Smithing Templates to get you started.  It's very expensive and ideal only for your first couple of templates."]
 			id: "1E1695DB74F7D27F"
 			rewards: [{
 				id: "19348EB93201B3DA"
@@ -36,12 +44,11 @@
 			}]
 			tasks: [{
 				consume_items: false
-				count: 8L
 				id: "7B279B5D331C28CC"
 				item: "kubejs:wooden_mechanism"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -3.0d
 		}
 		{
@@ -152,7 +159,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0C28B609C72B93BD"]
@@ -162,6 +169,8 @@
 				"To address this, you have a couple of options. "
 				""
 				"You can either produce a substantial quantity of saws to ensure a steady supply as they wear down, or you can invest your efforts in obtaining an eternal saw. An eternal saw, being more durable and long-lasting, eliminates the frequent need for replacements and can significantly streamline your crafting processes, making it a worthwhile pursuit for more efficient and uninterrupted production."
+				""
+				"They cost a fair amount of coins, so you'll need to visit the market and figure out a way to automate some coin production."
 			]
 			id: "50186B4B459E4244"
 			rewards: [{
@@ -239,11 +248,11 @@
 				type: "item"
 			}]
 			title: "Chapter 1A: Logistics"
-			x: 3.0d
-			y: -3.0d
+			x: 4.5d
+			y: 0.5d
 		}
 		{
-			dependencies: ["67F9D140A432A965"]
+			dependencies: ["1E1695DB74F7D27F"]
 			description: ["If you intend to utilize your Andesite Mechanisms in conjunction with a Smithing Table, it's essential to acquire Smithing Templates. These templates are a key component for successfully executing smithing processes, as they can be applied to all future Smithing Recipes. By having Smithing Templates at your disposal, you ensure that your Andesite Mechanisms are fully equipped to handle the demands of smithing tasks. This preparation allows for a more streamlined and efficient crafting experience, enabling you to make the most of your Smithing Table and Andesite Mechanisms in creating a wide range of items and tools."]
 			id: "2727B5EBF6810E4B"
 			optional: true
@@ -258,8 +267,8 @@
 				item: "kubejs:mechanism_smithing_template"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -9.0d
+			x: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -268,6 +277,12 @@
 			]
 			description: ["Andesite Casing is crafted by chiseling Andesite Frames with an Andesite Chisel.  This can be done with a Deployer or in world with your hands!  Figure out how to automate this, it's crucial for the future!"]
 			id: "4D069D926FE16938"
+			rewards: [{
+				count: 64
+				id: "400E040F65FE1283"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
 			tasks: [{
 				count: 8L
 				id: "6F99346AAAA8F9A6"
@@ -304,7 +319,7 @@
 				type: "item"
 			}]
 			title: "Andesite Alloy Automation"
-			x: -1.5d
+			x: -2.0d
 			y: -1.5d
 		}
 		{
@@ -339,7 +354,7 @@
 				}
 			]
 			title: "Andesite Alloy x1"
-			x: -3.0d
+			x: -3.5d
 			y: -1.5d
 		}
 		{
@@ -367,7 +382,7 @@
 				}
 			]
 			title: "Andesite Alloy x4"
-			x: -1.5d
+			x: -2.0d
 			y: -3.0d
 		}
 		{
@@ -422,7 +437,7 @@
 				}
 			]
 			title: "Andesite Blend"
-			x: -3.0d
+			x: -3.5d
 			y: -4.5d
 		}
 		{
@@ -451,7 +466,7 @@
 				}
 			]
 			title: "Menril Farming?"
-			x: -1.5d
+			x: -2.0d
 			y: -4.5d
 		}
 		{
@@ -479,7 +494,7 @@
 				}
 			]
 			title: "Andesite Alloy x2"
-			x: -3.0d
+			x: -3.5d
 			y: -3.0d
 		}
 		{
@@ -509,9 +524,30 @@
 				"67F9D140A432A965"
 				"7A359C1F5E041C4F"
 			]
-			hide: false
+			description: [
+				"Place an Andesite Alloy block under a mana pool to act as a catalyst."
+				"Toss a screwdriver into the mana pool and watch it conver to an andesite chisel."
+			]
 			hide_dependency_lines: true
 			id: "36BB3B03EA1B5464"
+			rewards: [
+				{
+					id: "2DD2B6F4952E1288"
+					item: {
+						Count: 1b
+						id: "botania:mana_tablet"
+						tag: {
+							mana: 500000
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3B948975901EF8EA"
+					type: "xp"
+					xp: 100
+				}
+			]
 			tasks: [{
 				id: "22B7CF91DC260E09"
 				item: {
@@ -527,10 +563,28 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["67F9D140A432A965"]
+			dependencies: [
+				"67F9D140A432A965"
+				"35AD8A90A9541BE9"
+				"4D069D926FE16938"
+			]
 			description: ["Automation is key, build up your factory.  Once you've fully automated these items, click them to continue to the next chapter!"]
 			id: "43E781FBEA5B1063"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "737E01B18A077CA3"
+					table_id: 8665642549628564693L
+					type: "choice"
+				}
+				{
+					id: "6D20EC5B6DB5441B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					consume_items: true
@@ -548,8 +602,8 @@
 				}
 			]
 			title: "Automations"
-			x: 0.75d
-			y: -9.0d
+			x: 4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["67F9D140A432A965"]
@@ -562,9 +616,24 @@
 				""
 				"&6Option 2&r:"
 				"Throw some parts in an Elven Portal, your items will result in a part being tossed back depending on the items thrown in."
+				""
+				"The choice is yours, you'll need Botania anyways so you may as well focus your efforts on efficiency and get into Botania before getting your factory started."
 			]
 			hide_dependency_lines: true
 			id: "2E763D3C5775D792"
+			rewards: [
+				{
+					count: 8
+					id: "323562DBD6A0A7A1"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					id: "2D6E05F7A174B762"
+					type: "xp"
+					xp: 100
+				}
+			]
 			tasks: [{
 				id: "592A46032C5CC06B"
 				title: "Alternate Material Production"
@@ -577,6 +646,11 @@
 			dependencies: ["2E763D3C5775D792"]
 			hide_dependent_lines: true
 			id: "73819880DCD741A9"
+			rewards: [{
+				id: "5B73ACA72DB71A8B"
+				item: "create:brass_hand"
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "53BB90B5E533AF86"
@@ -589,6 +663,11 @@
 		{
 			dependencies: ["2E763D3C5775D792"]
 			id: "33ADDF32835F76A3"
+			rewards: [{
+				id: "2831CF4260C4BD2D"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "426F390FBB07FAFC"
@@ -602,6 +681,11 @@
 			dependencies: ["2E763D3C5775D792"]
 			hide_dependent_lines: true
 			id: "66EAF25E6137A6F7"
+			rewards: [{
+				id: "17BC02EF759BE7A1"
+				item: "create:whisk"
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "59916EC3BAE0B158"
@@ -615,6 +699,11 @@
 			dependencies: ["2E763D3C5775D792"]
 			hide_dependent_lines: true
 			id: "7E9A1C282CE7807D"
+			rewards: [{
+				id: "198F9D4907CFC9F2"
+				item: "thermal:saw_blade"
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "430879BA98A1F1F0"

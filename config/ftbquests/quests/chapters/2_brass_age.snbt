@@ -7,59 +7,75 @@
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:brass_mechanism"
 	id: "059D74AB8EF7DCEA"
-	order_index: 2
+	images: [{
+		height: 20.0d
+		image: "kubejs:textures/gui/quest_bg_square.png"
+		rotation: 0.0d
+		width: 20.0d
+		x: -0.5d
+		y: -3.5d
+	}]
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
 				"4912CC6F4CDFB42E"
 				"128037F37E28EC54"
+				"706E3D820C4228DE"
 			]
 			id: "52996F5F4EC12FCE"
-			rewards: [{
-				id: "10E079482DCFDE2D"
-				type: "xp_levels"
-				xp_levels: 25
-			}]
+			rewards: [
+				{
+					id: "10E079482DCFDE2D"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6D03BD30CFAF88BF"
+					table_id: 1973416385812287726L
+					type: "random"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [
 				{
-					count: 8L
+					consume_items: true
+					count: 64L
 					id: "459B55EDF10001F7"
-					item: "kubejs:brass_machine"
+					item: "kubejs:brass_mechanism"
 					type: "item"
 				}
 				{
-					id: "29F5D0F4112BB554"
-					title: "Automated Brass Machines"
-					type: "checkmark"
+					consume_items: true
+					count: 64L
+					id: "1FA002A9A89C82CB"
+					item: { Count: 64b, id: "create:brass_casing" }
+					type: "item"
 				}
 			]
+			title: "Automations"
 			x: -0.5d
-			y: 0.75d
+			y: -1.0d
 		}
 		{
 			dependencies: [
-				"4832E5BDB4FF5BB9"
-				"22A5130493F349C4"
+				"7EA965E54F42F847"
+				"5652C4535BB677C3"
 			]
-			description: [
-				"Brass Casings play a pivotal role in crafting, with brass being the primary material for their production. The creation of brass involves a distinct process where copper and zinc ingots are combined. This combination takes place in a basin, utilizing a mixer to amalgamate these ingots. A blaze burner powers this process, supplying the necessary heat to alloy copper and zinc into brass."
-				""
-				"After producing the brass, it's essential to press it into plates, a key step in the crafting workflow. These brass plates form the core element in the fabrication of Brass Casings. In a manner akin to Copper Casings, these plates are then affixed to stripped logs, resulting in the formation of Brass Casings."
-				""
-				"The crafted Brass Casings are subsequently employed alongside Precision Mechanisms to assemble Brass Machines. The synergy of Brass Casings and Precision Mechanisms is crucial for creating these advanced machines. Known for their high-level functionality and accuracy, Brass Machines are integral to executing more sophisticated and detailed crafting operations."
-			]
+			description: ["Brass Casings should be automated"]
 			id: "4912CC6F4CDFB42E"
 			tasks: [{
+				consume_items: true
 				count: 8L
 				id: "4DAE09453018A5FD"
 				item: "create:brass_casing"
 				type: "item"
 			}]
 			x: 2.5d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2692F21C81CD9276"]
@@ -141,7 +157,17 @@
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
+			description: [
+				"This should be Create: 101, but find a blaze spawner and use an empty blaze burner on it."
+				"Or, you can capture blazes with them too."
+				"You could use a Runic Tablet with an empty blaze burner, what a waste :D"
+			]
 			id: "5F22844AD724DBD9"
+			rewards: [{
+				id: "267E382C74C87606"
+				item: "kubejs:blaze_spawn_egg"
+				type: "item"
+			}]
 			tasks: [{
 				id: "15E3CDD66D204B16"
 				item: "create:blaze_burner"
@@ -206,11 +232,12 @@
 			dependencies: [
 				"3F4FC469DD974934"
 				"4485B031B3008217"
+				"4832E5BDB4FF5BB9"
 			]
 			description: [
-				"Precision Mechanisms are manufactured through a detailed process that starts with Kinetic Mechanisms. These mechanisms are then enhanced by applying Electron Tubes and securing them together with screws. The production of Electron Tubes is a precise operation in itself, involving molten glass, iron, and destabilized redstone. This process is carried out in a complete assembly setup that is specifically focused on precision, ensuring the high quality and accuracy of the Electron Tubes."
+				"Brass Mechanisms are manufactured through a detailed process that starts with Andesite Mechanisms. These mechanisms are then enhanced by applying Electron Tubes and securing them together with screws. The production of Electron Tubes is a precise operation in itself, involving molten glass, iron, and destabilized redstone. This process is carried out in a complete assembly setup that is specifically focused on precision, ensuring the high quality and accuracy of the Electron Tubes."
 				""
-				"These Precision Mechanisms, once assembled, play a critical role in upcoming production stages. Their precise and intricate nature makes them essential for more advanced crafting and machine operations. Given their importance and the complexity of their production, automating the creation of Precision Mechanisms is vital. Establishing an automated process ensures a consistent and efficient supply of these mechanisms, which is key to maintaining smooth and effective production lines in more advanced crafting phases."
+				"These Brass Mechanisms, once assembled, play a critical role in upcoming production stages. Their precise and intricate nature makes them essential for more advanced crafting and machine operations. Given their importance and the complexity of their production, automating the creation of Brass Mechanisms is vital."
 			]
 			id: "128037F37E28EC54"
 			rewards: [{
@@ -218,21 +245,15 @@
 				type: "xp_levels"
 				xp_levels: 25
 			}]
-			tasks: [
-				{
-					count: 8L
-					id: "529BE02E4139CD9C"
-					item: "kubejs:brass_mechanism"
-					type: "item"
-				}
-				{
-					id: "64B38B300C2FD3F1"
-					title: "Automated Precision Mechanisms"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "529BE02E4139CD9C"
+				item: "kubejs:brass_mechanism"
+				type: "item"
+			}]
 			x: -0.5d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
@@ -246,31 +267,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["7143B829DD160D49"]
-			description: ["Spouting destabilized redstone on quartz will produce rose quartz."]
-			id: "39EA0BE602F87721"
-			tasks: [{
-				id: "2F52F0C62ACE5586"
-				item: "create:rose_quartz"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["706E3D820C4228DE"]
-			description: ["Gather some quartz from the nether.  This can be automated later on."]
-			id: "7143B829DD160D49"
-			tasks: [{
-				id: "4903ED4897689F75"
-				item: "minecraft:quartz"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -7.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5F22844AD724DBD9"]
@@ -307,36 +304,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["426DFEA3AC8048F6"]
-			description: ["Polish the rose quartz to a smooth finish using sandpaper, and then get ready to apply it to some empty tubes."]
-			id: "02FC9B63BAF2D1EC"
-			tasks: [{
-				id: "7BF1C3252FF16E64"
-				item: "create:polished_rose_quartz"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["39EA0BE602F87721"]
-			description: ["Craft up some sandpaper, diamond will be the most efficient, but you can automate the others."]
-			id: "426DFEA3AC8048F6"
-			tasks: [{
-				id: "78169FFD604445CD"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "create:sandpaper"
-					}
-				}
-				type: "item"
-			}]
-			x: -2.0d
-			y: -5.5d
-		}
-		{
 			dependencies: ["4419A545C5DE5E0B"]
 			id: "2B536A3FAD4DCA3B"
 			tasks: [{
@@ -345,12 +312,12 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
 				"2B536A3FAD4DCA3B"
-				"02FC9B63BAF2D1EC"
+				"706E3D820C4228DE"
 			]
 			id: "3F4FC469DD974934"
 			tasks: [{
@@ -359,7 +326,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3A10D0D5E8548C54"]
@@ -367,13 +334,15 @@
 				"Getting started in Chapter 2 makes a couple of assumptions."
 				"1) You have completed Chapter 1 :P"
 				""
-				"2) You have automated Kinetic Mechanisms"
+				"2) You have automated Andesite Mechanisms"
 				""
 				"3) You have automated Menril Tree farming and Resin production"
 				""
 				"4) You have a steady supply of Redstone, Quartz and a Blaze Spawner or a fortress to fill Blaze Burners"
 				""
-				"5) A steady supply of Brass from Copper and Zinc."
+				"5) A steady supply of Brass from Copper and Zinc (automated is a plus!)"
+				""
+				"Brass Mechanisms are a major step, and producing them gets a bit tricky due to the number of steps involved.  Be sure to follow the quest book and automate as much as you can while looking ahead to see how some of the items you craft/automate are used later."
 			]
 			hide: true
 			id: "1FB6946A522553C9"
@@ -415,7 +384,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0E9593ECF0C5D017"]
@@ -439,7 +408,7 @@
 			}]
 			title: "Screwdriver"
 			x: -2.0d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -452,47 +421,15 @@
 				type: "xp_levels"
 				xp_levels: 15
 			}]
-			tasks: [
-				{
-					count: 8L
-					id: "16B85B3691CB4D68"
-					item: "kubejs:sturdy_mechanism"
-					type: "item"
-				}
-				{
-					id: "3814FA0CCFAF92C5"
-					title: "Automated Sturdy Mechanisms"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				count: 8L
+				id: "16B85B3691CB4D68"
+				item: "kubejs:sturdy_mechanism"
+				type: "item"
+			}]
 			title: "Chapter 2C: Sturdy"
 			x: -2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["128037F37E28EC54"]
-			id: "62B9B5EA4D35DCDA"
-			rewards: [{
-				id: "05C31D82E9D9725E"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
-			tasks: [
-				{
-					count: 8L
-					id: "16C9865CF4D1603B"
-					item: "kubejs:scorch_mechanism"
-					type: "item"
-				}
-				{
-					id: "04E7AE68F1200CF0"
-					title: "Automated Scorch Mechanisms"
-					type: "checkmark"
-				}
-			]
-			title: "Chapter 2B: Scorch"
-			x: 1.0d
-			y: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -500,28 +437,39 @@
 				"706751927D7ADD92"
 			]
 			id: "23636E8827906DE6"
-			rewards: [{
-				id: "2A0C3F02B7289A3E"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
+			rewards: [
+				{
+					id: "2A0C3F02B7289A3E"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "71E5F00765D4DCC6"
+					table_id: 294495333582605423L
+					type: "random"
+				}
+			]
 			shape: "gear"
 			size: 1.0d
 			tasks: [
 				{
-					count: 8L
+					consume_items: true
+					count: 64L
 					id: "467F335E8F752E17"
-					item: "kubejs:sturdy_machine"
+					item: "kubejs:sturdy_mechanism"
 					type: "item"
 				}
 				{
-					id: "56FCAD52A6BAD37B"
-					title: "Automated Sturdy Machines"
-					type: "checkmark"
+					consume_items: true
+					count: 64L
+					id: "380538D6C75E2D58"
+					item: { Count: 64b, id: "create:railway_casing" }
+					type: "item"
 				}
 			]
 			x: -2.0d
-			y: 3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -535,7 +483,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6B4A0FEBC09F665E"]
@@ -554,7 +502,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4F847BF8CFA67653"]
@@ -565,7 +513,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0F114B1F5785939F"]
@@ -576,7 +524,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["68E3345022E4448A"]
@@ -588,7 +536,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
@@ -602,7 +550,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
@@ -621,13 +569,14 @@
 				}
 			]
 			x: -8.0d
-			y: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
-				"7054E2B6A75B9A17"
-				"4912CC6F4CDFB42E"
+				"3817B4F9D7D4224B"
+				"6BEB2523C15E3C2A"
 			]
+			description: ["Produced from Railway Frames, these blocks are crucial for forming Trains in the world."]
 			id: "706751927D7ADD92"
 			tasks: [{
 				count: 8L
@@ -636,135 +585,77 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
 			hide_dependency_lines: true
-			id: "2F5C6E2C7DBD0C3B"
+			id: "5652C4535BB677C3"
 			tasks: [{
-				id: "41ABDAB9E312499D"
-				item: "alltheores:zinc_ingot"
+				id: "7117F11D01B6179C"
+				item: {
+					Count: 1b
+					id: "kubejs:brass_chisel"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			x: 4.0d
-			y: 0.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["2F5C6E2C7DBD0C3B"]
-			id: "55117F154509E551"
+			dependencies: [
+				"4832E5BDB4FF5BB9"
+				"22A5130493F349C4"
+			]
+			description: [
+				"Brass Frames play a pivotal role in crafting, with brass being the primary material for their production. The creation of brass involves a distinct process where copper and zinc ingots are combined. This combination takes place in a basin, utilizing a mixer to amalgamate these ingots. A blaze burner powers this process, supplying the necessary heat to alloy copper and zinc into brass."
+				""
+				"After producing the brass, it's essential to press it into plates, a key step in the crafting workflow. These brass plates form the core element in the fabrication of Brass Casings. In a manner akin to Copper Casings, these plates are then affixed to stripped logs, resulting in the formation of Brass Frames which can be chiseled smooth with a Brass Chisel and form Brass Casings."
+			]
+			id: "7EA965E54F42F847"
 			tasks: [{
-				id: "7E5B94BA13143322"
-				item: "alltheores:zinc_plate"
+				consume_items: true
+				count: 8L
+				id: "309845BB12761B9A"
+				item: "kubejs:brass_frame"
 				type: "item"
 			}]
 			x: 2.5d
-			y: 0.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["55117F154509E551"]
-			id: "1C9A593AFDEB7336"
+			dependencies: ["7054E2B6A75B9A17"]
+			description: ["&6Railway Frames&r are produce by deploying a &3Sturdy Sheet&r onto a Stripped Log.  These rough frames can be chiseled smooth to a &6Train Casing&r using a &3Diamond Chisel&r."]
+			id: "3817B4F9D7D4224B"
 			tasks: [{
 				count: 8L
-				id: "789B373E462F221C"
-				item: "kubejs:zinc_casing"
+				id: "775DFB7AA84AA68B"
+				item: "kubejs:railway_frame"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
-			dependencies: [
-				"1C9A593AFDEB7336"
-				"62B9B5EA4D35DCDA"
-			]
-			id: "79B79902F2B2F447"
-			rewards: [{
-				id: "2BD782AC5E4143BA"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
-			shape: "gear"
-			tasks: [
-				{
-					count: 8L
-					id: "2B23941697B2ADCD"
-					item: "kubejs:zinc_machine"
-					type: "item"
-				}
-				{
-					id: "33137116A9F3C425"
-					title: "Automated Scorch Machines"
-					type: "checkmark"
-				}
-			]
-			x: 1.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["128037F37E28EC54"]
-			id: "3E9F94D73EFFFCAD"
-			rewards: [{
-				id: "1874D8A4AFF32D4E"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
-			tasks: [
-				{
-					count: 8L
-					id: "21783D1C9501E5B3"
-					item: "kubejs:power_mechanism"
-					type: "item"
-				}
-				{
-					id: "7C38C63A5378DD15"
-					title: "Automated Power Mechanisms"
-					type: "checkmark"
-				}
-			]
-			title: "Chapter 2A: Power"
-			x: 1.0d
-			y: -0.5d
-		}
-		{
-			dependencies: [
-				"3E9F94D73EFFFCAD"
-				"34C06782F879342F"
-			]
-			id: "7805E948180C7614"
-			rewards: [{
-				id: "73AD0F01A715D9CB"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
-			shape: "gear"
-			tasks: [
-				{
-					count: 8L
-					id: "2B59D2F547075685"
-					item: "kubejs:power_machine"
-					type: "item"
-				}
-				{
-					id: "0377CB6CDE095021"
-					title: "Automated Power Machines"
-					type: "checkmark"
-				}
-			]
-			x: -0.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["52996F5F4EC12FCE"]
-			id: "34C06782F879342F"
+			dependencies: ["1FB6946A522553C9"]
+			hide_dependency_lines: true
+			id: "6BEB2523C15E3C2A"
 			tasks: [{
-				count: 2L
-				id: "4CE4BC827B28CF2D"
-				item: "create:content_observer"
+				id: "6F333575DB2279C5"
+				item: {
+					Count: 1b
+					id: "kubejs:diamond_chisel"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -0.5d
+			x: -5.0d
+			y: 0.5d
 		}
 	]
 	title: "2: Brass Beginnings"

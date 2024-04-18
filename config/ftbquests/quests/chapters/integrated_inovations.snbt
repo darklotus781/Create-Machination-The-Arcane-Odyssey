@@ -6,11 +6,18 @@
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:cyber_mechanism"
 	id: "7AB340F7990D3911"
-	order_index: 5
+	images: [{
+		height: 20.0d
+		image: "kubejs:textures/gui/quest_bg_square.png"
+		rotation: 0.0d
+		width: 20.0d
+		x: 0.5d
+		y: -6.0d
+	}]
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["64B38B300C2FD3F1"]
 			description: [
 				"Getting started in Chapter 2 makes a couple of assumptions."
 				"1) You have completed Chapter 1 :P"

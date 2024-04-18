@@ -27,4 +27,6 @@ skystoneCatalystRadius = 5
 #Warning!!!  Setting this percentage too high could have negative side effects, especially on a server!
 #Range: 0.01 ~ 1.0
 catalystFillPercentage = 0.25
+#Can a Catalyst move into a Water Source or Flowing Water block?
+catalystMoveIgnoreWater = true
 

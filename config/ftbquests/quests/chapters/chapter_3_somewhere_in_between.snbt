@@ -4,29 +4,21 @@
 	default_quest_shape: ""
 	filename: "chapter_3_somewhere_in_between"
 	group: "3F3D969172D871AB"
-	hide_quest_until_deps_visible: true
+	hide_quest_details_until_startable: true
 	icon: "minecraft:sculk_shrieker"
 	id: "6D0E79974AD2FF7F"
 	images: [
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 20.0d
-			hover: [ ]
 			image: "kubejs:textures/gui/quest_bg_square.png"
 			order: 1
 			rotation: 0.0d
 			width: 20.0d
 			x: 1.5d
-			y: -1.0d
+			y: 0.5d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 45.714285714285715d
-			hover: [ ]
 			image: "kubejs:textures/gui/overworld_bg.png"
 			rotation: 0.0d
 			width: 80.0d
@@ -75,7 +67,7 @@
 			}]
 			title: "Get started on resource gathering!"
 			x: 1.5d
-			y: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
@@ -92,7 +84,7 @@
 				type: "item"
 			}]
 			title: "Early Crushing"
-			x: -5.0d
+			x: -4.5d
 			y: -1.0d
 		}
 		{
@@ -109,7 +101,7 @@
 				type: "item"
 			}]
 			title: "OP Smelting, Smoking and Washing"
-			x: -5.0d
+			x: -4.5d
 			y: 2.0d
 		}
 		{
@@ -122,15 +114,15 @@
 			id: "59386F705AAD3CFF"
 			rewards: [
 				{
-					count: 2
 					id: "20AD87A6C8E6698A"
 					item: "ars_creo:starbuncle_wheel"
+					random_bonus: 2
 					type: "item"
 				}
 				{
-					count: 2
 					id: "2E07CA4FCBE0E61E"
 					item: "minecraft:gold_block"
+					random_bonus: 2
 					type: "item"
 				}
 			]
@@ -154,7 +146,7 @@
 			]
 			title: "Some SU appliances."
 			x: -3.0d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
@@ -175,7 +167,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
@@ -194,7 +186,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
@@ -213,7 +205,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
@@ -237,7 +229,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2F63FB9E8EAC18BD"]
@@ -249,7 +241,7 @@
 				type: "checkmark"
 			}]
 			title: "Machination Core"
-			x: 4.0d
+			x: 3.5d
 			y: 0.5d
 		}
 		{
@@ -267,8 +259,8 @@
 				title: "Ars Nouveau Unlock"
 				type: "checkmark"
 			}]
-			x: 5.0d
-			y: -0.5d
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
@@ -286,22 +278,25 @@
 				title: "Pneumaticcraft"
 				type: "checkmark"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
-			description: ["KubeJS is a mod that significantly simplifies the process of creating a modpack by allowing creators to add custom items and unique interactions without the need for a full mod.\\n"]
+			description: [
+				"KubeJS is a mod that significantly simplifies the process of creating a modpack by allowing creators to add custom items and unique interactions without the need for a full mod."
+				""
+				"We've used this mod to fully customize the experience, create new items and modify / create custom recipes."
+			]
 			icon: "kubejs:cyber_mechanism"
 			id: "34312A4E0AFAD769"
-			subtitle: "The glue making this pack possible"
 			tasks: [{
 				id: "30B3270A916D1913"
 				title: "KubeJS"
 				type: "checkmark"
 			}]
-			x: 6.0d
-			y: -0.5d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
@@ -325,7 +320,7 @@
 				type: "checkmark"
 			}]
 			title: "Create: Resource Geodes"
-			x: 6.0d
+			x: 5.5d
 			y: 1.5d
 		}
 		{
@@ -343,7 +338,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
@@ -364,7 +359,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2F63FB9E8EAC18BD"]
@@ -398,7 +393,7 @@
 				title: "Lychee"
 				type: "checkmark"
 			}]
-			x: 7.0d
+			x: 6.5d
 			y: 1.5d
 		}
 		{
@@ -419,28 +414,25 @@
 				type: "checkmark"
 			}]
 			title: "Applied Energistics 2"
-			x: 7.0d
-			y: -0.5d
+			x: 6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
 			description: [
 				"Integrated Dynamics is a magic-tech mod that primarily focuses on logic and offers a highly modular approach to programming. "
 				""
-				"There's no need for you to be concerned about its complex programming capabilities in this modpack though. "
-				""
-				"Here, Integrated Dynamics is mainly used for its Trees, and provides a storage solution before you unlock AE2."
+				"There's no need for you to be concerned about its complex programming capabilities in this modpack though.  We just like the trees :P"
 			]
 			icon: "integrateddynamics:logic_programmer"
 			id: "74296D4CEDEA44AA"
-			subtitle: "A Solution to problems that didn't need solving"
 			tasks: [{
 				id: "633DC26121E79E2C"
 				title: "Integrated Dynamics"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: -0.5d
+			x: 7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
@@ -464,7 +456,7 @@
 				title: "Forbidden and Arcanus Unlock"
 				type: "checkmark"
 			}]
-			x: 8.0d
+			x: 7.5d
 			y: 1.5d
 		}
 		{
@@ -481,7 +473,7 @@
 				type: "item"
 			}]
 			title: "Easy Tree Chopping"
-			x: -4.0d
+			x: -3.5d
 			y: 2.5d
 		}
 		{
@@ -497,7 +489,7 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -5.0d
 			y: 1.0d
 		}
 		{
@@ -514,7 +506,7 @@
 				type: "item"
 			}]
 			title: "Mixing"
-			x: -5.5d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
@@ -534,7 +526,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -569,7 +561,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
@@ -591,7 +583,7 @@
 				type: "checkmark"
 			}]
 			title: "A Lootbag"
-			x: -4.0d
+			x: -3.5d
 			y: -1.5d
 		}
 		{
@@ -621,6 +613,10 @@
 		}
 		{
 			dependencies: ["3D141A6E5FFFA073"]
+			description: [
+				"To advance in this pack, you must start some basic automations. "
+				"Be sure to check JEI for alternative methods of crafting some key machines."
+			]
 			id: "69C0AE6714182D7F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -631,11 +627,11 @@
 			subtitle: "Many more to come"
 			tasks: [{
 				id: "78342DA7ED9D039D"
-				item: "kubejs:andesite_machine"
+				item: "kubejs:andesite_mechanism"
 				type: "item"
 			}]
-			title: "Your first Machine"
-			x: -4.0d
+			title: "Your first Mechanism (maybe)"
+			x: -3.5d
 			y: 0.5d
 		}
 		{
@@ -649,7 +645,6 @@
 			]
 			icon: "botania:apothecary_default"
 			id: "4ED290A718944E6F"
-			shape: "pentagon"
 			subtitle: "A magic / tech mod based around natural magic."
 			tasks: [{
 				id: "4AFB878C1D5ECFBB"
@@ -657,7 +652,7 @@
 				type: "checkmark"
 			}]
 			title: "Botania"
-			x: 3.0d
+			x: 8.5d
 			y: -1.0d
 		}
 		{
@@ -666,6 +661,8 @@
 				"2F63FB9E8EAC18BD"
 			]
 			description: [
+				"Vanquish the Warden"
+				""
 				"Embark on an epic odyssey through the shadowed recesses of the Overworld, where the Warden, an ancient sentinel of unimaginable power, lurks in the abyssal depths. Your quest, should you choose to accept it, demands not only your mightiest armaments but also the unwavering resolve of a true adventurer."
 				""
 				"Venture forth into the heart of darkness, where the very fabric of reality shivers with anticipation. The clash with the Warden is not merely a confrontation; it is a test of mettle, a trial by fire that will push you to the limits of your strength and cunning."
@@ -698,7 +695,6 @@
 			]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "Vanquish the Warden"
 			tasks: [
 				{
 					id: "438328202C6F7CCD"
@@ -714,7 +710,7 @@
 				}
 			]
 			x: 1.5d
-			y: 5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2F63FB9E8EAC18BD"]
@@ -967,7 +963,13 @@
 		}
 		{
 			dependencies: ["040A2C9AD4AF7034"]
-			description: ["Early flight is not possible, you can find artifacts around the world to help in every other way, but until you advance to the next quest, flight is disabled."]
+			description: [
+				"Early flight is not possible, you can find artifacts around the world to help in every other way, but until you advance to the end, flight is not possible."
+				"All personal flight tools / jetpacks require an elytra."
+				""
+				"The exception is the Gyrodyne, but it's somewhat expensive to build and a little on the slow side."
+			]
+			icon: "occultism:awakened_feather"
 			id: "79B2C3220D386ED2"
 			rewards: [{
 				id: "6096D75C9C8D171F"
@@ -992,6 +994,13 @@
 				""
 				"Please follow the quests, you'll get there eventually!"
 			]
+			icon: {
+				Count: 1b
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7D3F83C156BA7A9F"
 			rewards: [{
 				id: "49244F763E00AD90"
@@ -1015,6 +1024,7 @@
 				""
 				"Mastering Botania is required to advance, just a friendly tip!"
 			]
+			icon: "botania:floating_pure_daisy"
 			id: "7FAC77827F3DDBB3"
 			rewards: [{
 				id: "5F1C34306ABDE774"
@@ -1036,6 +1046,13 @@
 				"Mobs are smarter, can climb walls and creepers can sometimes see you through walls."
 				"Be careful and light up the area around your base."
 			]
+			icon: {
+				Count: 1b
+				id: "aether:holy_sword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "63F96EBAE3CCEF57"
 			rewards: [{
 				id: "1CCD90A84A2E66DF"
@@ -1067,8 +1084,8 @@
 				type: "checkmark"
 			}]
 			title: "Occultism Unlock"
-			x: 6.0d
-			y: 0.5d
+			x: 8.5d
+			y: 1.5d
 		}
 	]
 	title: "Chapter 3: Somewhere in between"

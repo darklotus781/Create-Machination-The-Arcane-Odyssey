@@ -6,7 +6,15 @@
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:plastic_mechanism"
 	id: "63F5BD2F8A4DC433"
-	order_index: 4
+	images: [{
+		height: 20.0d
+		image: "kubejs:textures/gui/quest_bg_square.png"
+		rotation: 0.0d
+		width: 20.0d
+		x: 5.5d
+		y: 2.0d
+	}]
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{

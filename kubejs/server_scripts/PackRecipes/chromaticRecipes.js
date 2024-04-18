@@ -256,7 +256,7 @@ ServerEvents.recipes(event => {
         type: 'createdieselgenerators:basin_fermenting',
         ingredients: [Fluid.of('kubejs:chromatic_solution').withAmount(1000).toJson()],
         processingTime: 300,
-        results: [Item.of('kubejs:chroma_compound').toJson(), Fluid.of('kubejs:dirty_chroma_slurry').withAmount(100).toJson()]
+        results: [Item.of('kubejs:chroma_compound', 3).toJson(), Fluid.of('kubejs:dirty_chroma_slurry').withAmount(100).toJson()]
     }).id('kubejs:fermenting/chromatic_solution_to_compound');
 
     // Reprocessing

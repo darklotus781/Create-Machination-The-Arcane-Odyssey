@@ -1,0 +1,199 @@
+{
+	icon: {
+		Count: 1b
+		id: "ftbquests:lootcrate"
+		tag: {
+			type: "rare_loot_chest"
+		}
+	}
+	id: "5D14D0A4CE58842F"
+	loot_size: 1
+	order_index: 31
+	rewards: [
+		{
+			icon: "minecraft:stone"
+			item: {
+				Count: 1b
+				id: "functionalstorage:oak_1"
+				tag: {
+					BlockEntityTag: {
+						ForgeCaps: { }
+						drawerOptions: {
+							"Advanced: INDICATOR": 0
+							TOGGLE_NUMBERS: 1b
+							TOGGLE_RENDER: 1b
+							TOGGLE_UPGRADES: 1b
+						}
+						handler: {
+							BigItems: {
+								0: {
+									Amount: 2048
+									Stack: {
+										Count: 64b
+										id: "minecraft:stone"
+									}
+								}
+							}
+						}
+						hasDowngrade: 0b
+						id: "functionalstorage:oak_1"
+						isCreative: 0b
+						isVoid: 0b
+						mult: 1
+						storageUpgrades: {
+							Items: [ ]
+							Size: 4
+						}
+						utilityUpgrades: {
+							Items: [ ]
+							Size: 3
+						}
+					}
+					display: {
+						Lore: ["\"(+NBT)\""]
+					}
+				}
+			}
+			title: "Stone"
+		}
+		{
+			icon: "minecraft:cobblestone"
+			item: {
+				Count: 1b
+				id: "functionalstorage:oak_1"
+				tag: {
+					BlockEntityTag: {
+						ForgeCaps: { }
+						drawerOptions: {
+							"Advanced: INDICATOR": 0
+							TOGGLE_NUMBERS: 1b
+							TOGGLE_RENDER: 1b
+							TOGGLE_UPGRADES: 1b
+						}
+						handler: {
+							BigItems: {
+								0: {
+									Amount: 2048
+									Stack: {
+										Count: 64b
+										id: "minecraft:cobblestone"
+									}
+								}
+							}
+						}
+						hasDowngrade: 0b
+						id: "functionalstorage:oak_1"
+						isCreative: 0b
+						isVoid: 0b
+						mult: 1
+						storageUpgrades: {
+							Items: [ ]
+							Size: 4
+						}
+						utilityUpgrades: {
+							Items: [ ]
+							Size: 3
+						}
+					}
+					display: {
+						Lore: ["\"(+NBT)\""]
+					}
+				}
+			}
+			title: "Cobblestone"
+		}
+		{
+			icon: "minecraft:smooth_stone"
+			item: {
+				Count: 1b
+				id: "functionalstorage:oak_1"
+				tag: {
+					BlockEntityTag: {
+						ForgeCaps: { }
+						drawerOptions: {
+							"Advanced: INDICATOR": 0
+							TOGGLE_NUMBERS: 1b
+							TOGGLE_RENDER: 1b
+							TOGGLE_UPGRADES: 1b
+						}
+						handler: {
+							BigItems: {
+								0: {
+									Amount: 2048
+									Stack: {
+										Count: 64b
+										id: "minecraft:smooth_stone"
+									}
+								}
+							}
+						}
+						hasDowngrade: 0b
+						id: "functionalstorage:oak_1"
+						isCreative: 0b
+						isVoid: 0b
+						mult: 1
+						storageUpgrades: {
+							Items: [ ]
+							Size: 4
+						}
+						utilityUpgrades: {
+							Items: [ ]
+							Size: 3
+						}
+					}
+					display: {
+						Lore: ["\"(+NBT)\""]
+					}
+				}
+			}
+			title: "Smooth Stone"
+		}
+		{
+			icon: "minecraft:stone_bricks"
+			item: {
+				Count: 1b
+				id: "functionalstorage:oak_1"
+				tag: {
+					BlockEntityTag: {
+						ForgeCaps: { }
+						drawerOptions: {
+							"Advanced: INDICATOR": 0
+							TOGGLE_NUMBERS: 1b
+							TOGGLE_RENDER: 1b
+							TOGGLE_UPGRADES: 1b
+						}
+						handler: {
+							BigItems: {
+								0: {
+									Amount: 2048
+									Stack: {
+										Count: 64b
+										id: "minecraft:stone_bricks"
+									}
+								}
+							}
+						}
+						hasDowngrade: 0b
+						id: "functionalstorage:oak_1"
+						isCreative: 0b
+						isVoid: 0b
+						mult: 1
+						storageUpgrades: {
+							Items: [ ]
+							Size: 4
+						}
+						utilityUpgrades: {
+							Items: [ ]
+							Size: 3
+						}
+					}
+					display: {
+						Lore: ["\"(+NBT)\""]
+					}
+				}
+			}
+			title: "Stone Bricks"
+		}
+	]
+	title: "&6Stone Reward"
+}

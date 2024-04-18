@@ -130,8 +130,8 @@ ServerEvents.recipes(event => {
         [Item.of('pneumaticcraft:small_tank'), Item.of('pneumaticcraft:liquid_hopper')],
         [Item.of('thermal:rf_coil'), Item.of('pneumaticcraft:pneumatic_dynamo')],
         [Item.of('minecraft:ender_eye'), Item.of('pneumaticcraft:vacuum_trap')],
-        [Item.of('pneumaticcraft:printed_circuit_board'), Item.of('pneumaticcraft:pressurized_spawner')],
-        // [Item.of('spirit:broken_spawner'), Item.of('pneumaticcraft:spawner_agitator')],
+        [Item.of('pneumaticcraft:empty_spawner'), Item.of('pneumaticcraft:pressurized_spawner')],
+        [Item.of('pneumaticcraft:pressurized_spawner'), Item.of('pneumaticcraft:spawner_agitator')],
         [Item.of('pneumaticcraft:solar_cell'), Item.of('pneumaticcraft:solar_compressor')]
     ];
 
@@ -292,7 +292,6 @@ ServerEvents.recipes(event => {
         S: Ingredient.of('#forge:tools/saws'),
         A: Item.of('create:andesite_alloy', 4)
     }).id('kubejs:wooden_mechanism_manual_only');
-
 
     // Andesite Mechanism - Tier 1
     let t = Item.of('kubejs:incomplete_andesite_mechanism');

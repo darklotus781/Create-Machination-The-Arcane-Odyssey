@@ -8,11 +8,7 @@
 	id: "08BE5DF86338E7E1"
 	images: [
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 45.714285714285715d
-			hover: [ ]
 			image: "kubejs:textures/gui/the_end_bg.png"
 			rotation: 0.0d
 			width: 80.0d
@@ -20,11 +16,7 @@
 			y: 0.0d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 14.0d
-			hover: [ ]
 			image: "kubejs:textures/gui/quest_bg_square.png"
 			rotation: 0.0d
 			width: 14.0d
@@ -38,6 +30,7 @@
 		{
 			dependencies: ["03C7E04B5BBB84A2"]
 			id: "0711E0747C34E922"
+			shape: "pentagon"
 			tasks: [{
 				id: "0B19CD78EEF643D9"
 				title: "Is this the end?"
@@ -225,6 +218,23 @@
 			}]
 			x: 0.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["76A4479320CB91F4"]
+			id: "77AED1A93EF07C4F"
+			tasks: [{
+				id: "1856D54580EDF942"
+				item: {
+					Count: 1b
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
 		}
 	]
 	title: "Chapter 4: Is this The End?"

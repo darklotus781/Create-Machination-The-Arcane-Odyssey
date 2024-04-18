@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ mod: 'immersive_aircraft' }, Item.of('minecraft:iron_ingot'), Ingredient.of('#forge:plates/iron'));
     event.replaceInput({ mod: 'immersive_aircraft' }, Item.of('minecraft:copper_ingot'), Ingredient.of('#forge:plates/copper'));
     event.replaceInput({ mod: 'immersive_aircraft' }, Item.of('minecraft:coal'), Item.of('thermal:cured_rubber'));
-    event.replaceInput({ mod: 'immersive_aircraft' }, Ingredient.of('#minecraft:logs'), Ingredient.of('#botania:livingwood_logs'));
+    event.replaceInput({ mod: 'immersive_aircraft' }, Ingredient.of('#minecraft:logs'), Ingredient.of('#botania:dreamwood_logs'));
     event.replaceInput({ mod: 'immersive_aircraft' }, Item.of('minecraft:cobblestone'), Item.of('botania:livingrock'));
     event.replaceInput({ id: 'immersive_aircraft:hull_reinforcement' }, Ingredient.of('#forge:plates/iron'), Item.of('create:sturdy_sheet'));
 

@@ -40,7 +40,7 @@ LootJS.modifiers((event) => {
     event.addBlockLootModifier('minecraft:grass').removeLoot('occultism:datura_seeds');
     event.addBlockLootModifier('minecraft:tall_grass').removeLoot('occultism:datura_seeds');
 
-    event.addEntityLootModifier('minecraft:warden').pool((p) => {
+    event.addEntityLootModifier('minecraft:elder_guardian').pool((p) => {
         p.addLoot('occultism:datura_seeds');
         p.limitCount(2, 8);
     });
