@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "kubejs:andesite_mechanism"
+        },
+        "title": "Getting Mechanical",
+        "description": "You acquired your first Andesite Mechanism",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/block/dirt.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {},
+                "items": [
+                    {
+                        "items": [
+                            "kubejs:andesite_mechanism"
+                        ],
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,25 +1,24 @@
 ServerEvents.tags('item', event => {
-    event.get('forge:dusts/ender')
-        .add('ae2:ender_dust');
+    // Purging Item Tags for all things we're hiding in JEI
+    // global.hideRemoveJEI.forEach((item) => {
+    //     event.removeAllTagsFrom(item);
+    // });
+
+    event.get('forge:dusts/ender').add('ae2:ender_dust');
     event.get('ars_nouveau:golem/shard')
         .add('minecraft:amethyst_shard')
         .add('ae2:certus_quartz_crystal');
-    event.get('forge:dusts')
-        .add('alltheores:netherite_dust');
-    event.get('forge:dusts/netherite')
-        .add('alltheores:netherite_dust');
+    event.get('forge:dusts').add('alltheores:netherite_dust');
+    event.get('forge:dusts/netherite').add('alltheores:netherite_dust');
     event.get('forge:menril_logs')
         .add('integrateddynamics:menril_log_filled')
         .add('integrateddynamics:menril_log');
 
-    event.get('minecraft:logs_that_burn')
-        .add('integrateddynamics:menril_log_stripped');
+    event.get('minecraft:logs_that_burn').add('integrateddynamics:menril_log_stripped');
 
-    event.get('sophisticatedstorage:chests')
-        .add('sophisticatedstorage:chest');
+    event.get('sophisticatedstorage:chests').add('sophisticatedstorage:chest');
 
-    event.get('sophisticatedstorage:barrels')
-        .add('sophisticatedstorage:barrel');
+    event.get('sophisticatedstorage:barrels').add('sophisticatedstorage:barrel');
 
     event.get('machination:oak_planks')
         .add('minecraft:oak_planks')
@@ -84,10 +83,6 @@ ServerEvents.tags('item', event => {
         .add('kubejs:refined_chisel')
         .add('kubejs:diamond_chisel');
 
-    let vial = ['anthracene', 'incomplete_anthraquinone', 'anthraquinone', 'empty_vial']
-    vial.forEach(I => {
-        event.add('create:upright_on_belt', 'kubejs:' + I);
-    });
     event.get('create:upright_on_belt')
         .add('forbidden_arcanus:pixie_utrem_jar')
         .add('forbidden_arcanus:corrupted_pixie_utrem_jar')
@@ -100,7 +95,8 @@ ServerEvents.tags('item', event => {
         .add('tiab:time_in_a_bottle')
         .add('forbidden_arcanus:arcane_crystal_obelisk')
         .add('kubejs:empty_tube')
-        .add('create:electron_tube');
+        .add('create:electron_tube')
+        .add('kubejs:empty_vial');
 
     event.get('create:recipe_nuggets')
         .add('#forge:nuggets/iron')
@@ -213,6 +209,11 @@ ServerEvents.tags('item', event => {
 
 
 ServerEvents.tags('block', event => {
+    // Purging Block Tags for all things we're hiding in JEI
+    // global.hideRemoveJEI.forEach((block) => {
+    //     event.removeAllTagsFrom(block);
+    // });
+
     event.add('ae2:blacklisted/spatial', '#forge:relocation_not_supported');
     event.get('forge:relocation_not_supported')
         .add('minecraft:beehive')
@@ -231,13 +232,19 @@ ServerEvents.tags('block', event => {
     event.get('ars_nouveau:golem/cluster')
         .add('minecraft:amethyst_cluster')
         .add('ae2:quartz_cluster');
+
+    event.get('create:wrench_pickup')
+        .add('thermal:device_tree_extractor');
 });
 
 
 ServerEvents.tags('fluid', event => {
+    // Purging Fluid Tags for all things we're hiding in JEI
+    // global.hideRemoveJEI.forEach((fluid) => {
+    //     event.removeAllTagsFrom(fluid);
+    // });
+
     event.get('create:bottomless/allow')
-        .add('#forge:crude_oil')
-        .add('#forge:lava')
         .add('minecraft:water');
 
     event.removeAllTagsFrom([
@@ -281,11 +288,12 @@ ServerEvents.tags('fluid', event => {
     event.get('forge:plantoil').add('thermal:tree_oil').add('pneumaticcraft:vegetable_oil');
     event.get('forge:refined_fuel').add('thermal:refined_fuel');
     event.get('forge:refined_oil').add('kubejs:refined_oil');
+
+    event.get('createdieselgenerators:pumpjack_output').add('pneumaticcraft:oil');
 });
 
 ServerEvents.tags('entity_type', event => {
-    event.get('kubejs:mob_blacklist')
-        .add('allthemodium:piglich')
+    event.get('machination:mob_blacklist')
         .add('artifacts:mimic')
         .add('aether:valkyrie')
         .add('aether:valkyrie_queen')
@@ -294,12 +302,18 @@ ServerEvents.tags('entity_type', event => {
         .add('aether:slider')
         .add('minecraft:iron_golem')
         .add('minecraft:wither')
+        .add('alexscaves:magnetron')
+        .add('alexscaves:forsaken')
+        .add('alexscaves:nucleeper')
+        .add('alexscaves:watcher')
+        .add('alexscaves:mine_guardian')
+        .add('allthemodium:piglich')
         .add('minecraft:ender_dragon');
 
-    event.add('mob_grinding_utils:no_swab', '#kubejs:mob_blacklist');
-    event.add('mob_grinding_utils:no_spawn', '#kubejs:mob_blacklist');
-    event.add('pneumaticcraft:vacuum_trap_blacklisted', '#kubejs:mob_blacklist');
-    event.add('ars_nouveau:drygmy_blacklist', '#kubejs:mob_blacklist');
+    event.add('mob_grinding_utils:no_swab', '#machination:mob_blacklist');
+    event.add('mob_grinding_utils:no_spawn', '#machination:mob_blacklist');
+    event.add('pneumaticcraft:vacuum_trap_blacklisted', '#machination:mob_blacklist');
+    event.add('ars_nouveau:drygmy_blacklist', '#machination:mob_blacklist');
 
     event.add('forge:enderman', 'minecraft:enderman');
 });

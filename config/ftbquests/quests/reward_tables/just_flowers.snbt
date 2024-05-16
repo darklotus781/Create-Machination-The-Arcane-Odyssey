@@ -1,0 +1,8 @@
+{
+	icon: "minecraft:torchflower"
+	id: "40D2966B2FB80C3C"
+	loot_size: 1
+	order_index: 32
+	rewards: [ ]
+	title: "Just Flowers"
+}

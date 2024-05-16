@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "failed_reloads_per_session": 5,
+  "default_overrides": {
+    "force_compatible": true
+  },
+  "pack_overrides": {
+    "1": [
+      "supplementaries:darker_ropes",
+      "file/MandalasGUI+Modded_Dakmode_v4.6.zip",
+      "file/Moonsu Better Create GUI Tom's Simple Storage 1.3.zip",
+      "file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
+      "file/LootrChestRetexture_v1.1_1.19.zip",
+      "file/Porkier Pigs FA.zip",
+      "file/Porkier Piglins FA.zip",
+      "file/Pesky Parrots FA.zip",
+      "file/Fabulous Foliage.zip",
+      "file/FA+Spiders-v1.0.zip",
+      "file/Cluckier Chickens FA.zip",
+      "file/Better Zombies FA.zip",
+      "file/Better Squids.zip",
+      "file/Better Skeletons FA.zip",
+      "file/Better_Sheep_V3.zip",
+      "file/Beefier Bovine FA.zip",
+      "file/Amazing Axolotls FA.zip",
+      "file/Fresh_Compats v1.5.zip",
+      "file/FreshAnimations_v1.9.zip",
+      "file/Dramatic Skys Demo 1.5.3.20.zip",
+      "mod_resources",
+      "Moonlight Mods Dynamic Assets",
+      "create:legacy_copper",
+      "vanilla"
+    ],
+    "$$1": {
+      "hidden": true,
+      "required": true
+    }
+  }
+}

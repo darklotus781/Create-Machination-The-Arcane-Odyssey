@@ -56,7 +56,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.haunting(Item.of('forbidden_arcanus:corrupt_soul'), Item.of('forbidden_arcanus:soul'));
     event.recipes.create.deploying(Item.of('forbidden_arcanus:corrupted_pixie'), [Item.of('forbidden_arcanus:corrupt_soul'), Item.of('forbidden_arcanus:arcane_crystal_dust')]);
     event.recipes.create.filling(Item.of('forbidden_arcanus:aureal_bottle'), [Item.of('kubejs:empty_vial'), Fluid.of('kubejs:aureal_essence').withAmount(333)]);
-    event.recipes.create.mixing(Item.of('forbidden_arcanus:arcane_gold_ingot'), [Ingredient.of('#forge:nuggets/gold', 9), Item.of('forbidden_arcanus:mundabitur_dust')]);
     event.recipes.create.splashing(Item.of('forbidden_arcanus:pixie_utrem_jar'), Item.of('forbidden_arcanus:corrupted_pixie_utrem_jar'));
     event.recipes.create.deploying(Item.of('forbidden_arcanus:corrupted_pixie_utrem_jar'), [Item.of('forbidden_arcanus:utrem_jar'), Item.of('forbidden_arcanus:corrupted_pixie')]);
     event.recipes.create.filling(Item.of('minecraft:soul_sand'), [Item.of('forbidden_arcanus:soulless_sand'), Fluid.of('kubejs:aureal_essence').withAmount(50)]);

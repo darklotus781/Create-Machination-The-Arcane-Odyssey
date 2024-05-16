@@ -33,6 +33,7 @@
 			description: ["When you complete this quest, your Obsidian Flint and Steel will be taken, but we'll return them later :)"]
 			hide: true
 			id: "504C21E69925C8A5"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -89,9 +90,14 @@
 		}
 		{
 			dependencies: ["394B02F151B85E24"]
-			description: ["Completing this quest will not consume your skulls, don't worry!"]
+			description: [
+				"The best place to find some good loot and Wither Skeletons is a fortress, start hunting!"
+				""
+				"Protip, if you can't find one, kill some wraiths in the soul sand valley, the item they drop is useful."
+			]
 			hide: true
 			id: "6C92467011B61125"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -123,6 +129,7 @@
 			description: ["Completing this quest will not consume the soul sand, don't worry!"]
 			hide: true
 			id: "7DB2707BB8F3E7FE"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -277,6 +284,7 @@
 		{
 			dependencies: ["6C92467011B61125"]
 			id: "17ED0F689713443A"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -304,6 +312,7 @@
 		{
 			dependencies: ["6C92467011B61125"]
 			id: "41964F50DB86FC31"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -332,6 +341,7 @@
 			dependencies: ["6C92467011B61125"]
 			description: ["Legend has it, if you form a totem of soul sand with wither skulls on top, you can summon the Wither Boss!"]
 			id: "496BCCD1984302D7"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -357,6 +367,7 @@
 		{
 			dependencies: ["504C21E69925C8A5"]
 			id: "3505CC13406A597C"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -384,6 +395,7 @@
 		{
 			dependencies: ["504C21E69925C8A5"]
 			id: "6376720DD020FF61"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -411,6 +423,7 @@
 		{
 			dependencies: ["394B02F151B85E24"]
 			id: "2835CDA6A877259B"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -438,6 +451,7 @@
 		{
 			dependencies: ["394B02F151B85E24"]
 			id: "67C52F82640E6E74"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -465,6 +479,7 @@
 		{
 			dependencies: ["394B02F151B85E24"]
 			id: "137E077502F7A202"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -493,6 +508,7 @@
 			dependencies: ["504C21E69925C8A5"]
 			description: ["The netherite smithing template is only obtainable from Bastion chests, so while you're exploring one, check all the chests!"]
 			id: "1E73299542E86E70"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -607,6 +623,180 @@
 			title: "Mobs are hard!"
 			x: 2.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["394B02F151B85E24"]
+			description: [
+				"&lHOW TO FIND THE BURNING ARENA&r"
+				"The Burning Arena is a sizeable Colosseum-like structure that spawns in the Nether. It is almost one hundred blocks high and appears above and below the surface, so you have a good chance of coming across it naturally when exploring the Nether."
+				""
+				"Though you can also craft the Eye of Flame. Like an Eye of Ender, it can be used to locate the nearest Burning Arena. Only one is required, as they don’t break and must be used in the Nether. "
+				"{@pagebreak}"
+				"&lABOUT THE BURNING ARENA&r"
+				"The Burning Arena has three floors. The top contains an Altar of Fire in the center, which summons the main boss, the Ignis. You’ll need to go down a level to the middle floor to invoke it."
+				""
+				"Two Ignited Revenants can be found here. These look like Blaze but are much more powerful. They have multiple shields that circle them, allowing them to absorb more damage and even block attacks."
+				""
+				"Ignited Revenants have 80 Health and 12 Armor points and count as mini-bosses. When fighting them, expect them to make attacks such as Ashen Breath and the Bone Storm, where they can fire smoke toward you or launch bones at you, dealing high amounts of damage."
+				""
+				"Killing the Ignited Revenant will provide you with the Burning Ashes needed for the previously mentioned Altar of Fire. To kill more Ignited Revenants in the future, you should try and find new Burning Arenas."
+				""
+				"Back upstairs, you can use Burning Ashes on the Altar of Fire, which is on the top floor of the Burning Arena. The Burning Arena will begin to shake, and after a few seconds, Ignis will spawn upon it."
+				"{@pagebreak}"
+				"&lIGNIS&r"
+				"Ignis is one of the more challenging bosses in the Cataclysm mod. It has 450 health and 10 armor points. Due to its large Shield, some ranged attacks will be blocked, but you can still get a few hits in occasionally"
+				""
+				"You’ll want to bring high-healing items and things that give movement speed. Ignis will follow you around the Burning Arena, and it isn’t easy to create distance. Even if you do get away from Ignis, it can jump in the air towards you, knocking up terrain."
+				""
+				"Defeating Ignis will give you some Ignitium Ingots. These can be used to create the Sword and Shield carried by Ignis, which are called the Incinerator and the Bulwark of the Flame. You can also receive the ‘Symphony—God of Blaze’ Music Disc."
+			]
+			hide_dependency_lines: true
+			id: "3495B5F480D3A210"
+			optional: true
+			rewards: [
+				{
+					id: "34AFAAA102221EFC"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D9F4BF5FF99AEE5"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "117F4B43E4134AF1"
+					table_id: 9087018245371915723L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "28D8E19A10961CF0"
+					table_id: 2265012637020335752L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					icon: "cataclysm:burning_ashes"
+					id: "66CA08AD9006D1F2"
+					structure: "cataclysm:burning_arena"
+					title: "Find a Burning Arena"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:ignited_revenant"
+					id: "00EB502C2793875E"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "cataclysm:ignis"
+					id: "108FE365D1B75F6D"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "69B1D414896B8CAA"
+					item: "cataclysm:ignitium_ingot"
+					type: "item"
+				}
+			]
+			title: "Find an Burning Arena"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["394B02F151B85E24"]
+			description: [
+				"&lHOW TO FIND THE SOUL BLACKSMITH&r"
+				"Two Cataclysm dungeons, the Soul Blacksmith and the Burning Arena, are spawning within the Nether. Both are exposed, so there is a good chance you’ll naturally come across the Soul Blacksmith, especially since it is a large structure."
+				""
+				"However, players can also craft the Eye of Monstrous. It works similar to the Eye of Ender. When released, it will point to the nearest Soul Blacksmith, and only one is required, as there isn’t a chance for it to break."
+				""
+				"{@pagebreak}"
+				""
+				"&lABOUT THE SOUL BLACKSMITH&r"
+				"The Soul Blacksmith’s layout is entirely exterior. As the structure is a blacksmith, it contains several valuable blocks that can be collected and returned to the Overworld or your base."
+				""
+				"There are cauldrons, blast furnaces, anvils, and smithing tables around the blacksmith. A block of Ancient Debris is visible against the Netherite Monstrosity, the boss that resides here."
+				""
+				"There is only one new mob that can be found within the Soul Blacksmith, and that’s the Netherite Monstrosity. It’s a tanky boss with 500 Health and 10 Armor points. The Netherite Monstrosity rests in the Soul Fire, awakening and attacking once you get close."
+				""
+				"When fighting the Netherite Monstrosity, you’ll want plenty of Fire Resistance. During the fight, the Monstrosity will launch balls of lava at the player, dealing high amounts of damage. Though these are quite easy to dodge."
+				""
+				"A good strategy for fighting the Netherite Monstrosity is to try and brute force it. Get close with an item like a Netherite Axe and deal as much damage as possible. That way, the Monstrosity will mostly use its devastating melee attacks, knocking you in the air."
+				""
+				"However, it should be easy to deal with, provided you have enough health regeneration. Once defeated, the Netherite Monstrosity will drop the Monstrous Horn, used to craft the Monstrous Helm. It also drops the Infernal Forge, a melee weapon."
+				""
+				"{@pagebreak}"
+				""
+				"&lSECRET ROOM&r"
+				"A secret room does exist within the Soul Blacksmith. Where the Netherite Monstrosity spawns in the Soul Fire area, you will find a Polished Blackstone Button on the left-hand side. It’s in the corner, facing upwards."
+				""
+				"Pressing this opens a doorway in the back-right corner of the Soul Fire area, on the opposite side. However, you can also mine through the Cracked Polished Blackstone Bricks with a pickaxe."
+				""
+				"Behind this doorway is a small room containing some valuable materials. There are Blocks of Gold, Ancient Debrit, Gilded Blackstone, and some Nether Gold Ore."
+			]
+			hide_dependency_lines: true
+			id: "01A724832321A8A5"
+			optional: true
+			rewards: [
+				{
+					id: "4CB27E0DC07E4009"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "035A27F91A3ED56E"
+					table_id: 8875199159614461553L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3F5EDFDE0B16B564"
+					table_id: 2265012637020335752L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "01DBFDE0D0BF4978"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "cataclysm:infernal_forge"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "058D5182E501B5D4"
+					structure: "cataclysm:soul_black_smith"
+					title: "Find a Soul Blacksmith"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					id: "3DC14975E586D715"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "15EABF3D650D3CCC"
+					item: "cataclysm:monstrous_horn"
+					type: "item"
+				}
+			]
+			title: "Find an Soul Blacksmith"
+			x: 1.0d
+			y: -5.0d
 		}
 	]
 	title: "Chapter 2: The Underworld"

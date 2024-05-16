@@ -2,8 +2,8 @@ I'd like to credit the following for their inspiration with this pack.  Either w
 Thank you!!!
 
 #### [Create: Arcane Engineering](https://github.com/CoolerGangster/Create-Arcane-Engineering) [[GPLv3 License](https://github.com/CoolerGangster/Create-Arcane-Engineering/blob/dev/LICENSE)]
-- Some of the different mechanisms and machines like kinetic mechanism and brass machines
-- The images were taken and redistributed under GPLv3
+- Some recipes, items and images were used or inspired by CAE
+- The images used in this pack were taken and redistributed under GPLv3
 
 #### https://github.com/malcolmriley/unused-textures [[License](https://github.com/malcolmriley/unused-textures/blob/master/LICENSE)]
 - Some textures used in this pack
@@ -22,7 +22,7 @@ Thank you!!!
 - Used for some things!
 
 Any other textures, code snippets, quests and other assets reused in this pack are copyright their respective owners.
-For example, Forbidden and Arcanus textures were reused to recreate items in KubeJS but only to enhance the mode and not as something standalone.
+For example, Forbidden and Arcanus textures were reused to recreate items in KubeJS but only to enhance the mod and not as something standalone.
 
 
 

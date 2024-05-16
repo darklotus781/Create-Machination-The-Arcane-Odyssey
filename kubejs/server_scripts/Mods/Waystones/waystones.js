@@ -7,6 +7,7 @@ ServerEvents.recipes(event => {
     event.remove({output: 'waystones:portstone'});
     event.remove({output: 'waystones:warp_stone'});
     event.remove({output: 'waystones:warp_dust'});
+    event.remove({output: 'waystones:sharestone'});
     event.remove({output: /waystone\:.*scroll/});
 
     // Kubejs Warp Seeds
@@ -22,59 +23,38 @@ ServerEvents.recipes(event => {
     //     event.recipes.create.pressing(t, t)
     // ]).transitionalItem(t).loops(1).id('kubejs:assembly/warp_fragments');
 
+    // Warp Stone
+    let t = Item.of('waystones:warp_stone');
+    event.recipes.create.sequenced_assembly([
+        Item.of('waystones:warp_stone'),
+    ], Item.of('ars_nouveau:source_gem'), [
+        event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:liquid_chorus').withAmount(250)]),
+        event.recipes.create.deploying(t, [t, Ingredient.of('#forge:nuggets/terrasteel')]),
+        event.recipes.create.filling(t, [t, Fluid.of('thermal:ender').withAmount(125)]),
+        event.recipes.create.deploying(t, [t, Item.of('botania:dragonstone')]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:temporal_fluid').withAmount(125)]),
+        event.recipes.create.pressing(t, t)
+    ]).transitionalItem(t).loops(1).id('kubejs:assembly/warp_stone');
 
     // mix forbidden_arcanus:ferrognetic_mixture and create:chromatic_compound
     // produce temporal_fluid
     // spout fluid on forbidden_arcanus:purifying_soap
 
-    // let waystones = [
-    //     'waystones:waystone',
-    //     'waystones:mossy_waystone',
-    //     'waystones:sandy_waystone'
-    // ];
-    //
-    // waystones.forEach(i => {
-    //     event.recipes.create.crushing([Item.of('kubejs:warp_fragments', 5), Item.of('kubejs:warp_fragments')], Item.of(i));
-    // })
+    event.recipes.create.crushing([Item.of('kubejs:warp_fragments', 3), Item.of('kubejs:warp_fragments').withChance(.55), Item.of('kubejs:warp_fragments').withChance(.15)], Ingredient.of('#waystones:waystones'));
 
     //Waystones
-    event.shaped(Item.of('waystones:waystone'), [
-            'SRS',
-            ' W ',
-            'LCL',
-        ], {
-            S: 'ars_nouveau:stable_warp_scroll',
-            W: 'waystones:warp_stone',
-            R: 'botania:rune_envy',
-            C: 'minecraft:chiseled_stone_bricks',
-            L: 'minecraft:lodestone'
-        }
-    );
-    event.shaped(Item.of('waystones:mossy_waystone'), [
-            'SRS',
-            ' W ',
-            'LCL',
-        ],
-        {
-            S: 'ars_nouveau:stable_warp_scroll',
-            W: 'waystones:warp_stone',
-            R: 'botania:rune_envy',
-            C: 'minecraft:mossy_stone_bricks',
-            L: 'minecraft:lodestone'
-        }
-    );
-    event.shaped(Item.of('waystones:sandy_waystone'), [
-            'SRS',
-            ' W ',
-            'LCL',
-        ], {
-            S: 'ars_nouveau:stable_warp_scroll',
-            W: 'waystones:warp_stone',
-            R: 'botania:rune_envy',
-            C: 'minecraft:chiseled_sandstone',
-            L: 'minecraft:lodestone'
-        }
-    );
+    // event.shaped(Item.of('waystones:waystone'), [
+    //         'SRS',
+    //         ' W ',
+    //         'LCL',
+    //     ], {
+    //         S: 'ars_nouveau:stable_warp_scroll',
+    //         W: 'waystones:warp_stone',
+    //         R: 'botania:rune_envy',
+    //         C: 'minecraft:chiseled_stone_bricks',
+    //         L: 'minecraft:lodestone'
+    //     }
+    // );
 
     event.stonecutting('waystones:waystone', [Ingredient.of('#waystones:waystones')]);
     event.stonecutting('waystones:sandy_waystone', [Ingredient.of('#waystones:waystones')]);

@@ -173,55 +173,110 @@
 		}
 		{
 			dependencies: ["1EAB5892B997FB04"]
+			description: [
+				"&lHOW TO FIND THE RUINED CITADEL&r"
+				"As the End is a mostly empty and barren wasteland, coming across the Ruined Citadel naturally is relatively easy. Significantly, when increasing your render distance and flying around with an Elytra."
+				""
+				"However, players can also craft the Eye of Void. It works similar to the Eye of Ender. When released, it will point to the nearest Ruined Citadel. Then, you need to head in that general direction."
+				""
+				"{@pagebreak}"
+				""
+				"&lABOUT THE RUINED CITADEL&r"
+				"The Ruined Citadel is a large structure only one floor high above the surface. It’s mostly made up of End Stone and Purpur. However, there are a few new blocks provided by Cataclysm, such as Obsidian Stairs and Void Stone."
+				""
+				"A few ant-like creatures exist outside of the Ruined Citadel, which is the Endermaptera. These will attack the player on sight but only have 16 health and don’t deal too much damage."
+				""
+				"There are plenty of chests to loot throughout the Ruined Citadel, and some of them contain valuable items like Diamond equipment. To reach the lower floors of the Citadel, look for a courtyard that includes a Shulker and head through the Iron Trapdoor."
+				""
+				"The first mob that defends the Ruined Citadel is the Ender Golem. At least two can be found, one on the main floor and one below the structure. These have 150 health points and 12 armor."
+				""
+				"Defeating them rewards the Void Core, which can be used to summon damaging Void Runes, which can help fight the Ender Guardian. To reach the Ender Guardian, you must go two levels deeper than the main Ruined Citadel structure. Specifically, the Ender Guardian is located directly below the Ender Golem."
+				""
+				"The Ender Guardian has 333 health points and 20 armor in total. During the fight, it uses deadly attacks. It will knock you into the air, charge at you, and summon Void Runes, which deal large amounts of damage."
+				""
+				"When the Ender Guardian reaches half health, it will smash the ground, causing it, and you to fall to the level below. Once the fight is over, it will drop the ‘Gauntlet of the Guard’. When holding it, you can hold the right mouse button to suck nearby entities towards you."
+			]
+			hide_dependency_lines: true
 			id: "13957952F58CC31E"
+			optional: true
 			rewards: [
 				{
-					id: "22A376B18FBF9723"
-					item: {
-						Count: 1b
-						id: "minecraft:potion"
-						tag: {
-							Potion: "minecraft:strong_strength"
-						}
-					}
-					type: "item"
+					id: "3E86F94B6A8EE84E"
+					type: "xp_levels"
+					xp_levels: 100
 				}
 				{
-					id: "66482EB06C850D82"
-					item: {
-						Count: 1b
-						id: "minecraft:potion"
-						tag: {
-							Potion: "minecraft:strong_regeneration"
-						}
-					}
-					type: "item"
+					exclude_from_claim_all: true
+					id: "505DD6BF8E14D89E"
+					table_id: 8875199159614461553L
+					type: "random"
 				}
 				{
-					id: "4FADE3A845CD7D03"
-					item: {
-						Count: 1b
-						id: "minecraft:potion"
-						tag: {
-							Potion: "minecraft:strong_healing"
-						}
-					}
+					exclude_from_claim_all: true
+					id: "03B4E908EA2F3400"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2AF425BBE198204B"
+					table_id: 2265012637020335752L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					icon: "cataclysm:void_core"
+					id: "428009B6F0E7C595"
+					structure: "cataclysm:ruined_citadel"
+					title: "Find a Ruined Citadel"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:ender_golem"
+					id: "5989136DC4400754"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "cataclysm:ender_guardian"
+					id: "3BB4964598AD9A92"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "2522C22FC9356B97"
+					item: "cataclysm:gauntlet_of_guard"
 					type: "item"
 				}
 			]
-			tasks: [{
-				icon: "cataclysm:void_core"
-				id: "428009B6F0E7C595"
-				structure: "cataclysm:ruined_citadel"
-				title: "Find a Citadel"
-				type: "structure"
-			}]
-			x: 0.5d
-			y: 0.5d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["76A4479320CB91F4"]
 			id: "77AED1A93EF07C4F"
+			rewards: [
+				{
+					id: "12796F1C669845F4"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "27D1EAF5537CB4D6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "1856D54580EDF942"
 				item: {

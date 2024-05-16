@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "kubejs:brass_mechanism"
+        },
+        "title": "Brass is the new Gold",
+        "description": "You acquired your first Brass Mechanism",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/block/dirt.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {},
+                "items": [
+                    {
+                        "items": [
+                            "kubejs:brass_mechanism"
+                        ],
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    }
+}

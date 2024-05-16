@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "4_plastic_production"
 	group: "565532624F0A44A9"
-	hide_quest_until_deps_visible: true
+	hide_quest_details_until_startable: true
 	icon: "kubejs:plastic_mechanism"
 	id: "63F5BD2F8A4DC433"
 	images: [{
@@ -11,17 +11,14 @@
 		image: "kubejs:textures/gui/quest_bg_square.png"
 		rotation: 0.0d
 		width: 20.0d
-		x: 5.5d
+		x: 6.5d
 		y: 2.0d
 	}]
-	order_index: 5
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"099F5D860FC50376"
-				"190C60DDF1F94DE5"
-			]
+			dependencies: ["099F5D860FC50376"]
 			description: [
 				"Chapter 4 involves creating Plastic from Oil."
 				"It's a process but not all that complicated."
@@ -31,44 +28,50 @@
 			]
 			hide: true
 			id: "3BA66A93D82E2558"
+			rewards: [{
+				id: "03D4DD214570EC85"
+				item: "ftbquests:detector"
+				type: "item"
+			}]
 			tasks: [{
 				id: "50981C6E3F6A54D2"
 				title: "Chapter 2: Start"
 				type: "checkmark"
 			}]
 			title: "Chapter 4: Start"
-			x: 4.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["31E5ACE6B6151997"]
-			id: "404009AD0EB4B580"
-			rewards: [{
-				id: "171BF15E456009CC"
-				type: "xp_levels"
-				xp_levels: 25
-			}]
-			tasks: [
-				{
-					count: 8L
-					id: "24DE02CD9F20CA37"
-					item: "kubejs:plastic_mechanism"
-					type: "item"
-				}
-				{
-					id: "307030EA16C15EBA"
-					title: "Automated Plastic Mechanisms"
-					type: "checkmark"
-				}
-			]
-			x: 3.0d
-			y: 3.5d
+			x: 7.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
-				"404009AD0EB4B580"
-				"704F9AF9DFA8CEDE"
+				"3CA85E9CB9495921"
+				"4003780A9CE9D481"
 			]
+			id: "404009AD0EB4B580"
+			rewards: [
+				{
+					id: "171BF15E456009CC"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C5A714E2BF37463"
+					table_id: 2417904647564121192L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "24DE02CD9F20CA37"
+				item: "kubejs:plastic_mechanism"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["404009AD0EB4B580"]
 			id: "74F85CFABA84170A"
 			rewards: [
 				{
@@ -85,21 +88,15 @@
 			]
 			shape: "gear"
 			size: 1.5d
-			tasks: [
-				{
-					count: 8L
-					id: "25A91826DC3013C4"
-					item: "kubejs:plastic_machine"
-					type: "item"
-				}
-				{
-					id: "6927A640B7DE7BF4"
-					title: "Automated Plastic Machines"
-					type: "checkmark"
-				}
-			]
-			x: 5.25d
-			y: 4.5d
+			tasks: [{
+				count: 64L
+				id: "25A91826DC3013C4"
+				item: "kubejs:plastic_mechanism"
+				type: "item"
+			}]
+			title: "Automations"
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -108,13 +105,34 @@
 			]
 			description: ["Mix some Polyethylene Slurry and LPG to produce plastic."]
 			id: "04346BEE4D964F35"
-			tasks: [{
-				amount: 1000L
-				fluid: "pneumaticcraft:plastic"
-				id: "720B4CAC04B8CCBB"
-				type: "fluid"
-			}]
-			x: 4.5d
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E6F7E97F76240B9"
+					table_id: 2265012637020335752L
+					type: "loot"
+				}
+				{
+					id: "1EC41B9F121F2C26"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "pneumaticcraft:plastic"
+					id: "720B4CAC04B8CCBB"
+					type: "fluid"
+				}
+				{
+					amount: 1000L
+					fluid: "kubejs:ethylene"
+					id: "3C120C9457C2FC92"
+					type: "fluid"
+				}
+			]
+			x: 7.0d
 			y: 2.0d
 		}
 		{
@@ -138,11 +156,15 @@
 				}
 			]
 			title: "Option B: Refining"
-			x: 8.5d
+			x: 11.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["0A29C7DF806CF4FD"]
+			dependencies: [
+				"0A29C7DF806CF4FD"
+				"0A9575CB1BF39EC9"
+			]
+			description: ["You need to superheat your refinery, it's easier with blaze cakes until you've produced some Refined Fuel.  Alternatively you may use Source, but it may be too expensive depending on your factory."]
 			id: "32B4756EB9ACC4FC"
 			rewards: [{
 				id: "7A18559B3E7814D0"
@@ -167,7 +189,7 @@
 				}
 			]
 			title: "Option A: Distillation"
-			x: 8.5d
+			x: 11.0d
 			y: 1.0d
 		}
 		{
@@ -191,7 +213,7 @@
 				id: "6700335F261FCFA7"
 				type: "fluid"
 			}]
-			x: 9.5d
+			x: 12.0d
 			y: 2.0d
 		}
 		{
@@ -201,36 +223,68 @@
 			]
 			description: ["Spout some Molten Plastic on Sturdy Sheets to produce Plastic Sheets."]
 			id: "31E5ACE6B6151997"
+			rewards: [
+				{
+					count: 12
+					id: "39E8A55E7A0C7597"
+					item: "pneumaticcraft:plastic"
+					type: "item"
+				}
+				{
+					id: "0BFB40E3EE5F4BD1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "7E6E0A14EC8A33E0"
 				item: "pneumaticcraft:plastic"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 5.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["3BA66A93D82E2558"]
 			hide_dependency_lines: true
 			id: "2842A330B55DC6CA"
+			rewards: [
+				{
+					id: "156D1E40A3075D4A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0124EC019A74B30C"
+					table_id: 971780999319815631L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "3C3D195F15D12001"
 				item: "create:sturdy_sheet"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 5.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["6D6710FA7DBF37DA"]
 			id: "7CDAFC5D8720A591"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63A53AF99DD922C0"
+				table_id: 7760746703095486576L
+				type: "random"
+			}]
 			tasks: [{
 				amount: 1000L
 				fluid: "kubejs:ethylene"
 				id: "03718BDD8BCAE54F"
 				type: "fluid"
 			}]
-			x: 4.5d
+			x: 7.0d
 			y: 0.5d
 		}
 		{
@@ -282,7 +336,7 @@
 				}
 			]
 			title: "Oil Byproducts"
-			x: 7.5d
+			x: 10.0d
 			y: 2.0d
 		}
 		{
@@ -343,16 +397,18 @@
 				}
 			]
 			title: "Fuel Collection"
-			x: 6.0d
+			x: 8.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["3BA66A93D82E2558"]
 			description: [
 				"Andesite blend has unique properties that when mixed with Resin and Menril Resin produces a Polyethylene Slurry."
+				""
 				"Combining with LPG will produce plastic."
+				""
+				"You should have these products automated by now."
 			]
-			hide_dependency_lines: true
 			id: "6D6710FA7DBF37DA"
 			rewards: [
 				{
@@ -370,6 +426,12 @@
 					id: "30D804A3CE49AA08"
 					item: "kubejs:andesite_blend"
 					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "27B815B9A22DAF94"
+					table_id: 7760746703095486576L
+					type: "random"
 				}
 			]
 			tasks: [
@@ -392,20 +454,251 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: -0.5d
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A8997AF256D95FF"]
+			id: "3CA85E9CB9495921"
+			rewards: [
+				{
+					id: "1E64B52ECD4A121E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2592F22D7F6075C0"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "28D18660FC44AFA4"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6B09B73847E8DD9D"]
+			id: "4A8997AF256D95FF"
+			rewards: [
+				{
+					id: "50EE5D0B9283E74D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4D4B1E51A0C4E497"
+					table_id: 7913046071043377976L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "188977511C15FB09"
+				item: "pneumaticcraft:unassembled_pcb"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31E5ACE6B6151997"]
+			id: "5194E20FBA81B674"
+			tasks: [{
+				id: "21295B4A6D1766C5"
+				item: "pneumaticcraft:empty_pcb"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4BDE31D07387A34D"
+				"7F4DF413A804A9DD"
+				"527DC191A3470DF1"
+				"5194E20FBA81B674"
+			]
+			id: "6B09B73847E8DD9D"
+			rewards: [
+				{
+					id: "40E1E0E66F44FB66"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B61BDE3AE733BF3"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "24571665F934C086"
+				item: "pneumaticcraft:assembly_platform"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3BA66A93D82E2558"]
 			hide_dependency_lines: true
-			id: "704F9AF9DFA8CEDE"
+			id: "4BDE31D07387A34D"
+			rewards: [
+				{
+					id: "7B2AA26255D5A37D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "02AA4816C05FF71A"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+			]
+			shape: "diamond"
 			tasks: [{
-				id: "3D20F51FDD06C033"
-				item: "kubejs:zinc_casing"
+				id: "3E9ECD7B45EAEFF0"
+				item: "pneumaticcraft:assembly_io_unit_import"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.0d
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3BA66A93D82E2558"]
+			hide_dependency_lines: true
+			id: "7F4DF413A804A9DD"
+			rewards: [
+				{
+					id: "12BABCFBF5710DF4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6365259F20322D6B"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "673D3F972D7C683F"
+				item: "pneumaticcraft:assembly_io_unit_export"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["601F6EFFAE60AFD0"]
+			id: "527DC191A3470DF1"
+			rewards: [{
+				id: "0F4E9A6127DC2A88"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2057EC68729520E9"
+				item: "pneumaticcraft:assembly_laser"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3BA66A93D82E2558"]
+			hide_dependency_lines: true
+			id: "601F6EFFAE60AFD0"
+			rewards: [
+				{
+					id: "06D9C56C9CBDB8DB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5DDCB9D641A7F898"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6BFA1454C38548B5"
+				item: "pneumaticcraft:assembly_program_laser"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["31E5ACE6B6151997"]
+			description: ["Spout some Molten Plastic on Sturdy Sheets to produce Plastic Sheets."]
+			id: "4003780A9CE9D481"
+			rewards: [
+				{
+					count: 12
+					id: "10D243C21326F6BD"
+					item: "pneumaticcraft:plastic"
+					type: "item"
+				}
+				{
+					id: "5AEFBEE35C7731EE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "7984E8D96B2FEFA7"
+				item: "kubejs:plastic"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2BE678214E88359A"]
+			id: "0A9575CB1BF39EC9"
+			rewards: [{
+				count: 8
+				id: "3511A45A793C8703"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4ECF744D9F40904C"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BA66A93D82E2558"]
+			hide_dependency_lines: true
+			id: "2BE678214E88359A"
+			rewards: [{
+				count: 8
+				id: "2C018681D7408518"
+				item: "create:blaze_cake_base"
+				type: "item"
+			}]
+			tasks: [{
+				id: "67CA65ECB0B2AAD4"
+				item: "create:blaze_cake_base"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.5d
 		}
 	]
 	title: "4: Plastic Pandemonium"

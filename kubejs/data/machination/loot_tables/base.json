@@ -1,26 +1,48 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "thermal:silver_coin",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": {
-                                    "min": 4,
-                                    "max": 32
-                                }
-                            },
-                            "add": false
-                        }
-                    ]
+          "type": "minecraft:item",
+          "name": "thermal:silver_coin",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": {
+                  "min": 4,
+                  "max": 32
                 }
-            ]
+              },
+              "add": false
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:mechanism_smithing_template",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": {
+                  "min": 4,
+                  "max": 64
+                }
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

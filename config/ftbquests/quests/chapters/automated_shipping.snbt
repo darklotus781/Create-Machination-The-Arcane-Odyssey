@@ -33,7 +33,7 @@
 			dependencies: ["6AC1CED0D341150E"]
 			description: ["This Trading card can convert the currency of coins inserted into the Trading Machine."]
 			hide: true
-			icon: { Count: 2b, id: "thermal:gold_coin" }
+			icon: "thermal:gold_coin"
 			id: "3B548F2C060C2229"
 			rewards: [
 				{
@@ -95,7 +95,7 @@
 			tasks: [{
 				consume_items: true
 				count: 30L
-				icon: { Count: 30b, id: "thermal:silver_coin" }
+				icon: "thermal:silver_coin"
 				id: "3E2EAC7B2D274669"
 				item: "thermal:silver_coin"
 				type: "item"

@@ -296,11 +296,11 @@
 			[kinetics.stressValues.v2.capacity]
 				copper_valve_handle = 8.0
 				hand_crank = 8.0
-				steam_engine = 1024.0
+				steam_engine = 128.0
 				creative_motor = 16384.0
 				large_water_wheel = 128.0
 				water_wheel = 32.0
-				windmill_bearing = 512.0
+				windmill_bearing = 256.0
 
 #.
 #Create's liquid manipulation tools
@@ -320,7 +320,7 @@
 	#[in Blocks]
 	#The maximum distance a mechanical pump can push or pull liquids on either side.
 	#Range: > 1
-	mechanicalPumpRange = 16
+	mechanicalPumpRange = 32
 	#.
 	#[in Blocks]
 	#The maximum distance a hose pulley can draw fluid blocks from.
@@ -410,7 +410,7 @@
 		#.
 		#Amount of game ticks between shots of the cannon. Higher => Slower
 		#Range: > 1
-		schematicannonDelay = 10
+		schematicannonDelay = 5
 		#.
 		#% of Schematicannon's Fuel filled by 1 Gunpowder.
 		#Range: 0.0 ~ 100.0
@@ -435,7 +435,7 @@
 	#.
 	#The Maximum Distance at which a Toolbox can interact with Players' Inventories.
 	#Range: > 1
-	toolboxRange = 10
+	toolboxRange = 16
 	#.
 	#The Maximum volume of Air that can be stored in a backtank = Seconds of underwater breathing
 	#Range: > 1

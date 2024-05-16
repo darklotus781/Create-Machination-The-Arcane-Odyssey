@@ -1115,14 +1115,6 @@
 			"Is Blacklist" = false
 			Dimensions = ["minecraft:overworld"]
 
-	[world.glimmering_weald]
-		#Experimental, dont change if you dont know what you are doing. Depth min value from which biome will spawn. Decreasing will make biome appear more often
-		#Allowed values: [-2,2]
-		"Min Depth Range" = 1.5499999523162842
-		#Experimental, dont change if you dont know what you are doing. Depth max value until which biome will spawn. Increasing will make biome appear more often
-		#Allowed values: [-2,2]
-		"Max Weirdness Range" = 2.0
-
 	[world.monster_box]
 		#The chance for the monster box generator to try and place one in a chunk. 0 is 0%, 1 is 100%
 		#This can be higher than 100% if you want multiple per chunk.
@@ -1559,7 +1551,7 @@
 	"Soul Candles" = true
 	"Usage Ticker" = true
 	"Uses For Curses" = true
-	"Variant Animal Textures" = true
+	"Variant Animal Textures" = false
 	"Wool Shuts Up Minecarts" = true
 
 	[client.auto_walk_keybind]
@@ -1643,19 +1635,19 @@
 		"Bind Armor Stands With Player Heads" = true
 
 	[client.variant_animal_textures]
-		"Enable Cow" = true
-		"Enable Pig" = true
-		"Enable Chicken" = true
-		"Enable Shiny Rabbit" = true
-		"Enable Shiny Llama" = true
-		"Enable Shiny Dolphin" = true
-		"Enable Shiny Slime" = true
-		"Enable L G B T Bees" = true
+		"Enable Cow" = false
+		"Enable Pig" = false
+		"Enable Chicken" = false
+		"Enable Shiny Rabbit" = false
+		"Enable Shiny Llama" = false
+		"Enable Shiny Dolphin" = false
+		"Enable Shiny Slime" = false
+		"Enable L G B T Bees" = false
 		"Every Bee Is L G B T" = false
 		#The chance for an animal to have a special "Shiny" skin, like a shiny pokemon. This is 1 in X. Set to 0 to disable.
-		"Shiny Animal Chance" = 2048
+		"Shiny Animal Chance" = 0
 		#If a shiny animal should emit occasional sparkles.
-		"Shiny Sparkles" = true
+		"Shiny Sparkles" = false
 
 [experimental]
 	"Adjustable Chat" = false

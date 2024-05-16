@@ -102,6 +102,9 @@
   "appliedcooking": {
     "kitchen_station": true
   },
+  "cardboardbox": {
+    "crate": true
+  },
   "reliquary": {
     "pedestal": true,
     "altar": true,

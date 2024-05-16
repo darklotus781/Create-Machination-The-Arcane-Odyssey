@@ -145,14 +145,13 @@ ServerEvents.recipes(event => {
     }).id('kubejs:gold_backpack_to_diamond_upgrade');
 
     // Diamond to Netherite
-    event.shaped(Item.of('sophisticatedbackpacks:netherite_backpack'), [
-        'SSS',
-        'SBS',
-        'SSS'
-    ], {
-        S: Ingredient.of('#forge:storage_blocks/netherite'),
-        B: Item.of('sophisticatedbackpacks:diamond_backpack')
-    }).modifyResult((inventory, itemstack) => {
+    event.shapeless(Item.of('sophisticatedbackpacks:netherite_backpack'), [
+        Item.of('sophisticatedbackpacks:diamond_backpack').weakNBT(),
+        Item.of('botania:gaia_ingot'),
+        Item.of('ars_nouveau:void_jar').weakNBT(),
+        Item.of('forbidden_arcanus:processed_obsidian_block'),
+        Item.of('minecraft:netherite_ingot')
+    ]).modifyResult((inventory, itemstack) => {
         let backpack = inventory.find(Item.of('sophisticatedbackpacks:diamond_backpack').weakNBT());
         if (backpack.nbt == null) return itemstack;
         let nbt = backpack.nbt;

@@ -5,6 +5,7 @@ ServerEvents.recipes(event => {
     event.remove({id: /create:crushing\/iron\/scrap_*/});
     event.remove({id: /create:crushing\/wood\/scrap_*/});
     event.remove({id: /create:crushing\/*\/scrap_*/});
+    event.remove({id: /create:crushing\/.*\/scrap_*_ingot/});
     event.remove({id: /create:crushing\/scrap_*/});
     // Create Recycling...
     event.remove({id: 'create:crushing/diorite_recycling'});

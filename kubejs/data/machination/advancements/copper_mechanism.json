@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "kubejs:copper_mechanism"
+        },
+        "title": "Better than Flex Seal",
+        "description": "You sealed a mechanism with copper and rubber!",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/block/dirt.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {},
+                "items": [
+                    {
+                        "items": [
+                            "kubejs:copper_mechanism"
+                        ],
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    }
+}

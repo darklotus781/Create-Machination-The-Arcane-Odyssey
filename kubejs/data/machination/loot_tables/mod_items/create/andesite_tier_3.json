@@ -336,11 +336,6 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 5,
-                    "name": "createaddition:alternator"
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 10,
                     "name": "createaddition:redstone_relay",
                     "functions": [

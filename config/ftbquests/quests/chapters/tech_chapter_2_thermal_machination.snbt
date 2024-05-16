@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tech_chapter_2_thermal_machination"
@@ -18,12 +19,16 @@
 		}
 	}
 	id: "777A1C817B499CDB"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["411FC26DBB795420"]
-			description: ["Thermal Series is a modular series of mods that adds a content-rich blend of magic and technology to your Minecraft experience!"]
+			description: [
+				"Incomplete Questline, please ignore!"
+				""
+				"Thermal Series is a modular series of mods that adds a content-rich blend of magic and technology to your Minecraft experience!"
+			]
 			hide: true
 			icon: "thermal:upgrade_augment_3"
 			id: "1B026591BE76FA2E"
@@ -139,7 +144,7 @@
 			subtitle: "The Basic Frame for Machines"
 			tasks: [{
 				id: "3EC446E752907C94"
-				item: "kubejs:radiant_machine"
+				item: "kubejs:radiant_mechanism"
 				type: "item"
 			}]
 			x: -0.5d

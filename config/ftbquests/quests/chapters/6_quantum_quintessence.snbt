@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "6_quantum_quintessence"
 	group: "565532624F0A44A9"
-	hide_quest_until_deps_visible: true
+	hide_quest_details_until_startable: true
 	icon: "kubejs:quantum_mechanism"
 	id: "467EFE69A1D98513"
 	images: [{
@@ -11,25 +11,19 @@
 		image: "kubejs:textures/gui/quest_bg_square.png"
 		rotation: 0.0d
 		width: 20.0d
-		x: 0.5d
-		y: -3.0d
+		x: 1.0d
+		y: -5.0d
 	}]
-	order_index: 7
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["437114B9BC07B2BD"]
 			description: [
-				"Getting started in Chapter 2 makes a couple of assumptions."
-				"1) You have completed Chapter 1 :P"
+				"Getting started in Chapter 6 sets you up for the end of the pack!"
+				"Before getting started, you should have a good setup for automating resources in a scalable factory.  You'll need to automate lots of new materials."
 				""
-				"2) You have automated Kinetic Mechanisms"
-				""
-				"3) You have automated Menril Tree farming and Resin production"
-				""
-				"4) You have a steady supply of Redstone, Quartz and a Blaze Spawner or a fortress to fill Blaze Burners"
-				""
-				"5) A steady supply of Brass from Copper and Zinc."
+				"The goal of this chapter is to unlock The End dimension and work toward the final goals."
 			]
 			hide: true
 			id: "79119FB127682E9A"
@@ -41,42 +35,236 @@
 			}]
 			title: "Chapter 6: Start"
 			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0B9DED4DC034EA7D"]
+			id: "56174EE225DA3F73"
+			rewards: [
+				{
+					id: "6A55EA1AF943C22D"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "54C0F59B99D8B525"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+				{
+					auto: "invisible"
+					id: "08A922C05BFCC7C4"
+					ignore_reward_blocking: true
+					stage: "end_access"
+					team_reward: false
+					type: "gamestage"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "0EE62C13C0FB0548"
+				item: "kubejs:quantum_mechanism"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["56174EE225DA3F73"]
+			description: ["Congratulations, you've automated Quantum Mechanisms!"]
+			id: "0C11FBBB3848BC6C"
+			rewards: [
+				{
+					id: "5DF11D3E0345AD25"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66E2CA5AEB4347FB"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "4BAE9EE21981C7B5"
+				item: "kubejs:quantum_mechanism"
+				type: "item"
+			}]
+			title: "Automations"
+			x: 1.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["79119FB127682E9A"]
-			id: "56174EE225DA3F73"
+			description: ["Squirt some Hyper Experience on Stellarite 4x"]
+			id: "0AC4245DCF0E462F"
 			rewards: [{
-				id: "6A55EA1AF943C22D"
-				type: "xp_levels"
-				xp_levels: 25
+				count: 8
+				id: "7155131D4136A1B4"
+				item: "create_enchantment_industry:hyper_experience_bottle"
+				type: "item"
 			}]
-			tasks: [
-				{
-					count: 8L
-					id: "0EE62C13C0FB0548"
-					item: "kubejs:quantum_mechanism"
-					type: "item"
-				}
-				{
-					id: "4D9CCE5AC49F79E9"
-					title: "Automated Quantum Mechanisms"
-					type: "checkmark"
-				}
-			]
-			x: 1.0d
-			y: -4.0d
+			tasks: [{
+				id: "482D914DEC624D9B"
+				item: "create_enchantment_industry:hyper_experience_bottle"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["79119FB127682E9A"]
-			id: "0F13EA1FD382FDE6"
+			description: ["Deploy a Cyber Mechanism on Stellarite 4x"]
+			id: "6EC9064BE1010A9E"
+			rewards: [{
+				count: 8
+				id: "47A2D3C3B98D79BA"
+				item: "kubejs:cyber_mechanism"
+				type: "item"
+			}]
 			tasks: [{
-				id: "544D83F57E2E97D6"
-				item: "create:refined_radiance_casing"
+				id: "39FCCC1E6A23879A"
+				item: "kubejs:cyber_mechanism"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["79119FB127682E9A"]
+			description: [
+				"Crushing a Nether Star will produce at least 3x Nether Star Dust."
+				""
+				"Deploy Nether Star Dust on Stellarite 4x"
+			]
+			id: "4FE909C5A748C932"
+			rewards: [
+				{
+					id: "57DF6276FE4EACB4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 8
+					id: "455AFD2CD3FBB263"
+					item: "kubejs:nether_star_dust"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "74627832D274FDE0"
+				item: "kubejs:nether_star_dust"
 				type: "item"
 			}]
 			x: -0.5d
-			y: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["79119FB127682E9A"]
+			id: "55DFE57F48AAE21F"
+			rewards: [{
+				id: "2DB3CA11299CFB21"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "71679B983FA5F9B7"
+				item: "kubejs:runic_tablet"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["79119FB127682E9A"]
+			description: ["You should already have Aureal Essence automated, bring some over."]
+			id: "580057462445245E"
+			rewards: [{
+				id: "52C182E1EEE9D432"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "367E222AC5F660F2"
+				item: "kubejs:aureal_essence_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["79119FB127682E9A"]
+			description: ["The Gaia Spirit is an ingredient but isn't consumed in the process of creating Quantum Mechanisms. "]
+			id: "73740952D2F6F7E1"
+			rewards: [{
+				id: "50D155C1B0A2F8FA"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "009E65786B208B96"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"79119FB127682E9A"
+				"6EC9064BE1010A9E"
+				"0AC4245DCF0E462F"
+				"4FE909C5A748C932"
+				"55DFE57F48AAE21F"
+				"580057462445245E"
+				"73740952D2F6F7E1"
+				"6D1394807AA42FF1"
+			]
+			description: [
+				"Dropping a netherstar into the world around build-height will produce a Stellarite Piece."
+				""
+				"Take that Stellarite Piece and run it through an assembly line to produce a Quantum Mechanism."
+			]
+			id: "0B9DED4DC034EA7D"
+			rewards: [
+				{
+					count: 4
+					id: "293ACB96579FFF86"
+					item: "forbidden_arcanus:stella_arcanum"
+					type: "item"
+				}
+				{
+					id: "139545D5DE7FBB09"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "547FA62D658D9988"
+				item: "forbidden_arcanus:stellarite_piece"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["79119FB127682E9A"]
+			id: "6D1394807AA42FF1"
+			rewards: [{
+				id: "1F3A9DF52DD31471"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "44C4DCBCBC97E9A3"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.0d
 		}
 	]
 	title: "6: Quantum Quintessence"

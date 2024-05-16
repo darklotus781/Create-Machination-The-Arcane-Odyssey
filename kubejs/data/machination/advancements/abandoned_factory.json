@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "create:cogwheel"
+        },
+        "title": "It's a fixer upper",
+        "description": "Locate an Abandoned Factory",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/block/dirt.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "structure": "machination:factory"
+                    }
+                }
+            }
+        }
+    }
+}

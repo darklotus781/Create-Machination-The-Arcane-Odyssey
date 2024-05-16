@@ -762,7 +762,7 @@
 	#Make animals flee/fight back when one is attacked
 	"Enable Animals Group Flee" = true
 	#Makes animals not tempted by food. Use the entity type tag enhancedai:can_ignore_food_temptation to change animals.
-	"Enable Not Tempted Animals" = true
+	"Enable Not Tempted Animals" = false
 
 	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:can_fight_back and enhancedai:can_be_scared_by_players to add/remove animals.
 	[Animals."Animals Scared Attack"]

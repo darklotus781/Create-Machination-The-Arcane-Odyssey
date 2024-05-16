@@ -7,6 +7,7 @@
 	icon: "forbidden_arcanus:enchanted_soul"
 	id: "253484F4EA596080"
 	order_index: 1
+	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
@@ -19,6 +20,7 @@
 				""
 				"This magic-themed mod has amazing animations, as well as some overpowered items like the &6Eternal Stella&r. "
 			]
+			hide: true
 			icon: {
 				Count: 1b
 				id: "forbidden_arcanus:smelter_prism"
@@ -920,7 +922,7 @@
 				""
 				"Once you have all of the blocks needed, you'll need to build the platform for the forge!"
 				""
-				"{image:machination:textures/ftbquests/forbidden/forge.png width:200 height:200 align:1}"
+				"{image:kubejs:textures/ftbquests/forbidden/forge.png width:200 height:200 align:1}"
 				""
 				"The 8 Chiseled Arcane Polished Darkstone blocks on the outer ring of the platform can be used for pedestals or Arcane Cryal Obelisks, with the last block being placed in the center of the platform. "
 				""
@@ -1017,7 +1019,7 @@
 		{
 			dependencies: ["6E3B9051503B938C"]
 			description: [
-				"Smelting &9Edelwood&r will give you Dark Matter."
+				"Blowing up matter balls with TNT will sometimes produce Dark Matter."
 				""
 				"You can make Black Holes with this."
 			]

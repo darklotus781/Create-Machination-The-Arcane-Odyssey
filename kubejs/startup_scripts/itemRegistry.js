@@ -24,21 +24,21 @@ ItemEvents.toolTierRegistry(event => {
         tier.speed = 0;
         tier.attackDamageBonus = 0;
         tier.level = 0;
-        tier.uses = 128;
+        tier.uses = 64;
         tier.repairIngredient = '#forge:ingots/andesite_alloy';
     });
     event.add('brass_tool', tier => {
         tier.speed = 0;
         tier.attackDamageBonus = 0;
         tier.level = 0;
-        tier.uses = 256;
+        tier.uses = 128;
         tier.repairIngredient = '#forge:plates/brass';
     });
     event.add('copper_tool', tier => {
         tier.speed = 0;
         tier.attackDamageBonus = 0;
         tier.level = 0;
-        tier.uses = 256;
+        tier.uses = 128;
         tier.repairIngredient = '#forge:plates/copper';
     });
     event.add('refined_tool', tier => {
@@ -47,6 +47,13 @@ ItemEvents.toolTierRegistry(event => {
         tier.level = 0;
         tier.uses = 256;
         tier.repairIngredient = '#forge:ingots/refined_radiance';
+    });
+    event.add('resonator_tool', tier => {
+        tier.speed = 0;
+        tier.attackDamageBonus = 0;
+        tier.level = 0;
+        tier.uses = 512;
+        tier.repairIngredient = 'kubejs:radiant_steel';
     });
 });
 
@@ -114,8 +121,9 @@ StartupEvents.registry('item', event => {
     incomplete_mechanism('Radiant');
     mechanism('Power');
     incomplete_mechanism('Power');
-    mechanism('Scorch');
-    incomplete_mechanism('Scorch');
+    // Never found a good use for it...
+    // mechanism('Scorch');
+    // incomplete_mechanism('Scorch');
 
     event.create('redstone_alloy_ingot').displayName('Redstone Alloy Ingot');
     event.create('redstone_alloy_cable').displayName('Redstone Alloy Cable');
@@ -159,13 +167,14 @@ StartupEvents.registry('item', event => {
     event.create('refined_chisel', 'sword').tier('refined_tool').texture('kubejs:item/refined_chisel').displayName('Refined Chisel').attackDamageBaseline(0);
     event.create('diamond_chisel', 'sword').tier('diamond_tool').texture('kubejs:item/diamond_chisel').displayName('Diamond Chisel').attackDamageBaseline(0);
     event.create('soldering_iron', 'sword').tier('iron_tool').texture('kubejs:item/soldering_iron').displayName('Soldering Iron').attackDamageBaseline(0);
-    event.create('resonator', 'sword').tier('iron_tool').texture('kubejs:item/resonator').displayName('Magnetic Resonator').attackDamageBaseline(0);
+    event.create('resonator', 'sword').tier('resonator_tool').texture('kubejs:item/resonator').displayName('Magnetic Resonator').tooltip('Can be repaired in anvil with Radiant Steel').attackDamageBaseline(0);
 
     // Different Tubes
     event.create('empty_tube');
+    event.create('blue_tube');
+    event.create('diamond_chunks');
 
     // Incomplete / Transitional Devices
-
     event.create('incomplete_cogwheel', 'create:sequenced_assembly').displayName('Broken Cogwheel').parentModel('create:block/cogwheel_shaftless');
     event.create('incomplete_resistor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_resistor').displayName('Incomplete Resistor');
     event.create('incomplete_inductor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_inductor').displayName('Incomplete Induction Coil');
@@ -200,18 +209,13 @@ StartupEvents.registry('item', event => {
     event.create('petrified_sheet').texture('kubejs:item/petrified_sheet').displayName('Petrified Sheet');
     event.create('enriched_rubber').texture('kubejs:item/enriched_rubber').displayName('Menril Enriched Rubber');
     event.create('rune_dust').displayName('Rune Dust');
-    event.create('anthracene').displayName('Anthracene').tooltip('C₁₄H₁₀');
-    event.create('incomplete_anthraquinone').displayName('Incomplete Anthraquinone').tooltip('Next: Submerge in Chromic Acid');
-    event.create('anthraquinone').displayName('Anthraquinone').tooltip('C₁₄H₈O₂');
-    event.create('chromium').displayName('Chromium').tooltip('Cr');
     event.create('powdered_flint').displayName('Powdered Flint').tooltip('Mix with Refined Fuel to create gunpowder');
     event.create('empty_vial').displayName('Empty Vial');
-    event.create('netherite_dust')
+    event.create('netherite_dust');
+    event.create('scryers_eye');
 
 
     event.create('sourcegem_fragments').displayName('Source Crystal Fragments');
-    // event.create('menril_shrub').tooltip('With the weakening of the Arcane so have the Arcane Trees been weakened. Can you restore this artifact?');
-    // event.create('rejuvinated_menril_shrub').tooltip('Youve restored it, well to some part. To fully restore the Menril Sapling you must continue.');
     event.create('time_crystal').displayName('Time Crystal Shards');
     event.create('carbon_sheet').texture('kubejs:item/carbon_sheet').displayName('Carbon Sheet');
     event.create('mica_sheet').texture('kubejs:item/mica_sheet').displayName('Mica Sheet');
@@ -247,11 +251,13 @@ StartupEvents.registry('item', event => {
         .ingredientsSlotDescription('Insert one (1) Mechanism')
         .texture('kubejs:item/mechanism_smithing_template');
 
-    event.create('machine_smithing_template');
-
     event.create('ritual_dummy/ender_eye')
         .displayName('Ritual: Craft Eye of Ender')
-        .tooltip("Used to locate a stronghold and activate the end portal.  Ritual Crafting is a way to bypass the crafting grid recipe.")
+        .tooltip("Used to locate a stronghold and in advanced recipes.")
+        .texture('occultism:item/ritual_dummy');
+    event.create('ritual_dummy/teleport_pad')
+        .displayName('Ritual: Craft a Teleport Pad')
+        .tooltip("A pad capable of teleporting you to unknown dimensions")
         .texture('occultism:item/ritual_dummy');
 
     // Spawn Eggs - custom spawn eggs don't work on spawners ;)
@@ -263,7 +269,9 @@ StartupEvents.registry('item', event => {
         food
             .hunger(1)
             .saturation(0.5)
-            .effect('ars_nouveau:flight', 20 * 60 * 1.5, 1, 1)
+            .effect('ars_nouveau:flight', 20 * 60 * 2.5, 1, 1)
+            .effect('minecraft:fire_resistance', 20 * 60 * 1.5, 1, 2)
+            .effect('minecraft:resistance', 20 * 60 * 1.5, 1, 3)
             .alwaysEdible()
             .fastToEat()
 

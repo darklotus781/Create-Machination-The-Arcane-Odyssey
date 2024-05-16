@@ -3,21 +3,22 @@
 	default_quest_shape: ""
 	filename: "integrated_inovations"
 	group: "565532624F0A44A9"
-	hide_quest_until_deps_visible: true
+	hide_quest_details_until_startable: true
 	icon: "kubejs:cyber_mechanism"
 	id: "7AB340F7990D3911"
 	images: [{
 		height: 20.0d
 		image: "kubejs:textures/gui/quest_bg_square.png"
 		rotation: 0.0d
-		width: 20.0d
+		width: 36.0d
 		x: 0.5d
 		y: -6.0d
 	}]
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["437114B9BC07B2BD"]
 			description: [
 				"Getting started in Chapter 2 makes a couple of assumptions."
 				"1) You have completed Chapter 1 :P"
@@ -32,26 +33,45 @@
 			]
 			hide: true
 			id: "60AE9E0F3742EDB9"
+			rewards: [{
+				id: "4D443347A2FB91AB"
+				item: {
+					Count: 1b
+					id: "minecraft:carrot_on_a_stick"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4BF8374645261BBE"
 				title: "Chapter 2: Start"
 				type: "checkmark"
 			}]
 			title: "Chapter 5: Start"
-			x: -2.5d
-			y: -6.5d
+			x: 1.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
 				"467CC16668880C62"
-				"4227EB0B6A053F63"
+				"3B0CBB1994B0F370"
 			]
 			id: "4B6530C71EBBCEA5"
-			rewards: [{
-				id: "122081A0FD4F3056"
-				type: "xp_levels"
-				xp_levels: 25
-			}]
+			rewards: [
+				{
+					id: "122081A0FD4F3056"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "38EE8DED6D02939C"
+					table_id: 1291770201795976141L
+					type: "random"
+				}
+			]
 			tasks: [
 				{
 					count: 8L
@@ -65,14 +85,11 @@
 					type: "checkmark"
 				}
 			]
-			x: -0.5d
-			y: -0.5d
+			x: -2.5d
+			y: -2.5d
 		}
 		{
-			dependencies: [
-				"4B6530C71EBBCEA5"
-				"46123F83DC0660FA"
-			]
+			dependencies: ["4B6530C71EBBCEA5"]
 			id: "36586087EDF835C8"
 			rewards: [
 				{
@@ -81,32 +98,40 @@
 					xp_levels: 25
 				}
 				{
-					id: "6CA3EC9933AC3E44"
-					item: "integrateddynamics:on_the_dynamics_of_integration"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "0E2AD6D7FBFB6CE5"
+					table_id: 2417904647564121192L
+					type: "random"
 				}
 			]
 			shape: "gear"
 			size: 1.5d
-			tasks: [
-				{
-					count: 8L
-					id: "63A446215C76CC6A"
-					item: "kubejs:cyber_machine"
-					type: "item"
-				}
-				{
-					id: "790BFDCCFD57233F"
-					title: "Automated Cyber Machines"
-					type: "checkmark"
-				}
-			]
-			x: 1.75d
-			y: -0.5d
+			tasks: [{
+				count: 64L
+				id: "63A446215C76CC6A"
+				item: "kubejs:cyber_mechanism"
+				type: "item"
+			}]
+			title: "Automations"
+			x: -0.25d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2C79E1112D45C027"]
 			id: "467CC16668880C62"
+			rewards: [
+				{
+					count: 32
+					id: "12B30F5E85CDCB72"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					id: "72906AB3AABB53CA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "15C0311ECFC518CC"
 				item: "ars_nouveau:source_gem"
@@ -116,20 +141,14 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["6A9068C3635344F2"]
-			id: "4227EB0B6A053F63"
-			tasks: [{
-				id: "6B63E83397C307B9"
-				item: "kubejs:sourcegem_fragments"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -0.5d
-		}
-		{
 			dependencies: ["60AE9E0F3742EDB9"]
 			hide_dependency_lines: true
 			id: "272B3FB88CE04D97"
+			rewards: [{
+				id: "76AE222A5319EF2C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "6CA99EE6103D5D2D"
 				item: "ars_nouveau:magebloom"
@@ -142,6 +161,11 @@
 			dependencies: ["60AE9E0F3742EDB9"]
 			hide_dependency_lines: true
 			id: "676FC12356A3C8D4"
+			rewards: [{
+				id: "548B20D9E4C4F856"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "0D8A34FE39CCA213"
 				item: "ars_nouveau:sourceberry_bush"
@@ -153,6 +177,19 @@
 		{
 			dependencies: ["272B3FB88CE04D97"]
 			id: "0A114D38CF426940"
+			rewards: [
+				{
+					id: "79F2DA49E0972900"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4DF1FBBF53DC2955"
+					table_id: 7741646616291704000L
+					type: "random"
+				}
+			]
 			tasks: [{
 				amount: 1000L
 				fluid: "kubejs:magebloom_juice"
@@ -165,6 +202,19 @@
 		{
 			dependencies: ["676FC12356A3C8D4"]
 			id: "0138EA0CB8147CFC"
+			rewards: [
+				{
+					id: "0C36FCCDA1923352"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "266D24B35B325F9B"
+					table_id: 7741646616291704000L
+					type: "random"
+				}
+			]
 			tasks: [{
 				amount: 1000L
 				fluid: "kubejs:sourceberry_juice"
@@ -180,6 +230,11 @@
 				"0138EA0CB8147CFC"
 			]
 			id: "000AE9019D6C6FE9"
+			rewards: [{
+				id: "583213206C042DE1"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				amount: 1000L
 				fluid: "kubejs:impure_source"
@@ -192,6 +247,19 @@
 		{
 			dependencies: ["000AE9019D6C6FE9"]
 			id: "3291B7BE4DA42EF7"
+			rewards: [
+				{
+					id: "0713511E3E42FD12"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "607938F96B257742"
+					table_id: 7741646616291704000L
+					type: "random"
+				}
+			]
 			tasks: [{
 				amount: 1000L
 				fluid: "kubejs:source"
@@ -207,6 +275,19 @@
 				"33E187D6A9BEBE68"
 			]
 			id: "58CCBB11E2160BD5"
+			rewards: [
+				{
+					id: "70AE8DEF93B35B86"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 16
+					id: "4ACD793796B527B7"
+					item: "kubejs:blank_runic_tablet"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "405E3CC7B72F3FC1"
 				item: "kubejs:blank_runic_tablet"
@@ -218,6 +299,19 @@
 		{
 			dependencies: ["58CCBB11E2160BD5"]
 			id: "6BD18B43DE5DB88F"
+			rewards: [
+				{
+					count: 64
+					id: "6C08CF2A23231351"
+					item: "kubejs:rune_dust"
+					type: "item"
+				}
+				{
+					id: "258D1AEAE6ADFE88"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "223D702E4354596A"
 				item: "forbidden_arcanus:rune"
@@ -229,6 +323,11 @@
 		{
 			dependencies: ["5A34E18AA9FDD365"]
 			id: "2C79E1112D45C027"
+			rewards: [{
+				id: "64D3C89CDDFB0CD3"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			tasks: [{
 				id: "233CD529242286CA"
 				item: "botania:alfheim_portal"
@@ -240,6 +339,19 @@
 		{
 			dependencies: ["6BD18B43DE5DB88F"]
 			id: "5A34E18AA9FDD365"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "65ADCBCC7D78058E"
+					table_id: 1155860460986759254L
+					type: "random"
+				}
+				{
+					id: "1A5BC6F97777BF9E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "0AD9C6B48D4A1ACE"
 				item: "kubejs:runic_tablet"
@@ -249,19 +361,13 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["467CC16668880C62"]
-			id: "6A9068C3635344F2"
-			tasks: [{
-				id: "469D883DA4A6D3FD"
-				item: "create:crushing_wheel"
-				type: "item"
-			}]
-			x: -4.5d
-			y: -0.5d
-		}
-		{
 			dependencies: ["38A66981E3080166"]
 			id: "33E187D6A9BEBE68"
+			rewards: [{
+				id: "248785F35AD4B8CD"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "425E3E1ECC347E24"
 				item: "forbidden_arcanus:polished_darkstone_slab"
@@ -273,6 +379,11 @@
 		{
 			dependencies: ["7DB0606DE4C7AFE6"]
 			id: "38A66981E3080166"
+			rewards: [{
+				id: "75E09328BC0673A0"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "66B1567FCBD1788F"
 				item: "forbidden_arcanus:darkstone"
@@ -289,6 +400,19 @@
 			]
 			description: ["Use the igneous extruder with Lava, Aureal Essence and a base block of Chiseled Arcane Polished Darkstone."]
 			id: "7DB0606DE4C7AFE6"
+			rewards: [
+				{
+					id: "282EF0A5F06064E1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "74E5256B8ED5BBDF"
+					table_id: 1205720880241428503L
+					type: "random"
+				}
+			]
 			tasks: [{
 				id: "5802CCC62511E08A"
 				item: "thermal:device_rock_gen"
@@ -301,6 +425,11 @@
 			dependencies: ["60AE9E0F3742EDB9"]
 			hide_dependency_lines: true
 			id: "14584E9D69D41C94"
+			rewards: [{
+				id: "1C4A01727DDC576C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				amount: 1000L
 				fluid: "minecraft:lava"
@@ -313,6 +442,19 @@
 		{
 			dependencies: ["2FA15D67D84E4C2F"]
 			id: "3111CF3B555629CA"
+			rewards: [
+				{
+					id: "4EA59EA2B4858BFA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "50513AE937683C0E"
+					table_id: 1291770201795976141L
+					type: "random"
+				}
+			]
 			tasks: [{
 				amount: 1000L
 				fluid: "kubejs:aureal_essence"
@@ -326,6 +468,11 @@
 			dependencies: ["60AE9E0F3742EDB9"]
 			hide_dependency_lines: true
 			id: "23304B9EC97B944E"
+			rewards: [{
+				id: "5B24627628B01C56"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "258AEBB6AB3C59A4"
 				item: "forbidden_arcanus:chiseled_arcane_polished_darkstone"
@@ -337,6 +484,11 @@
 		{
 			dependencies: ["35FCFEBA31C587D7"]
 			id: "2FA15D67D84E4C2F"
+			rewards: [{
+				id: "73667217A5CE2D3B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "00FCFC999BFDA8D5"
 				item: "create:item_drain"
@@ -348,6 +500,12 @@
 		{
 			dependencies: ["2FA9DC98222E0B24"]
 			id: "35FCFEBA31C587D7"
+			rewards: [{
+				count: 8
+				id: "75388E695B6F3D95"
+				item: "forbidden_arcanus:pixie_utrem_jar"
+				type: "item"
+			}]
 			tasks: [{
 				id: "756E51B90A52C9CD"
 				item: "forbidden_arcanus:pixie_utrem_jar"
@@ -359,6 +517,19 @@
 		{
 			dependencies: ["0FFA7973884EBCF2"]
 			id: "2FA9DC98222E0B24"
+			rewards: [
+				{
+					id: "4604601C24A9DCF1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "145E38988262F13D"
+					table_id: 8965856735169877955L
+					type: "random"
+				}
+			]
 			tasks: [{
 				id: "5F2B23C6B2ED594A"
 				item: "create:encased_fan"
@@ -370,6 +541,11 @@
 		{
 			dependencies: ["7C985B2676253204"]
 			id: "0FFA7973884EBCF2"
+			rewards: [{
+				id: "4A622ED3D1B60A5C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "451B7EC506D2985B"
 				item: "forbidden_arcanus:corrupted_pixie_utrem_jar"
@@ -381,6 +557,11 @@
 		{
 			dependencies: ["0CAE0557AA551281"]
 			id: "7C985B2676253204"
+			rewards: [{
+				id: "2D39BC0D035EE8D2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "4D7F02CA32CF6CC1"
 				item: "forbidden_arcanus:utrem_jar"
@@ -392,6 +573,11 @@
 		{
 			dependencies: ["513A811C5629D565"]
 			id: "0CAE0557AA551281"
+			rewards: [{
+				id: "059FC486259D61D2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "3E04DB3FE9865330"
 				item: "forbidden_arcanus:corrupted_pixie"
@@ -403,6 +589,19 @@
 		{
 			dependencies: ["2923967DB9C22D12"]
 			id: "513A811C5629D565"
+			rewards: [
+				{
+					id: "3AA27C4171B51993"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 64
+					id: "618517709EB1288B"
+					item: "forbidden_arcanus:arcane_crystal_dust_speck"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7AE176C47091CD88"
 				item: "forbidden_arcanus:arcane_crystal_dust"
@@ -414,6 +613,11 @@
 		{
 			dependencies: ["381EF3F667A74117"]
 			id: "2923967DB9C22D12"
+			rewards: [{
+				id: "3C667975E2DFF5C0"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "131EC8E7FCFC196D"
 				item: "forbidden_arcanus:corrupt_soul"
@@ -425,6 +629,11 @@
 		{
 			dependencies: ["1053146DCB837A88"]
 			id: "381EF3F667A74117"
+			rewards: [{
+				id: "726EB7A888185662"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "4C5CE73ABCF17EF6"
 				item: "minecraft:soul_campfire"
@@ -436,6 +645,11 @@
 		{
 			dependencies: ["25A1671BBFC63162"]
 			id: "1053146DCB837A88"
+			rewards: [{
+				id: "777E03E48B8CB53F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "3D5FA912DDDAE074"
 				item: "forbidden_arcanus:soul"
@@ -447,6 +661,11 @@
 		{
 			dependencies: ["265F0DB2F335238C"]
 			id: "25A1671BBFC63162"
+			rewards: [{
+				id: "34D2B8A8B30F8CD2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "17B1B35657167E20"
 				item: {
@@ -465,6 +684,11 @@
 			dependencies: ["60AE9E0F3742EDB9"]
 			hide_dependency_lines: true
 			id: "265F0DB2F335238C"
+			rewards: [{
+				id: "37B4A94817DF9A0F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [{
 				id: "7F6AD7D3FEC04FCD"
 				item: "minecraft:soul_sand"
@@ -494,16 +718,32 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["60AE9E0F3742EDB9"]
+			dependencies: [
+				"78B5D726803B6533"
+				"60AE9E0F3742EDB9"
+			]
 			hide_dependency_lines: true
-			id: "46123F83DC0660FA"
+			id: "3B0CBB1994B0F370"
+			rewards: [
+				{
+					count: 64
+					id: "0F2AE04D22F7CE1C"
+					item: "occultism:crushed_end_stone"
+					type: "item"
+				}
+				{
+					id: "5147196EE8EB5AAA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
-				id: "417FAB3D4FB7F654"
-				item: "kubejs:gold_casing"
+				id: "5E686211653F3539"
+				item: "occultism:crushed_end_stone"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.0d
+			x: -2.5d
+			y: -0.5d
 		}
 	]
 	title: "5: Integrated Innovations"

@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "3_radiance"
 	group: "565532624F0A44A9"
-	hide_quest_until_deps_visible: true
+	hide_quest_details_until_startable: true
 	icon: "kubejs:radiant_mechanism"
 	id: "1A4885ECDFA72AC9"
 	images: [{
@@ -14,7 +14,7 @@
 		x: -6.0d
 		y: -2.0d
 	}]
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -25,100 +25,110 @@
 				"This means we're going to work with dyes and fluids."
 				"Use your previous knowledge and acquired resources and automations to breeze through this next challenge."
 			]
-			hide: true
 			id: "44F16708F4DD99A2"
+			rewards: [
+				{
+					id: "579792F432124600"
+					item: {
+						Count: 1b
+						id: "farmersdelight:diamond_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49588355CAF0664D"
+					type: "xp"
+					xp: 100
+				}
+			]
 			tasks: [{
 				id: "057826E4FBE960FB"
 				title: "Chapter 3: Start"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: -3.0d
+			x: -12.0d
+			y: -7.5d
 		}
 		{
-			dependencies: [
-				"70522F77B42C927A"
-				"0F952731A2884135"
+			dependencies: ["0F952731A2884135"]
+			description: [
+				"You've fully automated, or at least to where you can dump resources into your assembly line and out will popout as many mechanisms as you need."
+				"We realize it's not practical to always \"Fully\" automate some things."
 			]
 			id: "59A9CA8596826FEC"
-			rewards: [{
-				id: "7517D0C9B4B2B057"
-				type: "xp_levels"
-				xp_levels: 25
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [
+			rewards: [
 				{
-					count: 8L
-					id: "13144EE15B8970A6"
-					item: "kubejs:radiant_machine"
-					type: "item"
+					id: "7517D0C9B4B2B057"
+					type: "xp_levels"
+					xp_levels: 25
 				}
 				{
-					id: "3FD6BC25A642002B"
-					title: "Automated Radiant Machines"
-					type: "checkmark"
+					exclude_from_claim_all: true
+					id: "6605B327EF3F7677"
+					table_id: 7440942548698719000L
+					type: "random"
 				}
 			]
-			x: -0.5d
-			y: 3.0d
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 64L
+				id: "13144EE15B8970A6"
+				item: "kubejs:radiant_mechanism"
+				type: "item"
+			}]
+			title: "Automations"
+			x: -6.75d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"378AA5835A43019D"
 				"0B29D4CC7DC8B623"
 			]
+			description: ["Congrats, you've produced Radiant Mechanisms, these things unlock a lot of cool stuff."]
 			id: "0F952731A2884135"
-			rewards: [{
-				id: "0AF95AF15D59BEFA"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
-			tasks: [
+			rewards: [
 				{
-					count: 8L
-					id: "09B8CF0F12DB7170"
-					item: "kubejs:radiant_mechanism"
-					type: "item"
+					id: "0AF95AF15D59BEFA"
+					type: "xp_levels"
+					xp_levels: 15
 				}
 				{
-					id: "190C60DDF1F94DE5"
-					title: "Automated Radiant Mechanisms"
-					type: "checkmark"
+					exclude_from_claim_all: true
+					id: "6DF2BA10D127303F"
+					table_id: 7440942548698719000L
+					type: "random"
 				}
 			]
+			tasks: [{
+				count: 8L
+				id: "09B8CF0F12DB7170"
+				item: "kubejs:radiant_mechanism"
+				type: "item"
+			}]
 			x: -0.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["44F16708F4DD99A2"]
-			hide_dependency_lines: true
-			id: "70522F77B42C927A"
-			rewards: [{
-				id: "0E0B1B9C8F43F6DA"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
-			tasks: [
+			dependencies: ["06444B80EC9B7EEB"]
+			id: "3B78B507C82AAE3C"
+			rewards: [
 				{
-					count: 8L
-					id: "247936D43ADAA1D2"
-					item: "thermal:machine_frame"
+					count: 16
+					id: "0C036D7A82B1A3A8"
+					item: "create:shadow_steel"
 					type: "item"
 				}
 				{
-					id: "5572147BBD7C5657"
-					title: "Automated Invar Machines"
-					type: "checkmark"
+					id: "6BF75ABD410C214A"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
-			x: -3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["06444B80EC9B7EEB"]
-			id: "3B78B507C82AAE3C"
 			tasks: [{
 				id: "44491E33D8985F6F"
 				item: "create:shadow_steel"
@@ -130,6 +140,19 @@
 		{
 			dependencies: ["06444B80EC9B7EEB"]
 			id: "3BD719A05079405F"
+			rewards: [
+				{
+					count: 8
+					id: "21279F6978BC06CF"
+					item: "create:refined_radiance"
+					type: "item"
+				}
+				{
+					id: "62180944763687CD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "39276B8B2C6E6225"
 				item: "create:refined_radiance"
@@ -142,6 +165,12 @@
 			dependencies: ["27A9939024874680"]
 			id: "212AB7A6355913DC"
 			optional: true
+			rewards: [{
+				count: 8
+				id: "6B79EED79F690273"
+				item: "kubejs:radiant_sheet"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7B226F115A4EC1AF"
 				item: "kubejs:radiant_sheet"
@@ -156,6 +185,19 @@
 				"212AB7A6355913DC"
 			]
 			id: "378AA5835A43019D"
+			rewards: [
+				{
+					count: 16
+					id: "211D04FF2C805066"
+					item: "kubejs:radiant_coil"
+					type: "item"
+				}
+				{
+					id: "6F22DD32A74A73A2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "36B0FB1F875DA791"
 				item: "kubejs:radiant_coil"
@@ -165,9 +207,26 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["44F16708F4DD99A2"]
-			hide_dependency_lines: true
+			dependencies: ["15CF89216A628076"]
 			id: "0B29D4CC7DC8B623"
+			rewards: [
+				{
+					id: "42CA8D21E5187473"
+					item: {
+						Count: 1b
+						id: "kubejs:resonator"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "22A9D5119615E27A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "17CFC1758302B223"
 				item: {
@@ -185,6 +244,23 @@
 		{
 			dependencies: ["728735F2EABEFC38"]
 			id: "06444B80EC9B7EEB"
+			rewards: [
+				{
+					count: 16
+					id: "2BC21E99BDFED286"
+					item: {
+						Count: 1b
+						id: "create:chromatic_compound"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "110E2DC2AB33CAD7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "70E9F5375714FFDA"
 				item: {
@@ -204,6 +280,12 @@
 				"1AC3FE7848331769"
 			]
 			id: "728735F2EABEFC38"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D0F3173C675FBC1"
+				table_id: 7741646616291704000L
+				type: "random"
+			}]
 			tasks: [{
 				id: "53DFA2E96FD0F2C3"
 				item: "kubejs:dye_slurry_magenta_bucket"
@@ -217,7 +299,14 @@
 				"27C80F6C5BCB267A"
 				"6C1B3967BFFBF851"
 			]
+			dependency_requirement: "one_completed"
 			id: "7B9985746E0818E4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "59F6983DF7384BD9"
+				table_id: 7760746703095486576L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "2062C105A649E2EB"
 				item: "kubejs:dye_slurry_red_bucket"
@@ -231,7 +320,14 @@
 				"033C1A9B1433490E"
 				"6C1B3967BFFBF851"
 			]
+			dependency_requirement: "one_completed"
 			id: "5621C909F8FAAB2D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "59BAF1DFCCB9D066"
+				table_id: 1205720880241428503L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "01C1FFF3D39F0FFE"
 				item: "kubejs:dye_slurry_pink_bucket"
@@ -245,7 +341,14 @@
 				"494AD3187E668963"
 				"6C1B3967BFFBF851"
 			]
+			dependency_requirement: "one_completed"
 			id: "1AC3FE7848331769"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F60438610344B5B"
+				table_id: 3562567507260258199L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "668B3B109C3A847D"
 				item: "kubejs:dye_slurry_blue_bucket"
@@ -257,6 +360,20 @@
 		{
 			dependencies: ["711D8DAED1CCA6A7"]
 			id: "27C80F6C5BCB267A"
+			rewards: [
+				{
+					count: 32
+					id: "7EC03C0AA657FE8F"
+					item: "kubejs:red_compound"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0A7AF68A9AF16985"
+					table_id: 1205720880241428503L
+					type: "choice"
+				}
+			]
 			tasks: [{
 				id: "040838AF57004973"
 				item: "kubejs:red_compound"
@@ -268,6 +385,20 @@
 		{
 			dependencies: ["0F17D249F9B1DB95"]
 			id: "033C1A9B1433490E"
+			rewards: [
+				{
+					count: 32
+					id: "228A2C030819EFF4"
+					item: "kubejs:pink_compound"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "70D1D96847989F64"
+					table_id: 1205720880241428503L
+					type: "choice"
+				}
+			]
 			tasks: [{
 				id: "69B88A791470FB0F"
 				item: "kubejs:pink_compound"
@@ -279,6 +410,20 @@
 		{
 			dependencies: ["7A1493AD489AADAD"]
 			id: "494AD3187E668963"
+			rewards: [
+				{
+					count: 32
+					id: "1A88979FD68F0B5C"
+					item: "kubejs:blue_compound"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0A13E617552E0711"
+					table_id: 1205720880241428503L
+					type: "choice"
+				}
+			]
 			tasks: [{
 				id: "47AE58B90F59B576"
 				item: "kubejs:blue_compound"
@@ -289,8 +434,20 @@
 		}
 		{
 			dependencies: ["44F16708F4DD99A2"]
-			hide_dependency_lines: true
 			id: "0F17D249F9B1DB95"
+			rewards: [
+				{
+					id: "5DAE5ACEB9DFBCD9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 10
+					id: "745E1DDB5809625C"
+					item: "minecraft:pink_tulip"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "79EFD6AB647FD72E"
 				item: {
@@ -308,8 +465,20 @@
 		}
 		{
 			dependencies: ["44F16708F4DD99A2"]
-			hide_dependency_lines: true
 			id: "711D8DAED1CCA6A7"
+			rewards: [
+				{
+					id: "6AED1597BDFA7D15"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 10
+					id: "0C130993A80DBA8D"
+					item: "minecraft:red_tulip"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "215A743214E7C1BB"
 				item: {
@@ -327,8 +496,20 @@
 		}
 		{
 			dependencies: ["44F16708F4DD99A2"]
-			hide_dependency_lines: true
 			id: "7A1493AD489AADAD"
+			rewards: [
+				{
+					id: "5AFAAFBDD0B52D35"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 10
+					id: "3B429A34A2F2EF88"
+					item: "minecraft:cornflower"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1824C11B9A743891"
 				item: {
@@ -351,6 +532,25 @@
 				"75FB6F5F2F121729"
 			]
 			id: "73DEBE6BC8865256"
+			rewards: [
+				{
+					count: 4
+					id: "149E2BC3228242C1"
+					item: "kubejs:radiant_steel"
+					type: "item"
+				}
+				{
+					id: "34E6D3497291022F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "60708799DE24DBF2"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+			]
 			tasks: [{
 				id: "5A3806859CA4CC23"
 				item: "kubejs:radiant_steel"
@@ -361,8 +561,20 @@
 		}
 		{
 			dependencies: ["44F16708F4DD99A2"]
-			hide_dependency_lines: true
 			id: "2A0338F62F470F8F"
+			rewards: [
+				{
+					id: "240521A3E572A7D3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 10
+					id: "50A585E25648ED5D"
+					item: "botania:green_mystical_flower"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3BF36426CC89902B"
 				item: {
@@ -381,6 +593,20 @@
 		{
 			dependencies: ["2A0338F62F470F8F"]
 			id: "36F134E75D6B9B93"
+			rewards: [
+				{
+					count: 32
+					id: "26F00D6CF27DDA95"
+					item: "kubejs:green_compound"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B76288187A6129F"
+					table_id: 1205720880241428503L
+					type: "choice"
+				}
+			]
 			tasks: [{
 				id: "0C68CC817EDD5255"
 				item: "kubejs:green_compound"
@@ -394,7 +620,14 @@
 				"36F134E75D6B9B93"
 				"6C1B3967BFFBF851"
 			]
+			dependency_requirement: "one_completed"
 			id: "1F92B6B7204A3DDD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1ABB852C7C146F37"
+				table_id: 7913046071043377976L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "4AA709E93CCBCE67"
 				item: "kubejs:dye_slurry_green_bucket"
@@ -410,6 +643,12 @@
 				"1F92B6B7204A3DDD"
 			]
 			id: "75FB6F5F2F121729"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "232E40A7B1722A4A"
+				table_id: 2417904647564121192L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "0166A980E8753524"
 				item: "kubejs:chromatic_solution_bucket"
@@ -422,6 +661,12 @@
 			dependencies: ["3BD719A05079405F"]
 			id: "27A9939024874680"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "21BD55AF61FC3A67"
+				item: "alexsmobs:bear_fur"
+				type: "item"
+			}]
 			tasks: [{
 				id: "260CDAE86097FEBD"
 				item: "create:mechanical_press"
@@ -435,6 +680,11 @@
 			hide_dependency_lines: true
 			id: "6C1B3967BFFBF851"
 			optional: true
+			rewards: [{
+				id: "0EF01333DF945FEF"
+				item: "ae2:condenser"
+				type: "item"
+			}]
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
@@ -451,6 +701,104 @@
 			title: "Optional - Chromatic Slurry from Paintballs"
 			x: -10.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["4EFEE17EAA6F34A5"]
+			description: [
+				"Located within the Magnetic Caves you'll find a beast called the Teletor that drops Neodymium."
+				"Collect 3 Azure and 3 Scarlet and make yourself a Resonator."
+				""
+				"The Resonator can be repaired with Radiant Steel, or you can trade it in the marketplace for an unbreakable Eternal version."
+			]
+			id: "15CF89216A628076"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "78BCA7B7EB32A6E2"
+					table_id: 7913046071043377976L
+					type: "random"
+				}
+				{
+					id: "7E57EC8BEFF69F25"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "2CA8AE47ED4F06A8"
+					item: "alexscaves:scarlet_neodymium_ingot"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3FF45C194AC32D63"
+					item: "alexscaves:azure_neodymium_ingot"
+					type: "item"
+				}
+			]
+			title: "Kill the Teletor"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2ACFA9FA13011371"]
+			icon: "alexscaves:telecore"
+			id: "4EFEE17EAA6F34A5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "05F28D9624378044"
+					table_id: 7760746703095486576L
+					type: "random"
+				}
+				{
+					id: "145039F758B98350"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				biome: "alexscaves:magnetic_caves"
+				icon: "alexscaves:telecore"
+				id: "3E5F2D0F0835ED5F"
+				title: "Find the Magnetic Caves"
+				type: "biome"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["44F16708F4DD99A2"]
+			description: ["Find a Cave Tablet and use it to produce a Codex to locate a Magnetic Cave."]
+			hide_dependency_lines: true
+			id: "2ACFA9FA13011371"
+			rewards: [
+				{
+					id: "2000E7C444D3885D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "495E7B6B3A41C757"
+					item: "farmersdelight:fish_stew"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5EEBA1927D588114"
+				item: {
+					Count: 1b
+					id: "alexscaves:cave_codex"
+					tag: {
+						CaveBiome: "alexscaves:magnetic_caves"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
 		}
 	]
 	title: "3: Radiant Revolution"

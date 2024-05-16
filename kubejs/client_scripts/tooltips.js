@@ -10,21 +10,17 @@ ItemEvents.tooltip(tooltip => {
         add_color_description(`kubejs:${global.bag_name[i]}_bag_${global.rarity[2]}`, 'Epic', global.rarity_color.epic);
     }
 
-    let locked_item = (id, quest, extra) => tooltip.addAdvanced(id, (item, advanced, text) => {
-        text.add(Text.aqua('Special Item:'))
-        text.add(Text.gray("This item cannot be manually crafted until it's unlocked in a quest!"));
-        if (extra) {
-            text.add(extra);
-        }
-        text.add(Text.of(""));
-        text.add(Text.of(`§6Unlocked in§r §2${quest}`));
-    });
+    // let locked_item = (id, quest, extra) => tooltip.addAdvanced(id, (item, advanced, text) => {
+    //     text.add(Text.aqua('Special Item:'))
+    //     text.add(Text.gray("This item cannot be manually crafted until it's unlocked in a quest!"));
+    //     if (extra) {
+    //         text.add(extra);
+    //     }
+    //     text.add(Text.of(""));
+    //     text.add(Text.of(`§6Unlocked in§r §2${quest}`));
+    // });
 
-    let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "7" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
-    let bonus_assembly = (id, stage) => tooltip.add(id, [`§7Bonus Assembly: §6Chapter ${stage}`, '§8Consider automating this item'])
-    let not_consumed = (id, stage) => tooltip.add(id, [`§7Not consumed in the`, `§7Assembly Process`])
-
-    locked_item('minecraft:ender_eye', 'Chapter 3: Overworld Conquered', Text.gray('Can be acquired via a Ritual'));
+    // locked_item('minecraft:ender_eye', 'Chapter 3: Overworld Conquered', Text.gray('Can be acquired via a Ritual'));
 
     tooltip.addAdvanced('ars_nouveau:source_gem', (item, advanced, text) => {
         text.remove(1);
@@ -53,11 +49,12 @@ ItemEvents.tooltip(tooltip => {
     });
 
     tooltip.addAdvanced('kubejs:magical_rock_candy', (item, advanced, text) => {
-         text.add("§1Flight (1:30)");
-         text.add("§4Warning:§r §cOnly eat in The Aether!");
-         if (tooltip.isShift()) {
+        text.add("§1Flight (2:30)");
+        text.add("§6Fire Resistance (1:30)");
+        text.add("§4Warning:§r §cOnly eat in The Aether!");
+        if (tooltip.isShift()) {
             text.add("§cEating outside The Aether will cause negative effects and remove flight!");
-         }
+        }
     });
 
     tooltip.addAdvanced('occultism:datura_seeds', (item, advanced, text) => {
@@ -121,34 +118,32 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:shadow_steel_frame', frameText);
 
     let chiselText = Text.green('Used for smoothing out a Casing Frame');
-    tooltip.add('kubejs:andesite_chisel', chiselText);
-    tooltip.add('kubejs:brass_chisel', chiselText);
-    tooltip.add('kubejs:copper_chisel', chiselText);
-    tooltip.add('kubejs:refined_chisel', chiselText);
-    tooltip.add('kubejs:diamond_chisel', chiselText);
-
+    tooltip.addAdvanced('kubejs:andesite_chisel', (item, advanced, text) => {
+        text.add(chiselText);
+        text.add('Can be repaired in an Anvil with Andesite Alloy');
+    });
+    tooltip.addAdvanced('kubejs:brass_chisel', (item, advanced, text) => {
+        text.add(chiselText);
+        text.add('Can be repaired in an Anvil with Brass Plates');
+    });
+    tooltip.addAdvanced('kubejs:copper_chisel', (item, advanced, text) => {
+        text.add(chiselText);
+        text.add('Can be repaired in an Anvil with Copper Plates');
+    });
+    tooltip.addAdvanced('kubejs:refined_chisel', (item, advanced, text) => {
+        text.add(chiselText);
+        text.add('Can be repaired in an Anvil with Refined Radiance');
+    });
+    tooltip.addAdvanced('kubejs:diamond_chisel', (item, advanced, text) => {
+        text.add(chiselText);
+        text.add('Can be repaired in an Anvil with Diamonds');
+    });
 
     tooltip.add('kubejs:copper_mechanism', Text.gold('Copper tightly sealed with rubber!'));
     tooltip.add('kubejs:plastic_mechanism', Text.gold('It\'s very sturdy and coated in plastic!'));
     tooltip.add('kubejs:cyber_mechanism', Text.gold('It sounds like a 56k modem!?'));
     tooltip.add('kubejs:quantum_mechanism', Text.gold('Vibrates gently with a slight hum...'));
-    tooltip.add('kubejs:temporal_mechanism', Text.gold('Tick... Tick... Tick...'));
-
-
-    main_assembly('kubejs:andesite_mechanism', "1")
-    // bonus_assembly('kubejs:copper_mechanism', "1")
-    // bonus_assembly('kubejs:logistics_mechanism', "1")
-    // bonus_assembly('kubejs:rotation_mechanism', "1C")
-    main_assembly('kubejs:brass_mechanism', "2")
-    // bonus_assembly('kubejs:power_mechanism', "2A")
-    // bonus_assembly('kubejs:scorch_mechanism', "2B")
-    // bonus_assembly('kubejs:sturdy_mechanism', "2C")
-    // main_assembly('kubejs:radiant_mechanism', "3")
-    // main_assembly('kubejs:plastic_mechanism', "4")
-    // main_assembly('kubejs:cyber_mechanism', "5")
-    // main_assembly('kubejs:quantum_mechanism', "6")
-    // main_assembly('kubejs:temporal_mechanism', "7")
-
+    tooltip.add('kubejs:temporal_mechanism', Text.gold('It smells like Space and Time...'));
 
     tooltip.add('kubejs:leather_pocket', Text.gold('Useful for adding more slots to your backpack'));
 });

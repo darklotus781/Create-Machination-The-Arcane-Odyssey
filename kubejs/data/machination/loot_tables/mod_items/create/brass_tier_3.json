@@ -67,11 +67,6 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "createaddition:electric_motor",
-                    "weight": 5
-                },
-                {
-                    "type": "minecraft:item",
                     "name": "create:brass_funnel",
                     "weight": 10,
                     "functions": [

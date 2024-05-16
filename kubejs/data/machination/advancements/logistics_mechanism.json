@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "kubejs:logistics_mechanism"
+        },
+        "title": "Alright stop, storage time!",
+        "description": "You now possess the ability to mass produce storage items!",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/block/dirt.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {},
+                "items": [
+                    {
+                        "items": [
+                            "kubejs:logistics_mechanism"
+                        ],
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    }
+}

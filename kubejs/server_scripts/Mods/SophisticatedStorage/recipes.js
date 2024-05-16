@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
     let UpgradeIngredient = Item.of('sophisticatedstorage:basic_tier_upgrade');
     let SmithingTemplate = Item.of('kubejs:logistics_mechanism');
     // VANILLA to ...
-    event.smithing(Item.of('sophisticatedstorage:basic_tier_upgrade', 2), SmithingTemplate, Ingredient.of('#sophisticatedstorage:barrels'), Item.of('minecraft:redstone'));
+    event.smithing(Item.of('sophisticatedstorage:basic_tier_upgrade', 2), SmithingTemplate, Ingredient.of('#forge:barrels'), Item.of('minecraft:redstone'));
     event.smithing(Item.of('sophisticatedstorage:basic_to_copper_tier_upgrade', 2), SmithingTemplate, UpgradeIngredient, Ingredient.of('#forge:storage_blocks/copper'));
     event.smithing(Item.of('sophisticatedstorage:basic_to_iron_tier_upgrade', 2), SmithingTemplate, UpgradeIngredient, Ingredient.of('#forge:storage_blocks/iron'));
     event.smithing(Item.of('sophisticatedstorage:basic_to_gold_tier_upgrade', 2), SmithingTemplate, UpgradeIngredient, Ingredient.of('#forge:storage_blocks/gold'));

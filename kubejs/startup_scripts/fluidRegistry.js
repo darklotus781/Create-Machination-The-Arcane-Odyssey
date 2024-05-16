@@ -28,15 +28,10 @@ StartupEvents.registry('fluid', event => {
         .thinTexture(0x9e9cb7)
         .displayName('Liquid Solder');
 
-    // event.create('superheated_anthracene')
-    //     .thickTexture(0xFFFFF)
-    //     .bucketColor(0xFFFFF)
-    //     .displayName('Superheated Anthracene')
-    //
-    // event.create('dichromic_acid')
-    //     .thinTexture(0x800020)
-    //     .bucketColor(0x800020)
-    //     .displayName('Dichromic Acid')
+    event.create('temporal_fluid')
+        .thickTexture(0x9F2B68)
+        .bucketColor(0x9F2B68)
+        .displayName('Temporal Fluid')
 
     event.create('chromatic_waste')
         .thinTexture(0x3A4100)
@@ -47,11 +42,6 @@ StartupEvents.registry('fluid', event => {
         .thickTexture(invar)
         .bucketColor(invar)
         .displayName('Invar Slurry');
-
-    // event.create('liquid_anthraquinone')
-    //     .thinTexture(0x9F2B68)
-    //     .bucketColor(0x9F2B68)
-    //     .displayName('Anthraquinone')
 
     event.create('dye_slurry_green')
         .thinTexture(0x03732F)
@@ -88,16 +78,6 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0xFFFFFF)
         .displayName('Aureal Essence');
 
-    // event.create('lpg')
-    //     .thinTexture(0xe8d36e)
-    //     .bucketColor(0xe8d36e)
-    //     .displayName('Liquid Propane Gas');
-
-    // event.create('kerosene')
-    //     .thinTexture(0x6aedf3)
-    //     .bucketColor(0x6aedf3)
-    //     .displayName('Kerosene');
-
     event.create('refined_oil')
         .thinTexture(0x131313)
         .bucketColor(0x131313)
@@ -108,11 +88,6 @@ StartupEvents.registry('fluid', event => {
         .stillTexture('kubejs:block/fluid/molten_glass_still')
         .flowingTexture('kubejs:block/fluid/molten_glass_flowing')
         .luminosity(8);
-
-    // event.create('plastic')
-    //     .thinTexture(0xd8d8d5)
-    //     .bucketColor(0xd8d8d5)
-    //     .displayName('Molten Plastic');
 
     event.create('sulfuric_acid')
         .thinTexture(0xc1b851)

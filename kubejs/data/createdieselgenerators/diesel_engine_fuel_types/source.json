@@ -1,0 +1,19 @@
+{
+    "fluid": "kubejs:source",
+    "sound_speed": 6,
+    "normal": {
+        "speed": 64.0,
+        "strength": 2048.0,
+        "burn_rate": 5
+    },
+    "modular": {
+        "speed": 64.0,
+        "strength": 2048.0,
+        "burn_rate": 5
+    },
+    "huge": {
+        "speed": 128.0,
+        "strength": 4096.0,
+        "burn_rate": 5
+    }
+}

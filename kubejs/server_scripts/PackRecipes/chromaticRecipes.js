@@ -245,11 +245,11 @@ ServerEvents.recipes(event => {
     // event.shapeless(Item.of('minecraft:orange_dye', 5), [Item.of('ars_nouveau:wilden_spike')]).id('ars_nouveau:spike_to_dye');
 
     // Chromatic Solution
-    event.recipes.create.mixing(Fluid.of('kubejs:chromatic_solution').withAmount(750), [
+    event.recipes.create.mixing(Fluid.of('kubejs:chromatic_solution').withAmount(1000), [
         Fluid.of('kubejs:dye_slurry_red').withAmount(500),
         Fluid.of('kubejs:dye_slurry_green').withAmount(500),
         Fluid.of('kubejs:dye_slurry_blue').withAmount(500)
-    ]).processingTime(200).heated().id('create:mixing/chromatic_solution');
+    ]).processingTime(200).superheated().id('create:mixing/chromatic_solution');
 
     // Chromatic Compound
     event.custom({
@@ -310,7 +310,7 @@ ServerEvents.recipes(event => {
     ]).processingTime(200).heated().id('create:mixing/pink_chromatic_slurry');
 
     // Magenta Chromatic Slurry
-    event.recipes.create.mixing(Fluid.of('kubejs:dye_slurry_magenta').withAmount(500), [
+    event.recipes.create.mixing(Fluid.of('kubejs:dye_slurry_magenta').withAmount(1000), [
         Fluid.of('kubejs:dye_slurry_blue').withAmount(500),
         Fluid.of('kubejs:dye_slurry_pink').withAmount(500),
         Fluid.of('kubejs:dye_slurry_red').withAmount(500)
@@ -329,7 +329,15 @@ ServerEvents.recipes(event => {
     event.recipes.create.emptying([Item.of('ae2:matter_ball'), Fluid.of('kubejs:dye_slurry_blue').withAmount(15)], Item.of('ae2:blue_paint_ball'));
     event.recipes.create.emptying([Item.of('ae2:matter_ball'), Fluid.of('kubejs:dye_slurry_pink').withAmount(15)], Item.of('ae2:pink_paint_ball'));
     event.recipes.create.emptying([Item.of('ae2:matter_ball'), Fluid.of('kubejs:dye_slurry_red').withAmount(15)], Item.of('ae2:red_paint_ball'));
-})
+});
+
+// ServerEvents.compostableRecipes(event => {
+//     event.add('botania:green_petal', 1.00);
+//     event.add('botania:blue_petal', 1.00);
+//     event.add('botania:red_petal', 1.00);
+//     event.add('botania:magenta_petal', 1.00);
+//     event.add('botania:pink_petal', 1.00);
+// });
 
 ServerEvents.tags('item', event => {
     let whiteFlowers = [shortWhiteFlowers, tallWhiteFlowers];

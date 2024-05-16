@@ -26,60 +26,61 @@ ServerEvents.recipes(event => {
         ]
     }).id('sulfuric_acid_from_sulfur');
 
-    event.custom({
-        type: 'lychee:item_inside',
-        item_in: {
-            item: 'kubejs:chromium'
-        },
-        block_in: {
-            blocks: ['minecraft:water'],
-            state: {
-                level: 0
-            }
-        },
-        post: [
-            {
-                type: 'place',
-                block: 'kubejs:dichromic_acid'
-            },
-            {
-                type: 'drop_item',
-                item: 'kubejs:chromium',
-                contextual: {
-                    type: 'chance',
-                    chance: 0.33
-                }
-            }
-        ]
-    }).id('dichromic_acid_from_chromium');
 
-    event.custom({
-        type: 'lychee:item_inside',
-        item_in: {
-            item: 'kubejs:anthracene'
-        },
-        block_in: {
-            blocks: ['kubejs:sulfuric_acid'],
-            state: {
-                level: 0
-            }
-        },
-        post: [
-            {
+//     event.custom({
+//         type: 'lychee:item_inside',
+//         item_in: {
+//             item: 'kubejs:chromium'
+//         },
+//         block_in: {
+//             blocks: ['minecraft:water'],
+//             state: {
+//                 level: 0
+//             }
+//         },
+//         post: [
+//             {
+//                 type: 'place',
+//                 block: 'kubejs:dichromic_acid'
+//             },
+//             {
+//                 type: 'drop_item',
+//                 item: 'kubejs:chromium',
+//                 contextual: {
+//                     type: 'chance',
+//                     chance: 0.33
+//                 }
+//             }
+//         ]
+//     }).id('dichromic_acid_from_chromium');
 
-                type: 'place',
-                block: 'minecraft:air',
-                contextual: {
-                    type: 'chance',
-                    chance: 0.20
-                }
-            },
-            {
-                type: 'drop_item',
-                item: 'kubejs:incomplete_anthraquinone',
-            }
-        ]
-    }).id('incomplete_anthraquinone_from_anthracene');
+    // event.custom({
+    //     type: 'lychee:item_inside',
+    //     item_in: {
+    //         item: 'kubejs:anthracene'
+    //     },
+    //     block_in: {
+    //         blocks: ['kubejs:sulfuric_acid'],
+    //         state: {
+    //             level: 0
+    //         }
+    //     },
+    //     post: [
+    //         {
+
+    //             type: 'place',
+    //             block: 'minecraft:air',
+    //             contextual: {
+    //                 type: 'chance',
+    //                 chance: 0.20
+    //             }
+    //         },
+    //         {
+    //             type: 'drop_item',
+    //             item: 'kubejs:incomplete_anthraquinone',
+    //         }
+    //     ]
+    // }).id('incomplete_anthraquinone_from_anthracene');
 
     // event.custom({
     //     type: 'lychee:item_inside',
@@ -108,6 +109,34 @@ ServerEvents.recipes(event => {
     //         }
     //     ]
     // }).id('anthraquinone_from_incomplete_anthraquinone');
+
+    event.custom({
+        type: 'lychee:item_inside',
+        item_in: {
+            item: 'thermal:quartz_dust'
+        },
+        block_in: {
+            blocks: ['kubejs:dye_slurry_magenta'],
+            state: {
+                level: 0
+            }
+        },
+        post: [
+            {
+
+                type: 'place',
+                block: 'minecraft:air',
+                contextual: {
+                    type: 'chance',
+                    chance: 0.10
+                }
+            },
+            {
+                type: 'drop_item',
+                item: 'minecraft:redstone',
+            }
+        ]
+    }).id('kubejs:redstone_from_quartz_dust');
 
     event.custom({
         type: 'lychee:item_inside',

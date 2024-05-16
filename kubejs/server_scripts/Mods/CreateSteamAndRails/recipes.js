@@ -14,14 +14,13 @@ ServerEvents.recipes(event => {
 
 
     // traintracks
-    event.forEachRecipe({ output: /^railways\:track_.*/ }, (recipe) => {
+    event.forEachRecipe({ id: /^railways\:sequenced_assembly\/track_.*/ }, (recipe) => {
         let resultId = recipe.originalRecipeResult.id;
         // if (resultId.includes('quark')) return;
         // if (resultId == ('railways:track_quark_ancient' || 'railways:track_quark_ancient_narrow' || 'railways:track_quark_ancient_wide')) return;
         // if (resultId == ('railways:track_quark_azalea' || 'railways:track_quark_azalea_narrow' || 'railways:track_quark_azalea_wide')) return;
         // if (resultId == ('railways:track_quark_blossom' || 'railways:track_quark_blossom_narrow' || 'railways:track_quark_blossom_wide')) return;
 
-        // noinspection EqualityComparisonWithCoercionJS
         if (resultId != 'railways:track_coupler' &&
             resultId != 'railways:track_switch_andesite' &&
             resultId != 'railways:track_switch_brass' &&
@@ -30,11 +29,17 @@ ServerEvents.recipes(event => {
             let nuggets = '#create:recipe_nuggets';
             let count = 16;
             let wood = resultId.replace('railways:track_', '').replace('_wide', '').replace('_narrow', '');
-            let woodId = wood.replace('byg_', 'byg:').replace('biomesoplenty_', 'biomesoplenty:').replace('white_mangrove', 'mangrove');
+            let woodId = wood.replace('byg_', 'byg:').replace('biomesoplenty_', 'biomesoplenty:').replace('white_mangrove', 'mangrove').replace('quark_', 'quark:');
             let t = null;
+
+            // console.log({nuggets: nuggets, count: count, wood: wood, woodId: woodId});
 
             if (!woodId.includes(':')) {
                 woodId = 'minecraft:' + woodId;
+            }
+
+            if (woodId.includes('quark')) {
+                woodId = woodId + '_planks';
             }
 
             if (wood == 'ender') {
@@ -54,10 +59,21 @@ ServerEvents.recipes(event => {
             if (wood == 'tieless') {
                 slabs = 'minecraft:glass_pane';
             }
-            if (wood == 'phantom') {
-                slabs = 'minecraft:phantom_membrane';
-                count = 48;
+
+            if (wood == 'bamboo') {
+                slabs = 'minecraft:bamboo';
             }
+
+            if (wood == 'stripped_bamboo') {
+                slabs = 'minecraft:bamboo_slab';
+            }
+
+            if (wood =='phantom') {
+                slabs = 'minecraft:phantom_membrane';
+            }
+
+            // if (wood == 'bamboo')
+            // console.log({nuggets: nuggets, count: count, wood: wood, woodId: woodId, slabs: slabs});
 
             // Remove original recipe
             event.remove({ output: resultId });
@@ -89,7 +105,7 @@ ServerEvents.recipes(event => {
                 ]).transitionalItem(t).loops(1).id('kubejs:assembly/' + resultId.replace(':', '_'));
 
             } else { // Normal
-
+                console.log
                 // slab in, double deployer nuggets, press = 16 out
                 t = Item.of('railways:track_incomplete_' + wood);
                 event.recipes.create.sequenced_assembly([

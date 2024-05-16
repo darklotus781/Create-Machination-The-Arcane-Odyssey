@@ -29,3 +29,9 @@ StartupEvents.registry("block", event => {
             })
         ).model('kubejs:block/pixie_utrem_jar').displayName('Pixie Utrem Jar').notSolid().renderType('translucent');
 });
+
+BlockEvents.modification(event => {
+    event.modify('ae2:sky_stone_block', block => {
+        block.destroySpeed = Block.getBlock(block.id).defaultDestroyTime() / 2; // Set to half
+    });
+});

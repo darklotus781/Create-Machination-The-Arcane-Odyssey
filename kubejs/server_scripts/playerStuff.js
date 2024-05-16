@@ -1,4 +1,6 @@
 //priority: 0
+let $DamageSources = Java.loadClass('net.minecraft.world.damagesource.DamageSources');
+let damageType = Utils.lazy(() => new $DamageSources(Utils.server.registryAccess()).generic());
 
 EntityEvents.death("player", (event) => {
     let { player } = event;
@@ -33,11 +35,12 @@ PlayerEvents.loggedIn(event => {
     }
 
     if (player.persistentData.machinationData.firstJoin) {
+        server.persistentData.machinationData.playerCount++;
         server.schedule(30 * 1000, () => {
             player.tell('<§2DarkLotus§r> Welcome to Machination ' + player.username + ', we hope you have fun.');
             player.persistentData.machinationData.firstJoin = false;
-            server.persistentData.machinationData.playerCount++;
         });
+
         if (server.persistentData.machinationData.playerCount > 1) {
             server.schedule(35 * 1000, () => {
                 server.schedule(5 * 1000, () => player.tell("<§2DarkLotus§r> Because you've joined our server, we'll RTP you elsewhere to ensure proper player spread."));
@@ -60,9 +63,11 @@ PlayerEvents.loggedIn(event => {
                     server.runCommandSilent('/title ' + player.username + ' title {"text":"1","color":"gold"}');
                 });
                 server.schedule(21 * 1000, () => server.runCommandSilent('/execute as ' + player.username + ' run rtp'));
+                server.schedule(30 * 1000, () => server.runCommandSilent('/execute as ' + player.username + ' run sethome'));
             });
         }
         server.schedule(60 * 1000, () => player.tell('<§2DarkLotus§r> Good Luck ' + player.username + ', we\'re rooting for you!'));
+        server.schedule(65 * 1000, () => player.tell('<§2DarkLotus§r> Ohh, don\'t forget to use /sethome just in case ...'));
     }
 
     // if (player.getLevel().getDimension() != 'minecraft:overworld') {
@@ -96,26 +101,50 @@ ItemEvents.foodEaten('kubejs:magical_rock_candy', event => {
     let { player, item: { id } } = event;
 
     if (player.level.dimension != 'aether:the_aether') {
-        player.addItemCooldown(id, 20 * 60 * 5); // 5 Minutes
+        player.addItemCooldown(id, minutes(5)); // 5 Minutes
         player.tell(Text.red('It turned into a rock and you choked.'));
-        player.attack('generic', 2);
 
         if ((player.abilities.mayfly || player.abilities.flying) && (!player.creative || !player.spectator)) {
             player.tell(Text.gold("Ohh no, you can't fly anymore!"));
-            player.potionEffects.add('minecraft:slow_falling', 20 * 60 * 0.5);
+            player.potionEffects.add('minecraft:slow_falling', minutes(0.5));
         }
 
         event.server.schedule(2 * 1000, () => {
             player.removeEffect('ars_nouveau:flight');
-            player.potionEffects.add('minecraft:slowness', 20 * 60 * 0.5, 4);
-            player.potionEffects.add('minecraft:hunger', 20 * 60 * 1, 2);
+            player.removeEffect('minecraft:fire_resistance');
+            player.potionEffects.add('minecraft:nausea', minutes(0.5), 5);
+            player.potionEffects.add('minecraft:poison', minutes(0.5), 5);
+            player.potionEffects.add('minecraft:mining_fatigue', minutes(2), 5);
+            player.potionEffects.add('minecraft:hunger', minutes(2), 5);
+            player.potionEffects.add('minecraft:weakness', minutes(1), 5);
+            player.potionEffects.add('minecraft:blindness', minutes(0.5), 5);
+            player.potionEffects.add('ars_nouveau:snared', minutes(0.5));
         });
     } else {
         player.statusMessage = Text.green('You feel light on your feet!');
-        player.addItemCooldown(id, 20 * 60 * 1.25); // 1.25 Minutes
+        player.addItemCooldown(id, minutes(2.15)); // 2.15 Minutes
     }
 
 });
+
+BlockEvents.rightClicked(event => {
+    const {block, item, player} = event;
+    if (item.id !== 'kubejs:runic_tablet') return;
+    if (block.id === 'minecraft:crafting_table') return;
+    if (block.id === 'craftingstation:crafting_station') return;
+    if (`${block.id}`.match(/.*chest.*/)) return;
+    if (`${block.id}`.match(/.*barrel.*/)) return;
+    if (`${block.id}`.match(/.*drawer.*/)) return;
+    if (block.entityId === 'minecraft:air') {
+        if (! player.creative) {
+            item.count--;
+        }
+        let lightning = block.createEntity('forbidden_arcanus:crimson_lightning_bolt');
+        lightning.spawn();
+    }
+});
+
+
 
 
 // PlayerEvents.tick(event => {
@@ -135,7 +164,7 @@ ItemEvents.foodEaten('kubejs:magical_rock_candy', event => {
 //                 player.server.runCommandSilent(`fly ${player.username}`);
 //             }
 //         } else { // Player is in the Aether and Can Fly
-//             if (! curiosCheck) { // If the bunny hoppers are not equiped, remove flight.
+//             if (! curiosCheck) { // If the bunny hoppers are not equipped, remove flight.
 //                 player.server.runCommandSilent(`fly ${player.username}`);
 //             }
 //         }
@@ -157,37 +186,42 @@ global.dimChangeEvent = event => {
         let targetDimension = event.dimension.location();
         let server = player.server;
 
+        if (player.creative || player.spectator) {
+            player.tell(Text.red("Bypassing Dimensional Restrictions due to game mode!"));
+            return;
+        }
+
         if (targetDimension == 'minecraft:the_nether') {
             if (!player.stages.has('nether_access')) {
-                player.statusMessage = Text.of("The portal doesn't seem to work...");
+                player.statusMessage = Text.red("The portal doesn't seem to work...");
                 server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
                 event.setCanceled(true);
             }
         }
         if (targetDimension == 'minecraft:overworld') {
             if (!player.stages.has('overworld_access')) {
-                player.statusMessage = Text.of("The portal doesn't seem to work...");
+                player.statusMessage = Text.red("The portal doesn't seem to work...");
                 server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
                 event.setCanceled(true);
             }
         }
         if (targetDimension == 'minecraft:the_end') {
             if (!player.stages.has('end_access')) {
-                player.statusMessage = Text.of("The portal doesn't seem to work...");
+                player.statusMessage = Text.red("The portal doesn't seem to work...");
                 server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this portal, please refer to the questbook!"));
                 event.setCanceled(true);
             }
         }
         if (targetDimension == 'allthemodium:mining') {
             if (!player.stages.has('mining_access')) {
-                player.statusMessage = Text.of("The teleporter doesn't seem to work...");
+                player.statusMessage = Text.red("The teleporter doesn't seem to work...");
                 server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this device, please refer to the questbook!"));
                 event.setCanceled(true);
             }
         }
         if (targetDimension == 'allthemodium:the_other') {
             if (!player.stages.has('other_access')) {
-                player.statusMessage = Text.of("The teleporter doesn't seem to work...");
+                player.statusMessage = Text.red("The teleporter doesn't seem to work...");
                 server.schedule(2 * 1000, () => player.statusMessage = Text.of("You have not unlocked the ability to use this device, please refer to the questbook!"));
                 event.setCanceled(true);
             }

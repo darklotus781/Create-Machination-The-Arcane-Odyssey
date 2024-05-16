@@ -4,11 +4,12 @@
 	default_quest_shape: ""
 	filename: "1_andesite_age"
 	group: "565532624F0A44A9"
-	hide_quest_until_deps_visible: true
+	hide_quest_details_until_startable: true
 	icon: "kubejs:andesite_mechanism"
 	id: "203225418B0EED52"
 	images: [
 		{
+			dependency: "36BB3B03EA1B5464"
 			height: 0.5d
 			hover: ["You need to get into Botania first!"]
 			image: "botania:block/pure_daisy"
@@ -414,7 +415,7 @@
 				""
 				"Finally,"
 				"Mix Andesite Dust and Clay Balls into Andesite Blend."
-				" "
+				"If you need some help, feel free to use one of the schematics we've provided."
 			]
 			hide_dependency_lines: true
 			id: "34208DA5AC69E654"
@@ -445,6 +446,9 @@
 			description: [
 				"This isn't CAE, we're not forcing you to farm and process Menril Trees."
 				"Menril does seem to contain special properties and if you mix menril chunks with andesite blend, it produces Andesite Alloy.  It's pretty efficient and worth the time investment to setup automation."
+				""
+				"So, I guess we are forcing you to farm and process Menril Trees :P"
+				"Go do a couple at least and gather up some menril chunks."
 			]
 			hide_dependency_lines: true
 			id: "2FE7CC1170DF9E5B"
@@ -712,6 +716,22 @@
 			}]
 			x: 2.5d
 			y: -5.5d
+		}
+		{
+			dependencies: ["67F9D140A432A965"]
+			description: ["The arcane tower is rare, but worth finding.  "]
+			hide_dependency_lines: true
+			id: "36D300D98A2E9759"
+			optional: true
+			tasks: [{
+				icon: "ars_nouveau:storage_lectern"
+				id: "65C4379C496F57E0"
+				structure: "machination:arcane_tower"
+				title: "Arcane Tower"
+				type: "structure"
+			}]
+			x: -1.0d
+			y: -6.5d
 		}
 	]
 	title: "1: Andesite Automations"

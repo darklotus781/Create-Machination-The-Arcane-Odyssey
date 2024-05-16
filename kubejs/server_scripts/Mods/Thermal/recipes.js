@@ -27,6 +27,8 @@ ServerEvents.recipes(event => {
     event.remove({id: 'thermal:machines/press/press_dandelion_to_latex'});
     event.remove({id: 'thermal:machines/crucible/crucible_redstone_block'})
     event.remove({id: 'thermal:machines/crucible/crucible_redstone_dust'})
+    event.remove({id: /thermal:fire_charge\/.*/})
+    event.remove({id: /thermal:earth_charge\/.*/})
 
     event.remove({id: 'thermal:bottler_florb'});
 
@@ -64,4 +66,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting(Item.of('thermal:rubber'), [Fluid.of('minecraft:water', 250), Ingredient.of('#minecraft:flowers', 4)]);
     event.recipes.create.compacting(Item.of('thermal:rubber'), [Fluid.of('thermal:resin', 250)]);
     event.recipes.create.compacting(Item.of('thermal:rubber'), [Fluid.of('thermal:latex', 125)]);
+
+    event.recipes.thermal.smelter(Ingredient.of('#forge:ingots/steel'),[Ingredient.of('#forge:ingots/iron', 2), Item.of('thermal:coal_coke')]).energy(12000).id('kubejs:thermal/smelter/steel');
 });

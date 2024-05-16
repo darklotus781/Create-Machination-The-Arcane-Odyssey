@@ -15,6 +15,14 @@ ForgeEvents.onEvent("net.minecraftforge.event.level.BlockEvent$PortalSpawnEvent"
     server.schedule(2*1000, ()=> player.statusMessage = Text.of("You need the \"Nether Portal Frame\" Item to spawn a Nether Portal!"));
 });
 
+ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$PlayerRespawnEvent', (event) => {
+    global.PlayerRespawnEvent(event);
+});
+
+ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerSetSpawnEvent', (event) => {
+    global.PlayerSetSpawnEvent(event);
+});
+
 // ForgeEvents.onEvent("top.theillusivec4.curios.api.event.CurioChangeEvent", (event) => {
 //     global.curioChangeEvent(event)
 // });

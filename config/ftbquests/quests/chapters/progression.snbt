@@ -18,7 +18,7 @@
 			order: 1
 			rotation: 0.0d
 			width: 14.0d
-			x: 2.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -82,8 +82,8 @@
 				type: "checkmark"
 			}]
 			title: "Good Luck!"
-			x: -2.0d
-			y: 4.5d
+			x: -1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3BAD2CEF1245F202"]
@@ -113,7 +113,7 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 1: Andesite Automations"
-			x: -0.5d
+			x: 0.5d
 			y: 3.5d
 		}
 		{
@@ -136,8 +136,8 @@
 				title: "Unlock Copper Mechanisms"
 				type: "checkmark"
 			}]
-			title: "Chapter 1A: Copper"
-			x: -0.5d
+			title: "Chapter 1A: Fluid Handling"
+			x: 0.5d
 			y: 2.5d
 		}
 		{
@@ -172,11 +172,11 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 2: Brass Beginnings"
-			x: 1.0d
+			x: 2.0d
 			y: 3.5d
 		}
 		{
-			dependencies: ["3A10D0D5E8548C54"]
+			dependencies: ["6EFF8BCEBC2E2AF2"]
 			dependency_requirement: "one_started"
 			hide: true
 			icon: "kubejs:sturdy_mechanism"
@@ -200,12 +200,15 @@
 				title: "Unlock Sturdy Mechanisms"
 				type: "checkmark"
 			}]
-			title: "Chapter 2C: Stronk"
-			x: 1.0d
-			y: 2.5d
+			title: "Chapter 1B: Trains 'n Things"
+			x: 0.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["19232B8B77F86AF8"]
+			dependencies: [
+				"19232B8B77F86AF8"
+				"59A9CA8596826FEC"
+			]
 			description: [
 				"Chapter 4 has a major focus on Pneuamaticcraft."
 				"This doesn't have to be overly complicated and we'll walk you through every step."
@@ -233,11 +236,14 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 4: Plastic Pandemonium"
-			x: 3.5d
+			x: 4.5d
 			y: 4.5d
 		}
 		{
-			dependencies: ["3A10D0D5E8548C54"]
+			dependencies: [
+				"3A10D0D5E8548C54"
+				"52996F5F4EC12FCE"
+			]
 			hide: true
 			hide_details_until_startable: false
 			icon: "kubejs:radiant_mechanism"
@@ -261,7 +267,7 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 3: Radiant Revolution"
-			x: 2.5d
+			x: 3.5d
 			y: 3.5d
 		}
 		{
@@ -397,9 +403,66 @@
 				"03C7E04B5BBB84A2"
 				"411FC26DBB795420"
 			]
+			description: [
+				"You activate the End Portal with your Quantum Mechanisms and hear an ominous sound as the portal opens.  Odd particles emit from it and you hear the low drone of a Dragon!?"
+				""
+				"Without hesitation, you jump into the portal and find yourself hovering over the void on an obsidian platform.  Is this the end?  Is there something else?"
+				""
+				"Best of Luck!"
+			]
 			hide: true
 			icon: "minecraft:end_portal_frame"
 			id: "1F82B34266C1F94E"
+			rewards: [{
+				id: "56164EFD9710CC84"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:wand"
+					tag: {
+						"ars_nouveau:caster": {
+							current_slot: 0
+							flavor: ""
+							hidden_recipe: ""
+							is_hidden: 0b
+							spell_count: 1
+							spells: {
+								spell0: {
+									name: "Wall of Pain!"
+									recipe: {
+										part0: "ars_nouveau:glyph_projectile"
+										part1: "ars_nouveau:glyph_accelerate"
+										part10: "ars_nouveau:glyph_amplify"
+										part11: "ars_nouveau:glyph_amplify"
+										part2: "ars_nouveau:glyph_wall"
+										part3: "ars_nouveau:glyph_sensitive"
+										part4: "ars_elemental:glyph_propagator_homing"
+										part5: "ars_nouveau:glyph_split"
+										part6: "ars_nouveau:glyph_split"
+										part7: "ars_nouveau:glyph_split"
+										part8: "ars_nouveau:glyph_split"
+										part9: "ars_nouveau:glyph_harm"
+										size: 12
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "20DA67D3169FCD7C"
 				title: "The End?"
@@ -410,15 +473,52 @@
 		}
 		{
 			dependencies: ["1F82B34266C1F94E"]
+			description: [
+				"The other is a scary place, full of hostile monsters, the inability to fly and an eternal darkness."
+				"Be careful entering this place, make sure you're geared up and have a safe way home."
+			]
 			hide: true
+			icon: "allthemodium:other_vibranium_ore"
 			id: "4D5FD6A4512B2406"
-			tasks: [{
-				dimension: "allthemodium:the_other"
-				icon: "allthemodium:teleport_pad"
-				id: "5F81B69F46DCE538"
-				title: "Visit the Other"
-				type: "dimension"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5DB1DECC9310C909"
+					table_id: 7913046071043377976L
+					type: "loot"
+				}
+				{
+					auto: "invisible"
+					id: "46EA3697E4A096AB"
+					ignore_reward_blocking: true
+					stage: "other_access"
+					team_reward: false
+					type: "gamestage"
+				}
+			]
+			tasks: [
+				{
+					dimension: "allthemodium:the_other"
+					icon: "allthemodium:teleport_pad"
+					id: "5F81B69F46DCE538"
+					title: "Visit the Other"
+					type: "dimension"
+				}
+				{
+					advancement: "minecraft:end/elytra"
+					criterion: ""
+					icon: {
+						Count: 1b
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "38C2938D582A3ACC"
+					title: "Conquer the End"
+					type: "advancement"
+				}
+			]
 			title: "Not The End, The Other place!"
 			x: 6.0d
 			y: -3.0d
@@ -428,7 +528,14 @@
 			description: [
 				"{image:kubejs:textures/gui/baby.png width:100 height:100 align:1}"
 				""
+				"&4&l!!!WARNING!!!&r&r"
+				"Bailing on this quest line will result in forfeiting all quests completely."
+				"You cannot complete them later which may rob you of some really great rewards."
+				"If you need help or have issues, please reach out in our Discord for some tips."
+				""
 				"Clicking this cannot be undone.  If you're not cut out for the Aether, you can skip it entirely."
+				""
+				"What's next isn't all that easier, at least in the Aether, you'll get geared up and prepared for the next adventure."
 				""
 				"Best of luck!!!"
 			]
@@ -438,7 +545,7 @@
 			id: "38F56772D4CD3649"
 			rewards: [
 				{
-					auto: "enabled"
+					auto: "invisible"
 					command: "/ftbquests change_progress @p complete 401DD7DCCE023222"
 					elevate_perms: true
 					exclude_from_claim_all: true
@@ -465,6 +572,14 @@
 					team_reward: true
 					type: "gamestage"
 				}
+				{
+					auto: "invisible"
+					command: "/say The Aether is too hard, I can't take it, I'm cheating in a portal!"
+					id: "3D39D1376177CBC1"
+					ignore_reward_blocking: true
+					team_reward: false
+					type: "command"
+				}
 			]
 			tasks: [{
 				id: "23E83A544E48E45D"
@@ -485,7 +600,8 @@
 				"Why are you still playing?  If you can't handle the nether, are you sure you're up for the automation tasks to come?"
 				""
 				"Clicking this cannot be undone.  If you're not cut out for the Nether, you can skip it entirely."
-				"You will have to come back eventually..."
+				""
+				"You will have to come back eventually, but without the rewards..."
 			]
 			disable_toast: true
 			hide: true
@@ -494,7 +610,7 @@
 			id: "34329E820B657172"
 			rewards: [
 				{
-					auto: "enabled"
+					auto: "invisible"
 					command: "/ftbquests change_progress @p complete 2B528CDE6E448F87"
 					elevate_perms: true
 					exclude_from_claim_all: true
@@ -512,6 +628,20 @@
 					only_one: true
 					team_reward: false
 					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "53D6FDF8FF97B1A2"
+					ignore_reward_blocking: true
+					stage: "overworld_access"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					command: "/say The Nether is Scary, I'm cheating in a Portal!"
+					id: "187641CC004AB587"
+					ignore_reward_blocking: true
+					type: "command"
 				}
 			]
 			tasks: [{
@@ -555,7 +685,7 @@
 				title: "Getting Started"
 				type: "checkmark"
 			}]
-			x: 2.25d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -571,31 +701,22 @@
 				type: "random"
 			}]
 			subtitle: "Power!"
-			title: "Chapter 2A: Power"
-			x: 0.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["3A10D0D5E8548C54"]
-			dependency_requirement: "one_started"
-			hide: true
-			icon: "kubejs:scorch_mechanism"
-			id: "72C3FAE0193F665C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "073CA7F1953A97E4"
-				table_id: 294495333582605423L
-				type: "random"
+			tasks: [{
+				id: "6F56DB5619F5F243"
+				item: "minecraft:bedrock"
+				type: "item"
 			}]
-			subtitle: "More Machines"
-			title: "Chapter 2B: Scorch Machine"
-			x: 1.5d
-			y: 4.5d
+			title: "Chapter 2A: Power"
+			x: 2.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["19232B8B77F86AF8"]
+			dependencies: [
+				"19232B8B77F86AF8"
+				"59A9CA8596826FEC"
+			]
 			description: [
-				"Chapter 4 has a major focus on Integrated Dynamics and feeds into some AE2 automations."
+				"Chapter 5 has a major focus on Integrated Dynamics and feeds into some AE2 automations."
 				"This doesn't have to be overly complicated and we'll walk you through every step."
 				""
 				"Chapter 4 and Chapter 5 feed directly off Chapter 3 because they both use Radiant Mechanisms and unlock different features / functionality.  It makes sense to keep them separate chapters due to the intricacies of each quest line and that they don't directly feed off of or into each other."
@@ -621,15 +742,17 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 5: Integrated Innovations"
-			x: 3.5d
+			x: 4.5d
 			y: 2.5d
 		}
 		{
 			dependencies: [
 				"437114B9BC07B2BD"
 				"099F5D860FC50376"
+				"74F85CFABA84170A"
+				"36586087EDF835C8"
 			]
-			description: ["Chapter 6"]
+			description: ["Chapter 6 is the first step toward end-game."]
 			hide: true
 			icon: "ae2:singularity"
 			id: "0225A0BF60D285CD"
@@ -651,12 +774,15 @@
 				type: "checkmark"
 			}]
 			title: "Chapter 6: Quantum Quintessence"
-			x: 4.5d
+			x: 5.5d
 			y: 3.5d
 		}
 		{
-			dependencies: ["0225A0BF60D285CD"]
-			description: ["Chapter 6"]
+			dependencies: [
+				"0225A0BF60D285CD"
+				"0C11FBBB3848BC6C"
+			]
+			description: ["Chapter 7"]
 			hide: true
 			icon: "kubejs:temporal_mechanism"
 			id: "5B817E19476DEBA1"
@@ -672,13 +798,21 @@
 					xp_levels: 5
 				}
 			]
-			tasks: [{
-				id: "3EF1B64AD9101D4E"
-				title: "Quantum isn't a state of mind!"
-				type: "checkmark"
-			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "3EF1B64AD9101D4E"
+					title: "Quantum isn't a state of mind!"
+					type: "checkmark"
+				}
+				{
+					id: "40071EE461C51ACE"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+			]
 			title: "Chapter 7: Temporal Termination"
-			x: 6.0d
+			x: 7.0d
 			y: 3.5d
 		}
 		{
@@ -712,6 +846,109 @@
 			}]
 			x: 2.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["411FC26DBB795420"]
+			description: [
+				"The Mining Dimension is free of Hostile mobs and contains all the ores you could ever need."
+				""
+				"It's recommended to setup a contraption or a Magnetic Quarry to semi-automate your mining efforts."
+			]
+			hide: true
+			id: "068DCA0103E7A45B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "06553BDF651662E2"
+					table_id: 7913046071043377976L
+					type: "loot"
+				}
+				{
+					auto: "invisible"
+					id: "0796D89023F502A9"
+					ignore_reward_blocking: true
+					stage: "mining_access"
+					type: "gamestage"
+				}
+			]
+			tasks: [{
+				dimension: "allthemodium:mining"
+				icon: "allthemodium:teleport_pad"
+				id: "055750FCF4D21228"
+				title: "Visit the Mining Dimension"
+				type: "dimension"
+			}]
+			title: "Mining Dimension"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D5FD6A4512B2406"]
+			description: ["You've done it, you've defeated the Piglich and collected his heart."]
+			id: "080902A63AB9FEBB"
+			rewards: [
+				{
+					id: "0C3C830ED4DFA237"
+					item: "create:creative_motor"
+					type: "item"
+				}
+				{
+					id: "6ADCD358223106D6"
+					item: "ars_nouveau:creative_source_jar"
+					type: "item"
+				}
+				{
+					id: "46687E07D0DBC447"
+					item: "botania:creative_pool"
+					type: "item"
+				}
+				{
+					id: "3AD032785E199DA1"
+					item: "ars_nouveau:creative_spell_book"
+					type: "item"
+				}
+				{
+					id: "40B909D6599B41D4"
+					item: "ae2:creative_energy_cell"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					entity: "allthemodium:piglich"
+					icon: {
+						Count: 1b
+						id: "botania:elementium_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "484DE71A439D42AF"
+					title: "Kill the Piglich"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "3C142A8D7A4326FF"
+					item: "allthemodium:piglich_heart"
+					title: "Obtain the Piglich's Heart"
+					type: "item"
+				}
+				{
+					id: "21E1FC791D4BE857"
+					structure: "allthemodium:ancient_pyramid"
+					title: "Find an Ancient Pyramid"
+					type: "structure"
+				}
+				{
+					id: "7F0C38CADFEA67E0"
+					structure: "allthemodium:dungeon"
+					title: "Find a Dungeon"
+					type: "structure"
+				}
+			]
+			x: 8.0d
+			y: -3.0d
 		}
 	]
 	title: "The Arcane Odyssey"

@@ -4,6 +4,7 @@
 	filename: "magic_chapter_4_occultism"
 	group: "5741ADDA3A600D3C"
 	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: {
 		Count: 1b
 		id: "ftbquests:custom_icon"
@@ -15,6 +16,7 @@
 	images: [
 		{
 			color: 15616811
+			dependency: "77B5A7D2A7494A39"
 			height: 5.0d
 			image: "occultism:textures/item/pentacle.png"
 			order: -1
@@ -25,6 +27,7 @@
 		}
 		{
 			color: 16711680
+			dependency: "77B5A7D2A7494A39"
 			height: 1.0d
 			image: "occultism:textures/gui/book/robe.png"
 			rotation: 0.0d
@@ -34,6 +37,7 @@
 		}
 		{
 			color: 16711680
+			dependency: "77B5A7D2A7494A39"
 			height: 1.0d
 			image: "occultism:textures/gui/book/robe.png"
 			rotation: 0.0d
@@ -43,6 +47,7 @@
 		}
 		{
 			color: 16711680
+			dependency: "77B5A7D2A7494A39"
 			height: 1.0d
 			image: "occultism:textures/gui/book/robe.png"
 			rotation: 0.0d
@@ -52,6 +57,7 @@
 		}
 		{
 			color: 16711680
+			dependency: "77B5A7D2A7494A39"
 			height: 1.0d
 			image: "occultism:textures/gui/book/robe.png"
 			rotation: 0.0d
@@ -61,6 +67,7 @@
 		}
 		{
 			color: 16711680
+			dependency: "77B5A7D2A7494A39"
 			height: 1.0d
 			image: "occultism:textures/gui/book/robe.png"
 			rotation: 0.0d
@@ -70,6 +77,7 @@
 		}
 		{
 			color: 255
+			dependency: "77B5A7D2A7494A39"
 			height: 2.0d
 			image: "ftbquests:tasks/input_only"
 			rotation: 45.0d
@@ -79,6 +87,7 @@
 		}
 		{
 			color: 255
+			dependency: "77B5A7D2A7494A39"
 			height: 2.0d
 			image: "occultism:textures/gui/book/summoning.png"
 			order: -1
@@ -89,6 +98,7 @@
 		}
 		{
 			color: 16711680
+			dependency: "77B5A7D2A7494A39"
 			height: 2.0d
 			image: "occultism:textures/gui/book/summoning.png"
 			order: -1
@@ -98,6 +108,7 @@
 			y: 5.5d
 		}
 		{
+			dependency: "77B5A7D2A7494A39"
 			height: 1.0d
 			hover: ["Shub Niggurath Familiar"]
 			image: "occultism:textures/gui/book/familiar_shub_niggurath.png"
@@ -107,6 +118,7 @@
 			y: 5.0d
 		}
 		{
+			dependency: "77B5A7D2A7494A39"
 			height: 1.0d
 			hover: ["Drikwing Familiar"]
 			image: "occultism:textures/gui/book/otherworld_bird.png"
@@ -117,6 +129,7 @@
 		}
 		{
 			alpha: 150
+			dependency: "77B5A7D2A7494A39"
 			height: 2.0d
 			image: "occultism:block/stable_wormhole_frame"
 			rotation: 0.0d
@@ -125,6 +138,7 @@
 			y: 9.5d
 		}
 		{
+			dependency: "77B5A7D2A7494A39"
 			height: 2.0d
 			image: "occultism:item/divination_rod/divination_rod_animation"
 			rotation: -45.0d
@@ -133,6 +147,7 @@
 			y: 14.0d
 		}
 		{
+			dependency: "77B5A7D2A7494A39"
 			height: 0.5d
 			image: "occultism:block/chalk_glyph/0"
 			rotation: 0.0d
@@ -142,6 +157,7 @@
 		}
 		{
 			color: 6111187
+			dependency: "77B5A7D2A7494A39"
 			height: 0.5d
 			image: "occultism:block/chalk_glyph/11"
 			rotation: 0.0d
@@ -151,6 +167,7 @@
 		}
 		{
 			color: 16711680
+			dependency: "77B5A7D2A7494A39"
 			height: 0.5d
 			image: "occultism:block/chalk_glyph/12"
 			rotation: 0.0d
@@ -160,6 +177,7 @@
 		}
 		{
 			color: 16766720
+			dependency: "77B5A7D2A7494A39"
 			height: 0.5d
 			image: "occultism:block/chalk_glyph/4"
 			rotation: 0.0d
@@ -168,6 +186,7 @@
 			y: -1.5d
 		}
 		{
+			dependency: "77B5A7D2A7494A39"
 			height: 3.0d
 			hover: ["Beholder Familiar"]
 			image: "occultism:textures/gui/book/familiar_beholder.png"
@@ -177,6 +196,7 @@
 			y: 12.5d
 		}
 		{
+			dependency: "77B5A7D2A7494A39"
 			height: 3.0d
 			hover: ["Headless Ratman Familiar"]
 			image: "occultism:textures/gui/book/familiar_headless_ratman.png"
@@ -186,6 +206,7 @@
 			y: 12.5d
 		}
 		{
+			dependency: "77B5A7D2A7494A39"
 			height: 3.0d
 			image: "occultism:textures/gui/book/infusion.png"
 			rotation: 0.0d
@@ -195,6 +216,7 @@
 		}
 		{
 			alpha: 100
+			dependency: "77B5A7D2A7494A39"
 			height: 1.25d
 			image: "occultism:block/iesnium_block"
 			rotation: 45.0d
@@ -204,6 +226,7 @@
 		}
 		{
 			alpha: 150
+			dependency: "77B5A7D2A7494A39"
 			height: 1.5d
 			image: "occultism:block/iesnium_block"
 			order: -1
@@ -214,6 +237,7 @@
 		}
 		{
 			color: 16766720
+			dependency: "77B5A7D2A7494A39"
 			height: 0.5d
 			image: "occultism:block/chalk_glyph/8"
 			rotation: 0.0d
@@ -223,6 +247,7 @@
 		}
 	]
 	order_index: 3
+	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
@@ -233,9 +258,10 @@
 				"This mod aimes to help you in many different ways by enlisting the help of &bSpirits&r! &oMost&r of which are friendly."
 				""
 				"To get started, you'll need to get some &aDemon's Dream Seeds&r."
-				"Unfortunately this means you need to kill the Warden, good luck!"
+				"Unfortunately this means you need to kill an Elder Guardian, good luck!"
 			]
 			hide: true
+			hide_dependent_lines: true
 			icon: {
 				Count: 1b
 				id: "ftbquests:custom_icon"
@@ -261,6 +287,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"The &aDictionary Of Spirits&r serves as the Guide Book for &dOccultism&r. You'll absolutely need to make this if you want to continue with the mod!"
 				""
@@ -291,6 +318,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"&cDemon's Dream Fruit&r is perfectly healthy for you. There might be some side effects you should know about."
 				""
@@ -315,6 +343,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"What if I told you that the Demon's Fruit is flammable?"
 				""
@@ -359,6 +388,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Using &dSpiritfire&r, we can convert several Overworld mats into their Otherworld variants. You can also find several Otherworld mats by going under the effects of the &bThird Eye&r and adventuring into the world. You might be surprised what you find. To make it easier, there are crafting recipes for the basic materials by throwing them into &dSpiritfire&r."
@@ -369,7 +399,7 @@
 				""
 				"&eDiamonds&r will turn into &dSpirit Attuned Gems&r which are used in several recipes we'll need later down the road."
 			]
-			hide: false
+			hide: true
 			id: "0C8215BCCF37EC8B"
 			min_width: 300
 			rewards: [
@@ -414,6 +444,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"Demons like Candles. I think."
 				""
@@ -461,6 +492,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"Before we start enlisting the help of our Demon friends, we will need to create the most important item needed for Rituals: &aChalk&r."
 				""
@@ -503,6 +535,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"What is a Demonic Ritual without a &cSacrifice&r! :D"
 				""
@@ -533,6 +566,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"For us to specify which &c&mDemon&r &9Friend&r we want to summon, we'll need to make a specific &bBook of Binding&r."
 				""
@@ -563,6 +597,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"For our first Ritual, we want to summon a &aFoliot Crusher&r Demon. This Demon will crush items for us, which is something we'll need to make some of the higher level Chalks!"
 				""
@@ -633,6 +668,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: ["Now that we have a Foliot Crusher, we can &muse&r politely ask it to crush down some &eEnd Stone&r and &9Obsidian&r for us. We'll use these to make some new Chalk!"]
 			id: "2E63C32D3847292C"
 			rewards: [{
@@ -659,6 +695,7 @@
 			y: 6.5d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"See, they aren't all bad!"
 				""
@@ -706,6 +743,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"While there are other methods to move Demons around, you can create an &dEmpty Soul Gem&r to capture a Demon and place it somewhere else. This is also needed for the ATM Star."
 				""
@@ -760,6 +798,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"No, not that kind."
 				""
@@ -803,6 +842,7 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: ["This item is used to capture Demons for transport or storage. It's also needed for the &6ATM Star&r."]
 			id: "3C8DBF896C0080F8"
 			rewards: [
@@ -834,6 +874,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"There are more Otherworld items you will need to gather, and eating &cDemon's Dream Fruit&r every time you need the &7Third Eye&r effect gets annoying."
 				""
@@ -869,6 +910,7 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"Most of the items we've needed from the &3Otherworld&r so far just needed some Spiritfire. However, we will need to use the help of the &3Third Eye&r to find the Ore of the &3Otherworld&r."
 				""
@@ -908,6 +950,7 @@
 			y: 9.5d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"The next step in your journey will be to find &eIesnium Ore&r in the Nether."
 				""
@@ -938,6 +981,7 @@
 			y: 11.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"Once you've gathered a few &aRaw Iesnium Ores&r, you'll probably want to use the first few ingots to make an &dIesnium Pickaxe&r. This not only mines Iesnium like the Infused Pickaxe, but lasts a lot longer too."
 				""
@@ -973,6 +1017,7 @@
 			y: 12.5d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"That first Foliot Demon was cool, but what if I told you that you could summon a demon that gives you 6 dusts per raw ore it crushes?"
 				""
@@ -1035,6 +1080,7 @@
 			y: 9.5d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"With our ability to harvest &cIesnium&r, we can call upon the Demons to do our bidding in the mines... I mean.... help us gather ores. Definitely not exploiting Demons or anything."
 				""
@@ -1111,6 +1157,7 @@
 			y: 9.5d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"You're bound to have too many items playing this modpack. It's just it works, and if you haven't figured out your storage situation yet, &dDimensional Storage&r might just be right for you!"
 				""
@@ -1164,6 +1211,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"To upgrade the amount of stacks your magical storage can hold, you'll need to make &dStorage Stabilizers&r."
 				""
@@ -1221,6 +1269,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"While you can get most of the &dOtherworld&r materials using Spiritfire, you can also use &9Divination Rods&r to locate these materials."
 				""
@@ -1245,6 +1294,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"Want to access your storage remotely? This can be done with either the &eStable Wormhole&r or the &aStorage Accessor&r."
 				""
@@ -1293,6 +1343,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["77B5A7D2A7494A39"]
 			description: [
 				"Occultism provides more than just Demons to crush your ores!"
 				""

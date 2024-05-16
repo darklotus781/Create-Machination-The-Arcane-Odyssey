@@ -1,22 +1,23 @@
 //priority:0
 ServerEvents.recipes(event => {
-    event.remove(/createaddition:liquid_burning*/);
+    event.remove({id: /createaddition:liquid_burning*/});
+    event.remove({output: 'createaddition:liquid_burning/lava'});
 
     // Liquid Burning Lava
-    event.custom({
-        type: 'createaddition:liquid_burning',
-        input: {
-            fluidTag: 'forge:lava',
-            amount: 1000 // 1 bucket
-        },
-        burnTime: minutes(1), // 1 minute
-        conditions: [
-            {
-                fluidTag: "forge:lava",
-                type: "createaddition:has_fluid_tag"
-            }
-        ]
-    }).id('createaddition:liquid_burning/lava');
+    // event.custom({
+    //     type: 'createaddition:liquid_burning',
+    //     input: {
+    //         fluidTag: 'forge:lava',
+    //         amount: 1000 // 1 bucket
+    //     },
+    //     burnTime: minutes(1), // 1 minute
+    //     conditions: [
+    //         {
+    //             fluidTag: "forge:lava",
+    //             type: "createaddition:has_fluid_tag"
+    //         }
+    //     ]
+    // }).id('createaddition:liquid_burning/lava');
 
     // Liquid Burning Refined Fuel
     event.custom({
@@ -25,7 +26,7 @@ ServerEvents.recipes(event => {
             fluidTag: "forge:refined_fuel",
             amount: 1000
         },
-        burnTime: minutes(10), // 10 minutes
+        burnTime: minutes(5),
         superheated: true,
         conditions: [
             {
@@ -42,7 +43,7 @@ ServerEvents.recipes(event => {
             fluidTag: "forge:diesel",
             amount: 1000
         },
-        burnTime: minutes(5), // 5 minutes
+        burnTime: minutes(1),
         conditions: [
             {
                 fluidTag: "forge:diesel",
@@ -58,8 +59,7 @@ ServerEvents.recipes(event => {
             fluidTag: "forge:gasoline",
             amount: 1000
         },
-        burnTime: minutes(3), // 3 minutes
-        superheated: true,
+        burnTime: minutes(3),
         conditions: [
             {
                 fluidTag: "forge:gasoline",
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
             fluidTag: "forge:kerosene",
             amount: 1000
         },
-        burnTime: minutes(10), // 10 minutes
+        burnTime: minutes(2),
         conditions: [
             {
                 fluidTag: "forge:kerosene",
@@ -91,8 +91,7 @@ ServerEvents.recipes(event => {
             fluidTag: "forge:lpg",
             amount: 1000
         },
-        burnTime: minutes(5),
-        superheated: true,
+        burnTime: minutes(4),
         conditions: [
             {
                 fluidTag: "forge:lpg",
@@ -100,8 +99,16 @@ ServerEvents.recipes(event => {
             }
         ]
     }).id('createaddition:liquid_burning/lpg');
+
+    // Liquid Burning Source
+    event.custom({
+        "type":"createaddition:liquid_burning",
+        "input": {
+            "fluid": "kubejs:source",
+            "amount": 1000
+        },
+        "burnTime": minutes(3),
+        "superheated": true
+    }).id('createaddition:liquid_burning/source');
 });
 
-function minutes(minutes) {
-    return 20 * 60 * minutes;
-}

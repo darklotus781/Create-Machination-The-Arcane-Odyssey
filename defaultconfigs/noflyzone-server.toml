@@ -2,7 +2,7 @@
 #Range: > 1
 checkInterval = 10
 #Whether to allow flight using an elytra in a no flight zone
-allowElytraFlight = false
+allowElytraFlight = true
 #Whether to allow flight using a jetpack device in a no flight zone
 allowFlyingDevices = false
 #Allow player teleportation in a no flight zone

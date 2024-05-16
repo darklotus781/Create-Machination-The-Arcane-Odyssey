@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     event.remove({output: 'easy_villagers:breeder'});
     event.remove({output: 'easy_villagers:converter'});
     event.remove({output: 'easy_villagers:iron_farm'}); // Disabled, too OP
-    event.remove({output: 'easy_villagers:incubator'}); // Disabled, just deal with the babies!
+    event.remove({output: 'easy_villagers:incubator'});
 
     event.shaped(Item.of('easy_villagers:trader'), [
         'PPP',
@@ -35,5 +35,15 @@ ServerEvents.recipes(event => {
         I: Ingredient.of('#forge:plates/iron'),
         P: Item.of('forbidden_arcanus:dark_runic_glass_pane'),
         B: Item.of('ars_nouveau:orange_sbed'),
+    });
+
+    event.shaped(Item.of('easy_villagers:incubator'), [
+        'PPP',
+        'PNP',
+        'III'
+    ], {
+        I: Ingredient.of('#forge:plates/iron'),
+        P: Item.of('forbidden_arcanus:dark_runic_glass_pane'),
+        N: Ingredient.of('#forge:ingots/netherite'),
     });
 });

@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "7_time_transcendental_final"
 	group: "565532624F0A44A9"
-	hide_quest_until_deps_visible: true
+	hide_quest_details_until_startable: true
 	icon: "kubejs:temporal_mechanism"
 	id: "3F42CB09E7A0D13B"
 	images: [{
@@ -14,7 +14,7 @@
 		x: 0.5d
 		y: -5.0d
 	}]
-	order_index: 8
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -50,24 +50,21 @@
 				type: "xp_levels"
 				xp_levels: 25
 			}]
-			tasks: [
-				{
-					count: 8L
-					id: "0EA32FCB5BA520DA"
-					item: "kubejs:temporal_mechanism"
-					type: "item"
-				}
-				{
-					id: "52430F7E8EE5BF82"
-					title: "Automated Time Mechanisms"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				count: 8L
+				id: "0EA32FCB5BA520DA"
+				item: "kubejs:temporal_mechanism"
+				type: "item"
+			}]
 			x: -0.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["1D3698C194B4E1F4"]
+			description: [
+				"Automated Temporal Mechanisms?"
+				"Congrats, you win!"
+			]
 			id: "6A9FBF8714EA09A6"
 			rewards: [{
 				id: "4EF0F7670DBBEF74"
@@ -76,31 +73,15 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [
-				{
-					id: "7D61BAC18FB9A8CC"
-					item: "kubejs:temporal_machine"
-					type: "item"
-				}
-				{
-					id: "56C6CE8ACFD87FF1"
-					title: "Automated Time Machines"
-					type: "checkmark"
-				}
-			]
-			x: -0.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["1D3698C194B4E1F4"]
-			id: "4A42A44FF9505706"
 			tasks: [{
-				id: "3737BFEF65FBA3EB"
-				item: "create:shadow_steel_casing"
+				count: 64L
+				id: "7D61BAC18FB9A8CC"
+				item: "kubejs:temporal_mechanism"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.5d
+			title: "Automation"
+			x: -0.5d
+			y: -3.5d
 		}
 	]
 	title: "7: Temporal Termination"

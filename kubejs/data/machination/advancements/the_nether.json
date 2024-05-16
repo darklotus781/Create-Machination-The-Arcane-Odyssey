@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherrack"
+        },
+        "title": "Hellish Landscape!",
+        "description": "You did it, you've escaped The Aether, but is this a good thing?!",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/gui/advancements/backgrounds/nether.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "dimension": "minecraft:the_nether"
+                    }
+                }
+            }
+        }
+    }
+}

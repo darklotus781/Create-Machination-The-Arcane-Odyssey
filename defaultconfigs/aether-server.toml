@@ -45,7 +45,7 @@
 
 [Modpack]
 	#Spawns the player in the Aether dimension; this is best enabled alongside other modpack configuration to avoid issues
-	"Spawns the player in the Aether" = true
+	"Spawns the player in the Aether" = false
 	#Prevents the Aether Portal from being created normally in the mod
 	"Disables Aether Portal creation" = true
 	#Prevents the player from falling back to the Overworld when they fall out of the Aether

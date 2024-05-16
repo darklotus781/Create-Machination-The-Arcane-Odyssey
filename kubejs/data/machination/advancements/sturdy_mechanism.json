@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "kubejs:sturdy_mechanism"
+        },
+        "title": "Strong and Sturdy",
+        "description": "You made a strong mechanism, these things sure are Sturdy!",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/block/dirt.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {},
+                "items": [
+                    {
+                        "items": [
+                            "kubejs:sturdy_mechanism"
+                        ],
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    }
+}

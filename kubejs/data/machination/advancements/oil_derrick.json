@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "pneumaticcraft:oil_bucket"
+        },
+        "title": "Someone hand me a wrench!",
+        "description": "You located an old Oil Derrick.  With a little elbow grease, we can get this thing pumping again!",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/block/dirt.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "structure": "machination:oil_derrick"
+                    }
+                }
+            }
+        }
+    }
+}

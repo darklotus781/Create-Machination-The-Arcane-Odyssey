@@ -14,7 +14,7 @@
 			order: 1
 			rotation: 0.0d
 			width: 20.0d
-			x: 1.5d
+			x: 1.0d
 			y: 0.5d
 		}
 		{
@@ -24,6 +24,15 @@
 			width: 80.0d
 			x: 1.0d
 			y: -0.5d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/gui/quest_bg_square.png"
+			order: 1
+			rotation: 0.0d
+			width: 4.0d
+			x: 6.0d
+			y: -5.5d
 		}
 	]
 	order_index: 2
@@ -67,7 +76,7 @@
 			}]
 			title: "Get started on resource gathering!"
 			x: 1.5d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
@@ -84,8 +93,8 @@
 				type: "item"
 			}]
 			title: "Early Crushing"
-			x: -4.5d
-			y: -1.0d
+			x: -5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
@@ -101,7 +110,7 @@
 				type: "item"
 			}]
 			title: "OP Smelting, Smoking and Washing"
-			x: -4.5d
+			x: -4.0d
 			y: 2.0d
 		}
 		{
@@ -145,8 +154,8 @@
 				}
 			]
 			title: "Some SU appliances."
-			x: -3.0d
-			y: -3.5d
+			x: -4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
@@ -228,7 +237,7 @@
 				item: "alltheores:raw_zinc"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.5d
 			y: -1.5d
 		}
 		{
@@ -241,7 +250,7 @@
 				type: "checkmark"
 			}]
 			title: "Machination Core"
-			x: 3.5d
+			x: 5.0d
 			y: 0.5d
 		}
 		{
@@ -259,8 +268,8 @@
 				title: "Ars Nouveau Unlock"
 				type: "checkmark"
 			}]
-			x: 4.5d
-			y: -1.0d
+			x: 4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
@@ -278,25 +287,8 @@
 				title: "Pneumaticcraft"
 				type: "checkmark"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["10DADBB2E6B7B7B5"]
-			description: [
-				"KubeJS is a mod that significantly simplifies the process of creating a modpack by allowing creators to add custom items and unique interactions without the need for a full mod."
-				""
-				"We've used this mod to fully customize the experience, create new items and modify / create custom recipes."
-			]
-			icon: "kubejs:cyber_mechanism"
-			id: "34312A4E0AFAD769"
-			tasks: [{
-				id: "30B3270A916D1913"
-				title: "KubeJS"
-				type: "checkmark"
-			}]
-			x: 5.5d
-			y: -1.0d
 		}
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
@@ -307,9 +299,6 @@
 				"A unique feature of this mod vs other implementations is the Catalyst Activator Wand which allows moving the Catalyst in all cardinal directions and up/down."
 				""
 				"Another important mod disables Nether Portals and provides them as an Item as you've already seen."
-				""
-				"And finally, to give credit where due, CAE (Create Arcane Engineering) was a big inspiration for this pack and the mods within."
-				"Some of the recipes and quests have been ported over and tweaked to fit this pack."
 			]
 			icon: "createresourcegeodes:sky_stone_catalyst"
 			id: "4BB71BE656192C7F"
@@ -320,8 +309,8 @@
 				type: "checkmark"
 			}]
 			title: "Create: Resource Geodes"
-			x: 5.5d
-			y: 1.5d
+			x: 5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
@@ -375,26 +364,8 @@
 				title: "Let's get a basic workshop going!"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: 0.5d
-		}
-		{
-			dependencies: ["10DADBB2E6B7B7B5"]
-			description: [
-				"A utility mod for modpack devs that provides in-world recipes, like dropping items in fluids etc. "
-				""
-				"Nothing for you to worry about."
-			]
-			icon: "minecraft:chorus_fruit"
-			id: "03A3E838913EDD49"
-			subtitle: "More recipe utility"
-			tasks: [{
-				id: "00CA845E07229A7E"
-				title: "Lychee"
-				type: "checkmark"
-			}]
-			x: 6.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
@@ -414,24 +385,7 @@
 				type: "checkmark"
 			}]
 			title: "Applied Energistics 2"
-			x: 6.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["10DADBB2E6B7B7B5"]
-			description: [
-				"Integrated Dynamics is a magic-tech mod that primarily focuses on logic and offers a highly modular approach to programming. "
-				""
-				"There's no need for you to be concerned about its complex programming capabilities in this modpack though.  We just like the trees :P"
-			]
-			icon: "integrateddynamics:logic_programmer"
-			id: "74296D4CEDEA44AA"
-			tasks: [{
-				id: "633DC26121E79E2C"
-				title: "Integrated Dynamics"
-				type: "checkmark"
-			}]
-			x: 7.5d
+			x: 5.0d
 			y: -1.0d
 		}
 		{
@@ -456,8 +410,8 @@
 				title: "Forbidden and Arcanus Unlock"
 				type: "checkmark"
 			}]
-			x: 7.5d
-			y: 1.5d
+			x: 6.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
@@ -473,8 +427,8 @@
 				type: "item"
 			}]
 			title: "Easy Tree Chopping"
-			x: -3.5d
-			y: 2.5d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
@@ -490,7 +444,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["69C0AE6714182D7F"]
@@ -506,8 +460,8 @@
 				type: "item"
 			}]
 			title: "Mixing"
-			x: -5.0d
-			y: 0.0d
+			x: -5.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["4DCF01FE026F9FE5"]
@@ -525,7 +479,7 @@
 				item: "minecraft:diorite"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: -1.5d
 		}
 		{
@@ -560,7 +514,7 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: -2.5d
 		}
 		{
@@ -583,8 +537,8 @@
 				type: "checkmark"
 			}]
 			title: "A Lootbag"
-			x: -3.5d
-			y: -1.5d
+			x: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -608,7 +562,7 @@
 				item: "kubejs:wooden_mechanism"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: 0.5d
 		}
 		{
@@ -631,7 +585,7 @@
 				type: "item"
 			}]
 			title: "Your first Mechanism (maybe)"
-			x: -3.5d
+			x: -4.0d
 			y: 0.5d
 		}
 		{
@@ -652,8 +606,8 @@
 				type: "checkmark"
 			}]
 			title: "Botania"
-			x: 8.5d
-			y: -1.0d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -661,7 +615,7 @@
 				"2F63FB9E8EAC18BD"
 			]
 			description: [
-				"Vanquish the Warden"
+				"Vanquish the Warden aka Peekaboo Peter (thanks Sonny)"
 				""
 				"Embark on an epic odyssey through the shadowed recesses of the Overworld, where the Warden, an ancient sentinel of unimaginable power, lurks in the abyssal depths. Your quest, should you choose to accept it, demands not only your mightiest armaments but also the unwavering resolve of a true adventurer."
 				""
@@ -710,7 +664,7 @@
 				}
 			]
 			x: 1.5d
-			y: 3.0d
+			y: 6.75d
 		}
 		{
 			dependencies: ["2F63FB9E8EAC18BD"]
@@ -751,8 +705,8 @@
 				type: "item"
 			}]
 			title: "It's the new age"
-			x: -0.5d
-			y: 3.0d
+			x: -1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7C9ACC15474B80C1"]
@@ -784,8 +738,8 @@
 				type: "item"
 			}]
 			title: "Radioactive?"
-			x: -2.0d
-			y: 3.0d
+			x: -2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4642019FCB6AA7E0"]
@@ -834,8 +788,8 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
-			y: 4.0d
+			x: -3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7C9ACC15474B80C1"]
@@ -860,8 +814,8 @@
 				item: "create_new_age:basic_motor"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.0d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7C9ACC15474B80C1"]
@@ -900,8 +854,8 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
-			y: 4.0d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7C9ACC15474B80C1"]
@@ -943,8 +897,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 5.0d
+			x: -1.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2F63FB9E8EAC18BD"]
@@ -958,8 +912,8 @@
 				type: "checkmark"
 			}]
 			title: "Tips and Tricks"
-			x: 3.5d
-			y: 2.5d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["040A2C9AD4AF7034"]
@@ -982,8 +936,8 @@
 				type: "checkmark"
 			}]
 			title: "Early Flight"
-			x: 3.0d
-			y: 3.5d
+			x: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["040A2C9AD4AF7034"]
@@ -1013,8 +967,8 @@
 				type: "checkmark"
 			}]
 			title: "End Rush"
-			x: 4.0d
-			y: 3.5d
+			x: 4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["040A2C9AD4AF7034"]
@@ -1037,8 +991,8 @@
 				type: "checkmark"
 			}]
 			title: "Botania"
-			x: 3.0d
-			y: 4.5d
+			x: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["040A2C9AD4AF7034"]
@@ -1065,8 +1019,8 @@
 				type: "checkmark"
 			}]
 			title: "SMRT!"
-			x: 4.0d
-			y: 4.5d
+			x: 4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["10DADBB2E6B7B7B5"]
@@ -1084,8 +1038,289 @@
 				type: "checkmark"
 			}]
 			title: "Occultism Unlock"
-			x: 8.5d
+			x: 6.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["2F63FB9E8EAC18BD"]
+			description: [
+				"&lHOW TO FIND THE ANCIENT FACTORY&r"
+				"The Ancient Factory spawns in the Overworld, so it might be one of the first dungeons you attempt to find. However, as it’s deep underground, the chances of randomly encountering it are slim."
+				""
+				"Instead, players can craft the Eye of Mech, which works similarly to the Eye of Ender. When released, it will point to the nearest Ancient Factory, and only one is required, as it isn’t likely to break."
+				""
+				"Remember to release the Eye of Mech in the Overworld and keep an eye on the direction in which it floats. You’re above the Ancient Factory when the Eye goes directly upwards. At this point, you should begin digging down."
+				""
+				"Entering the Factory requires a lot of digging.  The blocks are unbreakable but there is a corridor that isn't blocked, while it's not an official entrance, it is an easy way in."
+				""
+				""
+				"{image:kubejs:textures/gui/ancient_factory_2.png width:100 height:100 align:1 fit:true}"
+				""
+				"It may look like this on the mini map."
+				""
+				"{image:kubejs:textures/gui/ancient_factory_1.png width:100 height:100 align:1}"
+				""
+				"{@pagebreak}"
+				""
+				"&lABOUT THE ANCIENT FACTORY&r"
+				"Upon entering the Ancient Factory, players will receive the ‘Ancient Civilization’ achievement. The dungeon has no main entrance, so you must dig through a wall. "
+				""
+				"Small enemies can be seen flying around the Ancient Factory. These are called Watchers, which even look like cameras. When slain, they drop Iron Ingots and Redstone Dust. They’re not difficult to beat, as they only have 25 health and 5 armor."
+				""
+				"A miniboss, the Prowler, also resides here alongside the Harbinger. It has 150 health and 10 armor, so it’s significantly more robust than the Watcher. From a distance, it will fire homing missiles at you, which don’t deal too much damage, and hit you with the Wither effect for a few seconds."
+				""
+				"The Prowler is immune to Arrows as it’s made from tough metals, so you’ll want to find alternative ways of striking it. Occasionally, the Prowler will do a melee attack, charging you with its saw blade. Like the Watcher, the Prowler will drop Iron Ingots and Redstone Dust."
+				""
+				"{@pagebreak}"
+				""
+				"&lHIDDEN ROOM&r"
+				"A hidden room exists within the Ancient Factory, which can be found in several Cataclysm dungeons. To access it, you’ll need to find two Minecarts next to a Bell, with a Button below the Bell. If you can’t find the Minecarts, check above the Nether Portal Frame opposite the Harbinger spawn."
+				""
+				"When pressing the Button, the two Minecarts will be released and follow the Redstone Rails around the Ancient Factory, finally reaching above the Harbinger spawn. There is a chance that a Minecart will get stuck, preventing the door from opening, in which case you’ll need to climb up and push it along."
+				""
+				"The secret door will open to the right of the Harbinger spawn, behind the Glass Panes. Of course, you don’t need to trigger the Minecarts, as you can mine through the wall instead. Inside are some useful blocks that can be collected, such as Diamonds, Gold, Lapis Lazuli, Ancient Debris, and Coal."
+				""
+				"Outside this secret room are many other items worth collecting from the Ancient Factory. Towards the back of the factory, to the right of the Nether Portal Frame, is a storeroom containing more valuable items like Ores, Obsidian, Honey, Pumpkins, Hay, Wood, and a lot more."
+				""
+				"In addition, tons of loot, including basic items like Redstone Rails, Lanterns, Anvils, and Furnaces, can be found and collected in the main room. After clearing the dungeon, an underground base would be an excellent idea."
+				""
+				"{@pagebreak}"
+				""
+				"&lTHE HARBINGER&r"
+				"Once the Watchers and Prowler have been defeated, you can begin the battle with the Harbinger. It will remain inactive, so exploring the Ancient Factory and preparing yourself for the fight is safe."
+				""
+				"To activate the Harbinger, you must hold and place a Nether Star inside it. This is a tough fight, as the Harbinger has almost 400 health and can fire deadly attacks using lasers and missiles."
+				""
+				"As the Harbinger tends to stay in the air, it’s a good idea to bring ranged weapons, such as a Bow and Arrow. Shields can also help block laser attacks. A Shield is also a good idea, and taking advantage of the EMPs that spawn around the dungeon."
+				""
+				"Destroying the Harbinger will yield the player a Witherite Block, which can be turned into 9 Witherite Ingots. These are extremely valuable, as they can be turned into the Mechanical Fusion Anvil or three different weapons."
+			]
+			hide_dependency_lines: true
+			id: "2C35FAC85DDCFF99"
+			optional: true
+			rewards: [
+				{
+					id: "3514F3797C4098E5"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08F5DB569649CE0D"
+					table_id: 8875199159614461553L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "169927F09FE920ED"
+					table_id: 2265012637020335752L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "357E23DCD813434D"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					icon: "cataclysm:witherite_ingot"
+					id: "4ECBB60AB56501A7"
+					structure: "cataclysm:ancient_factory"
+					title: "Find an Ancient Factory"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:the_harbinger"
+					id: "188EE22A6D8B4936"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "6F2B5EDD6006D29C"
+					item: "cataclysm:witherite_block"
+					type: "item"
+				}
+			]
+			title: "Find an Ancient Factory"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2F63FB9E8EAC18BD"]
+			description: [
+				"&lHOW TO FIND THE CURSED PYRAMID&r"
+				"The Cursed Pyramid is a vast structure, so there’s a good chance you might find it naturally when exploring Minecrafts desert biomes. It’s much larger than the pyramids found in the vanilla game and so giant that sometimes the entrance might spawn over water."
+				""
+				"You can also find it easily by crafting the Eye of Desert. This works like an Eye of Ender and will point you toward the nearest Cursed Pyramid. You should only need to create one Eye of Desert, but it might be a good idea to have a spare."
+				""
+				"When you enter the Cursed Pyramid, you’ll find yourself on the first floor, which is the largest. The structure is very maze-like, and it’s pretty easy to get lost, as you’ll have to choose different directions."
+				""
+				"{@pagebreak}"
+				""
+				"&lABOUT THE CURSED PYRAMID&r"
+				"Each floor of the Cursed Pyramid will be filled with hostile Koboleton, small skeletal dinosaurs that look much like the Ancient Remnant. These spawn in large quantities, and you might often get overwhelmed."
+				""
+				"Although they tend not to have too much health and will die in two or so swings with a Netherite Sword, they drop Koboleton Bones, which can be turned into Bonemeal. One thing to note about these creatures is that they can remove your main-hand and off-hand items."
+				""
+				"You’ll want to find a staircase that allows you to head up to the next floor. There should be two large floors to work through before finding the chamber containing the Ancient Remnant. But do keep an eye out for any Chests containing loot. "
+				""
+				"There are also plenty of traps in the Cursed Pyramid, many of which can be broken and collected. Look out for tripwires in the corridors, as walking over them will cause you to get hit with poisonous darts."
+				""
+				"There are also Ignite Traps, which will cause a flame of fire to erupt under your feet. Some blocks of Sandstone will look a bit different, like they’re cracked. These could be falling traps and collapse when you stand on them, possibly causing you to fall into a dangerous pit."
+				""
+				"Once you reach the top floor of the pyramid, you’ll find a long vertical chamber where the Ancient Remnant is. There is a pool of water at the bottom of this chamber that you can jump into, but ensure you have a spawn point nearby and suitable equipment."
+				""
+				"{@pagebreak}"
+				""
+				"&lTHE ANCIENT REMNANT&r"
+				"At the bottom of the pyramid, you’ll find the Ancient Remnant, the boss of this dungeon. To bring it to life, you must give it the Necklace of the Desert. You can obtain this by brushing Suspicious Sand within the Cursed Pyramid."
+				""
+				"There are multiple attacks that the Ancient Remnant will do. But mostly, you’ll be hit with stuns that will prevent you from moving. Or there’s Curse of the Desert, which will cause you to move in the opposite direction you intend."
+				""
+				"The Ancient Remnant will knock up blocks during the fight, summoning you to it. Then, you will be hit with attacks such as a bite or the tail thrash, which can be devastating, especially if you are stunned. Another thing to note is that the Ancient Remnant is invulnerable to arrows, so you’ll want to bring melee weapons instead."
+			]
+			hide_dependency_lines: true
+			id: "6F405AE1DA3B6438"
+			optional: true
+			rewards: [
+				{
+					id: "23DCBBD4EBD9BCA4"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "28785ED8B9D39744"
+					table_id: 8875199159614461553L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6B9E42BA5C5E4F92"
+					table_id: 2265012637020335752L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20B2DE917FEEAA02"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					icon: "minecraft:sandstone_stairs"
+					id: "4D943E905D431FEE"
+					structure: "cataclysm:cursed_pyramid"
+					title: "Find a Cursed Pyramid"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:ancient_remnant"
+					id: "6F8FAEA5377BF186"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "7AB57A22996F6FE9"
+					item: "cataclysm:remnant_skull"
+					type: "item"
+				}
+			]
+			title: "Find a Cursed Pyramid"
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2F63FB9E8EAC18BD"]
+			description: [
+				"&lHOW TO FIND THE SUNKEN CITY&r"
+				"Before searching for the Sunken City, you’ll want to ensure you have items to survive underwater. Primarily, you’ll need Potions of Water Breathing to explore the oceans and Potions of Night Vision, which should help with clarity."
+				""
+				"You might come across the Sunken City naturally while exploring the Overworld. However, you can quickly find it by crafting the Eye of Abyss, which can be released, causing it to point toward the nearest dungeon."
+				""
+				"{@pagebreak}"
+				""
+				"&lABOUT THE SUNKEN CITY&r"
+				"The Sunken City is a vast structure, with large portions spawning above the surface. Many of these areas are explorable without Potions of Water Breathing. You’ll find lots of Chests containing loot inside the structure, making it worth exploring."
+				""
+				"However, it’s also perilous to explore, as the structure is filled with new hostile creatures. These include the different types of Deeplings, such as Brutes, Anglers, and Priests. You will also come across the Coralssus here, a golem-like beast."
+				""
+				"Killing these creatures is the only way to obtain items like the Athame, Coral Spear, and Crystallized Coral Fragments. So bring plenty of food and powerful armor to defeat these mobs as you work through the dungeon."
+				""
+				"As you explore the Sunken City, you should come across many areas that contain Chests and other valuable blocks. Diamond Ore and Diamond Blocks can be found, collected, and taken to the surface."
+				""
+				"One room contains the Altar of Amethyst, which can be seen against an Amethyst wall. Amethyst of Crab Meat can be placed here, which will cause it to be blessed. Consuming Blessed Amethyst Crab Meat will make the fight against The Leviathan easier, making you immune to some of its debuffs."
+				""
+				"{@pagebreak}"
+				""
+				"&lTHE LEVIATHAN&r"
+				"Before being able to fight The Leviathan, an Abyssal Sacrifice will need to be crafted. These require a Nautilus Shell, Athame, Crystallized Coral, Diamond Block, Heart of the Sea, Blcok of Emerald, a Block of Iron, a Block of Amethyst, and a Block of Gold. So, overall, it’s a pretty expensive item to create."
+				""
+				"When you’re ready to start the fight with The Leviathan, drink your Potions of Water Breathing and Potions of Night Vision, and enter the underwater area. It can be found directly under the large dome above the surface. Consume a Blessed Amethyst Crab Meat too for extra benefits."
+				""
+				"There, you’ll find the Altar of Abyss. When you right-click it with the Abyssal Sacrifice, The Leviathan will spawn. In total, it has 400 health and 10 armor points. Two items are dropped by The Leviathan, which are the Tidal Claws, which acts as a Grappling Hook, and Leviathan Egg."
+			]
+			hide_dependency_lines: true
+			id: "2D7B50C8DE988E33"
+			optional: true
+			rewards: [
+				{
+					id: "1E05BA06C1F2E08C"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20DE06D09D1CBB1F"
+					table_id: 8875199159614461553L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "740168F437600F60"
+					table_id: 2265012637020335752L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "553A17BE5FD6F4D8"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					icon: "cataclysm:altar_of_abyss"
+					id: "0657A5A62F7F2305"
+					structure: "cataclysm:sunken_city"
+					title: "Find a Sunken City"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:coralssus"
+					id: "5335BDB4DA501317"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "cataclysm:the_leviathan"
+					id: "62F01216027812CD"
+					title: "Kill the Leviathan"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "757EF34F1A81B723"
+					item: "cataclysm:blessed_amethyst_crab_meat"
+					type: "item"
+				}
+			]
+			title: "Find a Sunken City"
+			x: 7.0d
+			y: -5.5d
 		}
 	]
 	title: "Chapter 3: Somewhere in between"

@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "2_brass_age"
 	group: "565532624F0A44A9"
-	hide_quest_until_deps_visible: true
+	hide_quest_details_until_startable: true
 	icon: "kubejs:brass_mechanism"
 	id: "059D74AB8EF7DCEA"
 	images: [{
@@ -15,7 +15,7 @@
 		x: -0.5d
 		y: -3.5d
 	}]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -57,8 +57,8 @@
 				}
 			]
 			title: "Automations"
-			x: -0.5d
-			y: -1.0d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -67,6 +67,12 @@
 			]
 			description: ["Brass Casings should be automated"]
 			id: "4912CC6F4CDFB42E"
+			rewards: [{
+				count: 16
+				id: "5541ACB80F7627A1"
+				item: "create:brass_casing"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				count: 8L
@@ -74,19 +80,24 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.0d
+			x: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2692F21C81CD9276"]
 			id: "4832E5BDB4FF5BB9"
+			rewards: [{
+				id: "2C0DF0A48A39A598"
+				item: "alexsmobs:blobfish_bucket"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5091BE6AF51B4C15"
 				item: "alltheores:brass_plate"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.0d
+			x: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -96,24 +107,35 @@
 			]
 			description: ["Brass itself is produced through a specific process that involves mixing copper and zinc ingots. This mixing occurs in a basin, where a mixer is used to combine these two types of ingots. The entire process is powered by a blaze burner, providing the necessary heat and energy to facilitate the alloying of copper and zinc into brass."]
 			id: "27531380DBEA6B7F"
+			rewards: [{
+				id: "209CE5F3ED5186EB"
+				item: "alltheores:brass_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "686B151247E1CDD0"
 				item: "alltheores:brass_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -7.0d
+			x: 0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["27531380DBEA6B7F"]
 			id: "2692F21C81CD9276"
+			rewards: [{
+				count: 16
+				id: "768D1668F4F9C44A"
+				item: "alltheores:brass_plate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7B8306D6FAB46CE2"
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.5d
+			x: 0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
@@ -126,14 +148,20 @@
 			]
 			hide_dependency_lines: true
 			id: "6D747DD749C8E4AB"
+			rewards: [{
+				count: 16
+				id: "739C19D93AD1CE78"
+				item: "create:veridium"
+				type: "item"
+			}]
 			tasks: [{
 				count: 32L
 				id: "28DB663DFE9AB6CD"
 				item: "minecraft:raw_copper"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -7.5d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
@@ -146,14 +174,20 @@
 			]
 			hide_dependency_lines: true
 			id: "2530308B8D645EBA"
+			rewards: [{
+				count: 16
+				id: "5FB74E8368B3F70F"
+				item: "create:asurine"
+				type: "item"
+			}]
 			tasks: [{
 				count: 32L
 				id: "12F96F561D45B531"
 				item: "alltheores:raw_zinc"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -6.5d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
@@ -173,12 +207,17 @@
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -8.5d
+			x: 0.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4F67D06B90C9DA57"]
 			id: "22A5130493F349C4"
+			rewards: [{
+				id: "4067D5C77420E0A0"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				count: 8L
 				id: "0FAE7DCBD909BA09"
@@ -192,26 +231,36 @@
 				type: "item"
 			}]
 			title: "Stripped Logs"
-			x: 4.0d
-			y: -2.5d
+			x: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["48F6440F85278CE1"]
 			description: ["Use a mechanical saw to strip logs in automation or you can use an axe manually or the Farmer's Delight Cutting Board."]
 			id: "4F67D06B90C9DA57"
+			rewards: [{
+				id: "1A0E983C4C32EC1F"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				id: "27B643BFE48869F5"
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.5d
+			x: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
 			description: ["Bring some logs down from your log farm, we're gonna need them."]
 			hide_dependency_lines: true
 			id: "48F6440F85278CE1"
+			rewards: [{
+				id: "5E86F8EED8BD91DE"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				count: 8L
 				id: "61FFF9DBEF36BE5B"
@@ -225,8 +274,8 @@
 				type: "item"
 			}]
 			title: "Logs"
-			x: 7.0d
-			y: -2.5d
+			x: 5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -240,11 +289,19 @@
 				"These Brass Mechanisms, once assembled, play a critical role in upcoming production stages. Their precise and intricate nature makes them essential for more advanced crafting and machine operations. Given their importance and the complexity of their production, automating the creation of Brass Mechanisms is vital."
 			]
 			id: "128037F37E28EC54"
-			rewards: [{
-				id: "5370E7BD9D238D14"
-				type: "xp_levels"
-				xp_levels: 25
-			}]
+			rewards: [
+				{
+					id: "5370E7BD9D238D14"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B5B7781B1FB1229"
+					table_id: 8965856735169877955L
+					type: "random"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				count: 8L
@@ -252,22 +309,27 @@
 				item: "kubejs:brass_mechanism"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.0d
+			x: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
 			description: ["This is the first major step in the Machination Project.  Chapter 2 opens many doors, bring the Kinetic Mechanisms over from Chapter 1 to get things going."]
 			hide_dependency_lines: true
 			id: "0E9593ECF0C5D017"
+			rewards: [{
+				id: "568486392AABB845"
+				item: "alexsmobs:kangaroo_burger"
+				type: "item"
+			}]
 			tasks: [{
 				count: 16L
 				id: "49F6FB030FF05DCB"
 				item: "kubejs:andesite_mechanism"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -4.0d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5F22844AD724DBD9"]
@@ -277,17 +339,29 @@
 				"Melt it down to Destabilized Redstone in a mixer under heat."
 			]
 			id: "28638DFECF838BBD"
+			rewards: [{
+				count: 8
+				id: "0835194F5CFB0CEC"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "52BB183729022797"
 				item: "minecraft:redstone"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -8.5d
+			x: -1.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["28638DFECF838BBD"]
 			id: "706E3D820C4228DE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "078BF63A88BB6D25"
+				table_id: 7979468168910851615L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "46626202D2BECFB0"
@@ -300,19 +374,25 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: -8.5d
+			x: -2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4419A545C5DE5E0B"]
 			id: "2B536A3FAD4DCA3B"
+			rewards: [{
+				count: 32
+				id: "5C6B2C026C1F6783"
+				item: "kubejs:empty_tube"
+				type: "item"
+			}]
 			tasks: [{
 				id: "15C9727521177FCE"
 				item: "kubejs:empty_tube"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.0d
+			x: -4.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -320,13 +400,27 @@
 				"706E3D820C4228DE"
 			]
 			id: "3F4FC469DD974934"
+			rewards: [
+				{
+					count: 16
+					id: "590282F0F7CC361E"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "37C0B0415C44E285"
+					item: "create:rose_quartz_lamp"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4C53AA4D72A8CE48"
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -6.0d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3A10D0D5E8548C54"]
@@ -348,9 +442,8 @@
 			id: "1FB6946A522553C9"
 			rewards: [
 				{
-					exclude_from_claim_all: true
 					id: "1EA3ED0C76C8A0B3"
-					table_id: 1973416385812287726L
+					table_id: 294495333582605423L
 					type: "random"
 				}
 				{
@@ -364,8 +457,8 @@
 				title: "Chapter 2: Start"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -10.5d
+			x: -1.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
@@ -377,14 +470,19 @@
 			]
 			hide_dependency_lines: true
 			id: "4419A545C5DE5E0B"
+			rewards: [{
+				id: "135ABB1B2E3BAF8C"
+				item: "minecraft:baked_potato"
+				type: "item"
+			}]
 			tasks: [{
 				count: 16L
 				id: "2F90C59852FA8F24"
 				item: "minecraft:sand"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -6.0d
+			x: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0E9593ECF0C5D017"]
@@ -407,190 +505,19 @@
 				type: "item"
 			}]
 			title: "Screwdriver"
-			x: -2.0d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"128037F37E28EC54"
-				"7054E2B6A75B9A17"
-			]
-			id: "73303C502C8841A6"
-			rewards: [{
-				id: "3973CA2FF2AF542E"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
-			tasks: [{
-				count: 8L
-				id: "16B85B3691CB4D68"
-				item: "kubejs:sturdy_mechanism"
-				type: "item"
-			}]
-			title: "Chapter 2C: Sturdy"
-			x: -2.0d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"73303C502C8841A6"
-				"706751927D7ADD92"
-			]
-			id: "23636E8827906DE6"
-			rewards: [
-				{
-					id: "2A0C3F02B7289A3E"
-					type: "xp_levels"
-					xp_levels: 15
-				}
-				{
-					exclude_from_claim_all: true
-					id: "71E5F00765D4DCC6"
-					table_id: 294495333582605423L
-					type: "random"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			tasks: [
-				{
-					consume_items: true
-					count: 64L
-					id: "467F335E8F752E17"
-					item: "kubejs:sturdy_mechanism"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 64L
-					id: "380538D6C75E2D58"
-					item: { Count: 64b, id: "create:railway_casing" }
-					type: "item"
-				}
-			]
-			x: -2.0d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"111ED029FB2E6AA3"
-				"1017607737417992"
-			]
-			id: "7054E2B6A75B9A17"
-			tasks: [{
-				id: "2FE00796A962C36F"
-				item: "create:sturdy_sheet"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["6B4A0FEBC09F665E"]
-			description: [
-				"You can explode iron to make compressed iron."
-				"Compressed Iron can then be further processed with a mechanical press into sturdy sheets."
-				""
-				"This is considered optional, as it's harder to automate."
-			]
-			id: "111ED029FB2E6AA3"
-			optional: true
-			tasks: [{
-				count: 8L
-				id: "2376769BEA09A6DC"
-				item: "pneumaticcraft:ingot_iron_compressed"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["4F847BF8CFA67653"]
-			id: "1017607737417992"
-			tasks: [{
-				id: "55C53BADD62DF5C4"
-				item: "minecraft:lava_bucket"
-				type: "item"
-			}]
-			x: -5.0d
+			x: -4.0d
 			y: -2.0d
-		}
-		{
-			dependencies: ["0F114B1F5785939F"]
-			id: "4F847BF8CFA67653"
-			tasks: [{
-				id: "5F47926F62BD7E0F"
-				item: "create:powdered_obsidian"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["68E3345022E4448A"]
-			id: "6B4A0FEBC09F665E"
-			optional: true
-			tasks: [{
-				id: "36BA115DE8860168"
-				item: "minecraft:tnt"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["1FB6946A522553C9"]
-			hide_dependency_lines: true
-			id: "68E3345022E4448A"
-			optional: true
-			tasks: [{
-				count: 8L
-				id: "57648BAE18B7A20A"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["1FB6946A522553C9"]
-			hide_dependency_lines: true
-			id: "0F114B1F5785939F"
-			tasks: [
-				{
-					id: "73A1FD26BFD8615F"
-					item: "create:crushing_wheel"
-					type: "item"
-				}
-				{
-					id: "3B0476D0584FAA9A"
-					item: "minecraft:obsidian"
-					type: "item"
-				}
-			]
-			x: -8.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"3817B4F9D7D4224B"
-				"6BEB2523C15E3C2A"
-			]
-			description: ["Produced from Railway Frames, these blocks are crucial for forming Trains in the world."]
-			id: "706751927D7ADD92"
-			tasks: [{
-				count: 8L
-				id: "3F81E56B260C80A0"
-				item: "create:railway_casing"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 0.5d
 		}
 		{
 			dependencies: ["1FB6946A522553C9"]
 			hide_dependency_lines: true
 			id: "5652C4535BB677C3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "581CC45CAE0075B5"
+				table_id: 7760746703095486576L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "7117F11D01B6179C"
 				item: {
@@ -602,8 +529,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.0d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -616,6 +543,12 @@
 				"After producing the brass, it's essential to press it into plates, a key step in the crafting workflow. These brass plates form the core element in the fabrication of Brass Casings. In a manner akin to Copper Casings, these plates are then affixed to stripped logs, resulting in the formation of Brass Frames which can be chiseled smooth with a Brass Chisel and form Brass Casings."
 			]
 			id: "7EA965E54F42F847"
+			rewards: [{
+				count: 16
+				id: "2687B0B949FEF0C1"
+				item: "kubejs:brass_frame"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				count: 8L
@@ -623,39 +556,8 @@
 				item: "kubejs:brass_frame"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["7054E2B6A75B9A17"]
-			description: ["&6Railway Frames&r are produce by deploying a &3Sturdy Sheet&r onto a Stripped Log.  These rough frames can be chiseled smooth to a &6Train Casing&r using a &3Diamond Chisel&r."]
-			id: "3817B4F9D7D4224B"
-			tasks: [{
-				count: 8L
-				id: "775DFB7AA84AA68B"
-				item: "kubejs:railway_frame"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["1FB6946A522553C9"]
-			hide_dependency_lines: true
-			id: "6BEB2523C15E3C2A"
-			tasks: [{
-				id: "6F333575DB2279C5"
-				item: {
-					Count: 1b
-					id: "kubejs:diamond_chisel"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -5.0d
-			y: 0.5d
+			x: 0.5d
+			y: -0.5d
 		}
 	]
 	title: "2: Brass Beginnings"

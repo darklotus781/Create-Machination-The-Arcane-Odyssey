@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "automations_optional"
 	group: "565532624F0A44A9"
+	hide_quest_details_until_startable: true
 	id: "3E534D3889040267"
 	images: [
 		{
@@ -22,6 +23,7 @@
 			y: 2.0d
 		}
 		{
+			dependency: "4D21F00754E043CC"
 			height: 1.0d
 			hover: ["Washing"]
 			image: "mcwroofs:block/water_still"
@@ -47,6 +49,7 @@
 			y: 7.0d
 		}
 		{
+			dependency: "4D21F00754E043CC"
 			height: 1.0d
 			hover: ["Smelting"]
 			image: "minecraft:block/fire_1"
@@ -56,6 +59,7 @@
 			y: 5.15d
 		}
 		{
+			dependency: "4D21F00754E043CC"
 			height: 1.0d
 			hover: ["Crushing"]
 			image: "davebuildingmod:block/crushing_wheel"
@@ -73,6 +77,7 @@
 			y: 4.5d
 		}
 		{
+			dependency: "4D21F00754E043CC"
 			height: 1.0d
 			hover: ["Haunting"]
 			image: "minecraft:block/soul_fire_0"
@@ -82,6 +87,7 @@
 			y: 4.0d
 		}
 		{
+			dependency: "4D21F00754E043CC"
 			height: 1.0d
 			hover: ["Crushing"]
 			image: "davebuildingmod:block/crushing_wheel"
@@ -91,6 +97,7 @@
 			y: 4.0d
 		}
 		{
+			dependency: "4D21F00754E043CC"
 			height: 1.0d
 			hover: ["Crushing"]
 			image: "davebuildingmod:block/crushing_wheel"
@@ -100,6 +107,7 @@
 			y: 4.0d
 		}
 		{
+			dependency: "4D21F00754E043CC"
 			height: 1.0d
 			hover: ["Washing"]
 			image: "mcwroofs:block/water_still"
@@ -109,6 +117,7 @@
 			y: 2.0d
 		}
 		{
+			dependency: "4D21F00754E043CC"
 			height: 1.0d
 			hover: ["Smelting"]
 			image: "minecraft:block/fire_1"
@@ -122,9 +131,10 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["411FC26DBB795420"]
 			description: [
 				"Throughout the world you can find Meteor Craters and under the ocean you can find Resource Geodes."
-				"In mineshaft chests you can find a Catalyst Activation Want.  What do these have in common?"
+				"In mineshaft chests you can find a Catalyst Activation Wand.  What do these have in common?"
 				""
 				"A Catalyst Activation Wand is used to move the Catalysts you will find in Meteors and Geodes.  These Catalyst blocks can be moved in any cardinal direction depending on which face of the block you activate with the wand.  The Catalyst will move 3 blocks at a time as long as the destination space is not occupied by another block.  The wand has durability, so be sure to keep an eye on that."
 				""
@@ -150,6 +160,7 @@
 				"Automating the Sky Stone Catalyst is one way to fuel automated Redstone, Lapis, Quartz and Certus Quartz."
 				"As with most things, there's more than one method to automate those resources, this is one of those methods."
 			]
+			hide: true
 			id: "12424AF18964D748"
 			rewards: [{
 				count: 16
@@ -183,6 +194,7 @@
 				"If you activate the Catalyst with redstone dust, it will produce more Asurine blocks within a 5 block radius in a spherical shape."
 				"As with other Catalyst blocks, activation with the Wand will move it 3 blocks in the opposing direction."
 			]
+			hide: true
 			id: "08C432CCCEE38E87"
 			rewards: [{
 				count: 16
@@ -216,6 +228,7 @@
 				"If you activate the Catalyst with redstone dust, it will produce more Crimsite blocks within a 5 block radius in a spherical shape."
 				"As with other Catalyst blocks, activation with the Wand will move it 3 blocks in the opposing direction."
 			]
+			hide: true
 			id: "75742009CB53E5F5"
 			rewards: [{
 				count: 16
@@ -249,6 +262,7 @@
 				"If you activate the Catalyst with redstone dust, it will produce more Ochrum blocks within a 5 block radius in a spherical shape."
 				"As with other Catalyst blocks, activation with the Wand will move it 3 blocks in the opposing direction."
 			]
+			hide: true
 			id: "4D6F01AE284E51EF"
 			rewards: [{
 				count: 16
@@ -282,6 +296,7 @@
 				"If you activate the Catalyst with redstone dust, it will produce more Veridium blocks within a 5 block radius in a spherical shape."
 				"As with other Catalyst blocks, activation with the Wand will move it 3 blocks in the opposing direction."
 			]
+			hide: true
 			id: "566CD8F0C9AFADCF"
 			rewards: [{
 				count: 16
@@ -314,6 +329,7 @@
 				"Molten Lead can be obtained by mixing some Molten Lead with 2x Iron Ingots and Liquid Source."
 				"Molten Lead cannot be converted back to ingots but it is used in some recipes."
 			]
+			hide: true
 			id: "399D11209170DEB9"
 			rewards: [{
 				id: "067E4E0319C1CA6C"
@@ -336,6 +352,7 @@
 				"Molten Diamond can be obtained by mixing some Molten Diamond with an Emerald and Liquid Source."
 				"Molten Diamond cannot be converted back to gems but it is used in some advanced recipes."
 			]
+			hide: true
 			id: "6D268764DF9406C9"
 			rewards: [{
 				id: "38F8AA708227FC51"
@@ -358,6 +375,7 @@
 				"Molten Copper can be obtained by mixing some Molten Copper with 2x Iron Ingots and Liquid Source."
 				"Molten Copper cannot be converted back to ingots but it is used in some recipes."
 			]
+			hide: true
 			id: "6FBA208E3ED5A77D"
 			rewards: [{
 				id: "20A3EF0F138A0CAE"
@@ -380,6 +398,7 @@
 				"Molten Diamond can be obtained by mixing some Molten Diamond with an Emerald and Liquid Source."
 				"Molten Diamond cannot be converted back to gems but it is used in some advanced recipes."
 			]
+			hide: true
 			id: "721FCB8B7785D374"
 			rewards: [{
 				id: "4C40986CCC513048"
@@ -405,6 +424,7 @@
 				""
 				"Smelt the cluster into Redstone Dust, repeat the process."
 			]
+			hide: true
 			id: "34772BF762811C72"
 			rewards: [{
 				id: "7F93041D9426A590"
@@ -442,6 +462,7 @@
 				""
 				"Smelt the Cluster into Nether Quartz, repeat the process."
 			]
+			hide: true
 			id: "1542799ED14EB311"
 			rewards: [{
 				id: "5C25E52114A64077"
@@ -479,6 +500,7 @@
 				""
 				"Smelt the Cluster into Certus Quartz Crystal, repeat the process."
 			]
+			hide: true
 			id: "5450959BC406ED44"
 			rewards: [{
 				id: "35AEBC26DF530A9E"
@@ -516,6 +538,7 @@
 				""
 				"Smelt the Cluster into Lapis Lazuli, repeat the process."
 			]
+			hide: true
 			id: "6E9721B8E61CCF86"
 			rewards: [{
 				id: "6C2BB5E06C6C1991"
@@ -553,6 +576,7 @@
 				""
 				"Smelt the Cluster into Fluix Crystal, repeat the process."
 			]
+			hide: true
 			id: "2571F44400ED7E12"
 			rewards: [{
 				id: "5970E3B68AF2DC22"
@@ -580,11 +604,13 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["225AF92C2547678F"]
 			description: [
 				"Produce Cobblestone with some sort of farm."
 				"We provide a couple of schematics to get you started."
 				"The right-to-left questline is crushing, below is smelting and above is washing as indicated by icons."
 			]
+			hide: true
 			id: "4D21F00754E043CC"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -811,8 +837,136 @@
 				item: "forbidden_arcanus:rune"
 				type: "item"
 			}]
+			title: "Runes"
 			x: 3.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["6D268764DF9406C9"]
+			description: [
+				"Filling an empty tube with molten diamond produces a Blue Tube."
+				"These blue tubes can be crushed to produce diamond chunks."
+			]
+			id: "40DEE6D2D1CC6FA5"
+			rewards: [
+				{
+					count: 16
+					id: "308806113E82BB49"
+					item: "kubejs:diamond_chunks"
+					type: "item"
+				}
+				{
+					id: "752FC62A31FF5079"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "3C26AE5DA7EDFFD7"
+				item: "kubejs:blue_tube"
+				type: "item"
+			}]
+			title: "Blue Tubes?"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40DEE6D2D1CC6FA5"]
+			description: [
+				"Crushing &3Blue Tubes&r to Diamond Chunks is a renewable form of Diamond Production."
+				"It costs a little bit of Sand, Iron and Molten Diamond."
+			]
+			id: "3C45E91C8CA99FCA"
+			rewards: [
+				{
+					count: 16
+					id: "4F82DB3A3AF55573"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "66AFBDF28D28EC65"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "7756E5260F09B7B9"
+				item: "kubejs:diamond_chunks"
+				type: "item"
+			}]
+			title: "Diamond Chunks"
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3CB110028804E4C2"]
+			description: [
+				"Combining Two Runes with Corrupti Dust will produce a Dark Rune."
+				"Dark Runes can be exploded for a chance to produce Corrupti Dust."
+				"The loss percentage is low which means you only have to invest TNT to duplicate Dark Runes."
+			]
+			id: "682172586D29CCDD"
+			rewards: [
+				{
+					count: 16
+					id: "6CF812DA209AD324"
+					item: "forbidden_arcanus:corrupti_dust"
+					type: "item"
+				}
+				{
+					id: "74FAA41A01E45886"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "76DC03A54160C738"
+					item: "forbidden_arcanus:dark_rune"
+					type: "item"
+				}
+				{
+					id: "66B8100AA1C48423"
+					item: {
+						Count: 1b
+						id: "forbidden_arcanus:corrupti_dust"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Dark Runes"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"A magnetic quarry consists of 3 parts."
+				"1) Magnetic Quarry Smasher"
+				"2) Magnetic Quarry"
+				"3) Magnetic Lights"
+				""
+				"To get started, you must kill a Boundroid in the Magnetic Caves Biome in The Other."
+				""
+				"Once you've assembled the items above, lay out the Magnetic Lights in a square or rectangle of 20x20 or smaller at the same Y level.  Place the Magnetic Quarry just outside the square the lights create."
+				""
+				"Place the Magnetic Quarry Smasher in the middle of the square/rectangle."
+				"If setup properly, an electrical charge will form and suspend the smasher in the air and will be begin to quarry out a section."
+				""
+				"All items spit out the back of the quarry block itself, so rig something up to catch your items."
+			]
+			id: "2063657DB906AF63"
+			tasks: [{
+				id: "2858C3D8B31F9718"
+				item: "alexscaves:quarry"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
 		}
 	]
 	title: "Automations (optional)"

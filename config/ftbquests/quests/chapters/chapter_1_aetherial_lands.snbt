@@ -30,8 +30,13 @@
 	quests: [
 		{
 			dependencies: ["0E14CB64A65C09D9"]
-			description: ["Go find the Bronze, Silver and Gold Dungeons to finish your quest."]
+			description: [
+				"Ready to defeat some bosses?  Click the check to start your next struggle!"
+				""
+				"Go find the Bronze, Silver and Gold Dungeons to finish your quest."
+			]
 			id: "36A93756E822BF86"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					id: "7F0ABDD4FB4F57A6"
@@ -81,7 +86,7 @@
 			shape: "pentagon"
 			tasks: [{
 				id: "7C022861A430DCB6"
-				title: "Defeat All Bosses"
+				title: "Ready to Defeat All Bosses?"
 				type: "checkmark"
 			}]
 			x: 7.0d
@@ -98,6 +103,7 @@
 			]
 			hide: true
 			id: "63F6DA49D2098096"
+			progression_mode: "flexible"
 			shape: "diamond"
 			tasks: [{
 				id: "37C38C6DDF5AB67A"
@@ -122,6 +128,7 @@
 				"The Slider does 3 hearts of damage whenever it hits you, as well as bouncing you in the air normally causing another half-heart of fall damage."
 			]
 			id: "5C8C7C148250B74C"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -172,6 +179,7 @@
 			]
 			hide: true
 			id: "311D1A586A9B7936"
+			progression_mode: "flexible"
 			shape: "diamond"
 			tasks: [{
 				id: "3B7FF955996D97BD"
@@ -198,6 +206,7 @@
 				"A secret compartment will also open up just in front of the throne with a Locked Chest that can be opened with the Silver Key. The rewards can be considerably good, such as Valkyrie Armor, Valkyrie Tools, Holy Sword, Invisibility Cloak, Golden Feather, Lightning Sword, Regeneration Stone, and Valkyrie Music Disc (Ascending Dawn)."
 			]
 			id: "3ED23D454C78124C"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -246,6 +255,7 @@
 			]
 			hide: true
 			id: "1E02D31D892493C0"
+			progression_mode: "flexible"
 			shape: "diamond"
 			tasks: [{
 				id: "2DD78E8F9569F63D"
@@ -267,6 +277,7 @@
 				"He drops the Gold Key and the Sun Altar when defeated. The Gold Key is used to unlock the Locked Chests behind a secret wall in the back of the room. The chest will have several of the best items in the game, but players often miss the chest because of the unusual place it is located."
 			]
 			id: "7A59D70A2C813345"
+			progression_mode: "flexible"
 			rewards: [
 				{
 					id: "7525C13861702BA1"
@@ -311,7 +322,6 @@
 				"3ED23D454C78124C"
 				"5C8C7C148250B74C"
 			]
-			dependency_requirement: "one_completed"
 			description: [
 				"With the guardians of this realm vanquished, you possess the means to construct a portal frame, your gateway to liberation from this world. As you assemble the mystical structure, you can't help but wonder: where will this new passage lead you? What realms lie beyond, shrouded in enigma and ripe for exploration?"
 				""
@@ -334,11 +344,6 @@
 					id: "7E1B40C4D5092F65"
 					item: "aether:aether_portal_frame"
 					type: "item"
-				}
-				{
-					command: "/say Hi, @p!"
-					id: "2C68B2DC664220D2"
-					type: "command"
 				}
 			]
 			shape: "gear"
@@ -538,7 +543,7 @@
 			dependencies: ["2345D81DE4E51864"]
 			description: [
 				"Gravitite Ore is a bit tougher than Zanite, use your new Zanite tools to mine some up."
-				"It looks like Gravitite has some unique properties, perhaps the Altar can conver this ore block."
+				"It looks like Gravitite has some unique properties, perhaps the Altar can convert this ore block."
 			]
 			icon: "aether:gravitite_ore"
 			id: "7954FFE6973FD39A"
@@ -1330,7 +1335,6 @@
 				consume_items: true
 				id: "351B2CCCC972F6B8"
 				item: "aether:quicksoil"
-				optional_task: true
 				type: "item"
 			}]
 			x: 2.0d
@@ -1451,6 +1455,7 @@
 				""
 				"Eventually if you find an Aechor Plant, you can conver the poison to flight!"
 			]
+			icon: "forbidden_arcanus:golden_feather"
 			id: "0B5809325A8AE555"
 			rewards: [{
 				id: "50BAB1664C9163C1"
@@ -1469,6 +1474,7 @@
 		{
 			dependencies: ["79E8BA032A0923C8"]
 			description: ["A good food source is berries, enchant them in an alter for the best results."]
+			icon: "aether:blue_berry"
 			id: "19DF340E90A0A120"
 			rewards: [{
 				id: "235F5AB7D4F8C9A4"

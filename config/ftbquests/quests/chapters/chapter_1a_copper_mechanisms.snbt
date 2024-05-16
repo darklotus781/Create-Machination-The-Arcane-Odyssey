@@ -3,10 +3,12 @@
 	default_quest_shape: ""
 	filename: "chapter_1a_copper_mechanisms"
 	group: "565532624F0A44A9"
+	hide_quest_details_until_startable: true
 	icon: "kubejs:copper_mechanism"
 	id: "085E3913727BAFF4"
 	images: [
 		{
+			dependency: "7CF14AA7B08446D3"
 			height: 0.5d
 			hover: ["You need to get into Botania first!"]
 			image: "botania:block/pure_daisy"
@@ -204,6 +206,11 @@
 			]
 			hide_dependency_lines: true
 			id: "401BAD72760BCC7E"
+			rewards: [{
+				id: "66C39576C4D121FD"
+				item: "quark:slime_in_a_bucket"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7A730CCDE6E96D64"
 				item: "minecraft:slime_ball"
@@ -222,6 +229,12 @@
 			]
 			hide_dependency_lines: true
 			id: "2E3000DF44772478"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36197F437151B7D5"
+				table_id: 1205720880241428503L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "0CD792E934A94D1C"
@@ -242,6 +255,12 @@
 			description: ["You should have these automated, feed some from your prior automation line."]
 			hide_dependency_lines: true
 			id: "06CD8435C91CC9B0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4AA5716432796A45"
+				table_id: 1205720880241428503L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "323214227649D3E6"
 				item: "kubejs:andesite_mechanism"

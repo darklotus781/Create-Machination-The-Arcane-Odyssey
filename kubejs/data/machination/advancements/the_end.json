@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_stone"
+        },
+        "title": "Welcome to the Void!",
+        "description": "Is this the end?  Another void filled with islands and things that want to kill you?!",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/gui/advancements/backgrounds/end.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "dimension": "minecraft:the_end"
+                    }
+                }
+            }
+        }
+    }
+}

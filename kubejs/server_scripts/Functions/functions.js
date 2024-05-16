@@ -11,6 +11,10 @@ function getSingularityWithFrequency(result) {
     return result.withNBT('{freq:' + frequency + 'L}');
 }
 
+function minutes(minutes) {
+    return 20 * 60 * minutes;
+}
+
 function trading(event) {
     let trade = (card_id, ingredient, output) => {
         event.custom({

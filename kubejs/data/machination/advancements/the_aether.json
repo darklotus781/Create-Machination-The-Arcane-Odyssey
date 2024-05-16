@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "aether:gingerbread_man"
+        },
+        "title": "One small step for...",
+        "description": "You did it, you did a thing, now open your questbook!",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/block/dirt.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "dimension": "aether:the_aether"
+                    }
+                }
+            }
+        }
+    }
+}

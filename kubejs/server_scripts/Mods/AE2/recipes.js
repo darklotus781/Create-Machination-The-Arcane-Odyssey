@@ -29,7 +29,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('ae2:printed_silicon'),
     ], t, [
-        event.recipes.create.pressing(t, [t]),
         event.recipes.create.deploying(t, [t, Item.of('ae2:silicon_press')]).keepHeldItem(),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1);
@@ -39,7 +38,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('ae2:printed_engineering_processor'),
     ], t, [
-        event.recipes.create.pressing(t, [t]),
         event.recipes.create.deploying(t, [t, Item.of('ae2:engineering_processor_press')]).keepHeldItem(),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1);
@@ -49,7 +47,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('ae2:printed_logic_processor'),
     ], t, [
-        event.recipes.create.pressing(t, [t]),
         event.recipes.create.deploying(t, [t, Item.of('ae2:logic_processor_press')]).keepHeldItem(),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1);
@@ -59,7 +56,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('ae2:printed_calculation_processor'),
     ], t, [
-        event.recipes.create.pressing(t, [t]),
         event.recipes.create.deploying(t, [t, Item.of('ae2:calculation_processor_press')]).keepHeldItem(),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1);
@@ -71,7 +67,7 @@ ServerEvents.recipes(event => {
     ], Item.of('ae2:printed_engineering_processor'), [
         event.recipes.create.deploying(t, [t, Item.of('ae2:printed_silicon')]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:redstone')]),
-        event.recipes.create.filling(t, [t, Fluid.of('kubejs:molten_diamond').withAmount(100)]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:molten_diamond').withAmount(50)]),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1);
 
@@ -82,7 +78,7 @@ ServerEvents.recipes(event => {
     ], Item.of('ae2:printed_logic_processor'), [
         event.recipes.create.deploying(t, [t, Item.of('ae2:printed_silicon')]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:redstone')]),
-        event.recipes.create.filling(t, [t, Fluid.of('kubejs:molten_gold').withAmount(90)]),
+        event.recipes.create.filling(t, [t, Fluid.of('kubejs:molten_gold').withAmount(50)]),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1);
 
@@ -93,7 +89,7 @@ ServerEvents.recipes(event => {
     ], Item.of('ae2:printed_calculation_processor'), [
         event.recipes.create.deploying(t, [t, Item.of('ae2:printed_silicon')]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:redstone')]),
-        event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:menril_resin').withAmount(120)]),
+        event.recipes.create.filling(t, [t, Fluid.of('integrateddynamics:menril_resin').withAmount(75)]),
         event.recipes.create.pressing(t, [t])
     ]).transitionalItem(t).loops(1);
 });
