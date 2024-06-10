@@ -7,3 +7,7 @@ JEIEvents.hideItems(event => {
     event.hide('createdieselgenerators:gasoline_bucket');
     event.hide('createdieselgenerators:ethanol_bucket');
 });
+
+JEIEvents.addItems(event => {
+    event.add('createdieselgenerators:pumpjack_hole'); // seems to be missing...
+});

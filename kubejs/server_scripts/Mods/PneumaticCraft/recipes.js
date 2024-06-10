@@ -4,11 +4,13 @@ ServerEvents.recipes(event => {
     event.remove({id: 'pneumaticcraft:refinery/oil_2'});
     event.remove({id: 'pneumaticcraft:refinery/oil_3'});
     event.remove({id: 'pneumaticcraft:refinery/oil_4'});
+    event.remove({id: 'pneumaticcraft:thermo_plant/lubricant_from_biodiesel'});
     event.remove({id: 'pneumaticcraft:thermo_plant/plastic_from_biodiesel'});
     event.remove({id: 'pneumaticcraft:thermo_plant/plastic_from_lpg'});
     event.remove({id: 'pneumaticcraft:thermo_plant/vegetable_oil_from_crops'});
     event.remove({id: 'pneumaticcraft:thermo_plant/vegetable_oil_from_seeds'});
     event.remove({id: 'pneumaticcraft:heat_frame_cooling/plastic'});
+    event.remove({id: 'pneumaticcraft:pcb'});
 
     event.shapeless(Item.of('pneumaticcraft:compressed_iron_block'), Item.of('pneumaticcraft:ingot_iron_compressed', 9));
 

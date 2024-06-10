@@ -33,7 +33,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [
 				{
 					consume_items: true
@@ -46,10 +46,11 @@
 					consume_items: true
 					count: 64L
 					id: "0F73CFA0A5C3BFC7"
-					item: { Count: 64b, id: "create:railway_casing" }
+					item: { Count: 64, id: "create:railway_casing" }
 					type: "item"
 				}
 			]
+			title: "Automations"
 			x: -0.5d
 			y: 3.0d
 		}
@@ -86,7 +87,7 @@
 			tasks: [{
 				id: "5EDAC147ADC6F583"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "kubejs:diamond_chisel"
 					tag: {
 						Damage: 0
@@ -169,7 +170,7 @@
 			rewards: [{
 				id: "01DCF740FA4D2DAA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "pneumaticcraft:large_tank"
 					tag: {
 						BlockEntityTag: {

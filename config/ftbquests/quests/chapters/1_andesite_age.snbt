@@ -88,7 +88,7 @@
 					count: 16L
 					id: "3FAF004C0FFC2F79"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "minecraft:logs"
@@ -182,7 +182,7 @@
 			tasks: [{
 				id: "0BAA8FB88FFEEFEF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:tools/saws"
@@ -350,7 +350,7 @@
 				{
 					count: 2L
 					id: "62F14EE78CAFEAE9"
-					item: { Count: 2b, id: "minecraft:iron_nugget" }
+					item: { Count: 2, id: "minecraft:iron_nugget" }
 					type: "item"
 				}
 			]
@@ -538,7 +538,7 @@
 				{
 					id: "2DD2B6F4952E1288"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "botania:mana_tablet"
 						tag: {
 							mana: 500000
@@ -555,7 +555,7 @@
 			tasks: [{
 				id: "22B7CF91DC260E09"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "kubejs:andesite_chisel"
 					tag: {
 						Damage: 0

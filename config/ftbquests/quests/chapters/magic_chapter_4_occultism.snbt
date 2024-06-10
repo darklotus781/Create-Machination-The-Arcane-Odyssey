@@ -6,7 +6,7 @@
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_visible: true
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "ftbquests:custom_icon"
 		tag: {
 			Icon: "occultism:item/ritual_dummy"
@@ -263,7 +263,7 @@
 			hide: true
 			hide_dependent_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
 					Icon: "occultism:item/soul_gem"
@@ -305,7 +305,7 @@
 			tasks: [{
 				id: "195D4F8A4072A17C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "occultism:dictionary_of_spirits"
 					tag: {
 						"modonomicon:book_id": "occultism:dictionary_of_spirits"
@@ -370,7 +370,7 @@
 			shape: "square"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "ftbquests:custom_icon"
 					tag: {
 						Icon: "occultism:block/spirit_fire_1"
@@ -425,7 +425,7 @@
 				{
 					id: "7973AD965755674C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "occultism:otherworld_sapling_natural"
 						tag: {
 							isInventoryItem: 1b
@@ -462,7 +462,7 @@
 					count: 4L
 					id: "7100152E6DD6D455"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -515,7 +515,7 @@
 				{
 					id: "094F8393F00D7905"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "occultism:chalk_white"
 						tag: {
 							Damage: 0
@@ -614,7 +614,7 @@
 				"{image:atm:textures/questpics/occultism/aviarcircle.png width:200 height:200 align:1}"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
 					Icon: "occultism:block/chalk_glyph/4"
@@ -633,7 +633,7 @@
 				{
 					id: "136EFFF7EE2414A7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "occultism:book_of_binding_bound_foliot"
 						tag: {
 							spiritName: "Krtimaeus"
@@ -707,7 +707,7 @@
 			]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
 					Icon: "occultism:item/advancement/devil_icon"
@@ -725,7 +725,7 @@
 			size: 1.25d
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "ftbquests:custom_icon"
 					tag: {
 						Icon: "occultism:item/advancement/devil_icon"
@@ -783,7 +783,7 @@
 				{
 					id: "73D73D093E561D7A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "occultism:book_of_binding_bound_djinni"
 						tag: {
 							spiritName: "Karnvires"
@@ -863,7 +863,7 @@
 			tasks: [{
 				id: "1B23F513E7C42E49"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "occultism:soul_gem"
 					tag: { }
 				}
@@ -897,7 +897,7 @@
 			tasks: [{
 				id: "6B0443F5BE6931E7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "occultism:otherworld_goggles"
 					tag: {
 						Damage: 0
@@ -935,7 +935,7 @@
 			tasks: [{
 				id: "2F0D97D507736252"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "occultism:infused_pickaxe"
 					tag: {
 						Damage: 0
@@ -1004,7 +1004,7 @@
 			tasks: [{
 				id: "7D376869598C6E3D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "occultism:iesnium_pickaxe"
 					tag: {
 						Damage: 0
@@ -1050,7 +1050,7 @@
 				{
 					id: "62AF84B5BD71C676"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "occultism:book_of_binding_bound_marid"
 						tag: {
 							spiritName: "Holmurkyr"
@@ -1061,7 +1061,7 @@
 				}
 				{
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "ftbquests:custom_icon"
 						tag: {
 							Icon: "occultism:item/advancement/devil_icon"
@@ -1101,7 +1101,7 @@
 				{
 					id: "6665804601A9A180"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -1191,7 +1191,7 @@
 				{
 					id: "1A1543A5AA80A376"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "occultism:dimensional_matrix"
 						tag: {
 							spiritName: "Geirmaracthorn"
@@ -1239,7 +1239,7 @@
 			tasks: [{
 				id: "2B0C693FBD1E386F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1283,7 +1283,7 @@
 			tasks: [{
 				id: "0F33E0AFEA5B9D39"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "occultism:divination_rod"
 					tag: { }
 				}
@@ -1320,7 +1320,7 @@
 				{
 					id: "751FAA2673ADBE5D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "occultism:stable_wormhole"
 						tag: { }
 					}
@@ -1330,7 +1330,7 @@
 				{
 					id: "15F74B6753ED8206"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "occultism:storage_remote"
 						tag: { }
 					}
@@ -1352,7 +1352,7 @@
 				"There are also ways to summon cool friends known as &dFamiliars&r that give special buffs and even fight for you! Make sure to check out the &dFamiliar Rituals&r in your guide book!"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
 					Icon: "occultism:textures/gui/book/familiar_blacksmith.png"

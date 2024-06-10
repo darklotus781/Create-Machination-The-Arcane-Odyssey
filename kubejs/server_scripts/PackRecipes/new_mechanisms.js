@@ -79,7 +79,8 @@ ServerEvents.recipes(event => {
         [Item.of('minecraft:shears'), Item.of('thermal:device_hive_extractor')],
         [Item.of('thermal:fluid_cell_frame'), Item.of('thermal:fluid_cell')],
         [Item.of('minecraft:redstone'), Item.of('thermal:upgrade_augment_1')],
-        ['#forge:barrels', Item.of('create:fluid_tank', 4), true]
+        ['#forge:barrels', Item.of('create:fluid_tank', 4), true],
+        [Item.of('createdieselgenerators:oil_scanner'), Item.of('createdieselgenerators:pumpjack_hole')]
     ];
 
     const logisticsMechSmithing = [

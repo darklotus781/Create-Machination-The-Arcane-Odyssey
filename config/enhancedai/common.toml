@@ -672,6 +672,9 @@
 		"Beta Creeper Chance" = 0.35
 		#If IguanaTweaks Reborn is installed and Explosion Overhaul is enabled, Angry creeper will deal more knockback and break more blocks and breaching creepers will break more blocks
 		"IguanaTweaks Reborn Integration" = true
+		#Makes creepers blow up on death like when they were added back in 0.30
+		#Allowed Values: NONE, CHARGED, ALL
+		"Blow up on death" = "NONE"
 
 		[Creepers."Creeper Swell".Launch]
 			#Launching creepers will try ignite and throw themselves at the player.
@@ -706,6 +709,8 @@
 			#The special sound effect that the Angry Creeper plays
 			#Allowed Values: NONE, CENA, WTF_BOOM
 			Sounds = "WTF_BOOM"
+			#Makes angry creepers blow up on death like when they were added back in 0.30
+			"Explode on death" = true
 
 [Blazes]
 	#Make blazes fire faster/more fireballs. Only mobs in enhancedai:change_blaze_attack entity type tag are affected by this feature.

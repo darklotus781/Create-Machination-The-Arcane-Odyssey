@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
 
     let metals = [
         'aluminum', 'iridium', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin',
-        'uranium', 'zinc', 'steel', 'invar', 'electrum', 'bronze', 'enderium', 'lumium',
+        'uranium', 'zinc', 'steel', 'invar', 'electrum', 'enderium', 'lumium',
         'signalum', 'constantan', 'brass', 'iron', 'gold', 'copper'
     ];
 

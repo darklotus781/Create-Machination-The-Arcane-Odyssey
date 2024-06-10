@@ -5,7 +5,7 @@
 	filename: "tech_chapter_2_thermal_machination"
 	group: "21CB949AE3121A8A"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "thermal:fluid_cell"
 		tag: {
 			BlockEntityTag: {
@@ -41,7 +41,7 @@
 				{
 					id: "009C332DA938512C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "patchouli:guide_book"
 						tag: {
 							"patchouli:book": "thermal:guidebook"
@@ -687,7 +687,7 @@
 			tasks: [{
 				id: "64186CC4330A70D8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "thermal:energy_cell"
 					tag: {
 						BlockEntityTag: {
@@ -730,7 +730,7 @@
 			tasks: [{
 				id: "694DB377E094D28E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "thermal:fluid_cell"
 					tag: {
 						BlockEntityTag: {
@@ -1379,7 +1379,7 @@
 			tasks: [{
 				id: "38EE8C011F7E3FEC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "thermal:flux_drill"
 					tag: { }
 				}
@@ -1409,7 +1409,7 @@
 			tasks: [{
 				id: "504ABB4FCF4AA14E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "thermal:flux_saw"
 					tag: { }
 				}

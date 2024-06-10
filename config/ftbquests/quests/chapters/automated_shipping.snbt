@@ -134,7 +134,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6D0F2718424B313B"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -173,7 +173,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "527127A76C0FDC48"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -212,7 +212,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0260BEFBC89190DF"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -251,7 +251,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6294B1EDA3886E58"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -290,7 +290,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1B5129E4AC6DD5AF"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -329,7 +329,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "55C6B547E8851CA7"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -368,7 +368,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "5A54AAD3BB75A838"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -407,7 +407,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "37A77539A94534E4"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -446,7 +446,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "10EF8349B7B625C1"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -485,7 +485,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "76647BE8587A4CC6"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -524,7 +524,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6EC58BC54440CBBB"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -563,7 +563,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3FCEC653DF6061C7"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -602,7 +602,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "50F2EFD258C9A58D"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -641,7 +641,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6B9CE16103E63418"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -680,7 +680,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0E8538566E6C8BE4"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -719,7 +719,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "5A138216F6ABF1C7"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -758,7 +758,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1D453DB090C06CB3"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -797,7 +797,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "12EF0C9BE96A5967"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -836,7 +836,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7D9A1267A622ED2A"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -875,7 +875,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "65B3437FF5DBBBDD"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -914,7 +914,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "59A543345C062F39"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -953,7 +953,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2CDA54EF20339735"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -992,7 +992,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0031CA7D5172278A"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1031,7 +1031,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2C41795E2C97DE94"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1070,7 +1070,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "57F4A065D820211E"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1109,7 +1109,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "69F879CA2BAE05A5"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1148,7 +1148,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "5508212DD4C5CAAF"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1187,7 +1187,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1ED5C4D6B063D7FD"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1226,7 +1226,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2DCE4B6C40DEEFE5"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1265,7 +1265,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1B6A7C7A7AD96DD0"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1304,7 +1304,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6CB3470F71542B43"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1343,7 +1343,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "49D2BC59D9DD5243"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1382,7 +1382,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6A28E6311056498B"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1421,7 +1421,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "05B75B89993E5F9F"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1460,7 +1460,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "29C144558EC39B89"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1499,7 +1499,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1C574C69176F036C"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1538,7 +1538,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7CB54515F85723B6"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1577,7 +1577,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4F500681344C8107"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1616,7 +1616,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7352911E32F2A806"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1655,7 +1655,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6AB6A9336496326A"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1694,7 +1694,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4E6D9535E378856F"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1733,7 +1733,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "19CEE31BAB087C3A"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1772,7 +1772,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0A7D482004DFD6F8"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1811,7 +1811,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3B929D025F2ED128"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1850,7 +1850,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0062738C8C016E14"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1889,7 +1889,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "461A8FC0F0B4C612"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1928,7 +1928,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "49C3439527C2796B"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -1967,7 +1967,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "10791474D679914B"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2006,7 +2006,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "308D0F9849FDD4B1"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2045,7 +2045,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "65F87DE824F47EA6"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2084,7 +2084,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0FC5C733BAB8CBC4"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2123,7 +2123,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "71D12AA915EE4B07"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2162,7 +2162,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7820BDC1AF9E41C8"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2201,7 +2201,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "16DC3B079DB4B20F"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2240,7 +2240,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0D389CB4981B6FAE"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2279,7 +2279,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1BB87EED7AA861DD"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2318,7 +2318,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "375C3B87BCD593E8"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2357,7 +2357,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "5F2570994E925865"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2396,7 +2396,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0E7C6299E6CFAA96"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2435,7 +2435,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7026F0D65B9F4748"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2474,7 +2474,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6F914ABD53878577"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2513,7 +2513,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7DA21BEC24BFAA41"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2552,7 +2552,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1566C5BD5329CC12"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2591,7 +2591,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "286BE865C41DB4DE"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2630,7 +2630,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "606985AA4E442803"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2669,7 +2669,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "338889102B1285CA"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2708,7 +2708,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "638E51CAF4387144"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2747,7 +2747,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "048D3C4069F198AC"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2786,7 +2786,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "047270CA53773C91"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2825,7 +2825,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2BF5D95A5D557E1E"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2864,7 +2864,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7EFE74BBF7833B80"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2903,7 +2903,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6B2F562F1D74563B"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2942,7 +2942,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4F678F6F07DB2FB4"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -2981,7 +2981,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4C6DF3536B2FEB26"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3020,7 +3020,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "773F2D61E8960078"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3059,7 +3059,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "67986253DEA7345D"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3098,7 +3098,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2A665824523C1C46"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3137,7 +3137,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4652A1835C9B38C9"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3176,7 +3176,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "271D01070A5F41BA"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3215,7 +3215,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "06D369D168AD3D05"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3254,7 +3254,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "21A2A1F981E71596"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3293,7 +3293,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "105A6D8F57831911"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3332,7 +3332,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3D550EABFB49F35E"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3371,7 +3371,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1E13DF2D8EFCF25C"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3410,7 +3410,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "44059B742557E2AB"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3449,7 +3449,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "24CA58A4A0408980"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3488,7 +3488,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2C9905370CED1382"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3527,7 +3527,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1AEFCBDC80410422"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3566,7 +3566,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0780ADAD8BFFFF65"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3605,7 +3605,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4CB795574F8E379B"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3644,7 +3644,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "5169FA2B26178FD0"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3683,7 +3683,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "5A2F6C85ADB36D99"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3722,7 +3722,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "55DA463DFAEC0781"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3761,7 +3761,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3272DCFE09A9A07B"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3800,7 +3800,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2A18F3B7A66FD273"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3839,7 +3839,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "30A7843206723E5C"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3878,7 +3878,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "76BD7AAA74AC55E5"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3917,7 +3917,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "78523FC55577E137"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3956,7 +3956,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "00E179648672C054"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -3995,7 +3995,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "54F68E8D647FA1E8"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -4034,7 +4034,7 @@
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: { Count: 10b, id: "thermal:silver_coin" }
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "23F6C479C3E0D97C"
 				item: "thermal:silver_coin"
 				type: "item"

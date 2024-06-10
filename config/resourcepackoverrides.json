@@ -4,18 +4,39 @@
   "default_overrides": {
     "force_compatible": true
   },
+  "default_packs": [
+    "vanilla",
+    "Moonlight Mods Dynamic Assets",
+    "mod_resources",
+    "supplementaries:darker_ropes",
+    "file/LootrChestRetexture_v1.1_1.19.zip",
+    "file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
+    "file/Moonsu Better Create GUI Tom's Simple Storage 1.3.zip",
+    "file/MandalasGUI+Modded_Dakmode_v4.6.zip",
+    "file/FreshAnimations_v1.9.zip",
+    "file/FreshCompats_v1.5.1.zip",
+    "file/FA+All_Extensions-v1.2.zip",
+    "file/Porkier Pigs FA.zip",
+    "file/Porkier Piglins FA.zip",
+    "file/Pesky Parrots FA.zip",
+    "file/Formidable Frogs FA.zip",
+    "file/Fabulous Foliage.zip",
+    "file/Cluckier Chickens FA.zip",
+    "file/Better Zombies FA.zip",
+    "file/Better Squids.zip",
+    "file/Better Skeletons FA.zip",
+    "file/Better_Sheep_V3.zip",
+    "file/Beefier Bovine FA.zip",
+
+    "file/Dramatic Skys Demo 1.5.3.22.zip"
+  ],
   "pack_overrides": {
     "1": [
-      "supplementaries:darker_ropes",
-      "file/MandalasGUI+Modded_Dakmode_v4.6.zip",
-      "file/Moonsu Better Create GUI Tom's Simple Storage 1.3.zip",
-      "file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
-      "file/LootrChestRetexture_v1.1_1.19.zip",
       "file/Porkier Pigs FA.zip",
       "file/Porkier Piglins FA.zip",
       "file/Pesky Parrots FA.zip",
+      "file/Formidable Frogs FA.zip",
       "file/Fabulous Foliage.zip",
-      "file/FA+Spiders-v1.0.zip",
       "file/Cluckier Chickens FA.zip",
       "file/Better Zombies FA.zip",
       "file/Better Squids.zip",
@@ -23,17 +44,30 @@
       "file/Better_Sheep_V3.zip",
       "file/Beefier Bovine FA.zip",
       "file/Amazing Axolotls FA.zip",
-      "file/Fresh_Compats v1.5.zip",
+      "file/Dramatic Skys Demo 1.5.3.22.zip",
+      "file/LootrChestRetexture_v1.1_1.19.zip",
+      "file/MandalasGUI+Modded_Dakmode_v4.6.zip"
+    ],
+    "2": [
       "file/FreshAnimations_v1.9.zip",
-      "file/Dramatic Skys Demo 1.5.3.20.zip",
+      "file/FreshCompats_v1.5.1.zip",
+      "file/FA+All_Extensions-v1.2.zip",
+      "supplementaries:darker_ropes",
       "mod_resources",
       "Moonlight Mods Dynamic Assets",
-      "create:legacy_copper",
-      "vanilla"
+      "vanilla",
+      "file/Moonsu Better Create GUI Tom's Simple Storage 1.3.zip",
+      "file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip"
     ],
     "$$1": {
+      "hidden": false,
+      "required": false,
+      "force_compatible": true
+    },
+    "$$2": {
       "hidden": true,
-      "required": true
+      "required": true,
+      "force_compatible": true
     }
   }
 }

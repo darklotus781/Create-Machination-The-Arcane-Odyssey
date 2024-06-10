@@ -399,7 +399,7 @@
 				"Rest assured that we provide comprehensive explanations for the mechanics and features when they come into play."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "forbidden_arcanus:eternal_stella"
 				tag: { }
 			}
@@ -494,9 +494,9 @@
 			rewards: [
 				{
 					count: 32
-					icon: { Count: 32b, id: "create:andesite_alloy" }
+					icon: { Count: 32, id: "create:andesite_alloy" }
 					id: "226094148D432E4A"
-					item: { Count: 32b, id: "create:andesite_alloy" }
+					item: { Count: 32, id: "create:andesite_alloy" }
 					type: "item"
 				}
 				{
@@ -509,7 +509,7 @@
 			subtitle: "Better results from Mixing!"
 			tasks: [{
 				count: 8L
-				icon: { Count: 8b, id: "create:andesite_alloy" }
+				icon: { Count: 8, id: "create:andesite_alloy" }
 				id: "1CFC5555401D0935"
 				item: "create:andesite_alloy"
 				type: "item"
@@ -554,7 +554,7 @@
 			rewards: [{
 				count: 8
 				id: "452C146BDC00F8B2"
-				item: { Count: 8b, id: "kubejs:wooden_mechanism" }
+				item: { Count: 8, id: "kubejs:wooden_mechanism" }
 				type: "item"
 			}]
 			tasks: [{
@@ -949,7 +949,7 @@
 				"Please follow the quests, you'll get there eventually!"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:elytra"
 				tag: {
 					Damage: 0
@@ -1001,7 +1001,7 @@
 				"Be careful and light up the area around your base."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "aether:holy_sword"
 				tag: {
 					Damage: 0

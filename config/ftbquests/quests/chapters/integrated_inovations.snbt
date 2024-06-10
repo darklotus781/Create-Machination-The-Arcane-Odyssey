@@ -36,7 +36,7 @@
 			rewards: [{
 				id: "4D443347A2FB91AB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:carrot_on_a_stick"
 					tag: {
 						Damage: 0
@@ -46,7 +46,7 @@
 			}]
 			tasks: [{
 				id: "4BF8374645261BBE"
-				title: "Chapter 2: Start"
+				title: "Chapter 5: Start"
 				type: "checkmark"
 			}]
 			title: "Chapter 5: Start"
@@ -669,7 +669,7 @@
 			tasks: [{
 				id: "17B1B35657167E20"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "forbidden_arcanus:soul_extractor"
 					tag: {
 						Damage: 0
@@ -722,6 +722,7 @@
 				"78B5D726803B6533"
 				"60AE9E0F3742EDB9"
 			]
+			hide: true
 			hide_dependency_lines: true
 			id: "3B0CBB1994B0F370"
 			rewards: [

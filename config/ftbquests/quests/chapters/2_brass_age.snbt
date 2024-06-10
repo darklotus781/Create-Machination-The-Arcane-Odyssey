@@ -52,7 +52,7 @@
 					consume_items: true
 					count: 64L
 					id: "1FA002A9A89C82CB"
-					item: { Count: 64b, id: "create:brass_casing" }
+					item: { Count: 64, id: "create:brass_casing" }
 					type: "item"
 				}
 			]
@@ -222,7 +222,7 @@
 				count: 8L
 				id: "0FAE7DCBD909BA09"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:lumber/stripped"
@@ -265,7 +265,7 @@
 				count: 8L
 				id: "61FFF9DBEF36BE5B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:lumber"
@@ -496,7 +496,7 @@
 			tasks: [{
 				id: "5141FD1223ECFC23"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:tools/screwdrivers"
@@ -521,7 +521,7 @@
 			tasks: [{
 				id: "7117F11D01B6179C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "kubejs:brass_chisel"
 					tag: {
 						Damage: 0

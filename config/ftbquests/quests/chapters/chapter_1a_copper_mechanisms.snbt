@@ -154,7 +154,7 @@
 				icon: "create:fluid_tank"
 				id: "1B383DEDAA9E873E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "create:fluid_tank"
 					tag: {
 						BlockEntityTag: {
@@ -433,7 +433,7 @@
 			tasks: [{
 				id: "6EF6220039D6D0D4"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "kubejs:copper_chisel"
 					tag: {
 						Damage: 0

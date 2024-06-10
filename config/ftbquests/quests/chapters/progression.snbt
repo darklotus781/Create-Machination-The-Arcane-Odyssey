@@ -5,7 +5,7 @@
 	filename: "progression"
 	group: ""
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "ars_nouveau:dominion_wand"
 		tag: { }
 	}
@@ -52,7 +52,7 @@
 				{
 					id: "419427A795E296D0"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:enchanted_book"
 						tag: {
 							StoredEnchantments: [{
@@ -416,7 +416,7 @@
 			rewards: [{
 				id: "56164EFD9710CC84"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ars_nouveau:wand"
 					tag: {
 						"ars_nouveau:caster": {
@@ -496,29 +496,21 @@
 					type: "gamestage"
 				}
 			]
-			tasks: [
-				{
-					dimension: "allthemodium:the_other"
-					icon: "allthemodium:teleport_pad"
-					id: "5F81B69F46DCE538"
-					title: "Visit the Other"
-					type: "dimension"
-				}
-				{
-					advancement: "minecraft:end/elytra"
-					criterion: ""
-					icon: {
-						Count: 1b
-						id: "minecraft:elytra"
-						tag: {
-							Damage: 0
-						}
+			subtitle: "Place a Teleport Pad in the Nether"
+			tasks: [{
+				advancement: "minecraft:end/elytra"
+				criterion: ""
+				icon: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
 					}
-					id: "38C2938D582A3ACC"
-					title: "Conquer the End"
-					type: "advancement"
 				}
-			]
+				id: "38C2938D582A3ACC"
+				title: "Conquer the End"
+				type: "advancement"
+			}]
 			title: "Not The End, The Other place!"
 			x: 6.0d
 			y: -3.0d
@@ -685,7 +677,7 @@
 				title: "Getting Started"
 				type: "checkmark"
 			}]
-			x: 3.0d
+			x: 0.75d
 			y: 0.0d
 		}
 		{
@@ -702,9 +694,9 @@
 			}]
 			subtitle: "Power!"
 			tasks: [{
-				id: "6F56DB5619F5F243"
-				item: "minecraft:bedrock"
-				type: "item"
+				id: "2C8B5F802485A445"
+				title: "Let's Go!"
+				type: "checkmark"
 			}]
 			title: "Chapter 2A: Power"
 			x: 2.0d
@@ -752,7 +744,11 @@
 				"74F85CFABA84170A"
 				"36586087EDF835C8"
 			]
-			description: ["Chapter 6 is the first step toward end-game."]
+			description: [
+				"Chapter 6 is the first step toward end-game."
+				"Mastering Quantum Mechanics proves you're worthy of the final crafts."
+				"Work towared automation of Quantum Mechanisms!"
+			]
 			hide: true
 			icon: "ae2:singularity"
 			id: "0225A0BF60D285CD"
@@ -782,7 +778,11 @@
 				"0225A0BF60D285CD"
 				"0C11FBBB3848BC6C"
 			]
-			description: ["Chapter 7"]
+			description: [
+				"Chapter 7"
+				"You've done it, you've reached the end of the factory."
+				"Automate or semi-automate Temporal Mechanisms, the next craft is going to be tricky!"
+			]
 			hide: true
 			icon: "kubejs:temporal_mechanism"
 			id: "5B817E19476DEBA1"
@@ -820,7 +820,7 @@
 			dependencies: ["411FC26DBB795420"]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "patchouli:guide_book"
 				tag: {
 					"patchouli:book": "patchouli:machination_guide"
@@ -831,7 +831,7 @@
 			rewards: [{
 				id: "4429BAC9D87E3C70"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "patchouli:machination_guide"
@@ -871,12 +871,11 @@
 					type: "gamestage"
 				}
 			]
+			subtitle: "Craft a Teleport Pad"
 			tasks: [{
-				dimension: "allthemodium:mining"
-				icon: "allthemodium:teleport_pad"
-				id: "055750FCF4D21228"
-				title: "Visit the Mining Dimension"
-				type: "dimension"
+				id: "5ACB09E6C61953CB"
+				item: "allthemodium:teleport_pad"
+				type: "item"
 			}]
 			title: "Mining Dimension"
 			x: 2.0d
@@ -888,36 +887,32 @@
 			id: "080902A63AB9FEBB"
 			rewards: [
 				{
-					id: "0C3C830ED4DFA237"
-					item: "create:creative_motor"
+					id: "4233BE80DF703621"
+					item: "allthemodium:piglich_heart"
 					type: "item"
 				}
 				{
-					id: "6ADCD358223106D6"
-					item: "ars_nouveau:creative_source_jar"
-					type: "item"
-				}
-				{
-					id: "46687E07D0DBC447"
-					item: "botania:creative_pool"
-					type: "item"
-				}
-				{
-					id: "3AD032785E199DA1"
+					id: "2078B4A2110B0E54"
 					item: "ars_nouveau:creative_spell_book"
 					type: "item"
 				}
 				{
-					id: "40B909D6599B41D4"
-					item: "ae2:creative_energy_cell"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "64228B59585E9418"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+				{
+					id: "23529B5101338A61"
+					type: "xp_levels"
+					xp_levels: 500
 				}
 			]
 			tasks: [
 				{
 					entity: "allthemodium:piglich"
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "botania:elementium_sword"
 						tag: {
 							Damage: 0
@@ -949,6 +944,46 @@
 			]
 			x: 8.0d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6A9FBF8714EA09A6"
+				"080902A63AB9FEBB"
+			]
+			description: [
+				"Well, you did it, congratulations engineer."
+				"The Quantum Box is not an easy item to craft.  You had to visit scary places, kill impossible bosses and craft all the mechanisms."
+				""
+				"This may not be an \"expert\" pack but you are in our eyes!"
+				""
+				"Thanks for playing, enjoy the creative items you can craft!"
+			]
+			hide: true
+			icon: "kubejs:quantum_box"
+			id: "43D8D73C39668D6F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "12C676BB8551B7E8"
+					table_id: 7979468168910851615L
+					type: "random"
+				}
+				{
+					id: "5415A3324D2AABB9"
+					item: "ftbquests:detector"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1908C035A21C74C3"
+				title: "Wrapping Up!"
+				type: "checkmark"
+			}]
+			title: "Wrapping up!"
+			x: 4.5d
+			y: 0.0d
 		}
 	]
 	title: "The Arcane Odyssey"

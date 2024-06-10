@@ -8,6 +8,16 @@
 	id: "71C90888E8CBCBD4"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "38AAB690B2268446"
+		subtitle: "I'd love some help with this!"
+		tasks: [{
+			id: "638462C51ED98D37"
+			title: "Work in Progress"
+			type: "checkmark"
+		}]
+		x: 0.5d
+		y: 0.5d
+	}]
 	title: "Chapter 1: Create"
 }

@@ -186,7 +186,11 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_rose_quartz', 'create:sequenced_assembly').texture('kubejs:item/incomplete_rose_quartz').displayName('Incomplete Rose Quartz');
     event.create('incomplete_empty_tube', 'create:sequenced_assembly').texture('kubejs:item/incomplete_empty_tube').displayName('Incomplete Empty Tube');
     event.create('incomplete_netherite_dust', 'create:sequenced_assembly');
+    event.create('incomplete_radiant_sheet', 'create:sequenced_assembly');
     event.create('blank_runic_tablet').texture('kubejs:item/blank_runic_tablet').displayName('Blank Runic Tablet');
+
+    // Quantum Box
+    event.create('quantum_box').glow(true).rarity(RARITY_EPIC);
 
     // AE2 Incomplete Processors
     event.create('incomplete_calculation_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_calculation_processor').displayName('Incomplete Calculation Processor');
@@ -204,8 +208,8 @@ StartupEvents.registry('item', event => {
     event.create('warp_fragments').rarity(RARITY_RARE).glow(true);
     event.create('nether_star_dust').texture('kubejs:item/nether_star_crushed').displayName('Nether Star Dust').rarity(RARITY_UNCOMMON).glow(true);
     event.create('nether_star_plate').texture('kubejs:item/nether_star_plate').displayName('Nether Star Plate').rarity(RARITY_RARE).glow(true);
-    event.create('radiant_coil').texture('kubejs:item/radiant_coil').displayName('Radiant Induction Coil').glow(true);
-    event.create('radiant_sheet').texture('kubejs:item/radiant_sheet').displayName('Radiant Sheet').glow(true);
+    event.create('radiant_coil').texture('kubejs:item/radiant_coil').displayName('Radiant Induction Coil').glow(true).rarity(RARITY_RARE);
+    event.create('radiant_sheet').texture('kubejs:item/radiant_sheet').displayName('Radiant Sheet').glow(true).rarity(RARITY_RARE);
     event.create('petrified_sheet').texture('kubejs:item/petrified_sheet').displayName('Petrified Sheet');
     event.create('enriched_rubber').texture('kubejs:item/enriched_rubber').displayName('Menril Enriched Rubber');
     event.create('rune_dust').displayName('Rune Dust');
@@ -214,11 +218,21 @@ StartupEvents.registry('item', event => {
     event.create('netherite_dust');
     event.create('scryers_eye');
 
+    event.create('createoreexcavation:hardened_drill').displayName('Hardened Drill');
+    event.create('createoreexcavation:arcane_drill').displayName('Arcane Drill');
+    event.create('createoreexcavation:molten_drill').displayName('Molten Drill');
+
+
 
     event.create('sourcegem_fragments').displayName('Source Crystal Fragments');
     event.create('time_crystal').displayName('Time Crystal Shards');
     event.create('carbon_sheet').texture('kubejs:item/carbon_sheet').displayName('Carbon Sheet');
-    event.create('mica_sheet').texture('kubejs:item/mica_sheet').displayName('Mica Sheet');
+    event.create('mica_dust').displayName('Mica Dust')
+        .texture("layer0", "kubejs:item/templates/dust")
+        .color(0, 0xbdb17d)
+        .tag('forge:dusts/mica');
+
+    event.create('mica_sheet').texture('kubejs:item/mica_sheet').displayName('Mica Sheet').tag('forge:plates/mica');
     event.create('ceramic_powder').texture('kubejs:item/ceramic_powder').displayName('Ceramic Powder');
     event.create('plastic').texture('kubejs:item/plastic').displayName('Plastic Bar');
     event.create('nickel_compound').texture('kubejs:item/nickel_compound').displayName('Nickel Compound');

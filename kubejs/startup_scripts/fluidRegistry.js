@@ -58,6 +58,11 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0x730303)
         .displayName('Red Chromatic Slurry');
 
+    event.create('dye_slurry_purple')
+        .thinTexture(0x7F00FF)
+        .bucketColor(0x7F00FF)
+        .displayName('Purple Chromatic Slurry');
+
     event.create('dye_slurry_magenta')
         .thinTexture(0x9F2B68)
         .bucketColor(0x9F2B68)

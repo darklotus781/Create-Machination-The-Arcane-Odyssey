@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
     });
 
     // Radiant Steel to Radiant Coils
-    t = Item.of('kubejs:radiant_sheet');
+    t = Item.of('kubejs:incomplete_radiant_sheet');
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:radiant_coil', 4),
     ], Item.of('kubejs:radiant_steel'), [
@@ -293,7 +293,7 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:dirt_inductor'),
     ], Item.of('kubejs:inductor_core'), [
         event.recipes.create.deploying(t, [t, Item.of('createaddition:copper_wire')]),
-        event.recipes.create.deploying(t, [t, Item.of('kubejs:plastic')]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:mica_sheet')]),
         event.recipes.create.deploying(t, [t, Item.of('createaddition:copper_wire')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:plastic')]),
         event.recipes.create.pressing(t, t)
@@ -305,7 +305,7 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:dirt_resistor'),
     ], Item.of('kubejs:plastic'), [
         event.recipes.create.deploying(t, [t, Item.of('thermal:drill_head')]).keepHeldItem(),
-        event.recipes.create.deploying(t, [t, Item.of('kubejs:carbon_sheet')]),
+        event.recipes.create.deploying(t, [t, Item.of('kubejs:mica_sheet')]),
         event.recipes.create.deploying(t, [t, Item.of('kubejs:carbon_sheet')]),
         event.recipes.create.deploying(t, [t, Item.of('minecraft:clay_ball')]),
         event.recipes.create.deploying(t, [t, Ingredient.of('#forge:rods/copper')]),
@@ -583,6 +583,15 @@ ServerEvents.recipes(event => {
     // Shadow Steel
     event.recipes.botania.elven_trade(['create:shadow_steel'], ['create:refined_radiance']);
 
+    // Mica Block
+    event.smelting(Item.of('kubejs:mica_block'), 'minecraft:granite');
+
+    // Mica Dust
+    event.recipes.occultism.crushing(Item.of('kubejs:mica_dust'), Item.of('kubejs:mica_block'));
+
+    // Mica Sheet
+    event.recipes.create.compacting([Item.of('kubejs:mica_sheet')], [Item.of('kubejs:mica_dust', 2)]).heatRequirement('heated');
+
     // ALTERNATE ANDESITE CRAFTING RECIPES (more expensive or difficult)!
     event.recipes.botania.elven_trade(['create:mechanical_press'], ['create:shaft', 'minecraft:iron_block', 'create:piston_extension_pole', 'create:gearbox', 'botania:mana_diamond']).id('kubejs:mechanical_press_alt_1');
     event.recipes.botania.elven_trade(['create:deployer'], ['create:shaft', 'create:brass_hand', 'create:piston_extension_pole', 'create:gearbox', 'botania:mana_diamond']).id('kubejs:deployer_alt_1');
@@ -673,6 +682,45 @@ ServerEvents.recipes(event => {
         m: Item.of('kubejs:wooden_mechanism'),
         g: Ingredient.of('#forge:storage_blocks/gold')
     }).id('kubejs:megatorch')
+
+    event.recipes.create.mechanical_crafting(Item.of('kubejs:quantum_box'), [
+        ' AHA ',
+        'AJJJA',
+        'DJIJF',
+        'GJJJB',
+        'A C A',
+    ], {
+        A: Item.of('kubejs:temporal_mechanism'),
+        B: Item.of('alexscaves:tremorzilla_egg'),
+        C: Item.of('alexscaves:nuclear_bomb'),
+        D: Item.of('cataclysm:tidal_claws'),
+        F: Item.of('minecraft:dragon_egg'),
+        G: Item.of('allthemodium:piglich_heart'),
+        H: Item.of('quark:diamond_heart'),
+        I: Item.of('ae2:quantum_link'),
+        J: Item.of('ae2:quantum_ring')
+    }).id('quantum_box');
+
+    const Q_ITEMS = [
+        'ae2:creative_energy_cell',
+        'ars_nouveau:creative_source_jar',
+        'botania:creative_pool',
+        'create:creative_motor',
+        'create:creative_blaze_cake',
+        'createaddition:creative_energy',
+        'pneumaticcraft:creative_compressor',
+        'pneumaticcraft:creative_compressed_iron_block',
+    ];
+
+    Q_ITEMS.forEach(output => {
+        event.stonecutting(Item.of(output), Item.of('kubejs:quantum_box'));
+        event.stonecutting(Item.of('kubejs:quantum_box'), Item.of(output));
+        Q_ITEMS.forEach(output2 => {
+            if (output != output2) {
+                event.stonecutting(Item.of(output2), Item.of(output));
+            }
+        });
+    });
 
     event.remove({type: 'thermal:press'});
     trading(event);

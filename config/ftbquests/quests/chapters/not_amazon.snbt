@@ -43,7 +43,7 @@
 			rewards: [{
 				id: "160328DECC54AD5A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "explorerscompass:explorerscompass"
 					tag: { }
 				}
@@ -69,7 +69,7 @@
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Radiant Mechanisms&r."]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "kubejs:resonator"
 				tag: {
 					Damage: 0
@@ -85,7 +85,7 @@
 				{
 					id: "0F4C7BB4C0ECB4CC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:resonator"
 						tag: {
 							Damage: 0
@@ -119,7 +119,7 @@
 				{
 					id: "7A6ACECDCDD6744E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:resonator"
 						tag: {
 							Damage: 0
@@ -157,7 +157,7 @@
 			description: ["Here you can exchange a Gold Coin back to a Stack of Silver."]
 			disable_toast: true
 			hide_dependency_lines: true
-			icon: { Count: 64b, id: "thermal:silver_coin" }
+			icon: { Count: 64, id: "thermal:silver_coin" }
 			id: "5326F6482C45D22A"
 			rewards: [
 				{
@@ -386,7 +386,7 @@
 			tasks: [{
 				consume_items: true
 				count: 60L
-				icon: { Count: 60b, id: "thermal:silver_coin" }
+				icon: { Count: 60, id: "thermal:silver_coin" }
 				id: "165B9A886A26BCC8"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -887,7 +887,7 @@
 					count: 10L
 					id: "3CCE09D1715B54C7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "minecraft:flowers"
@@ -908,7 +908,7 @@
 			hide: true
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "kubejs:diamond_saw"
 				tag: {
 					Damage: 0
@@ -925,7 +925,7 @@
 					auto: "no_toast"
 					id: "0FBC0315C8CEC9D4"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:diamond_saw"
 						tag: {
 							Damage: 0
@@ -961,7 +961,7 @@
 					consume_items: true
 					id: "3DFCE3E4F678A2A9"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:diamond_saw"
 						tag: {
 							Damage: 0
@@ -981,7 +981,7 @@
 			hide: true
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "kubejs:screwdriver"
 				tag: {
 					Damage: 0
@@ -997,7 +997,7 @@
 				{
 					id: "235FB8FCE909DFCC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:screwdriver"
 						tag: {
 							Damage: 0
@@ -1032,7 +1032,7 @@
 					consume_items: true
 					id: "662805A07AD8ABC0"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:screwdriver"
 						tag: {
 							Damage: 0
@@ -1087,12 +1087,12 @@
 			dependencies: ["0F870BEA235D662D"]
 			description: ["Used for completing tasks that require fluids or power."]
 			hide_dependency_lines: true
-			icon: "ftbquests:detector"
+			icon: "ftbquests:screen_1"
 			id: "1161942B706123F3"
 			rewards: [
 				{
 					id: "59EEA245CFF42BD0"
-					item: "ftbquests:detector"
+					item: "ftbquests:screen_1"
 					team_reward: false
 					type: "item"
 				}
@@ -1115,7 +1115,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "Quest Detector"
+			title: "Task Screen"
 			x: -4.0d
 			y: -2.0d
 		}
@@ -1164,7 +1164,7 @@
 			hide: true
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "kubejs:andesite_chisel"
 				tag: {
 					Damage: 0
@@ -1180,7 +1180,7 @@
 				{
 					id: "191EE15626EBE4B4"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:andesite_chisel"
 						tag: {
 							Damage: 0
@@ -1215,7 +1215,7 @@
 					consume_items: true
 					id: "74B192FBE4E42B46"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:andesite_chisel"
 						tag: {
 							Damage: 0
@@ -1235,7 +1235,7 @@
 			hide: true
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "kubejs:copper_chisel"
 				tag: {
 					Damage: 0
@@ -1252,7 +1252,7 @@
 					auto: "no_toast"
 					id: "48B1F53BEA6B6DE2"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:copper_chisel"
 						tag: {
 							Damage: 0
@@ -1288,7 +1288,7 @@
 					consume_items: true
 					id: "33950F1622744730"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:copper_chisel"
 						tag: {
 							Damage: 0
@@ -1308,7 +1308,7 @@
 			hide: true
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "kubejs:brass_chisel"
 				tag: {
 					Damage: 0
@@ -1325,7 +1325,7 @@
 					auto: "no_toast"
 					id: "3D6E083735EE1920"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:brass_chisel"
 						tag: {
 							Damage: 0
@@ -1361,7 +1361,7 @@
 					consume_items: true
 					id: "029BD0C569B86887"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:brass_chisel"
 						tag: {
 							Damage: 0
@@ -1381,7 +1381,7 @@
 			hide: true
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "kubejs:refined_chisel"
 				tag: {
 					Damage: 0
@@ -1397,7 +1397,7 @@
 				{
 					id: "5605D829AAA7109B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:refined_chisel"
 						tag: {
 							Damage: 0
@@ -1432,7 +1432,7 @@
 					consume_items: true
 					id: "0E199FD9F536DE31"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:refined_chisel"
 						tag: {
 							Damage: 0
@@ -1452,7 +1452,7 @@
 			hide: true
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "kubejs:diamond_chisel"
 				tag: {
 					Damage: 0
@@ -1468,7 +1468,7 @@
 				{
 					id: "64C9F4DAF52D4892"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:diamond_chisel"
 						tag: {
 							Damage: 0
@@ -1503,7 +1503,7 @@
 					consume_items: true
 					id: "3CF1BFDA707D6D22"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:diamond_chisel"
 						tag: {
 							Damage: 0
@@ -1523,7 +1523,7 @@
 			hide: true
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "createresourcegeodes:catalyst_activator_wand"
 				tag: {
 					Damage: 0
@@ -1540,7 +1540,7 @@
 					auto: "no_toast"
 					id: "529FBB58AECB6D39"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "createresourcegeodes:catalyst_activator_wand"
 						tag: {
 							Damage: 0
@@ -1576,7 +1576,7 @@
 					consume_items: true
 					id: "72C1ECDA0E01FA59"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "createresourcegeodes:catalyst_activator_wand"
 						tag: {
 							Damage: 0

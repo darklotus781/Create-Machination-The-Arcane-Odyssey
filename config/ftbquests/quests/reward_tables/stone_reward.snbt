@@ -1,6 +1,6 @@
 {
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "ftbquests:lootcrate"
 		tag: {
 			type: "rare_loot_chest"
@@ -13,7 +13,7 @@
 		{
 			icon: "minecraft:stone"
 			item: {
-				Count: 1b
+				Count: 1
 				id: "functionalstorage:oak_1"
 				tag: {
 					BlockEntityTag: {
@@ -59,7 +59,7 @@
 		{
 			icon: "minecraft:cobblestone"
 			item: {
-				Count: 1b
+				Count: 1
 				id: "functionalstorage:oak_1"
 				tag: {
 					BlockEntityTag: {
@@ -105,7 +105,7 @@
 		{
 			icon: "minecraft:smooth_stone"
 			item: {
-				Count: 1b
+				Count: 1
 				id: "functionalstorage:oak_1"
 				tag: {
 					BlockEntityTag: {
@@ -151,7 +151,7 @@
 		{
 			icon: "minecraft:stone_bricks"
 			item: {
-				Count: 1b
+				Count: 1
 				id: "functionalstorage:oak_1"
 				tag: {
 					BlockEntityTag: {

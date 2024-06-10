@@ -1,6 +1,6 @@
 {
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "ftbquests:lootcrate"
 		tag: {
 			type: "rare_loot_chest"
@@ -19,7 +19,7 @@
 		{ item: "functionalstorage:gold_upgrade", weight: 5.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "constructionwand:diamond_wand"
 				tag: {
 					Damage: 0
@@ -38,7 +38,7 @@
 		{ item: "sophisticatedstorage:void_upgrade", weight: 10.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "sophisticatedstorage:iron_chest"
 				tag: {
 					woodType: "oak"
@@ -67,7 +67,7 @@
 		{ item: "minecraft:ender_eye", random_bonus: 2, weight: 5.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -81,7 +81,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -95,7 +95,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -109,7 +109,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -122,7 +122,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -135,7 +135,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -148,7 +148,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -161,7 +161,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -174,7 +174,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -187,7 +187,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -206,7 +206,7 @@
 		{ item: "botania:mana_pearl", random_bonus: 2, weight: 5.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "aquaculture:neptunium_sword"
 				tag: {
 					Damage: 0

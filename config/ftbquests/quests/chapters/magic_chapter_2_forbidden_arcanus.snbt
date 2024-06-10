@@ -22,7 +22,7 @@
 			]
 			hide: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "forbidden_arcanus:smelter_prism"
 				tag: {
 					Damage: 0
@@ -103,7 +103,7 @@
 			tasks: [{
 				id: "2DE570337D6E8368"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "forbidden_arcanus:slimec_pickaxe"
 					tag: {
 						Damage: 0
@@ -142,7 +142,7 @@
 			tasks: [{
 				id: "3CCC73D361A4A5D6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "forbidden_arcanus:mystical_dagger"
 					tag: {
 						Damage: 0
@@ -367,7 +367,7 @@
 			tasks: [{
 				id: "35004413DAFA1C58"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "forbidden_arcanus:spectral_eye_amulet"
 					tag: { }
 				}
@@ -494,7 +494,7 @@
 				{
 					id: "36C413F578D44CBF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:mortem_helmet"
 						tag: {
 							Damage: 0
@@ -505,7 +505,7 @@
 				{
 					id: "6A341DEA25087489"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:mortem_chestplate"
 						tag: {
 							Damage: 0
@@ -516,7 +516,7 @@
 				{
 					id: "3F1B3851C4BC39F1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:mortem_leggings"
 						tag: {
 							Damage: 0
@@ -527,7 +527,7 @@
 				{
 					id: "34E13EE51BE65AE3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:mortem_boots"
 						tag: {
 							Damage: 0
@@ -596,7 +596,7 @@
 				{
 					id: "4F68A985DED494B6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:draco_arcanus_helmet"
 						tag: {
 							Damage: 0
@@ -607,7 +607,7 @@
 				{
 					id: "51FBF0E6CAAF10EB"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:draco_arcanus_chestplate"
 						tag: {
 							Damage: 0
@@ -618,7 +618,7 @@
 				{
 					id: "2D69FAD94A981FCD"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:draco_arcanus_leggings"
 						tag: {
 							Damage: 0
@@ -629,7 +629,7 @@
 				{
 					id: "528B85B2554A3691"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:draco_arcanus_boots"
 						tag: {
 							Damage: 0
@@ -791,7 +791,7 @@
 				{
 					id: "1837D97833619166"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:tyr_helmet"
 						tag: {
 							Damage: 0
@@ -802,7 +802,7 @@
 				{
 					id: "679C3B7915C403AC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:tyr_chestplate"
 						tag: {
 							Damage: 0
@@ -813,7 +813,7 @@
 				{
 					id: "2B5AFD104DE50D5F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:tyr_leggings"
 						tag: {
 							Damage: 0
@@ -824,7 +824,7 @@
 				{
 					id: "11795A1BD0916EC2"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:tyr_boots"
 						tag: {
 							Damage: 0
@@ -1130,7 +1130,7 @@
 				{
 					id: "6558C3AA159F57D6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:soul_extractor"
 						tag: {
 							Damage: 0
@@ -1246,7 +1246,7 @@
 			tasks: [{
 				id: "0309B0EB29771EC0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forbidden_arcanus:blacksmith_gavel"
@@ -1295,7 +1295,7 @@
 				{
 					id: "662F567369FBB0AD"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:eternal_stella"
 						tag: { }
 					}
@@ -1364,7 +1364,7 @@
 				{
 					id: "6B1B4574299B7E42"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:draco_arcanus_shovel"
 						tag: {
 							Damage: 0
@@ -1375,7 +1375,7 @@
 				{
 					id: "7AC6974CDDE401B1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:draco_arcanus_pickaxe"
 						tag: {
 							Damage: 0
@@ -1386,7 +1386,7 @@
 				{
 					id: "1EC5573A12A3B7F7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:draco_arcanus_axe"
 						tag: {
 							Damage: 0
@@ -1397,7 +1397,7 @@
 				{
 					id: "70CEF00CFA26E97A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:draco_arcanus_hoe"
 						tag: {
 							Damage: 0
@@ -1433,7 +1433,7 @@
 				{
 					id: "49FEFEC69106EFFA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:draco_arcanus_sword"
 						tag: {
 							Damage: 0

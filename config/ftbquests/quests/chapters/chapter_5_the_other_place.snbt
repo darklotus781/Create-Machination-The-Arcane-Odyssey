@@ -6,8 +6,28 @@
 	hide_quest_until_deps_visible: true
 	icon: "allthemodium:other_vibranium_ore"
 	id: "1FEE7C12BCCF1E5F"
+	images: [{
+		height: 20.0d
+		image: "kubejs:textures/gui/quest_bg_square.png"
+		order: 1
+		rotation: 0.0d
+		width: 20.0d
+		x: 0.0d
+		y: 0.0d
+	}]
 	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["6B42D8BF7AFA038B"]
+		description: ["I'm not sure that a true quest line needs to be here but if someone more creative than me comes up with something, consider this a placeholder :D"]
+		id: "302113A2C2654676"
+		tasks: [{
+			id: "6B42D8BF7AFA038B"
+			title: "Welcome to The Other!"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "Chapter 5: The Other Place"
 }

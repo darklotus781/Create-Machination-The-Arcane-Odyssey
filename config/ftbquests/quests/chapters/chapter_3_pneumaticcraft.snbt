@@ -8,6 +8,16 @@
 	id: "78259DBEF64884FE"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "11C5C23BF9388D58"
+		subtitle: "I'd love some help with this!"
+		tasks: [{
+			id: "3AD78B1309902219"
+			title: "Work in Progress"
+			type: "checkmark"
+		}]
+		x: -0.5d
+		y: -0.5d
+	}]
 	title: "Chapter 3: Pneumaticcraft"
 }

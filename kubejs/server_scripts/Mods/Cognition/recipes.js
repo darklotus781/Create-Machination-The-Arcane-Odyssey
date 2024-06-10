@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.replaceInput({id: 'experienceobelisk:cognitive_alloy'}, 'minecraft:copper_ingot', 'thermal:signalum_ingot');
+    event.replaceInput({id: 'experienceobelisk:cognitive_alloy'}, 'minecraft:copper_ingot', '#forge:ingots/signalum');
     event.replaceInput({id: 'experienceobelisk:cognitive_crystal'}, 'minecraft:emerald', 'alexscaves:uranium_rod');
     event.remove({output: 'experienceobelisk:cognitive_flux'});
 

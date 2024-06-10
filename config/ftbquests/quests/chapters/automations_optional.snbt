@@ -144,7 +144,7 @@
 			id: "225AF92C2547678F"
 			tasks: [{
 				id: "1122F5DB926B3981"
-				title: "asasdasd"
+				title: "Automating is Fun!"
 				type: "checkmark"
 			}]
 			title: "Automations"
@@ -932,7 +932,7 @@
 				{
 					id: "66B8100AA1C48423"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "forbidden_arcanus:corrupti_dust"
 						tag: { }
 					}

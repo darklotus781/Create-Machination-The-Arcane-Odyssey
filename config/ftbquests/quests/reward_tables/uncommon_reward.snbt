@@ -14,7 +14,7 @@
 		{ item: "sophisticatedstorage:stack_upgrade_tier_1", weight: 5.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "sophisticatedstorage:iron_chest"
 				tag: {
 					woodType: "oak"
@@ -40,7 +40,7 @@
 		{ count: 4, item: "minecraft:ender_pearl", random_bonus: 4, weight: 10.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -53,7 +53,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -66,7 +66,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -79,7 +79,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -92,7 +92,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -105,7 +105,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -118,7 +118,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -131,7 +131,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -151,7 +151,7 @@
 		{ item: "botania:mana_pearl", random_bonus: 2, weight: 5.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "aquaculture:neptunium_sword"
 				tag: {
 					Damage: 0

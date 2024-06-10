@@ -246,9 +246,8 @@ ServerEvents.recipes(event => {
 
     // Chromatic Solution
     event.recipes.create.mixing(Fluid.of('kubejs:chromatic_solution').withAmount(1000), [
-        Fluid.of('kubejs:dye_slurry_red').withAmount(500),
+        Fluid.of('kubejs:dye_slurry_purple').withAmount(500),
         Fluid.of('kubejs:dye_slurry_green').withAmount(500),
-        Fluid.of('kubejs:dye_slurry_blue').withAmount(500)
     ]).processingTime(200).superheated().id('create:mixing/chromatic_solution');
 
     // Chromatic Compound
@@ -311,10 +310,15 @@ ServerEvents.recipes(event => {
 
     // Magenta Chromatic Slurry
     event.recipes.create.mixing(Fluid.of('kubejs:dye_slurry_magenta').withAmount(1000), [
-        Fluid.of('kubejs:dye_slurry_blue').withAmount(500),
+        Fluid.of('kubejs:dye_slurry_purple').withAmount(500),
         Fluid.of('kubejs:dye_slurry_pink').withAmount(500),
-        Fluid.of('kubejs:dye_slurry_red').withAmount(500)
     ]).processingTime(300).superheated().id('create:mixing/dye_slurry_magenta');
+
+    // Purple Chromatic Slurry
+    event.recipes.create.mixing(Fluid.of('kubejs:dye_slurry_purple').withAmount(1000), [
+        Fluid.of('kubejs:dye_slurry_blue').withAmount(500),
+        Fluid.of('kubejs:dye_slurry_red').withAmount(500),
+    ]).processingTime(300).heated().id('create:mixing/dye_slurry_purple');
 
     // Chromatic Compound
     event.custom({

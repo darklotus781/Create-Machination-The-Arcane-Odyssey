@@ -390,7 +390,7 @@
 				{
 					id: "558649C69096D2D7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -445,7 +445,7 @@
 			tasks: [{
 				id: "43C86CA84DC14E8A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -532,7 +532,7 @@
 			tasks: [{
 				id: "51EFBB115AE2746A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "botania:mystical_flowers"
@@ -695,7 +695,7 @@
 			tasks: [{
 				id: "490EAAA3703A576F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -762,7 +762,7 @@
 			tasks: [{
 				id: "59FB36F10FBA2E3D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:twig_wand"
 					tag: {
 						color1: 0
@@ -1022,7 +1022,7 @@
 				{
 					id: "380292B73C32D32D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "botania:manaweave_helmet"
 						tag: {
 							Damage: 0
@@ -1033,7 +1033,7 @@
 				{
 					id: "0E65D022473C0996"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "botania:manaweave_chestplate"
 						tag: {
 							Damage: 0
@@ -1044,7 +1044,7 @@
 				{
 					id: "75862C1E5E59C465"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "botania:manaweave_leggings"
 						tag: {
 							Damage: 0
@@ -1055,7 +1055,7 @@
 				{
 					id: "0E6BE4209A3BFC82"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "botania:manaweave_boots"
 						tag: {
 							Damage: 0
@@ -1089,7 +1089,7 @@
 			tasks: [{
 				id: "248AD65A97AFB7DB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1141,7 +1141,7 @@
 			tasks: [{
 				id: "443C2EF5FFE8D265"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1223,7 +1223,7 @@
 			tasks: [{
 				id: "69DDDE2C4D586735"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1284,7 +1284,7 @@
 			tasks: [{
 				id: "679F0AA9731DAF88"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1386,7 +1386,7 @@
 				{
 					id: "5A06ED36DD9E9681"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -1582,7 +1582,7 @@
 			tasks: [{
 				id: "28B797392467C851"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1639,7 +1639,7 @@
 				{
 					id: "6A9E12C2483D4883"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "botania:lexicon"
 						tag: {
 							"botania:elven_unlock": 1b
@@ -1650,7 +1650,7 @@
 				{
 					id: "5BD644B2A02DF9C0"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -1829,7 +1829,7 @@
 			tasks: [{
 				id: "4B1C5F307D76F97A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1890,7 +1890,7 @@
 			tasks: [{
 				id: "48201CEFFBFD0000"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -2204,7 +2204,7 @@
 			tasks: [{
 				id: "078E142753C8FA7B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:odin_ring"
 					tag: {
 						baubleUUID: [I;
@@ -2498,7 +2498,7 @@
 			tasks: [{
 				id: "44A3CDE54F2A5149"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [

@@ -67,5 +67,5 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting(Item.of('thermal:rubber'), [Fluid.of('thermal:resin', 250)]);
     event.recipes.create.compacting(Item.of('thermal:rubber'), [Fluid.of('thermal:latex', 125)]);
 
-    event.recipes.thermal.smelter(Ingredient.of('#forge:ingots/steel'),[Ingredient.of('#forge:ingots/iron', 2), Item.of('thermal:coal_coke')]).energy(12000).id('kubejs:thermal/smelter/steel');
+    event.recipes.thermal.smelter([Ingredient.of('#forge:ingots/steel')],[Ingredient.of('#forge:ingots/iron', 2), Item.of('thermal:coal_coke')]).energy(12000).id('kubejs:thermal/smelter/steel');
 });

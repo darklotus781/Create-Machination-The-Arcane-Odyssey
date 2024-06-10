@@ -30,7 +30,7 @@
 				{
 					id: "579792F432124600"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "farmersdelight:diamond_knife"
 						tag: {
 							Damage: 0
@@ -184,6 +184,7 @@
 				"73DEBE6BC8865256"
 				"212AB7A6355913DC"
 			]
+			dependency_requirement: "one_completed"
 			id: "378AA5835A43019D"
 			rewards: [
 				{
@@ -213,7 +214,7 @@
 				{
 					id: "42CA8D21E5187473"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:resonator"
 						tag: {
 							Damage: 0
@@ -230,7 +231,7 @@
 			tasks: [{
 				id: "17CFC1758302B223"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "kubejs:resonator"
 					tag: {
 						Damage: 0
@@ -249,7 +250,7 @@
 					count: 16
 					id: "2BC21E99BDFED286"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "create:chromatic_compound"
 						tag: { }
 					}
@@ -264,7 +265,7 @@
 			tasks: [{
 				id: "70E9F5375714FFDA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "create:chromatic_compound"
 					tag: { }
 				}
@@ -451,7 +452,7 @@
 			tasks: [{
 				id: "79EFD6AB647FD72E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:flowers/pink"
@@ -482,7 +483,7 @@
 			tasks: [{
 				id: "215A743214E7C1BB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:flowers/red"
@@ -513,7 +514,7 @@
 			tasks: [{
 				id: "1824C11B9A743891"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:flowers/blue"
@@ -578,7 +579,7 @@
 			tasks: [{
 				id: "3BF36426CC89902B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:flowers/green"
@@ -690,7 +691,7 @@
 			tasks: [{
 				id: "591E434C60C5C578"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "ae2:paint_balls"
@@ -736,6 +737,12 @@
 					id: "3FF45C194AC32D63"
 					item: "alexscaves:azure_neodymium_ingot"
 					type: "item"
+				}
+				{
+					entity: "alexscaves:teletor"
+					id: "0F2B00B7D41C4A3A"
+					type: "kill"
+					value: 1L
 				}
 			]
 			title: "Kill the Teletor"
@@ -789,7 +796,7 @@
 			tasks: [{
 				id: "5EEBA1927D588114"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "alexscaves:cave_codex"
 					tag: {
 						CaveBiome: "alexscaves:magnetic_caves"

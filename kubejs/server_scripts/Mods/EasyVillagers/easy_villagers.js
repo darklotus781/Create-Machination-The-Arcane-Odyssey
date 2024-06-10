@@ -7,14 +7,24 @@ ServerEvents.recipes(event => {
     event.remove({output: 'easy_villagers:iron_farm'}); // Disabled, too OP
     event.remove({output: 'easy_villagers:incubator'});
 
+    event.shaped(Item.of('easy_villagers:auto_trader'), [
+        'PPP',
+        'PNP',
+        'III'
+    ], {
+        I: Ingredient.of('#forge:plates/netherite'),
+        P: Item.of('easy_villagers:trader'),
+        N: Item.of('alexscaves:amber_curiosity'),
+    });
+
     event.shaped(Item.of('easy_villagers:trader'), [
         'PPP',
         'PNP',
         'III'
     ], {
-        I: Ingredient.of('#forge:plates/iron'),
-        P: Item.of('forbidden_arcanus:dark_runic_glass_pane'),
-        N: Ingredient.of('#forge:ingots/netherite'),
+        I: Ingredient.of('#forge:plates/netherite'),
+        P: Item.of('thermal:obsidian_glass'),
+        N: Item.of('alexscaves:moth_ball'),
     });
 
     event.shaped(Item.of('easy_villagers:converter'), [
@@ -22,9 +32,9 @@ ServerEvents.recipes(event => {
         'PZP',
         'III'
     ], {
-        I: Ingredient.of('#forge:plates/iron'),
-        P: Item.of('forbidden_arcanus:dark_runic_glass_pane'),
-        Z: Item.of('minecraft:zombie_head'),
+        I: Ingredient.of('#forge:plates/netherite'),
+        P: Item.of('thermal:obsidian_glass'),
+        Z: Item.of('alexscaves:green_soylent'),
     });
 
     event.shaped(Item.of('easy_villagers:breeder'), [
@@ -32,9 +42,9 @@ ServerEvents.recipes(event => {
         'PBP',
         'III'
     ], {
-        I: Ingredient.of('#forge:plates/iron'),
-        P: Item.of('forbidden_arcanus:dark_runic_glass_pane'),
-        B: Item.of('ars_nouveau:orange_sbed'),
+        I: Ingredient.of('#forge:plates/netherite'),
+        P: Item.of('thermal:obsidian_glass'),
+        B: Item.of('alexscaves:immortal_embryo'),
     });
 
     event.shaped(Item.of('easy_villagers:incubator'), [
@@ -42,8 +52,18 @@ ServerEvents.recipes(event => {
         'PNP',
         'III'
     ], {
-        I: Ingredient.of('#forge:plates/iron'),
-        P: Item.of('forbidden_arcanus:dark_runic_glass_pane'),
-        N: Ingredient.of('#forge:ingots/netherite'),
+        I: Ingredient.of('#forge:plates/netherite'),
+        P: Item.of('thermal:obsidian_glass'),
+        N: Item.of('alexscaves:tesla_bulb'),
+    });
+
+    event.shaped(Item.of('easy_villagers:iron_farm'), [
+        'PPP',
+        'PNP',
+        'III'
+    ], {
+        I: Ingredient.of('#forge:plates/netherite'),
+        P: Item.of('thermal:obsidian_glass'),
+        N: Item.of('alexscaves:heart_of_iron'),
     });
 });

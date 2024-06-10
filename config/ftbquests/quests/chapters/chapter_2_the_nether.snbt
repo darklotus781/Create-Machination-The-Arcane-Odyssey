@@ -67,7 +67,7 @@
 				{
 					consume_items: true
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:flint_and_steel"
 						tag: {
 							Damage: 0
@@ -75,7 +75,7 @@
 					}
 					id: "55298C2133BE5AF5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:flint_and_steel"
 						tag: {
 							Damage: 0
@@ -771,7 +771,7 @@
 			tasks: [
 				{
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "cataclysm:infernal_forge"
 						tag: {
 							Damage: 0

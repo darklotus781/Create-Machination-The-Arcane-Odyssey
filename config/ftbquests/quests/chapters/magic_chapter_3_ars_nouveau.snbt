@@ -58,7 +58,7 @@
 			tasks: [{
 				id: "1624D71379FBBDA6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ars_nouveau:starbuncle_charm"
 					tag: { }
 				}
@@ -141,7 +141,7 @@
 				{
 					id: "3F5596F46FED5933"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -282,7 +282,7 @@
 				{
 					id: "22F7C77AC8FE6227"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -427,7 +427,7 @@
 				{
 					id: "0DC29E41B2CAA260"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -593,246 +593,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["457DE8C154641437"]
-			id: "43784C83C8A76E8B"
-			rewards: [
-				{
-					id: "5FCADF47120B444F"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "02DFF1375006F31E"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "3280A874803F3976"
-				item: "ars_nouveau:ritual_sunrise"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "21EC1A577B4E2FC4"
-			rewards: [
-				{
-					id: "1F0840B0DE4A1AB2"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "1A45B284FC5E9279"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "342E847B567C499A"
-				item: "ars_nouveau:ritual_warping"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "07DE3A966516EA8B"
-			rewards: [
-				{
-					id: "77C5D3A22AC85962"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "4FD793AF9D24AD31"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "4553742BFEB7AAF6"
-				item: "ars_nouveau:ritual_overgrowth"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "34DC34EA5ED7C96D"
-			rewards: [
-				{
-					id: "436D64353438EF78"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "3EEBA418A6C79336"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "3FCA99481934542B"
-				item: "ars_nouveau:ritual_moonfall"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "08803844E52178AA"
-			rewards: [
-				{
-					id: "07C8F015CE9BD807"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "6E2984E70D8C21B6"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "139DDE68B8C4A5C6"
-				item: "ars_nouveau:ritual_fertility"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "4E0976E1DAF65FC9"
-			rewards: [
-				{
-					id: "5AD819DC4B46FA2A"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "599B537B8344A8DF"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "252DC59E9F363E10"
-				item: "ars_nouveau:ritual_burrowing"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "6D8C9D7D9DF9A6DD"
-			rewards: [
-				{
-					id: "676B809A82AFD113"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "1334CD795D6859AF"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "11D8B50355018821"
-				item: "ars_nouveau:ritual_challenge"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "4F8119B6298EA753"
-			rewards: [
-				{
-					id: "2004FAB6824A6495"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "328F118F11490AA8"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "51A93C01E6E8F960"
-				item: "ars_nouveau:ritual_cloudshaping"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "40407D2CDC660866"
-			rewards: [
-				{
-					id: "199A28C165BCF1A9"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "49C80B385AA16CA2"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "1FBAFEB74535EFAE"
-				item: "ars_nouveau:ritual_disintegration"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "251C9E4B29A29728"
-			rewards: [
-				{
-					id: "40E53BCA971C8B77"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "405990A0A9663657"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "6BEA84FA2F3A39AE"
-				item: "ars_nouveau:ritual_restoration"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 6.5d
-		}
-		{
 			dependencies: ["33682F4B44950123"]
 			description: [
 				"If you want to cast better spells, you'll need a &6Scribe's Table&r to unlock new glyphs for your spellbook."
@@ -911,7 +671,7 @@
 				{
 					id: "565501823D60D08C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:potion"
 						tag: {
 							Potion: "ars_nouveau:mana_regen_potion"
@@ -1106,7 +866,7 @@
 				{
 					id: "163A6E303D6F419D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:logs/archwood"
@@ -1119,7 +879,7 @@
 					count: 2L
 					id: "7508E906C021AB6B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:planks/archwood"
@@ -1306,7 +1066,7 @@
 			tasks: [{
 				id: "2E649D2172E6D537"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ars_nouveau:runic_chalk"
 					tag: {
 						Damage: 0
@@ -1316,126 +1076,6 @@
 			}]
 			x: 13.0d
 			y: 2.0d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "0E88FDAE4CB5561B"
-			rewards: [
-				{
-					id: "3C7EF29C9BD3D3D7"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "6BDC9AF06660CCF2"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "5018B75946EB5FA4"
-				item: "ars_nouveau:ritual_awakening"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "7471CDF5166D38F0"
-			rewards: [
-				{
-					id: "6301CC507E4D320B"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "2FDCBDE7D0558817"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "6CF702640DFC9FBA"
-				item: "ars_nouveau:ritual_flight"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "28D9ED74EBBC9818"
-			rewards: [
-				{
-					id: "2FD913C4DC69B36D"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "4E86C27147A3FF58"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "5D3C989D159E191B"
-				item: "ars_nouveau:ritual_wilden_summon"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "26D2183E27E1273A"
-			rewards: [
-				{
-					id: "181E590F3901AA47"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "4CD77E3340D32ACD"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "0577B2F9A78434A0"
-				item: "ars_nouveau:ritual_scrying"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["457DE8C154641437"]
-			id: "634B477861AC9162"
-			rewards: [
-				{
-					id: "7B45FBB75C0BCD6A"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "44FEA64D48FB7451"
-					table_id: 7741646616291704000L
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "7B9F88A9A5FAE5CB"
-				item: "ars_nouveau:ritual_binding"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 5.5d
 		}
 		{
 			dependencies: ["64D0E66CB4FBEC82"]
@@ -1453,7 +1093,7 @@
 				"{image:kubejs:textures/ftbquests/ars/spellbook.png width:200 height:150 align:1}"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ars_nouveau:spell_parchment"
 				tag: { }
 			}
@@ -1479,7 +1119,7 @@
 				"There are several ways to increase your mana pool, or increase the efficiency of your spells as you progress through the mod. Upgrading your spellbook can also increase your mana!"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:potion"
 				tag: {
 					Potion: "ars_nouveau:mana_regen_potion"
@@ -1490,7 +1130,7 @@
 				{
 					id: "31255CD8D6C186BF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:lingering_potion"
 						tag: {
 							Potion: "ars_nouveau:mana_regen_potion_long"
@@ -1565,7 +1205,7 @@
 			tasks: [{
 				id: "07469C1ABB23F686"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ars_nouveau:dowsing_rod"
 					tag: {
 						Damage: 0
@@ -1727,7 +1367,7 @@
 				{
 					id: "19F2CD6C0B18C66F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ars_nouveau:spell_parchment"
 						tag: { }
 					}
@@ -1743,7 +1383,7 @@
 			tasks: [{
 				id: "5D09025968ED4E34"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ars_nouveau:spell_parchment"
 					tag: { }
 				}
@@ -1804,7 +1444,7 @@
 			tasks: [{
 				id: "307E429DCDA2A0BC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ars_nouveau:enchanters_sword"
 					tag: {
 						Damage: 0
@@ -1839,7 +1479,7 @@
 			tasks: [{
 				id: "571B04DAC6DAFDAE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ars_nouveau:enchanters_shield"
 					tag: {
 						Damage: 0
@@ -1876,7 +1516,7 @@
 			tasks: [{
 				id: "4B4A171486A31360"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ars_nouveau:enchanters_mirror"
 					tag: { }
 				}
@@ -1913,7 +1553,7 @@
 			tasks: [{
 				id: "7F425E0F613F8B23"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ars_nouveau:spell_bow"
 					tag: { }
 				}
@@ -2111,7 +1751,7 @@
 			tasks: [{
 				id: "3CF6151060ADB889"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ars_nouveau:wand"
 					tag: { }
 				}

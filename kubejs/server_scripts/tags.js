@@ -112,6 +112,17 @@ ServerEvents.tags('item', event => {
         .add('minecraft:vine')
         .add('#chipped:vine');
 
+    event.get('forge:plates/zinc').add('createdeco:zinc_sheet');
+    event.get('forge:plates/netherite').add('createdeco:netherite_sheet');
+    event.get('forge:plates/andesite').add('createdeco:andesite_sheet');
+
+    // Custom Drills
+    event.add('createoreexcavation:drills', [
+        'createoreexcavation:hardened_drill',
+        'createoreexcavation:arcane_drill',
+        'createoreexcavation:molten_drill'
+    ]);
+
     global.colors.forEach(element => {
         event.get('forge:glazed_terracotta')
             .add(`minecraft:${element}_glazed_terracotta`)
@@ -201,6 +212,8 @@ ServerEvents.tags('item', event => {
         .add(/kubejs\:(andesite|brass|copper|refined|diamond)_chisel/)
         .add('kubejs:soldering_iron')
         .add('kubejs:resonator')
+
+    event.get('curios:charm').add('minecraft:totem_of_undying');
 
 
     event.get('machination:exchangers').add(/exchangers\:.*_exchanger/);
@@ -315,5 +328,19 @@ ServerEvents.tags('entity_type', event => {
     event.add('pneumaticcraft:vacuum_trap_blacklisted', '#machination:mob_blacklist');
     event.add('ars_nouveau:drygmy_blacklist', '#machination:mob_blacklist');
 
-    event.add('forge:enderman', 'minecraft:enderman');
+    event.get('forge:enderman')
+        .add('minecraft:enderman')
+        .add(/endermanoverhaul\:.+_enderman/);
+});
+
+ServerEvents.tags('worldgen/biome', event => {
+    // Biome Tagging for Ore Excavation
+    event.get('machination:infinite_ore_biomes')
+        .add('alexscaves:forlorn_hollows')
+        .add('alexscaves:magnetic_caves')
+        .add('alexscaves:toxic_caves')
+        .add('alexscaves:primordial_caves');
+
+    event.get('machination:infinite_gem_biomes')
+        .add('alexscaves:abyssal_chasm');
 });

@@ -52,7 +52,7 @@
 				{
 					id: "3205A334DFF1E0B8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:potion"
 						tag: {
 							Potion: "minecraft:strong_regeneration"
@@ -63,7 +63,7 @@
 				{
 					id: "5F1FBC26813BBB95"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:potion"
 						tag: {
 							Potion: "minecraft:strong_swiftness"
@@ -74,7 +74,7 @@
 				{
 					id: "12E11D9B7EF52D37"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:potion"
 						tag: {
 							Potion: "minecraft:fire_resistance"
@@ -432,7 +432,7 @@
 				consume_items: false
 				id: "764FF7EE81817030"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -602,7 +602,7 @@
 				consume_items: false
 				id: "6CF13F3E3F25B5BF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -673,7 +673,7 @@
 				consume_items: false
 				id: "292A631DADB27D48"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [

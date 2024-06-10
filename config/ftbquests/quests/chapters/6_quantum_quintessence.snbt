@@ -27,10 +27,15 @@
 			]
 			hide: true
 			id: "79119FB127682E9A"
+			rewards: [{
+				id: "76589B489AF31040"
+				item: "kubejs:evoker_spawn_egg"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "443B1C56C8756C2B"
-				title: "Chapter 2: Start"
+				title: "Chapter 6: Start"
 				type: "checkmark"
 			}]
 			title: "Chapter 6: Start"

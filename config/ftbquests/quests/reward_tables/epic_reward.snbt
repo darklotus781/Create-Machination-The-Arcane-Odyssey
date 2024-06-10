@@ -7,7 +7,7 @@
 		{ item: "functionalstorage:netherite_upgrade", weight: 10.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "constructionwand:infinity_wand"
 				tag: {
 					Damage: 0
@@ -18,7 +18,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -32,7 +32,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -46,7 +46,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -60,7 +60,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -74,7 +74,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -91,7 +91,7 @@
 		{ item: "artifacts:lucky_scarf", weight: 5.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "ars_nouveau:dominion_wand"
 				tag: { }
 			}
@@ -99,7 +99,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "botania:twig_wand"
 				tag: {
 					color1: 0
@@ -109,7 +109,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "createresourcegeodes:catalyst_activator_wand"
 				tag: {
 					Damage: 0
@@ -119,7 +119,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "create:potato_cannon"
 				tag: {
 					Damage: 0
@@ -129,7 +129,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "create:extendo_grip"
 				tag: {
 					Damage: 0
@@ -141,7 +141,7 @@
 		{ item: "create:linked_controller" }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "create:copper_backtank"
 				tag: {
 					Air: 420

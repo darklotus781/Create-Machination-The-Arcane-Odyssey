@@ -11,8 +11,8 @@
 		image: "kubejs:textures/gui/quest_bg_square.png"
 		rotation: 0.0d
 		width: 20.0d
-		x: 0.5d
-		y: -5.0d
+		x: -0.5d
+		y: -5.5d
 	}]
 	order_index: 9
 	quest_links: [ ]
@@ -20,22 +20,28 @@
 		{
 			dependencies: ["5B817E19476DEBA1"]
 			description: [
-				"Getting started in Chapter 2 makes a couple of assumptions."
-				"1) You have completed Chapter 1 :P"
+				"This is the final factory chapter, the final step in Machination!"
 				""
-				"2) You have automated Kinetic Mechanisms"
-				""
-				"3) You have automated Menril Tree farming and Resin production"
-				""
-				"4) You have a steady supply of Redstone, Quartz and a Blaze Spawner or a fortress to fill Blaze Burners"
-				""
-				"5) A steady supply of Brass from Copper and Zinc."
+				"You will need a supply of Quantum Mechanisms to succeed here."
 			]
 			hide: true
 			id: "1D3698C194B4E1F4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "77E3D940F11DB00E"
+					table_id: 2265012637020335752L
+					type: "random"
+				}
+				{
+					id: "7CBF20AD61E5120D"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
 			tasks: [{
 				id: "3A30CCA1988DEF88"
-				title: "Chapter 2: Start"
+				title: "Chapter 7: Start"
 				type: "checkmark"
 			}]
 			title: "Final Chapter: Start"
@@ -44,12 +50,30 @@
 		}
 		{
 			dependencies: ["1D3698C194B4E1F4"]
+			description: [
+				"Temporal Mechanisms are tricky items.  But they are used in late/end game crafts."
+				"Automate if you dare, but create a stack to wrap things up!"
+			]
 			id: "6CF50DA237778924"
-			rewards: [{
-				id: "0E8D061B0675EEA9"
-				type: "xp_levels"
-				xp_levels: 25
-			}]
+			rewards: [
+				{
+					id: "0E8D061B0675EEA9"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32DBE8B7F11BBC98"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6BF283F8F370B4EE"
+					table_id: 2265012637020335752L
+					type: "random"
+				}
+			]
 			tasks: [{
 				count: 8L
 				id: "0EA32FCB5BA520DA"
@@ -64,13 +88,35 @@
 			description: [
 				"Automated Temporal Mechanisms?"
 				"Congrats, you win!"
+				""
+				"Kinda but not really, you need to craft the Quantum Box and hold one in your hand!"
 			]
 			id: "6A9FBF8714EA09A6"
-			rewards: [{
-				id: "4EF0F7670DBBEF74"
-				type: "xp_levels"
-				xp_levels: 25
-			}]
+			rewards: [
+				{
+					id: "4EF0F7670DBBEF74"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2BA4B481E1D080A9"
+					table_id: 2417904647564121192L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "41511F279E3A829F"
+					table_id: 2265012637020335752L
+					type: "random"
+				}
+				{
+					count: 16
+					id: "3229600CF3A4D685"
+					item: "kubejs:temporal_mechanism"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -79,7 +125,7 @@
 				item: "kubejs:temporal_mechanism"
 				type: "item"
 			}]
-			title: "Automation"
+			title: "Automations"
 			x: -0.5d
 			y: -3.5d
 		}

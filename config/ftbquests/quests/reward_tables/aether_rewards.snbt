@@ -18,7 +18,7 @@
 		{ item: "aether:blue_gummy_swet" }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "aether:golden_parachute"
 				tag: {
 					Damage: 0
@@ -27,7 +27,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "aether:cold_parachute"
 				tag: {
 					Damage: 0
@@ -53,7 +53,7 @@
 		{ item: "aether:holystone" }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "aether:leather_gloves"
 				tag: {
 					Damage: 0
@@ -62,7 +62,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "aether:chainmail_gloves"
 				tag: {
 					Damage: 0
@@ -71,7 +71,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "aether:iron_gloves"
 				tag: {
 					Damage: 0
@@ -80,7 +80,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "aether:golden_gloves"
 				tag: {
 					Damage: 0
@@ -89,7 +89,7 @@
 		}
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "aether:diamond_gloves"
 				tag: {
 					Damage: 0

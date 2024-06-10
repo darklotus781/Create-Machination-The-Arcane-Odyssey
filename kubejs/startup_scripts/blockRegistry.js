@@ -1,4 +1,4 @@
-StartupEvents.registry("block", event => {
+StartupEvents.registry('block', event => {
     event.create('mica_block').hardness(3.0).displayName('Mica Block');
 
     // Custom Frame Blocks used to make Casings
@@ -32,6 +32,6 @@ StartupEvents.registry("block", event => {
 
 BlockEvents.modification(event => {
     event.modify('ae2:sky_stone_block', block => {
-        block.destroySpeed = Block.getBlock(block.id).defaultDestroyTime() / 2; // Set to half
+        block.destroySpeed = Block.getBlock('minecraft:stone').defaultDestroyTime();
     });
 });
