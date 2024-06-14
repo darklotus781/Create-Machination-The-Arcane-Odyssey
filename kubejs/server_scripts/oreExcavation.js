@@ -24,8 +24,8 @@ ServerEvents.recipes(event => {
     veinCreation('Carbon Vein', 'minecraft:diamond', 7, 6, 64825185, 'createoreexcavation:carbon_vein', 'minecraft:is_overworld', 0.05, 1.5)
 
     //Tier 3 veins
-    veinCreation('Dense Overworled Ore Vein', 'minecraft:raw_iron', 8, 7, 64825185, 'createoreexcavation:dense_ore_vein', 'machination:infinite_ore_biomes')
-    veinCreation('Dense Overworled Gem Vein', 'minecraft:diamond_ore', 8, 7, 64825185, 'createoreexcavation:dense_gem_vein', 'machination:infinite_gem_biomes')
+    veinCreation('Dense Overworld Ore Vein', 'minecraft:raw_iron', 8, 7, 64825185, 'createoreexcavation:dense_ore_vein', 'machination:infinite_ore_biomes')
+    veinCreation('Dense Overworld Gem Vein', 'minecraft:diamond_ore', 8, 7, 64825185, 'createoreexcavation:dense_gem_vein', 'machination:infinite_gem_biomes')
     veinCreation('Netherite Vein', 'minecraft:netherite_scrap', 14, 13, 64825185, 'createoreexcavation:netherite_vein', 'allthemodium:mining', 0.05, 1.5)
 
     //Tier 4 veins

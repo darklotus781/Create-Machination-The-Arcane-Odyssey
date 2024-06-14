@@ -628,14 +628,6 @@
 			id: "03C7E04B5BBB84A2"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "6C52181823E996E2"
-					ignore_reward_blocking: true
-					stage: "end_access"
-					team_reward: false
-					type: "gamestage"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "3ECA8103ACBD80EF"
 					table_id: 8697717826506614278L

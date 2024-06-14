@@ -25,4 +25,6 @@ MoreJSEvents.wandererTrades(event => {
     event.addTrade(1, [TradeItem.of('minecraft:diamond', 1, 8), TradeItem.of('create:andesite_alloy', 1, 16)], Item.of('kubejs:andesite_mechanism', 2)).maxUses(8);
     // Diamond and Brass Ingots for Precision Mechanisms
     event.addTrade(1, [TradeItem.of('minecraft:diamond', 1, 8), TradeItem.of('create:brass_ingot', 1, 16)], Item.of('kubejs:brass_mechanism', 8)).maxUses(8);
+    // Netherite and Brass Ingots for Radiant Mechanisms
+    event.addTrade(1, [TradeItem.of('minecraft:netherite_ingot', 1, 8), TradeItem.of('create:brass_ingot', 1, 16)], Item.of('kubejs:radiant_mechanism', 2)).maxUses(8);
 });

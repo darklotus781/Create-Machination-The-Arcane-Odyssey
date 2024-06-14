@@ -53,21 +53,3 @@ function cuttingRecipe(ingredient, tool, result) {
         result: result
     };
 }
-
-// {
-//     "type": "farmersdelight:cutting",
-//     "ingredients": [
-//     {
-//         "item": "minecraft:allium"
-//     }
-// ],
-//     "result": [
-//     {
-//         "count": 2,
-//         "item": "minecraft:magenta_dye"
-//     }
-// ],
-//     "tool": {
-//     "tag": "forge:tools/knives"
-// }
-// }

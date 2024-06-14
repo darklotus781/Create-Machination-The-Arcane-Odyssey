@@ -396,15 +396,15 @@ ServerEvents.recipes(event => {
 
     caseify('compressedcreativity:compressed_iron_casing', Ingredient.of('#forge:ingots/compressed_iron'), Item.of('create:andesite_casing'));
 
-    event.shaped(Item.of('kubejs:mechanism_smithing_template'), [
-        'DMD',
-        'DAD',
-        'DDD'
-    ], {
-        M: Item.of('kubejs:wooden_mechanism'),
-        A: Item.of('minecraft:andesite'),
-        D: Item.of('minecraft:diamond'),
-    }).id('kubejs:recipe/mechanism_smithing_template_manual_only');
+    // event.shaped(Item.of('kubejs:mechanism_smithing_template'), [
+    //     'DMD',
+    //     'DAD',
+    //     'DDD'
+    // ], {
+    //     M: Item.of('kubejs:wooden_mechanism'),
+    //     A: Item.of('minecraft:andesite'),
+    //     D: Item.of('minecraft:diamond'),
+    // }).id('kubejs:recipe/mechanism_smithing_template_manual_only');
 
     event.shaped(Item.of('kubejs:mechanism_smithing_template', 4), [
         'MTM',
@@ -598,6 +598,16 @@ ServerEvents.recipes(event => {
     event.recipes.botania.elven_trade(['create:mechanical_saw'], ['create:shaft', 'thermal:saw_blade', 'create:piston_extension_pole', 'create:gearbox', 'botania:mana_diamond']).id('kubejs:mechanical_saw_alt_1');
     event.recipes.botania.elven_trade(['create:mechanical_mixer'], ['create:cogwheel', 'create:whisk', 'create:piston_extension_pole', 'create:gearbox', 'botania:mana_diamond']).id('kubejs:mechanical_mixer_alt_1');
 
+    event.shaped(Item.of('minecraft:end_crystal'), [
+        'GGG',
+        'GEG',
+        'GTG'
+    ], {
+        G: Ingredient.of('#forge:glass'),
+        E: Item.of('minecraft:ender_eye'),
+        T: Item.of('minecraft:ghast_tear')
+    }).id('end_crystal');
+
     event.custom({
         type: 'lychee:item_exploding',
         item_in: [Item.of('create:shaft').toJson(), Item.of('pneumaticcraft:compressed_iron_block').toJson(), Item.of('create:andesite_alloy_block').toJson(), Item.of('create:gearbox').toJson()],
@@ -722,35 +732,19 @@ ServerEvents.recipes(event => {
         });
     });
 
+    event.shaped(Item.of('kubejs:quantum_box', 2), [
+        'TQT',
+        'TNT',
+        'TTT'
+    ], {
+        T: Item.of('kubejs:temporal_mechanism'),
+        Q: Item.of('kubejs:quantum_box'),
+        N: Item.of('minecraft:netherite_block')
+    }).id('quantum_box_dupe');
+
     event.remove({type: 'thermal:press'});
     trading(event);
 });
-
-// BlockEvents.rightClicked('minecraft:end_portal_frame', event => {
-//     if (event.player.stages.has('end_access')) return;
-//     if (event.block.properties.get('eye') === true) return;
-//     if (event.item !== 'kubejs:quantum_mechanism') {
-//         event.cancel;
-//         return;
-//     }
-//     event.player.swing(event.hand, true);
-//     event.block.set('minecraft:end_portal_frame', {eye:'true',facing:event.block.properties.get('facing')});
-//     event.level.playSound(null, event.player.x, event.player.y, event.player.z, 'block.end_portal_frame.fill', 'neutral', 1, 1.0);
-//     // event.block.level.globalLevelEvent(1503, event.block.pos, 1503);
-// });
-
-// BlockEvents.rightClicked('minecraft:end_portal_frame', event => {
-//     if (event.player.stages.has('end_access')) return;
-//     if (event.block.properties.get('eye') === true) return;
-//     if (event.item !== 'minecraft:bucket') {
-//         event.cancel;
-//         return;
-//     }
-//
-//     event.player.swing(event.hand, true);
-//     event.block.set('minecraft:end_portal_frame', {eye:'true',facing:event.block.properties.get('facing')});
-//     event.level.playSound(null, event.player.x, event.player.y, event.player.z, 'block.end_portal_frame.fill', 'neutral', 1, 1.0);
-// });
 
 const $UseOnContext = Java.loadClass('net.minecraft.world.item.context.UseOnContext');
 const $BlockHitResult = Java.loadClass('net.minecraft.world.phys.BlockHitResult');

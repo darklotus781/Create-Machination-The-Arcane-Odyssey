@@ -130,3 +130,41 @@ ServerEvents.lowPriorityData(event => {
         }
     });
 });
+
+ServerEvents.lowPriorityData(event => {
+    event.addJson('forbidden_arcanus:forbidden_arcanus/hephaestus_forge/ritual/machine_smithing_template', {
+        "additional_requirements": {
+            "forge_tier": 1
+        },
+        "essences": {
+            "aureal": 20,
+            "blood": 10,
+            "experience": 50,
+            "souls": 1
+        },
+        "inputs": [
+            {
+                "amount": 5,
+                "ingredient": {
+                    "item": "kubejs:wooden_mechanism"
+                }
+            },
+            {
+                "amount": 1,
+                "ingredient": {
+                    "item": "minecraft:andesite"
+                }
+            }
+        ],
+        "main_ingredient": {
+            "item": "minecraft:diamond"
+        },
+        "result": {
+            "type": "forbidden_arcanus:create_item",
+            "result_item": {
+                "Count": 1,
+                "id": "kubejs:mechanism_smithing_template"
+            }
+        }
+    });
+});

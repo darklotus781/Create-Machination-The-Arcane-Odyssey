@@ -402,6 +402,7 @@
 			dependencies: [
 				"03C7E04B5BBB84A2"
 				"411FC26DBB795420"
+				"56174EE225DA3F73"
 			]
 			description: [
 				"You activate the End Portal with your Quantum Mechanisms and hear an ominous sound as the portal opens.  Odd particles emit from it and you hear the low drone of a Dragon!?"
@@ -743,6 +744,7 @@
 				"099F5D860FC50376"
 				"74F85CFABA84170A"
 				"36586087EDF835C8"
+				"03C7E04B5BBB84A2"
 			]
 			description: [
 				"Chapter 6 is the first step toward end-game."

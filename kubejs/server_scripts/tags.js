@@ -320,7 +320,6 @@ ServerEvents.tags('entity_type', event => {
         .add('alexscaves:nucleeper')
         .add('alexscaves:watcher')
         .add('alexscaves:mine_guardian')
-        .add('allthemodium:piglich')
         .add('minecraft:ender_dragon');
 
     event.add('mob_grinding_utils:no_swab', '#machination:mob_blacklist');
